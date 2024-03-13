@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FinalProject"
         mc:Ignorable="d"
-        Title="MainWindow" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" WindowStyle="None" Height="800" Width="1200">
+        Title="MainWindow" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Height="800" Width="1200">
     <Grid Background="#0B2F21">
         <Grid>
             <Grid.RowDefinitions>
@@ -34,11 +34,28 @@
                 </StackPanel>
             </Border>
             <Border Background="#E4E6EA" Grid.Row="1">
-                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top">
-                    <TextBox Text="Vị trí tuyển dụng" Width="120" Height="40" FontSize="20">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0 10 0 0">
+                    <TextBox Text="Vị trí tuyển dụng" Width="200" Height="40" FontSize="20">
         
                     </TextBox>
-                    
+                    <ComboBox Text="Tất cả tỉnh/thành phố" Width="200" Margin="0 0 0 0">
+                        <Label>Tất cả tỉnh/thành phố</Label>
+                        <Label>Hà Nội</Label>
+                        <Label>Hồ Chí Minh</Label>
+                    </ComboBox>
+                    <ComboBox Text="Tất cả kinh nghiệm" Width="200" Margin="20 0 0 0">
+                        <Label>Chưa có kinh nghiệm</Label>
+                        <Label>Dưới 1 năm</Label>
+                        <Label>1 năm</Label>
+                    </ComboBox>
+                    <ComboBox Text="Tất cả mức lương" Width="200" Margin="20 0 0 0">
+                        <Label>Dưới 10tr</Label>
+                        <Label>10 - 15tr</Label>
+                        <Label>15 - 20tr</Label>
+                    </ComboBox>
+                    <Button Content="Tìm kiếm" Margin="20 0 0 0"></Button>
+
+
                 </StackPanel>
                 
             </Border>
