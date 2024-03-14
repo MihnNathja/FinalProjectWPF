@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "7MvGJvvwMkacoGv2Dk4ca13uAIFBNilnMSUHVD2Ls+rFlecjf9KhLOHBuvWzV9iFrhHU6096g/iuOjl0AevedQ==",
+  "dgSpecHash": "p8yfdz/vaM9ql8XsRxPjLc6BPgn2yR7StK7u2OKmjkoD8vXYLkal77thaF6UTsp7XuUxVNtw2SeFehmwVgRYEg==",
   "success": true,
-  "projectFilePath": "C:\\VUONG_LAP_QUE\\Nam 2\\HK II\\Window\\FinalProjectWPF\\FinalProject\\FinalProject.csproj",
+  "projectFilePath": "D:\\UNIVERSITY\\SOPHOMORE\\TERM II\\LẬP TRÌNH WINDOWS\\FinalProjectWPF\\FinalProject\\FinalProject.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\DELL\\.nuget\\packages\\mahapps.metro.iconpacks\\4.11.0\\mahapps.metro.iconpacks.4.11.0.nupkg.sha512"
+    "C:\\Users\\Ad\\.nuget\\packages\\mahapps.metro.iconpacks\\4.11.0\\mahapps.metro.iconpacks.4.11.0.nupkg.sha512"
   ],
   "logs": []
 }
