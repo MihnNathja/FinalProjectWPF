@@ -50,12 +50,8 @@
             <Grid Grid.Column="1" Margin="30 20 20 20 ">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="auto"/>
-                    <RowDefinition Height="auto"/>
-                    <RowDefinition Height="auto"/>
-                    <RowDefinition Height="auto"/>
-                    <RowDefinition Height="auto"/>
                     <RowDefinition Height="*"/>
-                    <RowDefinition Height="auto"/>
+                    
                 </Grid.RowDefinitions>
                 <!--search textbox-->
                 <Grid>
@@ -85,6 +81,25 @@
                         </Button>
                     </StackPanel>
                 </Grid>
+                <Grid Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+
+                    <StackPanel Margin="0 25 0 0">
+                        <Button >
+                            ZZZZZ
+                        </Button>
+                    </StackPanel>
+                    <StackPanel Margin="0 25 0 0" Grid.Column="1">
+                        <Button Style="{StaticResource ResourceKey=buttonCompany}" />
+                        <Button Style="{StaticResource ResourceKey=buttonCompany}" />
+                        <Button Style="{StaticResource ResourceKey=buttonCompany}" />
+                        <Button Style="{StaticResource ResourceKey=buttonCompany}" />
+                    </StackPanel>
+                </Grid>
+                
  
                 
                  

@@ -230,7 +230,34 @@
             </Style.Resources>
         </Style>
 
+        <Style x:Key="buttonCompany" TargetType="{x:Type Button}">
+            <Setter Property="Margin" Value="5 10"/>
+            <Setter Property="Background" Value="White"/>
 
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border BorderBrush="Gray" BorderThickness="1" CornerRadius="10" Background="#DDDDDD">
+                            <Grid>
+                                <!-- Logo công ty -->
+                                <Image Source="Image/user.png" Width="100" Height="130" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+
+                                <!-- Tên công ty -->
+                                <TextBlock TextWrapping="Wrap" TextAlignment="Center" Margin="10" HorizontalAlignment="Center" VerticalAlignment="Top" 
+                                           FontSize="30" FontWeight="Bold" Text="Company Name"/>
+                                
+                            </Grid>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="#dcdcdc"/>
+
+                </Trigger>
+            </Style.Triggers>
+        </Style>
 
 
 
