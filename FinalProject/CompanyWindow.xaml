@@ -7,41 +7,106 @@
         xmlns:local="clr-namespace:FinalProject"
         mc:Ignorable="d"
         Title="CompanyWindow" Height="800" Width="1200">
+    <Window.Resources>
+        <Storyboard x:Key="OpenMenu">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="GridMenu">
+                <EasingDoubleKeyFrame KeyTime="0" Value="80"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="250"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="CloseMenu">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="GridMenu">
+                <EasingDoubleKeyFrame KeyTime="0" Value="250"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="80"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+    </Window.Resources>
+    <Window.Triggers>
+        <EventTrigger RoutedEvent="ButtonBase.Click" SourceName="ButtonOpenMenu">
+            <BeginStoryboard Storyboard="{StaticResource OpenMenu}"/>
+        </EventTrigger>
+        <EventTrigger RoutedEvent="ButtonBase.Click" SourceName="ButtonCloseMenu">
+            <BeginStoryboard Storyboard="{StaticResource CloseMenu}"/>
+        </EventTrigger>
+    </Window.Triggers>
+
     <Border Background="#eff2f7" CornerRadius="30">
-        <Grid>
+        <Grid >
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="200"/>
+                <ColumnDefinition Width="250"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
             <!--left-->
-            <Grid>
+            <Grid x:Name="GridMenu" Width="80" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="auto"/>
                     <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
-                
-                <Button Style="{StaticResource topButton}" Margin="20 28 0 35">
-                    <Icon:PackIconMaterial Kind="Menu" Width="15" Height="15"/>
-                </Button>
+                <Grid.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Grid.RenderTransform>
 
-                <Border Grid.Row="1" Background="#623ed0" CornerRadius="0 50 0 30">
+
+
+                <Button x:Name="ButtonOpenMenu" Height="60" Width="60" Margin="5 5 10 5" HorizontalAlignment="Right" VerticalAlignment="Top" Style="{StaticResource topButton}" Click="ButtonOpenMenu_Click" >
+                        <Icon:PackIconMaterial Kind="Menu" Width="25" Height="25"/>
+                </Button>
+                <Button x:Name="ButtonCloseMenu" Visibility="Collapsed" Height="60" Width="60" Margin="5" HorizontalAlignment="Right" VerticalAlignment="Top" Style="{StaticResource topButton}" Click="ButtonCloseMenu_Click" >
+                        <Icon:PackIconMaterial Kind="ArrowLeft" Width="25" Height="25"/>
+                </Button>
+                
+
+                
+
+                <Border Grid.Row="1" Background="#623ed0" CornerRadius="0 10 0 20">
                     <DockPanel>
                         <!--menu logo-->
                         <Border Width="80" Height="80" Padding="3" Background="White" CornerRadius="100"
-                                DockPanel.Dock="Top" HorizontalAlignment="Left" Margin="20 -30 0 0">
+                                DockPanel.Dock="Top" HorizontalAlignment="Center">
                             <Ellipse>
-                                <!--<Ellipse.Fill>
+                                <Ellipse.Fill>
                                     <ImageBrush ImageSource="/Image/user.png" />
-                                </Ellipse.Fill>-->
+                                </Ellipse.Fill>
                             </Ellipse>
                             
                             
                         </Border>
-                        <TextBlock Text="Menu" Foreground="White" FontSize="22"
+                        <TextBlock Text="Name" Foreground="White" FontSize="22"
                                    FontWeight="SemiBold" DockPanel.Dock="Top" TextAlignment="Center" Margin="5 25 0 10"/>
 
                         <Separator Margin="25" DockPanel.Dock="Top" Height="0.8" Background="#7e5fdc"/>
-                        
+
+                        <StackPanel DockPanel.Dock="Top">
+                            <Button Style="{StaticResource menuButton}">
+                                <StackPanel Orientation="Horizontal">
+                                    <Icon:PackIconMaterial Kind="Home" Style="{StaticResource menuButtonIcon}"/>
+                                    <TextBlock Text="Việc làm"/>
+                                </StackPanel>
+                            </Button>
+                            <Button Style="{StaticResource menuButton}">
+                                <StackPanel Orientation="Horizontal">
+                                    <Icon:PackIconMaterial Kind="FileDocument" Style="{StaticResource menuButtonIcon}"/>
+                                    <TextBlock Text="Hồ sơ và CV"/>
+                                </StackPanel>
+                            </Button>
+                            <Button Style="{StaticResource menuButton}">
+                                <StackPanel Orientation="Horizontal">
+                                    <Icon:PackIconMaterial Kind="Factory" Style="{StaticResource menuButtonIcon}"/>
+                                    <TextBlock Text="Công ty"/>
+                                </StackPanel>
+                            </Button>
+                            <Button Style="{StaticResource menuButton}">
+                                <StackPanel Orientation="Horizontal">
+                                    <Icon:PackIconMaterial Kind="Heart" Style="{StaticResource menuButtonIcon}"/>
+                                    <TextBlock Text="Việc làm quan tâm"/>
+                                </StackPanel>
+                            </Button>
+                        </StackPanel>
                     </DockPanel>
                 </Border>
                 
@@ -68,14 +133,14 @@
                         
                     </Grid>
                     <StackPanel Grid.Column="1" Orientation="Horizontal">
-                        <ComboBox Width="200" Margin="20 0" Style="{DynamicResource theComboBox}" Height="40">
+                        <ComboBox Width="200" Margin="5 0" Style="{DynamicResource theComboBox}" Height="40">
                             
                         </ComboBox>
                         <ComboBox Width="200" Style="{DynamicResource theComboBox}" Height="40">
 
                         </ComboBox>
                         
-                        <Button Width="50" Height="50" HorizontalAlignment="Center" Margin="40 0" Style="{StaticResource buttonSearch}" >
+                        <Button Width="50" Height="50" HorizontalAlignment="Center" Margin="15 0" Style="{StaticResource buttonSearch}" >
                             <Icon:PackIconMaterial Kind="Magnify" Width="15" Height="15" VerticalAlignment="Center"
                         Foreground="#b0b9c6" HorizontalAlignment="Right"/>
                         </Button>
@@ -88,15 +153,10 @@
                     </Grid.ColumnDefinitions>
 
                     <StackPanel Margin="0 25 0 0">
-                        <Button >
-                            ZZZZZ
-                        </Button>
+                        
                     </StackPanel>
                     <StackPanel Margin="0 25 0 0" Grid.Column="1">
-                        <Button Style="{StaticResource ResourceKey=buttonCompany}" />
-                        <Button Style="{StaticResource ResourceKey=buttonCompany}" />
-                        <Button Style="{StaticResource ResourceKey=buttonCompany}" />
-                        <Button Style="{StaticResource ResourceKey=buttonCompany}" />
+                       
                     </StackPanel>
                 </Grid>
                 
@@ -109,4 +169,5 @@
 
         </Grid>
     </Border>
+   
 </Window>

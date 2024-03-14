@@ -10,12 +10,24 @@
     <Compile Update="CompanyWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="User Control\MenuItem.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="CompanyWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Style\MainStyle.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Theme\Theme.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="User Control\MenuItem.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
