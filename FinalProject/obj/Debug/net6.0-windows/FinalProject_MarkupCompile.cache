@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\App.xaml
-2-995940130
+5247162487
 
-4415665096
+5-888115727
 227456344618
-CompanyWindow.xaml;MainWindow.xaml;
+CompanyWindow.xaml;MainWindow.xaml;Style\MainStyle.xaml;Theme\Theme.xaml;User Control\MenuItem.xaml;
 
 False
 
