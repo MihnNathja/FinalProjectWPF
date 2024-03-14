@@ -59,11 +59,11 @@
                 <Button x:Name="ButtonCloseMenu" Visibility="Collapsed" Height="60" Width="60" Margin="5" HorizontalAlignment="Right" VerticalAlignment="Top" Style="{StaticResource topButton}" Click="ButtonCloseMenu_Click" >
                         <Icon:PackIconMaterial Kind="ArrowLeft" Width="25" Height="25"/>
                 </Button>
-                
 
-                
 
-                <Border Grid.Row="1" Background="#623ed0" CornerRadius="0 10 0 20">
+
+
+                <Border Grid.Row="1" Background="#00b14f" CornerRadius="0 10 0 20">
                     <DockPanel>
                         <!--menu logo-->
                         <Border Width="80" Height="80" Padding="3" Background="White" CornerRadius="100"
