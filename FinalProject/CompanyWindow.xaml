@@ -169,9 +169,6 @@
                 </Grid>
                 <!--Suggest Idea Button-->
                 <Grid Grid.Row="1">
-
-                </Grid>
-                <Grid Grid.Row="2">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition/>
                         <ColumnDefinition/>
@@ -184,23 +181,16 @@
                         <local:UCJobInfo/>
                     </StackPanel>
                     <StackPanel Margin="0 25 0 0" Grid.Column="1">
+                        <local:UCJobInfo />
                         <local:UCJobInfo/>
                         <local:UCJobInfo/>
                         <local:UCJobInfo/>
-                        <local:UCJobInfo/>
-
                     </StackPanel>
-
                 </Grid>
 
 
 
             </Grid>
-            <Popup IsOpen="True">
-                <Border Background="Black" Height="30" Width="30">
-
-                </Border>
-            </Popup>
         </Grid>
     </Border>
 
