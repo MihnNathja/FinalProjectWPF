@@ -10,6 +10,9 @@
     <Compile Update="CompanyWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="UCCompanyInfo.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="UCJobInfo.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -28,6 +31,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Theme\Theme.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UCCompanyInfo.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="UCJobInfo.xaml">
