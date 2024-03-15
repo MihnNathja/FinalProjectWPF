@@ -10,10 +10,17 @@
     <Compile Update="CompanyWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+<<<<<<< HEAD
     <Compile Update="CVWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Page\CVPage.xaml.cs">
+=======
+    <Compile Update="User Control\UCCompanyInfo.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="User Control\UCJobInfo.xaml.cs">
+>>>>>>> a72bbf64d7011ae721f7e2c441f1258596fdd3d4
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="User Control\MenuItem.xaml.cs">
@@ -37,6 +44,12 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Theme\Theme.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="User Control\UCCompanyInfo.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="User Control\UCJobInfo.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="User Control\MenuItem.xaml">
