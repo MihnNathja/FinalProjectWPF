@@ -90,10 +90,10 @@
                         <Button Height="30"
                                 Width="30"
                                 BorderThickness="0">
-                            <Button.Background>
-                                <ImageBrush ImageSource="{Binding Url_favourite_icon}"
-                                            Stretch="Uniform"></ImageBrush>
-                            </Button.Background>
+                            <!--<Button.Background>
+                                --><!--<ImageBrush ImageSource="/Image/favourite_icon.png"
+                                            Stretch="Uniform"></ImageBrush>--><!--
+                            </Button.Background>-->
                         </Button>
                     </Grid>
                 </Grid>
