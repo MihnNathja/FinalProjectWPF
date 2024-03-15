@@ -5,8 +5,76 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:FinalProject"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
-    <Grid>
-            
-    </Grid>
+             d:DesignHeight="400" d:DesignWidth="450">
+    <Border Background="White" 
+        CornerRadius="10"
+        Margin="5"
+    >
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="3*"/>
+                <RowDefinition Height="5*"/>
+            </Grid.RowDefinitions>
+
+            <!--Company Cover-->
+            <Grid Grid.Row="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="1*"/>
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0">
+                    <Rectangle>
+                        <Rectangle.Fill>
+                            <ImageBrush 
+                                ImageSource="/Image/company_cover.jpg" 
+                                Stretch="Uniform"></ImageBrush>
+                        </Rectangle.Fill>
+                    </Rectangle>
+                </Grid>
+                <Grid Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="4*"/>
+                    </Grid.ColumnDefinitions>
+                    <Rectangle Grid.Column="0"
+                        Margin="0 -20 0 0">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/Image/logosac-01.png"></ImageBrush>
+                        </Rectangle.Fill>
+                    </Rectangle>
+                </Grid>
+
+            </Grid>
+
+            <Grid Grid.Row="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="5*"/>
+                </Grid.RowDefinitions>
+
+                <!--Title-->
+                <Grid Grid.Row="0" Grid.ColumnSpan="2" Margin="0,0,0,174" Grid.RowSpan="2">
+                    <TextBlock 
+                        Text="Company Name"
+                        VerticalAlignment="Center"
+                        Margin="5 0 5 0"
+                        FontSize="25"
+                    ></TextBlock>
+                </Grid>
+
+                <!--Detail-->
+
+                <Grid Grid.Row="1" Grid.ColumnSpan="2">
+                    <TextBlock 
+                        Text="About the company..........................."
+                        VerticalAlignment="top"
+                        Margin="10 10 10 10"
+                        FontSize="15"
+                    ></TextBlock>
+                </Grid>
+            </Grid>
+        </Grid>
+
+
+    </Border>
 </UserControl>

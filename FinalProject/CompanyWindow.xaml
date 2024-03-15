@@ -169,7 +169,7 @@
                 </Grid>
                 <!--Suggest Idea Button-->
                 <Grid Grid.Row="1">
-
+                    <Button></Button>
                 </Grid>
                 <Grid Grid.Row="2">
                     <Grid.ColumnDefinitions>
@@ -192,15 +192,7 @@
                     </StackPanel>
 
                 </Grid>
-
-
-
             </Grid>
-            <Popup IsOpen="True">
-                <Border Background="Black" Height="30" Width="30">
-
-                </Border>
-            </Popup>
         </Grid>
     </Border>
 
