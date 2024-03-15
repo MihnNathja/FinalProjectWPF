@@ -10,10 +10,10 @@
     <Compile Update="CompanyWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="UCCompanyInfo.xaml.cs">
+    <Compile Update="User Control\UCCompanyInfo.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="UCJobInfo.xaml.cs">
+    <Compile Update="User Control\UCJobInfo.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="User Control\MenuItem.xaml.cs">
@@ -33,10 +33,10 @@
     <Page Update="Theme\Theme.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="UCCompanyInfo.xaml">
+    <Page Update="User Control\UCCompanyInfo.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="UCJobInfo.xaml">
+    <Page Update="User Control\UCJobInfo.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="User Control\MenuItem.xaml">
