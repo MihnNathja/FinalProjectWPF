@@ -10,6 +10,12 @@
     <Compile Update="CompanyWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="CVWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Page\CVPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="User Control\MenuItem.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -18,7 +24,13 @@
     <Page Update="CompanyWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="CVWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Page\CVPage.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Style\MainStyle.xaml">
