@@ -169,7 +169,7 @@
                 </Grid>
                 <!--Suggest Idea Button-->
                 <Grid Grid.Row="1">
-                    <Button></Button>
+                       <Button></Button>
                 </Grid>
                 <Grid Grid.Row="2">
                     <Grid.ColumnDefinitions>
@@ -184,13 +184,11 @@
                         <local:UCJobInfo/>
                     </StackPanel>
                     <StackPanel Margin="0 25 0 0" Grid.Column="1">
+                        <local:UCJobInfo />
                         <local:UCJobInfo/>
                         <local:UCJobInfo/>
                         <local:UCJobInfo/>
-                        <local:UCJobInfo/>
-
                     </StackPanel>
-
                 </Grid>
             </Grid>
         </Grid>
