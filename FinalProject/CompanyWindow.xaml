@@ -63,7 +63,7 @@
 
 
 
-                <Border Grid.Row="1" Background="#00b14f" CornerRadius="0 10 0 20">
+                <Border Grid.Row="1" Background="#00b14f" CornerRadius="0 10 10 0">
                     <DockPanel>
                         <!--menu logo-->
                         <Border Width="80" Height="80" Padding="3" Background="White" CornerRadius="100"
@@ -79,7 +79,7 @@
                         <TextBlock Text="Name" Foreground="White" FontSize="22"
                                    FontWeight="SemiBold" DockPanel.Dock="Top" TextAlignment="Center" Margin="5 25 0 10"/>
 
-                        <Separator Margin="25" DockPanel.Dock="Top" Height="0.8" Background="#7e5fdc"/>
+                        <Separator Margin="25" DockPanel.Dock="Top" Height="1" Background="White"/>
 
                         <StackPanel DockPanel.Dock="Top">
                             <Button Style="{StaticResource menuButton}">
@@ -132,9 +132,8 @@
                             IsHitTestVisible="False"
                             Panel.ZIndex="1" 
                             Text="Search here ..." 
-                            Visibility="Visible"/>
-                        <TextBox x:Name="txtSearch" Style="{StaticResource textboxSearch}" Height="40"/>
-
+                            Visibility="Visible" />
+                        <TextBox x:Name="txtSearch" Style="{StaticResource textboxSearch}" Height="40" TabIndex="0"/>
 
                         
                     </Grid>
@@ -168,19 +167,20 @@
                     </Grid.ColumnDefinitions>
 
                     <StackPanel Margin="0 25 0 0">
-                        
-
-
-
+                        <local:UCJobInfo/>
+                        <local:UCJobInfo/>
+                        <local:UCJobInfo/>
+                        <local:UCJobInfo/>
                     </StackPanel>
                     <StackPanel Margin="0 25 0 0" Grid.Column="1">
-                       
+                        <local:UCJobInfo/>
+                        <local:UCJobInfo/>
+                        <local:UCJobInfo/>
+                        <local:UCJobInfo/>
+
                     </StackPanel>
                 </Grid>
-                
- 
-                
-                 
+
                 
                 
             </Grid> 
