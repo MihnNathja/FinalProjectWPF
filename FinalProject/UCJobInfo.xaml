@@ -19,9 +19,9 @@
                 HorizontalAlignment="Left" 
                 Margin="5,15,0,15" Grid.Column="0">
                 <!--Logo Job-->
-                <Ellipse Width="120" Height="120" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <Ellipse Width="120" Height="120" HorizontalAlignment="Center" VerticalAlignment="Center" IsEnabled="False">
                     <Ellipse.Fill>
-                        <ImageBrush ImageSource="/Image/user.png" Stretch="UniformToFill"/>
+                        <ImageBrush ImageSource="{Binding Url}" Stretch="UniformToFill"/>
                     </Ellipse.Fill>
                 </Ellipse>
 
