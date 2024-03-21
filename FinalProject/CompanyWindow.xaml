@@ -33,8 +33,9 @@
     <Border Background="#eff2f7" CornerRadius="30">
         <Grid >
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="250"/>
+                <ColumnDefinition Width="auto"/>
                 <ColumnDefinition Width="*"/>
+                
             </Grid.ColumnDefinitions>
             <!--left-->
             <Grid x:Name="GridMenu" Width="80" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5">
@@ -65,6 +66,8 @@
 
                 <Border Grid.Row="1" Background="#00b14f" CornerRadius="0 10 10 0">
                     <DockPanel>
+                        <local:UCPopUp x:Name="popupControl" Loaded="popupControl_Loaded"/>
+
                         <!--menu logo-->
                         <Border Width="80" Height="80" Padding="3" Background="White" CornerRadius="100"
                                 DockPanel.Dock="Top" HorizontalAlignment="Center">
@@ -82,25 +85,37 @@
                         <Separator Margin="25" DockPanel.Dock="Top" Height="1" Background="White"/>
 
                         <StackPanel DockPanel.Dock="Top">
-                            <Button Style="{StaticResource menuButton}">
+                            <Button Style="{StaticResource menuButton}"
+                                    MouseEnter="btnViecLam_MouseEnter"
+                                    MouseLeave="btnViecLam_MouseLeave"
+                                    >
                                 <StackPanel Orientation="Horizontal">
                                     <Icon:PackIconMaterial Kind="Home" Style="{StaticResource menuButtonIcon}"/>
                                     <TextBlock Text="Việc làm"/>
                                 </StackPanel>
                             </Button>
-                            <Button Style="{StaticResource menuButton}">
+                            <Button Style="{StaticResource menuButton}"
+                                    MouseEnter="btnHoSo_MouseEnter" 
+                                    MouseLeave="btnHoSo_MouseLeave"
+                                    >
                                 <StackPanel Orientation="Horizontal">
                                     <Icon:PackIconMaterial Kind="FileDocument" Style="{StaticResource menuButtonIcon}"/>
                                     <TextBlock Text="Hồ sơ và CV"/>
                                 </StackPanel>
                             </Button>
-                            <Button Style="{StaticResource menuButton}">
+                            <Button Style="{StaticResource menuButton}"
+                                    MouseEnter="btnCongty_MouseEnter"
+                                    MouseLeave="btnCongTy_MouseLeave"
+                                    Click="btnCongTy_Click">
                                 <StackPanel Orientation="Horizontal">
                                     <Icon:PackIconMaterial Kind="Factory" Style="{StaticResource menuButtonIcon}"/>
                                     <TextBlock Text="Công ty"/>
                                 </StackPanel>
                             </Button>
-                            <Button Style="{StaticResource menuButton}">
+                            <Button Style="{StaticResource menuButton}"
+                                    MouseEnter="btnQuanTam_MouseEnter"
+                                    MouseLeave="btnQuanTam_MouseLeave"
+                                    >
                                 <StackPanel Orientation="Horizontal">
                                     <Icon:PackIconMaterial Kind="Heart" Style="{StaticResource menuButtonIcon}"/>
                                     <TextBlock Text="Việc làm quan tâm"/>
@@ -126,7 +141,7 @@
 
                 </Grid.RowDefinitions>
                 <!--search textbox-->
-                <Grid Grid.Row="0">
+                <Grid Grid.Row="0" HorizontalAlignment="Center">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="auto"/>
                         <ColumnDefinition/>
@@ -171,27 +186,18 @@
                 <Grid Grid.Row="1">
                        <Button></Button>
                 </Grid>
-                <Grid Grid.Row="2">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition/>
-                        <ColumnDefinition/>
-                    </Grid.ColumnDefinitions>
+                <Frame Grid.Row="1"
+                       Name="mainFarm"
+                       Margin="20"
+                       NavigationUIVisibility="Hidden"
+                       >
 
-                    <StackPanel Margin="0 25 0 0">
-                        <local:UCJobInfo />
-                        <local:UCJobInfo/>
-                        <local:UCJobInfo/>
-                        <local:UCJobInfo/>
-                    </StackPanel>
-                    <StackPanel Margin="0 25 0 0" Grid.Column="1">
-                        <local:UCJobInfo />
-                        <local:UCJobInfo/>
-                        <local:UCJobInfo/>
-                        <local:UCJobInfo/>
-                    </StackPanel>
-                </Grid>
+                </Frame>
             </Grid>
+            
         </Grid>
+        
     </Border>
+    
 
 </Window>

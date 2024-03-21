@@ -33,6 +33,58 @@ namespace FinalProject
             ButtonCloseMenu.Visibility = Visibility.Collapsed;
             ButtonOpenMenu.Visibility = Visibility.Visible;
         }
+
+        private void btnViecLam_MouseEnter(object sender, MouseEventArgs e)
+        {
+            popupControl.IsPopupOpen = true;
+            popupControl.PopupContent = "Việc làm";
+        }
+
+        private void btnViecLam_MouseLeave(object sender, MouseEventArgs e)
+        {
+            popupControl.IsPopupOpen = false;
+        }
+
+        private void btnHoSo_MouseEnter(object sender, MouseEventArgs e)
+        {
+            popupControl.IsPopupOpen = true;
+            popupControl.PopupContent = "Hồ sơ và CV";
+        }
+
+        private void btnHoSo_MouseLeave(object sender, MouseEventArgs e)
+        {
+            popupControl.IsPopupOpen = false;
+        }
+        private void btnCongty_MouseEnter(object sender, MouseEventArgs e)
+        {
+            popupControl.IsPopupOpen = true;
+            popupControl.PopupContent = "Công ty";
+        }
+
+        private void btnCongTy_MouseLeave(object sender, MouseEventArgs e)
+        {
+            popupControl.IsPopupOpen = false;
+        }
+        private void btnQuanTam_MouseEnter(object sender, MouseEventArgs e)
+        {
+            popupControl.IsPopupOpen = true;
+            popupControl.PopupContent = "Công Việc Quan Tâm";
+        }
+
+        private void btnQuanTam_MouseLeave(object sender, MouseEventArgs e)
+        {
+            popupControl.IsPopupOpen = false;
+        }
+
+        private void btnCongTy_Click(object sender, RoutedEventArgs e)
+        {
+            mainFarm.Navigate(new System.Uri("Page/CreatJobWindow.xaml", UriKind.RelativeOrAbsolute));
+        }
+
+        private void popupControl_Loaded(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
-  
+
 }
