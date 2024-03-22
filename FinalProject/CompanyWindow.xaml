@@ -88,6 +88,7 @@
                             <Button Style="{StaticResource menuButton}"
                                     MouseEnter="btnViecLam_MouseEnter"
                                     MouseLeave="btnViecLam_MouseLeave"
+                                    Click="btnViecLam_Click"
                                     >
                                 <StackPanel Orientation="Horizontal">
                                     <Icon:PackIconMaterial Kind="Home" Style="{StaticResource menuButtonIcon}"/>

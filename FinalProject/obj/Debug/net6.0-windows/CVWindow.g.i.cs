@@ -53,7 +53,7 @@ namespace FinalProject {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/FinalProject;V1.0.0.0;component/cvwindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/FinalProject;component/cvwindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\CVWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

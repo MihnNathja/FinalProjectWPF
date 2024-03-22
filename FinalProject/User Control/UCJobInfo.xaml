@@ -40,7 +40,7 @@
                 </Grid.RowDefinitions>
                 <!--Title-->
                 <Grid Grid.Row="0">
-                    <Label 
+                    <Label x:Name="Name"
                         Content="Title Of Job" 
                         HorizontalAlignment="Center" 
                         Margin="0,0,0,0" 
@@ -50,7 +50,7 @@
                 </Grid>
                 <!--Company-->
                 <Grid Grid.Row="1">
-                    <Label 
+                    <Label x:Name="CompanyName"
                         Content="Company Name" 
                         HorizontalAlignment="Left" 
                         Margin="0,0,0,0" 
@@ -67,7 +67,7 @@
 
                     <!-- Label Worse Code Below -->
                     <Grid Grid.Column="0">
-                        <Label 
+                        <Label x:Name="Salary"
                         Content="Salary Range" 
                         HorizontalAlignment="Center" 
                         Margin="0,0,0,0" 
@@ -77,7 +77,7 @@
                         />
                     </Grid>
                     <Grid Grid.Column="1">
-                        <Label 
+                        <Label x:Name="Location"
                         Content="Location" 
                         HorizontalAlignment="Center" 
                         Margin="0,0,0,0" 

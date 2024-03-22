@@ -61,7 +61,7 @@ namespace FinalProject.User_Control {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/FinalProject;V1.0.0.0;component/user%20control/menuitem.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/FinalProject;component/user%20control/menuitem.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\User Control\MenuItem.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
