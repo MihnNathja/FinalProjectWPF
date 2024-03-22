@@ -8,6 +8,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+using System.Reflection.Metadata;
+using System.Windows.Markup;
+
 namespace FinalProject.Properties {
     
     
@@ -27,7 +30,8 @@ namespace FinalProject.Properties {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
         [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(localdb)\\mssqllocaldb;Initial Catalog=DBJob;Integrated Security=True" +
-            "")]
+        "")]
+
         public string connStr {
             get {
                 return ((string)(this["connStr"]));

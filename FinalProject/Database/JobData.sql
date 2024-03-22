@@ -1,6 +1,6 @@
 ﻿CREATE TABLE Jobs (
- Name varchar(100) PRIMARY KEY,
- CompanyName varchar(255) PRIMARY KEY,
+ Name varchar(100),
+ CompanyName varchar(255) ,
  Salary varchar(100),
  Location varchar(100)
 );
