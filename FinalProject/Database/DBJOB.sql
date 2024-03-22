@@ -7,3 +7,6 @@
 
 INSERT INTO Jobs(Name, CompanyName, Salary, Location)
 VALUES ('BA','FPT','Dưới 10tr', 'HCM');
+
+INSERT INTO Jobs(Name, CompanyName, Salary, Location)
+VALUES ('DA','FPT','10tr - 15tr', 'HCM');

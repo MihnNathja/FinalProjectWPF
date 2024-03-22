@@ -85,6 +85,11 @@ namespace FinalProject
         {
 
         }
+
+        private void btnViecLam_Click(object sender, RoutedEventArgs e)
+        {
+            mainFarm.Navigate(new System.Uri("Page/PageJob.xaml", UriKind.RelativeOrAbsolute));
+        }
     }
 
 }

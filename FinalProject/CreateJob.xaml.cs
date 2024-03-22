@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FinalProject.Database;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,16 +20,16 @@ namespace FinalProject
     /// </summary>
     public partial class CreateJob : Window
     {
+        JobDAO jobDAO = new JobDAO();
         public CreateJob()
         {
             InitializeComponent();
         }
 
-
         private void btnPost_Click(object sender, RoutedEventArgs e)
         {
             Job job = new Job(txtbName.Text,txtbCompanyName.Text,cbbSalary.Text,txtbLocation.Text);
-            
+            jobDAO.Them(job);
         }
     }
 }
