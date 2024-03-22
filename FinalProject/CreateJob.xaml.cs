@@ -23,5 +23,12 @@ namespace FinalProject
         {
             InitializeComponent();
         }
+
+
+        private void btnPost_Click(object sender, RoutedEventArgs e)
+        {
+            Job job = new Job(txtbName.Text,txtbCompanyName.Text,cbbSalary.Text,txtbLocation.Text);
+            
+        }
     }
 }
