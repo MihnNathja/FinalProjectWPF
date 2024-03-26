@@ -20,6 +20,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Page\CVPage.xaml.cs" />
+    <Compile Update="Page\DocumentPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Page\PageJob.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -56,6 +59,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Page\CVPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Page\DocumentPage.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Page\PageJob.xaml">

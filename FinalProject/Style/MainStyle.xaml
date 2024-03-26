@@ -67,6 +67,13 @@
         <Setter Property="Margin" Value="20 0 20 0"/>
     </Style>
 
+    <Style TargetType="Icon:PackIconMaterial">
+        <Setter Property="Width" Value="20"/>
+        <Setter Property="Height" Value="20"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        
+    </Style>
+
     <Style x:Key="textboxSearch" TargetType="TextBox">
         <Setter Property="Background" Value="#ffffff"/>
         <Setter Property="Foreground" Value="#b0b9c6"/>
