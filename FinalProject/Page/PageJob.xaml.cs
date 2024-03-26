@@ -41,9 +41,9 @@ namespace FinalProject.Page
                     hỏi cô về cách duyệt từng property trong object
                 }*/
                 jobInfo.Name.Content = row["Name"].ToString();
-                jobInfo.CompanyName.Content = row["CompanyName"].ToString();
-                jobInfo.Salary.Content = row["Salary"].ToString();
-                jobInfo.Location.Content = row["Location"].ToString();
+                jobInfo.CompanyName.Text = row["CompanyName"].ToString();
+                jobInfo.Salary.Text = row["Salary"].ToString();
+                jobInfo.Location.Text = row["Location"].ToString();
                 pnlJob.Children.Add(jobInfo);
             }
         }

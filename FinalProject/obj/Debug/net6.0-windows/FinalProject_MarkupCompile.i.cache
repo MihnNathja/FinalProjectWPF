@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\UNIVERSITY\SOPHOMORE\TERM II\LẬP TRÌNH WINDOWS\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\
+C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\
 FinalProject
 none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
-D:\UNIVERSITY\SOPHOMORE\TERM II\LẬP TRÌNH WINDOWS\FinalProjectWPF\FinalProject\App.xaml
-14-1081993297
+C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\App.xaml
+15542410856
 
-20-1800064186
-228-168779794
-CompanyWindow.xaml;CreateJob.xaml;CVWindow.xaml;MainWindow.xaml;Page\CreatJobWindow.xaml;Page\CVPage.xaml;Page\PageJob.xaml;Style\MainStyle.xaml;Theme\Theme.xaml;User Control\MenuItem.xaml;User Control\UCCompanyInfo.xaml;User Control\UCJobInfo.xaml;User Control\UCPopUp.xaml;User Control\UCTextBox.xaml;
+21-1262479711
+228382338920
+CompanyWindow.xaml;CreateJob.xaml;CVWindow.xaml;MainWindow.xaml;Page\CreatJobWindow.xaml;Page\CVPage.xaml;Page\DocumentPage.xaml;Page\PageJob.xaml;Style\MainStyle.xaml;Theme\Theme.xaml;User Control\MenuItem.xaml;User Control\UCCompanyInfo.xaml;User Control\UCJobInfo.xaml;User Control\UCPopUp.xaml;User Control\UCTextBox.xaml;
 
-False
+True
 
