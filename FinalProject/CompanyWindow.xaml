@@ -197,7 +197,7 @@
                 </Grid>
                 <Frame Grid.Row="1"
                        Name="mainFarm"
-                       Margin="20"
+                       
                        NavigationUIVisibility="Hidden"
                        >
 

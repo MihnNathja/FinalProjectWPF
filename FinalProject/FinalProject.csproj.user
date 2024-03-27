@@ -19,7 +19,15 @@
     <Compile Update="CVWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+<<<<<<< HEAD
     <Compile Update="Pages\PageJob.xaml.cs">
+=======
+    <Compile Update="Page\CVPage.xaml.cs" />
+    <Compile Update="Page\DocumentPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Page\PageJob.xaml.cs">
+>>>>>>> 39e67f37b518986a202bad73f442d4bcd91aac0d
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="User Control\UCPopUp.xaml.cs">
@@ -57,7 +65,14 @@
     <Page Update="Pages\CVPage.xaml">
       <SubType>Designer</SubType>
     </Page>
+<<<<<<< HEAD
     <Page Update="Pages\PageJob.xaml">
+=======
+    <Page Update="Page\DocumentPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Page\PageJob.xaml">
+>>>>>>> 39e67f37b518986a202bad73f442d4bcd91aac0d
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Style\MainStyle.xaml">

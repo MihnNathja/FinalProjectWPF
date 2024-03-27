@@ -6,10 +6,15 @@
              xmlns:local="clr-namespace:FinalProject"
              mc:Ignorable="d" 
              d:DesignHeight="400" d:DesignWidth="450">
-    <Border Background="White" 
+    <Border  
         CornerRadius="10"
-        Margin="5"
-    >
+        Margin="5">
+        <Border.Background>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                <GradientStop Offset="0.0" Color="#CCFFAA " />
+                <GradientStop Offset="1.0" Color="#1E5B53" />
+            </LinearGradientBrush>
+        </Border.Background>
         <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition Height="3*"/>
