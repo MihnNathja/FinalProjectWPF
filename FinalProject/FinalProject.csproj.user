@@ -13,14 +13,13 @@
     <Compile Update="CreateJob.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Page\CreatJobWindow.xaml.cs">
+    <Compile Update="Pages\CreatJobWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="CVWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Page\CVPage.xaml.cs" />
-    <Compile Update="Page\PageJob.xaml.cs">
+    <Compile Update="Pages\PageJob.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="User Control\UCPopUp.xaml.cs">
@@ -46,7 +45,7 @@
     <Page Update="CreateJob.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Page\CreatJobWindow.xaml">
+    <Page Update="Pages\CreatJobWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="CVWindow.xaml">
@@ -55,10 +54,10 @@
     <Page Update="MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Page\CVPage.xaml">
+    <Page Update="Pages\CVPage.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Page\PageJob.xaml">
+    <Page Update="Pages\PageJob.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Style\MainStyle.xaml">

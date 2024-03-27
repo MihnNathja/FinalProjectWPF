@@ -153,22 +153,23 @@
                             VerticalAlignment="Center" 
                             Foreground="#b0b9c6" 
                             IsHitTestVisible="False"
-                            Panel.ZIndex="1" 
+                            Panel.ZIndex="0" 
                             Text="Search here ..." 
-                            Visibility="Visible" />
+                            Visibility="Visible" 
+                            />
                         <TextBox x:Name="txtSearch" Style="{StaticResource textboxSearch}" Height="40" TabIndex="0"/>
 
 
                     </Grid>
                     <!--Data Region input-->
                     <StackPanel Grid.Column="1" Orientation="Horizontal">
-                        <ComboBox Width="200" Margin="5 0" Style="{DynamicResource theComboBox}" Height="40" SelectedIndex="0">
+                        <ComboBox x:Name="cbbLocation" Width="200" Margin="5 0" Style="{DynamicResource theComboBox}" Height="40" SelectedIndex="0">
                             <ComboBoxItem Content="Tất cả tỉnh/thành phố"/>
                             <ComboBoxItem Content="Tp. Hồ Chí Minh" />
                             <ComboBoxItem Content="Hà Nội" />
                             <ComboBoxItem Content="Bình Dương" />
                         </ComboBox>
-                        <ComboBox Width="200" Style="{DynamicResource theComboBox}" Height="40" SelectedIndex="0">
+                        <ComboBox x:Name="cbbExperience"  Width="200" Style="{DynamicResource theComboBox}" Height="40" SelectedIndex="0">
                             <ComboBoxItem Content="Tất cả kinh nghiệm"/>
                             <ComboBoxItem Content="Dưới 1 năm" />
                             <ComboBoxItem Content="1 năm" />
@@ -177,7 +178,14 @@
                             <ComboBoxItem Content="4 năm" />
                         </ComboBox>
 
-                        <Button Width="50" Height="50" HorizontalAlignment="Center" Margin="15 0" Style="{StaticResource buttonSearch}" >
+                        <Button 
+                            x:Name="btnSearch"
+                            Width="50" 
+                            Height="50" 
+                            HorizontalAlignment="Center" 
+                            Margin="15 0" 
+                            Style="{StaticResource buttonSearch}"
+                            Click="btnSearch_Click">
                             <Icon:PackIconMaterial Kind="Magnify" Width="15" Height="15" VerticalAlignment="Center"
                         Foreground="#b0b9c6" HorizontalAlignment="Right"/>
                         </Button>

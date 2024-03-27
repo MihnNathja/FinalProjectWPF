@@ -61,7 +61,7 @@ namespace FinalProject.Page {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/FinalProject;component/page/pagejob.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/FinalProject;V1.0.0.0;component/page/pagejob.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Page\PageJob.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
