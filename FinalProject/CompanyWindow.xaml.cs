@@ -101,12 +101,11 @@ namespace FinalProject
             {
                 pageJob.pnlJob.Children.Add(info);
             }
-            mainFarm.Navigate(pageJob);
+            mainFarm.Navigate(new System.Uri("Pages/CreatJobWindow.xaml", UriKind.RelativeOrAbsolute));
         }
 
         private void btnSearch_Click(object sender, RoutedEventArgs e)
         {
-
             Filter filter = new Filter(cbbLocation.Text,cbbExperience.Text);
             JobDAO jobDAO = new JobDAO();
             jobDAO.DataJob =  jobDAO.Search(filter);

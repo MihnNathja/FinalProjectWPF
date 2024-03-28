@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FinalProject.Database;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -29,6 +30,18 @@ namespace FinalProject
         {
             CreateJob createJob = new CreateJob();
             createJob.Show();
+        }
+
+        private void Page_Loaded(object sender, RoutedEventArgs e)
+        {
+            JobDAO jobDAO = new JobDAO();
+            List<UCJobInfo> data = jobDAO.LoadPage();
+            MessageBox.Show(data.ToString()); 
+            foreach (UCJobInfo job in data )
+            {
+                MessageBox.Show(job.ToString());
+                jobList.Children.Add( job );
+            }
         }
     }
 }

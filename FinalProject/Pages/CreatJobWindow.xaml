@@ -7,7 +7,7 @@
       xmlns:User_Control="clr-namespace:FinalProject.User_Control" x:Class="FinalProject.CreatJobWindow"
       mc:Ignorable="d" 
       d:DesignHeight="600" d:DesignWidth="800 "
-      Title="CreatJobWindow">
+      Title="CreatJobWindow" Loaded="Page_Loaded">
 
     <Grid x:Name="CreateJobPage" Background="White">
         <Grid.RowDefinitions>
@@ -15,18 +15,9 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <Grid>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-            </Grid.ColumnDefinitions>
-            <StackPanel>
-                <local:UCJobInfo/>
-                <local:UCJobInfo/>
-            </StackPanel>
-            <StackPanel Grid.Column="1">
-                <local:UCJobInfo/>
-                <local:UCJobInfo/>
-            </StackPanel>
+            <WrapPanel
+                x:Name="jobList">
+            </WrapPanel>
         </Grid>
         <Grid Grid.Row="1">
             <Button x:Name="btnThemCongViec" Content="Thêm công việc" Width="200" Height="50" FontSize="20"

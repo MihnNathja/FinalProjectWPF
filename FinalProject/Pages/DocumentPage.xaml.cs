@@ -18,7 +18,7 @@ namespace FinalProject.Page
     /// <summary>
     /// Interaction logic for DocumentPage.xaml
     /// </summary>
-    public partial class DocumentPage : Page
+    public partial class DocumentPage : System.Windows.Controls.Page
     {
         public DocumentPage()
         {

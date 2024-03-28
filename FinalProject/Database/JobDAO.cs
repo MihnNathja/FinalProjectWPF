@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Controls;
+using System.Windows;
 
 namespace FinalProject.Database
 {
@@ -35,9 +36,9 @@ namespace FinalProject.Database
             {
                 UCJobInfo jobInfo = new UCJobInfo();
                 jobInfo.Name.Content = row["Name"].ToString();
-                jobInfo.CompanyName.Content = row["CompanyName"].ToString();
-                jobInfo.Salary.Content = row["Salary"].ToString();
-                jobInfo.Location.Content = row["Location"].ToString();
+                jobInfo.CompanyName.Text = row["CompanyName"].ToString();
+                jobInfo.Salary.Text = row["Salary"].ToString();
+                jobInfo.Location.Text = row["Location"].ToString();
                 list.Append(jobInfo);
             }
             return list;
