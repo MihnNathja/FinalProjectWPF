@@ -6,7 +6,9 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:FinalProject"
              mc:Ignorable="d" 
-             d:DesignHeight="155" d:DesignWidth="435">
+             d:DesignHeight="155" d:DesignWidth="435"
+             MinHeight="155"
+             MinWidth="435">
     <Border  BorderBrush="Black" BorderThickness="0.2"
             CornerRadius="5"
             Margin="5"

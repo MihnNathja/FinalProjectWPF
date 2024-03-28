@@ -15,9 +15,11 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <Grid>
-            <WrapPanel
+            <ScrollViewer VerticalScrollBarVisibility ="Visible">
+                <WrapPanel
                 x:Name="jobList">
-            </WrapPanel>
+                </WrapPanel>
+            </ScrollViewer>
         </Grid>
         <Grid Grid.Row="1">
             <Button x:Name="btnThemCongViec" Content="Thêm công việc" Width="200" Height="50" FontSize="20"

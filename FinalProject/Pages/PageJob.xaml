@@ -10,9 +10,11 @@
 
     <Grid>
         <Border Style="{DynamicResource page}">
-            <WrapPanel x:Name="pnlJob">
-                
-            </WrapPanel>
+            <ScrollViewer VerticalScrollBarVisibility="Auto">
+                <WrapPanel x:Name="pnlJob">
+
+                </WrapPanel>
+            </ScrollViewer>
         </Border>
     </Grid>
 </Page>
