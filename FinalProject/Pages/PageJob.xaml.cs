@@ -32,11 +32,11 @@ namespace FinalProject.Page
         }
         private void Page_Loaded(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Hello");
+
             List<UCJobInfo> jobList = jobDAO.LoadPage();
+            
             foreach (UCJobInfo job in jobList)
             {
-                MessageBox.Show(job.Name.Content.ToString());
                 pnlJob.Children.Add(job);
             }
         }

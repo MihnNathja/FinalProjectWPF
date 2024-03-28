@@ -29,17 +29,16 @@ namespace FinalProject
         private void btnThemCongViec_Click(object sender, RoutedEventArgs e)
         {
             CreateJob createJob = new CreateJob();
-            createJob.Show();
+            createJob.ShowDialog();
+            Page_Loaded(sender, e);
         }
-
         private void Page_Loaded(object sender, RoutedEventArgs e)
         {
+            jobList.Children.Clear();
             JobDAO jobDAO = new JobDAO();
             List<UCJobInfo> data = jobDAO.LoadPage();
-            MessageBox.Show(data.ToString()); 
             foreach (UCJobInfo job in data )
             {
-                MessageBox.Show(job.ToString());
                 jobList.Children.Add( job );
             }
         }

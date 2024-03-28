@@ -21,7 +21,8 @@ namespace FinalProject.Database
         public JobDAO() 
         {
             // mặc định, khi tạo đối tượng JobDAO, thì dữ liệu job sẽ được lấy tất cả từ database job xuống và truyền vào dataJob
-            this.dataJob = Load();
+
+            DataJob = Load();
         }
         public void Them(Job job)
         {
@@ -30,7 +31,9 @@ namespace FinalProject.Database
         }
         public List<UCJobInfo> LoadPage()
         {
+           
             List<UCJobInfo> list = new List<UCJobInfo>();
+            
             DataTable jobTable = DataJob;
             foreach (DataRow row in jobTable.Rows)
             {
@@ -39,7 +42,7 @@ namespace FinalProject.Database
                 jobInfo.CompanyName.Text = row["CompanyName"].ToString();
                 jobInfo.Salary.Text = row["Salary"].ToString();
                 jobInfo.Location.Text = row["Location"].ToString();
-                list.Append(jobInfo);
+                list.Add(jobInfo);
             }
             return list;
         }
