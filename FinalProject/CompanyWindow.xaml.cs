@@ -93,7 +93,7 @@ namespace FinalProject
 
         private void btnViecLam_Click(object sender, RoutedEventArgs e)
         {
-            //mainFarm.Navigate(new System.Uri("Page/PageJob.xaml", UriKind.RelativeOrAbsolute));
+            mainFarm.Navigate(new System.Uri("Pages/PageJob.xaml", UriKind.RelativeOrAbsolute));
             JobDAO dao = new JobDAO();
             List<UCJobInfo> list = dao.LoadPage();
             PageJob pageJob = new PageJob();
@@ -101,7 +101,7 @@ namespace FinalProject
             {
                 pageJob.pnlJob.Children.Add(info);
             }
-            mainFarm.Navigate(new System.Uri("Pages/CreatJobWindow.xaml", UriKind.RelativeOrAbsolute));
+            
         }
 
         private void btnSearch_Click(object sender, RoutedEventArgs e)

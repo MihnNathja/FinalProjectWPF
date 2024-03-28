@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 D:\UNIVERSITY\SOPHOMORE\TERM II\LẬP TRÌNH WINDOWS\FinalProjectWPF\FinalProject\App.xaml
-15-1874189295
+141013732660
 
-22-1057711332
+21-174665123
 228-168779794
-CompanyWindow.xaml;CreateJob.xaml;CVWindow.xaml;MainWindow.xaml;Pages\CreatJobWindow.xaml;Pages\CVPage.xaml;Pages\DocumentPage.xaml;Pages\PageJob.xaml;Style\MainStyle.xaml;Theme\Theme.xaml;User Control\MenuItem.xaml;User Control\UCCompanyInfo.xaml;User Control\UCJobInfo.xaml;User Control\UCPopUp.xaml;User Control\UCTextBox.xaml;
+CompanyWindow.xaml;CreateJob.xaml;CVWindow.xaml;Pages\CreatJobWindow.xaml;Pages\CVPage.xaml;Pages\DocumentPage.xaml;Pages\PageJob.xaml;Style\MainStyle.xaml;Theme\Theme.xaml;User Control\MenuItem.xaml;User Control\UCCompanyInfo.xaml;User Control\UCJobInfo.xaml;User Control\UCPopUp.xaml;User Control\UCTextBox.xaml;
 
-False
+True
 

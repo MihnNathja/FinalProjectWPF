@@ -24,7 +24,6 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Pages\PageJob.xaml.cs">
-
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="User Control\UCPopUp.xaml.cs">
@@ -54,9 +53,6 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="CVWindow.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Pages\CVPage.xaml">
