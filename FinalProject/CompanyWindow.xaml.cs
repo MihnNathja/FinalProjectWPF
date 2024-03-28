@@ -1,4 +1,6 @@
-﻿using System;
+﻿using FinalProject.Database;
+using FinalProject.Page;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,7 +12,9 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
+
 
 namespace FinalProject
 {
@@ -19,6 +23,7 @@ namespace FinalProject
     /// </summary>
     public partial class CompanyWindow : Window
     {
+        
         public CompanyWindow()
         {
             InitializeComponent();
@@ -78,7 +83,7 @@ namespace FinalProject
 
         private void btnCongTy_Click(object sender, RoutedEventArgs e)
         {
-            mainFarm.Navigate(new System.Uri("Page/CreatJobWindow.xaml", UriKind.RelativeOrAbsolute));
+            mainFarm.Navigate(new System.Uri("Pages/CreatJobWindow.xaml", UriKind.RelativeOrAbsolute));
         }
 
         private void popupControl_Loaded(object sender, RoutedEventArgs e)
@@ -88,8 +93,16 @@ namespace FinalProject
 
         private void btnViecLam_Click(object sender, RoutedEventArgs e)
         {
-            mainFarm.Navigate(new System.Uri("Page/PageJob.xaml", UriKind.RelativeOrAbsolute));
+            mainFarm.Navigate(new System.Uri("Pages/PageJob.xaml", UriKind.RelativeOrAbsolute));
+        }
+
+        private void btnSearch_Click(object sender, RoutedEventArgs e)
+        {
+            Filter filter = new Filter(cbbLocation.Text,cbbExperience.Text);
+            JobDAO jobDAO = new JobDAO();
+            jobDAO.DataJob =  jobDAO.Search(filter);
+            var dataTransfer = jobDAO.LoadPage();
+            mainFarm.Navigate(new System.Uri("Pages/CreatJobWindow.xaml", UriKind.RelativeOrAbsolute), dataTransfer);
         }
     }
-
 }

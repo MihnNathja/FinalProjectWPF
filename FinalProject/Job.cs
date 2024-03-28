@@ -15,10 +15,10 @@ namespace FinalProject
 
         public Job(string name, string companyName, string salary, string location) 
         {
-            Name = name;
-            CompanyName = companyName;
-            Salary = salary;
-            Location = location;
+            this.name = name;
+            this.companyName = companyName;
+            this.salary = salary;
+            this.location = location;
         }
 
         public string Name { get => name; set => name = value; }
