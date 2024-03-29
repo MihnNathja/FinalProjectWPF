@@ -13,6 +13,12 @@
     <Compile Update="CreateJob.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Pages\LoginPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="LoginWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Pages\CreatJobWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -24,6 +30,12 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Pages\PageJob.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\SignUpPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="SignUpCompany.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="User Control\UCPopUp.xaml.cs">
@@ -49,6 +61,12 @@
     <Page Update="CreateJob.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Pages\LoginPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="LoginWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Pages\CreatJobWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
@@ -62,6 +80,12 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Pages\PageJob.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\SignUpPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="SignUpCompany.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Style\MainStyle.xaml">
