@@ -28,17 +28,21 @@ namespace FinalProject
 
         private void btnDangNhap_Click(object sender, RoutedEventArgs e)
         {
-            if (UserName.Text == "FPT")
+            try
             {
-                Company company = new Company(UserName.Text, "test", "test", "test", "test");
-                CompanyWindow comp = new CompanyWindow(company);
-                comp.Show();
+                if(UserName.Text == "FPT")
+                {
+                    Company company = new Company(UserName.Text, "test", "test", "test", "test");
+                    CompanyWindow comp = new CompanyWindow(company);
+                    comp.Show();
+                }
+                else
+                {
+                    CompanyWindow comp = new CompanyWindow();
+                    comp.Show();
+                }
             }
-            else
-            {
-                CompanyWindow comp = new CompanyWindow();
-                comp.Show();
-            }
+            catch (Exception ex) { MessageBox.Show(ex.Message); }
         }
     }
 }

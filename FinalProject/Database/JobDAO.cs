@@ -51,7 +51,8 @@ namespace FinalProject.Database
         }
         public int GetNextID()
         {
-            return GetID() + 1;
+            string SQL = string.Format("SELECT MAX(ID) FROM Jobs");
+            return db.GetValue(SQL) + 1;
         }
         public List<UCJobInfo> LoadPage()
         {
