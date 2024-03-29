@@ -149,15 +149,11 @@
         <Setter Property="FontSize" Value="13"/>
         <Setter Property="Padding" Value="10 8"/>
         <Setter Property="VerticalAlignment" Value="Center"/>
-        
-
-
 
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="PasswordBox">
                     <Border x:Name="border" CornerRadius="5" Background="{TemplateBinding Background}" SnapsToDevicePixels="True" BorderThickness="1" BorderBrush="#e0e6ed">
-                        
 
                     </Border>
                     <ControlTemplate.Triggers>
@@ -168,6 +164,8 @@
                         <Trigger Property="IsFocused" Value="True">
                             <Setter Property="BorderBrush" Value="#4880ff" TargetName="border"/>
                         </Trigger>
+                        
+                        
                     </ControlTemplate.Triggers>
                 </ControlTemplate>
             </Setter.Value>

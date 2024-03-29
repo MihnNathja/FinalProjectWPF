@@ -32,11 +32,23 @@ namespace FinalProject.Page
         }
         private void Page_Loaded(object sender, RoutedEventArgs e)
         {
-
+            pnlJob.Children.Clear();
             List<UCJobInfo> jobList = jobDAO.LoadPage();
             
             foreach (UCJobInfo job in jobList)
             {
+                pnlJob.Children.Add(job);
+            }
+        }
+        public void search(string location, string experience)
+        {
+            Filter filter = new Filter(location, experience);
+            jobDAO.DataJob = jobDAO.Search(filter);
+            pnlJob.Children.Clear();
+            List<UCJobInfo> jobList = jobDAO.LoadPage();
+            foreach (UCJobInfo job in jobList)
+            {
+               
                 pnlJob.Children.Add(job);
             }
         }
