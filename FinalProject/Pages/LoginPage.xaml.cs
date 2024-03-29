@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FinalProject.Objects;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -27,14 +28,21 @@ namespace FinalProject
 
         private void btnDangNhap_Click(object sender, RoutedEventArgs e)
         {
-            
             try
             {
-                CompanyWindow comp = new CompanyWindow();
-                comp.Show();
+                if(UserName.Text == "FPT")
+                {
+                    Company company = new Company(UserName.Text, "test", "test", "test", "test");
+                    CompanyWindow comp = new CompanyWindow(company);
+                    comp.Show();
+                }
+                else
+                {
+                    CompanyWindow comp = new CompanyWindow();
+                    comp.Show();
+                }
             }
-            catch(Exception ex) { MessageBox.Show(ex.Message); }
-            
+            catch (Exception ex) { MessageBox.Show(ex.Message); }
         }
     }
 }

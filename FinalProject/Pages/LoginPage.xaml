@@ -13,9 +13,10 @@
             <TextBlock Text="Đăng Nhập" HorizontalAlignment="Center"
                  Margin="20" FontWeight="Black" FontSize="40"
                 />
-            <TextBlock Text="Tên đăng nhập" FontSize="20" FontWeight="Bold"
+            <TextBlock 
+                Text="Tên đăng nhập" FontSize="20" FontWeight="Bold"
                    Margin="10 "/>
-            <TextBox Width="350" />
+            <TextBox x:Name="UserName" Width="350" />
 
             <TextBlock Text="Mật Khẩu" FontSize="20" FontWeight="Bold"
                         Margin="10 "/>
