@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FinalProject
+namespace FinalProject.Objects
 {
     public class Filter
     {
@@ -15,7 +15,7 @@ namespace FinalProject
             location = string.Empty;
             experience = string.Empty;
         }
-        public Filter(string location, string experience) 
+        public Filter(string location, string experience)
         {
             this.location = location;
             this.experience = experience;

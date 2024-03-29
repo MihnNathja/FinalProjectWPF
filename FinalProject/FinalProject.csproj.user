@@ -47,9 +47,6 @@
     <Compile Update="User Control\UCJobInfo.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="User Control\MenuItem.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Update="User Control\UCTextBox.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -101,9 +98,6 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="User Control\UCJobInfo.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="User Control\MenuItem.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="User Control\UCTextBox.xaml">

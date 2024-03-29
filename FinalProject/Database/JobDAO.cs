@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Xml.Linq;
 using System.Windows.Controls.Primitives;
+using FinalProject.Objects;
 
 namespace FinalProject.Database
 {
