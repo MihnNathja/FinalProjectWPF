@@ -16,7 +16,7 @@
         </Grid.RowDefinitions>
         <Grid HorizontalAlignment="Center"
               VerticalAlignment="Center">
-            <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+            <ScrollViewer>
                 <WrapPanel x:Name="jobList">
 
                 </WrapPanel>
