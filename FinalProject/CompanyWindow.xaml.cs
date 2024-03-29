@@ -102,18 +102,27 @@ namespace FinalProject
 
         private void btnSearch_Click(object sender, RoutedEventArgs e)
         {
-            Filter filter = new Filter(cbbLocation.Text,cbbExperience.Text);
-            JobDAO jobDAO = new JobDAO();
-            jobDAO.DataJob =  jobDAO.Search(filter);
-            var dataTransfer = jobDAO.LoadPage();
+            //Filter filter = new Filter(cbbLocation.Text,cbbExperience.Text);
+            //JobDAO jobDAO = new JobDAO();
+            //jobDAO.DataJob =  jobDAO.Search(filter);
+            //var dataTransfer = jobDAO.LoadPage();
             
-            mainFarm.Navigate(new System.Uri("Pages/CreatJobWindow.xaml", UriKind.RelativeOrAbsolute), dataTransfer);
+           
+
+            PageJob pageJob = new PageJob();
+            pageJob.search(cbbLocation.Text, cbbExperience.Text);
+            mainFarm.Navigate(pageJob);
+        }
+
+        private void mainFarm_Navigated(object sender, NavigationEventArgs e)
+        {
+
         }
         // Hàm bên dưới vẫn đang trong quá trình phát triển
         // Mục đích: Chỉnh đối tượng nằm bên trong Frame để dùng được hàm search
-/*        private void mainFarm_LoadCompleted(object sender, NavigationEventArgs e)
-        {
-            MessageBox.Show(this.GetVisualChild(1).ToString());
-        }*/
+        /*        private void mainFarm_LoadCompleted(object sender, NavigationEventArgs e)
+                {
+                    MessageBox.Show(this.GetVisualChild(1).ToString());
+                }*/
     }
 }

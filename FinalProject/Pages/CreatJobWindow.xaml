@@ -14,13 +14,17 @@
             <RowDefinition Height="auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <Grid>
-            <ScrollViewer VerticalScrollBarVisibility ="Visible">
-                <WrapPanel
-                x:Name="jobList">
+        <Grid HorizontalAlignment="Center"
+              VerticalAlignment="Center">
+            <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+                <WrapPanel x:Name="jobList">
+
                 </WrapPanel>
             </ScrollViewer>
         </Grid>
+            
+
+       
         <Grid Grid.Row="1">
             <Button x:Name="btnThemCongViec" Content="Thêm công việc" Width="200" Height="50" FontSize="20"
                     VerticalAlignment="Bottom" HorizontalAlignment="Right"

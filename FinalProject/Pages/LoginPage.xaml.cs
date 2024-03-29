@@ -27,8 +27,14 @@ namespace FinalProject
 
         private void btnDangNhap_Click(object sender, RoutedEventArgs e)
         {
-            CompanyWindow comp = new CompanyWindow();
-            comp.Show();
+            
+            try
+            {
+                CompanyWindow comp = new CompanyWindow();
+                comp.Show();
+            }
+            catch(Exception ex) { MessageBox.Show(ex.Message); }
+            
         }
     }
 }

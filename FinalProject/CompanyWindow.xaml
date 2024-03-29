@@ -194,12 +194,15 @@
                         </Button>
                     </StackPanel>
                 </Grid>
-                <Frame Grid.Row="1"
-                       Name="mainFarm"
-                       NavigationUIVisibility="Hidden"
-                       >
-
-                </Frame>
+                <Grid Grid.Row="1">
+                    
+                    <Frame 
+                        Name="mainFarm"
+                        NavigationUIVisibility="Hidden" Navigated="mainFarm_Navigated"
+                        >
+                    </Frame>
+                   
+                </Grid>
             </Grid>
             
         </Grid>
