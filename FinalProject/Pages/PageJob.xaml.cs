@@ -1,4 +1,5 @@
 ﻿using FinalProject.Database;
+using FinalProject.Objects;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -37,6 +38,7 @@ namespace FinalProject.Page
             
             foreach (UCJobInfo job in jobList)
             {
+                job.btnDeleteJob.Visibility = Visibility.Hidden;
                 pnlJob.Children.Add(job);
             }
         }
