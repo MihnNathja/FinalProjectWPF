@@ -32,6 +32,7 @@ namespace FinalProject
             createJob.ShowDialog();
             Page_Loaded(sender, e);
         }
+
         private void Page_Loaded(object sender, RoutedEventArgs e)
         {
             jobList.Children.Clear();

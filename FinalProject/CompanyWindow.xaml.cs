@@ -28,6 +28,10 @@ namespace FinalProject
         {
             InitializeComponent();
         }
+        private void CompanyWindow_Loaded(object sender, RoutedEventArgs e)
+        {
+            mainFarm.Navigate(new System.Uri("Pages/PageJob.xaml", UriKind.RelativeOrAbsolute));
+        }
         private void ButtonOpenMenu_Click(object sender, RoutedEventArgs e)
         {
             ButtonCloseMenu.Visibility = Visibility.Visible;
@@ -102,7 +106,14 @@ namespace FinalProject
             JobDAO jobDAO = new JobDAO();
             jobDAO.DataJob =  jobDAO.Search(filter);
             var dataTransfer = jobDAO.LoadPage();
+            
             mainFarm.Navigate(new System.Uri("Pages/CreatJobWindow.xaml", UriKind.RelativeOrAbsolute), dataTransfer);
         }
+        // Hàm bên dưới vẫn đang trong quá trình phát triển
+        // Mục đích: Chỉnh đối tượng nằm bên trong Frame để dùng được hàm search
+/*        private void mainFarm_LoadCompleted(object sender, NavigationEventArgs e)
+        {
+            MessageBox.Show(this.GetVisualChild(1).ToString());
+        }*/
     }
 }

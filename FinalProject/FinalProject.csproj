@@ -8,6 +8,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Image\btnDelete.png" />
+    <None Remove="Image\company_cover.jpg" />
+    <None Remove="Image\favourite_icon.png" />
+    <None Remove="Image\logosac-01.png" />
     <None Remove="Image\user.png" />
   </ItemGroup>
 
@@ -17,6 +21,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Image\btnDelete.png" />
+    <Resource Include="Image\company_cover.jpg" />
+    <Resource Include="Image\favourite_icon.png" />
+    <Resource Include="Image\logosac-01.png" />
     <Resource Include="Image\user.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>

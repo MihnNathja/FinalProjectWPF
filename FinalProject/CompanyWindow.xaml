@@ -6,7 +6,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FinalProject"
         mc:Ignorable="d"
-        Title="CompanyWindow" Height="800" Width="1200">
+        WindowState = "Maximized"
+        Title="CompanyWindow" 
+        Height="800" Width="1200"
+        Loaded="CompanyWindow_Loaded">
     <Window.Resources>
         <Storyboard x:Key="OpenMenu">
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="GridMenu">
@@ -191,13 +194,8 @@
                         </Button>
                     </StackPanel>
                 </Grid>
-                <!--Suggest Idea Button-->
-                <Grid Grid.Row="1">
-                       <Button></Button>
-                </Grid>
                 <Frame Grid.Row="1"
                        Name="mainFarm"
-                       
                        NavigationUIVisibility="Hidden"
                        >
 
