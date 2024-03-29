@@ -8,6 +8,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Controls;
 using System.Windows;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
+using System.Xml.Linq;
+using System.Windows.Controls.Primitives;
 
 namespace FinalProject.Database
 {
@@ -26,8 +30,27 @@ namespace FinalProject.Database
         }
         public void Them(Job job)
         {
-            string SQL = string.Format("INSERT INTO Jobs(Name, CompanyName, Salary, Location) VALUES ('{0}','{1}', '{2}', '{3}')", job.Name, job.CompanyName, job.Salary, job.Location);
+            string SQL = string.Format("INSERT INTO Jobs(ID, Name, CompanyName, Salary, Location) VALUES ('{0}','{1}', '{2}', '{3}', '{4}')", job.Id, job.Name, job.CompanyName, job.Salary, job.Location);
             db.ThucThi(SQL);
+        }
+        public void Xoa(Job job)
+        {
+            string SQL = string.Format("DELETE FROM Jobs WHERE ID = {0}", job.Id);
+            db.ThucThi(SQL);
+        }
+        public void Sua(Job job)
+        {
+            string SQL = string.Format("UPDATE Jobs SET Name = '{1}', CompanyName = '{2}', Salary = '{3}', Location = '{4}' WHERE ID = {0}", job.Id, job.Name, job.CompanyName, job.Salary, job.Location);
+            db.ThucThi(SQL);
+        }
+        public int GetID()
+        {
+            string SQL = string.Format("SELECT COUNT(ID) FROM Jobs");
+            return db.GetValue(SQL);
+        }
+        public int GetNextID()
+        {
+            return GetID() + 1;
         }
         public List<UCJobInfo> LoadPage()
         {
@@ -38,10 +61,14 @@ namespace FinalProject.Database
             foreach (DataRow row in jobTable.Rows)
             {
                 UCJobInfo jobInfo = new UCJobInfo();
+                jobInfo.ID = Convert.ToInt32(row["ID"]);
                 jobInfo.Name.Content = row["Name"].ToString();
                 jobInfo.CompanyName.Text = row["CompanyName"].ToString();
                 jobInfo.Salary.Text = row["Salary"].ToString();
                 jobInfo.Location.Text = row["Location"].ToString();
+                //ImageBrush imageBrush = new ImageBrush();
+                //imageBrush.ImageSource = new BitmapImage(new Uri("pack://application:,,,/FinalProjectWPF;Image/logosac-01.png", UriKind.Absolute));
+                //jobInfo.Logo.Fill = imageBrush;
                 list.Add(jobInfo);
             }
             return list;
@@ -51,9 +78,10 @@ namespace FinalProject.Database
             string SQL = string.Format("SELECT *FROM Jobs");
             return db.Load(SQL);
         }
+
         public DataTable Search(Filter filter)
         {
-            // Phần bên dưới là duyệt từng property trong filter
+            // Phần bên dưới là duyệt từng property trong filter, sau này sẽ có thể sử dụng
             /*            string values = "";
                         Type type = filter.GetType();
                         foreach (PropertyInfo property in type.GetProperties())

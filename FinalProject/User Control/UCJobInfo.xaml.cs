@@ -22,6 +22,7 @@ namespace FinalProject
     public partial class UCJobInfo : UserControl, INotifyPropertyChanged
     {
         private string url;
+        int id;
         public UCJobInfo()
         {
             InitializeComponent();
@@ -36,6 +37,8 @@ namespace FinalProject
                 OnPropertyChange(Url);
             }
         }
+
+        public int ID { get => id; set => id = value; }
 
         public event PropertyChangedEventHandler? PropertyChanged;
 

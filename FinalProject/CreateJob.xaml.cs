@@ -28,7 +28,7 @@ namespace FinalProject
 
         private void btnPost_Click(object sender, RoutedEventArgs e)
         {
-            Job job = new Job(txtbName.Text,txtbCompanyName.Text,cbbSalary.Text,txtbLocation.Text);
+            Job job = new Job(jobDAO.GetNextID(),txtbName.Text,txtbCompanyName.Text,cbbSalary.Text,txtbLocation.Text);
             jobDAO.Them(job);
         }
     }

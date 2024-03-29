@@ -39,6 +39,7 @@ namespace FinalProject
             List<UCJobInfo> data = jobDAO.LoadPage();
             foreach (UCJobInfo job in data )
             {
+                
                 jobList.Children.Add( job );
             }
         }
