@@ -35,6 +35,9 @@
     <Compile Update="Pages\SignUpPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="SignUpCompany.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="User Control\UCPopUp.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -80,6 +83,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Pages\SignUpPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="SignUpCompany.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Style\MainStyle.xaml">
