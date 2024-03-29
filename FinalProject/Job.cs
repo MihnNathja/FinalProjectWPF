@@ -14,6 +14,10 @@ namespace FinalProject
         string salary;
         string location;
 
+        public Job(int id)
+        {
+            this.id = id;
+        }
         public Job(int id, string name, string companyName, string salary, string location)
         {
             this.id = id;

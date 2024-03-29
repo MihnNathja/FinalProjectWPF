@@ -13,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using FinalProject.Database;
 
 namespace FinalProject
 {
@@ -48,6 +49,19 @@ namespace FinalProject
             {
                 PropertyChanged(this, new PropertyChangedEventArgs(property));
             }
+        }
+
+        private void btnDeleteJob_Click(object sender, RoutedEventArgs e)
+        {
+            JobDAO jobDAO = new JobDAO();
+            Job job = new Job(this.ID);
+            jobDAO.Xoa(job);
+        }
+
+        private void UCJobInfo_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            CreateJob createJob = new CreateJob(this);
+            createJob.ShowDialog();
         }
     }
 }

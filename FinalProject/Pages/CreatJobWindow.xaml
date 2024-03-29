@@ -26,7 +26,6 @@
                     VerticalAlignment="Bottom" HorizontalAlignment="Right"
                     Margin="20"
                     Click="btnThemCongViec_Click"/>
-
         </Grid>
        
     </Grid>
