@@ -114,8 +114,7 @@ namespace FinalProject
             JobDAO jobDAO = new JobDAO();
             jobDAO.DataJob =  jobDAO.Search(filter);
             var dataTransfer = jobDAO.LoadPage();
-            
-            mainFarm.Navigate(new System.Uri("Pages/CreatJobWindow.xaml", UriKind.RelativeOrAbsolute), dataTransfer);
+            mainFarm.NavigationService.Navigate(new Uri("Pages/PageJob.xaml", UriKind.Relative), dataTransfer);
         }
         // Hàm bên dưới vẫn đang trong quá trình phát triển
         // Mục đích: Chỉnh đối tượng nằm bên trong Frame để dùng được hàm search
