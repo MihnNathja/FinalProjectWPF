@@ -1,4 +1,5 @@
 ﻿using FinalProject.Database;
+using FinalProject.Objects;
 using FinalProject.Page;
 using System;
 using System.Collections.Generic;
@@ -23,10 +24,17 @@ namespace FinalProject
     /// </summary>
     public partial class CompanyWindow : Window
     {
-        
+        // bên dưới sau này sẽ chuyển thành user, lớp cha của company và employee
+        Company company = new Company();
         public CompanyWindow()
         {
             InitializeComponent();
+        }
+        public CompanyWindow(Company company)
+        {
+            InitializeComponent();
+            this.company = company;
+            txtbName.Text = company.CompanyName;
         }
         private void CompanyWindow_Loaded(object sender, RoutedEventArgs e)
         {

@@ -82,8 +82,13 @@
 
 
                         </Border>
-                        <TextBlock Text="Name" Foreground="White" FontSize="22"
-                                   FontWeight="SemiBold" DockPanel.Dock="Top" TextAlignment="Center" Margin="5 25 0 10"/>
+                        <TextBlock 
+                            x:Name="txtbName"
+                            Foreground="White" FontSize="22"
+                            FontWeight="SemiBold" 
+                            DockPanel.Dock="Top" 
+                            TextAlignment="Center" 
+                            Margin="5 25 0 10"/>
 
                         <Separator Margin="25" DockPanel.Dock="Top" Height="1" Background="White"/>
 

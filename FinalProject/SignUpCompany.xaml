@@ -22,19 +22,19 @@
                 </Grid.ColumnDefinitions>
                 <StackPanel Margin="10">
                     <TextBlock Text="Tên Công Ty" FontWeight="Bold" FontSize="20"/>
-                    <TextBox x:Name="txtTenCongTy" Margin="10 5" />
+                    <TextBox x:Name="txtCompanyName" Margin="10 5" />
                     
                     <TextBlock Text="Mã số thuế" FontWeight="Bold" FontSize="20"/>
                     <TextBox x:Name="txtMST" Margin="10 5" />
 
                     <TextBlock Text="Địa chỉ" FontWeight="Bold" FontSize="20"/>
-                    <TextBox x:Name="txtDiaChi" Margin="10 5" />
+                    <TextBox x:Name="txtLocationCompany" Margin="10 5" />
 
                     <TextBlock Text="Người đại diện" FontWeight="Bold" FontSize="20"/>
-                    <TextBox x:Name="txtNguoiDaiDien" Margin="10 5" />
+                    <TextBox x:Name="txtcompanyRepresentative" Margin="10 5" />
 
                     <TextBlock Text="Điện thoại" FontWeight="Bold" FontSize="20"/>
-                    <TextBox x:Name="txtSDT" Margin="10 5" />
+                    <TextBox x:Name="txtPhoneNumber" Margin="10 5" />
 
                     
 
