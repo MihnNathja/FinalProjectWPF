@@ -63,7 +63,7 @@
                 <TextBox  Margin="10 5" />
 
                 <StackPanel Orientation="Horizontal" Margin="0 50">
-                    <Button x:Name="btnSave" Content="Lưu" Width="50" Margin="10 0"></Button>
+                    <Button x:Name="btnSave" Content="Lưu" Width="50" Margin="10 0" Click="btnSave_Click"></Button>
                     <Button x:Name="btnPost" Content="Đăng tin" Width="70"  Margin="50 0" Click="btnPost_Click"></Button>
                 </StackPanel>
 
