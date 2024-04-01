@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\UNIVERSITY\\SOPHOMORE\\TERM II\\LẬP TRÌNH WINDOWS\\FinalProjectWPF\\FinalProject\\FinalProject.csproj": {}
+    "C:\\VUONG_LAP_QUE\\Nam 2\\HK II\\Window\\FinalProjectWPF\\FinalProject\\FinalProject.csproj": {}
   },
   "projects": {
-    "D:\\UNIVERSITY\\SOPHOMORE\\TERM II\\LẬP TRÌNH WINDOWS\\FinalProjectWPF\\FinalProject\\FinalProject.csproj": {
+    "C:\\VUONG_LAP_QUE\\Nam 2\\HK II\\Window\\FinalProjectWPF\\FinalProject\\FinalProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\UNIVERSITY\\SOPHOMORE\\TERM II\\LẬP TRÌNH WINDOWS\\FinalProjectWPF\\FinalProject\\FinalProject.csproj",
+        "projectUniqueName": "C:\\VUONG_LAP_QUE\\Nam 2\\HK II\\Window\\FinalProjectWPF\\FinalProject\\FinalProject.csproj",
         "projectName": "FinalProject",
-        "projectPath": "D:\\UNIVERSITY\\SOPHOMORE\\TERM II\\LẬP TRÌNH WINDOWS\\FinalProjectWPF\\FinalProject\\FinalProject.csproj",
-        "packagesPath": "C:\\Users\\Ad\\.nuget\\packages\\",
-        "outputPath": "D:\\UNIVERSITY\\SOPHOMORE\\TERM II\\LẬP TRÌNH WINDOWS\\FinalProjectWPF\\FinalProject\\obj\\",
+        "projectPath": "C:\\VUONG_LAP_QUE\\Nam 2\\HK II\\Window\\FinalProjectWPF\\FinalProject\\FinalProject.csproj",
+        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
+        "outputPath": "C:\\VUONG_LAP_QUE\\Nam 2\\HK II\\Window\\FinalProjectWPF\\FinalProject\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Ad\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -72,7 +68,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

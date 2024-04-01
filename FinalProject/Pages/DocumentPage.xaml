@@ -7,7 +7,7 @@
       mc:Ignorable="d" 
       d:DesignHeight="700" d:DesignWidth="800"
       Title="DocumentPage">
-    <Border Style="{StaticResource page}">
+    <Border Style="{StaticResource page}" >
         <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition Height="1*"/>
@@ -16,7 +16,7 @@
             </Grid.RowDefinitions>
             <TextBlock Text="Company Name" VerticalAlignment="Center" HorizontalAlignment="Center"
                        FontSize="30" FontWeight="Black"/>
-            <Grid Grid.Row="1">
+            <Grid Grid.Row="1" Margin="20">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition/>
                     <ColumnDefinition/>

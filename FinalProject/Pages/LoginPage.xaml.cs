@@ -28,21 +28,19 @@ namespace FinalProject
 
         private void btnDangNhap_Click(object sender, RoutedEventArgs e)
         {
-            try
+           
+
+            if(rdCompany.IsChecked == true)
             {
-                if(UserName.Text == "FPT")
-                {
-                    Company company = new Company(UserName.Text, "test", "test", "test", "test");
-                    CompanyWindow comp = new CompanyWindow(company);
-                    comp.Show();
-                }
-                else
-                {
-                    CompanyWindow comp = new CompanyWindow();
-                    comp.Show();
-                }
+                CompanyWindow comp = new CompanyWindow();
+                comp.Show();
             }
-            catch (Exception ex) { MessageBox.Show(ex.Message); }
+
+            if (rdJobApplicant.IsChecked == true)
+            {
+                JobApplicantWindow job = new JobApplicantWindow();
+                job.Show();
+            }
         }
     }
 }

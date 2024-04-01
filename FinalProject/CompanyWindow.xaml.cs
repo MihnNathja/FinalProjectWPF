@@ -126,6 +126,12 @@ namespace FinalProject
         {
 
         }
+
+        private void btnHoSo_Click(object sender, RoutedEventArgs e)
+        {
+
+            mainFarm.Navigate(new System.Uri("Pages/DocumentPage.xaml", UriKind.RelativeOrAbsolute));
+        }
         // Hàm bên dưới vẫn đang trong quá trình phát triển
         // Mục đích: Chỉnh đối tượng nằm bên trong Frame để dùng được hàm search
         /*        private void mainFarm_LoadCompleted(object sender, NavigationEventArgs e)

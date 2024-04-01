@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:FinalProject"
         mc:Ignorable="d"
         Title="CVWindow" Height="900" Width="650">
-    <Grid>
+    <Grid Margin="10">
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
             <ColumnDefinition/>
@@ -29,36 +29,37 @@
                         </Ellipse.Fill>
                     </Ellipse>
                 </Border>
-                <TextBox Text="Họ và tên" FontSize="40" Margin="10" HorizontalAlignment="Center">
-                </TextBox>
-                <TextBox Text="Vị trí ứng tuyển" FontSize="20" HorizontalAlignment="Center" Margin="10">
+                <TextBlock Text="Họ và tên" FontSize="40" Margin="10" HorizontalAlignment="Center"
+                           FontWeight="Bold">
+                </TextBlock>
+                <TextBlock Text="Vị trí ứng tuyển" FontSize="20" HorizontalAlignment="Center" >
                     
-                </TextBox>
+                </TextBlock>
                 
             </StackPanel>
             <StackPanel Grid.Row="1">
-                <TextBlock Text="THÔNG TIN CÁ NHÂN" FontSize="20"/>
-                <TextBox Text="DD/MM/YY" FontSize="15" Margin="20 5"/>
-                <TextBox Text="Nam/Nữ" FontSize="15" Margin="20 5"/>
-                <TextBox Text="SĐT" FontSize="15" Margin="20 5"/>
-                <TextBox Text="Email" FontSize="15" Margin="20 5"/>
-                <TextBox Text="Địa chỉ" FontSize="15" Margin="20 5"/>
+                <TextBlock Text="THÔNG TIN CÁ NHÂN" FontSize="20" FontWeight="Bold"/>
+                <TextBox Text="DD/MM/YY" FontSize="15" Margin="20 3"/>
+                <TextBox Text="Nam/Nữ" FontSize="15" Margin="20 3"/>
+                <TextBox Text="SĐT" FontSize="15" Margin="20 3"/>
+                <TextBox Text="Email" FontSize="15" Margin="20 3"/>
+                <TextBox Text="Địa chỉ" FontSize="15" Margin="20 3"/>
             </StackPanel>
             <StackPanel Grid.Row="2">
-                <TextBlock  Text="MỤC TIÊU NGHỀ NGHIỆP" FontSize="20"/>
-                <TextBox Text="Mục tiêu ngắn hạn/ dài hạn" Height="50" Margin="5"/>
+                <TextBlock  Text="MỤC TIÊU NGHỀ NGHIỆP" FontSize="20" FontWeight="Bold"/>
+                <TextBox Text="Mục tiêu ngắn hạn/ dài hạn" Height="40" Margin="5"/>
             </StackPanel>
             <StackPanel Grid.Row="3">
-                <TextBlock  Text="KỸ NĂNG" FontSize="20"/>
-                <TextBox Text="Tên kỹ năng" Height="50" Margin="5"/>
+                <TextBlock  Text="KỸ NĂNG" FontSize="20" FontWeight="Bold"/>
+                <TextBox Text="Tên kỹ năng" Height="40" Margin="5"/>
             </StackPanel>
             <StackPanel Grid.Row="4">
-                <TextBlock  Text="SỞ THÍCH" FontSize="20"/>
-                <TextBox Text="Tên sở thích" Height="50" Margin="5"/>
+                <TextBlock  Text="SỞ THÍCH" FontSize="20" FontWeight="Bold"/>
+                <TextBox Text="Tên sở thích" Height="40" Margin="5"/>
             </StackPanel>
             <StackPanel Grid.Row="5">
-                <TextBlock  Text="NGƯỜI GIỚI THIỆU" FontSize="20"/>
-                <TextBox Text="Thông tin người giới thiệu" Height="50" Margin="5"/>
+                <TextBlock  Text="NGƯỜI GIỚI THIỆU (NẾU CÓ)" FontSize="20" FontWeight="Bold"/>
+                <TextBox Text="Thông tin người giới thiệu" Height="40" Margin="5"/>
             </StackPanel>
         </Grid>
         <Grid Grid.Column="1">
@@ -69,31 +70,37 @@
                 <RowDefinition/>
                 <RowDefinition/>
                 <RowDefinition Height="200"/>
+                
+
             </Grid.RowDefinitions>
             <StackPanel >
-                <TextBlock  Text="HOC VẤN" FontSize="20"/>
+                <TextBlock  Text="HOC VẤN" FontSize="20" FontWeight="Bold"/>
                 <TextBox Text="Mô tả quá trình học tập" Height="110" Margin="5"/>
             </StackPanel>
             <StackPanel Grid.Row="1">
-                <TextBlock  Text="KINH NGHIỆM LÀM VIỆC" FontSize="20"/>
+                <TextBlock  Text="KINH NGHIỆM LÀM VIỆC" FontSize="20" FontWeight="Bold"/>
                 <TextBox Text="Mô tả quá trình làm việc" Height="110" Margin="5"/>
             </StackPanel>
             <StackPanel Grid.Row="2">
-                <TextBlock  Text="HOẠT ĐỘNG" FontSize="20"/>
-                <TextBox Text="Mô tả quá trình hoạt động" Height="110" Margin="5"/>
+                <TextBlock  Text="HOẠT ĐỘNG" FontSize="20" FontWeight="Bold"/>
+                <TextBox Text="Mô tả quá trình hoạt động" Height="85" Margin="5"/>
             </StackPanel>
             <StackPanel Grid.Row="3">
-                <TextBlock  Text="CHỨNG CHỈ" FontSize="20"/>
-                <TextBox Text="Tên chứng chỉ" Height="110" Margin="5"/>
+                <TextBlock  Text="CHỨNG CHỈ" FontSize="20" FontWeight="Bold"/>
+                <TextBox Text="Tên chứng chỉ" Height="85" Margin="5"/>
             </StackPanel>
             <StackPanel Grid.Row="4">
-                <TextBlock  Text="DANH HIỆU VÀ GIẢI THƯỞNG" FontSize="20"/>
-                <TextBox Text="Tên giải thưởng" Height="110" Margin="5"/>
+                <TextBlock  Text="DANH HIỆU VÀ GIẢI THƯỞNG" FontSize="20" FontWeight="Bold"/>
+                <TextBox Text="Tên giải thưởng" Height="85" Margin="5"/>
             </StackPanel>
             <StackPanel Grid.Row="5">
-                <TextBlock  Text="THÔNG TIN THÊM" FontSize="20"/>
+                <TextBlock  Text="THÔNG TIN THÊM" FontSize="20" FontWeight="Bold"/>
                 <TextBox Text="Thông tin thêm" Height="110" Margin="5"/>
+                <Button Content="Lưu" Width="100" FontSize="20" Margin="10">
+                    
+                </Button>
             </StackPanel>
+            
         </Grid>
     </Grid>
 </Window>

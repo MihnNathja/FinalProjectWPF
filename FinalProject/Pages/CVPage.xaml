@@ -16,7 +16,7 @@
             </Grid.RowDefinitions>
             <TextBlock Text="CV đã tạo" FontSize="30" Margin="10">
             </TextBlock>
-            <Button Content="Tạo mới" Width="150" HorizontalAlignment="Right" Margin="10" FontSize="20">
+            <Button Content="Tạo mới" Width="150" HorizontalAlignment="Right" Margin="10" FontSize="20" Click="btnCreate_Click">
                     
             </Button>
         </Grid>
