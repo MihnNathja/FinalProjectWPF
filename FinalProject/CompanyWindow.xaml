@@ -105,7 +105,7 @@
                             </Button>
                             <Button Style="{StaticResource menuButton}"
                                     MouseEnter="btnHoSo_MouseEnter" 
-                                    MouseLeave="btnHoSo_MouseLeave"
+                                    MouseLeave="btnHoSo_MouseLeave" Click="btnHoSo_Click"
                                     >
                                 <StackPanel Orientation="Horizontal">
                                     <Icon:PackIconMaterial Kind="FileDocument" Style="{StaticResource menuButtonIcon}"/>
