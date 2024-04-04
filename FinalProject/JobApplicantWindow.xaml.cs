@@ -102,7 +102,8 @@ namespace FinalProject
 
         private void btnViecLam_Click(object sender, RoutedEventArgs e)
         {
-            mainFarm.Navigate(new System.Uri("Pages/PageJob.xaml", UriKind.RelativeOrAbsolute));
+            PageJob pageJob = new PageJob();
+            mainFarm.Navigate(pageJob);
         }
 
         private void btnSearch_Click(object sender, RoutedEventArgs e)
@@ -128,6 +129,12 @@ namespace FinalProject
         {
 
             mainFarm.Navigate(new System.Uri("Pages/CVPage.xaml", UriKind.RelativeOrAbsolute));
+        }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            PageJob pageJob = new PageJob();
+            mainFarm.Navigate(pageJob);
         }
         // Hàm bên dưới vẫn đang trong quá trình phát triển
         // Mục đích: Chỉnh đối tượng nằm bên trong Frame để dùng được hàm search

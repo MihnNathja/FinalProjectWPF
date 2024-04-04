@@ -6,30 +6,28 @@ using System.Threading.Tasks;
 
 namespace FinalProject.Objects
 {
-    public class Company
+    public class Company : User
     {
-        string companyName;
         string mst;
         string locationCompany;
         string companyRepresentative;
         string phoneNumber;
 
-        public Company() {}
-        public Company(string companyName, string mst, string locationCompany, string companyRepresentative, string phoneNumber)
+        public Company() 
         {
-            this.companyName = companyName;
+            Type = "Company";
+        }
+        public Company(string userName, string password, string companyName, string mst, string locationCompany, string companyRepresentative, string phoneNumber)
+        : base (userName, password, companyName, phoneNumber, locationCompany)
+        {
+            Type = "Company";
             this.mst = mst;
             this.locationCompany = locationCompany;
             this.companyRepresentative = companyRepresentative;
-            this.phoneNumber = phoneNumber;
         }
 
-        public string CompanyName { get => companyName; set => companyName = value; }
         public string Mst { get => mst; set => mst = value; }
-        public string LocationCompany { get => locationCompany; set => locationCompany = value; }
         public string CompanyRepresentative { get => companyRepresentative; set => companyRepresentative = value; }
-        public string PhoneNumber { get => phoneNumber; set => phoneNumber = value; }
-
 
     }
 }

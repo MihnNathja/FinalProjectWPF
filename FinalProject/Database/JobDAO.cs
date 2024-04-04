@@ -13,11 +13,13 @@ using System.Windows.Media.Imaging;
 using System.Xml.Linq;
 using System.Windows.Controls.Primitives;
 using FinalProject.Objects;
+using System.Runtime;
 
 namespace FinalProject.Database
 {
     internal class JobDAO
     {
+        Utility utility = new Utility();
         DBConnections db = new DBConnections();
         DataTable dataJob;
 
@@ -44,15 +46,23 @@ namespace FinalProject.Database
             string SQL = string.Format("UPDATE Jobs SET Name = '{1}', CompanyName = '{2}', Salary = '{3}', Location = '{4}' WHERE ID = {0}", job.Id, job.Name, job.CompanyName, job.Salary, job.Location);
             db.ThucThi(SQL);
         }
-        public int GetID()
-        {
-            string SQL = string.Format("SELECT COUNT(ID) FROM Jobs");
-            return db.GetValue(SQL);
-        }
-        public int GetNextID()
+        public string GetID()
         {
             string SQL = string.Format("SELECT MAX(ID) FROM Jobs");
-            return db.GetValue(SQL) + 1;
+            return db.GetValue(SQL).ToString();
+        }
+        public string GetNextID()
+        {
+            return GetID() + 1;
+        }
+        public Job GetObject(string id)
+        {
+            string SQL = string.Format("SELECT * FROM Jobs WHERE ID = '{0}'", id);
+            DataTable data = db.Load(SQL);
+            Job job = new Job(id);
+            DataRow row = data.Rows[0];
+            Utility.SetItemFromRow(job, row);
+            return job;
         }
         public List<UCJobInfo> LoadPage()
         {
@@ -63,7 +73,7 @@ namespace FinalProject.Database
             foreach (DataRow row in jobTable.Rows)
             {
                 UCJobInfo jobInfo = new UCJobInfo();
-                jobInfo.ID = Convert.ToInt32(row["ID"]);
+                jobInfo.ID = row["ID"].ToString();
                 jobInfo.Name.Content = row["Name"].ToString();
                 jobInfo.CompanyName.Text = row["CompanyName"].ToString();
                 jobInfo.Salary.Text = row["Salary"].ToString();

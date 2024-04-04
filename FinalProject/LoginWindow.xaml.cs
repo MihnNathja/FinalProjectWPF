@@ -37,7 +37,7 @@ namespace FinalProject
         private void btnDangKyDN_Click(object sender, RoutedEventArgs e)
         {
             SignUpCompany signUpCompany = new SignUpCompany();
-            signUpCompany.Show();
+            signUpCompany.ShowDialog();
         }
 
         private void btnDangKyUV_Click(object sender, RoutedEventArgs e)

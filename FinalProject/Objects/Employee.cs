@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FinalProject.Objects
 {
-    internal class Employee
+    internal class Employee : User
     {
     }
 }

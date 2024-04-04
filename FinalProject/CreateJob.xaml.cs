@@ -22,9 +22,9 @@ namespace FinalProject
     public partial class CreateJob : Window
     {
         JobDAO jobDAO = new JobDAO();
-        int idJob;
+        string idJob;
 
-        public int IdJob { get => idJob; set => idJob = value; }
+        public string IdJob { get => idJob; set => idJob = value; }
 
         public CreateJob()
         {

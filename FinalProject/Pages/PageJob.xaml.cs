@@ -50,7 +50,6 @@ namespace FinalProject.Page
             List<UCJobInfo> jobList = jobDAO.LoadPage();
             foreach (UCJobInfo job in jobList)
             {
-               
                 pnlJob.Children.Add(job);
             }
         }
