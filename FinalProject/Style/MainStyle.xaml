@@ -272,7 +272,7 @@
                                 <Border
                             CornerRadius="20"
                             x:Name="DropDownBorder"
-                            Background="Gray"
+                            Background="#ffffff"
                             BorderThickness="1"
                             BorderBrush="#4880ff"
                             />

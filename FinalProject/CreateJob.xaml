@@ -46,11 +46,6 @@
 
                 <TextBlock Text="Mô tả công việc" FontWeight="Bold"/>
                 <TextBox  Margin="10 5" Height="100"/>
-
-
-
-
-
             </StackPanel>
             <StackPanel Grid.Column="1" Margin="5 10 10 10">
                 <TextBlock Text="Yêu cầu" FontWeight="Bold"/>

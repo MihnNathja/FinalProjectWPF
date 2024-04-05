@@ -5,7 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FinalProject"
         mc:Ignorable="d"
-        Title="CVWindow" Height="900" Width="650">
+        Title="CVWindow" Height="1080" Width="1920"
+        WindowStartupLocation="CenterScreen"
+        WindowState="Maximized">
     <Grid Margin="10">
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
@@ -13,12 +15,12 @@
         </Grid.ColumnDefinitions>
         <Grid>
             <Grid.RowDefinitions>
-                <RowDefinition Height="300"/>
-                <RowDefinition Height="250"/>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
+                <RowDefinition Height="2.5*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="0.7*"/>
+                <RowDefinition Height="0.7*"/>
+                <RowDefinition Height="0.7*"/>
+                <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
             <StackPanel>
                 <Border Width="150" Height="150" Margin="10" Background="White" CornerRadius="100"
@@ -29,7 +31,7 @@
                         </Ellipse.Fill>
                     </Ellipse>
                 </Border>
-                <TextBlock Text="Họ và tên" FontSize="40" Margin="10" HorizontalAlignment="Center"
+                <TextBlock Text="Họ và tên" FontSize="40" HorizontalAlignment="Center"
                            FontWeight="Bold">
                 </TextBlock>
                 <TextBlock Text="Vị trí ứng tuyển" FontSize="20" HorizontalAlignment="Center" >
@@ -39,8 +41,11 @@
             </StackPanel>
             <StackPanel Grid.Row="1">
                 <TextBlock Text="THÔNG TIN CÁ NHÂN" FontSize="20" FontWeight="Bold"/>
-                <TextBox Text="DD/MM/YY" FontSize="15" Margin="20 3"/>
-                <TextBox Text="Nam/Nữ" FontSize="15" Margin="20 3"/>
+                <DatePicker Text="DD/MM/YY" FontSize="15" Margin="20 3"/>
+                <StackPanel Orientation="Horizontal" Margin="20">
+                    <RadioButton Content="Nam"/>
+                    <RadioButton Content="Nữ" Margin="20 0 0 0"/>
+                </StackPanel>
                 <TextBox Text="SĐT" FontSize="15" Margin="20 3"/>
                 <TextBox Text="Email" FontSize="15" Margin="20 3"/>
                 <TextBox Text="Địa chỉ" FontSize="15" Margin="20 3"/>
