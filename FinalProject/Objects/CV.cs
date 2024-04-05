@@ -28,7 +28,7 @@ namespace FinalProject.Objects
 
         public CV() { }
 
-        public CV(string fullName, string positionApplied, string gender, DateTime dateOfBirth, string phoneNumber, string email, string address, string objectiveDescription, string skillName, string interestName, string referenceInformation, string educationDescription, string experienceDescription, string activityDescription, string certificationName, string awardName, string additionalInfoDescription, string fullName, string positionApplied, string gender, DateTime dateOfBirth1, string phoneNumber, string email, string address, string objectiveDescription, string skillName, string interestName, string referenceInformation, string educationDescription, string experienceDescription, string activityDescription, string certificationName, string awardName, string additionalInfoDescription)
+        public CV(string fullName, string positionApplied, string gender, DateTime dateOfBirth, string phoneNumber, string email, string address, string objectiveDescription, string skillName, string interestName, string referenceInformation, string educationDescription, string experienceDescription, string activityDescription, string certificationName, string awardName, string additionalInfoDescription)
         {
             FullName = fullName;
             PositionApplied = positionApplied;
@@ -47,23 +47,7 @@ namespace FinalProject.Objects
             CertificationName = certificationName;
             AwardName = awardName;
             AdditionalInfoDescription = additionalInfoDescription;
-            FullName = fullName;
-            PositionApplied = positionApplied;
-            Gender = gender;
-            DateOfBirth1 = dateOfBirth1;
-            PhoneNumber = phoneNumber;
-            Email = email;
-            Address = address;
-            ObjectiveDescription = objectiveDescription;
-            SkillName = skillName;
-            InterestName = interestName;
-            ReferenceInformation = referenceInformation;
-            EducationDescription = educationDescription;
-            ExperienceDescription = experienceDescription;
-            ActivityDescription = activityDescription;
-            CertificationName = certificationName;
-            AwardName = awardName;
-            AdditionalInfoDescription = additionalInfoDescription;
+            
         }
 
         public string FullName { get => fullName; set => fullName = value; }

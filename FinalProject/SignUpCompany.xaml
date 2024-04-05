@@ -5,6 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FinalProject"
         mc:Ignorable="d"
+        
+        WindowStartupLocation="CenterScreen"
         Title="SignUpCompany" Height="519" Width="800">
     <Border Background="#ffffff" CornerRadius="0 10 10 0">
         <Grid>

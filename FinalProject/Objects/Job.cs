@@ -8,17 +8,18 @@ namespace FinalProject.Objects
 {
     public class Job
     {
-        int id;
+        string id;
         string name;
         string companyName;
         string salary;
         string location;
 
-        public Job(int id)
+        public Job() { }
+        public Job(string id)
         {
             this.id = id;
         }
-        public Job(int id, string name, string companyName, string salary, string location)
+        public Job(string id, string name, string companyName, string salary, string location)
         {
             this.id = id;
             this.name = name;
@@ -26,7 +27,7 @@ namespace FinalProject.Objects
             this.salary = salary;
             this.location = location;
         }
-        public int Id { get => id; }
+        public string Id { get => id; }
         public string Name { get => name; set => name = value; }
         public string CompanyName { get => companyName; set => companyName = value; }
         public string Salary { get => salary; set => salary = value; }

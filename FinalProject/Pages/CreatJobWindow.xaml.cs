@@ -1,4 +1,5 @@
 ﻿using FinalProject.Database;
+using FinalProject.Objects;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,9 +22,15 @@ namespace FinalProject
     /// </summary>
     public partial class CreatJobWindow
     {
+        Company company = new Company();
         public CreatJobWindow()
         {
             InitializeComponent();
+        }
+        public CreatJobWindow(Company company)
+        {
+            InitializeComponent();
+            this.company = company;
         }
 
         private void btnThemCongViec_Click(object sender, RoutedEventArgs e)
@@ -40,6 +47,7 @@ namespace FinalProject
             List<UCJobInfo> data = jobDAO.LoadPage();
             foreach (UCJobInfo job in data )
             {
+                job.Type = company.Type;
                 jobList.Children.Add( job );
             }
         }

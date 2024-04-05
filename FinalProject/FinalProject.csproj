@@ -11,12 +11,14 @@
     <None Remove="Image\btnDelete.png" />
     <None Remove="Image\company_cover.jpg" />
     <None Remove="Image\favourite_icon.png" />
+    <None Remove="Image\logo.png" />
     <None Remove="Image\logosac-01.png" />
     <None Remove="Image\user.png" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="MahApps.Metro.IconPacks" Version="4.11.0" />
+    <PackageReference Include="MaterialDesignThemes" Version="5.0.0" />
     <PackageReference Include="System.Data.SqlClient" Version="4.8.6" />
   </ItemGroup>
 
@@ -24,6 +26,7 @@
     <Resource Include="Image\btnDelete.png" />
     <Resource Include="Image\company_cover.jpg" />
     <Resource Include="Image\favourite_icon.png" />
+    <Resource Include="Image\logo.png" />
     <Resource Include="Image\logosac-01.png" />
     <Resource Include="Image\user.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
