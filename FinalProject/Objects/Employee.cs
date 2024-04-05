@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace FinalProject.Objects
 {
-    internal class Employee
+    public class Employee : User
     {
+        public Employee() : base () 
+        {
+            Type = "Employee";
+        }
     }
 }

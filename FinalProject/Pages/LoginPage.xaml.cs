@@ -28,17 +28,16 @@ namespace FinalProject
 
         private void btnDangNhap_Click(object sender, RoutedEventArgs e)
         {
-           
-
             if(rdCompany.IsChecked == true)
             {
-                CompanyWindow comp = new CompanyWindow();
+                Company company = new Company(txtUserName.Text, pbPassword.Password.ToString(),"FPT","test", "test", "test", "test");
+                CompanyWindow comp = new CompanyWindow(company);
                 comp.Show();
             }
-
             if (rdJobApplicant.IsChecked == true)
             {
-                JobApplicantWindow job = new JobApplicantWindow();
+                Employee employee = new Employee();
+                JobApplicantWindow job = new JobApplicantWindow(employee);
                 job.Show();
             }
         }

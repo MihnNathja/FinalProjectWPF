@@ -22,22 +22,27 @@ namespace FinalProject
     public partial class CreateJob : Window
     {
         JobDAO jobDAO = new JobDAO();
-        int idJob;
+        string idJob;
+        public string IdJob { get => idJob; set => idJob = value; }
 
-        public int IdJob { get => idJob; set => idJob = value; }
 
         public CreateJob()
         {
             InitializeComponent();
+            MessageBox.Show(txtbName.Text);
+            txtbCompanyName.Text = txtbName.Text;
         }
-        public CreateJob(UCJobInfo uCJobInfo)
+/*        public CreateJob(Company company)
         {
             InitializeComponent();
-            IdJob = uCJobInfo.ID;
-            txtbName.Text = uCJobInfo.Name.Content.ToString();
-            txtbCompanyName.Text = uCJobInfo.CompanyName.Text;
-            cbbSalary.Text = uCJobInfo.Salary.Text;
-            txtbLocation.Text = uCJobInfo.Location.Text;
+            this.DataContext = company;
+        }*/
+        public CreateJob(Job job)
+        {
+            InitializeComponent(); 
+            this.DataContext = job;
+            MessageBox.Show(txtbCompanyName.Text);
+            txtbCompanyName.Text = txtbName.Text;
         }
 
 

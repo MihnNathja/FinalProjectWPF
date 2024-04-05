@@ -24,11 +24,18 @@ namespace FinalProject
     public partial class UCJobInfo : UserControl, INotifyPropertyChanged
     {
         private string url;
-        int id;
+        string id;
+        string type;
+        public string ID { get => id; set => id = value; }
+        public string Type { get => type; set => type = value; }
         public UCJobInfo()
         {
             InitializeComponent();
             this.DataContext = this;
+            if (Type == "Employee")
+            {
+                btnDeleteJob.IsEnabled = false;
+            }
         }
 
         public string Url 
@@ -40,7 +47,7 @@ namespace FinalProject
             }
         }
 
-        public int ID { get => id; set => id = value; }
+
 
         public event PropertyChangedEventHandler? PropertyChanged;
 
@@ -61,8 +68,18 @@ namespace FinalProject
 
         private void UCJobInfo_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            CreateJob createJob = new CreateJob(this);
-            createJob.ShowDialog();
+            JobDAO jobDAO = new JobDAO();
+            Job job = jobDAO.GetObject(this.ID);
+            if (Type == "Company")
+            {
+                CreateJob createJob = new CreateJob(job);
+                createJob.ShowDialog();
+            }
+            else if (Type == "Employee")
+            {
+                WJobInfoDetail wJobInfoDetail = new WJobInfoDetail(job);
+                wJobInfoDetail.ShowDialog();
+            }
         }
     }
 }
