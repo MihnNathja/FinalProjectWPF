@@ -70,7 +70,7 @@ namespace FinalProject
                 CreateJob createJob = new CreateJob(job);
                 createJob.ShowDialog();
             }
-            else
+            else if (Type == "Employee")
             {
                 WJobInfoDetail wJobInfoDetail = new WJobInfoDetail(job);
                 wJobInfoDetail.ShowDialog();

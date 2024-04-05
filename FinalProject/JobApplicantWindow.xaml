@@ -150,8 +150,7 @@
                 <Grid.RowDefinitions>
                     <RowDefinition Height="auto"/>
                     <RowDefinition Height="auto"/>
-                    <RowDefinition Height="28*"/>
-                    <RowDefinition Height="143*"/>
+                    <RowDefinition Height="*"/>
 
                 </Grid.RowDefinitions>
                 <!--search textbox-->
@@ -204,7 +203,7 @@
                         </Button>
                     </StackPanel>
                 </Grid>
-                <Grid Grid.Row="1" Margin="0,0,0,112" Grid.RowSpan="2">
+                <Grid Grid.Row="2" Margin="0,0,0,112" Grid.RowSpan="2">
 
                     <Frame 
                     Name="mainFarm"
