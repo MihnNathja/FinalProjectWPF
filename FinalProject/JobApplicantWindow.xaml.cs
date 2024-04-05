@@ -35,7 +35,8 @@ namespace FinalProject
         }
         private void CompanyWindow_Loaded(object sender, RoutedEventArgs e)
         {
-            mainFarm.Navigate(new System.Uri("Pages/PageJob.xaml", UriKind.RelativeOrAbsolute));
+            PageJob pageJob = new PageJob(employee);
+            mainFarm.Navigate(pageJob);
         }
         private void ButtonOpenMenu_Click(object sender, RoutedEventArgs e)
         {
@@ -121,7 +122,8 @@ namespace FinalProject
 
         private void btnHoSo_Click(object sender, RoutedEventArgs e)
         {
-            mainFarm.Navigate(new System.Uri("Pages/CVPage.xaml", UriKind.RelativeOrAbsolute));
+            CVPage cVPage = new CVPage();
+            mainFarm.Navigate(cVPage);
         }
 
         private void Window_Loaded(object sender, RoutedEventArgs e)

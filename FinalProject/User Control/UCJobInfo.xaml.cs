@@ -63,7 +63,8 @@ namespace FinalProject
 
         private void UCJobInfo_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            Job job = new Job(this.ID);
+            JobDAO jobDAO = new JobDAO();
+            Job job = jobDAO.GetObject(this.ID);
             if (Type == "Company")
             {
                 CreateJob createJob = new CreateJob(job);

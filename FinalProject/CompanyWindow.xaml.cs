@@ -38,7 +38,8 @@ namespace FinalProject
         }
         private void CompanyWindow_Loaded(object sender, RoutedEventArgs e)
         {
-            mainFarm.Navigate(new System.Uri("Pages/PageJob.xaml", UriKind.RelativeOrAbsolute));
+            PageJob pageJob = new PageJob(company);
+            mainFarm.Navigate(pageJob);
         }
         private void ButtonOpenMenu_Click(object sender, RoutedEventArgs e)
         {
@@ -95,7 +96,8 @@ namespace FinalProject
 
         private void btnCongTy_Click(object sender, RoutedEventArgs e)
         {
-            mainFarm.Navigate(new System.Uri("Pages/CreatJobWindow.xaml", UriKind.RelativeOrAbsolute));
+            CreatJobWindow creatJobWindow = new CreatJobWindow();
+            mainFarm.Navigate(creatJobWindow);
         }
 
         private void popupControl_Loaded(object sender, RoutedEventArgs e)
@@ -105,7 +107,8 @@ namespace FinalProject
 
         private void btnViecLam_Click(object sender, RoutedEventArgs e)
         {
-            mainFarm.Navigate(new System.Uri("Pages/PageJob.xaml", UriKind.RelativeOrAbsolute));
+            PageJob pageJob = new PageJob(company);
+            mainFarm.Navigate(pageJob);
         }
 
         private void btnSearch_Click(object sender, RoutedEventArgs e)
@@ -117,7 +120,7 @@ namespace FinalProject
             
            
 
-            PageJob pageJob = new PageJob();
+            PageJob pageJob = new PageJob(company);
             pageJob.search(cbbLocation.Text, cbbExperience.Text);
             mainFarm.Navigate(pageJob);
         }
@@ -129,8 +132,8 @@ namespace FinalProject
 
         private void btnHoSo_Click(object sender, RoutedEventArgs e)
         {
-
-            mainFarm.Navigate(new System.Uri("Pages/DocumentPage.xaml", UriKind.RelativeOrAbsolute));
+            FinalProject.Page.DocumentPage documentPage = new FinalProject.Page.DocumentPage();
+            mainFarm.Navigate(documentPage);
         }
 
 

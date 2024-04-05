@@ -22,12 +22,14 @@ namespace FinalProject
         public LoginWindow()
         {
             InitializeComponent();
-            LoginFrame.Navigate(new System.Uri("Pages/LoginPage.xaml", UriKind.RelativeOrAbsolute));
+            LoginPage loginPage = new LoginPage();
+            LoginFrame.Navigate(loginPage);
         }
 
         public void NavigateToLoginPage()
         {
-            LoginFrame.Navigate(new System.Uri("Pages/LoginPage.xaml", UriKind.RelativeOrAbsolute));
+            LoginPage loginPage = new LoginPage();
+            LoginFrame.Navigate(loginPage);
         }
         private void btnDangKy_Click(object sender, RoutedEventArgs e)
         {
@@ -42,7 +44,8 @@ namespace FinalProject
 
         private void btnDangKyUV_Click(object sender, RoutedEventArgs e)
         {
-            LoginFrame.Navigate(new System.Uri("Pages/SignUpPage.xaml", UriKind.RelativeOrAbsolute));
+            SignUpPage signUpPage = new SignUpPage();
+            LoginFrame.Navigate(signUpPage);
 
         }
     }

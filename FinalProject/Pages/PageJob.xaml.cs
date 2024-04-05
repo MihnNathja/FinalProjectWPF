@@ -36,8 +36,8 @@ namespace FinalProject.Page
         }
         public PageJob(User user)
         {
+            Type = user.Type;
             InitializeComponent();
-            this.type = user.Type;
         }
         private void Page_Loaded(object sender, RoutedEventArgs e)
         {
@@ -59,6 +59,7 @@ namespace FinalProject.Page
             foreach (UCJobInfo job in jobList)
             {
                 job.Type = Type;
+                
                 pnlJob.Children.Add(job);
             }
         }
