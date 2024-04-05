@@ -1,0 +1,20 @@
+﻿CREATE TABLE CVInformation (
+    ID INT PRIMARY KEY,
+    FullName NVARCHAR(100),
+    PositionApplied NVARCHAR(100),
+    Gender NVARCHAR(10),
+    DateOfBirth DATE,
+    PhoneNumber NVARCHAR(20),
+    Email NVARCHAR(100),
+    Address NVARCHAR(255),
+    ObjectiveDescription NVARCHAR(MAX),
+    SkillName NVARCHAR(100),
+    InterestName NVARCHAR(100),
+    ReferenceInformation NVARCHAR(MAX),
+    EducationDescription NVARCHAR(MAX),
+    ExperienceDescription NVARCHAR(MAX),
+    ActivityDescription NVARCHAR(MAX),
+    CertificationName NVARCHAR(100),
+    AwardName NVARCHAR(100),
+    AdditionalInfoDescription NVARCHAR(MAX)
+);
