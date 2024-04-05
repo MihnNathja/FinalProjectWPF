@@ -25,6 +25,7 @@ namespace FinalProject
     {
         private string url;
         string id;
+        string type;
         public UCJobInfo()
         {
             InitializeComponent();
@@ -41,6 +42,7 @@ namespace FinalProject
         }
 
         public string ID { get => id; set => id = value; }
+        public string Type { get => type; set => type = value; }
 
         public event PropertyChangedEventHandler? PropertyChanged;
 
@@ -61,10 +63,17 @@ namespace FinalProject
 
         private void UCJobInfo_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            CreateJob createJob = new CreateJob(this);
-            createJob.ShowDialog();
-/*            WJobInfoDetail wJobInfoDetail = new WJobInfoDetail(this);
-            wJobInfoDetail.ShowDialog();*/
+            Job job = new Job(this.ID);
+            if (Type == "Company")
+            {
+                CreateJob createJob = new CreateJob(job);
+                createJob.ShowDialog();
+            }
+            else
+            {
+                WJobInfoDetail wJobInfoDetail = new WJobInfoDetail(job);
+                wJobInfoDetail.ShowDialog();
+            }
         }
     }
 }

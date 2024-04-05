@@ -26,10 +26,18 @@ namespace FinalProject.Page
     public partial class PageJob : System.Windows.Controls.Page
     {
         JobDAO jobDAO = new JobDAO();
+        string type;
+
+        public string Type { get => type; set => type = value; }
 
         public PageJob()
         {
             InitializeComponent();
+        }
+        public PageJob(User user)
+        {
+            InitializeComponent();
+            this.type = user.Type;
         }
         private void Page_Loaded(object sender, RoutedEventArgs e)
         {
@@ -38,7 +46,7 @@ namespace FinalProject.Page
             
             foreach (UCJobInfo job in jobList)
             {
-                job.btnDeleteJob.Visibility = Visibility.Hidden;
+                job.Type = Type;
                 pnlJob.Children.Add(job);
             }
         }
@@ -50,6 +58,7 @@ namespace FinalProject.Page
             List<UCJobInfo> jobList = jobDAO.LoadPage();
             foreach (UCJobInfo job in jobList)
             {
+                job.Type = Type;
                 pnlJob.Children.Add(job);
             }
         }

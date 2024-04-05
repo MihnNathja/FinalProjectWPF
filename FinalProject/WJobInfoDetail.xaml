@@ -22,10 +22,10 @@
                 <TextBlock x:Name="txtbCompanyName" Margin="10 5" Text="{Binding CompanyName}"/>
 
                 <TextBlock Text="Tên công việc" FontWeight="Bold"/>
-                <TextBox x:Name="txtbName" Margin="10 5" />
+                <TextBlock x:Name="txtbName" Margin="10 5" />
 
                 <TextBlock Text="Kinh nghiệm" FontWeight="Bold"/>
-                <ComboBox Width="200" Margin="10 5" Style="{DynamicResource theComboBox}" Height="40" SelectedIndex="0">
+                <ComboBox Width="200" Margin="10 5" Style="{DynamicResource theComboBox}" Height="40" IsEnabled="False">
                     <ComboBoxItem Content="Không yêu cầu kinh nghiệm"/>
                     <ComboBoxItem Content="1 năm" />
                     <ComboBoxItem Content="1-3 năm" />
@@ -33,11 +33,11 @@
                 </ComboBox>
 
                 <TextBlock Text="Địa điểm" FontWeight="Bold"/>
-                <TextBox x:Name="txtbLocation" Margin="10 5"/>
+                <TextBlock x:Name="txtbLocation" Margin="10 5"/>
 
 
                 <TextBlock Text="Mức Lương" FontWeight="Bold"/>
-                <ComboBox Width="200" Margin="10 5" Style="{DynamicResource theComboBox}" Height="40" SelectedIndex="0" x:Name="cbbSalary">
+                <ComboBox Width="200" Margin="10 5" Style="{DynamicResource theComboBox}" Height="40" x:Name="cbbSalary" IsEnabled="False">
                     <ComboBoxItem Content=""/>
                     <ComboBoxItem Content="Dưới 10tr" />
                     <ComboBoxItem Content="10-15tr" />
@@ -45,7 +45,7 @@
                 </ComboBox>
 
                 <TextBlock Text="Mô tả công việc" FontWeight="Bold"/>
-                <TextBox  Margin="10 5" Height="100"/>
+                <TextBlock  Margin="10 5" Height="100"/>
 
 
 
@@ -54,13 +54,13 @@
             </StackPanel>
             <StackPanel Grid.Column="1" Margin="5 10 10 10">
                 <TextBlock Text="Yêu cầu" FontWeight="Bold"/>
-                <TextBox  Margin="10 5" Height="100"/>
+                <TextBlock  Margin="10 5" Height="100"/>
 
                 <TextBlock Text="Quyền lợi" FontWeight="Bold"/>
-                <TextBox  Margin="10 5" Height="100"/>
+                <TextBlock  Margin="10 5" Height="100"/>
 
                 <TextBlock Text="Thời gian làm việc" FontWeight="Bold"/>
-                <TextBox  Margin="10 5" />
+                <TextBlock  Margin="10 5" />
 
 
             </StackPanel>

@@ -14,7 +14,7 @@ namespace FinalProject
         private string location;
         private string type;
         public User() { }
-        protected User(string userName, string password, string name, string phoneNumber, string location)
+        public User(string userName, string password, string name, string phoneNumber, string location)
         {
             this.userName = userName;
             this.password = password;

@@ -109,7 +109,7 @@
                                     >
                                 <StackPanel Orientation="Horizontal">
                                     <Icon:PackIconMaterial Kind="FileDocument" Style="{StaticResource menuButtonIcon}"/>
-                                    <TextBlock Text="Hồ sơ và CV"/>
+                                    <TextBlock Text="Hồ sơ Công ty"/>
                                 </StackPanel>
                             </Button>
                             <Button Style="{StaticResource menuButton}"
@@ -131,7 +131,13 @@
                                 </StackPanel>
                             </Button>
                         </StackPanel>
-                        <Button Style="{StaticResource menuButton}" VerticalAlignment="Bottom" DockPanel.Dock ="Bottom" Margin="15 0 15 20">
+                        <Button x:Name="btnLogout"
+                                Style="{StaticResource menuButton}" 
+                                VerticalAlignment="Bottom" 
+                                DockPanel.Dock ="Bottom" 
+                                Margin="15 0 15 20"
+                                Click="btnLogout_Click"
+                                >
                             <StackPanel Orientation="Horizontal">
                                 <Icon:PackIconMaterial Kind="Logout" Style="{StaticResource menuButtonIcon}"/>
                                 <TextBlock Text="Đăng xuất"/>

@@ -82,6 +82,7 @@
                         </Border>
                         <TextBlock 
                         x:Name="txtbName"
+                        Text="{Binding Name}"
                         Foreground="White" FontSize="22"
                         FontWeight="SemiBold" 
                         DockPanel.Dock="Top" 
@@ -129,7 +130,12 @@
                                 </StackPanel>
                             </Button>
                         </StackPanel>
-                        <Button Style="{StaticResource menuButton}" VerticalAlignment="Bottom" DockPanel.Dock ="Bottom" Margin="15 0 15 20">
+                        <Button x:Name="btnLogout"
+                                Style="{StaticResource menuButton}" 
+                                VerticalAlignment="Bottom" 
+                                DockPanel.Dock ="Bottom" 
+                                Margin="15 0 15 20"
+                                Click="btnLogout_Click">
                             <StackPanel Orientation="Horizontal">
                                 <Icon:PackIconMaterial Kind="Logout" Style="{StaticResource menuButtonIcon}"/>
                                 <TextBlock Text="Đăng xuất"/>
@@ -144,7 +150,8 @@
                 <Grid.RowDefinitions>
                     <RowDefinition Height="auto"/>
                     <RowDefinition Height="auto"/>
-                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="28*"/>
+                    <RowDefinition Height="143*"/>
 
                 </Grid.RowDefinitions>
                 <!--search textbox-->
@@ -197,7 +204,7 @@
                         </Button>
                     </StackPanel>
                 </Grid>
-                <Grid Grid.Row="1">
+                <Grid Grid.Row="1" Margin="0,0,0,112" Grid.RowSpan="2">
 
                     <Frame 
                     Name="mainFarm"

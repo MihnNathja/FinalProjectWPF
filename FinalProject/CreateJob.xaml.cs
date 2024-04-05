@@ -23,21 +23,17 @@ namespace FinalProject
     {
         JobDAO jobDAO = new JobDAO();
         string idJob;
-
         public string IdJob { get => idJob; set => idJob = value; }
+
 
         public CreateJob()
         {
             InitializeComponent();
         }
-        public CreateJob(UCJobInfo uCJobInfo)
+        public CreateJob(Job job)
         {
             InitializeComponent();
-            IdJob = uCJobInfo.ID;
-            txtbName.Text = uCJobInfo.Name.Content.ToString();
-            txtbCompanyName.Text = uCJobInfo.CompanyName.Text;
-            cbbSalary.Text = uCJobInfo.Salary.Text;
-            txtbLocation.Text = uCJobInfo.Location.Text;
+            this.DataContext = job;
         }
 
 

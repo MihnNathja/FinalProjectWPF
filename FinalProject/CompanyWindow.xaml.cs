@@ -34,7 +34,7 @@ namespace FinalProject
         {
             InitializeComponent();
             this.company = company;
-            txtbName.Text = company.CompanyName;
+            txtbName.Text = company.Name;
         }
         private void CompanyWindow_Loaded(object sender, RoutedEventArgs e)
         {
@@ -131,6 +131,12 @@ namespace FinalProject
         {
 
             mainFarm.Navigate(new System.Uri("Pages/DocumentPage.xaml", UriKind.RelativeOrAbsolute));
+        }
+
+
+        private void btnLogout_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
         }
         // Hàm bên dưới vẫn đang trong quá trình phát triển
         // Mục đích: Chỉnh đối tượng nằm bên trong Frame để dùng được hàm search

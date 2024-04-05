@@ -22,16 +22,16 @@ namespace FinalProject
     /// </summary>
     public partial class JobApplicantWindow : Window
     {
-        Company company = new Company();
+        Employee employee = new Employee();
         public JobApplicantWindow()
         {
             InitializeComponent();
         }
-        public JobApplicantWindow(Company company)
+        public JobApplicantWindow(Employee employee)
         {
             InitializeComponent();
-            this.company = company;
-            txtbName.Text = company.CompanyName;
+            this.employee = employee;
+            this.DataContext = employee;
         }
         private void CompanyWindow_Loaded(object sender, RoutedEventArgs e)
         {
@@ -102,20 +102,14 @@ namespace FinalProject
 
         private void btnViecLam_Click(object sender, RoutedEventArgs e)
         {
-            PageJob pageJob = new PageJob();
+            PageJob pageJob = new PageJob(employee);
             mainFarm.Navigate(pageJob);
         }
 
         private void btnSearch_Click(object sender, RoutedEventArgs e)
         {
-            //Filter filter = new Filter(cbbLocation.Text,cbbExperience.Text);
-            //JobDAO jobDAO = new JobDAO();
-            //jobDAO.DataJob =  jobDAO.Search(filter);
-            //var dataTransfer = jobDAO.LoadPage();
 
-
-
-            PageJob pageJob = new PageJob();
+            PageJob pageJob = new PageJob(employee);
             pageJob.search(cbbLocation.Text, cbbExperience.Text);
             mainFarm.Navigate(pageJob);
         }
@@ -127,14 +121,18 @@ namespace FinalProject
 
         private void btnHoSo_Click(object sender, RoutedEventArgs e)
         {
-
             mainFarm.Navigate(new System.Uri("Pages/CVPage.xaml", UriKind.RelativeOrAbsolute));
         }
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            PageJob pageJob = new PageJob();
+            PageJob pageJob = new PageJob(employee);
             mainFarm.Navigate(pageJob);
+        }
+
+        private void btnLogout_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
         }
         // Hàm bên dưới vẫn đang trong quá trình phát triển
         // Mục đích: Chỉnh đối tượng nằm bên trong Frame để dùng được hàm search

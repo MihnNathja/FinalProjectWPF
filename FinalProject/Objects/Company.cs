@@ -9,9 +9,7 @@ namespace FinalProject.Objects
     public class Company : User
     {
         string mst;
-        string locationCompany;
         string companyRepresentative;
-        string phoneNumber;
 
         public Company() 
         {
@@ -22,7 +20,6 @@ namespace FinalProject.Objects
         {
             Type = "Company";
             this.mst = mst;
-            this.locationCompany = locationCompany;
             this.companyRepresentative = companyRepresentative;
         }
 
