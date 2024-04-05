@@ -8,10 +8,7 @@
         Title="LoginWindow" Height="500" Width="800"
         WindowStartupLocation="CenterScreen">
     <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="1.5*"/>
-        </Grid.ColumnDefinitions>
+        
 
         <Border CornerRadius="10 0 0 10">
             <Border.Background>
@@ -28,26 +25,36 @@
                 <Polygon Points="0,20 230, 140 0, 270" Fill="#4EB1E6"/>
                 <Polygon Points="100,400 200,370 180 , 470" Fill="#4EB1E6"/>
             </Canvas>
-            <StackPanel>
-                <TextBlock Text="Đăng Ký" HorizontalAlignment="Center"
-                           Margin="20" FontWeight="Black" FontSize="40"
-                           Foreground="White"/>
+            
+            <StackPanel HorizontalAlignment="Center">
+                <TextBlock Text="Đăng Nhập" HorizontalAlignment="Center"
+            Margin="20" FontWeight="Black" FontSize="40"
+                        />
+                <TextBlock 
+        Text="Tên đăng nhập" FontSize="20" FontWeight="Bold"
+            Margin="10 "/>
+                        <TextBox x:Name="txtUserName" Width="350" Height="35"/>
 
-                <TextBlock Text="Dành Cho Ứng Viên" HorizontalAlignment="Center"
-                           Margin="10" Foreground="White" FontWeight="Bold"/>
+                        <TextBlock Text="Mật Khẩu" FontSize="20" FontWeight="Bold"
+                Margin="10 "/>
+                        <PasswordBox x:Name="pbPassword" Width="350" Height="35" Panel.ZIndex="1"/>
+                        <StackPanel Orientation="Horizontal" Margin="10">
+                            <RadioButton x:Name="rdCompany" Content="Công ty" FontWeight="Bold"/>
+                            <RadioButton x:Name="rdJobApplicant" Content="Ứng Viên" Margin="20 0" FontWeight="Bold"/>
+                        </StackPanel>
 
-                <Button Content="Đăng Ký Cho Ứng Viên" Width="200" Click="btnDangKyUV_Click"/>
 
-                <TextBlock Text="Dành Cho Doanh Nghiệp " HorizontalAlignment="Center"
-                Margin="0 40 0 10" Foreground="White" FontWeight="Bold"/>
+                        <Button Content="Đăng ký" Margin="0 0 20 0" BorderThickness="0" FontWeight="Bold"
+                        Foreground="Green" Background="Transparent" FontSize="15" HorizontalAlignment="Right"
+                    Name="btnSignUp" Click="btnSignUp_Click"/>
 
-                <Button Content="Đăng Ký Cho Doanh Nghiệp" Width="200" Click="btnDangKyDN_Click"/>
+                    <Button Content="Đăng Nhập"  FontSize="25" FontWeight="Bold"
+                    Margin="20" Click="btnLogin_Click">
+
+                </Button>   
+
             </StackPanel>
         </Grid>
-        <Grid Grid.Column="1">
-            <Frame x:Name="LoginFrame"
-            NavigationUIVisibility="Hidden"
-                   />
-        </Grid>
+        
     </Grid>
 </Window>
