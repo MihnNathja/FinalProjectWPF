@@ -19,7 +19,7 @@
 
             <StackPanel Margin="5 10 10 10">
                 <TextBlock Text="Doanh Nghiệp" FontWeight="Bold"/>
-                <TextBlock x:Name="txtbCompanyName" Text="{Binding CompanyName}" Margin="10 5" />
+                <TextBlock x:Name="txtbCompanyName" Margin="10 5" />
 
                 <TextBlock Text="Tên công việc" FontWeight="Bold"/>
                 <TextBox x:Name="txtbName" Margin="10 5" Text="{Binding Name}"/>

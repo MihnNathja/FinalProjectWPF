@@ -27,6 +27,11 @@ namespace FinalProject
         {
             InitializeComponent();
         }
+        public CreatJobWindow(Company company)
+        {
+            InitializeComponent();
+            this.company = company;
+        }
 
         private void btnThemCongViec_Click(object sender, RoutedEventArgs e)
         {

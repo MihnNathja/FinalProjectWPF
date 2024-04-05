@@ -26,9 +26,11 @@ namespace FinalProject.Page
     public partial class PageJob : System.Windows.Controls.Page
     {
         JobDAO jobDAO = new JobDAO();
+
         string type;
 
         public string Type { get => type; set => type = value; }
+
 
         public PageJob()
         {

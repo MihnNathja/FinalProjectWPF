@@ -34,7 +34,7 @@ namespace FinalProject
         {
             InitializeComponent();
             this.company = company;
-            txtbName.Text = company.Name;
+            this.DataContext = company;
         }
         private void CompanyWindow_Loaded(object sender, RoutedEventArgs e)
         {
@@ -96,7 +96,7 @@ namespace FinalProject
 
         private void btnCongTy_Click(object sender, RoutedEventArgs e)
         {
-            CreatJobWindow creatJobWindow = new CreatJobWindow();
+            CreatJobWindow creatJobWindow = new CreatJobWindow(company);
             mainFarm.Navigate(creatJobWindow);
         }
 

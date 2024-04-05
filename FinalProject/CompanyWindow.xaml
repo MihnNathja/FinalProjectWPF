@@ -84,6 +84,7 @@
                         </Border>
                         <TextBlock 
                             x:Name="txtbName"
+                            Text="{Binding Name}"
                             Foreground="White" FontSize="22"
                             FontWeight="SemiBold" 
                             DockPanel.Dock="Top" 

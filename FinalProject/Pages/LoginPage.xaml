@@ -16,11 +16,11 @@
             <TextBlock 
                 Text="Tên đăng nhập" FontSize="20" FontWeight="Bold"
                    Margin="10 "/>
-            <TextBox x:Name="UserName" Width="350" />
+            <TextBox x:Name="txtUserName" Width="350" Height="35"/>
 
             <TextBlock Text="Mật Khẩu" FontSize="20" FontWeight="Bold"
                         Margin="10 "/>
-            <PasswordBox Width="350" Height="35" Panel.ZIndex="1"/>
+            <PasswordBox x:Name="pbPassword" Width="350" Height="35" Panel.ZIndex="1"/>
             <StackPanel Orientation="Horizontal" Margin="10">
                 <RadioButton x:Name="rdCompany" Content="Công ty"/>
                 <RadioButton x:Name="rdJobApplicant" Content="Ứng Viên" Margin="20 0"/>

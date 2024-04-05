@@ -26,10 +26,16 @@ namespace FinalProject
         private string url;
         string id;
         string type;
+        public string ID { get => id; set => id = value; }
+        public string Type { get => type; set => type = value; }
         public UCJobInfo()
         {
             InitializeComponent();
             this.DataContext = this;
+            if (Type == "Employee")
+            {
+                btnDeleteJob.IsEnabled = false;
+            }
         }
 
         public string Url 
@@ -41,8 +47,7 @@ namespace FinalProject
             }
         }
 
-        public string ID { get => id; set => id = value; }
-        public string Type { get => type; set => type = value; }
+
 
         public event PropertyChangedEventHandler? PropertyChanged;
 

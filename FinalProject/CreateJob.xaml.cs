@@ -29,11 +29,20 @@ namespace FinalProject
         public CreateJob()
         {
             InitializeComponent();
+            MessageBox.Show(txtbName.Text);
+            txtbCompanyName.Text = txtbName.Text;
         }
-        public CreateJob(Job job)
+/*        public CreateJob(Company company)
         {
             InitializeComponent();
+            this.DataContext = company;
+        }*/
+        public CreateJob(Job job)
+        {
+            InitializeComponent(); 
             this.DataContext = job;
+            MessageBox.Show(txtbCompanyName.Text);
+            txtbCompanyName.Text = txtbName.Text;
         }
 
 

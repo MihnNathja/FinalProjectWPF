@@ -30,7 +30,7 @@ namespace FinalProject
         {
             if(rdCompany.IsChecked == true)
             {
-                Company company = new Company();
+                Company company = new Company(txtUserName.Text, pbPassword.Password.ToString(),"FPT","test", "test", "test", "test");
                 CompanyWindow comp = new CompanyWindow(company);
                 comp.Show();
             }

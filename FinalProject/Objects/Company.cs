@@ -10,8 +10,11 @@ namespace FinalProject.Objects
     {
         string mst;
         string companyRepresentative;
-
         public Company() 
+        {
+            Type = "Company";
+        }
+        public Company(string userName, string password)
         {
             Type = "Company";
         }
@@ -25,6 +28,6 @@ namespace FinalProject.Objects
 
         public string Mst { get => mst; set => mst = value; }
         public string CompanyRepresentative { get => companyRepresentative; set => companyRepresentative = value; }
-
+        public string CompanyName { get => Name; set => Name = value; }
     }
 }
