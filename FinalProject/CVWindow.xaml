@@ -101,7 +101,7 @@
             <StackPanel Grid.Row="5">
                 <TextBlock  Text="THÔNG TIN THÊM" FontSize="20" FontWeight="Bold"/>
                 <TextBox Name="txtAdditionalInfoDescription" Text="Thông tin thêm" Height="110" Margin="5"/>
-                <Button Content="Lưu" Width="100" FontSize="20" Margin="10">
+                <Button x:Name="btnSave" Click="btnSave_Click"  Content="Lưu" Width="100" FontSize="20" Margin="10">
                     
                 </Button>
             </StackPanel>

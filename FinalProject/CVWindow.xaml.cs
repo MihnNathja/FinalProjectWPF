@@ -1,4 +1,6 @@
-﻿using System;
+﻿using FinalProject.Database;
+using FinalProject.Objects;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -22,6 +24,13 @@ namespace FinalProject
         public CVWindow()
         {
             InitializeComponent();
+        }
+
+        private void btnSave_Click(object sender, RoutedEventArgs e)
+        {
+            CV cv = new CV(txtSkillName.Text);
+            CVDao cVDao = new CVDao();
+            cVDao.Them(cv);
         }
     }
 }
