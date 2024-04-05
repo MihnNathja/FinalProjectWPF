@@ -26,14 +26,23 @@ namespace FinalProject.Objects
         string awardName;
         string additionalInfoDescription;
 
+
+        // Toàn bộ nội dung của CV tạm thời thu gọn thành description, sau này sẽ trả lại
+        string decription;
+
+
         public CV() { }
+        public CV(string description) 
+        {
+            Decription = description;
+        }
 
         public CV(string fullName, string positionApplied, string gender, DateTime dateOfBirth, string phoneNumber, string email, string address, string objectiveDescription, string skillName, string interestName, string referenceInformation, string educationDescription, string experienceDescription, string activityDescription, string certificationName, string awardName, string additionalInfoDescription)
         {
             FullName = fullName;
             PositionApplied = positionApplied;
             Gender = gender;
-            this.dateOfBirth = dateOfBirth;
+            DateOfBirth = dateOfBirth;
             PhoneNumber = phoneNumber;
             Email = email;
             Address = address;
@@ -47,13 +56,12 @@ namespace FinalProject.Objects
             CertificationName = certificationName;
             AwardName = awardName;
             AdditionalInfoDescription = additionalInfoDescription;
-            
         }
 
         public string FullName { get => fullName; set => fullName = value; }
         public string PositionApplied { get => positionApplied; set => positionApplied = value; }
         public string Gender { get => gender; set => gender = value; }
-        public DateTime DateOfBirth1 { get => dateOfBirth; set => dateOfBirth = value; }
+        public DateTime DateOfBirth { get => dateOfBirth; set => dateOfBirth = value; }
         public string PhoneNumber { get => phoneNumber; set => phoneNumber = value; }
         public string Email { get => email; set => email = value; }
         public string Address { get => address; set => address = value; }
@@ -67,5 +75,6 @@ namespace FinalProject.Objects
         public string CertificationName { get => certificationName; set => certificationName = value; }
         public string AwardName { get => awardName; set => awardName = value; }
         public string AdditionalInfoDescription { get => additionalInfoDescription; set => additionalInfoDescription = value; }
+        public string Decription { get => decription; set => decription = value; }
     }
 }
