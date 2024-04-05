@@ -60,7 +60,7 @@
             </Grid>
             
                 <Button Content="Đăng Ký" Width="200" FontSize="25" Grid.Row="2"
-                        Margin="5" Click="btnDangKy_Click">
+                        Margin="5" Click="btnSignUp_Click">
 
                 </Button>
 

@@ -33,7 +33,7 @@ namespace FinalProject.Objects
             FullName = fullName;
             PositionApplied = positionApplied;
             Gender = gender;
-            this.dateOfBirth = dateOfBirth;
+            DateOfBirth = dateOfBirth;
             PhoneNumber = phoneNumber;
             Email = email;
             Address = address;
@@ -53,7 +53,7 @@ namespace FinalProject.Objects
         public string FullName { get => fullName; set => fullName = value; }
         public string PositionApplied { get => positionApplied; set => positionApplied = value; }
         public string Gender { get => gender; set => gender = value; }
-        public DateTime DateOfBirth1 { get => dateOfBirth; set => dateOfBirth = value; }
+        public DateTime DateOfBirth { get => dateOfBirth; set => dateOfBirth = value; }
         public string PhoneNumber { get => phoneNumber; set => phoneNumber = value; }
         public string Email { get => email; set => email = value; }
         public string Address { get => address; set => address = value; }

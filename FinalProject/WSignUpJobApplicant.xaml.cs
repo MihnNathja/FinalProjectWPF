@@ -10,25 +10,23 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace FinalProject
 {
     /// <summary>
-    /// Interaction logic for SignUpPage.xaml
+    /// Interaction logic for WSignUpJobApplicant.xaml
     /// </summary>
-    public partial class SignUpPage 
+    public partial class WSignUpJobApplicant : Window
     {
-        public SignUpPage()
+        public WSignUpJobApplicant()
         {
             InitializeComponent();
         }
 
-        private void btnDangKy_Click(object sender, RoutedEventArgs e)
+        private void btnSignUp_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Đăng ký thành công, quay lại trang đăng nhập để đăng nhập");
-            ((LoginWindow)Application.Current.MainWindow).NavigateToLoginPage();
+            this.Close();
         }
     }
 }

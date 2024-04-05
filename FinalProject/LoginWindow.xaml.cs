@@ -22,31 +22,28 @@ namespace FinalProject
         public LoginWindow()
         {
             InitializeComponent();
-            LoginPage loginPage = new LoginPage();
-            LoginFrame.Navigate(loginPage);
+            
         }
 
-        public void NavigateToLoginPage()
+
+        private void btnSignUp_Click(object sender, RoutedEventArgs e)
         {
-            LoginPage loginPage = new LoginPage();
-            LoginFrame.Navigate(loginPage);
-        }
-        private void btnDangKy_Click(object sender, RoutedEventArgs e)
-        {
-            // Điều hướng đến trang đăng nhập
-            NavigateToLoginPage();
-        }
-        private void btnDangKyDN_Click(object sender, RoutedEventArgs e)
-        {
-            SignUpCompany signUpCompany = new SignUpCompany();
-            signUpCompany.ShowDialog();
+            WSignUp wSignUp = new WSignUp();
+            wSignUp.ShowDialog();
         }
 
-        private void btnDangKyUV_Click(object sender, RoutedEventArgs e)
+        private void btnLogin_Click(object sender, RoutedEventArgs e)
         {
-            SignUpPage signUpPage = new SignUpPage();
-            LoginFrame.Navigate(signUpPage);
-
+            if(rdCompany.IsChecked == true)
+            {
+                CompanyWindow comp = new CompanyWindow();
+                comp.ShowDialog();
+            }
+            else if (rdJobApplicant.IsChecked == true)
+            {
+                JobApplicantWindow jobApplicant = new JobApplicantWindow();
+                jobApplicant.ShowDialog();
+            }
         }
     }
 }

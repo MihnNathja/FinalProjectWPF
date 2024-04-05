@@ -16,9 +16,6 @@
     <Compile Update="JobApplicantWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Pages\LoginPage.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Update="LoginWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -33,9 +30,6 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Pages\PageJob.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Update="Pages\SignUpPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="SignUpCompany.xaml.cs">
@@ -56,6 +50,12 @@
     <Compile Update="WJobInfoDetail.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="WSignUp.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="WSignUpJobApplicant.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="CompanyWindow.xaml">
@@ -65,9 +65,6 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="JobApplicantWindow.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="Pages\LoginPage.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="LoginWindow.xaml">
@@ -86,9 +83,6 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Pages\PageJob.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="Pages\SignUpPage.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="SignUpCompany.xaml">
@@ -113,6 +107,12 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="WJobInfoDetail.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WSignUp.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WSignUpJobApplicant.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

@@ -1,0 +1,72 @@
+﻿<Window x:Class="FinalProject.WSignUpJobApplicant"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FinalProject"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="WSignUpJobApplicant" Height="519" Width="800">
+    <Border Background="#ffffff" CornerRadius="0 10 10 0">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="7*"/>
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <TextBlock Text="Đăng Ký" VerticalAlignment="Center" HorizontalAlignment="Center"
+           FontSize="30" FontWeight="Black"/>
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <StackPanel Margin="10">
+                    <TextBlock Text="Họ và tên" FontWeight="Bold" FontSize="20"/>
+                    <TextBox x:Name="txtFullName" Margin="10 5" />
+
+                    <TextBlock Text="Giới tính" FontWeight="Bold" FontSize="20"/>
+                    <StackPanel Orientation="Horizontal" Margin="10">
+                        <RadioButton Content="Nam" FontWeight="Bold" FontSize="15"/>
+                        <RadioButton Content="Nữ" FontWeight="Bold" Margin="20 0 0 0" FontSize="15"/>
+                    </StackPanel>
+
+                    <TextBlock Text="Địa chỉ" FontWeight="Bold" FontSize="20"/>
+                    <TextBox x:Name="txtLocationCompany" Margin="10 5" Height="35" />
+
+                    <TextBlock Text="Ngày sinh" FontWeight="Bold" FontSize="20"/>
+                    <DatePicker x:Name="txtcompanyRepresentative" Margin="10 5" />
+
+                    <TextBlock Text="Điện thoại" FontWeight="Bold" FontSize="20"/>
+                    <TextBox x:Name="txtPhoneNumber" Margin="10 5" Height="35"/>
+
+
+
+
+
+                </StackPanel>
+
+                <StackPanel Grid.Column="1" Margin="10">
+                    <TextBlock Text="Tên Đăng nhập" FontWeight="Bold" FontSize="20"/>
+                    <TextBox Margin="10 5" Height="35" />
+
+                    <TextBlock Text="Mật Khẩu" FontWeight="Bold" FontSize="20"/>
+                    <PasswordBox Margin="10 5" Height="35" />
+
+                    <TextBlock Text="Xác Nhận Mật Khẩu" FontWeight="Bold" FontSize="20"/>
+                    <PasswordBox Margin="10 5" Height="35" />
+
+                    <TextBlock Text="Email" FontWeight="Bold" FontSize="20"/>
+                    <TextBox x:Name="txtEmail" Margin="10 5" Height="35" />
+                </StackPanel>
+            </Grid>
+
+            <Button Content="Đăng Ký" Width="200" FontSize="25" Grid.Row="2"
+                    Margin="5" Click="btnSignUp_Click">
+
+            </Button>
+
+
+        </Grid>
+    </Border>
+</Window>

@@ -25,9 +25,10 @@ namespace FinalProject
         }
 
         
-        private void btnDangKy_Click(object sender, RoutedEventArgs e)
+       
+
+        private void btnSignUp_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Đăng ký thành công, quay lại trang đăng nhập để đăng nhập");
             this.Close();
         }
     }
