@@ -2,6 +2,6 @@
 	[CompanyName]		 VARCHAR (255) NULL,
     [Mst]        VARCHAR (100) NOT NULL,
     [LocationCompany] VARCHAR (255) NULL,
-    [CompanyRepresentative ]      VARCHAR (100) NULL,
+    [boss ]      VARCHAR (100) NULL,
     [PhoneNumber]    VARCHAR (100) NULL
 );

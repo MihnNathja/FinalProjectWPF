@@ -11,6 +11,7 @@ namespace FinalProject.Database
 {
     public class Utility
     {
+        static DBConnections db = new DBConnections();
         public static void SetItemFromRow<T>(T item, DataRow row)
         where T : new()
         {
@@ -52,6 +53,11 @@ namespace FinalProject.Database
         {
             string sqlStr = $"DELETE FROM {tableName} WHERE {conditionColumn} = @ConditionValue";
             return sqlStr;
+        }
+        public static string GenerateGetID(string tableData)
+        {
+            string SQL = string.Format($"SELECT MAX(ID) FROM {tableData}");
+            return db.GetValue(SQL).ToString();
         }
     }
 }

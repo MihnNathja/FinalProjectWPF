@@ -1,4 +1,5 @@
 ﻿using System;
+using FinalProject.Database;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,26 +9,37 @@ namespace FinalProject.Objects
 {
     public class Company : User
     {
+        CompanyDAO companyDAO = new CompanyDAO();
+        string companyName;
         string mst;
-        string companyRepresentative;
+        string boss;
+        string companyLocation;
+        string phoneNumber;
         public Company() 
+        : base()
         {
             Type = "Company";
         }
         public Company(string userName, string password)
+        : base (userName, password)
         {
             Type = "Company";
         }
-        public Company(string userName, string password, string companyName, string mst, string locationCompany, string companyRepresentative, string phoneNumber)
-        : base (userName, password, companyName, phoneNumber, locationCompany)
+        // chỗ id đang xem xét
+        public Company(string userName, string password, string companyName, string mst, string companyLocation, string boss, string phoneNumber)
+        : base ( userName, password)
         {
             Type = "Company";
+            CompanyName = companyName;
+            CompanyLocation = companyLocation;
             this.mst = mst;
-            this.companyRepresentative = companyRepresentative;
+            this.boss = boss;
         }
 
         public string Mst { get => mst; set => mst = value; }
-        public string CompanyRepresentative { get => companyRepresentative; set => companyRepresentative = value; }
-        public string CompanyName { get => Name; set => Name = value; }
+        public string Boss { get => boss; set => boss = value; }
+        public string CompanyLocation { get => companyLocation; set => companyLocation = value; }
+        public string CompanyName { get => companyName; set => companyName = value; }
+        public string PhoneNumber { get => phoneNumber; set => phoneNumber = value; }
     }
 }
