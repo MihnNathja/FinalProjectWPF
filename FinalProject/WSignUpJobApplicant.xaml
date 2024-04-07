@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:FinalProject"
         mc:Ignorable="d"
         WindowStartupLocation="CenterScreen"
-        Title="WSignUpJobApplicant" Height="519" Width="800">
+        Title="WSignUpJobApplicant" Height="800" Width="800">
     <Border Background="#ffffff" CornerRadius="0 10 10 0">
         <Grid>
             <Grid.RowDefinitions>
@@ -39,6 +39,9 @@
 
                     <TextBlock Text="Điện thoại" FontWeight="Bold" FontSize="20"/>
                     <TextBox x:Name="txtPhoneNumber" Margin="10 5" Height="35"/>
+
+                    <TextBlock Text="CCCD" FontWeight="Bold" FontSize="20"/>
+                    <TextBox x:Name="txtCCCD" Margin="10 5" Height="35"/>
 
 
 

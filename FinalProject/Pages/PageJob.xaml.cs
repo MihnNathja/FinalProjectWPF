@@ -25,6 +25,7 @@ namespace FinalProject.Page
     /// </summary>
     public partial class PageJob : System.Windows.Controls.Page
     {
+        
         JobDAO jobDAO = new JobDAO();
 
         string type;
@@ -35,23 +36,35 @@ namespace FinalProject.Page
         public PageJob()
         {
             InitializeComponent();
+            
         }
+
+       
+        
         public PageJob(User user)
         {
             Type = user.Type;
             InitializeComponent();
+            
         }
         private void Page_Loaded(object sender, RoutedEventArgs e)
         {
             pnlJob.Children.Clear();
             List<UCJobInfo> jobList = jobDAO.LoadPage();
+            UCJobInfo jobInfo = new UCJobInfo();
             
             foreach (UCJobInfo job in jobList)
             {
                 job.Type = Type;
+                
                 pnlJob.Children.Add(job);
             }
         }
+
+       
+
+
+
         public void search(string location, string experience)
         {
             Filter filter = new Filter(location, experience);
