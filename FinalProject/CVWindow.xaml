@@ -34,9 +34,7 @@
                 <TextBlock Text="Họ và tên" FontSize="40" HorizontalAlignment="Center"
                            FontWeight="Bold">
                 </TextBlock>
-                <TextBlock Text="Vị trí ứng tuyển" FontSize="20" HorizontalAlignment="Center" >
-                    
-                </TextBlock>
+                
                 
             </StackPanel>
             <StackPanel Grid.Row="1">
@@ -52,17 +50,14 @@
             </StackPanel>
             <StackPanel Grid.Row="2">
                 <TextBlock  Text="MỤC TIÊU NGHỀ NGHIỆP" FontSize="20" FontWeight="Bold"/>
-                <TextBox Name="txtObjectiveDescription" Text="Mục tiêu ngắn hạn/ dài hạn" Height="40" Margin="5"/>
+                <TextBox Name="txtObjectiveDescription" Text="Mục tiêu ngắn hạn/ dài hạn" Height="60" Margin="5"/>
             </StackPanel>
             <StackPanel Grid.Row="3">
                 <TextBlock  Text="KỸ NĂNG" FontSize="20" FontWeight="Bold"/>
                 <TextBox Name="txtSkillName" Text="Tên kỹ năng" Height="40" Margin="5"/>
             </StackPanel>
+            
             <StackPanel Grid.Row="4">
-                <TextBlock  Text="SỞ THÍCH" FontSize="20" FontWeight="Bold"/>
-                <TextBox Name="txtInterestName" Text="Tên sở thích" Height="40" Margin="5"/>
-            </StackPanel>
-            <StackPanel Grid.Row="5">
                 <TextBlock  Text="NGƯỜI GIỚI THIỆU (NẾU CÓ)" FontSize="20" FontWeight="Bold"/>
                 <TextBox Name="txtReferenceInformation" Text="Thông tin người giới thiệu" Height="40" Margin="5"/>
             </StackPanel>
