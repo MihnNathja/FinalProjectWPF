@@ -6,6 +6,7 @@ using System.Linq;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 
 namespace FinalProject.Database
 {
@@ -33,7 +34,10 @@ namespace FinalProject.Database
             {
                 PropertyInfo property = properties[i];
                 if ((prop.Length == 0) || (!prop.Contains(property.Name)))
+                {
                     parameters.Add(new SqlParameter("@" + property.Name, property.GetValue(obj)));
+                    
+                }    
             }
             return parameters;
         }

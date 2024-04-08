@@ -51,7 +51,7 @@
                 <!--Title-->
                 <Grid Grid.Row="0">
                     <!--TITLE OF JOB-->
-                    <Label x:Name="Name"
+                    <Label x:Name="JobName"
                         HorizontalAlignment="Center" 
                         VerticalAlignment="Center"
                         FontSize="20"
@@ -116,7 +116,7 @@
                         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
                             <Icon:PackIconMaterial Kind="GoogleMaps" VerticalAlignment="Center" />
                             <!--Location-->
-                            <TextBlock x:Name="Location"
+                            <TextBlock x:Name="JobLocation"
                                 HorizontalAlignment="Center" 
                                 FontStyle="Italic" 
                                 VerticalAlignment="Center"

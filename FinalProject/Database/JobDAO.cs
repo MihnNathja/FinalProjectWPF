@@ -19,10 +19,9 @@ namespace FinalProject.Database
 {
     internal class JobDAO
     {
-        Utility utility = new Utility();
         DBConnections db = new DBConnections();
         DataTable dataJob;
-
+        string tableName = "Jobs";
         public DataTable DataJob { get => dataJob; set => dataJob = value; }
 
         public JobDAO() 
@@ -33,19 +32,21 @@ namespace FinalProject.Database
         }
         public void Them(Job job)
         {
-            string SQL = string.Format("INSERT INTO Jobs(ID, Name, CompanyName, Salary, Location) VALUES ('{0}','{1}', '{2}', '{3}', '{4}')", job.Id, job.Name, job.CompanyName, job.Salary, job.Location);
-            db.ThucThi(SQL);
+            string[] prop = { "" };
+            List<SqlParameter> parameters = Utility.GetParameters(job, prop);
+            string SQL = Utility.GenerateInsertSql(tableName, parameters);
+            db.ThucThi(SQL,parameters);
         }
-        public void Xoa(Job job)
+        /*public void Xoa(Job job)
         {
             string SQL = string.Format("DELETE FROM Jobs WHERE ID = {0}", job.Id);
             db.ThucThi(SQL);
         }
         public void Sua(Job job)
         {
-            string SQL = string.Format("UPDATE Jobs SET Name = '{1}', CompanyName = '{2}', Salary = '{3}', Location = '{4}' WHERE ID = {0}", job.Id, job.Name, job.CompanyName, job.Salary, job.Location);
+            string SQL = string.Format("UPDATE Jobs SET Name = '{1}', CompanyName = '{2}', Salary = '{3}', Location = '{4}' WHERE ID = {0}", job.Id, job.JobName, job.CompanyName, job.Salary, job.JobLocation);
             db.ThucThi(SQL);
-        }
+        }*/
         public string GetID()
         {
             string SQL = string.Format("SELECT MAX(ID) FROM Jobs");
@@ -53,7 +54,8 @@ namespace FinalProject.Database
         }
         public string GetNextID()
         {
-            return GetID() + 1;
+            string SQL = string.Format("SELECT MAX(ID) FROM Jobs");
+            return (db.GetValue(SQL) + 1).ToString();
         }
         public Job GetObject(string id)
         {
@@ -74,10 +76,10 @@ namespace FinalProject.Database
             {
                 UCJobInfo jobInfo = new UCJobInfo();
                 jobInfo.ID = row["ID"].ToString();
-                jobInfo.Name.Content = row["Name"].ToString();
+                jobInfo.JobName.Content = row["JobName"].ToString();
                 jobInfo.CompanyName.Text = row["CompanyName"].ToString();
                 jobInfo.Salary.Text = row["Salary"].ToString();
-                jobInfo.Location.Text = row["Location"].ToString();
+                jobInfo.JobLocation.Text = row["JobLocation"].ToString();
                 //ImageBrush imageBrush = new ImageBrush();
                 //imageBrush.ImageSource = new BitmapImage(new Uri("pack://application:,,,/FinalProjectWPF;Image/logosac-01.png", UriKind.Absolute));
                 //jobInfo.Logo.Fill = imageBrush;
