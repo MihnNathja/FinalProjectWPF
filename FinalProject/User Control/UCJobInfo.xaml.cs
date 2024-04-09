@@ -61,9 +61,9 @@ namespace FinalProject
 
         private void btnDeleteJob_Click(object sender, RoutedEventArgs e)
         {
-/*            JobDAO jobDAO = new JobDAO();
+            JobDAO jobDAO = new JobDAO();
             Job job = new Job(this.ID);
-            jobDAO.Xoa(job);*/
+            jobDAO.Xoa(job);
         }
 
         private void UCJobInfo_MouseDown(object sender, MouseButtonEventArgs e)

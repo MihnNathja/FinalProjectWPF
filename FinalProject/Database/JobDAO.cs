@@ -37,16 +37,24 @@ namespace FinalProject.Database
             string SQL = Utility.GenerateInsertSql(tableName, parameters);
             db.ThucThi(SQL,parameters);
         }
-        /*public void Xoa(Job job)
+        public void Xoa(Job job)
         {
-            string SQL = string.Format("DELETE FROM Jobs WHERE ID = {0}", job.Id);
-            db.ThucThi(SQL);
+            string[] prop = { "JobName", "CompanyName", "Salary","JobLocation" };
+            List<SqlParameter> parameter = Utility.GetParameters(job, prop);
+            string SQL = Utility.GenerateDeleteSql(tableName, parameter);
+
+            db.ThucThi(SQL, parameter);
         }
         public void Sua(Job job)
         {
+/*            string[] prop = { "" };
+            string condition = "ID = ";
+            List<SqlParameter> parameters = Utility.GetParameters(job, prop);
+            string SQL = Utility.GenerateUpdateSql(tableName, parameters, condition);
+            db.ThucThi(SQL, parameters);
             string SQL = string.Format("UPDATE Jobs SET Name = '{1}', CompanyName = '{2}', Salary = '{3}', Location = '{4}' WHERE ID = {0}", job.Id, job.JobName, job.CompanyName, job.Salary, job.JobLocation);
-            db.ThucThi(SQL);
-        }*/
+            db.ThucThi(SQL);*/
+        }
         public string GetID()
         {
             string SQL = string.Format("SELECT MAX(ID) FROM Jobs");

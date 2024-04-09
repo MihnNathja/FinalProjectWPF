@@ -53,9 +53,11 @@ namespace FinalProject.Database
             string setClause = string.Join(", ", parameters.Select(p => $"{p.ParameterName.Substring(1)} = {p.ParameterName}"));
             return $"UPDATE {tableName} SET {setClause} WHERE {condition}";
         }
-        public static string GenerateDeleteSql(string tableName, string conditionColumn)
+        public static string GenerateDeleteSql(string tableName, List<SqlParameter> parameters)
         {
-            string sqlStr = $"DELETE FROM {tableName} WHERE {conditionColumn} = @ConditionValue";
+            string conditionColumn = string.Join(", ", parameters.Select(p => p.ParameterName.Substring(1)));
+            string conditionValue = string.Join(", ", parameters.Select(p => p.ParameterName));
+            string sqlStr = $"DELETE FROM {tableName} WHERE {conditionColumn} = {conditionValue}";
             return sqlStr;
         }
         public static string GenerateGetID(string tableData)
