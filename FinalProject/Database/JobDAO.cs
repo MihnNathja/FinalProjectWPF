@@ -14,6 +14,7 @@ using System.Xml.Linq;
 using System.Windows.Controls.Primitives;
 using FinalProject.Objects;
 using System.Runtime;
+using System.Reflection;
 
 namespace FinalProject.Database
 {
@@ -71,7 +72,11 @@ namespace FinalProject.Database
             DataTable data = db.Load(SQL);
             Job job = new Job(id);
             DataRow row = data.Rows[0];
-            Utility.SetItemFromRow(job, row);
+            PropertyInfo[] properties = typeof(Job).GetProperties();
+            foreach(PropertyInfo property in properties) 
+            {
+                property.SetValue(job, row[property.Name].ToString(),null);
+            }
             return job;
         }
         public List<UCJobInfo> LoadPage()

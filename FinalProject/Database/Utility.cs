@@ -36,7 +36,6 @@ namespace FinalProject.Database
                 if ((prop.Length == 0) || (!prop.Contains(property.Name)))
                 {
                     parameters.Add(new SqlParameter("@" + property.Name, property.GetValue(obj)));
-                    
                 }    
             }
             return parameters;

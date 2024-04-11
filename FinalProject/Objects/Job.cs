@@ -27,7 +27,7 @@ namespace FinalProject.Objects
             this.salary = salary;
             this.jobLocation = jobLocation;
         }
-        public string Id { get => id; }
+        public string Id { get => id; set => id = value; }
         public string JobName { get => jobName; set => jobName = value; }
         public string CompanyName { get => companyName; set => companyName = value; }
         public string Salary { get => salary; set => salary = value; }
