@@ -58,21 +58,46 @@ namespace FinalProject
         public int GetValue(string SQL)
         {
 
+            //try
+            //{
+            //    conn.Open();
+            //    SqlCommand cmd = new SqlCommand(SQL, conn);
+            //    int value = 1;
+            //    if (cmd.ExecuteScalar() != null)
+            //    {
+            //        value = (int)cmd.ExecuteScalar();
+            //    }
+            //    return value;
+            //}
+            //catch (Exception ex)
+            //{
+            //    MessageBox.Show("Thuc thi that bai" + ex);
+            //    return 1;
+            //}
+            //finally
+            //{
+            //    conn.Close();
+            //}
+
             try
             {
                 conn.Open();
                 SqlCommand cmd = new SqlCommand(SQL, conn);
-                int value = 1;
-                if (cmd.ExecuteScalar() != null)
+                object result = cmd.ExecuteScalar();
+
+                if (result != null && result != DBNull.Value)
                 {
-                    value = (int)cmd.ExecuteScalar();
+                    return Convert.ToInt32(result);
                 }
-                return value;
+                else
+                {
+                    return 0; // Hoặc giá trị mặc định bạn muốn trả về nếu không có ID
+                }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Thuc thi that bai" + ex);
-                return 1;
+                MessageBox.Show("Thực thi thất bại: " + ex.Message);
+                return 0;
             }
             finally
             {

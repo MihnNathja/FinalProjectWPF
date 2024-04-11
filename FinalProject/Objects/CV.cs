@@ -8,14 +8,14 @@ namespace FinalProject.Objects
 {
     public class CV
     {
-        int idCV;
+        string idCV;
         string careerGoals;
         string skill;
         string presenter;
         string experience;
         string activitie;
         string certificate;
-        string award;
+        string awards;
         string addInformation;
 
 
@@ -24,11 +24,11 @@ namespace FinalProject.Objects
 
 
         public CV() { }
-        public CV(string careerGoals) 
+        public CV(string idCV) 
         {
-            CareerGoals = careerGoals;
+           IdCV = idCV;
         }
-        public CV(int idCV, string careerGoals, string skill, string presenter, string experience, string activitie, string certificate, string award, string addInformation)
+        public CV(string idCV, string careerGoals, string skill, string presenter, string experience, string activitie, string certificate, string awards, string addInformation)
         {
             IdCV = idCV;
             CareerGoals = careerGoals;
@@ -37,7 +37,7 @@ namespace FinalProject.Objects
             Experience = experience;
             Activitie = activitie;
             Certificate = certificate;
-            Award = award;
+            Awards = awards;
             AddInformation = addInformation;
             
         }
@@ -48,11 +48,11 @@ namespace FinalProject.Objects
         public string Experience { get => experience; set => experience = value; }
      
         public string Certificate { get => certificate; set => certificate = value; }
-        public string Award { get => award; set => award = value; }
+        public string Awards { get => awards; set => awards = value; }
   
         
         public string Activitie { get => activitie; set => activitie = value; }
         public string AddInformation { get => addInformation; set => addInformation = value; }
-        public int IdCV { get => idCV; set => idCV = value; }
+        public string IdCV { get => idCV; set => idCV = value; }
     }
 }
