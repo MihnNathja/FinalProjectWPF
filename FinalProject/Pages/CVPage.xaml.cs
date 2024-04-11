@@ -18,7 +18,7 @@ namespace FinalProject.Page
     /// <summary>
     /// Interaction logic for CVPage.xaml
     /// </summary>
-    public partial class CVPage
+    public partial class CVPage : System.Windows.Controls.Page
     {
         public CVPage()
         {

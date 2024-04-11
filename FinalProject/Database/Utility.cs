@@ -33,7 +33,7 @@ namespace FinalProject.Database
             for (int i = 0; i < properties.Length; i++)
             {
                 PropertyInfo property = properties[i];
-                if ((prop.Length == 0) || (!prop.Contains(property.Name)))
+                if ((prop.Length == 0) || (prop.Contains(property.Name)))
                 {
                     parameters.Add(new SqlParameter("@" + property.Name, property.GetValue(obj)));
                 }    
@@ -45,6 +45,7 @@ namespace FinalProject.Database
         {
             string columns = string.Join(", ", parameters.Select(p => p.ParameterName.Substring(1)));
             string parametersList = string.Join(", ", parameters.Select(p => p.ParameterName));
+            MessageBox.Show($"INSERT INTO {tableName} ({columns}) VALUES ({parametersList})");
             return $"INSERT INTO {tableName} ({columns}) VALUES ({parametersList})";
         }
         public static string GenerateUpdateSql(string tableName, List<SqlParameter> parameters, string condition)

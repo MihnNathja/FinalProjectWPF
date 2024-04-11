@@ -21,5 +21,40 @@
       <FileName>Objects\Employee.cs</FileName>
     </TypeIdentifier>
   </Class>
+  <Class Name="FinalProject.Database.UserDAO" Collapsed="true">
+    <Position X="11" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Database\UserDAO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FinalProject.Database.ObjectDAO">
+    <Position X="5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAgAAAAAAQIBAgAAAAgQAAAAEAgAABAAAAAQAgAAQ=</HashCode>
+      <FileName>Database\ObjectDAO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FinalProject.Database.JobDAO">
+    <Position X="7.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAgAAAAAAQIBAgAAAAgQAAAAEAgAABAAAAAAAgAAQ=</HashCode>
+      <FileName>Database\JobDAO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FinalProject.Database.CVDao" Collapsed="true">
+    <Position X="12.25" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Database\CVDao.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FinalProject.Database.CompanyDAO" Collapsed="true">
+    <Position X="1.25" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAQAAAgAAAAAAAAAAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>Database\CompanyDAO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>

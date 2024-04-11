@@ -1,4 +1,6 @@
-﻿using System;
+﻿using FinalProject.Database;
+using FinalProject.Objects;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -29,6 +31,16 @@ namespace FinalProject
 
         private void btnSignUp_Click(object sender, RoutedEventArgs e)
         {
+            Company company = new Company
+                (txtUserName.Text,
+                txtPassword.Password,
+                txtCompanyName.Text,
+                txtMST.Text,
+                txtLocationCompany.Text,
+                txtboss.Text,
+                txtPhoneNumber.Text);
+            CompanyDAO companyDAO = new CompanyDAO();
+            companyDAO.Them(company);
             this.Close();
         }
     }
