@@ -26,6 +26,5 @@ namespace FinalProject.Objects
         protected string UserName { get => userName; set => userName = value; }
         protected string Password { get => password; set => password = value; }
         public string Type { get => type; set => type = value; }
-
     }
 }

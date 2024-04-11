@@ -28,6 +28,8 @@ namespace FinalProject
         string type;
         public string ID { get => id; set => id = value; }
         public string Type { get => type; set => type = value; }
+
+        
         public UCJobInfo()
         {
             InitializeComponent();
@@ -36,8 +38,10 @@ namespace FinalProject
             {
                 btnDeleteJob.IsEnabled = false;
             }
+            
         }
 
+        
         public string Url 
         { 
             get => url;
@@ -50,6 +54,7 @@ namespace FinalProject
 
 
         public event PropertyChangedEventHandler? PropertyChanged;
+    
 
         protected virtual void OnPropertyChange(string property)
         {
@@ -58,13 +63,29 @@ namespace FinalProject
                 PropertyChanged(this, new PropertyChangedEventArgs(property));
             }
         }
-
+       
         private void btnDeleteJob_Click(object sender, RoutedEventArgs e)
         {
             JobDAO jobDAO = new JobDAO();
             Job job = new Job(this.ID);
             jobDAO.Xoa(job);
+            Reload();
         }
+
+        private void Reload()
+        {
+            // Lấy ra cửa sổ chứa UserControl hiện tại
+            Window window = Window.GetWindow(this);
+
+            // Kiểm tra xem window có tồn tại và có phải là MainWindow không
+            if (window != null && window is CompanyWindow)
+            {
+                // Gọi phương thức tải lại trang trong MainWindow
+                (window as CompanyWindow).Reload("PageJob");
+            }
+        }
+
+
 
         private void UCJobInfo_MouseDown(object sender, MouseButtonEventArgs e)
         {
@@ -80,6 +101,11 @@ namespace FinalProject
                 WJobInfoDetail wJobInfoDetail = new WJobInfoDetail(job);
                 wJobInfoDetail.ShowDialog();
             }
+        }
+
+        private void UserControl_Loaded(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

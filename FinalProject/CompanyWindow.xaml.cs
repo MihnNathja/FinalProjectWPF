@@ -24,6 +24,7 @@ namespace FinalProject
     /// </summary>
     public partial class CompanyWindow : Window
     {
+        
         // bên dưới sau này sẽ chuyển thành user, lớp cha của company và employee
         Company company = new Company();
         public CompanyWindow()
@@ -39,8 +40,25 @@ namespace FinalProject
         private void CompanyWindow_Loaded(object sender, RoutedEventArgs e)
         {
             PageJob pageJob = new PageJob(company);
+            
             mainFarm.Navigate(pageJob);
         }
+
+        public void Reload(string page)
+        {
+            
+            if(page == "PageJob")
+            {
+                mainFarm.Content = null;
+                mainFarm.Content = new PageJob();
+            }
+            if(page == "CreatJobWindow")
+            {
+                mainFarm.Content = null;
+                mainFarm.Content = new CreatJobWindow();
+            }
+        }
+
         private void ButtonOpenMenu_Click(object sender, RoutedEventArgs e)
         {
             ButtonCloseMenu.Visibility = Visibility.Visible;
