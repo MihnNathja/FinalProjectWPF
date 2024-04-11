@@ -1,4 +1,5 @@
 ﻿using System;
+using FinalProject.Objects;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -36,7 +37,8 @@ namespace FinalProject
         {
             if(rdCompany.IsChecked == true)
             {
-                CompanyWindow comp = new CompanyWindow();
+                Company company = new Company(txtUserName.Text,pbPassword.Password,"FPT","test", "test", "test", "test");
+                CompanyWindow comp = new CompanyWindow(company);
                 comp.ShowDialog();
             }
             else if (rdJobApplicant.IsChecked == true)

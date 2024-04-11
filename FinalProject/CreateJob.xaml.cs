@@ -29,20 +29,16 @@ namespace FinalProject
         public CreateJob()
         {
             InitializeComponent();
-            MessageBox.Show(txtbName.Text);
-            txtbCompanyName.Text = txtbName.Text;
         }
-/*        public CreateJob(Company company)
+        public CreateJob(Company company)
         {
             InitializeComponent();
-            this.DataContext = company;
-        }*/
+            txtbCompanyName.Text = company.CompanyName;
+        }
         public CreateJob(Job job)
         {
             InitializeComponent(); 
             this.DataContext = job;
-            MessageBox.Show(txtbCompanyName.Text);
-            txtbCompanyName.Text = txtbName.Text;
         }
 
 
@@ -54,8 +50,8 @@ namespace FinalProject
 
         private void btnSave_Click(object sender, RoutedEventArgs e)
         {
-            Job job = new Job(IdJob, txtbName.Text, txtbCompanyName.Text, cbbSalary.Text, txtbLocation.Text);
-            jobDAO.Sua(job);
+/*            Job job = new Job(IdJob, txtbName.Text, txtbCompanyName.Text, cbbSalary.Text, txtbLocation.Text);
+            jobDAO.Sua(job);*/
         }
     }
 }

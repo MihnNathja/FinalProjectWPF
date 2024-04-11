@@ -1,33 +1,30 @@
-﻿using System;
+﻿using FinalProject.Database;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace FinalProject
+namespace FinalProject.Objects
 {
-    public abstract class User
+    public class User
     {
-        private string name;
-        private string phoneNumber;
+        UserDAO userDAO;
+        private string iD;
         private string userName;
         private string password;
-        private string location;
         private string type;
         public User() { }
-        public User(string userName, string password, string name, string phoneNumber, string location)
+        public User(string userName, string password)
         {
+            //this.iD = userDAO.GetID();
             this.userName = userName;
             this.password = password;
-            this.name = name;
-            this.phoneNumber = phoneNumber;
-            this.location = location;
         }
 
-        public string Name { get => name; set => name = value; }
-        public string PhoneNumber { get => phoneNumber; set => phoneNumber = value; }
-        public string UserName { get => userName; set => userName = value; }
-        public string Password { get => password;}
-        public string Location { get => location; set => location = value; }
+
+        protected string ID { get => iD; set => iD = value; }
+        protected string UserName { get => userName; set => userName = value; }
+        protected string Password { get => password; set => password = value; }
         public string Type { get => type; set => type = value; }
     }
 }

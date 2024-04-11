@@ -35,7 +35,7 @@ namespace FinalProject
 
         private void btnThemCongViec_Click(object sender, RoutedEventArgs e)
         {
-            CreateJob createJob = new CreateJob();
+            CreateJob createJob = new CreateJob(company);
             createJob.ShowDialog();
             Page_Loaded(sender, e);
         }

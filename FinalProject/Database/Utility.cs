@@ -6,11 +6,13 @@ using System.Linq;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 
 namespace FinalProject.Database
 {
     public class Utility
     {
+        static DBConnections db = new DBConnections();
         public static void SetItemFromRow<T>(T item, DataRow row)
         where T : new()
         {
@@ -32,7 +34,9 @@ namespace FinalProject.Database
             {
                 PropertyInfo property = properties[i];
                 if ((prop.Length == 0) || (!prop.Contains(property.Name)))
+                {
                     parameters.Add(new SqlParameter("@" + property.Name, property.GetValue(obj)));
+                }    
             }
             return parameters;
         }
@@ -48,10 +52,17 @@ namespace FinalProject.Database
             string setClause = string.Join(", ", parameters.Select(p => $"{p.ParameterName.Substring(1)} = {p.ParameterName}"));
             return $"UPDATE {tableName} SET {setClause} WHERE {condition}";
         }
-        public static string GenerateDeleteSql(string tableName, string conditionColumn)
+        public static string GenerateDeleteSql(string tableName, List<SqlParameter> parameters)
         {
-            string sqlStr = $"DELETE FROM {tableName} WHERE {conditionColumn} = @ConditionValue";
+            string conditionColumn = string.Join(", ", parameters.Select(p => p.ParameterName.Substring(1)));
+            string conditionValue = string.Join(", ", parameters.Select(p => p.ParameterName));
+            string sqlStr = $"DELETE FROM {tableName} WHERE {conditionColumn} = {conditionValue}";
             return sqlStr;
+        }
+        public static string GenerateGetID(string tableData)
+        {
+            string SQL = string.Format($"SELECT MAX(ID) FROM {tableData}");
+            return db.GetValue(SQL).ToString();
         }
     }
 }
