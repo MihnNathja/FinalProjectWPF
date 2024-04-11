@@ -81,7 +81,7 @@ namespace FinalProject
             if (window != null && window is CompanyWindow)
             {
                 // Gọi phương thức tải lại trang trong MainWindow
-                (window as CompanyWindow).Reload("PageJob");
+                (window as CompanyWindow).Reload("CreatJobWindow");
             }
         }
 

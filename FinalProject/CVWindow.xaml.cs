@@ -28,7 +28,9 @@ namespace FinalProject
 
         private void btnSave_Click(object sender, RoutedEventArgs e)
         {
-            CV cv = new CV(txtSkillName.Text);
+
+            CV cv = new CV(txtCareerGoal.Text);
+
             CVDao cVDao = new CVDao();
             cVDao.Them(cv);
         }
