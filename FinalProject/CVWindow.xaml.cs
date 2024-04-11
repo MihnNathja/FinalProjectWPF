@@ -31,7 +31,7 @@ namespace FinalProject
         {
 
 
-            CV cv = new CV(cVDAO.GetNextID(),txtCareerGoal.Text,txtSkill.Text, txtPresent.Text, txtExperience.Text, txtActivitie.Text, txtCertificate.Text, txtAward.Text, txtAddInformation.Text);
+            CV cv = new CV(cVDAO.GetNextID(),txtCVTitle.Text,txtCareerGoal.Text,txtSkill.Text, txtPresent.Text, txtExperience.Text, txtActivitie.Text, txtCertificate.Text, txtAward.Text, txtAddInformation.Text);
 
 
             

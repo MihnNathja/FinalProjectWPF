@@ -5,20 +5,31 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:FinalProject.Page"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
-      Title="CVPage">
+      d:DesignHeight="600" d:DesignWidth="800"
+      Title="CVPage" Loaded="Page_Loaded">
 
-    <Border Background="White">
-        <Grid>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="auto"/>
-                <RowDefinition Height="*"/>
-            </Grid.RowDefinitions>
-            <TextBlock Text="CV đã tạo" FontSize="30" Margin="10">
-            </TextBlock>
-            <Button Content="Tạo mới" Width="150" HorizontalAlignment="Right" Margin="10" FontSize="20" Click="btnCreate_Click">
-                    
-            </Button>
+    <Grid x:Name="CreateCVPage" Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid HorizontalAlignment="Center"
+          VerticalAlignment="Center">
+            <ScrollViewer>
+                <WrapPanel x:Name="CVList">
+
+                </WrapPanel>
+            </ScrollViewer>
         </Grid>
-    </Border>
+
+
+
+        <Grid Grid.Row="1">
+            <Button x:Name="btnCreateCV" Content="Thêm CV" Width="200" Height="50" FontSize="20"
+                VerticalAlignment="Bottom" HorizontalAlignment="Right"
+                Margin="20"
+                Click="btnCreateCV_Click"/>
+        </Grid>
+
+    </Grid>
 </Page>

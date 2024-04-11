@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -43,6 +44,46 @@ namespace FinalProject.Database
             string SQL = Utility.GenerateInsertSql(tableName, parameters);
             db.ThucThi(SQL, parameters);
         }
-       
+        public void Xoa(Job job)
+        {
+            string[] prop = { };
+            List<SqlParameter> parameter = Utility.GetParameters(job, prop);
+            string SQL = Utility.GenerateDeleteSql(tableName, parameter);
+
+            db.ThucThi(SQL, parameter);
+        }
+
+        public CV GetObject(string id)
+        {
+            string SQL = string.Format("SELECT * FROM CV WHERE IdCV = '{0}'", id);
+            DataTable data = db.Load(SQL);
+            CV cV = new CV(id);
+            DataRow row = data.Rows[0];
+            PropertyInfo[] properties = typeof(CV).GetProperties();
+            foreach (PropertyInfo property in properties)
+            {
+                property.SetValue(cV, row[property.Name].ToString(), null);
+            }
+            return cV;
+        }
+
+        public List<UCCV> LoadPage()
+        {
+            int index = 0;
+
+            List<UCCV> list = new List<UCCV>();
+
+            DataTable cvTable = DataCV;
+            foreach (DataRow row in cvTable.Rows)
+            {
+                UCCV cv = new UCCV();
+                cv.tbSTT.Text = (index + 1).ToString();
+                cv.tbCVTitle.Text = row["CVTitle"].ToString();
+                
+                
+                list.Add(cv);
+            }
+            return list;
+        }
     }
 }
