@@ -12,8 +12,13 @@ TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 D:\UNIVERSITY\SOPHOMORE\TERM II\LẬP TRÌNH WINDOWS\FinalProjectWPF\FinalProject\App.xaml
 19-1047510335
 
+<<<<<<< HEAD
+321037119389
+231-1018574931
+=======
 321720006038
 231-214902253
+>>>>>>> 5dc7a870300befa3890ee160c0a46604bedad170
 CompanyWindow.xaml;CreateJob.xaml;CVWindow.xaml;JobApplicantWindow.xaml;LoginWindow.xaml;Pages\CreatJobWindow.xaml;Pages\CVPage.xaml;Pages\DocumentPage.xaml;Pages\PageJob.xaml;SignUpCompany.xaml;Style\MainStyle.xaml;Theme\Theme.xaml;User Control\UCCompanyInfo.xaml;User Control\UCJobInfo.xaml;User Control\UCPopUp.xaml;User Control\UCTextBox.xaml;WJobInfoDetail.xaml;WSignUp.xaml;WSignUpJobApplicant.xaml;
 
 False

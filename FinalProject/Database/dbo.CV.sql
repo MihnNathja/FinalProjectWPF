@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[CV]
 (
-	[IdCV] INT NOT NULL PRIMARY KEY, 
+	[IdCV] INT IDENTITY(1,1) PRIMARY KEY, 
     [Careergoals] NVARCHAR(MAX) NULL, 
     [Skill] NVARCHAR(MAX) NULL, 
     [Presenter] NVARCHAR(50) NULL, 
