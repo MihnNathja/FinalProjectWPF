@@ -14,12 +14,13 @@ namespace FinalProject
         
         SqlConnection conn = new SqlConnection(Properties.Settings.Default.connStr);
 
-        public void ThucThi(string SQL)
+        public void ThucThi(string SQL, List<SqlParameter> parameters)
         {
             try
             {
                 conn.Open();
                 SqlCommand cmd = new SqlCommand(SQL, conn);
+                cmd.Parameters.AddRange(parameters.ToArray());
                 if (cmd.ExecuteNonQuery() > 0)
                 {
                     MessageBox.Show("Thuc thi thanh cong");
@@ -61,13 +62,17 @@ namespace FinalProject
             {
                 conn.Open();
                 SqlCommand cmd = new SqlCommand(SQL, conn);
-                int value = (int)cmd.ExecuteScalar();
+                int value = 1;
+                if (cmd.ExecuteScalar() != null)
+                {
+                    value = (int)cmd.ExecuteScalar();
+                }
                 return value;
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Thuc thi that bai" + ex);
-                return 0;
+                return 1;
             }
             finally
             {

@@ -10,5 +10,10 @@ namespace FinalProject.Database
     {
         DBConnections db = new DBConnections();
         public UserDAO() { }
+        public string GetID()
+        {
+            // chỗ này sau khi có database của user sẽ tiến hành lấy thông tin từ bảng rồi tạo một id mới
+            return (Int32.Parse(Utility.GenerateGetID("user")) + 1).ToString();
+        }
     }
 }

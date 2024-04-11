@@ -28,11 +28,15 @@ namespace FinalProject
 
         private void btnSave_Click(object sender, RoutedEventArgs e)
         {
+<<<<<<< HEAD
 
             CV cv = new CV(txtCareerGoal.Text);
 
+=======
+/*            CV cv = new CV(txtSkillName.Text);
+>>>>>>> 5dc7a870300befa3890ee160c0a46604bedad170
             CVDao cVDao = new CVDao();
-            cVDao.Them(cv);
+            cVDao.Them(cv);*/
         }
     }
 }

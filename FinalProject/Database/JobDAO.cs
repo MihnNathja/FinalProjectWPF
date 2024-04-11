@@ -14,15 +14,15 @@ using System.Xml.Linq;
 using System.Windows.Controls.Primitives;
 using FinalProject.Objects;
 using System.Runtime;
+using System.Reflection;
 
 namespace FinalProject.Database
 {
     internal class JobDAO
     {
-        Utility utility = new Utility();
         DBConnections db = new DBConnections();
         DataTable dataJob;
-
+        string tableName = "Jobs";
         public DataTable DataJob { get => dataJob; set => dataJob = value; }
 
         public JobDAO() 
@@ -33,18 +33,28 @@ namespace FinalProject.Database
         }
         public void Them(Job job)
         {
-            string SQL = string.Format("INSERT INTO Jobs(ID, Name, CompanyName, Salary, Location) VALUES ('{0}','{1}', '{2}', '{3}', '{4}')", job.Id, job.Name, job.CompanyName, job.Salary, job.Location);
-            db.ThucThi(SQL);
+            string[] prop = { "" };
+            List<SqlParameter> parameters = Utility.GetParameters(job, prop);
+            string SQL = Utility.GenerateInsertSql(tableName, parameters);
+            db.ThucThi(SQL,parameters);
         }
         public void Xoa(Job job)
         {
-            string SQL = string.Format("DELETE FROM Jobs WHERE ID = {0}", job.Id);
-            db.ThucThi(SQL);
+            string[] prop = { "JobName", "CompanyName", "Salary","JobLocation" };
+            List<SqlParameter> parameter = Utility.GetParameters(job, prop);
+            string SQL = Utility.GenerateDeleteSql(tableName, parameter);
+
+            db.ThucThi(SQL, parameter);
         }
         public void Sua(Job job)
         {
-            string SQL = string.Format("UPDATE Jobs SET Name = '{1}', CompanyName = '{2}', Salary = '{3}', Location = '{4}' WHERE ID = {0}", job.Id, job.Name, job.CompanyName, job.Salary, job.Location);
-            db.ThucThi(SQL);
+/*            string[] prop = { "" };
+            string condition = "ID = ";
+            List<SqlParameter> parameters = Utility.GetParameters(job, prop);
+            string SQL = Utility.GenerateUpdateSql(tableName, parameters, condition);
+            db.ThucThi(SQL, parameters);
+            string SQL = string.Format("UPDATE Jobs SET Name = '{1}', CompanyName = '{2}', Salary = '{3}', Location = '{4}' WHERE ID = {0}", job.Id, job.JobName, job.CompanyName, job.Salary, job.JobLocation);
+            db.ThucThi(SQL);*/
         }
         public string GetID()
         {
@@ -53,7 +63,8 @@ namespace FinalProject.Database
         }
         public string GetNextID()
         {
-            return GetID() + 1;
+            string SQL = string.Format("SELECT MAX(ID) FROM Jobs");
+            return (db.GetValue(SQL) + 1).ToString();
         }
         public Job GetObject(string id)
         {
@@ -61,7 +72,11 @@ namespace FinalProject.Database
             DataTable data = db.Load(SQL);
             Job job = new Job(id);
             DataRow row = data.Rows[0];
-            Utility.SetItemFromRow(job, row);
+            PropertyInfo[] properties = typeof(Job).GetProperties();
+            foreach(PropertyInfo property in properties) 
+            {
+                property.SetValue(job, row[property.Name].ToString(),null);
+            }
             return job;
         }
         public List<UCJobInfo> LoadPage()
@@ -74,10 +89,10 @@ namespace FinalProject.Database
             {
                 UCJobInfo jobInfo = new UCJobInfo();
                 jobInfo.ID = row["ID"].ToString();
-                jobInfo.Name.Content = row["Name"].ToString();
+                jobInfo.JobName.Content = row["JobName"].ToString();
                 jobInfo.CompanyName.Text = row["CompanyName"].ToString();
                 jobInfo.Salary.Text = row["Salary"].ToString();
-                jobInfo.Location.Text = row["Location"].ToString();
+                jobInfo.JobLocation.Text = row["JobLocation"].ToString();
                 //ImageBrush imageBrush = new ImageBrush();
                 //imageBrush.ImageSource = new BitmapImage(new Uri("pack://application:,,,/FinalProjectWPF;Image/logosac-01.png", UriKind.Absolute));
                 //jobInfo.Logo.Fill = imageBrush;

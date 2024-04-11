@@ -98,9 +98,7 @@ D:\UNIVERSITY\SOPHOMORE\TERM II\LẬP TRÌNH WINDOWS\FinalProjectWPF\FinalProjec
 D:\UNIVERSITY\SOPHOMORE\TERM II\LẬP TRÌNH WINDOWS\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\Pages\CreatJobWindow.g.cs
 D:\UNIVERSITY\SOPHOMORE\TERM II\LẬP TRÌNH WINDOWS\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\Pages\CVPage.g.cs
 D:\UNIVERSITY\SOPHOMORE\TERM II\LẬP TRÌNH WINDOWS\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\Pages\DocumentPage.g.cs
-D:\UNIVERSITY\SOPHOMORE\TERM II\LẬP TRÌNH WINDOWS\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\Pages\LoginPage.g.cs
 D:\UNIVERSITY\SOPHOMORE\TERM II\LẬP TRÌNH WINDOWS\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\Pages\PageJob.g.cs
-D:\UNIVERSITY\SOPHOMORE\TERM II\LẬP TRÌNH WINDOWS\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\Pages\SignUpPage.g.cs
 D:\UNIVERSITY\SOPHOMORE\TERM II\LẬP TRÌNH WINDOWS\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\SignUpCompany.g.cs
 D:\UNIVERSITY\SOPHOMORE\TERM II\LẬP TRÌNH WINDOWS\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\User Control\UCCompanyInfo.g.cs
 D:\UNIVERSITY\SOPHOMORE\TERM II\LẬP TRÌNH WINDOWS\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\User Control\UCJobInfo.g.cs
@@ -163,9 +161,7 @@ D:\UNIVERSITY\SOPHOMORE\TERM II\LẬP TRÌNH WINDOWS\FinalProjectWPF\FinalProjec
 D:\UNIVERSITY\SOPHOMORE\TERM II\LẬP TRÌNH WINDOWS\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\Pages\CreatJobWindow.baml
 D:\UNIVERSITY\SOPHOMORE\TERM II\LẬP TRÌNH WINDOWS\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\Pages\CVPage.baml
 D:\UNIVERSITY\SOPHOMORE\TERM II\LẬP TRÌNH WINDOWS\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\Pages\DocumentPage.baml
-D:\UNIVERSITY\SOPHOMORE\TERM II\LẬP TRÌNH WINDOWS\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\Pages\LoginPage.baml
 D:\UNIVERSITY\SOPHOMORE\TERM II\LẬP TRÌNH WINDOWS\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\Pages\PageJob.baml
-D:\UNIVERSITY\SOPHOMORE\TERM II\LẬP TRÌNH WINDOWS\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\Pages\SignUpPage.baml
 D:\UNIVERSITY\SOPHOMORE\TERM II\LẬP TRÌNH WINDOWS\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\SignUpCompany.baml
 D:\UNIVERSITY\SOPHOMORE\TERM II\LẬP TRÌNH WINDOWS\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\User Control\UCCompanyInfo.baml
 D:\UNIVERSITY\SOPHOMORE\TERM II\LẬP TRÌNH WINDOWS\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\User Control\UCJobInfo.baml
@@ -200,3 +196,7 @@ C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\bin\Debug\net6.
 C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\WJobInfoDetail.baml
 C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\WSignUp.baml
 C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\WSignUpJobApplicant.baml
+D:\UNIVERSITY\SOPHOMORE\TERM II\LẬP TRÌNH WINDOWS\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\WSignUp.g.cs
+D:\UNIVERSITY\SOPHOMORE\TERM II\LẬP TRÌNH WINDOWS\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\WSignUpJobApplicant.g.cs
+D:\UNIVERSITY\SOPHOMORE\TERM II\LẬP TRÌNH WINDOWS\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\WSignUp.baml
+D:\UNIVERSITY\SOPHOMORE\TERM II\LẬP TRÌNH WINDOWS\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\WSignUpJobApplicant.baml

@@ -150,7 +150,7 @@ namespace FinalProject
 
         private void btnHoSo_Click(object sender, RoutedEventArgs e)
         {
-            FinalProject.Page.DocumentPage documentPage = new FinalProject.Page.DocumentPage();
+            Page.DocumentPage documentPage = new Page.DocumentPage();
             mainFarm.Navigate(documentPage);
         }
 

@@ -33,7 +33,7 @@
                     <TextBox x:Name="txtLocationCompany" Margin="10 5" />
 
                     <TextBlock Text="Người đại diện" FontWeight="Bold" FontSize="20"/>
-                    <TextBox x:Name="txtcompanyRepresentative" Margin="10 5" />
+                    <TextBox x:Name="txtboss" Margin="10 5" />
 
                     <TextBlock Text="Điện thoại" FontWeight="Bold" FontSize="20"/>
                     <TextBox x:Name="txtPhoneNumber" Margin="10 5" />
