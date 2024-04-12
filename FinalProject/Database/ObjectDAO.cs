@@ -44,13 +44,14 @@ namespace FinalProject.Database
         }
         public string GetID()
         {
-            string SQL = string.Format("SELECT MAX(ID) FROM " + TableName);
+            string SQL = string.Format($"SELECT MAX(ID) FROM {TableName}");
             return db.GetValue(SQL).ToString();
         }
         public string GetNextID()
         {
-            string SQL = string.Format("SELECT MAX(ID) FROM " + TableName);
+            string SQL = string.Format($"SELECT MAX(ID) FROM {TableName}");
             return (db.GetValue(SQL) + 1).ToString();
         }
+
     }
 }
