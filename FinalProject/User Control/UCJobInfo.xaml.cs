@@ -91,6 +91,7 @@ namespace FinalProject
         {
             JobDAO jobDAO = new JobDAO();
             Job job = jobDAO.GetObject(this.ID);
+            MessageBox.Show(ID);
             if (Type == "Company")
             {
                 CreateJob createJob = new CreateJob(job);

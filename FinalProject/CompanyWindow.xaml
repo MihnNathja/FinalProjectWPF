@@ -131,6 +131,16 @@
                                     <TextBlock Text="Việc làm quan tâm"/>
                                 </StackPanel>
                             </Button>
+                            <Button Style="{StaticResource menuButton}"
+                                 MouseEnter="btnTrangthai_MouseEnter"
+                                 MouseLeave="btnTrangthai_MouseLeave"
+         >
+                                <StackPanel Orientation="Horizontal">
+                                    <Icon:PackIconMaterial Kind="Checkbook" Style="{StaticResource menuButtonIcon}"/>
+                                    <TextBlock Text="Trạng Thái"/>
+                                </StackPanel>
+                            </Button>
+
                         </StackPanel>
                         <Button x:Name="btnLogout"
                                 Style="{StaticResource menuButton}" 

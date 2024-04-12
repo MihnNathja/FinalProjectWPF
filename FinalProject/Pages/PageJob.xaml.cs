@@ -56,7 +56,8 @@ namespace FinalProject.Page
             foreach (UCJobInfo job in jobList)
             {
                 job.Type = Type;
-                
+                if (job.Type == "Employee")
+                    job.btnDeleteJob.Visibility = Visibility.Hidden;
                 pnlJob.Children.Add(job);
             }
         }
