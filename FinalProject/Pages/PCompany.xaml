@@ -6,11 +6,11 @@
       xmlns:local="clr-namespace:FinalProject.Pages"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="PCompany">
+      Title="PCompany" Loaded="Page_Loaded">
     <Grid>
         <Border Style="{DynamicResource page}">
             <ScrollViewer VerticalScrollBarVisibility="Auto">
-                <WrapPanel x:Name="pnlJob">
+                <WrapPanel x:Name="pnlCompany">
 
                 </WrapPanel>
             </ScrollViewer>

@@ -75,7 +75,6 @@ namespace FinalProject.Page
             foreach (UCJobInfo job in jobList)
             {
                 job.Type = Type;
-                
                 pnlJob.Children.Add(job);
             }
         }
