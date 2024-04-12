@@ -20,7 +20,7 @@ namespace FinalProject
     /// <summary>
     /// Interaction logic for CreatJobWindow.xaml
     /// </summary>
-    public partial class CreatJobWindow
+    public partial class CreatJobWindow : System.Windows.Controls.Page
     {
         Company company = new Company();
         public CreatJobWindow()

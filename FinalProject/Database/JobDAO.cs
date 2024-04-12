@@ -18,33 +18,25 @@ using System.Reflection;
 
 namespace FinalProject.Database
 {
-    internal class JobDAO
+    internal class JobDAO : ObjectDAO
     {
         DBConnections db = new DBConnections();
-        DataTable dataJob;
-        string tableName = "Jobs";
-        public DataTable DataJob { get => dataJob; set => dataJob = value; }
-
-        public JobDAO() 
+        public JobDAO()
         {
             // mặc định, khi tạo đối tượng JobDAO, thì dữ liệu job sẽ được lấy tất cả từ database job xuống và truyền vào dataJob
 
             DataJob = Load();
+            TableName = "Jobs";
         }
         public void Them(Job job)
         {
-            string[] prop = { "" };
-            List<SqlParameter> parameters = Utility.GetParameters(job, prop);
-            string SQL = Utility.GenerateInsertSql(tableName, parameters);
-            db.ThucThi(SQL,parameters);
+            string[] prop = { "Id", "JobName", "Company", "Salary", "JobLocation" };
+            Them(job, prop);
         }
         public void Xoa(Job job)
         {
-            string[] prop = { "JobName", "CompanyName", "Salary","JobLocation" };
-            List<SqlParameter> parameter = Utility.GetParameters(job, prop);
-            string SQL = Utility.GenerateDeleteSql(tableName, parameter);
-
-            db.ThucThi(SQL, parameter);
+            string[] prop = { "Id" };
+            Xoa(job, prop);
         }
         public void Sua(Job job)
         {
@@ -73,17 +65,16 @@ namespace FinalProject.Database
             Job job = new Job(id);
             DataRow row = data.Rows[0];
             PropertyInfo[] properties = typeof(Job).GetProperties();
-            foreach(PropertyInfo property in properties) 
+            foreach (PropertyInfo property in properties)
             {
-                property.SetValue(job, row[property.Name].ToString(),null);
+                property.SetValue(job, row[property.Name].ToString(), null);
             }
             return job;
         }
         public List<UCJobInfo> LoadPage()
         {
-           
             List<UCJobInfo> list = new List<UCJobInfo>();
-            
+
             DataTable jobTable = DataJob;
             foreach (DataRow row in jobTable.Rows)
             {

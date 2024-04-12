@@ -57,28 +57,6 @@ namespace FinalProject
         }
         public int GetValue(string SQL)
         {
-
-            //try
-            //{
-            //    conn.Open();
-            //    SqlCommand cmd = new SqlCommand(SQL, conn);
-            //    int value = 1;
-            //    if (cmd.ExecuteScalar() != null)
-            //    {
-            //        value = (int)cmd.ExecuteScalar();
-            //    }
-            //    return value;
-            //}
-            //catch (Exception ex)
-            //{
-            //    MessageBox.Show("Thuc thi that bai" + ex);
-            //    return 1;
-            //}
-            //finally
-            //{
-            //    conn.Close();
-            //}
-
             try
             {
                 conn.Open();

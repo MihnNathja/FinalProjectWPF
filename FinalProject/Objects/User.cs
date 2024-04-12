@@ -22,9 +22,9 @@ namespace FinalProject.Objects
         }
 
 
-        protected string ID { get => iD; set => iD = value; }
-        protected string UserName { get => userName; set => userName = value; }
-        protected string Password { get => password; set => password = value; }
+        public string ID { get => iD; set => iD = value; }
+        public string UserName { get => userName; set => userName = value; }
+        public string Password { get => password; set => password = value; }
         public string Type { get => type; set => type = value; }
     }
 }

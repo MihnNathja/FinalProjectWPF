@@ -46,7 +46,7 @@ namespace FinalProject.Database
         }
         public void Xoa(Job job)
         {
-            string[] prop = { };
+            string[] prop = { "ID"};
             List<SqlParameter> parameter = Utility.GetParameters(job, prop);
             string SQL = Utility.GenerateDeleteSql(tableName, parameter);
 

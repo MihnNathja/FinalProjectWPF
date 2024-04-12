@@ -46,13 +46,13 @@
 
                 <StackPanel Grid.Column="1" Margin="10">
                     <TextBlock Text="Tên Đăng nhập" FontWeight="Bold" FontSize="20"/>
-                    <TextBox Margin="10 5" />
+                    <TextBox x:Name="txtUserName"  Margin="10 5" />
 
                     <TextBlock Text="Mật Khẩu" FontWeight="Bold" FontSize="20"/>
-                    <PasswordBox Margin="10 5" Height="35" />
+                    <PasswordBox x:Name="txtPassword" Margin="10 5" Height="35" />
 
                     <TextBlock Text="Xác Nhận Mật Khẩu" FontWeight="Bold" FontSize="20"/>
-                    <PasswordBox Margin="10 5" Height="35" />
+                    <PasswordBox x:Name="txtConfirmPassword" Margin="10 5" Height="35" />
 
                     <TextBlock Text="Email" FontWeight="Bold" FontSize="20"/>
                     <TextBox x:Name="txtEmail" Margin="10 5" />
