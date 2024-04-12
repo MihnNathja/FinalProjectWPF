@@ -24,9 +24,8 @@ namespace FinalProject.Database
         public JobDAO()
         {
             // mặc định, khi tạo đối tượng JobDAO, thì dữ liệu job sẽ được lấy tất cả từ database job xuống và truyền vào dataJob
-
-            DataJob = Load();
             TableName = "Jobs";
+            DataJob = Load();
         }
         public void Them(Job job)
         {
@@ -91,11 +90,7 @@ namespace FinalProject.Database
             }
             return list;
         }
-        public DataTable Load()
-        {
-            string SQL = string.Format("SELECT *FROM Jobs");
-            return db.Load(SQL);
-        }
+
 
         public DataTable Search(Filter filter)
         {

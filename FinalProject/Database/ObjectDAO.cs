@@ -52,6 +52,11 @@ namespace FinalProject.Database
             string SQL = string.Format($"SELECT MAX(ID) FROM {TableName}");
             return (db.GetValue(SQL) + 1).ToString();
         }
+        public DataTable Load()
+        {
+            string SQL = string.Format($"SELECT *FROM {TableName}");
+            return db.Load(SQL);
+        }
 
     }
 }

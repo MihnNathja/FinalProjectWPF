@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FinalProject.Database;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,17 @@ namespace FinalProject.Pages
         public PCompany()
         {
             InitializeComponent();
+        }
+
+        private void Page_Loaded(object sender, RoutedEventArgs e)
+        {
+            CompanyDAO companyDAO = new CompanyDAO();
+            pnlCompany.Children.Clear();
+            List<UCCompanyInfo> companyList = companyDAO.LoadPage();
+            foreach (UCCompanyInfo companyInfo in companyList)
+            {
+                pnlCompany.Children.Add(companyInfo);
+            }
         }
     }
 }
