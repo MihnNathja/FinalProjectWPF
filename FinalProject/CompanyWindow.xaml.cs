@@ -84,7 +84,7 @@ namespace FinalProject
         private void btnHoSo_MouseEnter(object sender, MouseEventArgs e)
         {
             popupControl.IsPopupOpen = true;
-            popupControl.PopupContent = "Hồ sơ và CV";
+            popupControl.PopupContent = "Hồ sơ Công ty";
         }
 
         private void btnHoSo_MouseLeave(object sender, MouseEventArgs e)

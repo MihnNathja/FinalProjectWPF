@@ -79,8 +79,6 @@ namespace FinalProject.Database
                 UCCV cv = new UCCV();
                 cv.tbSTT.Text = (index + 1).ToString();
                 cv.tbCVTitle.Text = row["CVTitle"].ToString();
-                
-                
                 list.Add(cv);
             }
             return list;
