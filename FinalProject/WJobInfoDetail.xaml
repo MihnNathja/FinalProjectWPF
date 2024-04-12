@@ -22,7 +22,7 @@
                 <TextBlock x:Name="txtbCompanyName" Margin="10 5" Text="{Binding CompanyName}"/>
 
                 <TextBlock Text="Tên công việc" FontWeight="Bold"/>
-                <TextBlock x:Name="txtbName" Margin="10 5" />
+                <TextBlock x:Name="txtbName" Margin="10 5" Text="{Binding JobName}"/>
 
                 <TextBlock Text="Kinh nghiệm" FontWeight="Bold"/>
                 <ComboBox Width="200" Margin="10 5" Style="{DynamicResource theComboBox}" Height="40" IsEnabled="False">
@@ -33,7 +33,7 @@
                 </ComboBox>
 
                 <TextBlock Text="Địa điểm" FontWeight="Bold"/>
-                <TextBlock x:Name="txtbLocation" Margin="10 5"/>
+                <TextBlock x:Name="txtbLocation" Margin="10 5" Text="{Binding JobLocation}"/>
 
 
                 <TextBlock Text="Mức Lương" FontWeight="Bold"/>

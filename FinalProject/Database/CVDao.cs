@@ -39,7 +39,7 @@ namespace FinalProject.Database
         }
         public void Them(CV cv)
         {
-            string[] prop = { "" };
+            string[] prop = {"IdCV", "CVTitle", "Careergoals", "Skill", "Presenter", "Experience", "Activitie", "Certificate", "Awards", "AddInformation"};
             List<SqlParameter> parameters = Utility.GetParameters(cv, prop);
             string SQL = Utility.GenerateInsertSql(tableName, parameters);
             db.ThucThi(SQL, parameters);

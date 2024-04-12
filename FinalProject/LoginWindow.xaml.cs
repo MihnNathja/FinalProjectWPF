@@ -39,14 +39,15 @@ namespace FinalProject
         {
             if(rdCompany.IsChecked == true)
             {
-                Company company = new Company(txtUserName.Text,pbPassword.Password, "FPT", "", "", "","");
+                Company company = new Company(txtUserName.Text, pbPassword.Password, "FPT", "", "", "", "");
                 UserDAO userDAO = new UserDAO();
-/*                if (userDAO.checkExist(company) == true)
-                {
+                //if (userDAO.checkExist(company) == true)
+                //{
 
-                }*/
-                CompanyWindow comp = new CompanyWindow(company);
-                comp.ShowDialog();
+                //}
+                    CompanyWindow comp = new CompanyWindow(company);
+                    comp.ShowDialog();
+
             }
             else if (rdJobApplicant.IsChecked == true)
             {
@@ -54,11 +55,12 @@ namespace FinalProject
                 UserDAO userDAO = new UserDAO();
 /*                if (userDAO.checkExist(employee) == true)
                 {
-
+                    
                 }*/
                 JobApplicantWindow jobApplicant = new JobApplicantWindow(employee);
                 jobApplicant.ShowDialog();
             }
         }
+
     }
 }

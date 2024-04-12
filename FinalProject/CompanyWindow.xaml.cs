@@ -36,6 +36,7 @@ namespace FinalProject
             InitializeComponent();
             this.company = company;
             this.DataContext = company;
+            MessageBox.Show(company.CompanyName);
         }
         private void CompanyWindow_Loaded(object sender, RoutedEventArgs e)
         {
@@ -108,6 +109,17 @@ namespace FinalProject
         }
 
         private void btnQuanTam_MouseLeave(object sender, MouseEventArgs e)
+        {
+            popupControl.IsPopupOpen = false;
+        }
+
+        private void btnTrangthai_MouseEnter(object sender, MouseEventArgs e)
+        {
+            popupControl.IsPopupOpen = true;
+            popupControl.PopupContent = "Trạng thái";
+        }
+
+        private void btnTrangthai_MouseLeave(object sender, MouseEventArgs e)
         {
             popupControl.IsPopupOpen = false;
         }

@@ -23,11 +23,14 @@ namespace FinalProject
         public WJobInfoDetail()
         {
             InitializeComponent();
+            
         }
+
         public WJobInfoDetail(Job job)
         {
             InitializeComponent();
             this.DataContext = job;
         }
+
     }
 }
