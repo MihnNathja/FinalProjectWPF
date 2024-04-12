@@ -21,7 +21,7 @@ namespace FinalProject.Database
 
         public void Them(Company company)
         {
-            string[] prop = { "CompanyName", "Mst", "CompanyLocation", "Boss", "PhoneNumber" };
+            string[] prop = { "ID","CompanyName", "Mst", "CompanyLocation", "Boss", "PhoneNumber" };
             Them(company, prop);
         }
         /*        public void Xoa(Company company)
@@ -39,14 +39,14 @@ namespace FinalProject.Database
         {
             List<UCCompanyInfo> list = new List<UCCompanyInfo>();
 
-            DataTable companyTable = DataJob;
+            DataTable companyTable = Load();
             foreach (DataRow row in companyTable.Rows)
             {
                 UCCompanyInfo companyInfo = new UCCompanyInfo();
                 companyInfo.CompanyName.Text = row["CompanyName"].ToString();
                 companyInfo.Mst.Text = row["Mst"].ToString();
                 companyInfo.CompanyLocation.Text = row["CompanyLocation"].ToString();
-                companyInfo.Boss.Text = row["Boss"].ToString();
+                /*companyInfo.Boss.Text = row["Boss"].ToString();*/
                 companyInfo.PhoneNumber.Text = row["PhoneNumber"].ToString() ;
                 list.Add(companyInfo);
             }

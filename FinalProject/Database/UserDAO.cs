@@ -16,7 +16,16 @@ namespace FinalProject.Database
         public string GetID()
         {
             // chỗ này sau khi có database của user sẽ tiến hành lấy thông tin từ bảng rồi tạo một id mới
-            return (Int32.Parse(Utility.GenerateGetID("user")) + 1).ToString();
+            return (Int32.Parse(Utility.GenerateGetID("user"))).ToString();
+        }
+        public string GenerateID()
+        {
+            MessageBox.Show(Utility.GenerateGetID("Users"));
+            if(Utility.GenerateGetID("Users") == null)
+            {
+                return "1";
+            }    
+            return (Int32.Parse(Utility.GenerateGetID("Users")) + 1).ToString();
         }
         public bool checkExist(User user)
         {

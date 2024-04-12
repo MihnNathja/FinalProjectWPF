@@ -60,10 +60,5 @@ namespace FinalProject
                 jobApplicant.ShowDialog();
             }
         }
-
-        private void pbPassword_PasswordChanged(object sender, RoutedEventArgs e)
-        {
-            string password = pbPassword.Password;
-        }
     }
 }

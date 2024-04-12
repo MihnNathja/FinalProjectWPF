@@ -16,7 +16,7 @@ namespace FinalProject.Objects
         public User() { }
         public User(string userName, string password)
         {
-            //this.iD = userDAO.GetID();
+            /*this.iD = userDAO.GetID();*/
             this.userName = userName;
             this.password = password;
         }

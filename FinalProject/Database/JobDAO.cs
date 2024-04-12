@@ -101,7 +101,7 @@ namespace FinalProject.Database
                         {
                             values += "'" + property.GetValue(filter).ToString() + "'" + ",";
                         }*/
-            string SQL = string.Format("SELECT *FROM Jobs WHERE Location = '{0}'", filter.Location);
+            string SQL = string.Format("SELECT *FROM Jobs WHERE JobLocation = '{0}'", filter.Location);
             return db.Load(SQL);
         }
     }

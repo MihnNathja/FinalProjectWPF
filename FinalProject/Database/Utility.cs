@@ -45,7 +45,6 @@ namespace FinalProject.Database
         {
             string columns = string.Join(", ", parameters.Select(p => p.ParameterName.Substring(1)));
             string parametersList = string.Join(", ", parameters.Select(p => p.ParameterName));
-            MessageBox.Show($"INSERT INTO {tableName} ({columns}) VALUES ({parametersList})");
             return $"INSERT INTO {tableName} ({columns}) VALUES ({parametersList})";
         }
         public static string GenerateUpdateSql(string tableName, List<SqlParameter> parameters, string condition)

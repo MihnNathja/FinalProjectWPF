@@ -18,7 +18,7 @@ namespace FinalProject.Database
 
         public void Them(Employee employee)
         {
-            string[] prop = { "EmployeeName", "Gender", "EmployeeLocation", "DateOfBirth", "Cccd" };
+            string[] prop = { "ID","EmployeeName", "Gender", "EmployeeLocation", "DateOfBirth", "Cccd" };
             Them(employee, prop);
         }
 
