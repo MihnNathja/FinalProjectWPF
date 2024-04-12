@@ -34,13 +34,12 @@
 
                 <TextBlock Text="Mật Khẩu" FontSize="20" FontWeight="Bold" Margin="10 "/>
                 <PasswordBox x:Name="pbPassword" Width="350" Height="35" Panel.ZIndex="1" PasswordChanged="pbPassword_PasswordChanged" MaxLength="20" PasswordChar="•" />
-                        <StackPanel Orientation="Horizontal" Margin="10">
-                            <RadioButton x:Name="rdCompany" Content="Công ty" FontWeight="Bold"/>
-                            <RadioButton x:Name="rdJobApplicant" Content="Ứng Viên" Margin="20 0" FontWeight="Bold"/>
-                        </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="10">
+                    <RadioButton x:Name="rdCompany" Content="Công ty" FontWeight="Bold"/>
+                    <RadioButton x:Name="rdJobApplicant" Content="Ứng Viên" Margin="20 0" FontWeight="Bold"/>
+                </StackPanel>
 
-
-                        <Button Content="Đăng ký" Margin="0 0 20 0" BorderThickness="0" FontWeight="Bold"
+                <Button Content="Đăng ký" Margin="0 0 20 0" BorderThickness="0" FontWeight="Bold"
                         Foreground="Green" Background="Transparent" FontSize="15" HorizontalAlignment="Right"
                     Name="btnSignUp" Click="btnSignUp_Click"/>
 

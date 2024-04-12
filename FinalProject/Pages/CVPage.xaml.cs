@@ -1,4 +1,6 @@
-﻿using System;
+﻿using FinalProject.Database;
+using FinalProject.Objects;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -25,10 +27,23 @@ namespace FinalProject.Page
             InitializeComponent();
         }
 
-        private void btnCreate_Click(object sender, RoutedEventArgs e)
+        private void btnCreateCV_Click(object sender, RoutedEventArgs e)
         {
             CVWindow cvWindow = new CVWindow();
             cvWindow.Show();
+            Page_Loaded(sender, e);
+        }
+
+        private void Page_Loaded(object sender, RoutedEventArgs e)
+        {
+            CVList.Children.Clear();
+            CVDAO cVDAO = new CVDAO();
+            List<UCCV> data = cVDAO.LoadPage();
+            foreach (UCCV cv in data)
+            {
+                
+                CVList.Children.Add(cv);
+            }
         }
     }
 }

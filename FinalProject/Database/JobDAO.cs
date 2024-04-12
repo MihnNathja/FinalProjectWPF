@@ -50,12 +50,12 @@ namespace FinalProject.Database
         }
         public string GetID()
         {
-            string SQL = string.Format("SELECT MAX(ID) FROM Jobs");
+            string SQL = string.Format("SELECT MAX(Id) FROM Jobs");
             return db.GetValue(SQL).ToString();
         }
         public string GetNextID()
         {
-            string SQL = string.Format("SELECT MAX(ID) FROM Jobs");
+            string SQL = string.Format("SELECT MAX(Id) FROM Jobs");
             return (db.GetValue(SQL) + 1).ToString();
         }
         public Job GetObject(string id)

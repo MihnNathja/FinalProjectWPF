@@ -93,7 +93,7 @@ namespace FinalProject
 
         private void btnCongTy_Click(object sender, RoutedEventArgs e)
         {
-            mainFarm.Navigate(new System.Uri("Pages/CreatJobWindow.xaml", UriKind.RelativeOrAbsolute));
+            
         }
 
         private void popupControl_Loaded(object sender, RoutedEventArgs e)

@@ -21,6 +21,7 @@ namespace FinalProject
     /// </summary>
     public partial class CVWindow : Window
     {
+        CVDAO cVDAO = new CVDAO();
         public CVWindow()
         {
             InitializeComponent();
@@ -28,9 +29,13 @@ namespace FinalProject
 
         private void btnSave_Click(object sender, RoutedEventArgs e)
         {
-/*            CV cv = new CV(txtSkillName.Text);
-            CVDao cVDao = new CVDao();
-            cVDao.Them(cv);*/
+
+
+            CV cv = new CV(cVDAO.GetNextID(),txtCVTitle.Text,txtCareerGoal.Text,txtSkill.Text, txtPresent.Text, txtExperience.Text, txtActivitie.Text, txtCertificate.Text, txtAward.Text, txtAddInformation.Text);
+
+
+            
+            cVDAO.Them(cv);
         }
     }
 }
