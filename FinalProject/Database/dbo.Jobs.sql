@@ -1,5 +1,5 @@
 ﻿CREATE TABLE [dbo].[Jobs] (
-	[Id]		    VARCHAR PRIMARY KEY NOT NULL,
+	[Id]		    NVARCHAR (100) PRIMARY KEY NOT NULL,
     [JobName]       VARCHAR (100) NULL,
     [CompanyName]   VARCHAR (255) NULL,
     [Salary]        VARCHAR (100) NULL,

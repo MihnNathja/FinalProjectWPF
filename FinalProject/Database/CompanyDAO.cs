@@ -21,7 +21,7 @@ namespace FinalProject.Database
 
         public void Them(Company company)
         {
-            string[] prop = { "ID","CompanyName", "Mst", "CompanyLocation", "Boss", "PhoneNumber" };
+            string[] prop = { "ID","UserName" ,"Password", "Type" ,"CompanyName", "Mst", "CompanyLocation", "Boss", "PhoneNumber" };
             Them(company, prop);
         }
         /*        public void Xoa(Company company)

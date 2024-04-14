@@ -18,10 +18,14 @@ namespace FinalProject.Database
 
         public void Them(Employee employee)
         {
-            string[] prop = { "ID","EmployeeName", "Gender", "EmployeeLocation", "DateOfBirth", "Cccd" };
+            string[] prop = { "ID","UserName","Password","Type" ,"EmployeeName", "Gender", "EmployeeLocation", "DateOfBirth", "Cccd" };
             Them(employee, prop);
         }
-
+        public Employee GetEmployee(int id)
+        {
+            Employee emp = new Employee();
+            return emp;
+        }
         public DataTable Load()
         {
             string SQL = string.Format("SELECT *FROM Employees");

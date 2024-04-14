@@ -1,4 +1,5 @@
-﻿using FinalProject.Objects;
+﻿using FinalProject.Database;
+using FinalProject.Objects;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,6 +21,7 @@ namespace FinalProject
     /// </summary>
     public partial class WJobInfoDetail : Window
     {
+        Job job = new Job();
         public WJobInfoDetail()
         {
             InitializeComponent();
@@ -30,7 +32,15 @@ namespace FinalProject
         {
             InitializeComponent();
             this.DataContext = job;
+            this.Job = job; 
         }
 
+        public Job Job { get => job; set => job = value; }
+
+        private void btnApply_Click(object sender, RoutedEventArgs e)
+        {
+            CVDAO cVDAO = new CVDAO();
+            cVDAO.Apply(Job, cv);
+        }
     }
 }

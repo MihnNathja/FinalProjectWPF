@@ -8,7 +8,7 @@ namespace FinalProject.Objects
 {
     public class User
     {
-        UserDAO userDAO;
+        UserDAO userDAO = new UserDAO();
         private string iD;
         private string userName;
         private string password;
@@ -16,7 +16,7 @@ namespace FinalProject.Objects
         public User() { }
         public User(string userName, string password)
         {
-            /*this.iD = userDAO.GetID();*/
+            this.iD = userDAO.GetID();
             this.userName = userName;
             this.password = password;
         }

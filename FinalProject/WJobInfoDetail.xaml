@@ -63,7 +63,7 @@
                 <TextBlock  Margin="10 5" />
 
 
-                <Button x:Name="btnApply" Content="Ứng Tuyển Ngay" Width="120"  Margin="0 50 0 0"/>
+                <Button x:Name="btnApply" Content="Ứng Tuyển Ngay" Width="120"  Margin="0 50 0 0" Click="btnApply_Click"/>
             </StackPanel>
 
         </Grid>

@@ -16,7 +16,7 @@
         <StackPanel>
             <StackPanel>
                 <TextBox x:Name="txtCVTitle" Text="{Binding CVTitle}" FontSize="40" HorizontalAlignment="Center"
-               FontWeight="Bold" Height="70" TextAlignment="Center"
+                FontWeight="Bold" Height="70" TextAlignment="Center"
              Margin="10" Width="auto"
                        >
 
@@ -31,7 +31,7 @@
                         </Ellipse>
                     </Border>
 
-                    <TextBlock Text="Họ và tên" FontSize="40" HorizontalAlignment="Center"
+                    <TextBlock Text="{Binding EmployeeName}" FontSize="40" HorizontalAlignment="Center"
                         FontWeight="Bold" Margin="0 50">
                     </TextBlock>
                 </StackPanel>

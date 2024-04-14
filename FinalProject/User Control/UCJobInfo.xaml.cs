@@ -28,7 +28,7 @@ namespace FinalProject
         string type;
         public string ID { get => id; set => id = value; }
         public string Type { get => type; set => type = value; }
-
+        
         
         public UCJobInfo()
         {
@@ -90,7 +90,6 @@ namespace FinalProject
         {
             JobDAO jobDAO = new JobDAO();
             Job job = jobDAO.GetObject(this.ID);
-            MessageBox.Show(ID);
             if (Type == "Company")
             {
                 CreateJob createJob = new CreateJob(job);

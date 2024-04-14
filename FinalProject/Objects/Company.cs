@@ -25,15 +25,15 @@ namespace FinalProject.Objects
         {
             Type = "Company";
         }
-        // chỗ id đang xem xét
         public Company(string userName, string password, string companyName, string mst, string companyLocation, string boss, string phoneNumber)
         : base ( userName, password)
         {
             Type = "Company";
             CompanyName = companyName;
             CompanyLocation = companyLocation;
-            this.mst = mst;
-            this.boss = boss;
+            Mst = mst;
+            Boss = boss;
+            PhoneNumber = phoneNumber;
         }
 
         public string Mst { get => mst; set => mst = value; }

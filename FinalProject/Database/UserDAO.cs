@@ -1,6 +1,7 @@
 ﻿using FinalProject.Objects;
 using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -16,7 +17,7 @@ namespace FinalProject.Database
         public string GetID()
         {
             // chỗ này sau khi có database của user sẽ tiến hành lấy thông tin từ bảng rồi tạo một id mới
-            return (Int32.Parse(Utility.GenerateGetID("user"))).ToString();
+            return (Int32.Parse(Utility.GenerateGetID("Users"))).ToString();
         }
         public string GenerateID()
         {
@@ -29,8 +30,15 @@ namespace FinalProject.Database
         }
         public bool checkExist(User user)
         {
-            string SQL = $"SELECT Count(*) FROM  Users  WHERE UserName = {user.UserName} and Password = {user.Password} and Type = {user.Type}";
-            MessageBox.Show(SQL);
+            string SQL = "";
+            if (user.Type == "Company")
+            {
+                SQL = $"SELECT Count(*) FROM  Companies  WHERE UserName = '{user.UserName}' and Password = '{user.Password}' and Type = '{user.Type}'";
+            }
+            else
+            {
+                SQL = $"SELECT Count(*) FROM  Employees  WHERE UserName = '{user.UserName}' and Password = '{user.Password}' and Type = '{user.Type}'";
+            }
             if (db.GetValue(SQL) > 0)
             {
                 return true;
