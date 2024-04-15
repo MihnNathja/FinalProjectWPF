@@ -7,6 +7,14 @@
         <Setter Property="CornerRadius" Value="10"/>
        
     </Style>
+    
+
+    <Style TargetType="Window">
+        <Setter Property="WindowStyle" Value="None"/>
+        <Setter Property="ResizeMode" Value="NoResize"/>
+        <Setter Property="Background" Value="White"/>
+        <Setter Property="WindowState" Value="Maximized"/>
+    </Style>
     <Style x:Key="topButton" TargetType="Button">
         <Setter Property="Background" Value="{x:Null}"/>
         <Setter Property="Foreground" Value="#00b14f"/>
