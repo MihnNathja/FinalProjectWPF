@@ -19,16 +19,19 @@ namespace FinalProject.Objects
         : base()
         {
             Type = "Company";
+            TableName = "Companies";
         }
         public Company(string userName, string password)
         : base (userName, password)
         {
-            Type = "Company";
+            Type = "Company"; 
+            TableName = "Companies";
         }
         public Company(string userName, string password, string companyName, string mst, string companyLocation, string boss, string phoneNumber)
         : base ( userName, password)
         {
             Type = "Company";
+            TableName = "Companies";
             CompanyName = companyName;
             CompanyLocation = companyLocation;
             Mst = mst;

@@ -31,7 +31,6 @@ namespace FinalProject
         public JobApplicantWindow(Employee employee)
         {
             InitializeComponent();
-            MessageBox.Show(employee.EmployeeName);
             this.employee = employee;
             this.DataContext = employee;
         }

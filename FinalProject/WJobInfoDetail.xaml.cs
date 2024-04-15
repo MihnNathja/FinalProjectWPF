@@ -40,7 +40,7 @@ namespace FinalProject
         private void btnApply_Click(object sender, RoutedEventArgs e)
         {
             CVDAO cVDAO = new CVDAO();
-            cVDAO.Apply(Job, cv);
+            /*cVDAO.Apply(Job, cv);*/
         }
     }
 }

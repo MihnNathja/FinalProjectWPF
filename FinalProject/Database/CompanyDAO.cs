@@ -6,6 +6,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 
 namespace FinalProject.Database
 {
@@ -16,11 +17,11 @@ namespace FinalProject.Database
         public CompanyDAO()
         {
             TableName = "Companies";
-
         }
 
         public void Them(Company company)
         {
+            MessageBox.Show(company.TableName);
             string[] prop = { "ID","UserName" ,"Password", "Type" ,"CompanyName", "Mst", "CompanyLocation", "Boss", "PhoneNumber" };
             Them(company, prop);
         }

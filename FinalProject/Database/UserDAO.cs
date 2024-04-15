@@ -14,32 +14,23 @@ namespace FinalProject.Database
     {
         DBConnections db = new DBConnections();
         public UserDAO() { }
-        public string GetID()
+        public string GetID(string TableName)
         {
             // chỗ này sau khi có database của user sẽ tiến hành lấy thông tin từ bảng rồi tạo một id mới
-            return (Int32.Parse(Utility.GenerateGetID("Users"))).ToString();
+            return (Int32.Parse(Utility.GenerateGetID(TableName))).ToString();
         }
-        public string GenerateID()
+        public string GenerateID(string TableName)
         {
-            MessageBox.Show(Utility.GenerateGetID("Users"));
-            if(Utility.GenerateGetID("Users") == null)
+            if(Utility.GenerateGetID(TableName) == null)
             {
                 return "1";
             }    
-            return (Int32.Parse(Utility.GenerateGetID("Users")) + 1).ToString();
+            return (Int32.Parse(Utility.GenerateGetID(TableName)) + 1).ToString();
         }
         public bool checkExist(User user)
         {
-            string SQL = "";
-            if (user.Type == "Company")
-            {
-                SQL = $"SELECT Count(*) FROM  Companies  WHERE UserName = '{user.UserName}' and Password = '{user.Password}' and Type = '{user.Type}'";
-            }
-            else
-            {
-                SQL = $"SELECT Count(*) FROM  Employees  WHERE UserName = '{user.UserName}' and Password = '{user.Password}' and Type = '{user.Type}'";
-            }
-            if (db.GetValue(SQL) > 0)
+            string SQL = $"SELECT Count(*) FROM  {user.TableName}  WHERE UserName = '{user.UserName}' and Password = '{user.Password}' and Type = '{user.Type}'";
+            if (Convert.ToInt32(db.GetValue(SQL)) > 0)
             {
                 return true;
             }

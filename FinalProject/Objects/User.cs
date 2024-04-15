@@ -13,10 +13,11 @@ namespace FinalProject.Objects
         private string userName;
         private string password;
         private string type;
+        private string tableName;
         public User() { }
         public User(string userName, string password)
         {
-            this.iD = userDAO.GetID();
+            this.iD = userDAO.GenerateID(TableName);
             this.userName = userName;
             this.password = password;
         }
@@ -26,5 +27,6 @@ namespace FinalProject.Objects
         public string UserName { get => userName; set => userName = value; }
         public string Password { get => password; set => password = value; }
         public string Type { get => type; set => type = value; }
+        public string TableName { get => tableName; set => tableName = value; }
     }
 }
