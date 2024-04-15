@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
+using System.Transactions;
 
 namespace FinalProject.Objects
 {
@@ -28,10 +30,9 @@ namespace FinalProject.Objects
             TableName = "Companies";
         }
         public Company(string userName, string password, string companyName, string mst, string companyLocation, string boss, string phoneNumber)
-        : base ( userName, password)
-        {
+        : base ( userName, password, "Companies")
+        {   
             Type = "Company";
-            TableName = "Companies";
             CompanyName = companyName;
             CompanyLocation = companyLocation;
             Mst = mst;

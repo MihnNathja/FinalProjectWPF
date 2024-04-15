@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Windows;
 
 namespace FinalProject.Objects
 {
@@ -17,11 +18,16 @@ namespace FinalProject.Objects
         public User() { }
         public User(string userName, string password)
         {
-            this.iD = userDAO.GenerateID(TableName);
             this.userName = userName;
             this.password = password;
         }
-
+        public User(string userName, string password, string tableName)
+        {
+            TableName = tableName;
+            this.userName = userName;
+            this.password = password;
+            this.iD = userDAO.GenerateID(TableName);
+        }
 
         public string ID { get => iD; set => iD = value; }
         public string UserName { get => userName; set => userName = value; }

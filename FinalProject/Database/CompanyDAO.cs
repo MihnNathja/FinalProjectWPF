@@ -21,7 +21,6 @@ namespace FinalProject.Database
 
         public void Them(Company company)
         {
-            MessageBox.Show(company.TableName);
             string[] prop = { "ID","UserName" ,"Password", "Type" ,"CompanyName", "Mst", "CompanyLocation", "Boss", "PhoneNumber" };
             Them(company, prop);
         }

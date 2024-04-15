@@ -59,7 +59,6 @@ namespace FinalProject
         {
             try
             {
-                MessageBox.Show(SQL);
                 conn.Open();
                 SqlCommand cmd = new SqlCommand(SQL, conn);
                 object result = cmd.ExecuteScalar();

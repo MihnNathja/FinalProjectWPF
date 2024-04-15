@@ -25,10 +25,9 @@ namespace FinalProject.Objects
         }
 
         public Employee(string userName, string password, string employeeName, string gender, string employeeLocation, DateTime dateOfBirth, string cccd) 
-            : base( userName, password)
+            : base( userName, password, "Employees")
         {
             Type = "Employee";
-            TableName = "Employees";
             this.employeeName = employeeName;
             this.gender = gender;
             this.employeeLocation = employeeLocation;
