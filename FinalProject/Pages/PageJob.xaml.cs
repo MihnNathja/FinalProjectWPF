@@ -27,11 +27,8 @@ namespace FinalProject.Page
     {
         
         JobDAO jobDAO = new JobDAO();
-
-        string type;
-
-        public string Type { get => type; set => type = value; }
-
+        User user;
+        public User User { get => user; set => user = value; }
 
         public PageJob()
         {
@@ -43,7 +40,7 @@ namespace FinalProject.Page
         
         public PageJob(User user)
         {
-            Type = user.Type;
+            User = user;
             InitializeComponent();
             
         }
@@ -54,7 +51,8 @@ namespace FinalProject.Page
             
             foreach (UCJobInfo job in jobList)
             {
-                job.Type = Type;
+                job.User = user;
+                job.Type = User.Type;
                 if (job.Type == "Employee")
                     job.btnDeleteJob.Visibility = Visibility.Hidden;
                 pnlJob.Children.Add(job);
@@ -73,7 +71,8 @@ namespace FinalProject.Page
             List<UCJobInfo> jobList = jobDAO.LoadPage();
             foreach (UCJobInfo job in jobList)
             {
-                job.Type = Type;
+                job.User = user;
+                job.Type = User.Type;
                 pnlJob.Children.Add(job);
             }
         }

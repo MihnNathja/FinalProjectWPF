@@ -12,6 +12,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using FinalProject.Database;
 
 namespace FinalProject
 {
@@ -38,8 +39,13 @@ namespace FinalProject
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show(Employee.EmployeeName);
+            pnlCV.Children.Clear();
+            CVDAO cvDAO = new CVDAO();
+            List<UCCV> cvList = cvDAO.GetEmployeeCV(employee);
+            foreach (UCCV cv in cvList)
+            {
+                pnlCV.Children.Add(cv);
+            }
         }
-        // 
     }
 }

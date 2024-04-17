@@ -23,13 +23,33 @@ namespace FinalProject
     /// </summary>
     public partial class UCJobInfo : UserControl, INotifyPropertyChanged
     {
-        private string url;
+        User user;
+        string url;
         string id;
         string type;
         public string ID { get => id; set => id = value; }
         public string Type { get => type; set => type = value; }
-        
-        
+        public User User { get => user; set => user = value; }
+
+        public event PropertyChangedEventHandler? PropertyChanged;
+
+        public string Url
+        {
+            get => url;
+            set
+            {
+                url = value;
+                OnPropertyChange(Url);
+            }
+        }
+        protected virtual void OnPropertyChange(string property)
+        {
+            if (PropertyChanged != null)
+            {
+                PropertyChanged(this, new PropertyChangedEventArgs(property));
+            }
+        }
+
         public UCJobInfo()
         {
             InitializeComponent();
@@ -54,27 +74,9 @@ namespace FinalProject
         }
 
 
-        public string Url 
-        { 
-            get => url;
-            set { 
-                url = value; 
-                OnPropertyChange(Url);
-            }
-        }
 
 
 
-        public event PropertyChangedEventHandler? PropertyChanged;
-    
-
-        protected virtual void OnPropertyChange(string property)
-        {
-            if (PropertyChanged != null)
-            {
-                PropertyChanged(this, new PropertyChangedEventArgs(property));
-            }
-        }
        
         private void btnDeleteJob_Click(object sender, RoutedEventArgs e)
         {
@@ -110,7 +112,7 @@ namespace FinalProject
             }
             else if (Type == "Employee")
             {
-                WJobInfoDetail wJobInfoDetail = new WJobInfoDetail(job);
+                WJobInfoDetail wJobInfoDetail = new WJobInfoDetail(User,job);
                 wJobInfoDetail.ShowDialog();
             }
         }
