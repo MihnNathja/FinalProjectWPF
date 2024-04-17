@@ -35,6 +35,11 @@ namespace FinalProject
 
         public Employee Employee { get => employee; set => employee = value; }
         public Job Job { get => job; set => job = value; }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show(Employee.EmployeeName);
+        }
         // 
     }
 }

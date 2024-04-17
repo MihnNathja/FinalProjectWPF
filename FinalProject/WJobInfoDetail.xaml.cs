@@ -41,6 +41,8 @@ namespace FinalProject
         {
             CVDAO cVDAO = new CVDAO();
             /*cVDAO.Apply(Job, cv);*/
+            WSelectCV wSelectCV = new WSelectCV();
+            wSelectCV.ShowDialog();
         }
     }
 }

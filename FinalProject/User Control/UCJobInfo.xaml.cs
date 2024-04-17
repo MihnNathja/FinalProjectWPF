@@ -39,8 +39,21 @@ namespace FinalProject
                 btnDeleteJob.IsEnabled = false;
             }
         }
+        public UCJobInfo(Job job)
+        {
+            InitializeComponent();
+            ID = job.Id;
+            CompanyName.Text = job.CompanyName;
+            JobName.Content = job.JobName;
+            Salary.Text = job.Salary;
+            JobLocation.Text = job.JobLocation;
+            if (Type == "Employee")
+            {
+                btnDeleteJob.IsEnabled = false;
+            }
+        }
 
-        
+
         public string Url 
         { 
             get => url;

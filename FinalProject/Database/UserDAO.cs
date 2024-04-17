@@ -49,7 +49,7 @@ namespace FinalProject.Database
             {
                 if (property.Name != "TableName")
                 {
-                    property.SetValue(person, row[property.Name].ToString(), null);
+                    property.SetValue(person, row[property.Name], null);
                 }
             }
             return person;

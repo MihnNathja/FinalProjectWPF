@@ -90,7 +90,7 @@ namespace FinalProject
                 }
                 else if (user.Type == "Employee")
                 {
-                    Employee employee = new Employee(txtUserName.Text, pbPassword.Password);
+                    Employee employee = new Employee();
                     employee = userDAO.GetUser(employee, user);
                     JobApplicantWindow jobApplicant = new JobApplicantWindow(employee);
                     jobApplicant.ShowDialog();
