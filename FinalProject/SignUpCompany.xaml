@@ -4,6 +4,14 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FinalProject"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="13"
+        TextOptions.TextFormattingMode="Ideal"
+        TextOptions.TextRenderingMode="Auto"
+        Background="{DynamicResource MaterialDesignPaper}"
+        FontFamily="{DynamicResource MaterialDesignFont}"
         mc:Ignorable="d"
         
         WindowStartupLocation="CenterScreen"
@@ -23,20 +31,23 @@
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
                 <StackPanel Margin="10">
-                    <TextBlock Text="Tên Công Ty" FontWeight="Bold" FontSize="20"/>
-                    <TextBox x:Name="txtCompanyName" Margin="10 5" />
                     
-                    <TextBlock Text="Mã số thuế" FontWeight="Bold" FontSize="20"/>
-                    <TextBox x:Name="txtMST" Margin="10 5" />
+                    <TextBox x:Name="txtCompanyName" Margin="10 5"
+                             materialDesign:HintAssist.Hint="Tên công ty"/>
+                    
+                    
+                    <TextBox x:Name="txtMST" Margin="10 5" 
+                             materialDesign:HintAssist.Hint="Mã số thuế"/>
 
-                    <TextBlock Text="Địa chỉ" FontWeight="Bold" FontSize="20"/>
-                    <TextBox x:Name="txtLocationCompany" Margin="10 5" />
+                    <TextBox x:Name="txtLocationCompany" Margin="10 5" 
+                             materialDesign:HintAssist.Hint="Địa chỉ"/>
 
-                    <TextBlock Text="Người đại diện" FontWeight="Bold" FontSize="20"/>
-                    <TextBox x:Name="txtboss" Margin="10 5" />
+                    
+                    <TextBox x:Name="txtboss" Margin="10 5" 
+                             materialDesign:HintAssist.Hint="Người đại diện"/>
 
-                    <TextBlock Text="Điện thoại" FontWeight="Bold" FontSize="20"/>
-                    <TextBox x:Name="txtPhoneNumber" Margin="10 5" />
+                    <TextBox x:Name="txtPhoneNumber" Margin="10 5" 
+                             materialDesign:HintAssist.Hint="Điện thoại"/>
 
                     
 
@@ -45,17 +56,23 @@
                 </StackPanel>
 
                 <StackPanel Grid.Column="1" Margin="10">
-                    <TextBlock Text="Tên Đăng nhập" FontWeight="Bold" FontSize="20"/>
-                    <TextBox x:Name="txtUserName"  Margin="10 5" />
+                    <TextBox x:Name="txtUserName"  Margin="10 5"
+                             materialDesign:HintAssist.Hint="Tên đăng nhập"/>
 
-                    <TextBlock Text="Mật Khẩu" FontWeight="Bold" FontSize="20"/>
-                    <PasswordBox x:Name="txtPassword" Margin="10 5" Height="35" />
+                    <PasswordBox x:Name="txtPassword" Margin="10 5" Height="52" 
+                                 TextBlock.FontSize="20"     
+                                materialDesign:HintAssist.Foreground="Green"
+                                materialDesign:HintAssist.Hint="Mật Khẩu"
+                                materialDesign:TextFieldAssist.UnderlineBrush="Green"/>
 
-                    <TextBlock Text="Xác Nhận Mật Khẩu" FontWeight="Bold" FontSize="20"/>
-                    <PasswordBox x:Name="txtConfirmPassword" Margin="10 5" Height="35" />
+                    <PasswordBox x:Name="txtConfirmPassword" Margin="10 5" Height="52" 
+                                  TextBlock.FontSize="20"     
+                                materialDesign:HintAssist.Foreground="Green"
+                                materialDesign:HintAssist.Hint="Mật Khẩu"
+                                materialDesign:TextFieldAssist.UnderlineBrush="Green"/>
 
-                    <TextBlock Text="Email" FontWeight="Bold" FontSize="20"/>
-                    <TextBox x:Name="txtEmail" Margin="10 5" />
+                    <TextBox x:Name="txtEmail" Margin="10 5"
+                             materialDesign:HintAssist.Hint="Email"/>
                 </StackPanel>
             </Grid>
             
