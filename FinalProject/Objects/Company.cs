@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
+using System.Transactions;
 
 namespace FinalProject.Objects
 {
@@ -19,21 +21,23 @@ namespace FinalProject.Objects
         : base()
         {
             Type = "Company";
+            TableName = "Companies";
         }
         public Company(string userName, string password)
         : base (userName, password)
         {
-            Type = "Company";
+            Type = "Company"; 
+            TableName = "Companies";
         }
-        // chỗ id đang xem xét
         public Company(string userName, string password, string companyName, string mst, string companyLocation, string boss, string phoneNumber)
-        : base ( userName, password)
-        {
+        : base ( userName, password, "Companies")
+        {   
             Type = "Company";
             CompanyName = companyName;
             CompanyLocation = companyLocation;
-            this.mst = mst;
-            this.boss = boss;
+            Mst = mst;
+            Boss = boss;
+            PhoneNumber = phoneNumber;
         }
 
         public string Mst { get => mst; set => mst = value; }

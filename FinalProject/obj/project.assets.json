@@ -1641,6 +1641,7 @@
   "projectFileDependencyGroups": {
     "net6.0-windows7.0": [
       "MahApps.Metro.IconPacks >= 4.11.0",
+      "MaterialDesignColors >= 3.0.0",
       "MaterialDesignThemes >= 5.0.0",
       "System.Data.SqlClient >= 4.8.6"
     ]
@@ -1692,6 +1693,10 @@
           "MahApps.Metro.IconPacks": {
             "target": "Package",
             "version": "[4.11.0, )"
+          },
+          "MaterialDesignColors": {
+            "target": "Package",
+            "version": "[3.0.0, )"
           },
           "MaterialDesignThemes": {
             "target": "Package",

@@ -16,14 +16,16 @@ namespace FinalProject.Objects
         public Employee() : base () 
         {
             Type = "Employee";
+            TableName = "Employees";
         }
         public Employee(string userName, string password) : base(userName,password)
         {
             Type = "Employee";
+            TableName = "Employees";
         }
 
         public Employee(string userName, string password, string employeeName, string gender, string employeeLocation, DateTime dateOfBirth, string cccd) 
-            : base( userName, password)
+            : base( userName, password, "Employees")
         {
             Type = "Employee";
             this.employeeName = employeeName;

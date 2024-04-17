@@ -36,7 +36,6 @@ namespace FinalProject
             InitializeComponent();
             this.company = company;
             this.DataContext = company;
-            MessageBox.Show(company.CompanyName);
         }
         private void CompanyWindow_Loaded(object sender, RoutedEventArgs e)
         {

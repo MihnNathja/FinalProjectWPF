@@ -22,14 +22,22 @@ namespace FinalProject.Page
     /// </summary>
     public partial class CVPage : System.Windows.Controls.Page
     {
+        Employee employee = new Employee();
         public CVPage()
         {
             InitializeComponent();
         }
+        public CVPage(Employee employee)
+        {
+            InitializeComponent();
+            
+            this.employee = employee;
+        }
 
         private void btnCreateCV_Click(object sender, RoutedEventArgs e)
         {
-            CVWindow cvWindow = new CVWindow();
+            
+            CVWindow cvWindow = new CVWindow(employee);
             cvWindow.Show();
             Page_Loaded(sender, e);
         }
@@ -41,7 +49,6 @@ namespace FinalProject.Page
             List<UCCV> data = cVDAO.LoadPage();
             foreach (UCCV cv in data)
             {
-                
                 CVList.Children.Add(cv);
             }
         }

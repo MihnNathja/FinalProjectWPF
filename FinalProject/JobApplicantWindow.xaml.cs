@@ -123,7 +123,7 @@ namespace FinalProject
 
         private void btnHoSo_Click(object sender, RoutedEventArgs e)
         {
-            CVPage cVPage = new CVPage();
+            CVPage cVPage = new CVPage(employee);
             mainFarm.Navigate(cVPage);
         }
 
