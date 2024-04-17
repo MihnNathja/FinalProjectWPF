@@ -43,22 +43,15 @@ namespace FinalProject.Database
             Company company = new Company();
             string SQL = $"SELECT* FROM  {user.TableName}  WHERE UserName = '{user.UserName}' and Password = '{user.Password}' and Type = '{user.Type}'";
             DataTable data =  db.Load(SQL);
-            /*DataRow row = data.Rows[0];*/
+            DataRow row = data.Rows[0];
             PropertyInfo[] properties = typeof(Company).GetProperties();
-            foreach (DataRow row in data.Rows)
+            foreach (PropertyInfo property in properties)
             {
-                foreach (DataColumn col in data.Columns)
+                if (property.Name != "TableName")
                 {
-                    MessageBox.Show(row[col.ColumnName].ToString());
+                    property.SetValue(company, row[property.Name].ToString(), null);
                 }
             }
-
-/*            foreach (PropertyInfo property in properties)
-            {
-                MessageBox.Show(property.Name);
-                MessageBox.Show(row["Boss"].ToString());
-                property.SetValue(company, row[property.Name].ToString(), null);
-            }*/
             return company;
         }
         public Employee GetEmployee(User user)
