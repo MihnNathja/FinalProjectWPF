@@ -9,6 +9,7 @@
       "FinalProject/1.0.0": {
         "dependencies": {
           "MahApps.Metro.IconPacks": "4.11.0",
+          "MaterialDesignColors": "3.0.0",
           "MaterialDesignThemes": "5.0.0",
           "System.Data.SqlClient": "4.8.6"
         },

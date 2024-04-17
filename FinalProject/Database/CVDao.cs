@@ -8,6 +8,7 @@ using System.Linq;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 
 namespace FinalProject.Database
 {
@@ -77,11 +78,16 @@ namespace FinalProject.Database
             foreach (DataRow row in cvTable.Rows)
             {
                 UCCV cv = new UCCV();
+                cv.ID = row["IdCV"].ToString();
                 cv.tbSTT.Text = (index + 1).ToString();
                 cv.tbCVTitle.Text = row["CVTitle"].ToString();
                 list.Add(cv);
             }
             return list;
         }
+/*        public void Apply(Job job, CV cv)
+        {
+            string SQL = string.Format("INSERT INTO ApplyCV (ID, IdCV, Accept) VALUE ('{0}', {1}, {2}",job.id, cv.IdCV, null);
+        }*/
     }
 }

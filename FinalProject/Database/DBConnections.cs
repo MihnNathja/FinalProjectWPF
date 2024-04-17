@@ -55,7 +55,7 @@ namespace FinalProject
                 conn.Close();
             }
         }
-        public int GetValue(string SQL)
+        public string GetValue(string SQL)
         {
             try
             {
@@ -65,17 +65,17 @@ namespace FinalProject
 
                 if (result != null && result != DBNull.Value)
                 {
-                    return Convert.ToInt32(result);
+                    return result.ToString();
                 }
                 else
                 {
-                    return 0; // Hoặc giá trị mặc định bạn muốn trả về nếu không có ID
+                    return "0"; // Hoặc giá trị mặc định bạn muốn trả về nếu không có ID
                 }
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Thực thi thất bại: " + ex.Message);
-                return 0;
+                return "0";
             }
             finally
             {

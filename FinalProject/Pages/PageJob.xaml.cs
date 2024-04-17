@@ -51,7 +51,6 @@ namespace FinalProject.Page
         {
             pnlJob.Children.Clear();
             List<UCJobInfo> jobList = jobDAO.LoadPage();
-            UCJobInfo jobInfo = new UCJobInfo();
             
             foreach (UCJobInfo job in jobList)
             {
