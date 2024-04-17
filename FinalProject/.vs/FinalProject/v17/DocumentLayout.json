@@ -1,7 +1,24 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\VUONG_LAP_QUE\\Nam 2\\HK II\\Window\\FinalProjectWPF\\FinalProject\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BC4969F9-C76B-4990-B9C8-352C76BDAA80}|FinalProject.csproj|c:\\vuong_lap_que\\nam 2\\hk ii\\window\\finalprojectwpf\\finalproject\\user control\\uccv.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{BC4969F9-C76B-4990-B9C8-352C76BDAA80}|FinalProject.csproj|solutionrelative:user control\\uccv.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC4969F9-C76B-4990-B9C8-352C76BDAA80}|FinalProject.csproj|c:\\vuong_lap_que\\nam 2\\hk ii\\window\\finalprojectwpf\\finalproject\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{BC4969F9-C76B-4990-B9C8-352C76BDAA80}|FinalProject.csproj|solutionrelative:app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC4969F9-C76B-4990-B9C8-352C76BDAA80}|FinalProject.csproj|c:\\vuong_lap_que\\nam 2\\hk ii\\window\\finalprojectwpf\\finalproject\\database\\cvdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC4969F9-C76B-4990-B9C8-352C76BDAA80}|FinalProject.csproj|solutionrelative:database\\cvdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC4969F9-C76B-4990-B9C8-352C76BDAA80}|FinalProject.csproj|c:\\vuong_lap_que\\nam 2\\hk ii\\window\\finalprojectwpf\\finalproject\\companywindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{BC4969F9-C76B-4990-B9C8-352C76BDAA80}|FinalProject.csproj|solutionrelative:companywindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,6 +26,61 @@
       "DocumentGroups": [
         {
           "DockedWidth": 440,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\VUONG_LAP_QUE\\Nam 2\\HK II\\Window\\FinalProjectWPF\\FinalProject\\App.xaml",
+              "RelativeDocumentMoniker": "App.xaml",
+              "ToolTip": "C:\\VUONG_LAP_QUE\\Nam 2\\HK II\\Window\\FinalProjectWPF\\FinalProject\\App.xaml",
+              "RelativeToolTip": "App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-04-17T19:45:46.632Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CVDao.cs",
+              "DocumentMoniker": "C:\\VUONG_LAP_QUE\\Nam 2\\HK II\\Window\\FinalProjectWPF\\FinalProject\\Database\\CVDao.cs",
+              "RelativeDocumentMoniker": "Database\\CVDao.cs",
+              "ToolTip": "C:\\VUONG_LAP_QUE\\Nam 2\\HK II\\Window\\FinalProjectWPF\\FinalProject\\Database\\CVDao.cs",
+              "RelativeToolTip": "Database\\CVDao.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAFEAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-17T19:44:16.218Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CompanyWindow.xaml",
+              "DocumentMoniker": "C:\\VUONG_LAP_QUE\\Nam 2\\HK II\\Window\\FinalProjectWPF\\FinalProject\\CompanyWindow.xaml",
+              "RelativeDocumentMoniker": "CompanyWindow.xaml",
+              "ToolTip": "C:\\VUONG_LAP_QUE\\Nam 2\\HK II\\Window\\FinalProjectWPF\\FinalProject\\CompanyWindow.xaml",
+              "RelativeToolTip": "CompanyWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-04-17T19:37:30.05Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UCCV.xaml",
+              "DocumentMoniker": "C:\\VUONG_LAP_QUE\\Nam 2\\HK II\\Window\\FinalProjectWPF\\FinalProject\\User Control\\UCCV.xaml",
+              "RelativeDocumentMoniker": "User Control\\UCCV.xaml",
+              "ToolTip": "C:\\VUONG_LAP_QUE\\Nam 2\\HK II\\Window\\FinalProjectWPF\\FinalProject\\User Control\\UCCV.xaml",
+              "RelativeToolTip": "User Control\\UCCV.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-04-17T19:35:58.879Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 1498,
           "SelectedChildIndex": -1,
           "Children": [
             {
