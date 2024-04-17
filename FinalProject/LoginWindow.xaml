@@ -4,36 +4,39 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FinalProject"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="13"
+        TextOptions.TextFormattingMode="Ideal"
+        TextOptions.TextRenderingMode="Auto"
+        
+        FontFamily="{DynamicResource MaterialDesignFont}"
         mc:Ignorable="d"
         Title="LoginWindow" Height="500" Width="800"
         WindowStartupLocation="CenterScreen">
     <Grid>
-        
 
-        <Border CornerRadius="10 0 0 10">
-            <Border.Background>
-                <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
-                    <GradientStop Color="#3AA9AD" Offset="0"/>
-                    <GradientStop Color="#3AADA1" Offset="1"/>
-                </LinearGradientBrush>
-            </Border.Background>
-        </Border>
+
+
 
 
         <Grid>
-            <Canvas>
-                <Polygon Points="0,20 230, 140 0, 270" Fill="#4EB1E6"/>
-                <Polygon Points="100,400 200,370 180 , 470" Fill="#4EB1E6"/>
-            </Canvas>
-            
+
             <StackPanel HorizontalAlignment="Center">
                 <TextBlock Text="Đăng Nhập" HorizontalAlignment="Center" Margin="20" FontWeight="Black" FontSize="40"/>
                 
-                <TextBlock Text="Tên đăng nhập" FontSize="20" FontWeight="Bold" Margin="10 "/>
-                <TextBox x:Name="txtUserName" Width="350" Height="35"/>
+                
+                <TextBox x:Name="txtUserName" Width="350" Height="60"
+                         
+                         materialDesign:HintAssist.Hint="Tên đăng nhập"/>
 
-                <TextBlock Text="Mật Khẩu" FontSize="20" FontWeight="Bold" Margin="10 "/>
-                <PasswordBox x:Name="pbPassword" Width="350" Height="35" Panel.ZIndex="1" MaxLength="20" PasswordChar="•" />
+                
+                <PasswordBox x:Name="pbPassword" Width="350" Height="60"
+                        TextBlock.FontSize="20"     
+                        materialDesign:HintAssist.Foreground="Green"
+                        materialDesign:HintAssist.Hint="Mật Khẩu"
+                        materialDesign:TextFieldAssist.UnderlineBrush="Green"/>
                 <StackPanel Orientation="Horizontal" Margin="10">
                     <RadioButton x:Name="rdCompany" Content="Công ty" FontWeight="Bold"/>
                     <RadioButton x:Name="rdJobApplicant" Content="Ứng Viên" Margin="20 0" FontWeight="Bold"/>
