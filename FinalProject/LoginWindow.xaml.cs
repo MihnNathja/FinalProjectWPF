@@ -35,32 +35,67 @@ namespace FinalProject
             wSignUp.ShowDialog();
         }
 
+        /*        private void btnLogin_Click(object sender, RoutedEventArgs e)
+                {
+                    UserDAO userDAO = new UserDAO();
+                    if(rdCompany.IsChecked == true)
+                    {
+                        Company company = new Company(txtUserName.Text, pbPassword.Password);
+                        if (userDAO.checkExist(company) == true)
+                        {
+                            company = userDAO.GetUser(company,company);
+                            CompanyWindow comp = new CompanyWindow(company);
+                            comp.ShowDialog();
+                        }
+                    }
+                    else if (rdJobApplicant.IsChecked == true)
+                    {
+                        Employee employee = new Employee(txtUserName.Text, pbPassword.Password);
+                        if (userDAO.checkExist(employee) == true)
+                        {
+                            employee = userDAO.GetUser(employee, employee);
+                            JobApplicantWindow jobApplicant = new JobApplicantWindow(employee);
+                            jobApplicant.ShowDialog();
+                        }
+                    }
+                }*/
         private void btnLogin_Click(object sender, RoutedEventArgs e)
         {
-            if(rdCompany.IsChecked == true)
-            {
-                Company company = new Company(txtUserName.Text, pbPassword.Password);
-                UserDAO userDAO = new UserDAO();
-                if (userDAO.checkExist(company) == true)
-                {
-                    company = userDAO.GetCompany(company);
-                    CompanyWindow comp = new CompanyWindow(company);
-                    comp.ShowDialog();
-                }
+            /*Khởi tạo đối tượng User và DAO của nó*/
+            User user = new User();
+            UserDAO userDAO = new UserDAO();
 
+            /*Xét xem User được khởi tạo là kiểu lớp nào*/
+            if (rdCompany.IsChecked == true)
+            {
+                user = new Company(txtUserName.Text, pbPassword.Password);
             }
             else if (rdJobApplicant.IsChecked == true)
             {
-                Employee employee = new Employee(txtUserName.Text, pbPassword.Password);
-                UserDAO userDAO = new UserDAO();
-                if (userDAO.checkExist(employee) == true)
+                user = new Employee(txtUserName.Text, pbPassword.Password);
+            }
+
+            /*Kiểm tra xem User có tồn tại hay không*/
+            if (userDAO.checkExist(user) == true)
+            {
+
+                /*Nếu có, ứng với từng đối tượng, lấy thông tin của đối tượng đó từ database và gọi ra window tương ứng*/
+
+                if (user.Type == "Company")
                 {
-                    
+                    Company company = new Company();
+                    company = userDAO.GetUser(company, user);
+                    CompanyWindow comp = new CompanyWindow(company);
+                    comp.ShowDialog();
+                }
+                else if (user.Type == "Employee")
+                {
+                    Employee employee = new Employee(txtUserName.Text, pbPassword.Password);
+                    employee = userDAO.GetUser(employee, user);
                     JobApplicantWindow jobApplicant = new JobApplicantWindow(employee);
                     jobApplicant.ShowDialog();
                 }
             }
         }
-
     }
 }
