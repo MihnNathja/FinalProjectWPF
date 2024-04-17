@@ -2,7 +2,9 @@
 using System;
 using System.Collections.Generic;
 using System.Configuration;
+using System.Data;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -35,6 +37,54 @@ namespace FinalProject.Database
                 return true;
             }
             return false;
+        }
+        public Company GetCompany(User user)
+        {
+            Company company = new Company();
+            string SQL = $"SELECT* FROM  {user.TableName}  WHERE UserName = '{user.UserName}' and Password = '{user.Password}' and Type = '{user.Type}'";
+            DataTable data =  db.Load(SQL);
+            /*DataRow row = data.Rows[0];*/
+            PropertyInfo[] properties = typeof(Company).GetProperties();
+            foreach (DataRow row in data.Rows)
+            {
+                foreach (DataColumn col in data.Columns)
+                {
+                    MessageBox.Show(row[col.ColumnName].ToString());
+                }
+            }
+
+/*            foreach (PropertyInfo property in properties)
+            {
+                MessageBox.Show(property.Name);
+                MessageBox.Show(row["Boss"].ToString());
+                property.SetValue(company, row[property.Name].ToString(), null);
+            }*/
+            return company;
+        }
+        public Employee GetEmployee(User user)
+        {
+            Employee employee = new Employee();
+            string SQL = $"SELECT* FROM  {user.TableName}  WHERE UserName = '{user.UserName}' and Password = '{user.Password}' and Type = '{user.Type}'";
+            DataTable data = db.Load(SQL);
+            DataRow row = data.Rows[0];
+            PropertyInfo[] properties = typeof(Employee).GetProperties();
+            foreach (PropertyInfo property in properties)
+            {
+                property.SetValue(employee, row[property.Name].ToString(), null);
+            }
+            return employee;
+        }
+        public T GetUser <T>(T person,User user)
+        {
+            string SQL = $"SELECT* FROM  {user.TableName}  WHERE UserName = '{user.UserName}' and Password = '{user.Password}' and Type = '{user.Type}'";
+            DataTable data = db.Load(SQL);
+            DataRow row = data.Rows[0];
+            PropertyInfo[] properties = typeof(T).GetProperties();
+            foreach (PropertyInfo property in properties)
+            {
+                property.SetValue(person, row[property.Name].ToString(), null);
+            }
+            return person;
         }
     }
 }

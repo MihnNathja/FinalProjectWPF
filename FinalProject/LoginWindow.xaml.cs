@@ -43,6 +43,8 @@ namespace FinalProject
                 UserDAO userDAO = new UserDAO();
                 if (userDAO.checkExist(company) == true)
                 {
+                    company = userDAO.GetCompany(company);
+                    MessageBox.Show(company.CompanyName);
                     CompanyWindow comp = new CompanyWindow(company);
                     comp.ShowDialog();
                 }
