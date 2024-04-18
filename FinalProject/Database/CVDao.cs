@@ -9,6 +9,7 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
+using System.Windows.Documents;
 
 namespace FinalProject.Database
 {
@@ -84,9 +85,29 @@ namespace FinalProject.Database
             }
             return list;
         }
-/*        public void Apply(Job job, CV cv)
+        public List<UCCV> GetEmployeeCV(Employee employee)
         {
-            string SQL = string.Format("INSERT INTO ApplyCV (ID, IdCV, Accept) VALUE ('{0}', {1}, {2}",job.id, cv.IdCV, null);
-        }*/
+            int index = 0;
+            List<UCCV> cvList = new List<UCCV>();
+            DataTable cvTable = EmployeeCVData(employee);
+            foreach (DataRow row in cvTable.Rows)
+            {
+                UCCV cv = new UCCV();
+                cv.ID = row["IdCV"].ToString();
+/*                cv.tbSTT.Text = (index + 1).ToString();
+                cv.tbCVTitle.Text = row["CVTitle"].ToString();*/
+                cvList.Add(cv);
+            }
+            return cvList;
+        }
+        public DataTable EmployeeCVData(Employee employee)
+        {
+            string SQL = string.Format($"SELECT *FROM CV WHERE ID = {employee.ID}");
+            return db.Load(SQL);
+        }
+        /*        public void Apply(Job job, CV cv)
+                {
+                    string SQL = string.Format("INSERT INTO ApplyCV (ID, IdCV, Accept) VALUE ('{0}', {1}, {2}",job.id, cv.IdCV, null);
+                }*/
     }
 }

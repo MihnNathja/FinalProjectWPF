@@ -21,7 +21,8 @@ namespace FinalProject
     /// </summary>
     public partial class WJobInfoDetail : Window
     {
-        Job job = new Job();
+        User user;
+        Job job;
         public WJobInfoDetail()
         {
             InitializeComponent();
@@ -31,16 +32,26 @@ namespace FinalProject
         public WJobInfoDetail(Job job)
         {
             InitializeComponent();
-            this.DataContext = job;
-            this.Job = job; 
+            DataContext = job;
+            Job = job; 
         }
-
+        public WJobInfoDetail(User user, Job job)
+        {
+            InitializeComponent();
+            DataContext = job;
+            Job = job;
+            User = user;
+        }
         public Job Job { get => job; set => job = value; }
+        public User User { get => user; set => user = value; }
 
         private void btnApply_Click(object sender, RoutedEventArgs e)
         {
-            CVDAO cVDAO = new CVDAO();
-            /*cVDAO.Apply(Job, cv);*/
+            UserDAO userDAO = new UserDAO();
+            Employee employee = new Employee();
+            employee = userDAO.GetUser(employee, user);
+            WSelectCV wSelectCV = new WSelectCV(employee,job);
+            wSelectCV.ShowDialog();
         }
     }
 }
