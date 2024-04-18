@@ -21,6 +21,7 @@ namespace FinalProject
     /// </summary>
     public partial class CVWindow : Window
     {
+        Employee employee = new Employee();
         CVDAO cVDAO = new CVDAO();
         public CVWindow()
         {
@@ -30,15 +31,14 @@ namespace FinalProject
         {
             InitializeComponent();
             this.DataContext = employee;
+            Employee = employee;
         }
+
+        public Employee Employee { get => employee; set => employee = value; }
 
         private void btnSave_Click(object sender, RoutedEventArgs e)
         {
-
-
-            CV cv = new CV(cVDAO.GetNextID(),txtCVTitle.Text,txtCareerGoal.Text,txtSkill.Text, txtPresent.Text, txtExperience.Text, txtActivitie.Text, txtCertificate.Text, txtAward.Text, txtAddInformation.Text);
-
-
+            CV cv = new CV(cVDAO.GetNextID(),Employee.ID,txtCVTitle.Text,txtCareerGoal.Text,txtSkill.Text, txtPresent.Text, txtExperience.Text, txtActivitie.Text, txtCertificate.Text, txtAward.Text, txtAddInformation.Text);
             
             cVDAO.Them(cv);
         }

@@ -22,16 +22,19 @@
 
 
         <Grid>
+            <Grid.Background>
+                <ImageBrush/>
+            </Grid.Background>
 
             <StackPanel HorizontalAlignment="Center">
                 <TextBlock Text="Đăng Nhập" HorizontalAlignment="Center" Margin="20" FontWeight="Black" FontSize="40"/>
-                
-                
+
+
                 <TextBox x:Name="txtUserName" Width="350" Height="60"
                          
                          materialDesign:HintAssist.Hint="Tên đăng nhập"/>
 
-                
+
                 <PasswordBox x:Name="pbPassword" Width="350" Height="60"
                         TextBlock.FontSize="20"     
                         materialDesign:HintAssist.Foreground="Green"
@@ -46,13 +49,13 @@
                         Foreground="Green" Background="Transparent" FontSize="15" HorizontalAlignment="Right"
                     Name="btnSignUp" Click="btnSignUp_Click"/>
 
-                    <Button Content="Đăng Nhập"  FontSize="25" FontWeight="Bold"
+                <Button Content="Đăng Nhập"  FontSize="25" FontWeight="Bold"
                     Margin="20" Click="btnLogin_Click">
 
-                </Button>   
+                </Button>
 
             </StackPanel>
         </Grid>
-        
+
     </Grid>
 </Window>

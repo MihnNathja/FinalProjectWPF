@@ -41,9 +41,11 @@ namespace FinalProject.Database
         }
         public void Them(CV cv)
         {
-            string[] prop = {"IdCV", "CVTitle", "Careergoals", "Skill", "Presenter", "Experience", "Activitie", "Certificate", "Awards", "AddInformation"};
+            MessageBox.Show(cv.ID);
+            string[] prop = {"IdCV", "ID", "CVTitle", "Careergoals", "Skill", "Presenter", "Experience", "Activitie", "Certificate", "Awards", "AddInformation"};
             List<SqlParameter> parameters = Utility.GetParameters(cv, prop);
             string SQL = Utility.GenerateInsertSql(tableName, parameters);
+            MessageBox.Show(SQL);
             db.ThucThi(SQL, parameters);
         }
         public void Xoa(Job job)
