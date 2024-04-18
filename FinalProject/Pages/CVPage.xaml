@@ -28,7 +28,12 @@
             <Button x:Name="btnCreateCV" Content="Thêm CV" Width="200" Height="50" FontSize="20"
                 VerticalAlignment="Bottom" HorizontalAlignment="Right"
                 Margin="20"
-                Click="btnCreateCV_Click"/>
+                Click="btnCreateCV_Click"
+                   
+                  
+                  IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
+                  Style="{StaticResource MaterialDesignPaperDarkButton}"
+                  ToolTip="Resource name: MaterialDesignPaperDarkButton" />
         </Grid>
 
     </Grid>

@@ -4,6 +4,14 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FinalProject"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="13"
+        TextOptions.TextFormattingMode="Ideal"
+        TextOptions.TextRenderingMode="Auto"
+        Background="{DynamicResource MaterialDesignPaper}"
+        FontFamily="{DynamicResource MaterialDesignFont}"
         mc:Ignorable="d"
         WindowStartupLocation="CenterScreen"
         Title="WSignUpJobApplicant" Height="800" Width="800">
@@ -22,26 +30,27 @@
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
                 <StackPanel Margin="10">
-                    <TextBlock Text="Họ và tên" FontWeight="Bold" FontSize="20"/>
-                    <TextBox x:Name="txtFullName" Margin="10 5" />
+                    
+                    <TextBox x:Name="txtFullName" Margin="10 5"
+                             materialDesign:HintAssist.Hint="Họ và tên"/>
 
-                    <TextBlock Text="Giới tính" FontWeight="Bold" FontSize="20"/>
+                   
                     <StackPanel Orientation="Horizontal" Margin="10">
                         <RadioButton x:Name="Male" Content="Nam" FontWeight="Bold" FontSize="15" IsChecked="{Binding IsMaleSelected}"/>
                         <RadioButton x:Name="Female" Content="Nữ" FontWeight="Bold" Margin="20 0 0 0" FontSize="15" IsChecked="{Binding IsFemaleSelected}"/>
                     </StackPanel>
 
-                    <TextBlock Text="Địa chỉ" FontWeight="Bold" FontSize="20"/>
-                    <TextBox x:Name="txtAddress" Margin="10 5" Height="35" />
+                    <TextBox x:Name="txtAddress" Margin="10 5" 
+                             materialDesign:HintAssist.Hint="Địa chỉ"/>
 
-                    <TextBlock Text="Ngày sinh" FontWeight="Bold" FontSize="20"/>
-                    <DatePicker x:Name="dtpDateOfBirth" Margin="10 5" />
+                    <DatePicker x:Name="dtpDateOfBirth" Margin="10 5" Height="50" 
+                             />
 
-                    <TextBlock Text="Điện thoại" FontWeight="Bold" FontSize="20"/>
-                    <TextBox x:Name="txtPhoneNumber" Margin="10 5" Height="35"/>
+                    <TextBox x:Name="txtPhoneNumber" Margin="10 5" 
+                             materialDesign:HintAssist.Hint="Số điện thoại"/>
 
-                    <TextBlock Text="CCCD" FontWeight="Bold" FontSize="20"/>
-                    <TextBox x:Name="txtCCCD" Margin="10 5" Height="35"/>
+                    <TextBox x:Name="txtCCCD" Margin="10 5"
+                             materialDesign:HintAssist.Hint="CCCD"/>
 
 
 
@@ -50,17 +59,23 @@
                 </StackPanel>
 
                 <StackPanel Grid.Column="1" Margin="10">
-                    <TextBlock Text="Tên Đăng nhập" FontWeight="Bold" FontSize="20"/>
-                    <TextBox x:Name="txtUserName"  Margin="10 5" Height="35" />
+                    <TextBox x:Name="txtUserName"  Margin="10 5"
+                             materialDesign:HintAssist.Hint="Tên đăng nhập"/>
 
-                    <TextBlock Text="Mật Khẩu" FontWeight="Bold" FontSize="20"/>
-                    <PasswordBox x:Name="pbPassword" Margin="10 5" Height="35" />
+                    <PasswordBox x:Name="pbPassword" Margin="10 5" Height="52"
+                                  TextBlock.FontSize="20"     
+                                    materialDesign:HintAssist.Foreground="Green"
+                                    materialDesign:HintAssist.Hint="Mật Khẩu"
+                                    materialDesign:TextFieldAssist.UnderlineBrush="Green"/>
 
-                    <TextBlock Text="Xác Nhận Mật Khẩu" FontWeight="Bold" FontSize="20"/>
-                    <PasswordBox x:Name="pbConfirmPassword" Margin="10 5" Height="35" />
+                    <PasswordBox x:Name="pbConfirmPassword" Margin="10 5"
+                                  TextBlock.FontSize="20"     
+                                    materialDesign:HintAssist.Foreground="Green"
+                                    materialDesign:HintAssist.Hint="Mật Khẩu"
+                                    materialDesign:TextFieldAssist.UnderlineBrush="Green"/>
 
-                    <TextBlock Text="Email" FontWeight="Bold" FontSize="20"/>
-                    <TextBox x:Name="txtEmail" Margin="10 5" Height="35" />
+                    <TextBox x:Name="txtEmail" Margin="10 5"
+                             materialDesign:HintAssist.Hint="Email"/>
                 </StackPanel>
             </Grid>
 

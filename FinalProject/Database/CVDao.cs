@@ -80,8 +80,7 @@ namespace FinalProject.Database
             {
                 UCCV cv = new UCCV();
                 cv.ID = row["IdCV"].ToString();
-                cv.tbSTT.Text = (index + 1).ToString();
-                cv.tbCVTitle.Text = row["CVTitle"].ToString();
+                
                 list.Add(cv);
             }
             return list;
@@ -95,8 +94,8 @@ namespace FinalProject.Database
             {
                 UCCV cv = new UCCV();
                 cv.ID = row["IdCV"].ToString();
-                cv.tbSTT.Text = (index + 1).ToString();
-                cv.tbCVTitle.Text = row["CVTitle"].ToString();
+/*                cv.tbSTT.Text = (index + 1).ToString();
+                cv.tbCVTitle.Text = row["CVTitle"].ToString();*/
                 cvList.Add(cv);
             }
             return cvList;
