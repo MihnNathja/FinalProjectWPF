@@ -38,6 +38,9 @@
     <Compile Update="SignUpCompany.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="UCCVCompany.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="User Control\UCCV.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -104,6 +107,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Theme\Theme.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UCCVCompany.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="User Control\UCCV.xaml">
