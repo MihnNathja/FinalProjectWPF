@@ -35,6 +35,26 @@ namespace FinalProject
                 conn.Close();
             }
         }
+        public void ThucThi(string SQL)
+        {
+            try
+            {
+                conn.Open();
+                SqlCommand cmd = new SqlCommand(SQL, conn);
+                if (cmd.ExecuteNonQuery() > 0)
+                {
+                    MessageBox.Show("Thuc thi thanh cong");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Thuc thi that bai" + ex);
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }
         public DataTable Load(string SQL)
         {
             try

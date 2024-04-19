@@ -107,9 +107,16 @@ namespace FinalProject.Database
             string SQL = string.Format($"SELECT *FROM CV WHERE ID = {employee.ID}");
             return db.Load(SQL);
         }
-        /*        public void Apply(Job job, CV cv)
-                {
-                    string SQL = string.Format("INSERT INTO ApplyCV (ID, IdCV, Accept) VALUE ('{0}', {1}, {2}",job.id, cv.IdCV, null);
-                }*/
+        public void Apply(Job job, CV cv)
+        {
+            string SQL = string.Format($"INSERT INTO ApplyCV (ID, IdCV, Accept) VALUE ('{job.Id}', {cv.IdCV}, {null}");
+            db.ThucThi(SQL);
+        }
+        public void Accept(Job job, CV cv, bool isAccepted)
+        {
+            string SQL = string.Format($"UPDATE ApplyCV SET ACCEPT = {isAccepted} WHERE ID = {job.Id} and IdCV = {cv.IdCV}");
+            db.ThucThi(SQL);
+        }
+        
     }
 }
