@@ -9,6 +9,7 @@ namespace FinalProject.Objects
     public class CV
     {
         string idCV;
+        string id;
         string cVTitle;
         string careerGoals;
         string skill;
@@ -29,9 +30,10 @@ namespace FinalProject.Objects
         {
            IdCV = idCV;
         }
-        public CV(string idCV, string cVTitle ,string careerGoals, string skill, string presenter, string experience, string activitie, string certificate, string awards, string addInformation)
+        public CV(string idCV, string id, string cVTitle, string careerGoals, string skill, string presenter, string experience, string activitie, string certificate, string awards, string addInformation)
         {
             IdCV = idCV;
+            ID = id;
             CVTitle = cVTitle;
             CareerGoals = careerGoals;
             Skill = skill;
@@ -41,7 +43,6 @@ namespace FinalProject.Objects
             Certificate = certificate;
             Awards = awards;
             AddInformation = addInformation;
-            
         }
 
         public string CareerGoals { get => careerGoals; set => careerGoals = value; }
@@ -57,5 +58,6 @@ namespace FinalProject.Objects
         public string AddInformation { get => addInformation; set => addInformation = value; }
         public string IdCV { get => idCV; set => idCV = value; }
         public string CVTitle { get => cVTitle; set => cVTitle = value; }
+        public string ID { get => id; set => id = value; }
     }
 }

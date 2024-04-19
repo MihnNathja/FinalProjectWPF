@@ -41,9 +41,11 @@ namespace FinalProject.Database
         }
         public void Them(CV cv)
         {
-            string[] prop = {"IdCV", "CVTitle", "Careergoals", "Skill", "Presenter", "Experience", "Activitie", "Certificate", "Awards", "AddInformation"};
+            MessageBox.Show(cv.ID);
+            string[] prop = {"IdCV", "ID", "CVTitle", "Careergoals", "Skill", "Presenter", "Experience", "Activitie", "Certificate", "Awards", "AddInformation"};
             List<SqlParameter> parameters = Utility.GetParameters(cv, prop);
             string SQL = Utility.GenerateInsertSql(tableName, parameters);
+            MessageBox.Show(SQL);
             db.ThucThi(SQL, parameters);
         }
         public void Xoa(Job job)
@@ -105,9 +107,16 @@ namespace FinalProject.Database
             string SQL = string.Format($"SELECT *FROM CV WHERE ID = {employee.ID}");
             return db.Load(SQL);
         }
-        /*        public void Apply(Job job, CV cv)
-                {
-                    string SQL = string.Format("INSERT INTO ApplyCV (ID, IdCV, Accept) VALUE ('{0}', {1}, {2}",job.id, cv.IdCV, null);
-                }*/
+        public void Apply(Job job, CV cv)
+        {
+            string SQL = string.Format($"INSERT INTO ApplyCV (ID, IdCV, Accept) VALUE ('{job.Id}', {cv.IdCV}, {null}");
+            db.ThucThi(SQL);
+        }
+        public void Accept(Job job, CV cv, bool isAccepted)
+        {
+            string SQL = string.Format($"UPDATE ApplyCV SET ACCEPT = {isAccepted} WHERE ID = {job.Id} and IdCV = {cv.IdCV}");
+            db.ThucThi(SQL);
+        }
+        
     }
 }

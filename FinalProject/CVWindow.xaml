@@ -10,7 +10,6 @@
         TextElement.FontSize="13"
         TextOptions.TextFormattingMode="Ideal"
         TextOptions.TextRenderingMode="Auto"
-        Background="{DynamicResource MaterialDesignPaper}"
         FontFamily="{DynamicResource MaterialDesignFont}"
         mc:Ignorable="d"
         Title="CVWindow" Height="1080" Width="1920"
@@ -23,9 +22,15 @@
         </Grid.ColumnDefinitions>
         <StackPanel>
             <StackPanel>
-                <TextBox x:Name="txtCVTitle" Text="{Binding CVTitle}" FontSize="40" HorizontalAlignment="Center"
-                FontWeight="Bold" Height="70" TextAlignment="Center"
-             Margin="10" Width="auto"
+                <TextBox x:Name="txtCVTitle" 
+                         materialDesign:HintAssist.Hint="Tên CV"
+                         FontSize="30" 
+                         HorizontalAlignment="Center"
+                         FontWeight="Bold" 
+                         Height="70" 
+                         TextAlignment="Center"
+                         Margin="10" 
+                         Width="auto"
                        >
 
                 </TextBox>
@@ -54,22 +59,20 @@
                     <RadioButton Name="rdNam" Content="Nam"/>
                     <RadioButton Name="rdNu" Content="Nữ" Margin="20 0 0 0"/>
                 </StackPanel>
-                <TextBox Name="txtSDT" Text="SĐT" FontSize="15" Margin="20 3"/>
-                <TextBox Name="txtEmail" Text="Email" FontSize="15" Margin="20 3"/>
-                <TextBox Name="txtAddress" Text="Địa chỉ" FontSize="15" Margin="20 3"/>
+                <TextBox Name="txtSDT" materialDesign:HintAssist.Hint="Số điện thoại" FontSize="15" Margin="20 3"/>
+                <TextBox Name="txtEmail" materialDesign:HintAssist.Hint="Email" FontSize="15" Margin="20 3"/>
+                <TextBox Name="txtAddress" materialDesign:HintAssist.Hint="Địa chỉ" FontSize="15" Margin="20 3"/>
             </StackPanel>
             <StackPanel >
                 <TextBlock  Text="MỤC TIÊU NGHỀ NGHIỆP" FontSize="20" FontWeight="Bold"/>
-                <TextBox Name="txtCareerGoal" Text="Mục tiêu ngắn hạn/ dài hạn" Height="80" Margin="5"/>
+                <TextBox Name="txtCareerGoal" materialDesign:HintAssist.Hint="Mục tiêu nghề nghiệp" Height="80" Margin="5"/>
             </StackPanel>
-            <StackPanel>
-                <TextBlock  Text="KỸ NĂNG" FontSize="20" FontWeight="Bold"/>
-                <TextBox Name="txtSkill" Text="Tên kỹ năng" Height="40" Margin="5"/>
-            </StackPanel>
+            <TextBox Name="txtSkill" materialDesign:HintAssist.Hint="Kỹ năng" Height="60" Margin="5"/>
+            
 
             <StackPanel>
                 <TextBlock  Text="NGƯỜI GIỚI THIỆU (NẾU CÓ)" FontSize="20" FontWeight="Bold"/>
-                <TextBox Name="txtPresent" Text="Thông tin người giới thiệu" Height="40" Margin="5"/>
+                <TextBox Name="txtPresent" materialDesign:HintAssist.Hint="Thông tin người giới thiệu" Height="60" Margin="5"/>
             </StackPanel>
         </StackPanel>
 
@@ -90,10 +93,9 @@
             </StackPanel>
             <StackPanel >
                 <TextBlock  Text="DANH HIỆU VÀ GIẢI THƯỞNG" FontSize="20" FontWeight="Bold"/>
-                <TextBox Name="txtAward" Text="Tên giải thưởng" Height="85" Margin="5"/>
+                <TextBox Name="txtAward" materialDesign:HintAssist.Hint="Tên giải thưởng" Height="85" Margin="5"/>
             </StackPanel>
             <StackPanel >
-                <TextBlock  Text="THÔNG TIN THÊM" FontSize="20" FontWeight="Bold"/>
                 <TextBox Name="txtAddInformation" Text="Thông tin thêm" Height="110" Margin="5"/>
                 <Button x:Name="btnSave" Click="btnSave_Click"  Content="Lưu" Width="100" FontSize="20" Margin="10">
 
