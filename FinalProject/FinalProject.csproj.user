@@ -38,10 +38,10 @@
     <Compile Update="SignUpCompany.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="UCCVCompany.xaml.cs">
+    <Compile Update="User Control\UCCV.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="User Control\UCCV.xaml.cs">
+    <Compile Update="User Control\UCCVApply.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="User Control\UCPopUp.xaml.cs">
@@ -109,10 +109,10 @@
     <Page Update="Theme\Theme.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="UCCVCompany.xaml">
+    <Page Update="User Control\UCCV.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="User Control\UCCV.xaml">
+    <Page Update="User Control\UCCVApply.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="User Control\UCPopUp.xaml">
