@@ -59,16 +59,19 @@ namespace FinalProject.Database
         }
         public Job GetObject(string id)
         {
-            string SQL = string.Format("SELECT * FROM Jobs WHERE ID = '{0}'", id);
+            string SQL = string.Format("SELECT * FROM Jobs WHERE Id = '{0}'", id);
             DataTable data = db.Load(SQL);
             Job job = new Job(id);
-            DataRow row = data.Rows[0];
-            PropertyInfo[] properties = typeof(Job).GetProperties();
-            foreach (PropertyInfo property in properties)
+            foreach(DataRow row in data.Rows)
             {
-                property.SetValue(job, row[property.Name].ToString(), null);
+                PropertyInfo[] properties = typeof(Job).GetProperties();
+                foreach (PropertyInfo property in properties)
+                {
+                    property.SetValue(job, row[property.Name].ToString(), null);
+                }
             }
             return job;
+
         }
         public List<UCJobInfo> LoadPage()
         {
@@ -77,12 +80,13 @@ namespace FinalProject.Database
             DataTable jobTable = DataJob;
             foreach (DataRow row in jobTable.Rows)
             {
-                UCJobInfo jobInfo = new UCJobInfo();
-                jobInfo.ID = row["ID"].ToString();
-                jobInfo.JobName.Content = row["JobName"].ToString();
-                jobInfo.CompanyName.Text = row["CompanyName"].ToString();
-                jobInfo.Salary.Text = row["Salary"].ToString();
-                jobInfo.JobLocation.Text = row["JobLocation"].ToString();
+                Job job = new Job();
+                PropertyInfo[] properties = typeof(Job).GetProperties();
+                foreach (PropertyInfo property in properties)
+                {
+                    property.SetValue(job, row[property.Name].ToString(), null);
+                }
+                UCJobInfo jobInfo = new UCJobInfo(job);
                 //ImageBrush imageBrush = new ImageBrush();
                 //imageBrush.ImageSource = new BitmapImage(new Uri("pack://application:,,,/FinalProjectWPF;Image/logosac-01.png", UriKind.Absolute));
                 //jobInfo.Logo.Fill = imageBrush;

@@ -56,7 +56,7 @@ namespace FinalProject {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/FinalProject;component/uccvcompany.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/FinalProject;V1.0.0.0;component/uccvcompany.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\UCCVCompany.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
