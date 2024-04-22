@@ -77,7 +77,7 @@
 
 
 
-                <Border Grid.Row="1" Background="Blue " CornerRadius="0 10 10 0">
+                <Border Grid.Row="1" Background="Gray" CornerRadius="0 10 10 0">
                     <DockPanel>
                         <local:UCPopUp x:Name="popupControl" Loaded="popupControl_Loaded"/>
 
@@ -141,7 +141,10 @@
                                     <TextBlock Text="Việc làm quan tâm"/>
                                 </StackPanel>
                             </Button>
-                            <Button Style="{StaticResource menuButton}"
+                            <Button 
+                                 x:Name="btnTrangThai"
+                                Click="btnTrangThai_Click"
+                                Style="{StaticResource menuButton}"
                                  MouseEnter="btnTrangthai_MouseEnter"
                                  MouseLeave="btnTrangthai_MouseLeave"
          >

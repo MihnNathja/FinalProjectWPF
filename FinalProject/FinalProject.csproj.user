@@ -35,7 +35,13 @@
     <Compile Update="Pages\PCompany.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Pages\PCompanyJobState.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="SignUpCompany.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="User Control\UCCompanyJob.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="User Control\UCCV.xaml.cs">
@@ -100,6 +106,9 @@
     <Page Update="Pages\PCompany.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Pages\PCompanyJobState.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="SignUpCompany.xaml">
       <SubType>Designer</SubType>
     </Page>
@@ -107,6 +116,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Theme\Theme.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="User Control\UCCompanyJob.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="User Control\UCCV.xaml">

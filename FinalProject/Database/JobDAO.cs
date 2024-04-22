@@ -15,6 +15,7 @@ using System.Windows.Controls.Primitives;
 using FinalProject.Objects;
 using System.Runtime;
 using System.Reflection;
+using System.Windows.Documents;
 
 namespace FinalProject.Database
 {
@@ -107,6 +108,26 @@ namespace FinalProject.Database
                         }*/
             string SQL = string.Format("SELECT *FROM Jobs WHERE JobLocation = '{0}'", filter.Location);
             return db.Load(SQL);
+        }
+        public List<UCJobInfo> GetCompanyJob(Company company)
+        {
+            List<UCJobInfo> uCCVs = new List<UCJobInfo>();
+            string SQL = string.Format($"SELECT* FROM Jobs WHERE CompanyName = {company.CompanyName}");
+            db.Load(SQL);
+            DataTable companyJobTable = db.Load(SQL);
+            foreach (DataRow row in companyJobTable.Rows)
+            {
+                Job job = new Job();
+                PropertyInfo[] properties = typeof(Job).GetProperties();
+                foreach (PropertyInfo property in properties)
+                {
+                    property.SetValue(job, row[property.Name].ToString(), null);
+                }
+                UCJobInfo jobInfo = new UCJobInfo(job);
+                
+                uCCVs.Add(jobInfo);
+            }
+            return uCCVs;
         }
     }
 }

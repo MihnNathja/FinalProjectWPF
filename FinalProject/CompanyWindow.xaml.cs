@@ -1,6 +1,7 @@
 ﻿using FinalProject.Database;
 using FinalProject.Objects;
 using FinalProject.Page;
+using FinalProject.Pages;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -170,11 +171,12 @@ namespace FinalProject
         {
             this.Close();
         }
-        // Hàm bên dưới vẫn đang trong quá trình phát triển
-        // Mục đích: Chỉnh đối tượng nằm bên trong Frame để dùng được hàm search
-        /*        private void mainFarm_LoadCompleted(object sender, NavigationEventArgs e)
-                {
-                    MessageBox.Show(this.GetVisualChild(1).ToString());
-                }*/
+
+        private void btnTrangThai_Click(object sender, RoutedEventArgs e)
+        {
+            PCompanyJobState pCompanyJobState = new PCompanyJobState(company);
+            mainFarm.Navigate(pCompanyJobState);
+        }
+
     }
 }
