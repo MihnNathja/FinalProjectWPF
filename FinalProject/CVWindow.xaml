@@ -64,15 +64,36 @@
                 <TextBox Name="txtAddress" materialDesign:HintAssist.Hint="Địa chỉ" FontSize="15" Margin="20 3"/>
             </StackPanel>
             <StackPanel >
-                <TextBlock  Text="MỤC TIÊU NGHỀ NGHIỆP" FontSize="20" FontWeight="Bold"/>
-                <TextBox Name="txtCareerGoal" materialDesign:HintAssist.Hint="Mục tiêu nghề nghiệp" Height="80" Margin="5"/>
+                <TextBox Name="txtCareerGoal" materialDesign:HintAssist.Hint="Mục tiêu nghề nghiệp" Height="80" Margin="5"
+                        
+                           TextBlock.FontSize="20"
+                           VerticalAlignment="Top"
+
+                           AcceptsReturn="True"
+                           Style="{StaticResource MaterialDesignOutlinedTextBox}"
+                           TextWrapping="Wrap"
+                           VerticalScrollBarVisibility="Auto"/>
             </StackPanel>
-            <TextBox Name="txtSkill" materialDesign:HintAssist.Hint="Kỹ năng" Height="60" Margin="5"/>
+            <TextBox Name="txtSkill" materialDesign:HintAssist.Hint="Kỹ năng" Height="60" Margin="5"
+                     
+                       TextBlock.FontSize="20"
+                       VerticalAlignment="Top"
+
+                       AcceptsReturn="True"
+                       Style="{StaticResource MaterialDesignOutlinedTextBox}"
+                       TextWrapping="Wrap"
+                       VerticalScrollBarVisibility="Auto"/>
             
 
             <StackPanel>
-                <TextBlock  Text="NGƯỜI GIỚI THIỆU (NẾU CÓ)" FontSize="20" FontWeight="Bold"/>
-                <TextBox Name="txtPresent" materialDesign:HintAssist.Hint="Thông tin người giới thiệu" Height="60" Margin="5"/>
+                <TextBox Name="txtPresent" materialDesign:HintAssist.Hint="Thông tin người giới thiệu(Nếu có)" Height="60" Margin="5"
+                           TextBlock.FontSize="20"
+                           VerticalAlignment="Top"
+
+                           AcceptsReturn="True"
+                           Style="{StaticResource MaterialDesignOutlinedTextBox}"
+                           TextWrapping="Wrap"
+                           VerticalScrollBarVisibility="Auto"/>
             </StackPanel>
         </StackPanel>
 
@@ -80,23 +101,63 @@
 
         <StackPanel Grid.Column="1">
             <StackPanel >
-                <TextBlock  Text="KINH NGHIỆM LÀM VIỆC" FontSize="20" FontWeight="Bold"/>
-                <TextBox Name="txtExperience" Text="Mô tả quá trình làm việc" Height="110" Margin="5"/>
+                <TextBlock  Text="KINH NGHIỆM" FontSize="20" FontWeight="Bold"/>
+                <TextBox Name="txtExperience" Text="" Height="110" Margin="5"
+                       materialDesign:HintAssist.Hint="Mô tả quá trình làm việc"
+                         TextBlock.FontSize="20"
+                       VerticalAlignment="Top"
+
+                       AcceptsReturn="True"
+                       Style="{StaticResource MaterialDesignOutlinedTextBox}"
+                       TextWrapping="Wrap"
+                       VerticalScrollBarVisibility="Auto"/>
             </StackPanel>
             <StackPanel >
                 <TextBlock  Text="HOẠT ĐỘNG" FontSize="20" FontWeight="Bold"/>
-                <TextBox Name="txtActivitie" Text="Mô tả quá trình hoạt động" Height="85" Margin="5"/>
+                <TextBox Name="txtActivitie" Text="" Height="85" Margin="5"
+                   materialDesign:HintAssist.Hint="Mô tả quá trình hoạt động"
+                   TextBlock.FontSize="20"
+                   VerticalAlignment="Top"
+
+                   AcceptsReturn="True"
+                   Style="{StaticResource MaterialDesignOutlinedTextBox}"
+                   TextWrapping="Wrap"
+                   VerticalScrollBarVisibility="Auto"/>
             </StackPanel>
             <StackPanel >
                 <TextBlock  Text="CHỨNG CHỈ" FontSize="20" FontWeight="Bold"/>
-                <TextBox Name="txtCertificate" Text="Tên chứng chỉ" Height="85" Margin="5"/>
+                <TextBox Name="txtCertificate" Text="" Height="85" Margin="5"
+                         materialDesign:HintAssist.Hint="Tên chứng chỉ"
+                       TextBlock.FontSize="20"
+                       VerticalAlignment="Top"
+
+                       AcceptsReturn="True"
+                       Style="{StaticResource MaterialDesignOutlinedTextBox}"
+                       TextWrapping="Wrap"
+                       VerticalScrollBarVisibility="Auto"/>
             </StackPanel>
             <StackPanel >
                 <TextBlock  Text="DANH HIỆU VÀ GIẢI THƯỞNG" FontSize="20" FontWeight="Bold"/>
-                <TextBox Name="txtAward" materialDesign:HintAssist.Hint="Tên giải thưởng" Height="85" Margin="5"/>
+                <TextBox Name="txtAward" Text="" Height="85" Margin="5"
+                         materialDesign:HintAssist.Hint="Tên giải thưởng"
+                            TextBlock.FontSize="20"
+                            VerticalAlignment="Top"
+
+                            AcceptsReturn="True"
+                            Style="{StaticResource MaterialDesignOutlinedTextBox}"
+                            TextWrapping="Wrap"
+                            VerticalScrollBarVisibility="Auto"/>
             </StackPanel>
             <StackPanel >
-                <TextBox Name="txtAddInformation" Text="Thông tin thêm" Height="110" Margin="5"/>
+                <TextBox Name="txtAddInformation" Text="" Height="110" Margin="5"
+                         materialDesign:HintAssist.Hint="Thông tin thêm"
+                            TextBlock.FontSize="20"
+                            VerticalAlignment="Top"
+
+                            AcceptsReturn="True"
+                            Style="{StaticResource MaterialDesignOutlinedTextBox}"
+                            TextWrapping="Wrap"
+                            VerticalScrollBarVisibility="Auto"/>
                 <Button x:Name="btnSave" Click="btnSave_Click"  Content="Lưu" Width="100" FontSize="20" Margin="10">
 
                 </Button>
