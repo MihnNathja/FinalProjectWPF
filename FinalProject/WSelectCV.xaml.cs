@@ -13,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using FinalProject.Database;
+using FinalProject.User_Control;
 
 namespace FinalProject
 {
@@ -41,9 +42,11 @@ namespace FinalProject
         {
             pnlCV.Children.Clear();
             CVDAO cvDAO = new CVDAO();
-            List<UCCV> cvList = cvDAO.GetEmployeeCV(employee);
-            foreach (UCCV cv in cvList)
+            List<UCCVApply> cvList = cvDAO.GetEmployeeCV(employee);
+            foreach (UCCVApply cv in cvList)
             {
+                cv.Employee = Employee;
+                cv.Job = Job;
                 pnlCV.Children.Add(cv);
             }
         }

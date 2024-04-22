@@ -13,14 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace FinalProject
+namespace FinalProject.User_Control
 {
     /// <summary>
-    /// Interaction logic for UCCVCompany.xaml
+    /// Interaction logic for UCCompanyJob.xaml
     /// </summary>
-    public partial class UCCVCompany : UserControl
+    public partial class UCCompanyJob : UserControl
     {
-        public UCCVCompany()
+        public UCCompanyJob()
         {
             InitializeComponent();
         }
