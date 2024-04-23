@@ -24,11 +24,12 @@ namespace FinalProject.User_Control
     public partial class UCCompanyJob : UserControl
     {
         Company company;
+        Job job;
         string id;
-        string type;
         public string ID { get => id; set => id = value; }
-        public string Type { get => type; set => type = value; }
         public Company Company { get => company; set => company = value; }
+        public Job Job { get => job; set => job = value; }
+
         public UCCompanyJob()
         {
             InitializeComponent();
@@ -37,18 +38,21 @@ namespace FinalProject.User_Control
         {
             CVDAO cVDAO = new CVDAO();
             InitializeComponent();
-            ID = job.Id;
+            Job = job;
+            ID = Job.Id;
             NumberOfEmployee.Content = cVDAO.GetNumberCVOfJob(ID);
-            CompanyName.Text = job.CompanyName;
-            JobName.Content = job.JobName;
-            Salary.Text = job.Salary;
-            JobLocation.Text = job.JobLocation;
+            CompanyName.Text = Job.CompanyName;
+            JobName.Content = Job.JobName;
+            Salary.Text = Job.Salary;
+            JobLocation.Text = Job.JobLocation;
         }
 
 
         private void UserControl_MouseDown(object sender, MouseButtonEventArgs e)
         {
             // hiển thị ra danh sách các CV apply vào công việc này
+            WCompanyAcceptCV wCompanyAcceptCV = new WCompanyAcceptCV(Company, Job);
+            wCompanyAcceptCV.ShowDialog();
         }
     }
 }

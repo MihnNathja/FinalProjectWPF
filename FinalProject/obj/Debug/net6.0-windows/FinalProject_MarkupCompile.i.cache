@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 D:\UNIVERSITY\SOPHOMORE\TERM II\LẬP TRÌNH WINDOWS\FinalProjectWPF\FinalProject\App.xaml
-25747519286
+26-64488011
 
-43-1468896133
+44744791988
 231-214902253
-CompanyWindow.xaml;CreateJob.xaml;CVWindow.xaml;JobApplicantWindow.xaml;LoginWindow.xaml;Pages\CreatJobWindow.xaml;Pages\CVPage.xaml;Pages\DocumentPage.xaml;Pages\PageJob.xaml;Pages\PCompany.xaml;Pages\PCompanyJobState.xaml;SignUpCompany.xaml;Style\MainStyle.xaml;Theme\Theme.xaml;User Control\UCCompanyInfo.xaml;User Control\UCCompanyJob.xaml;User Control\UCCV.xaml;User Control\UCCVApply.xaml;User Control\UCJobInfo.xaml;User Control\UCPopUp.xaml;User Control\UCTextBox.xaml;WJobInfoDetail.xaml;WSelectCV.xaml;WSignUp.xaml;WSignUpJobApplicant.xaml;
+CompanyWindow.xaml;CreateJob.xaml;CVWindow.xaml;JobApplicantWindow.xaml;LoginWindow.xaml;Pages\CreatJobWindow.xaml;Pages\CVPage.xaml;Pages\DocumentPage.xaml;Pages\PageJob.xaml;Pages\PCompany.xaml;Pages\PCompanyJobState.xaml;SignUpCompany.xaml;Style\MainStyle.xaml;Theme\Theme.xaml;User Control\UCCompanyInfo.xaml;User Control\UCCompanyJob.xaml;User Control\UCCV.xaml;User Control\UCCVApply.xaml;User Control\UCJobInfo.xaml;User Control\UCPopUp.xaml;User Control\UCTextBox.xaml;WCompanyAcceptCV.xaml;WJobInfoDetail.xaml;WSelectCV.xaml;WSignUp.xaml;WSignUpJobApplicant.xaml;
 
 True
 

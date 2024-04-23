@@ -125,7 +125,7 @@ namespace FinalProject.Database
                     property.SetValue(job, row[property.Name].ToString(), null);
                 }
                 UCCompanyJob jobInfo = new UCCompanyJob(job);
-                
+                jobInfo.Company = company;
                 uCCVs.Add(jobInfo);
             }
             return uCCVs;
