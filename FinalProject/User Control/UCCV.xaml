@@ -15,119 +15,100 @@
              mc:Ignorable="d" 
              MinHeight="256" MinWidth="200"
              MouseDown="UCCV_MouseDown">
-<materialDesign:Flipper
+    <Border BorderBrush="Black" BorderThickness="0.5" Margin="2">
+        <materialDesign:Flipper
   materialDesign:ElevationAssist.Elevation="Dp0">
-        <materialDesign:Flipper.FrontContent>
-            <Grid
+            <materialDesign:Flipper.FrontContent>
+                <Grid
       Width="200"
       Height="256">
-                <Grid.RowDefinitions>
-                    <RowDefinition
+                    <Grid.RowDefinitions>
+                        <RowDefinition
           Height="160" />
-                    <RowDefinition
+                        <RowDefinition
           Height="*" />
-                </Grid.RowDefinitions>
-                <materialDesign:ColorZone
+                    </Grid.RowDefinitions>
+                    <materialDesign:ColorZone
         VerticalAlignment="Stretch"
         Mode="PrimaryLight">
-                    <materialDesign:PackIcon
+                        <materialDesign:PackIcon
           Width="128"
           Height="128"
           HorizontalAlignment="Center"
           VerticalAlignment="Center"
           Kind="AccountCircle" />
-                </materialDesign:ColorZone>
-                <StackPanel
+                    </materialDesign:ColorZone>
+                    <StackPanel
         Grid.Row="1"
         HorizontalAlignment="Center"
         VerticalAlignment="Center">
-                    <TextBlock
+                        <TextBlock
           Text="CV Title" />
-                    <Button
+                        <Button
                       Margin="0,4,0,0"
                       TextBlock.Foreground="Black"
                       Command="{x:Static materialDesign:Flipper.FlipCommand}"
                       Content="XEM"
                       Style="{StaticResource MaterialDesignFlatButton}" />
-                            </StackPanel>
-            </Grid>
-        </materialDesign:Flipper.FrontContent>
-        <materialDesign:Flipper.BackContent>
-            <Grid
+                    </StackPanel>
+                </Grid>
+            </materialDesign:Flipper.FrontContent>
+            <materialDesign:Flipper.BackContent>
+                <Grid
       Width="200"
       Height="256">
-                <Grid.RowDefinitions>
-                    <RowDefinition
+                    <Grid.RowDefinitions>
+                        <RowDefinition
           Height="Auto" />
-                    <RowDefinition
+                        <RowDefinition
           Height="*" />
-                </Grid.RowDefinitions>
-                <materialDesign:ColorZone
+                    </Grid.RowDefinitions>
+                    <materialDesign:ColorZone
         Padding="6"
         Mode="SecondaryMid">
-                    <StackPanel
+                        <StackPanel
           Orientation="Horizontal">
-                        <Button
+                            <Button
             HorizontalAlignment="Left"
             Command="{x:Static materialDesign:Flipper.FlipCommand}"
             Style="{StaticResource MaterialDesignToolForegroundButton}">
-                            <materialDesign:PackIcon
+                                <materialDesign:PackIcon
               HorizontalAlignment="Right"
               Kind="ArrowLeft" />
-                        </Button>
-                        <TextBlock
+                            </Button>
+                            <TextBlock
             Margin="8,0,0,0"
             VerticalAlignment="Center"
             Text="CV" />
-                    </StackPanel>
-                </materialDesign:ColorZone>
-                <Grid
+                        </StackPanel>
+                    </materialDesign:ColorZone>
+                    <Grid
         Grid.Row="1"
         Width="172"
         Margin="0,6,0,0"
         HorizontalAlignment="Center"
         VerticalAlignment="Top">
-                    <Grid.RowDefinitions>
-                        <RowDefinition />
-                        <RowDefinition />
-                        <RowDefinition />
-                        <RowDefinition />
-                    </Grid.RowDefinitions>
-                    <TextBox
+                        <Grid.RowDefinitions>
+                            <RowDefinition />
+                            <RowDefinition />
+
+                        </Grid.RowDefinitions>
+                        <TextBox
           Margin="0,12,0,0"
-          materialDesign:HintAssist.Hint="First name"
+          materialDesign:HintAssist.Hint="Họ và tên"
           materialDesign:HintAssist.IsFloating="True"
-          Text="Vuong" />
-                    <TextBox
+          Text="Vuong Lập Quế" />
+                        <TextBox
           Grid.Row="1"
           Margin="0,12,0,0"
-          materialDesign:HintAssist.Hint="Last name"
+          materialDesign:HintAssist.Hint="Kỹ năng"
           materialDesign:HintAssist.IsFloating="True"
-          Text="Que" />
-                    <StackPanel
-          Grid.Row="2"
-          Margin="0,12,0,0"
-          HorizontalAlignment="Right"
-          Orientation="Horizontal">
-                        <TextBlock
-            VerticalAlignment="Center"
-            Text="Duyệt" />
-                        <ToggleButton
-            Margin="8,0,0,0" />
-                    </StackPanel>
-                    <StackPanel
-          Grid.Row="3"
-          Margin="0,12,0,0"
-          HorizontalAlignment="Right"
-          Orientation="Horizontal">
-                        <TextBlock
-            VerticalAlignment="Center"
-            Text="Hẹn lịch ứng tuyển" />
-                        <ToggleButton
-            Margin="8,0,0,0" />
-                    </StackPanel>
+          Text="{Binding Skill}" />
+
+
+                    </Grid>
                 </Grid>
-            </Grid>
-        </materialDesign:Flipper.BackContent>
-    </materialDesign:Flipper>
+            </materialDesign:Flipper.BackContent>
+        </materialDesign:Flipper>
+    </Border>
 </UserControl>

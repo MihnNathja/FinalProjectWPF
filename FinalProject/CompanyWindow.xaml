@@ -43,7 +43,7 @@
         </EventTrigger>
     </Window.Triggers>
 
-    <Border Background="#eff2f7" CornerRadius="30">
+    <Border Background="#9CD1FA" CornerRadius="30">
         <Grid >
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="auto"/>
@@ -77,7 +77,7 @@
 
 
 
-                <Border Grid.Row="1" Background="Gray" CornerRadius="0 10 10 0">
+                <Border Grid.Row="1" Background="#5D8DFF" CornerRadius="0 10 10 0">
                     <DockPanel>
                         <local:UCPopUp x:Name="popupControl" Loaded="popupControl_Loaded"/>
 
@@ -241,6 +241,12 @@
                         Name="mainFarm"
                         NavigationUIVisibility="Hidden" Navigated="mainFarm_Navigated"
                         >
+                        <Frame.Effect>
+                            <DropShadowEffect Color="Black"
+                                      ShadowDepth="0"
+                                      BlurRadius="50"
+                                      Opacity="0.5"/>
+                        </Frame.Effect>
                     </Frame>
 
                 </Grid>
