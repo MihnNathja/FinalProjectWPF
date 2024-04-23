@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web;
 
 namespace FinalProject.Objects
 {
@@ -12,6 +13,7 @@ namespace FinalProject.Objects
         string gender;
         string employeeLocation;
         DateTime dateOfBirth;
+        string phone;
         string cccd;
         public Employee() : base () 
         {
@@ -24,7 +26,7 @@ namespace FinalProject.Objects
             TableName = "Employees";
         }
 
-        public Employee(string userName, string password, string employeeName, string gender, string employeeLocation, DateTime dateOfBirth, string cccd) 
+        public Employee(string userName, string password, string employeeName, string gender, string employeeLocation, DateTime dateOfBirth,string phone, string cccd) 
             : base( userName, password, "Employees")
         {
             Type = "Employee";
@@ -32,6 +34,7 @@ namespace FinalProject.Objects
             this.gender = gender;
             this.employeeLocation = employeeLocation;
             this.dateOfBirth = dateOfBirth;
+            this.phone = phone;
             this.cccd = cccd;
         }
 
@@ -40,5 +43,6 @@ namespace FinalProject.Objects
         public string EmployeeLocation { get => employeeLocation; set => employeeLocation = value; }
         public DateTime DateOfBirth { get => dateOfBirth; set => dateOfBirth = value; }
         public string Cccd { get => cccd; set => cccd = value; }
+        public string Phone { get => phone; set => phone = value; }
     }
 }

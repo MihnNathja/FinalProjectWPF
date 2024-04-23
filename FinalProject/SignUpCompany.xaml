@@ -68,7 +68,7 @@
                     <PasswordBox x:Name="txtConfirmPassword" Margin="10 5" Height="52" 
                                   TextBlock.FontSize="20"     
                                 materialDesign:HintAssist.Foreground="Green"
-                                materialDesign:HintAssist.Hint="Mật Khẩu"
+                                materialDesign:HintAssist.Hint="Nhập lại Mật Khẩu"
                                 materialDesign:TextFieldAssist.UnderlineBrush="Green"/>
 
                     <TextBox x:Name="txtEmail" Margin="10 5"

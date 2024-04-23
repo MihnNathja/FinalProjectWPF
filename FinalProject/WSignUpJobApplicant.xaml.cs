@@ -39,7 +39,7 @@ namespace FinalProject
             {
                 gender = "Female";
             }
-            Employee employee = new Employee(txtUserName.Text,pbPassword.Password,txtFullName.Text, gender,txtAddress.Text, dtpDateOfBirth.SelectedDate.Value, txtCCCD.Text);
+            Employee employee = new Employee(txtUserName.Text,pbPassword.Password,txtFullName.Text, gender,txtAddress.Text, dtpDateOfBirth.SelectedDate.Value, txtPhone.Text, txtCCCD.Text);
             EmployeeDAO employeeDAO = new EmployeeDAO();
             employeeDAO.Them(employee);
             this.Close();
