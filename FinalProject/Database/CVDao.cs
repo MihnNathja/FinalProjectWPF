@@ -125,6 +125,10 @@ namespace FinalProject.Database
             string SQL = string.Format($"UPDATE ApplyCV SET ACCEPT = {isAccepted} WHERE ID = {job.Id} and IdCV = {cv.IdCV} and IdEmployee = {employee.ID}");
             db.ThucThi(SQL);
         }
-        
+        public string GetNumberCVOfJob(string id)
+        {
+            string SQL = string.Format("SELECT COUNT(*) FROM ApplyCV WHERE ID = '{0}'", id);
+            return db.GetValue(SQL);
+        }
     }
 }

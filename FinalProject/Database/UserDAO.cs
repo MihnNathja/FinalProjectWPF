@@ -49,7 +49,6 @@ namespace FinalProject.Database
             {
                 if (property.Name != "TableName")
                 {
-                    MessageBox.Show(property.Name + row[property.Name].ToString());
                     property.SetValue(person, row[property.Name], null);
                 }
             }
