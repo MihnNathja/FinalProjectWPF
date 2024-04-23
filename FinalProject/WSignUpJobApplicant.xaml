@@ -46,7 +46,7 @@
                     <DatePicker x:Name="dtpDateOfBirth" Margin="10 5" Height="50" 
                              />
 
-                    <TextBox x:Name="txtPhoneNumber" Margin="10 5" 
+                    <TextBox x:Name="txtPhone" Margin="10 5" 
                              materialDesign:HintAssist.Hint="Số điện thoại"/>
 
                     <TextBox x:Name="txtCCCD" Margin="10 5"
@@ -71,7 +71,7 @@
                     <PasswordBox x:Name="pbConfirmPassword" Margin="10 5"
                                   TextBlock.FontSize="20"     
                                     materialDesign:HintAssist.Foreground="Green"
-                                    materialDesign:HintAssist.Hint="Mật Khẩu"
+                                    materialDesign:HintAssist.Hint="Nhập lại Mật Khẩu"
                                     materialDesign:TextFieldAssist.UnderlineBrush="Green"/>
 
                     <TextBox x:Name="txtEmail" Margin="10 5"

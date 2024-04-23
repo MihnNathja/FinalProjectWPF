@@ -4,6 +4,14 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FinalProject"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="13"
+        TextOptions.TextFormattingMode="Ideal"
+        TextOptions.TextRenderingMode="Auto"
+        Background="{DynamicResource MaterialDesignPaper}"
+        FontFamily="{DynamicResource MaterialDesignFont}"
         mc:Ignorable="d"
         Title="CreateJob" Height="500" Width="600">
     <Grid>
@@ -22,7 +30,8 @@
                 <TextBlock x:Name="txtbCompanyName" Margin="10 5" Text="{Binding CompanyName}"/>
 
                 <TextBlock Text="Tên công việc" FontWeight="Bold"/>
-                <TextBox x:Name="txtbName" Margin="10 5" Text="{Binding JobName}"/>
+                <TextBox x:Name="txtbName" Margin="10 5" Text="{Binding JobName}"
+                         Height="30"/>
 
                 <TextBlock Text="Kinh nghiệm" FontWeight="Bold"/>
                 <ComboBox Width="200" Margin="10 5" Style="{DynamicResource theComboBox}" Height="40" SelectedIndex="0">
@@ -33,7 +42,7 @@
                 </ComboBox>
 
                 <TextBlock Text="Địa điểm" FontWeight="Bold"/>
-                <TextBox x:Name="txtbLocation" Margin="10 5" Text="{Binding JobLocation}"/>
+                <TextBox x:Name="txtbLocation" Margin="10 5" Text="{Binding JobLocation}" Height="30"/>
 
 
                 <TextBlock Text="Mức Lương" FontWeight="Bold"/>
@@ -45,19 +54,48 @@
                 </ComboBox>
 
                 <TextBlock Text="Mô tả công việc" FontWeight="Bold"/>
-                <TextBox  Margin="10 5" Height="100"/>
+                <TextBox  Margin="10 5" Height="100"
+                            TextBlock.FontSize="20"
+                            VerticalAlignment="Top"
+
+                            AcceptsReturn="True"
+                            Style="{StaticResource MaterialDesignOutlinedTextBox}"
+                            TextWrapping="Wrap"
+                            VerticalScrollBarVisibility="Auto"/>
             </StackPanel>
             <StackPanel Grid.Column="1" Margin="5 10 10 10">
                 <TextBlock Text="Yêu cầu" FontWeight="Bold"/>
-                <TextBox  Margin="10 5" Height="100"/>
+                <TextBox  Margin="10 5" Height="100"
+                          TextBlock.FontSize="20"
+                            VerticalAlignment="Top"
+
+                            AcceptsReturn="True"
+                            Style="{StaticResource MaterialDesignOutlinedTextBox}"
+                            TextWrapping="Wrap"
+                            VerticalScrollBarVisibility="Auto"/>
 
                 <TextBlock Text="Quyền lợi" FontWeight="Bold"/>
-                <TextBox  Margin="10 5" Height="100"/>
+                <TextBox  Margin="10 5" Height="100"
+                          TextBlock.FontSize="20"
+                            VerticalAlignment="Top"
 
-                <TextBlock Text="Thời gian làm việc" FontWeight="Bold"/>
-                <TextBox  Margin="10 5" />
+                            AcceptsReturn="True"
+                            Style="{StaticResource MaterialDesignOutlinedTextBox}"
+                            TextWrapping="Wrap"
+                            VerticalScrollBarVisibility="Auto"/>
 
-                <StackPanel Orientation="Horizontal" Margin="0 50">
+                <TextBlock Text="Thời gian làm việc" FontWeight="Bold"
+                           />
+                <TextBox  Margin="10 5" 
+                          TextBlock.FontSize="20"
+                            VerticalAlignment="Top"
+
+                            AcceptsReturn="True"
+                            Style="{StaticResource MaterialDesignOutlinedTextBox}"
+                            TextWrapping="Wrap"
+                            VerticalScrollBarVisibility="Auto"/>
+
+                <StackPanel Orientation="Horizontal" Margin="0 50" HorizontalAlignment="Center">
                     <Button x:Name="btnSave" Content="Lưu" Width="50" Margin="10 0" Click="btnSave_Click"></Button>
                     <Button x:Name="btnPost" Content="Đăng tin" Width="70"  Margin="50 0" Click="btnPost_Click"></Button>
                 </StackPanel>

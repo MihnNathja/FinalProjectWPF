@@ -38,7 +38,7 @@ namespace FinalProject
 
         private void btnSave_Click(object sender, RoutedEventArgs e)
         {
-            CV cv = new CV(cVDAO.GetNextID(),Employee.ID,txtCVTitle.Text,txtCareerGoal.Text,txtSkill.Text, txtPresent.Text, txtExperience.Text, txtActivitie.Text, txtCertificate.Text, txtAward.Text, txtAddInformation.Text);
+            CV cv = new CV(cVDAO.GetNextID(), Employee.ID, txtCVTitle.Text, txtCareerGoal.Text, txtSkill.Text, txtPresent.Text, txtExperience.Text, txtActivitie.Text, txtCertificate.Text, txtAward.Text, txtAddInformation.Text);
             
             cVDAO.Them(cv);
         }

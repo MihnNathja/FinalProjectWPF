@@ -59,13 +59,15 @@
                     <RadioButton Name="rdNam" Content="Nam"/>
                     <RadioButton Name="rdNu" Content="Nữ" Margin="20 0 0 0"/>
                 </StackPanel>
-                <TextBox Name="txtSDT" materialDesign:HintAssist.Hint="Số điện thoại" FontSize="15" Margin="20 3"/>
-                <TextBox Name="txtEmail" materialDesign:HintAssist.Hint="Email" FontSize="15" Margin="20 3"/>
-                <TextBox Name="txtAddress" materialDesign:HintAssist.Hint="Địa chỉ" FontSize="15" Margin="20 3"/>
+                <TextBox Name="txtSDT" materialDesign:HintAssist.Hint="Số điện thoại" FontSize="15" Margin="20 3"
+                         Text="{Binding Phone}"/>
+                <TextBox Name="txtCCCD" materialDesign:HintAssist.Hint="CCCD" FontSize="15" Margin="20 3"/>
+                <TextBox Name="txtAddress" materialDesign:HintAssist.Hint="Địa chỉ" FontSize="15" Margin="20 3"
+                         Text="{Binding EmployeeLocation}"/>
             </StackPanel>
             <StackPanel >
                 <TextBox Name="txtCareerGoal" materialDesign:HintAssist.Hint="Mục tiêu nghề nghiệp" Height="80" Margin="5"
-                        
+                            Text=""
                            TextBlock.FontSize="20"
                            VerticalAlignment="Top"
 
@@ -75,7 +77,7 @@
                            VerticalScrollBarVisibility="Auto"/>
             </StackPanel>
             <TextBox Name="txtSkill" materialDesign:HintAssist.Hint="Kỹ năng" Height="60" Margin="5"
-                     
+                        Text=""
                        TextBlock.FontSize="20"
                        VerticalAlignment="Top"
 
@@ -87,7 +89,8 @@
 
             <StackPanel>
                 <TextBox Name="txtPresent" materialDesign:HintAssist.Hint="Thông tin người giới thiệu(Nếu có)" Height="60" Margin="5"
-                           TextBlock.FontSize="20"
+                         Text=""  
+                         TextBlock.FontSize="20"
                            VerticalAlignment="Top"
 
                            AcceptsReturn="True"
@@ -103,7 +106,8 @@
             <StackPanel >
                 <TextBlock  Text="KINH NGHIỆM" FontSize="20" FontWeight="Bold"/>
                 <TextBox Name="txtExperience" Text="" Height="110" Margin="5"
-                       materialDesign:HintAssist.Hint="Mô tả quá trình làm việc"
+                   
+                         materialDesign:HintAssist.Hint="Mô tả quá trình làm việc"
                          TextBlock.FontSize="20"
                        VerticalAlignment="Top"
 
