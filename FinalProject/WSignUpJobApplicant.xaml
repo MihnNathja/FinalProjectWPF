@@ -14,7 +14,7 @@
         FontFamily="{DynamicResource MaterialDesignFont}"
         mc:Ignorable="d"
         WindowStartupLocation="CenterScreen"
-        Title="WSignUpJobApplicant" Height="800" Width="800">
+        Title="WSignUpJobApplicant" Height="500" Width="800">
     <Border Background="#ffffff" CornerRadius="0 10 10 0">
         <Grid>
             <Grid.RowDefinitions>

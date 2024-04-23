@@ -6,6 +6,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FinalProject"
         mc:Ignorable="d"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="13"
+        TextOptions.TextFormattingMode="Ideal"
+        TextOptions.TextRenderingMode="Auto"
+        Background="{DynamicResource MaterialDesignPaper}"
+        FontFamily="{DynamicResource MaterialDesignFont}"
         WindowState = "Maximized"
         Title="JobApplicantWindow" Height="800" Width="1200" Loaded="Window_Loaded">
     <Window.Resources>
@@ -31,7 +39,7 @@
         </EventTrigger>
     </Window.Triggers>
 
-    <Border Background="#eff2f7" CornerRadius="30">
+    <Border Background="#9CD1FA" CornerRadius="30">
         <Grid >
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="auto"/>
@@ -65,7 +73,7 @@
 
 
 
-                <Border Grid.Row="1" Background="#00b14f" CornerRadius="0 10 10 0">
+                <Border Grid.Row="1" Background="#5D8DFF" CornerRadius="0 10 10 0">
                     <DockPanel>
                         <local:UCPopUp x:Name="popupControl" Loaded="popupControl_Loaded"/>
 
@@ -149,8 +157,8 @@
             <Grid Grid.Column="1" Margin="30 20 20 20 ">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="auto"/>
-                    <RowDefinition Height="auto"/>
                     <RowDefinition Height="*"/>
+                    
 
                 </Grid.RowDefinitions>
                 <!--search textbox-->
@@ -191,24 +199,36 @@
                         </ComboBox>
 
                         <Button 
-                        x:Name="btnSearch"
-                        Width="50" 
-                        Height="50" 
-                        HorizontalAlignment="Center" 
-                        Margin="15 0" 
-                        Style="{StaticResource buttonSearch}"
-                        Click="btnSearch_Click">
-                            <Icon:PackIconMaterial Kind="Magnify" Width="15" Height="15" VerticalAlignment="Center"
-                    Foreground="#b0b9c6" HorizontalAlignment="Right"/>
+                         x:Name="btnSearch"
+                             Width="41" 
+                             Height="41" 
+                             Margin="20 0" 
+ 
+                             Click="btnSearch_Click"
+ 
+                             IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
+                             Style="{StaticResource MaterialDesignFloatingActionMiniButton}"
+                             ToolTip="MaterialDesignFloatingActionMiniButton">
+
+                              <materialDesign:PackIcon
+                                 Width="20"
+                                 Height="20"
+                                 Kind="Magnify" />
                         </Button>
                     </StackPanel>
                 </Grid>
-                <Grid Grid.Row="2" Margin="0,0,0,112" Grid.RowSpan="2">
+                <Grid Grid.Row="1" Margin="0,0,0,10" >
 
                     <Frame 
                     Name="mainFarm"
                     NavigationUIVisibility="Hidden" Navigated="mainFarm_Navigated"
                     >
+                        <Frame.Effect>
+                            <DropShadowEffect Color="Black"
+                                  ShadowDepth="0"
+                                  BlurRadius="50"
+                                  Opacity="0.5"/>
+                        </Frame.Effect>
                     </Frame>
 
                 </Grid>
