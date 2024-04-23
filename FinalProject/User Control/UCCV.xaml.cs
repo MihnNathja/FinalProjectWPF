@@ -29,11 +29,16 @@ namespace FinalProject
         {
             InitializeComponent();
         }
+        public UCCV(string id)
+        {
+            InitializeComponent();
+            ID = id;
+        }
 
         private void UCCV_MouseDown(object sender, MouseButtonEventArgs e)
         {
             CVDAO cVDAO = new CVDAO();
-            CV cV = cVDAO.GetObject(this.ID);
+            CV cV = cVDAO.GetObject(ID);
 
             CVWindow cVWindow = new CVWindow();
             cVWindow.DataContext = cV;

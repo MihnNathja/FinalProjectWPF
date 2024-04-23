@@ -101,9 +101,25 @@ namespace FinalProject.Database
             }
             return cvList;
         }
+        public List<UCCV> GetEmployeeCV(Job job)
+        {
+            List<UCCV> cvList = new List<UCCV>();
+            DataTable cvTable = JobCVData(job);
+            foreach (DataRow row in cvTable.Rows)
+            {
+                UCCV cv = new UCCV(row["IdCV"].ToString());
+                cvList.Add(cv);
+            }
+            return cvList;
+        }
         public DataTable EmployeeCVData(Employee employee)
         {
             string SQL = string.Format($"SELECT *FROM CV WHERE ID = {employee.ID}");
+            return db.Load(SQL);
+        }
+        public DataTable JobCVData(Job job)
+        {
+            string SQL = string.Format($"SELECT *FROM CV WHERE ID = {job.Id}");
             return db.Load(SQL);
         }
         public void Apply(Job job, CV cv, Employee employee)
@@ -125,6 +141,10 @@ namespace FinalProject.Database
             string SQL = string.Format($"UPDATE ApplyCV SET ACCEPT = {isAccepted} WHERE ID = {job.Id} and IdCV = {cv.IdCV} and IdEmployee = {employee.ID}");
             db.ThucThi(SQL);
         }
-        
+        public string GetNumberCVOfJob(string id)
+        {
+            string SQL = string.Format("SELECT COUNT(*) FROM ApplyCV WHERE ID = '{0}'", id);
+            return db.GetValue(SQL);
+        }
     }
 }
