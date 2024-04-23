@@ -45,6 +45,7 @@ namespace FinalProject
             List<UCCV> cvList = cvDAO.GetEmployeeCV(Job);
             foreach (UCCV cv in cvList)
             {
+                cv.Job = job;
                 pnlCV.Children.Add(cv);
             }
         }

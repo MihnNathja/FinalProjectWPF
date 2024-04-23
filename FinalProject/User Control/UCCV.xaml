@@ -14,7 +14,7 @@
             FontFamily="{DynamicResource MaterialDesignFont}"
              mc:Ignorable="d" 
              MinHeight="256" MinWidth="200"
-             MouseDown="UCCV_MouseDown">
+             >
     <Border BorderBrush="Black" BorderThickness="0.5" Margin="2">
         <materialDesign:Flipper
   materialDesign:ElevationAssist.Elevation="Dp0">
@@ -42,13 +42,13 @@
         Grid.Row="1"
         HorizontalAlignment="Center"
         VerticalAlignment="Center">
-                        <TextBlock
-          Text="CV Title" />
+                        <TextBlock x:Name="EmployeeName"
+          Text="{Binding EmployeeName}" />
                         <Button
                       Margin="0,4,0,0"
                       TextBlock.Foreground="Black"
                       Command="{x:Static materialDesign:Flipper.FlipCommand}"
-                      Content="XEM"
+                      Content="CHI TIẾT"
                       Style="{StaticResource MaterialDesignFlatButton}" />
                     </StackPanel>
                 </Grid>
@@ -93,19 +93,25 @@
                             <RowDefinition />
 
                         </Grid.RowDefinitions>
-                        <TextBlock
-          Margin="0,12,0,0"
-          materialDesign:HintAssist.Hint="Họ và tên"
-          materialDesign:HintAssist.IsFloating="True"
-          Text="Vuong Lập Quế" />
-                        <TextBox
-          Grid.Row="1"
-          Margin="0,12,0,0"
-          materialDesign:HintAssist.Hint="Kỹ năng"
-          materialDesign:HintAssist.IsFloating="True"
-          Text="{Binding Skill}" />
-
-
+                        <Button
+                            x:Name="btnCVDetail"
+                              Margin="0,12,0,0"
+                              Content="Xem" 
+                            Click="btnCVDetail_Click"/>
+                        <Button
+                            x:Name="btnAccept"
+                              Grid.Row="1"
+                              Margin="0,12,0,0"
+                              Content="Duyệt" 
+                            Click="btnAccept_Click"
+                            />
+                        <Button
+                            x:Name="btnReject"
+                              Grid.Row="1"
+                              Margin="0,12,0,0"
+                              Content="Từ chối" 
+                            Click="btnReject_Click"
+                            />
                     </Grid>
                 </Grid>
             </materialDesign:Flipper.BackContent>

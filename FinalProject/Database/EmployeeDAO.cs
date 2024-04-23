@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -21,10 +22,20 @@ namespace FinalProject.Database
             string[] prop = { "ID","UserName","Password","Type" ,"EmployeeName", "Gender", "EmployeeLocation", "DateOfBirth", "Cccd" };
             Them(employee, prop);
         }
-        public Employee GetEmployee(int id)
+        public Employee GetEmployee(string id)
         {
-            Employee emp = new Employee();
-            return emp;
+            Employee employee = new Employee();
+            string SQL = string.Format($"SELECT * FROM Jobs WHERE ID = '{id}'");
+            DataTable data = db.Load(SQL);
+            foreach (DataRow row in data.Rows)
+            {
+                PropertyInfo[] properties = typeof(Employee).GetProperties();
+                foreach (PropertyInfo property in properties)
+                {
+                    property.SetValue(employee, row[property.Name].ToString(), null);
+                }
+            }
+            return employee;
         }
         public DataTable Load()
         {

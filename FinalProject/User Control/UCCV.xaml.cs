@@ -22,9 +22,16 @@ namespace FinalProject
     /// </summary>
     public partial class UCCV : UserControl
     {
-
+        CVDAO cVDAO = new CVDAO();
+        CV cV;
+        Job job;
+        Employee employee;
         string id;
         public string ID { get => id; set => id = value; }
+        public CV CV { get => cV; set => cV = value; }
+        public Job Job { get => job; set => job = value; }
+        public Employee Employee { get => employee; set => employee = value; }
+
         public UCCV()
         {
             InitializeComponent();
@@ -33,16 +40,26 @@ namespace FinalProject
         {
             InitializeComponent();
             ID = id;
+            CV = cVDAO.GetObject(ID);
+            EmployeeDAO EmployeeDAO = new EmployeeDAO();
+/*            Employee = EmployeeDAO.GetEmployee(CV.ID);*/
         }
 
-        private void UCCV_MouseDown(object sender, MouseButtonEventArgs e)
+        private void btnCVDetail_Click(object sender, RoutedEventArgs e)
         {
-            CVDAO cVDAO = new CVDAO();
-            CV cV = cVDAO.GetObject(ID);
-
             CVWindow cVWindow = new CVWindow();
-            cVWindow.DataContext = cV;
+            cVWindow.DataContext = CV;
             cVWindow.Show();
+        }
+
+        private void btnAccept_Click(object sender, RoutedEventArgs e)
+        {
+            cVDAO.Accept(Job, CV, Employee, true);
+        }
+
+        private void btnReject_Click(object sender, RoutedEventArgs e)
+        {
+            cVDAO.Accept(Job, CV, Employee, true);
         }
     }
 }
