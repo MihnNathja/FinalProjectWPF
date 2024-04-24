@@ -105,6 +105,12 @@ D:\UNIVERSITY\SOPHOMORE\TERM II\LẬP TRÌNH WINDOWS\FinalProjectWPF\FinalProjec
 D:\UNIVERSITY\SOPHOMORE\TERM II\LẬP TRÌNH WINDOWS\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\FinalProject.pdb
 D:\UNIVERSITY\SOPHOMORE\TERM II\LẬP TRÌNH WINDOWS\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\FinalProject.genruntimeconfig.cache
 D:\UNIVERSITY\SOPHOMORE\TERM II\LẬP TRÌNH WINDOWS\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\ref\FinalProject.dll
+D:\UNIVERSITY\SOPHOMORE\TERM II\LẬP TRÌNH WINDOWS\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\User Control\UCCVApply.g.cs
+D:\UNIVERSITY\SOPHOMORE\TERM II\LẬP TRÌNH WINDOWS\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\User Control\UCCVApply.baml
+D:\UNIVERSITY\SOPHOMORE\TERM II\LẬP TRÌNH WINDOWS\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\Pages\PCompanyJobState.g.cs
+D:\UNIVERSITY\SOPHOMORE\TERM II\LẬP TRÌNH WINDOWS\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\Pages\PCompanyJobState.baml
+D:\UNIVERSITY\SOPHOMORE\TERM II\LẬP TRÌNH WINDOWS\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\User Control\UCCompanyJob.g.cs
+D:\UNIVERSITY\SOPHOMORE\TERM II\LẬP TRÌNH WINDOWS\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\User Control\UCCompanyJob.baml
 C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\bin\Debug\net6.0-windows\FinalProject.exe
 C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\bin\Debug\net6.0-windows\FinalProject.dll.config
 C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\bin\Debug\net6.0-windows\FinalProject.deps.json
@@ -166,9 +172,12 @@ C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.
 C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\Pages\DocumentPage.g.cs
 C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\Pages\PageJob.g.cs
 C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\Pages\PCompany.g.cs
+C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\Pages\PCompanyJobState.g.cs
 C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\SignUpCompany.g.cs
 C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\User Control\UCCompanyInfo.g.cs
+C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\User Control\UCCompanyJob.g.cs
 C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\User Control\UCCV.g.cs
+C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\User Control\UCCVApply.g.cs
 C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\User Control\UCJobInfo.g.cs
 C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\User Control\UCPopUp.g.cs
 C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\WJobInfoDetail.g.cs
@@ -190,9 +199,12 @@ C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.
 C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\Pages\DocumentPage.baml
 C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\Pages\PageJob.baml
 C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\Pages\PCompany.baml
+C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\Pages\PCompanyJobState.baml
 C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\SignUpCompany.baml
 C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\User Control\UCCompanyInfo.baml
+C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\User Control\UCCompanyJob.baml
 C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\User Control\UCCV.baml
+C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\User Control\UCCVApply.baml
 C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\User Control\UCJobInfo.baml
 C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\User Control\UCPopUp.baml
 C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\WJobInfoDetail.baml
@@ -211,15 +223,3 @@ C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.
 C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\FinalProject.pdb
 C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\FinalProject.genruntimeconfig.cache
 C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\ref\FinalProject.dll
-D:\UNIVERSITY\SOPHOMORE\TERM II\LẬP TRÌNH WINDOWS\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\User Control\UCCVApply.g.cs
-D:\UNIVERSITY\SOPHOMORE\TERM II\LẬP TRÌNH WINDOWS\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\User Control\UCCVApply.baml
-D:\UNIVERSITY\SOPHOMORE\TERM II\LẬP TRÌNH WINDOWS\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\Pages\PCompanyJobState.g.cs
-D:\UNIVERSITY\SOPHOMORE\TERM II\LẬP TRÌNH WINDOWS\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\Pages\PCompanyJobState.baml
-D:\UNIVERSITY\SOPHOMORE\TERM II\LẬP TRÌNH WINDOWS\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\User Control\UCCompanyJob.g.cs
-D:\UNIVERSITY\SOPHOMORE\TERM II\LẬP TRÌNH WINDOWS\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\User Control\UCCompanyJob.baml
-C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\Pages\PCompanyJobState.g.cs
-C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\User Control\UCCompanyJob.g.cs
-C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\User Control\UCCVApply.g.cs
-C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\Pages\PCompanyJobState.baml
-C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\User Control\UCCompanyJob.baml
-C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\User Control\UCCVApply.baml
