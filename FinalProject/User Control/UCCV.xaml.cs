@@ -42,7 +42,8 @@ namespace FinalProject
             ID = id;
             CV = cVDAO.GetObject(ID);
             EmployeeDAO EmployeeDAO = new EmployeeDAO();
-/*            Employee = EmployeeDAO.GetEmployee(CV.ID);*/
+            Employee = EmployeeDAO.GetEmployee(CV.ID);
+            DataContext = Employee;
         }
 
         private void btnCVDetail_Click(object sender, RoutedEventArgs e)
