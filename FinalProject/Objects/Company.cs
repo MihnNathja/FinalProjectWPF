@@ -26,13 +26,12 @@ namespace FinalProject.Objects
         public Company(string userName, string password)
         : base (userName, password)
         {
-            Type = "Company"; 
+
             TableName = "Companies";
         }
         public Company(string userName, string password, string companyName, string mst, string companyLocation, string boss, string phoneNumber)
         : base ( userName, password, "Companies")
         {   
-            Type = "Company";
             CompanyName = companyName;
             CompanyLocation = companyLocation;
             Mst = mst;
