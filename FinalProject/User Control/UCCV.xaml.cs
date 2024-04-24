@@ -44,6 +44,9 @@ namespace FinalProject
             EmployeeDAO EmployeeDAO = new EmployeeDAO();
             Employee = EmployeeDAO.GetEmployee(CV.ID);
             DataContext = Employee;
+            MessageBox.Show("IdCV: " + CV.IdCV);
+            MessageBox.Show("IdEmployee: " + Employee.ID);
+            
         }
 
         private void btnCVDetail_Click(object sender, RoutedEventArgs e)
@@ -55,12 +58,12 @@ namespace FinalProject
 
         private void btnAccept_Click(object sender, RoutedEventArgs e)
         {
-            cVDAO.Accept(Job, CV, Employee, true);
+            cVDAO.Accept(Job, CV, Employee, 1);
         }
 
         private void btnReject_Click(object sender, RoutedEventArgs e)
         {
-            cVDAO.Accept(Job, CV, Employee, true);
+            cVDAO.Accept(Job, CV, Employee, 0);
         }
     }
 }
