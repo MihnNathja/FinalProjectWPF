@@ -10,10 +10,10 @@
         TextElement.FontSize="13"
         TextOptions.TextFormattingMode="Ideal"
         TextOptions.TextRenderingMode="Auto"
-        Background="{DynamicResource MaterialDesignPaper}"
+        
         FontFamily="{DynamicResource MaterialDesignFont}"
         mc:Ignorable="d"
-        Title="CreateJob" Height="500" Width="600">
+        Title="CreateJob" Height="600" Width="700">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition/>
@@ -26,12 +26,13 @@
             </Grid.ColumnDefinitions>
 
             <StackPanel Margin="5 10 10 10">
-                <TextBlock Text="Doanh Nghiệp" FontWeight="Bold"/>
-                <TextBlock x:Name="txtbCompanyName" Margin="10 5" Text="{Binding CompanyName}"/>
+                
+                <TextBox x:Name="txtbCompanyName" Margin="10 5" Text="{Binding CompanyName}"
+                         materialDesign:HintAssist.Hint="Tên công ty"/>
 
-                <TextBlock Text="Tên công việc" FontWeight="Bold"/>
+                
                 <TextBox x:Name="txtbName" Margin="10 5" Text="{Binding JobName}"
-                         Height="30"/>
+                         Height="50" materialDesign:HintAssist.Hint="Tên công việc"/>
 
                 <TextBlock Text="Kinh nghiệm" FontWeight="Bold"/>
                 <ComboBox Width="200" Margin="10 5" Style="{DynamicResource theComboBox}" Height="40" SelectedIndex="0">
@@ -41,8 +42,9 @@
                     <ComboBoxItem Content="Trên 3 năm" />
                 </ComboBox>
 
-                <TextBlock Text="Địa điểm" FontWeight="Bold"/>
-                <TextBox x:Name="txtbLocation" Margin="10 5" Text="{Binding JobLocation}" Height="30"/>
+                
+                <TextBox x:Name="txtbLocation" Margin="10 5" Text="{Binding JobLocation}"
+                         Height="50" materialDesign:HintAssist.Hint="Địa điểm"/>
 
 
                 <TextBlock Text="Mức Lương" FontWeight="Bold"/>
@@ -54,7 +56,7 @@
                 </ComboBox>
 
                 <TextBlock Text="Mô tả công việc" FontWeight="Bold"/>
-                <TextBox  Margin="10 5" Height="100"
+                <TextBox  Margin="10 5" Height="200"
                             TextBlock.FontSize="20"
                             VerticalAlignment="Top"
 
@@ -65,7 +67,7 @@
             </StackPanel>
             <StackPanel Grid.Column="1" Margin="5 10 10 10">
                 <TextBlock Text="Yêu cầu" FontWeight="Bold"/>
-                <TextBox  Margin="10 5" Height="100"
+                <TextBox  Margin="10 5" Height="200"
                           TextBlock.FontSize="20"
                             VerticalAlignment="Top"
 
@@ -75,7 +77,7 @@
                             VerticalScrollBarVisibility="Auto"/>
 
                 <TextBlock Text="Quyền lợi" FontWeight="Bold"/>
-                <TextBox  Margin="10 5" Height="100"
+                <TextBox  Margin="10 5" Height="130"
                           TextBlock.FontSize="20"
                             VerticalAlignment="Top"
 

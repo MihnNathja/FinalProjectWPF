@@ -13,6 +13,7 @@
                 <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Primary/MaterialDesignColor.LightBlue.xaml" />
                 <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Secondary/MaterialDesignColor.Indigo.xaml" />
                 <ResourceDictionary Source="Style/MainStyle.xaml"/>
+                <ResourceDictionary Source="Theme/Theme.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
         
