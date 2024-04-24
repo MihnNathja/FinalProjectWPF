@@ -8,6 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Image\background.jpg" />
     <None Remove="Image\btnDelete.png" />
     <None Remove="Image\company_cover.jpg" />
     <None Remove="Image\favourite_icon.png" />
@@ -25,6 +26,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Image\background.jpg" />
     <Resource Include="Image\btnDelete.png" />
     <Resource Include="Image\company_cover.jpg" />
     <Resource Include="Image\favourite_icon.png" />

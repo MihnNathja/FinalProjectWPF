@@ -42,8 +42,19 @@
             <BeginStoryboard Storyboard="{StaticResource CloseMenu}"/>
         </EventTrigger>
     </Window.Triggers>
+    <Grid>
+        <Border CornerRadius="30">
+            <Border.Background>
+                <ImageBrush ImageSource="/Image/background.jpg" Stretch="UniformToFill"
+                            Opacity="0.4"/>
 
-    <Border Background="#9CD1FA" CornerRadius="30">
+            </Border.Background>
+        </Border>
+        <!--<Border>
+            <Border.Background>
+                <SolidColorBrush Color="White" Opacity="0"/>
+            </Border.Background>
+        </Border>-->
         <Grid >
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="auto"/>
@@ -77,13 +88,13 @@
 
 
 
-                <Border Grid.Row="1" Background="#5D8DFF" CornerRadius="0 10 10 0">
+                <Border Grid.Row="1" Background="{DynamicResource SecundaryBackgroundColor}" BorderThickness="1" BorderBrush="Black" Opacity="0.8" CornerRadius="0 10 10 0">
                     <DockPanel>
                         <local:UCPopUp x:Name="popupControl" Loaded="popupControl_Loaded"/>
 
                         <!--menu logo-->
                         <Border Width="80" Height="80" Padding="3" Background="White" CornerRadius="100"
-                                DockPanel.Dock="Top" HorizontalAlignment="Center">
+                       DockPanel.Dock="Top" HorizontalAlignment="Center">
                             <Ellipse>
                                 <Ellipse.Fill>
                                     <ImageBrush ImageSource="/Image/user.png" />
@@ -93,61 +104,61 @@
 
                         </Border>
                         <TextBlock 
-                            x:Name="txtbName"
-                            Text="{Binding CompanyName}"
-                            Foreground="White" FontSize="22"
-                            FontWeight="SemiBold" 
-                            DockPanel.Dock="Top" 
-                            TextAlignment="Center" 
-                            Margin="5 25 0 10"/>
+                   x:Name="txtbName"
+                   Text="{Binding CompanyName}"
+                   Foreground="White" FontSize="22"
+                   FontWeight="SemiBold" 
+                   DockPanel.Dock="Top" 
+                   TextAlignment="Center" 
+                   Margin="5 25 0 10"/>
 
                         <Separator Margin="25" DockPanel.Dock="Top" Height="1" Background="White"/>
 
                         <StackPanel DockPanel.Dock="Top">
                             <Button Style="{StaticResource menuButton}"
-                                    MouseEnter="btnViecLam_MouseEnter"
-                                    MouseLeave="btnViecLam_MouseLeave"
-                                    Click="btnViecLam_Click"
-                                    >
+                           MouseEnter="btnViecLam_MouseEnter"
+                           MouseLeave="btnViecLam_MouseLeave"
+                           Click="btnViecLam_Click"
+                           >
                                 <StackPanel Orientation="Horizontal">
                                     <Icon:PackIconMaterial Kind="Home" Style="{StaticResource menuButtonIcon}"/>
                                     <TextBlock Text="Việc làm"/>
                                 </StackPanel>
                             </Button>
                             <Button Style="{StaticResource menuButton}"
-                                    MouseEnter="btnHoSo_MouseEnter" 
-                                    MouseLeave="btnHoSo_MouseLeave" Click="btnHoSo_Click"
-                                    >
+                           MouseEnter="btnHoSo_MouseEnter" 
+                           MouseLeave="btnHoSo_MouseLeave" Click="btnHoSo_Click"
+                           >
                                 <StackPanel Orientation="Horizontal">
                                     <Icon:PackIconMaterial Kind="FileDocument" Style="{StaticResource menuButtonIcon}"/>
                                     <TextBlock Text="Hồ sơ Công ty"/>
                                 </StackPanel>
                             </Button>
                             <Button Style="{StaticResource menuButton}"
-                                    MouseEnter="btnCongty_MouseEnter"
-                                    MouseLeave="btnCongTy_MouseLeave"
-                                    Click="btnCongTy_Click">
+                           MouseEnter="btnCongty_MouseEnter"
+                           MouseLeave="btnCongTy_MouseLeave"
+                           Click="btnCongTy_Click">
                                 <StackPanel Orientation="Horizontal">
                                     <Icon:PackIconMaterial Kind="Factory" Style="{StaticResource menuButtonIcon}"/>
                                     <TextBlock Text="Công ty"/>
                                 </StackPanel>
                             </Button>
                             <Button Style="{StaticResource menuButton}"
-                                    MouseEnter="btnQuanTam_MouseEnter"
-                                    MouseLeave="btnQuanTam_MouseLeave"
-                                    >
+                           MouseEnter="btnQuanTam_MouseEnter"
+                           MouseLeave="btnQuanTam_MouseLeave"
+                           >
                                 <StackPanel Orientation="Horizontal">
                                     <Icon:PackIconMaterial Kind="Heart" Style="{StaticResource menuButtonIcon}"/>
                                     <TextBlock Text="Việc làm quan tâm"/>
                                 </StackPanel>
                             </Button>
                             <Button 
-                                 x:Name="btnTrangThai"
-                                Click="btnTrangThai_Click"
-                                Style="{StaticResource menuButton}"
-                                 MouseEnter="btnTrangthai_MouseEnter"
-                                 MouseLeave="btnTrangthai_MouseLeave"
-         >
+                        x:Name="btnTrangThai"
+                       Click="btnTrangThai_Click"
+                       Style="{StaticResource menuButton}"
+                        MouseEnter="btnTrangthai_MouseEnter"
+                        MouseLeave="btnTrangthai_MouseLeave"
+>
                                 <StackPanel Orientation="Horizontal">
                                     <Icon:PackIconMaterial Kind="Checkbook" Style="{StaticResource menuButtonIcon}"/>
                                     <TextBlock Text="Trạng Thái"/>
@@ -156,12 +167,12 @@
 
                         </StackPanel>
                         <Button x:Name="btnLogout"
-                                Style="{StaticResource menuButton}" 
-                                VerticalAlignment="Bottom" 
-                                DockPanel.Dock ="Bottom" 
-                                Margin="15 0 15 20"
-                                Click="btnLogout_Click"
-                                >
+                       Style="{StaticResource menuButton}" 
+                       VerticalAlignment="Bottom" 
+                       DockPanel.Dock ="Bottom" 
+                       Margin="15 0 15 20"
+                       Click="btnLogout_Click"
+                       >
                             <StackPanel Orientation="Horizontal">
                                 <Icon:PackIconMaterial Kind="Logout" Style="{StaticResource menuButtonIcon}"/>
                                 <TextBlock Text="Đăng xuất"/>
@@ -187,14 +198,14 @@
                     </Grid.ColumnDefinitions>
                     <Grid Width="400" HorizontalAlignment="Left">
                         <TextBlock 
-                            Margin="20 0" 
-                            VerticalAlignment="Center" 
-                            Foreground="#b0b9c6" 
-                            IsHitTestVisible="False"
-                            Panel.ZIndex="0" 
-                            Text="Search here ..." 
-                            Visibility="Visible" 
-                            />
+                   Margin="20 0" 
+                   VerticalAlignment="Center" 
+                   Foreground="#b0b9c6" 
+                   IsHitTestVisible="False"
+                   Panel.ZIndex="0" 
+                   Text="Search here ..." 
+                   Visibility="Visible" 
+                   />
                         <TextBox x:Name="txtSearch" Style="{StaticResource textboxSearch}" Height="40" TabIndex="0"/>
 
 
@@ -217,35 +228,35 @@
                         </ComboBox>
 
                         <Button 
-                            x:Name="btnSearch"
-                            Width="41" 
-                            Height="41" 
-                            Margin="20 0" 
-                            
-                            Click="btnSearch_Click"
-                            
-                            IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
-                            Style="{StaticResource MaterialDesignFloatingActionMiniButton}"
-                            ToolTip="MaterialDesignFloatingActionMiniButton">
+                   x:Name="btnSearch"
+                   Width="41" 
+                   Height="41" 
+                   Margin="20 0" 
+                   
+                   Click="btnSearch_Click"
+                   
+                   IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
+                   Style="{StaticResource MaterialDesignFloatingActionMiniButton}"
+                   ToolTip="MaterialDesignFloatingActionMiniButton">
 
                             <materialDesign:PackIcon
-                                Width="20"
-                                Height="20"
-                                Kind="Magnify" />
+                       Width="20"
+                       Height="20"
+                       Kind="Magnify" />
                         </Button>
                     </StackPanel>
                 </Grid>
                 <Grid Grid.Row="1">
 
                     <Frame 
-                        Name="mainFarm"
-                        NavigationUIVisibility="Hidden" Navigated="mainFarm_Navigated"
-                        >
+               Name="mainFarm" Margin="20"
+               NavigationUIVisibility="Hidden" Navigated="mainFarm_Navigated"
+               >
                         <Frame.Effect>
                             <DropShadowEffect Color="Black"
-                                      ShadowDepth="0"
-                                      BlurRadius="50"
-                                      Opacity="0.5"/>
+                             ShadowDepth="0"
+                             BlurRadius="50"
+                             Opacity="0.9"/>
                         </Frame.Effect>
                     </Frame>
 
@@ -253,8 +264,8 @@
             </Grid>
 
         </Grid>
-
-    </Border>
-
+    </Grid>
+    
+    
 
 </Window>
