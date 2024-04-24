@@ -42,6 +42,7 @@ namespace FinalProject.Pages
             List<UCCompanyJob> jobList = jobDAO.GetCompanyJob(Company);
             foreach (UCCompanyJob job in jobList)
             {
+                
                 pnlJobState.Children.Add(job);
             }
         }
