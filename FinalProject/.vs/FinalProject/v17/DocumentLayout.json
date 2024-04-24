@@ -3,15 +3,18 @@
   "WorkspaceRootPath": "C:\\VUONG_LAP_QUE\\Nam 2\\HK II\\Window\\FinalProjectWPF\\FinalProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BC4969F9-C76B-4990-B9C8-352C76BDAA80}|FinalProject.csproj|C:\\VUONG_LAP_QUE\\Nam 2\\HK II\\Window\\FinalProjectWPF\\FinalProject\\jobapplicantwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{BC4969F9-C76B-4990-B9C8-352C76BDAA80}|FinalProject.csproj|solutionrelative:jobapplicantwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BC4969F9-C76B-4990-B9C8-352C76BDAA80}|FinalProject.csproj|C:\\VUONG_LAP_QUE\\Nam 2\\HK II\\Window\\FinalProjectWPF\\FinalProject\\jobapplicantwindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
       "RelativeMoniker": "D:0:0:{BC4969F9-C76B-4990-B9C8-352C76BDAA80}|FinalProject.csproj|solutionrelative:jobapplicantwindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BC4969F9-C76B-4990-B9C8-352C76BDAA80}|FinalProject.csproj|c:\\vuong_lap_que\\nam 2\\hk ii\\window\\finalprojectwpf\\finalproject\\pages\\pagejob.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{BC4969F9-C76B-4990-B9C8-352C76BDAA80}|FinalProject.csproj|C:\\VUONG_LAP_QUE\\Nam 2\\HK II\\Window\\FinalProjectWPF\\FinalProject\\jobapplicantwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{BC4969F9-C76B-4990-B9C8-352C76BDAA80}|FinalProject.csproj|solutionrelative:jobapplicantwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC4969F9-C76B-4990-B9C8-352C76BDAA80}|FinalProject.csproj|C:\\VUONG_LAP_QUE\\Nam 2\\HK II\\Window\\FinalProjectWPF\\FinalProject\\pages\\pagejob.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{BC4969F9-C76B-4990-B9C8-352C76BDAA80}|FinalProject.csproj|solutionrelative:pages\\pagejob.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
@@ -94,8 +97,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 440,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Microsoft.Common.CurrentVersion.targets",
+              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "ViewState": "AQIAAIsVAAAAAAAAAAAhwJsVAABGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2024-04-24T11:24:17.783Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
@@ -104,62 +120,57 @@
               "RelativeDocumentMoniker": "JobApplicantWindow.xaml.cs",
               "ToolTip": "C:\\VUONG_LAP_QUE\\Nam 2\\HK II\\Window\\FinalProjectWPF\\FinalProject\\JobApplicantWindow.xaml.cs",
               "RelativeToolTip": "JobApplicantWindow.xaml.cs",
-              "ViewState": "AQIAAFoAAAAAAAAAAAAiwAAAAAAAAAAA",
+              "ViewState": "AQIAAHYAAAAAAAAAAIA2wIMAAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-23T17:20:08.493Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-23T17:20:08.493Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "MainStyle.xaml",
               "DocumentMoniker": "C:\\VUONG_LAP_QUE\\Nam 2\\HK II\\Window\\FinalProjectWPF\\FinalProject\\Style\\MainStyle.xaml",
               "RelativeDocumentMoniker": "Style\\MainStyle.xaml",
               "ToolTip": "C:\\VUONG_LAP_QUE\\Nam 2\\HK II\\Window\\FinalProjectWPF\\FinalProject\\Style\\MainStyle.xaml",
               "RelativeToolTip": "Style\\MainStyle.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-04-23T16:54:20.463Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-23T16:54:20.463Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "PageJob.xaml",
               "DocumentMoniker": "C:\\VUONG_LAP_QUE\\Nam 2\\HK II\\Window\\FinalProjectWPF\\FinalProject\\Pages\\PageJob.xaml",
               "RelativeDocumentMoniker": "Pages\\PageJob.xaml",
               "ToolTip": "C:\\VUONG_LAP_QUE\\Nam 2\\HK II\\Window\\FinalProjectWPF\\FinalProject\\Pages\\PageJob.xaml",
               "RelativeToolTip": "Pages\\PageJob.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-04-23T16:53:54.016Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-23T16:53:54.016Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Theme.xaml",
               "DocumentMoniker": "C:\\VUONG_LAP_QUE\\Nam 2\\HK II\\Window\\FinalProjectWPF\\FinalProject\\Theme\\Theme.xaml",
               "RelativeDocumentMoniker": "Theme\\Theme.xaml",
               "ToolTip": "C:\\VUONG_LAP_QUE\\Nam 2\\HK II\\Window\\FinalProjectWPF\\FinalProject\\Theme\\Theme.xaml",
               "RelativeToolTip": "Theme\\Theme.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-04-23T15:42:52.716Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-23T15:42:52.716Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "JobApplicantWindow.xaml",
               "DocumentMoniker": "C:\\VUONG_LAP_QUE\\Nam 2\\HK II\\Window\\FinalProjectWPF\\FinalProject\\JobApplicantWindow.xaml",
               "RelativeDocumentMoniker": "JobApplicantWindow.xaml",
               "ToolTip": "C:\\VUONG_LAP_QUE\\Nam 2\\HK II\\Window\\FinalProjectWPF\\FinalProject\\JobApplicantWindow.xaml",
               "RelativeToolTip": "JobApplicantWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-04-23T03:20:55.554Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-23T03:20:55.554Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "WSelectCV.xaml",
               "DocumentMoniker": "C:\\VUONG_LAP_QUE\\Nam 2\\HK II\\Window\\FinalProjectWPF\\FinalProject\\WSelectCV.xaml",
               "RelativeDocumentMoniker": "WSelectCV.xaml",
@@ -170,7 +181,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "WSignUpJobApplicant.xaml",
               "DocumentMoniker": "C:\\VUONG_LAP_QUE\\Nam 2\\HK II\\Window\\FinalProjectWPF\\FinalProject\\WSignUpJobApplicant.xaml",
               "RelativeDocumentMoniker": "WSignUpJobApplicant.xaml",
@@ -181,7 +192,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "UCJobInfo.xaml",
               "DocumentMoniker": "C:\\VUONG_LAP_QUE\\Nam 2\\HK II\\Window\\FinalProjectWPF\\FinalProject\\User Control\\UCJobInfo.xaml",
               "RelativeDocumentMoniker": "User Control\\UCJobInfo.xaml",
@@ -192,7 +203,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "UCCV.xaml.cs",
               "DocumentMoniker": "C:\\VUONG_LAP_QUE\\Nam 2\\HK II\\Window\\FinalProjectWPF\\FinalProject\\User Control\\UCCV.xaml.cs",
               "RelativeDocumentMoniker": "User Control\\UCCV.xaml.cs",
@@ -204,19 +215,18 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "App.xaml",
               "DocumentMoniker": "C:\\VUONG_LAP_QUE\\Nam 2\\HK II\\Window\\FinalProjectWPF\\FinalProject\\App.xaml",
               "RelativeDocumentMoniker": "App.xaml",
               "ToolTip": "C:\\VUONG_LAP_QUE\\Nam 2\\HK II\\Window\\FinalProjectWPF\\FinalProject\\App.xaml",
               "RelativeToolTip": "App.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-04-17T19:45:46.632Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-17T19:45:46.632Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "CVWindow.xaml",
               "DocumentMoniker": "C:\\VUONG_LAP_QUE\\Nam 2\\HK II\\Window\\FinalProjectWPF\\FinalProject\\CVWindow.xaml",
               "RelativeDocumentMoniker": "CVWindow.xaml",
@@ -227,7 +237,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "CVDao.cs",
               "DocumentMoniker": "C:\\VUONG_LAP_QUE\\Nam 2\\HK II\\Window\\FinalProjectWPF\\FinalProject\\Database\\CVDao.cs",
               "RelativeDocumentMoniker": "Database\\CVDao.cs",
@@ -239,7 +249,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "CreateJob.xaml.cs",
               "DocumentMoniker": "C:\\VUONG_LAP_QUE\\Nam 2\\HK II\\Window\\FinalProjectWPF\\FinalProject\\CreateJob.xaml.cs",
               "RelativeDocumentMoniker": "CreateJob.xaml.cs",
@@ -251,7 +261,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "LoginWindow.xaml",
               "DocumentMoniker": "C:\\VUONG_LAP_QUE\\Nam 2\\HK II\\Window\\FinalProjectWPF\\FinalProject\\LoginWindow.xaml",
               "RelativeDocumentMoniker": "LoginWindow.xaml",
@@ -262,7 +272,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "DocumentPage.xaml",
               "DocumentMoniker": "C:\\VUONG_LAP_QUE\\Nam 2\\HK II\\Window\\FinalProjectWPF\\FinalProject\\Pages\\DocumentPage.xaml",
               "RelativeDocumentMoniker": "Pages\\DocumentPage.xaml",
@@ -273,7 +283,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "CVWindow.xaml.cs",
               "DocumentMoniker": "C:\\VUONG_LAP_QUE\\Nam 2\\HK II\\Window\\FinalProjectWPF\\FinalProject\\CVWindow.xaml.cs",
               "RelativeDocumentMoniker": "CVWindow.xaml.cs",
@@ -285,7 +295,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "WJobInfoDetail.xaml",
               "DocumentMoniker": "C:\\VUONG_LAP_QUE\\Nam 2\\HK II\\Window\\FinalProjectWPF\\FinalProject\\WJobInfoDetail.xaml",
               "RelativeDocumentMoniker": "WJobInfoDetail.xaml",
@@ -296,7 +306,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "WSignUpJobApplicant.xaml.cs",
               "DocumentMoniker": "C:\\VUONG_LAP_QUE\\Nam 2\\HK II\\Window\\FinalProjectWPF\\FinalProject\\WSignUpJobApplicant.xaml.cs",
               "RelativeDocumentMoniker": "WSignUpJobApplicant.xaml.cs",
@@ -308,7 +318,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "WSignUp.xaml",
               "DocumentMoniker": "C:\\VUONG_LAP_QUE\\Nam 2\\HK II\\Window\\FinalProjectWPF\\FinalProject\\WSignUp.xaml",
               "RelativeDocumentMoniker": "WSignUp.xaml",
@@ -319,7 +329,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "Employee.cs",
               "DocumentMoniker": "C:\\VUONG_LAP_QUE\\Nam 2\\HK II\\Window\\FinalProjectWPF\\FinalProject\\Objects\\Employee.cs",
               "RelativeDocumentMoniker": "Objects\\Employee.cs",
@@ -331,7 +341,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "CVPage.xaml.cs",
               "DocumentMoniker": "C:\\VUONG_LAP_QUE\\Nam 2\\HK II\\Window\\FinalProjectWPF\\FinalProject\\Pages\\CVPage.xaml.cs",
               "RelativeDocumentMoniker": "Pages\\CVPage.xaml.cs",

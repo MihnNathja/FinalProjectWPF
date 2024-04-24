@@ -1,5 +1,6 @@
 ﻿using FinalProject.Database;
 using FinalProject.Objects;
+using FinalProject.User_Control;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -38,13 +39,10 @@ namespace FinalProject.Pages
         {
             pnlJobState.Children.Clear();
             JobDAO jobDAO = new JobDAO();
-            List<UCJobInfo> jobList = jobDAO.LoadPage();
-            foreach (UCJobInfo job in jobList)
+            List<UCCompanyJob> jobList = jobDAO.GetCompanyJob(Company);
+            foreach (UCCompanyJob job in jobList)
             {
-/*                job.User = user;
-                job.Type = User.Type;*/
-                if (job.Type == "Employee")
-                    job.btnDeleteJob.Visibility = Visibility.Hidden;
+                
                 pnlJobState.Children.Add(job);
             }
         }

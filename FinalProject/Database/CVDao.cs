@@ -61,7 +61,7 @@ namespace FinalProject.Database
         {
             string SQL = string.Format("SELECT * FROM CV WHERE IdCV = '{0}'", id);
             DataTable data = db.Load(SQL);
-            CV cV = new CV(id);
+            CV cV = new CV();
             DataRow row = data.Rows[0];
             PropertyInfo[] properties = typeof(CV).GetProperties();
             foreach (PropertyInfo property in properties)
@@ -101,9 +101,25 @@ namespace FinalProject.Database
             }
             return cvList;
         }
+        public List<UCCV> GetEmployeeCV(Job job)
+        {
+            List<UCCV> cvList = new List<UCCV>();
+            DataTable cvTable = JobCVData(job);
+            foreach (DataRow row in cvTable.Rows)
+            {
+                UCCV cv = new UCCV(row["IdCV"].ToString());
+                cvList.Add(cv);
+            }
+            return cvList;
+        }
         public DataTable EmployeeCVData(Employee employee)
         {
             string SQL = string.Format($"SELECT *FROM CV WHERE ID = {employee.ID}");
+            return db.Load(SQL);
+        }
+        public DataTable JobCVData(Job job)
+        {
+            string SQL = string.Format($"SELECT *FROM CV WHERE ID = {job.Id}");
             return db.Load(SQL);
         }
         public void Apply(Job job, CV cv, Employee employee)
@@ -111,7 +127,7 @@ namespace FinalProject.Database
             string SQL = string.Format($"SELECT Count(*) FROM ApplyCV WHERE ID = {job.Id} and IdEmployee = {employee.ID}");
             if (int.Parse(db.GetValue(SQL)) > 0)
             {
-                SQL = string.Format($"UPDATE ApplyCV SET IdCV = {cv.ID} WHERE ID = {job.Id} and IdEmployee = {employee.ID}");
+                SQL = string.Format($"UPDATE ApplyCV SET IdCV = {cv.IdCV} WHERE ID = {job.Id} and IdEmployee = {employee.ID}");
                 db.ThucThi(SQL);
             }
             else
@@ -120,11 +136,16 @@ namespace FinalProject.Database
                 db.ThucThi(SQL);
             }
         }
-        public void Accept(Job job, CV cv,Employee employee, bool isAccepted)
+        public void Accept(Job job, CV cv,Employee employee, int isAccepted)
         {
-            string SQL = string.Format($"UPDATE ApplyCV SET ACCEPT = {isAccepted} WHERE ID = {job.Id} and IdCV = {cv.IdCV} and IdEmployee = {employee.ID}");
+            string SQL = string.Format($"UPDATE ApplyCV SET ACCEPT = {isAccepted} WHERE ID = '{job.Id}' and IdCV = '{cv.IdCV}' and IdEmployee = '{employee.ID}'");
+            MessageBox.Show(SQL);
             db.ThucThi(SQL);
         }
-        
+        public string GetNumberCVOfJob(string id)
+        {
+            string SQL = string.Format($"SELECT COUNT(*) FROM ApplyCV WHERE ID = '{id}'");
+            return db.GetValue(SQL);
+        }
     }
 }

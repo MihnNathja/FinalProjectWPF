@@ -1,4 +1,6 @@
-﻿using System;
+﻿using FinalProject.User_Control;
+using FinalProject.User_Control;
+using System;
 using System.Collections.Generic;
 using System.Data.Common;
 using System.Data;
@@ -109,11 +111,10 @@ namespace FinalProject.Database
             string SQL = string.Format("SELECT *FROM Jobs WHERE JobLocation = '{0}'", filter.Location);
             return db.Load(SQL);
         }
-        public List<UCJobInfo> GetCompanyJob(Company company)
+        public List<UCCompanyJob> GetCompanyJob(Company company)
         {
-            List<UCJobInfo> uCCVs = new List<UCJobInfo>();
-            string SQL = string.Format($"SELECT* FROM Jobs WHERE CompanyName = {company.CompanyName}");
-            db.Load(SQL);
+            List<UCCompanyJob> uCCVs = new List<UCCompanyJob>();
+            string SQL = string.Format($"SELECT* FROM Jobs WHERE CompanyName = '{company.CompanyName}'");
             DataTable companyJobTable = db.Load(SQL);
             foreach (DataRow row in companyJobTable.Rows)
             {
@@ -123,11 +124,12 @@ namespace FinalProject.Database
                 {
                     property.SetValue(job, row[property.Name].ToString(), null);
                 }
-                UCJobInfo jobInfo = new UCJobInfo(job);
-                
+                UCCompanyJob jobInfo = new UCCompanyJob(job);
+                jobInfo.Company = company;
                 uCCVs.Add(jobInfo);
             }
             return uCCVs;
         }
+
     }
 }
