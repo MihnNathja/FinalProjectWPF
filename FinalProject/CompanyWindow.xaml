@@ -106,7 +106,7 @@
                         <TextBlock 
                    x:Name="txtbName"
                    Text="{Binding CompanyName}"
-                   Foreground="White" FontSize="22"
+                   Foreground="{DynamicResource FourthColor}" FontSize="22"
                    FontWeight="SemiBold" 
                    DockPanel.Dock="Top" 
                    TextAlignment="Center" 
@@ -200,7 +200,7 @@
                         <TextBlock 
                    Margin="20 0" 
                    VerticalAlignment="Center" 
-                   Foreground="#b0b9c6" 
+                   Foreground="{DynamicResource FourthColor}"
                    IsHitTestVisible="False"
                    Panel.ZIndex="0" 
                    Text="Search here ..." 

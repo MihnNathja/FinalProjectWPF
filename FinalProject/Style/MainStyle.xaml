@@ -4,12 +4,11 @@
                     >
 
     <Style x:Key="page" TargetType="Border">
-        <Setter Property="Background" Value="White"/>
         <Setter Property="CornerRadius" Value="10"/>
         <Setter Property="Background" Value="{DynamicResource SecondColor}"/>
         <Setter Property="Opacity" Value="0.8"/>
     </Style>
-    
+
 
     <Style x:Key="floatingTextbox" TargetType="TextBox" BasedOn="{StaticResource MaterialDesignFloatingHintTextBox}">
         <Setter Property="VerticalAlignment" Value="Center"/>
@@ -23,12 +22,12 @@
     <Style TargetType="Window">
         <Setter Property="WindowStyle" Value="None"/>
         <Setter Property="ResizeMode" Value="NoResize"/>
-        <Setter Property="Background" Value="White"/>
+        <Setter Property="Background" Value="{DynamicResource FirstColor}"/>
         <Setter Property="WindowState" Value="Maximized"/>
     </Style>
     <Style x:Key="topButton" TargetType="Button">
         <Setter Property="Background" Value="{x:Null}"/>
-        <Setter Property="Foreground" Value="#00b14f"/>
+        <Setter Property="Foreground" Value="{DynamicResource FourthColor}"/>
         <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
        
         <Setter Property="Template">
@@ -42,7 +41,7 @@
         </Setter>
         <Style.Triggers>
             <Trigger Property="IsMouseOver" Value="True">
-                <Setter Property="Background" Value="#dcdcdc"/>
+                <Setter Property="Background" Value="{DynamicResource FirstColor}"/>
 
             </Trigger>
         </Style.Triggers>
@@ -52,7 +51,7 @@
     
     <Style x:Key="menuButton" TargetType="Button">
         <Setter Property="Background" Value="Transparent"/>
-        <Setter Property="Foreground" Value="#ffffff"/>
+        <Setter Property="Foreground" Value="{DynamicResource FourthColor}"/>
         <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
         <Setter Property="Height" Value="35"/>
         <Setter Property="Width" Value="200"/>
@@ -71,8 +70,8 @@
         </Setter>
         <Style.Triggers>
             <Trigger Property="IsMouseOver" Value="True">
-                <Setter Property="Background" Value="#7b5cd6"/>
-                <Setter Property="Foreground" Value="White"/>
+                <Setter Property="Background" Value="{DynamicResource FirstColor}"/>
+                <Setter Property="Foreground" Value="{DynamicResource FourthColor}"/>
 
             </Trigger>
         </Style.Triggers>
@@ -94,8 +93,8 @@
     </Style>
 
     <Style x:Key="textboxSearch" TargetType="TextBox">
-        <Setter Property="Background" Value="#ffffff"/>
-        <Setter Property="Foreground" Value="#b0b9c6"/>
+        <Setter Property="Background" Value="{DynamicResource SecondColor}"/>
+        <Setter Property="Foreground" Value="{DynamicResource FourthColor}"/>
         <Setter Property="BorderThickness" Value="0"/>
         <Setter Property="FontSize" Value="12"/>
         <Setter Property="Padding" Value="15 10"/>
@@ -105,18 +104,18 @@
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="TextBoxBase">
-                    <Border x:Name="border" CornerRadius="20" Background="{TemplateBinding Background}" SnapsToDevicePixels="True" BorderThickness="1" BorderBrush="#e0e6ed">
+                    <Border x:Name="border" CornerRadius="20" Background="{TemplateBinding Background}" SnapsToDevicePixels="True" BorderThickness="1" BorderBrush="{DynamicResource FirstColor}">
                         <ScrollViewer x:Name="PART_ContentHost" Focusable="False" HorizontalScrollBarVisibility="Hidden"
                                   VerticalScrollBarVisibility="Hidden"/>
 
                     </Border>
                     <ControlTemplate.Triggers>
                         <Trigger Property="IsMouseOver" Value="True">
-                            <Setter Property="BorderBrush" Value="#d9d9d9" TargetName="border"/>
+                            <Setter Property="BorderBrush" Value="{DynamicResource FourthColor}" TargetName="border"/>
                         </Trigger>
 
                         <Trigger Property="IsKeyboardFocused" Value="True">
-                            <Setter Property="BorderBrush" Value="#d9d9d9" TargetName="border"/>
+                            <Setter Property="BorderBrush" Value="{DynamicResource FourthColor}" TargetName="border"/>
                         </Trigger>
                     </ControlTemplate.Triggers>
                 </ControlTemplate>
@@ -148,7 +147,7 @@
                   Grid.ColumnSpan="2"
                   CornerRadius="20"
                   Background="{TemplateBinding Background}"
-                  BorderBrush="#F6F6F6"
+                  BorderBrush="{DynamicResource FirstColor}"
                   BorderThickness="1" 
                 />
 
@@ -170,9 +169,9 @@
     </ControlTemplate>
 
     <Style x:Key="theComboBox" TargetType="{x:Type ComboBox}">
-        <Setter Property="Foreground" Value="#333" />
-        <Setter Property="BorderBrush" Value="Gray" />
-        <Setter Property="Background" Value="White" />
+        <Setter Property="Foreground" Value="{DynamicResource FourthColor}" />
+        <Setter Property="BorderBrush" Value="{DynamicResource ThirdColor}" />
+        <Setter Property="Background" Value="{DynamicResource FirstColor}" />
         <Setter Property="BorderThickness" Value="1" />
         <Setter Property="SnapsToDevicePixels" Value="true"/>
         <Setter Property="OverridesDefaultStyle" Value="true"/>
@@ -232,9 +231,9 @@
                                 <Border
                             CornerRadius="20"
                             x:Name="DropDownBorder"
-                            Background="#ffffff"
+                            Background="{DynamicResource FirstColor}"
                             BorderThickness="1"
-                            BorderBrush="#4880ff"
+                            BorderBrush="{DynamicResource FourthColor}"
                             />
                                 <ScrollViewer Margin="4,6,4,6" SnapsToDevicePixels="True">
                                     <StackPanel IsItemsHost="True" KeyboardNavigation.DirectionalNavigation="Contained" />
@@ -285,8 +284,8 @@
                     </Border>
                     <ControlTemplate.Triggers>
                         <Trigger Property="IsHighlighted" Value="true">
-                            <Setter TargetName="Border" Property="BorderBrush" Value="#B3CB37"/>
-                            <Setter TargetName="Border" Property="Background" Value="#F8FAEB"/>
+                            <Setter TargetName="Border" Property="BorderBrush" Value="{DynamicResource SecondColor}"/>
+                            <Setter TargetName="Border" Property="Background" Value="{DynamicResource FirstColor}"/>
                         </Trigger>
                     </ControlTemplate.Triggers>
                 </ControlTemplate>
@@ -295,7 +294,7 @@
     </Style>
 
     <Style TargetType="Button" x:Key="buttonSearch">
-        <Setter Property="Background" Value="White" />
+        <Setter Property="Background" Value="{DynamicResource FirstColor}" />
         <Setter Property="TextBlock.TextAlignment" Value="Center" />
         <Style.Resources>
             <Style TargetType="Border">
@@ -304,7 +303,7 @@
         </Style.Resources>
     </Style>
     <Style TargetType="Button">
-        <Setter Property="Background" Value="White" />
+        <Setter Property="Background" Value="{DynamicResource FirstColor}" />
         <Setter Property="TextBlock.TextAlignment" Value="Center" />
         <Style.Resources>
             <Style TargetType="Border">
@@ -315,12 +314,12 @@
 
     <Style x:Key="buttonCompany" TargetType="{x:Type Button}">
         <Setter Property="Margin" Value="5 10"/>
-        <Setter Property="Background" Value="White"/>
+        <Setter Property="Background" Value="{DynamicResource FirstColor}"/>
 
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="Button">
-                    <Border BorderBrush="Gray" BorderThickness="1" CornerRadius="10" Background="#DDDDDD">
+                    <Border BorderBrush="{DynamicResource SecondColor}" BorderThickness="1" CornerRadius="10" Background="{DynamicResource FirstColor}">
                         <Grid>
                             <!-- Logo công ty -->
                             <Image Source="Image/user.png" Width="100" Height="130" HorizontalAlignment="Left" VerticalAlignment="Center"/>
@@ -336,7 +335,7 @@
         </Setter>
         <Style.Triggers>
             <Trigger Property="IsMouseOver" Value="True">
-                <Setter Property="Background" Value="#dcdcdc"/>
+                <Setter Property="Background" Value="{DynamicResource FirstColor}"/>
 
             </Trigger>
         </Style.Triggers>

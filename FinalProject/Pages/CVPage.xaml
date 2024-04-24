@@ -6,26 +6,27 @@
       xmlns:local="clr-namespace:FinalProject.Page"
       mc:Ignorable="d" 
       d:DesignHeight="800" d:DesignWidth="800"
-      Title="CVPage" Loaded="Page_Loaded">
-
-    <Grid x:Name="CreateCVPage" Background="#5D8DFF">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="auto"/>
-            <RowDefinition Height="*"/>
-        </Grid.RowDefinitions>
-        <Grid HorizontalAlignment="Center"
+      Title="CVPage" Loaded="Page_Loaded"
+      >
+    <Border Style="{StaticResource page}">
+        <Grid x:Name="CreateCVPage">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid HorizontalAlignment="Center"
           VerticalAlignment="Center">
-            <ScrollViewer>
-                <WrapPanel x:Name="CVList">
+                <ScrollViewer>
+                    <WrapPanel x:Name="CVList">
 
-                </WrapPanel>
-            </ScrollViewer>
-        </Grid>
+                    </WrapPanel>
+                </ScrollViewer>
+            </Grid>
 
 
 
-        <Grid Grid.Row="1">
-            <Button x:Name="btnCreateCV" Content="Thêm CV" Width="200" Height="50" FontSize="20"
+            <Grid Grid.Row="1">
+                <Button x:Name="btnCreateCV" Content="Thêm CV" Width="200" Height="50" FontSize="20"
                 VerticalAlignment="Bottom" HorizontalAlignment="Right"
                 Margin="20"
                 Click="btnCreateCV_Click"
@@ -34,7 +35,8 @@
                   IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
                   Style="{StaticResource MaterialDesignPaperDarkButton}"
                   ToolTip="Resource name: MaterialDesignPaperDarkButton" />
-        </Grid>
+            </Grid>
 
-    </Grid>
+        </Grid>
+    </Border>
 </Page>

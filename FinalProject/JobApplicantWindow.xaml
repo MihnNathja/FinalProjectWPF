@@ -173,7 +173,7 @@
                         <TextBlock 
         Margin="20 0" 
         VerticalAlignment="Center" 
-        Foreground="#b0b9c6" 
+        Foreground="{DynamicResource FourthColor}" 
         IsHitTestVisible="False"
         Panel.ZIndex="0" 
         Text="Search here ..." 
