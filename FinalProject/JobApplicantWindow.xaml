@@ -65,10 +65,16 @@
 
 
 
-                <Button x:Name="ButtonOpenMenu" Height="60" Width="60" Margin="5 5 10 5" HorizontalAlignment="Right" VerticalAlignment="Top" Style="{StaticResource topButton}" Click="ButtonOpenMenu_Click" >
+                <Button x:Name="ButtonOpenMenu" Height="60" Width="60" Margin="5 5 10 5" 
+                        HorizontalAlignment="Right" VerticalAlignment="Top" 
+                        materialDesign:ButtonAssist.CornerRadius="90"
+                        Click="ButtonOpenMenu_Click" >
                     <Icon:PackIconMaterial Kind="Menu" Width="25" Height="25"/>
                 </Button>
-                <Button x:Name="ButtonCloseMenu" Visibility="Collapsed" Height="60" Width="60" Margin="5" HorizontalAlignment="Right" VerticalAlignment="Top" Style="{StaticResource topButton}" Click="ButtonCloseMenu_Click" >
+                <Button x:Name="ButtonCloseMenu" Visibility="Collapsed" Height="60" Width="60" Margin="5" 
+                        HorizontalAlignment="Right" VerticalAlignment="Top" 
+                        materialDesign:ButtonAssist.CornerRadius="90"
+                        Click="ButtonCloseMenu_Click" >
                     <Icon:PackIconMaterial Kind="ArrowLeft" Width="25" Height="25"/>
                 </Button>
 
@@ -139,6 +145,43 @@
                                     <TextBlock Text="Việc làm quan tâm"/>
                                 </StackPanel>
                             </Button>
+
+                            <!--<Button Style="{StaticResource menuButton}"
+                                    MouseEnter="btnThongBao_MouseEnter"
+                                    MouseLeave="btnThongBao_MouseLeave"
+                                    Click="btnThongBao_Click"
+                                     materialDesign:DialogHost.DialogClosedAttached="Sample2_DialogHost_OnDialogClosed"
+                                     materialDesign:DialogHost.DialogClosingAttached="Sample2_DialogHost_OnDialogClosing"
+                                     Command="{x:Static materialDesign:DialogHost.OpenDialogCommand}"
+                                >
+                                <StackPanel Orientation="Horizontal">
+                                    <materialDesign:PackIcon Kind="BellBadge" Height="25" Width="25" Margin="17 0 10 0"/>
+                                    <TextBlock Text="Thông báo" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                </StackPanel>
+                                
+    
+                                   
+                                <Button.CommandParameter>
+                                    <StackPanel
+                                            Margin="16">
+                                            <ProgressBar
+                                              Margin="16"
+                                              HorizontalAlignment="Center"
+                                              IsIndeterminate="True"
+                                              Style="{StaticResource MaterialDesignCircularProgressBar}"
+                                              Value="0" />
+                                            <Button
+                                              HorizontalAlignment="Center"
+                                              Command="{x:Static materialDesign:DialogHost.CloseDialogCommand}"
+                                              CommandParameter="Sample2Cancel"
+                                              Content="CANCEL"
+                                              IsCancel="True"
+                                              Style="{StaticResource MaterialDesignFlatButton}" />
+                                    </StackPanel>
+                                </Button.CommandParameter>
+                            </Button>-->
+
+                            
                         </StackPanel>
                         <Button x:Name="btnLogout"
                 Style="{StaticResource menuButton}" 
