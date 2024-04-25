@@ -116,7 +116,7 @@ namespace FinalProject.Database
         }
         public DataTable JobCVData(Job job)
         {
-            string SQL = string.Format($"SELECT *FROM CV WHERE ID = {job.Id}");
+            string SQL = string.Format($"SELECT *FROM ApplyCV WHERE ID = {job.Id}");
             return db.Load(SQL);
         }
         public void Apply(Job job, CV cv, Employee employee)

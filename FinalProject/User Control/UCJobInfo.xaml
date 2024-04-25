@@ -9,6 +9,7 @@
              d:DesignHeight="155" d:DesignWidth="435"
              MinHeight="155"
              MinWidth="435"
+             MaxWidth="600"
              MouseDown="UCJobInfo_MouseDown"
             >
     <Border  BorderBrush="Black" BorderThickness="0.8"

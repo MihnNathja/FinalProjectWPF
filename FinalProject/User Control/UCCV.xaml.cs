@@ -44,9 +44,6 @@ namespace FinalProject
             EmployeeDAO EmployeeDAO = new EmployeeDAO();
             Employee = EmployeeDAO.GetEmployee(CV.ID);
             DataContext = Employee;
-            MessageBox.Show("IdCV: " + CV.IdCV);
-            MessageBox.Show("IdEmployee: " + Employee.ID);
-            
         }
 
         private void btnCVDetail_Click(object sender, RoutedEventArgs e)
