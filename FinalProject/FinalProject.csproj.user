@@ -41,6 +41,9 @@
     <Compile Update="SignUpCompany.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="UCCVEmployee.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="User Control\UCCompanyJob.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -63,6 +66,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="WJobInfoDetail.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="WNotification.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="WSelectCV.xaml.cs">
@@ -118,6 +124,9 @@
     <Page Update="Theme\Theme.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="UCCVEmployee.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="User Control\UCCompanyJob.xaml">
       <SubType>Designer</SubType>
     </Page>
@@ -140,6 +149,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="WJobInfoDetail.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WNotification.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="WSelectCV.xaml">

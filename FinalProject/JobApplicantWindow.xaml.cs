@@ -91,6 +91,20 @@ namespace FinalProject
         {
             popupControl.IsPopupOpen = false;
         }
+        private void btnThongBao_MouseEnter(object sender, MouseEventArgs e)
+        {
+            popupControl.IsPopupOpen = true;
+            popupControl.PopupContent = "Hồ sơ và CV";
+        }
+
+        private void btnThongBao_MouseLeave(object sender, MouseEventArgs e)
+        {
+            popupControl.IsPopupOpen = false;
+        }
+        private void btnThongBao_Click(object sender, RoutedEventArgs e)
+        {
+            
+        }
 
         private void btnCongTy_Click(object sender, RoutedEventArgs e)
         {

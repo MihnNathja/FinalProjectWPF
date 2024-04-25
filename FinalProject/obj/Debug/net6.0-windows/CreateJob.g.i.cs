@@ -104,7 +104,7 @@ namespace FinalProject {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/FinalProject;V1.0.0.0;component/createjob.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/FinalProject;component/createjob.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\CreateJob.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
