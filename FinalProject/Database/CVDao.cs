@@ -70,6 +70,13 @@ namespace FinalProject.Database
             }
             return cV;
         }
+        public void Write(DateTime date)
+        {
+            string SQL = @"
+        INSERT INTO ApplyCV (Interview)
+        VALUES (@date)";
+            db.ThucThi(SQL);
+        }
 
         public int GetAcceptValue(string id)
         {
