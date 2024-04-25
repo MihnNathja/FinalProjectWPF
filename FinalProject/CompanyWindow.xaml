@@ -197,16 +197,15 @@
                         <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
                     <Grid Width="400" HorizontalAlignment="Left">
-                        <TextBlock 
-                   Margin="20 0" 
-                   VerticalAlignment="Center" 
-                   Foreground="#b0b9c6" 
-                   IsHitTestVisible="False"
-                   Panel.ZIndex="0" 
-                   Text="Search here ..." 
-                   Visibility="Visible" 
-                   />
-                        <TextBox x:Name="txtSearch" Style="{StaticResource textboxSearch}" Height="40" TabIndex="0"/>
+                       
+                        <TextBox x:Name="txtSearch" 
+                             Style="{StaticResource MaterialDesignOutlinedTextBox}" 
+                             Height="50"
+                             materialDesign:HintAssist.Hint="Search here ..."
+                             materialDesign:TextFieldAssist.TextFieldCornerRadius="30"
+                             Background="White"
+                             materialDesign:HintAssist.IsFloating="False"
+         />
 
 
                     </Grid>

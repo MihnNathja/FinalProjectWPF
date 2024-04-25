@@ -213,28 +213,27 @@
                         <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
                     <Grid Width="400" HorizontalAlignment="Left">
-                        <TextBlock 
-        Margin="20 0" 
-        VerticalAlignment="Center" 
-        Foreground="#b0b9c6" 
-        IsHitTestVisible="False"
-        Panel.ZIndex="0" 
-        Text="Search here ..." 
-        Visibility="Visible" 
-        />
-                        <TextBox x:Name="txtSearch" Style="{StaticResource textboxSearch}" Height="40" TabIndex="0"/>
+               
+                        <TextBox x:Name="txtSearch" 
+                                 Style="{StaticResource MaterialDesignOutlinedTextBox}" 
+                                 Height="50"
+                                 materialDesign:HintAssist.Hint="Search here ..."
+                                 materialDesign:TextFieldAssist.TextFieldCornerRadius="30"
+                                 Background="White"
+                                 materialDesign:HintAssist.IsFloating="False"
+                                 />
 
 
                     </Grid>
                     <!--Data Region input-->
                     <StackPanel Grid.Column="1" Orientation="Horizontal">
-                        <ComboBox x:Name="cbbLocation" Width="200" Margin="5 0" Style="{DynamicResource theComboBox}" Height="40" SelectedIndex="0">
+                        <ComboBox x:Name="cbbLocation" Width="200" Margin="5 0" Style="{DynamicResource theComboBox}" Height="50" SelectedIndex="0">
                             <ComboBoxItem Content="Tất cả tỉnh/thành phố"/>
                             <ComboBoxItem Content="Tp. Hồ Chí Minh" />
                             <ComboBoxItem Content="Hà Nội" />
                             <ComboBoxItem Content="Bình Dương" />
                         </ComboBox>
-                        <ComboBox x:Name="cbbExperience"  Width="200" Style="{DynamicResource theComboBox}" Height="40" SelectedIndex="0">
+                        <ComboBox x:Name="cbbExperience"  Width="200" Style="{DynamicResource theComboBox}" Height="50" SelectedIndex="0">
                             <ComboBoxItem Content="Tất cả kinh nghiệm"/>
                             <ComboBoxItem Content="Dưới 1 năm" />
                             <ComboBoxItem Content="1 năm" />

@@ -47,6 +47,8 @@
 
                 <TextBlock Text="Mô tả công việc" FontWeight="Bold"/>
                 <TextBox  Margin="10 5" Height="200"
+                          x:Name="txtbDescription"
+                          Text="{Binding Description}"
                             TextBlock.FontSize="20"
                             VerticalAlignment="Top"
 
@@ -58,6 +60,8 @@
             <StackPanel Grid.Column="1" Margin="5 10 10 10">
                 <TextBlock Text="Yêu cầu" FontWeight="Bold"/>
                 <TextBox  Margin="10 5" Height="200"
+                          x:Name="txtbRequire"
+                          Text="{Binding Require}"
                           TextBlock.FontSize="20"
                             VerticalAlignment="Top"
 
@@ -68,6 +72,8 @@
 
                 <TextBlock Text="Quyền lợi" FontWeight="Bold"/>
                 <TextBox  Margin="10 5" Height="130"
+                          x:Name="txtbRight"
+                          Text="{Binding Right}"
                           TextBlock.FontSize="20"
                             VerticalAlignment="Top"
 
@@ -80,6 +86,8 @@
                            />
                 <TextBox  Margin="10 5" 
                           TextBlock.FontSize="20"
+                          x:Name="txtbWorkTime"
+                          Text="{Binding WorkTime}"
                             VerticalAlignment="Top"
 
                             AcceptsReturn="True"

@@ -1,16 +1,16 @@
 ﻿CREATE TABLE [dbo].[Companies] (
     [ID]                NVARCHAR (100) PRIMARY KEY NOT NULL,
-    [UserName]          VARCHAR(100) NOT NULL,
-	[Password]          VARCHAR(100) NOT NULL,
-	[Type]              VARCHAR(50) NOT NULL,
-	[CompanyName]	    VARCHAR (255) NULL,
-    [Mst]               VARCHAR (100) NOT NULL,
-    [CompanyLocation]   VARCHAR (255) NULL,
-    [Boss]              VARCHAR (100) NULL,
-    [PhoneNumber]       VARCHAR (100) NULL,
-    [Email]             VARCHAR (100) NULL,
-    [Field]             VARCHAR (100) NULL,
-    [Description]       VARCHAR (100) NULL,
+    [UserName]          NVARCHAR(100) NOT NULL,
+	[Password]          NVARCHAR(100) NOT NULL,
+	[Type]              NVARCHAR(50) NOT NULL,
+	[CompanyName]	    NVARCHAR (255) NULL,
+    [Mst]               NVARCHAR (100) NOT NULL,
+    [CompanyLocation]   NVARCHAR (255) NULL,
+    [Boss]              NVARCHAR (100) NULL,
+    [PhoneNumber]       NVARCHAR (100) NULL,
+    [Email]             NVARCHAR (100) NULL,
+    [Field]             NVARCHAR (100) NULL,
+    [Description]       NVARCHAR (100) NULL,
 );
 
  

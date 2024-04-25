@@ -32,7 +32,7 @@ namespace FinalProject.Database
         }
         public void Them(Job job)
         {
-            string[] prop = { "Id", "JobName", "Company", "Salary", "JobLocation" };
+            string[] prop = { "Id", "JobName", "Company", "Salary", "Experience", "JobLocation", "Description", "Require", "Right", "WorkTime" };
             Them(job, prop);
         }
         public void Xoa(Job job)
@@ -42,11 +42,9 @@ namespace FinalProject.Database
         }
         public void Sua(Job job)
         {
-
             string[] prop = { "" };
             string condition = $"Id = '{job.Id}'";
-            Sua(job,prop,)
-            db.ThucThi(SQL, parameters);
+            Sua(job, prop, condition);
         }
         public string GetID()
         {
