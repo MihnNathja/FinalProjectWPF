@@ -71,7 +71,23 @@ namespace FinalProject.Database
             return cV;
         }
 
-        
+        public int GetAcceptValue(string id)
+        {
+            string SQL = string.Format("SELECT ACCEPT FROM ApplyCV WHERE IdCV = '{0}'", id);
+            DataTable data = db.Load(SQL);
+
+            if (data.Rows.Count > 0)
+            {
+                bool accept = (bool)data.Rows[0]["ACCEPT"];
+                return accept ? 1 : 0; 
+            }
+
+            return -1;
+
+
+
+        }
+
 
         public List<UCCV> LoadPage()
         {

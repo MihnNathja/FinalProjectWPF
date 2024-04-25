@@ -13,7 +13,7 @@
             Background="{DynamicResource MaterialDesignPaper}"
             FontFamily="{DynamicResource MaterialDesignFont}"
              mc:Ignorable="d" 
-             MinHeight="256" MinWidth="200"
+             MinHeight="256" MinWidth="200" 
              >
     <Border BorderBrush="Black" BorderThickness="0.5" Margin="2">
         <materialDesign:Flipper
@@ -99,7 +99,8 @@
                         <Button
                             x:Name="btnCVDetail"
                               Margin="0,12,0,0"
-                              Content="Xem" 
+                              Content="Xem"
+                            
                             Click="btnCVDetail_Click"/>
                         <Button
                             x:Name="btnAccept"
