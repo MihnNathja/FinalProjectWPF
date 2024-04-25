@@ -23,7 +23,7 @@
                 <RowDefinition Height="7*"/>
                 <RowDefinition Height="0.5*"/>
             </Grid.RowDefinitions>
-            <TextBlock Text="Company Name" VerticalAlignment="Center" HorizontalAlignment="Center"
+            <TextBlock Text="{Binding CompanyName}" VerticalAlignment="Center" HorizontalAlignment="Center"
                        FontSize="30" FontWeight="Black"/>
             <Grid Grid.Row="1" Margin="20">
                 <Grid.ColumnDefinitions>
@@ -34,44 +34,50 @@
 
                     <TextBox
                        x:Name="txtMST" Margin="10 5"
+                        Text="{Binding Mst}"
                       materialDesign:HintAssist.Hint="Mã số thuế"
                       Style="{StaticResource floatingTextbox}"/>
 
                     
                     <TextBox x:Name="txtDiaChi" Margin="10 5"
+                             Text="{Binding CompanyLocation}"
                              materialDesign:HintAssist.Hint="Địa Chỉ"
                                 Style="{StaticResource floatingTextbox}"/>
 
                     
                     <TextBox x:Name="txtNguoiDaiDien" Margin="10 5"
+                             Text="{Binding Boss}"
                              materialDesign:HintAssist.Hint="Người đại diện"
                                 Style="{StaticResource floatingTextbox}"/>
 
 
                     <TextBox x:Name="txtSDT" Margin="10 5"
+                             Text="{Binding PhoneNumber}"
                              materialDesign:HintAssist.Hint="Số điện thoại"
                                Style="{StaticResource floatingTextbox}"/>
 
                     
                     <TextBox x:Name="txtEmail" Margin="10 5" 
+                             Text="{Binding Email}"
                              materialDesign:HintAssist.Hint="Email"
                                 Style="{StaticResource floatingTextbox}"/>
 
                     
                     <TextBox x:Name="txtLinhVuc" Margin="10 5" Height="200"
-                                materialDesign:HintAssist.Hint="Lĩnh vực hoạt động"
-                                TextBlock.FontSize="20"
-                                VerticalAlignment="Top"
-                                
-                                AcceptsReturn="True"
-                                Style="{StaticResource MaterialDesignOutlinedTextBox}"
-                                TextWrapping="Wrap"
-                                VerticalScrollBarVisibility="Auto"/>
+                             Text="{Binding Field}"
+                             materialDesign:HintAssist.Hint="Lĩnh vực hoạt động"
+                             TextBlock.FontSize="20"
+                             VerticalAlignment="Top"
+                             AcceptsReturn="True"
+                             Style="{StaticResource MaterialDesignOutlinedTextBox}"
+                             TextWrapping="Wrap"
+                             VerticalScrollBarVisibility="Auto"/>
 
                 </StackPanel>
 
                 <StackPanel Grid.Column="1">
                     <TextBox x:Name="txtMoTa" Margin="10 5" Height="500"
+                             Text="{Binding Description}"
                              materialDesign:HintAssist.Hint="Mô tả công ty"
                                 TextBlock.FontSize="20"
                                 VerticalAlignment="Top"
@@ -83,10 +89,8 @@
                 </StackPanel>
             </Grid>
             <StackPanel Grid.Row="2">
-                <Button Content="Save" Width="100" FontSize="20">
-                    
-                </Button>
-                
+                <Button x:Name="btnSave" Click="btnSave_Click" Content="Save" Width="100" FontSize="20"/>
+
             </StackPanel>
         </Grid>
     </Border>

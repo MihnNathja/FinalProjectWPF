@@ -138,7 +138,6 @@ namespace FinalProject.Database
         public void Accept(Job job, CV cv,Employee employee, int isAccepted)
         {
             string SQL = string.Format($"UPDATE ApplyCV SET ACCEPT = {isAccepted} WHERE ID = '{job.Id}' and IdCV = '{cv.IdCV}' and IdEmployee = '{employee.ID}'");
-            MessageBox.Show(SQL);
             db.ThucThi(SQL);
         }
         public string GetNumberCVOfJob(string id)

@@ -32,7 +32,7 @@ namespace FinalProject.Database
         }
         public void Them(Job job)
         {
-            string[] prop = { "Id", "JobName", "Company", "Salary", "JobLocation" };
+            string[] prop = { "Id", "JobName", "Company", "Salary", "Experience", "JobLocation", "Description", "Require", "Right", "WorkTime" };
             Them(job, prop);
         }
         public void Xoa(Job job)
@@ -42,13 +42,9 @@ namespace FinalProject.Database
         }
         public void Sua(Job job)
         {
-/*            string[] prop = { "" };
-            string condition = "ID = ";
-            List<SqlParameter> parameters = Utility.GetParameters(job, prop);
-            string SQL = Utility.GenerateUpdateSql(tableName, parameters, condition);
-            db.ThucThi(SQL, parameters);
-            string SQL = string.Format("UPDATE Jobs SET Name = '{1}', CompanyName = '{2}', Salary = '{3}', Location = '{4}' WHERE ID = {0}", job.Id, job.JobName, job.CompanyName, job.Salary, job.JobLocation);
-            db.ThucThi(SQL);*/
+            string[] prop = { "" };
+            string condition = $"Id = '{job.Id}'";
+            Sua(job, prop, condition);
         }
         public string GetID()
         {
@@ -130,6 +126,23 @@ namespace FinalProject.Database
             }
             return uCCVs;
         }
-
+        public List<UCJobInfo> GetCompanyJobForLoad(Company company)
+        {
+            List<UCJobInfo> jobInfos = new List<UCJobInfo>();
+            string SQL = string.Format($"SELECT* FROM Jobs WHERE CompanyName = '{company.CompanyName}'");
+            DataTable companyJobTable = db.Load(SQL);
+            foreach (DataRow row in companyJobTable.Rows)
+            {
+                Job job = new Job();
+                PropertyInfo[] properties = typeof(Job).GetProperties();
+                foreach (PropertyInfo property in properties)
+                {
+                    property.SetValue(job, row[property.Name].ToString(), null);
+                }
+                UCJobInfo jobInfo = new UCJobInfo(job);
+                jobInfos.Add(jobInfo);
+            }
+            return jobInfos;
+        }
     }
 }

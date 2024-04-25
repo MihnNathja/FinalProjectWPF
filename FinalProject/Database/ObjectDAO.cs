@@ -7,6 +7,7 @@ using System.Linq;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 
 namespace FinalProject.Database
 {
@@ -34,13 +35,11 @@ namespace FinalProject.Database
             string SQL = Utility.GenerateDeleteSql(TableName, parameter);
             db.ThucThi(SQL, parameter);
         }
-        public void Sua<T>(T obj, string[] prop)
+        public void Sua<T>(T obj, string[] prop, string condition)
         {
-            string condition = "ID = ";
             List<SqlParameter> parameters = Utility.GetParameters(obj, prop);
             string SQL = Utility.GenerateUpdateSql(tableName, parameters, condition);
             db.ThucThi(SQL, parameters);
-           /* string SQL = string.Format("UPDATE Jobs SET Name = '{1}', CompanyName = '{2}', Salary = '{3}', Location = '{4}' WHERE ID = {0}", job.Id, job.JobName, job.CompanyName, job.Salary, job.JobLocation);*/
         }
         public string GetID()
         {
