@@ -130,6 +130,23 @@ namespace FinalProject.Database
             }
             return uCCVs;
         }
-
+        public List<UCJobInfo> GetCompanyJobForLoad(Company company)
+        {
+            List<UCJobInfo> jobInfos = new List<UCJobInfo>();
+            string SQL = string.Format($"SELECT* FROM Jobs WHERE CompanyName = '{company.CompanyName}'");
+            DataTable companyJobTable = db.Load(SQL);
+            foreach (DataRow row in companyJobTable.Rows)
+            {
+                Job job = new Job();
+                PropertyInfo[] properties = typeof(Job).GetProperties();
+                foreach (PropertyInfo property in properties)
+                {
+                    property.SetValue(job, row[property.Name].ToString(), null);
+                }
+                UCJobInfo jobInfo = new UCJobInfo(job);
+                jobInfos.Add(jobInfo);
+            }
+            return jobInfos;
+        }
     }
 }
