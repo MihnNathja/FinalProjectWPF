@@ -15,7 +15,6 @@
     <None Remove="Image\logo.png" />
     <None Remove="Image\logosac-01.png" />
     <None Remove="Image\user.png" />
-    <None Remove="LoginWindowBackground.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -35,7 +34,6 @@
     <Resource Include="Image\user.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="LoginWindowBackground.png" />
   </ItemGroup>
 
   <ItemGroup>

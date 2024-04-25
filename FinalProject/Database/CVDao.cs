@@ -73,8 +73,6 @@ namespace FinalProject.Database
 
         public List<UCCV> LoadPage()
         {
-            int index = 0;
-
             List<UCCV> list = new List<UCCV>();
 
             DataTable cvTable = DataCV;
@@ -89,7 +87,6 @@ namespace FinalProject.Database
         }
         public List<UCCVApply> GetEmployeeCV(Employee employee)
         {
-            int index = 0;
             List<UCCVApply> cvList = new List<UCCVApply>();
             DataTable cvTable = EmployeeCVData(employee);
             foreach (DataRow row in cvTable.Rows)
@@ -119,7 +116,7 @@ namespace FinalProject.Database
         }
         public DataTable JobCVData(Job job)
         {
-            string SQL = string.Format($"SELECT *FROM CV WHERE ID = {job.Id}");
+            string SQL = string.Format($"SELECT *FROM ApplyCV WHERE ID = {job.Id}");
             return db.Load(SQL);
         }
         public void Apply(Job job, CV cv, Employee employee)

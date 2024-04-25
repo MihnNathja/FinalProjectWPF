@@ -43,6 +43,7 @@ namespace FinalProject
             pnlCV.Children.Clear();
             CVDAO cvDAO = new CVDAO();
             List<UCCV> cvList = cvDAO.GetEmployeeCV(Job);
+            
             foreach (UCCV cv in cvList)
             {
                 cv.Job = job;

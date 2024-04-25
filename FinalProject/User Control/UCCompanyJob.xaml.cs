@@ -51,8 +51,16 @@ namespace FinalProject.User_Control
         private void UserControl_MouseDown(object sender, MouseButtonEventArgs e)
         {
             // hiển thị ra danh sách các CV apply vào công việc này
-            WCompanyAcceptCV wCompanyAcceptCV = new WCompanyAcceptCV(Company, Job);
-            wCompanyAcceptCV.ShowDialog();
+            if (NumberOfEmployee.Content != "0")
+            {
+                WCompanyAcceptCV wCompanyAcceptCV = new WCompanyAcceptCV(Company, Job);
+                wCompanyAcceptCV.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Công việc này không có bất kỳ ứng viên nào cả!", "Thông báo");
+            }
+
         }
     }
 }

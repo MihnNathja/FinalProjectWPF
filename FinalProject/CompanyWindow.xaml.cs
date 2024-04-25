@@ -143,12 +143,7 @@ namespace FinalProject
 
         private void btnSearch_Click(object sender, RoutedEventArgs e)
         {
-            //Filter filter = new Filter(cbbLocation.Text,cbbExperience.Text);
-            //JobDAO jobDAO = new JobDAO();
-            //jobDAO.DataJob =  jobDAO.Search(filter);
-            //var dataTransfer = jobDAO.LoadPage();
             
-           
 
             PageJob pageJob = new PageJob(company);
             pageJob.search(cbbLocation.Text, cbbExperience.Text);

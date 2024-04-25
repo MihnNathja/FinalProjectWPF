@@ -78,10 +78,10 @@
 
 
 
-                <Button x:Name="ButtonOpenMenu" Height="60" Width="60" Margin="5 5 10 5" HorizontalAlignment="Right" VerticalAlignment="Top" Style="{StaticResource topButton}" Click="ButtonOpenMenu_Click" >
+                <Button x:Name="ButtonOpenMenu" Height="60" Width="60" Margin="5 5 10 5" HorizontalAlignment="Right" VerticalAlignment="Top" Click="ButtonOpenMenu_Click" >
                     <Icon:PackIconMaterial Kind="Menu" Width="25" Height="25"/>
                 </Button>
-                <Button x:Name="ButtonCloseMenu" Visibility="Collapsed" Height="60" Width="60" Margin="5" HorizontalAlignment="Right" VerticalAlignment="Top" Style="{StaticResource topButton}" Click="ButtonCloseMenu_Click" >
+                <Button x:Name="ButtonCloseMenu" Visibility="Collapsed" Height="60" Width="60" Margin="5" HorizontalAlignment="Right" VerticalAlignment="Top"   Click="ButtonCloseMenu_Click" >
                     <Icon:PackIconMaterial Kind="ArrowLeft" Width="25" Height="25"/>
                 </Button>
 

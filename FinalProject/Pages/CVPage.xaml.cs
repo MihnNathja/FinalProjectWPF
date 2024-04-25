@@ -1,5 +1,6 @@
 ﻿using FinalProject.Database;
 using FinalProject.Objects;
+using FinalProject.User_Control;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,7 +23,8 @@ namespace FinalProject.Page
     /// </summary>
     public partial class CVPage : System.Windows.Controls.Page
     {
-        Employee employee = new Employee();
+        Employee employee;
+        public Employee Employee { get => employee; set => employee = value; }
         public CVPage()
         {
             InitializeComponent();
@@ -31,13 +33,14 @@ namespace FinalProject.Page
         {
             InitializeComponent();
             
-            this.employee = employee;
+            Employee = employee;
         }
+
 
         private void btnCreateCV_Click(object sender, RoutedEventArgs e)
         {
             
-            CVWindow cvWindow = new CVWindow(employee);
+            CVWindow cvWindow = new CVWindow(Employee);
             cvWindow.Show();
             Page_Loaded(sender, e);
         }
@@ -46,8 +49,10 @@ namespace FinalProject.Page
         {
             CVList.Children.Clear();
             CVDAO cVDAO = new CVDAO();
-            List<UCCV> data = cVDAO.LoadPage();
-            foreach (UCCV cv in data)
+            // hàm này sẽ phải sửa lại sau khi Quế sửa xong cái UCCV, cái tải lên là CV của mỗi người
+            // nhưng giao diện hiện tại không đúng 
+            List<UCCVApply> data = cVDAO.GetEmployeeCV(Employee);
+            foreach (UCCVApply cv in data)
             {
                 CVList.Children.Add(cv);
             }
