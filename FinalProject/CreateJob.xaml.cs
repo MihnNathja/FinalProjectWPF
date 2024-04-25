@@ -33,7 +33,7 @@ namespace FinalProject
         public CreateJob(Company company)
         {
             InitializeComponent();
-            txtbCompanyName.Text = company.CompanyName;
+            DataContext = company;
         }
         public CreateJob(Job job)
         {
