@@ -22,7 +22,7 @@ namespace FinalProject
     /// </summary>
     public partial class CreatJobWindow : System.Windows.Controls.Page
     {
-        Company company = new Company();
+        Company company;
         public CreatJobWindow()
         {
             InitializeComponent();
@@ -30,12 +30,14 @@ namespace FinalProject
         public CreatJobWindow(Company company)
         {
             InitializeComponent();
-            this.company = company;
+            Company = company;
         }
+
+        public Company Company { get => company; set => company = value; }
 
         private void btnThemCongViec_Click(object sender, RoutedEventArgs e)
         {
-            CreateJob createJob = new CreateJob(company);
+            CreateJob createJob = new CreateJob(Company);
             createJob.ShowDialog();
             Page_Loaded(sender, e);
         }
@@ -44,10 +46,10 @@ namespace FinalProject
         {
             jobList.Children.Clear();
             JobDAO jobDAO = new JobDAO();
-            List<UCJobInfo> data = jobDAO.LoadPage();
+            List<UCJobInfo> data = jobDAO.GetCompanyJobForLoad(Company);
             foreach (UCJobInfo job in data )
             {
-                job.Type = company.Type;
+                job.Type = Company.Type;
                 jobList.Children.Add( job );
             }
         }

@@ -21,7 +21,7 @@ namespace FinalProject.Database
 
         public void Them(Company company)
         {
-            string[] prop = { "ID","UserName" ,"Password", "Type" ,"CompanyName", "Mst", "CompanyLocation", "Boss", "PhoneNumber" };
+            string[] prop = { "ID","UserName" ,"Password", "Type" ,"CompanyName", "Mst", "CompanyLocation", "Boss", "PhoneNumber", "Email", "Field", "Description" };
             Them(company, prop);
         }
         /*        public void Xoa(Company company)
@@ -30,11 +30,12 @@ namespace FinalProject.Database
                     string SQL = string.Format("DELETE FROM Companies WHERE Mst = {0}", company);
                     db.ThucThi(SQL);
                 }*/
-        /*        public void Sua(Company company)
-                {
-                    string SQL = string.Format("UPDATE Companies SET Name = '{1}', CompanyName = '{2}', Salary = '{3}', Location = '{4}' WHERE ID = {0}", company.Name, company.Mst, company.Location, company.boss, company.PhoneNumber);
-                    db.ThucThi(SQL);
-                }*/
+        public void Sua(Company company)
+        {
+            string[] props = {"CompanyName", "Mst", "CompanyLocation", "Boss", "PhoneNumber", "Email", "Field", "Description" };
+            string condition = $"ID = '{company.ID}'";
+            Sua(company,props, condition);   
+        }
         public List<UCCompanyInfo> LoadPage()
         {
             List<UCCompanyInfo> list = new List<UCCompanyInfo>();

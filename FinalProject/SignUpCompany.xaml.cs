@@ -26,7 +26,6 @@ namespace FinalProject
             InitializeComponent();
         }
 
-        
        
 
         private void btnSignUp_Click(object sender, RoutedEventArgs e)
@@ -38,7 +37,10 @@ namespace FinalProject
                 txtMST.Text,
                 txtLocationCompany.Text,
                 txtboss.Text,
-                txtPhoneNumber.Text);
+                txtPhoneNumber.Text,
+                txtEmail.Text,
+                "",
+                "");
             CompanyDAO companyDAO = new CompanyDAO();
             companyDAO.Them(company);
             this.Close();
