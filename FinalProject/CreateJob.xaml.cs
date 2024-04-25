@@ -37,15 +37,14 @@ namespace FinalProject
         }
         public CreateJob(Job job)
         {
-            InitializeComponent(); 
-            this.DataContext = job;
+            InitializeComponent();
+            DataContext = job;
         }
 
 
         private void btnPost_Click(object sender, RoutedEventArgs e)
         {
-            Job job = new Job(jobDAO.GetNextID(),txtbName.Text,txtbCompanyName.Text,txtbSalary.Text,txtbExperience.Text,txtbLocation.Text,txtbDescription.Text,txtbRequire.Text,txtbRight.Text,txtbWorkTime.Text);
-            
+            Job job = new Job(jobDAO.GetNextID(),txtbJobName.Text,txtbCompanyName.Text,txtbSalary.Text,txtbExperience.Text,txtbLocation.Text,txtbDescription.Text,txtbRequire.Text, txtbBenefit.Text,txtbWorkTime.Text);
             jobDAO.Them(job);
         }
 

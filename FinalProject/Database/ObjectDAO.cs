@@ -27,6 +27,7 @@ namespace FinalProject.Database
         {
             List<SqlParameter> parameters = Utility.GetParameters(obj, prop);
             string SQL = Utility.GenerateInsertSql(TableName, parameters);
+            MessageBox.Show(SQL);
             db.ThucThi(SQL, parameters);
         }
         public void Xoa<T>(T obj, string[] prop)

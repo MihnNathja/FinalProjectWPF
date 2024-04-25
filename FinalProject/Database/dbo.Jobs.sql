@@ -7,6 +7,6 @@
     [Experience]    NVARCHAR (MAX) NULL,
     [Description]   NVARCHAR (MAX) NULL,
     [Require]       NVARCHAR (MAX) NULL,
-    [Right]         NVARCHAR (MAX) NULL,
+    [Benefit]       NVARCHAR (MAX) NULL,
     [WorkTime]      NVARCHAR (MAX) NULL,
 );
