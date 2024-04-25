@@ -42,13 +42,11 @@ namespace FinalProject.Database
         }
         public void Sua(Job job)
         {
-/*            string[] prop = { "" };
-            string condition = "ID = ";
-            List<SqlParameter> parameters = Utility.GetParameters(job, prop);
-            string SQL = Utility.GenerateUpdateSql(tableName, parameters, condition);
+
+            string[] prop = { "" };
+            string condition = $"Id = '{job.Id}'";
+            Sua(job,prop,)
             db.ThucThi(SQL, parameters);
-            string SQL = string.Format("UPDATE Jobs SET Name = '{1}', CompanyName = '{2}', Salary = '{3}', Location = '{4}' WHERE ID = {0}", job.Id, job.JobName, job.CompanyName, job.Salary, job.JobLocation);
-            db.ThucThi(SQL);*/
         }
         public string GetID()
         {

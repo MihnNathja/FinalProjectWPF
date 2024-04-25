@@ -34,26 +34,16 @@
                 <TextBox x:Name="txtbName" Margin="10 5" Text="{Binding JobName}"
                          Height="50" materialDesign:HintAssist.Hint="Tên công việc"/>
 
-                <TextBlock Text="Kinh nghiệm" FontWeight="Bold"/>
-                <ComboBox Width="200" Margin="10 5" Style="{DynamicResource theComboBox}" Height="40" SelectedIndex="0">
-                    <ComboBoxItem Content="Không yêu cầu kinh nghiệm"/>
-                    <ComboBoxItem Content="1 năm" />
-                    <ComboBoxItem Content="1-3 năm" />
-                    <ComboBoxItem Content="Trên 3 năm" />
-                </ComboBox>
+                <TextBox x:Name="txtbExperience" Margin="10 5" Text="{Binding Experience}"
+                         Height="50" materialDesign:HintAssist.Hint="Kinh nghiệm"/>
 
                 
                 <TextBox x:Name="txtbLocation" Margin="10 5" Text="{Binding JobLocation}"
                          Height="50" materialDesign:HintAssist.Hint="Địa điểm"/>
 
 
-                <TextBlock Text="Mức Lương" FontWeight="Bold"/>
-                <ComboBox Width="200" Margin="10 5" Style="{DynamicResource theComboBox}" Height="40" SelectedIndex="0" x:Name="cbbSalary" Text="{Binding Salary}">
-                    <ComboBoxItem Content=""/>
-                    <ComboBoxItem Content="Dưới 10tr" />
-                    <ComboBoxItem Content="10-15tr" />
-                    <ComboBoxItem Content="Trên 15tr" />
-                </ComboBox>
+                <TextBox x:Name="txtbSalary" Margin="10 5" Text="{Binding Salary}"
+                         Height="50" materialDesign:HintAssist.Hint="Mức lương"/>
 
                 <TextBlock Text="Mô tả công việc" FontWeight="Bold"/>
                 <TextBox  Margin="10 5" Height="200"
