@@ -73,8 +73,6 @@ namespace FinalProject.Database
 
         public List<UCCV> LoadPage()
         {
-            int index = 0;
-
             List<UCCV> list = new List<UCCV>();
 
             DataTable cvTable = DataCV;
@@ -89,7 +87,6 @@ namespace FinalProject.Database
         }
         public List<UCCVApply> GetEmployeeCV(Employee employee)
         {
-            int index = 0;
             List<UCCVApply> cvList = new List<UCCVApply>();
             DataTable cvTable = EmployeeCVData(employee);
             foreach (DataRow row in cvTable.Rows)
