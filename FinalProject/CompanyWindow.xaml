@@ -149,7 +149,7 @@
                            >
                                 <StackPanel Orientation="Horizontal">
                                     <Icon:PackIconMaterial Kind="Heart" Style="{StaticResource menuButtonIcon}"/>
-                                    <TextBlock Text="Việc làm quan tâm"/>
+                                    <TextBlock Text="Ứng viên tiềm năng"/>
                                 </StackPanel>
                             </Button>
                             <Button 

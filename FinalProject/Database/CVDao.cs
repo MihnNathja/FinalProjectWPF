@@ -71,6 +71,8 @@ namespace FinalProject.Database
             return cV;
         }
 
+        
+
         public List<UCCV> LoadPage()
         {
             List<UCCV> list = new List<UCCV>();

@@ -53,8 +53,8 @@ namespace FinalProject.Page
             {
                 job.User = user;
                 job.Type = User.Type;
-                if (job.Type == "Employee")
-                    job.btnDeleteJob.Visibility = Visibility.Hidden;
+               
+                job.btnDeleteJob.Visibility = Visibility.Hidden;
                 pnlJob.Children.Add(job);
             }
         }
