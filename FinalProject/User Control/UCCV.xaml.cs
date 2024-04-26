@@ -69,7 +69,7 @@ namespace FinalProject
         {
 
             cVDAO.Accept(Job, CV, Employee, 1);
-            WInterview wInterview = new WInterview();
+            WInterview wInterview = new WInterview(Job, CV, Employee);
             wInterview.Show();
             
         }
