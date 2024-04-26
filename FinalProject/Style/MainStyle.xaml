@@ -18,7 +18,8 @@
 
     <Style TargetType="Button" BasedOn="{StaticResource MaterialDesignRaisedButton}">
         <Setter Property="ToolTip" Value="MaterialDesignRaisedButton with Round Corners"/>
-        
+        <Setter Property="Height" Value="35"/>
+
     </Style>
 
 

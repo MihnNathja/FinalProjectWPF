@@ -150,10 +150,7 @@ namespace FinalProject
             mainFarm.Navigate(pageJob);
         }
 
-        private void mainFarm_Navigated(object sender, NavigationEventArgs e)
-        {
-
-        }
+       
 
         private void btnHoSo_Click(object sender, RoutedEventArgs e)
         {

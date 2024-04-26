@@ -186,7 +186,7 @@
             <Grid Grid.Column="1" Margin="30 20 20 20 ">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="auto"/>
-                    <RowDefinition Height="auto"/>
+                    
                     <RowDefinition Height="*"/>
 
                 </Grid.RowDefinitions>
@@ -197,7 +197,7 @@
                         <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
                     <Grid Width="400" HorizontalAlignment="Left">
-                       
+
                         <TextBox x:Name="txtSearch" 
                              Style="{StaticResource MaterialDesignOutlinedTextBox}" 
                              Height="50"
@@ -245,17 +245,18 @@
                         </Button>
                     </StackPanel>
                 </Grid>
-                <Grid Grid.Row="1">
+                <Grid Grid.Row="1" Margin="0,0,0,10" >
 
                     <Frame 
-               Name="mainFarm" Margin="20"
-               NavigationUIVisibility="Hidden" Navigated="mainFarm_Navigated"
-               >
+                           Name="mainFarm" Margin="20"
+                           NavigationUIVisibility="Hidden"
+                           >
+                        
                         <Frame.Effect>
                             <DropShadowEffect Color="Black"
                              ShadowDepth="0"
                              BlurRadius="50"
-                             Opacity="0.9"/>
+                             Opacity="0.5"/>
                         </Frame.Effect>
                     </Frame>
 
@@ -264,7 +265,7 @@
 
         </Grid>
     </Grid>
-    
-    
+
+
 
 </Window>
