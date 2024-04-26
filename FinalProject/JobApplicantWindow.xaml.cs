@@ -33,7 +33,6 @@ namespace FinalProject
             InitializeComponent();
             this.employee = employee;
             this.DataContext = employee;
-            MessageBox.Show(employee.ID);
         }
         private void CompanyWindow_Loaded(object sender, RoutedEventArgs e)
         {
