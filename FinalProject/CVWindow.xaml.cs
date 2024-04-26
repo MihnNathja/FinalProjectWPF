@@ -21,7 +21,7 @@ namespace FinalProject
     /// </summary>
     public partial class CVWindow : Window
     {
-        Employee employee = new Employee();
+        Employee employee;
         CVDAO cVDAO = new CVDAO();
         public CVWindow()
         {
@@ -42,6 +42,7 @@ namespace FinalProject
             txtSDT.Text = Employee.Phone;
             txtAddress.Text = Employee.EmployeeLocation;
             txtCCCD.Text = Employee.Cccd;
+            cbbGender.Text = Employee.Gender;
         }
 
         public Employee Employee { get => employee; set => employee = value; }
@@ -51,6 +52,15 @@ namespace FinalProject
             CV cv = new CV(cVDAO.GetNextID(), Employee.ID, txtCVTitle.Text, txtCareerGoal.Text, txtSkill.Text, txtPresent.Text, txtExperience.Text, txtActivitie.Text, txtCertificate.Text, txtAward.Text, txtAddInformation.Text);
             
             cVDAO.Them(cv);
+        }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            dtpDateOfBirtday.SelectedDate = Employee.DateOfBirth;
+            txtSDT.Text = Employee.Phone;
+            txtAddress.Text = Employee.EmployeeLocation;
+            txtCCCD.Text = Employee.Cccd;
+            cbbGender.SelectedItem = Employee.Gender;
         }
     }
 }
