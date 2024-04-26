@@ -1,0 +1,19 @@
+Đăng ký Ứng viên:
+Họ và tên:
+Nguyễn Văn A
+Giới tính: 
+Nam
+Địa Chỉ:
+Thành phố Hồ Chí Minh
+Ngày sinh:
+1/1/2004
+Số điện thoại
+0123456789
+CCCD:
+9876543210
+Tên đăng nhập:
+a
+Mật khẩu:
+a
+Email:
+a@gmail.com
