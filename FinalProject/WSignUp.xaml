@@ -30,12 +30,12 @@
                     <TextBlock Text="Dành Cho Ứng Viên" HorizontalAlignment="Center"
                                Margin="10" Foreground="White" FontWeight="Bold"/>
 
-                    <Button Content="Đăng Ký Cho Ứng Viên" Width="200" Click="btnSignUpJobApplicant_Click"/>
+                    <Button Content="Đăng Ký Cho Ứng Viên" Width="250" Click="btnSignUpJobApplicant_Click"/>
 
                     <TextBlock Text="Dành Cho Doanh Nghiệp " HorizontalAlignment="Center"
                     Margin="0 40 0 10" Foreground="White" FontWeight="Bold"/>
 
-                    <Button Content="Đăng Ký Cho Doanh Nghiệp" Width="200" Click="btnSignUpCompany_Click"/>
+                    <Button Content="Đăng Ký Cho Doanh Nghiệp" Width="250" Click="btnSignUpCompany_Click"/>
                 </StackPanel>
             </Grid>
         </Border>
