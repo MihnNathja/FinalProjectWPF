@@ -34,11 +34,12 @@
                     <TextBox x:Name="txtFullName" Margin="10 5"
                              materialDesign:HintAssist.Hint="Họ và tên"/>
 
-                   
-                    <StackPanel Orientation="Horizontal" Margin="10">
-                        <RadioButton x:Name="Male" Content="Nam" FontWeight="Bold" FontSize="15" IsChecked="{Binding IsMaleSelected}"/>
-                        <RadioButton x:Name="Female" Content="Nữ" FontWeight="Bold" Margin="20 0 0 0" FontSize="15" IsChecked="{Binding IsFemaleSelected}"/>
-                    </StackPanel>
+
+                    <ComboBox x:Name="cbbGender" Width="200" Margin="5 0" Style="{DynamicResource theComboBox}" Height="50" SelectedIndex="0">
+                        <ComboBoxItem Content="Nam"/>
+                        <ComboBoxItem Content="Nữ" />
+                    </ComboBox>
+
 
                     <TextBox x:Name="txtAddress" Margin="10 5" 
                              materialDesign:HintAssist.Hint="Địa chỉ"/>

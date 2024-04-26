@@ -14,7 +14,7 @@
         mc:Ignorable="d"
         Title="CVWindow" Height="1080" Width="1920"
         WindowStartupLocation="CenterScreen"
-        WindowState="Maximized">
+        WindowState="Maximized" Loaded="Window_Loaded">
     <Grid Margin="10">
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
@@ -56,10 +56,10 @@
             <StackPanel>
                 <TextBlock Text="THÔNG TIN CÁ NHÂN" FontSize="20" FontWeight="Bold"/>
                 <DatePicker Name="dtpDateOfBirtday" Text="Ngày sinh" FontSize="15" Margin="20 3"/>
-                <StackPanel Orientation="Horizontal" Margin="20">
-                    <RadioButton Name="rdNam" Content="Nam"/>
-                    <RadioButton Name="rdNu" Content="Nữ" Margin="20 0 0 0"/>
-                </StackPanel>
+                <ComboBox x:Name="cbbGender" Width="200" Margin="5 0" Style="{DynamicResource theComboBox}" Height="50" SelectedIndex="0">
+                    <ComboBoxItem Content="Nam"/>
+                    <ComboBoxItem Content="Nữ" />
+                </ComboBox>
                 <TextBox Name="txtSDT" materialDesign:HintAssist.Hint="Số điện thoại" FontSize="15" Margin="20 3"
                          Text="{Binding Phone}"/>
                 <TextBox Name="txtCCCD" materialDesign:HintAssist.Hint="CCCD" FontSize="15" Margin="20 3"

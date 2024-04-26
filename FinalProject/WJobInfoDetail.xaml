@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FinalProject"
         mc:Ignorable="d"
-        Title="WJobInfoDetail" Height="450" Width="800">
+        Title="WJobInfoDetail" Height="500" Width="800">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition/>
@@ -20,30 +20,30 @@
             <StackPanel Margin="5 10 10 10">
                 <TextBlock Text="Doanh Nghiệp" FontWeight="Bold"/>
                 <TextBlock x:Name="txtbCompanyName" Margin="10 5"
-                           Text="{Binding CompanyName}"
+                           Text="{Binding CompanyName}" TextWrapping="Wrap"
                            Style="{StaticResource MaterialDesignBody1TextBlock}"/>
 
                 <TextBlock Text="Tên công việc" FontWeight="Bold"/>
                 <TextBlock x:Name="txtbName" Margin="10 5"
-                           Text="{Binding JobName}"
+                           Text="{Binding JobName}" TextWrapping="Wrap"
                            Style="{StaticResource MaterialDesignBody1TextBlock}"/>
 
                 <TextBlock Text="Kinh nghiệm" FontWeight="Bold"/>
                 <TextBlock x:Name="txtbExperience" Margin="10 5"
-                               Text="{Binding JobName}"
+                               Text="{Binding Experience}" TextWrapping="Wrap"
                                Style="{StaticResource MaterialDesignBody1TextBlock}"/>
 
                 <TextBlock Text="Địa điểm" FontWeight="Bold"/>
-                <TextBlock x:Name="txtbLocation" Margin="10 5" Text="{Binding JobLocation}"
+                <TextBlock x:Name="txtbLocation" Margin="10 5" Text="{Binding JobLocation}" TextWrapping="Wrap"
                            Style="{StaticResource MaterialDesignBody1TextBlock}"/>
 
 
                 <TextBlock Text="Mức Lương" FontWeight="Bold"/>
-                <TextBlock x:Name="txtbSalary" Margin="10 5" Text="{Binding JobLocation}"
+                <TextBlock x:Name="txtbSalary" Margin="10 5" Text="{Binding Salary}" TextWrapping="Wrap"
                             Style="{StaticResource MaterialDesignBody1TextBlock}"/>
 
                 <TextBlock Text="Mô tả công việc" FontWeight="Bold"/>
-                <TextBlock  Margin="10 5" Height="100"
+                <TextBlock  Margin="10 5" Height="100" Text="{Binding Description}" TextWrapping="Wrap"
                             Style="{StaticResource MaterialDesignBody1TextBlock}"/>
 
 
@@ -53,19 +53,19 @@
             </StackPanel>
             <StackPanel Grid.Column="1" Margin="5 10 10 10">
                 <TextBlock Text="Yêu cầu" FontWeight="Bold"/>
-                <TextBlock  Margin="10 5" Height="100"
+                <TextBlock  Margin="10 5" Height="100" Text="{Binding Require}" TextWrapping="Wrap"
                             Style="{StaticResource MaterialDesignBody1TextBlock}"/>
 
                 <TextBlock Text="Quyền lợi" FontWeight="Bold"/>
-                <TextBlock  Margin="10 5" Height="100"
+                <TextBlock  Margin="10 5" Height="100" Text="{Binding Benefit}" TextWrapping="Wrap"
                             Style="{StaticResource MaterialDesignBody1TextBlock}"/>
 
                 <TextBlock Text="Thời gian làm việc" FontWeight="Bold"/>
-                <TextBlock  Margin="10 5" 
+                <TextBlock  Margin="10 5" Text="{Binding WorkTime}" TextWrapping="Wrap"
                             Style="{StaticResource MaterialDesignBody1TextBlock}"/>
 
 
-                <Button x:Name="btnApply" Content="Ứng Tuyển Ngay" Width="150"  Margin="0 50 0 0" Click="btnApply_Click"/>
+                <Button x:Name="btnApply" Content="Ứng Tuyển Ngay" Width="150"   Margin="0 50 0 0" Click="btnApply_Click"/>
             </StackPanel>
 
         </Grid>

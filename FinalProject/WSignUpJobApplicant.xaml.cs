@@ -30,16 +30,7 @@ namespace FinalProject
 
         private void btnSignUp_Click(object sender, RoutedEventArgs e)
         {
-            string gender = "";
-            if (Male.IsChecked == true)
-            {
-                gender = "Male";
-            }
-            else if (Female.IsChecked == true)
-            {
-                gender = "Female";
-            }
-            Employee employee = new Employee(txtUserName.Text,pbPassword.Password,txtFullName.Text, gender,txtAddress.Text, dtpDateOfBirth.SelectedDate.Value, txtPhone.Text, txtCCCD.Text);
+            Employee employee = new Employee(txtUserName.Text,pbPassword.Password,txtFullName.Text, cbbGender.Text,txtAddress.Text, dtpDateOfBirth.SelectedDate.Value, txtPhone.Text, txtCCCD.Text);
             EmployeeDAO employeeDAO = new EmployeeDAO();
             employeeDAO.Them(employee);
             this.Close();
