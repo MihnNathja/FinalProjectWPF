@@ -48,12 +48,11 @@ namespace FinalProject.Database
             string SQL = Utility.GenerateInsertSql(tableName, parameters);
             db.ThucThi(SQL, parameters);
         }
-        public void Xoa(Job job)
+        public void Xoa(CV cv)
         {
-            string[] prop = { "ID"};
-            List<SqlParameter> parameter = Utility.GetParameters(job, prop);
+            string[] prop = { "IdCV"};
+            List<SqlParameter> parameter = Utility.GetParameters(cv, prop);
             string SQL = Utility.GenerateDeleteSql(tableName, parameter);
-
             db.ThucThi(SQL, parameter);
         }
 
@@ -70,8 +69,31 @@ namespace FinalProject.Database
             }
             return cV;
         }
+        public void Write(DateTime date)
+        {
+            string SQL = @"
+        INSERT INTO ApplyCV (Interview)
+        VALUES (@date)";
+            db.ThucThi(SQL);
+        }
 
-        
+        public int GetAcceptValue(string id)
+        {
+            string SQL = string.Format("SELECT ACCEPT FROM ApplyCV WHERE IdCV = '{0}'", id);
+            DataTable data = db.Load(SQL);
+
+            if (data.Rows.Count > 0)
+            {
+                bool accept = (bool)data.Rows[0]["ACCEPT"];
+                return accept ? 1 : 0; 
+            }
+
+            return -1;
+
+
+
+        }
+
 
         public List<UCCV> LoadPage()
         {
@@ -91,13 +113,34 @@ namespace FinalProject.Database
         {
             List<UCCVApply> cvList = new List<UCCVApply>();
             DataTable cvTable = EmployeeCVData(employee);
-            foreach (DataRow row in cvTable.Rows)
+            if(cvTable  != null) 
             {
-                UCCVApply cv = new UCCVApply(row["IdCV"].ToString());
-/*                cv.tbSTT.Text = (index + 1).ToString();
-                cv.tbCVTitle.Text = row["CVTitle"].ToString();*/
-                cvList.Add(cv);
+                foreach (DataRow row in cvTable.Rows)
+                {
+                    UCCVApply cv = new UCCVApply(row["IdCV"].ToString());
+                    cvList.Add(cv);
+                }
+            }  
+
+            return cvList;
+        }
+        public List<UCCVEmployee> GetEmployeeCVToCreate(Employee employee)
+        {
+            List<UCCVEmployee> cvList = new List<UCCVEmployee>();
+            DataTable cvTable = EmployeeCVData(employee);
+            if (cvTable != null)
+            {
+                foreach (DataRow row in cvTable.Rows)
+                {
+                    UCCVEmployee cv = new UCCVEmployee(row["IdCV"].ToString());
+                    cvList.Add(cv);
+                }
             }
+            else
+            {
+                MessageBox.Show("Người dùng chưa tạo CV xin việc, hãy tạo CV để ứng tuyển công việc!", "Thông báo");
+            }
+
             return cvList;
         }
         public List<UCCV> GetEmployeeCV(Job job)

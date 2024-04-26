@@ -33,6 +33,16 @@ namespace FinalProject
             this.DataContext = employee;
             Employee = employee;
         }
+        public CVWindow(CV cV)
+        {
+            InitializeComponent();
+            DataContext = cV;
+            EmployeeDAO employeeDAO = new EmployeeDAO();
+            Employee = employeeDAO.GetEmployee(cV.ID);
+            txtSDT.Text = Employee.Phone;
+            txtAddress.Text = Employee.EmployeeLocation;
+            txtCCCD.Text = Employee.Cccd;
+        }
 
         public Employee Employee { get => employee; set => employee = value; }
 

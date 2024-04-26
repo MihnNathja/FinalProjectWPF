@@ -1,0 +1,50 @@
+﻿<Window x:Class="FinalProject.WInterview"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FinalProject"
+        mc:Ignorable="d"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="13"
+        TextOptions.TextFormattingMode="Ideal"
+        TextOptions.TextRenderingMode="Auto"
+        Background="{DynamicResource MaterialDesignPaper}"
+        FontFamily="{DynamicResource MaterialDesignFont}"
+        Title="WInterview" Height="450" Width="600">
+    <Border BorderBrush="Black" BorderThickness="1" Background="#F1F1F1">
+        <Grid>
+            <TextBlock Text="Chọn ngày phỏng vấn" FontSize="35" FontWeight="Bold" HorizontalAlignment="Center" Height="47" VerticalAlignment="Top"/>
+            <Border Width="600" BorderBrush="Black" BorderThickness="1.5" Height="350">
+                <Calendar x:Name="calendar" Margin="0,0,0,-4.5" SelectionMode="SingleDate" 
+                        materialDesign:CalendarAssist.Orientation="Horizontal" 
+                        materialDesign:CalendarAssist.SelectionColor="#002E5D" 
+                        materialDesign:CalendarAssist.SelectionForegroundColor="#002E5D" 
+                        materialDesign:CalendarAssist.HeaderBackground="#002E5D"
+                        materialDesign:CalendarAssist.HeaderForeground="White"
+                          >
+
+                </Calendar>
+            </Border>
+            <Button x:Name="btnSet"  Background="#002E5D" Height="35" Width="170" 
+                    Click="btnSet_Click" Margin="170 50 "
+                    HorizontalAlignment="Left" VerticalAlignment="Bottom">
+                <StackPanel Orientation="Horizontal">
+                    <materialDesign:PackIcon Kind="CalendarPlus" Foreground="White"/>
+                    <TextBlock Text="Hẹn lịch phỏng vấn" Width="150" Foreground="White"/>
+                </StackPanel>
+            </Button>
+            <Button x:Name="btnDelete" Background="#002E5D"  Width="170" Height="35"
+                    Click="btnDelete_Click" HorizontalAlignment="Right"
+                    VerticalAlignment="Bottom" Margin="50">
+                <StackPanel Orientation="Horizontal">
+                    <materialDesign:PackIcon Kind="CalendarRemove" Foreground="White"/>
+                    <TextBlock Text="Xóa lịch phỏng vấn" Width="150" Foreground="White"/>
+                </StackPanel>
+            </Button>
+            
+        </Grid>
+     </Border> 
+</Window>

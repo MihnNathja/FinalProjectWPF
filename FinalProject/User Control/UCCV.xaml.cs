@@ -22,6 +22,7 @@ namespace FinalProject
     /// </summary>
     public partial class UCCV : UserControl
     {
+        
         CVDAO cVDAO = new CVDAO();
         CV cV;
         Job job;
@@ -43,6 +44,17 @@ namespace FinalProject
             CV = cVDAO.GetObject(ID);
             EmployeeDAO EmployeeDAO = new EmployeeDAO();
             Employee = EmployeeDAO.GetEmployee(CV.ID);
+            int accept = cVDAO.GetAcceptValue(id);
+            if(accept == 0)
+            {
+                btnReject.IsEnabled = false;
+                btnReject.Content = "ĐÃ TỪ CHỐI";
+            }
+            if (accept == 1)
+            {
+                btnAccept.IsEnabled = false;
+                btnAccept.Content = "ĐÃ DUYỆT";
+            }
             DataContext = Employee;
         }
 
@@ -55,12 +67,17 @@ namespace FinalProject
 
         private void btnAccept_Click(object sender, RoutedEventArgs e)
         {
+
             cVDAO.Accept(Job, CV, Employee, 1);
+            WInterview wInterview = new WInterview();
+            wInterview.Show();
+            
         }
 
         private void btnReject_Click(object sender, RoutedEventArgs e)
         {
             cVDAO.Accept(Job, CV, Employee, 0);
+           
         }
     }
 }
