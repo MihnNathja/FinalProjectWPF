@@ -1,4 +1,5 @@
 ﻿using FinalProject.Database;
+using FinalProject.Objects;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,17 +22,32 @@ namespace FinalProject
     public partial class WInterview : Window
     {
         CVDAO cVDAO = new CVDAO();
+        CV cV;
+        Job job;
+        Employee employee;
+        public CV CV { get => cV; set => cV = value; }
+        public Job Job { get => job; set => job = value; }
+        public Employee Employee { get => employee; set => employee = value; }
         public WInterview()
         {
             InitializeComponent();
+        }
+        public WInterview(Job job, CV cV, Employee employee)
+        {
+            InitializeComponent();
+            CV = cV;
+            Job = job;
+            Employee = employee;
         }
 
         private void btnSet_Click(object sender, RoutedEventArgs e)
         {
             DateTime? selectedDate = calendar.SelectedDate;
+
             if (selectedDate.HasValue)
             {
-                cVDAO.Write(selectedDate.Value);
+                DateOnly date = DateOnly.FromDateTime(selectedDate.Value);
+                cVDAO.Write(Job, CV, Employee, date);
             }
         }
 

@@ -32,6 +32,7 @@ namespace FinalProject
             InitializeComponent();
             this.DataContext = employee;
             Employee = employee;
+            
         }
         public CVWindow(CV cV)
         {
@@ -39,6 +40,7 @@ namespace FinalProject
             DataContext = cV;
             EmployeeDAO employeeDAO = new EmployeeDAO();
             Employee = employeeDAO.GetEmployee(cV.ID);
+            MessageBox.Show(Employee.DateOfBirth.ToString());
             txtSDT.Text = Employee.Phone;
             txtAddress.Text = Employee.EmployeeLocation;
             txtCCCD.Text = Employee.Cccd;
@@ -56,11 +58,11 @@ namespace FinalProject
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            dtpDateOfBirtday.SelectedDate = Employee.DateOfBirth;
+/*            dtpDateOfBirtday.SelectedDate = Employee.DateOfBirth;
             txtSDT.Text = Employee.Phone;
             txtAddress.Text = Employee.EmployeeLocation;
             txtCCCD.Text = Employee.Cccd;
-            cbbGender.SelectedItem = Employee.Gender;
+            cbbGender.SelectedItem = Employee.Gender;*/
         }
     }
 }

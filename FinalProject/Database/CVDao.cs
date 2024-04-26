@@ -10,6 +10,7 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
+using System.Windows.Automation;
 using System.Windows.Controls.Primitives;
 using System.Windows.Documents;
 
@@ -69,11 +70,9 @@ namespace FinalProject.Database
             }
             return cV;
         }
-        public void Write(DateTime date)
+        public void Write(Job job, CV cv, Employee employee, DateOnly date)
         {
-            string SQL = @"
-        INSERT INTO ApplyCV (Interview)
-        VALUES (@date)";
+            string SQL = string.Format($"UPDATE ApplyCV SET Interview = {date} WHERE IdCV = {cv.IdCV} and ID = {job.Id} and IdEmployee = {employee.ID}");
             db.ThucThi(SQL);
         }
 
@@ -84,8 +83,14 @@ namespace FinalProject.Database
 
             if (data.Rows.Count > 0)
             {
-                bool accept = (bool)data.Rows[0]["ACCEPT"];
-                return accept ? 1 : 0; 
+                object acceptValue = data.Rows[0]["ACCEPT"];
+
+                // Check if the value is DBNull
+                if (acceptValue != DBNull.Value)
+                {
+                    bool accept = (bool)acceptValue;
+                    return accept ? 1 : 0;
+                }
             }
 
             return -1;
