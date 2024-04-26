@@ -31,7 +31,7 @@
                          materialDesign:HintAssist.Hint="Tên công ty"/>
 
                 
-                <TextBox x:Name="txtbName" Margin="10 5" Text="{Binding JobName}"
+                <TextBox x:Name="txtbJobName" Margin="10 5" Text="{Binding JobName}"
                          Height="50" materialDesign:HintAssist.Hint="Tên công việc"/>
 
                 <TextBox x:Name="txtbExperience" Margin="10 5" Text="{Binding Experience}"
@@ -72,8 +72,8 @@
 
                 <TextBlock Text="Quyền lợi" FontWeight="Bold"/>
                 <TextBox  Margin="10 5" Height="130"
-                          x:Name="txtbRight"
-                          Text="{Binding Right}"
+                          x:Name="txtbBenefit"
+                          Text="{Binding Benefit}"
                           TextBlock.FontSize="20"
                             VerticalAlignment="Top"
 

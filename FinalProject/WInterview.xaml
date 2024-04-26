@@ -22,7 +22,9 @@
                         materialDesign:CalendarAssist.Orientation="Horizontal" 
                         materialDesign:CalendarAssist.SelectionColor="#002E5D" 
                         materialDesign:CalendarAssist.SelectionForegroundColor="#002E5D" 
-                        materialDesign:CalendarAssist.HeaderBackground="#002E5D">
+                        materialDesign:CalendarAssist.HeaderBackground="#002E5D"
+                        materialDesign:CalendarAssist.HeaderForeground="White"
+                          >
 
                 </Calendar>
             </Border>

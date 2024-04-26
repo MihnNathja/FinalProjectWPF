@@ -40,16 +40,15 @@ namespace FinalProject.Database
             }
             return parameters;
         }
-
         public static string GenerateInsertSql(string tableName, List<SqlParameter> parameters)
         {
             string columns = string.Join(", ", parameters.Select(p => p.ParameterName.Substring(1)));
-            string parametersList = string.Join(", ", parameters.Select(p => p.ParameterName));
+            string parametersList = string.Join(", ", parameters.Select(p => $"N'{p.Value}'"));
             return $"INSERT INTO {tableName} ({columns}) VALUES ({parametersList})";
         }
         public static string GenerateUpdateSql(string tableName, List<SqlParameter> parameters, string condition)
         {
-            string setClause = string.Join(", ", parameters.Select(p => $"{p.ParameterName.Substring(1)} = {p.ParameterName}"));
+            string setClause = string.Join(", ", parameters.Select(p => $"{p.ParameterName.Substring(1)} = N'{p.Value}'"));
             return $"UPDATE {tableName} SET {setClause} WHERE {condition}";
         }
         public static string GenerateDeleteSql(string tableName, List<SqlParameter> parameters)

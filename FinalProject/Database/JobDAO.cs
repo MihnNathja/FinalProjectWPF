@@ -32,7 +32,8 @@ namespace FinalProject.Database
         }
         public void Them(Job job)
         {
-            string[] prop = { "Id", "JobName", "Company", "Salary", "Experience", "JobLocation", "Description", "Require", "Right", "WorkTime" };
+
+            string[] prop = { "Id", "JobName", "CompanyName", "Salary", "Experience", "JobLocation", "Description", "Require", "Benefit", "WorkTime" };
             Them(job, prop);
         }
         public void Xoa(Job job)

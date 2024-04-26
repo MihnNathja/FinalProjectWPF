@@ -23,6 +23,7 @@
         <StackPanel>
             <StackPanel>
                 <TextBox x:Name="txtCVTitle" 
+                         Text="{Binding CVTitle}"
                          materialDesign:HintAssist.Hint="Tên CV"
                          FontSize="30" 
                          HorizontalAlignment="Center"
@@ -44,7 +45,7 @@
                         </Ellipse>
                     </Border>
 
-                    <TextBlock Text="{Binding EmployeeName}" FontSize="40" HorizontalAlignment="Center"
+                    <TextBlock x:Name="txtEmployeeName" Text="{Binding EmployeeName}" FontSize="40" HorizontalAlignment="Center"
                         FontWeight="Bold" Margin="0 50">
                     </TextBlock>
                 </StackPanel>
@@ -54,20 +55,21 @@
             </StackPanel>
             <StackPanel>
                 <TextBlock Text="THÔNG TIN CÁ NHÂN" FontSize="20" FontWeight="Bold"/>
-                <DatePicker Name="birtday" Text="Ngày sinh" FontSize="15" Margin="20 3"/>
+                <DatePicker Name="dtpDateOfBirtday" Text="Ngày sinh" FontSize="15" Margin="20 3"/>
                 <StackPanel Orientation="Horizontal" Margin="20">
                     <RadioButton Name="rdNam" Content="Nam"/>
                     <RadioButton Name="rdNu" Content="Nữ" Margin="20 0 0 0"/>
                 </StackPanel>
                 <TextBox Name="txtSDT" materialDesign:HintAssist.Hint="Số điện thoại" FontSize="15" Margin="20 3"
                          Text="{Binding Phone}"/>
-                <TextBox Name="txtCCCD" materialDesign:HintAssist.Hint="CCCD" FontSize="15" Margin="20 3"/>
+                <TextBox Name="txtCCCD" materialDesign:HintAssist.Hint="CCCD" FontSize="15" Margin="20 3"
+                         Text="{Binding CCCD}"/>
                 <TextBox Name="txtAddress" materialDesign:HintAssist.Hint="Địa chỉ" FontSize="15" Margin="20 3"
                          Text="{Binding EmployeeLocation}"/>
             </StackPanel>
             <StackPanel >
                 <TextBox Name="txtCareerGoal" materialDesign:HintAssist.Hint="Mục tiêu nghề nghiệp" Height="80" Margin="5"
-                            Text=""
+                            Text="{Binding Careergoals}"
                            TextBlock.FontSize="20"
                            VerticalAlignment="Top"
 
@@ -77,7 +79,7 @@
                            VerticalScrollBarVisibility="Auto"/>
             </StackPanel>
             <TextBox Name="txtSkill" materialDesign:HintAssist.Hint="Kỹ năng" Height="60" Margin="5"
-                        Text=""
+                        Text="{Binding Skill}"
                        TextBlock.FontSize="20"
                        VerticalAlignment="Top"
 
@@ -89,7 +91,7 @@
 
             <StackPanel>
                 <TextBox Name="txtPresent" materialDesign:HintAssist.Hint="Thông tin người giới thiệu(Nếu có)" Height="60" Margin="5"
-                         Text=""  
+                         Text="{Binding Presenter}"  
                          TextBlock.FontSize="20"
                            VerticalAlignment="Top"
 
@@ -105,7 +107,7 @@
         <StackPanel Grid.Column="1">
             <StackPanel >
                 <TextBlock  Text="KINH NGHIỆM" FontSize="20" FontWeight="Bold"/>
-                <TextBox Name="txtExperience" Text="" Height="110" Margin="5"
+                <TextBox Name="txtExperience" Text="{Binding Experience}" Height="110" Margin="5"
                    
                          materialDesign:HintAssist.Hint="Mô tả quá trình làm việc"
                          TextBlock.FontSize="20"
@@ -118,7 +120,7 @@
             </StackPanel>
             <StackPanel >
                 <TextBlock  Text="HOẠT ĐỘNG" FontSize="20" FontWeight="Bold"/>
-                <TextBox Name="txtActivitie" Text="" Height="85" Margin="5"
+                <TextBox Name="txtActivitie" Text="{Binding Activitie}" Height="85" Margin="5"
                    materialDesign:HintAssist.Hint="Mô tả quá trình hoạt động"
                    TextBlock.FontSize="20"
                    VerticalAlignment="Top"
@@ -130,7 +132,7 @@
             </StackPanel>
             <StackPanel >
                 <TextBlock  Text="CHỨNG CHỈ" FontSize="20" FontWeight="Bold"/>
-                <TextBox Name="txtCertificate" Text="" Height="85" Margin="5"
+                <TextBox Name="txtCertificate" Text="{Binding Certificate}" Height="85" Margin="5"
                          materialDesign:HintAssist.Hint="Tên chứng chỉ"
                        TextBlock.FontSize="20"
                        VerticalAlignment="Top"
@@ -142,7 +144,7 @@
             </StackPanel>
             <StackPanel >
                 <TextBlock  Text="DANH HIỆU VÀ GIẢI THƯỞNG" FontSize="20" FontWeight="Bold"/>
-                <TextBox Name="txtAward" Text="" Height="85" Margin="5"
+                <TextBox Name="txtAward" Text="{Binding Awards}" Height="85" Margin="5"
                          materialDesign:HintAssist.Hint="Tên giải thưởng"
                             TextBlock.FontSize="20"
                             VerticalAlignment="Top"
@@ -153,7 +155,7 @@
                             VerticalScrollBarVisibility="Auto"/>
             </StackPanel>
             <StackPanel >
-                <TextBox Name="txtAddInformation" Text="" Height="110" Margin="5"
+                <TextBox Name="txtAddInformation" Text="{Binding AddInformation}" Height="110" Margin="5"
                          materialDesign:HintAssist.Hint="Thông tin thêm"
                             TextBlock.FontSize="20"
                             VerticalAlignment="Top"

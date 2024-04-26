@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\
+D:\UNIVERSITY\SOPHOMORE\TERM II\LẬP TRÌNH WINDOWS\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\
 FinalProject
 none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
-C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\App.xaml
-28-999726896
+D:\UNIVERSITY\SOPHOMORE\TERM II\LẬP TRÌNH WINDOWS\FinalProjectWPF\FinalProject\App.xaml
+28-802942436
 
-44-1624375045
-231849205432
-CompanyWindow.xaml;CreateJob.xaml;CVWindow.xaml;JobApplicantWindow.xaml;LoginWindow.xaml;Pages\CreatJobWindow.xaml;Pages\CVPage.xaml;Pages\DocumentPage.xaml;Pages\PageJob.xaml;Pages\PCompany.xaml;Pages\PCompanyJobState.xaml;SignUpCompany.xaml;Style\MainStyle.xaml;Theme\Theme.xaml;UCCVEmployee.xaml;User Control\UCCompanyInfo.xaml;User Control\UCCompanyJob.xaml;User Control\UCCV.xaml;User Control\UCCVApply.xaml;User Control\UCJobInfo.xaml;User Control\UCPopUp.xaml;WCompanyAcceptCV.xaml;WInterview.xaml;WJobInfoDetail.xaml;WNotification.xaml;WSelectCV.xaml;WSignUp.xaml;WSignUpJobApplicant.xaml;
+44881140126
+231-214902253
+CompanyWindow.xaml;CreateJob.xaml;CVWindow.xaml;JobApplicantWindow.xaml;LoginWindow.xaml;Pages\CreatJobWindow.xaml;Pages\CVPage.xaml;Pages\DocumentPage.xaml;Pages\PageJob.xaml;Pages\PCompany.xaml;Pages\PCompanyJobState.xaml;SignUpCompany.xaml;Style\MainStyle.xaml;Theme\Theme.xaml;User Control\UCCompanyInfo.xaml;User Control\UCCompanyJob.xaml;User Control\UCCV.xaml;User Control\UCCVApply.xaml;User Control\UCCVEmployee.xaml;User Control\UCJobInfo.xaml;User Control\UCPopUp.xaml;WCompanyAcceptCV.xaml;WInterview.xaml;WJobInfoDetail.xaml;WNotification.xaml;WSelectCV.xaml;WSignUp.xaml;WSignUpJobApplicant.xaml;
 
 False
 

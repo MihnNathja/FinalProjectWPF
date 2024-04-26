@@ -16,7 +16,7 @@ namespace FinalProject.Objects
         string jobLocation;
         string description;
         string require;
-        string right;
+        string benefit;
         string workTime;
 
         public Job() { }
@@ -32,7 +32,7 @@ namespace FinalProject.Objects
             this.salary = salary;
             this.jobLocation = jobLocation;
         }
-        public Job(string id, string jobName, string companyName, string salary, string experience, string jobLocation, string description, string require, string right, string workTime)
+        public Job(string id, string jobName, string companyName, string salary, string experience, string jobLocation, string description, string require, string benefit, string workTime)
         {
             Id = id;
             JobName = jobName;
@@ -41,7 +41,7 @@ namespace FinalProject.Objects
             JobLocation = jobLocation;
             Description = description;
             Require = require;
-            Right = right;
+            Benefit = benefit;
             WorkTime = workTime;
             Experience = experience;
         }
@@ -52,7 +52,7 @@ namespace FinalProject.Objects
         public string JobLocation { get => jobLocation; set => jobLocation = value; }
         public string Description { get => description; set => description = value; }
         public string Require { get => require; set => require = value; }
-        public string Right { get => right; set => right = value; }
+        public string Benefit { get => benefit; set => benefit = value; }
         public string WorkTime { get => workTime; set => workTime = value; }
         public string Experience { get => experience; set => experience = value; }
     }
