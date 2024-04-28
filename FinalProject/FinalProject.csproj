@@ -14,7 +14,6 @@
     <None Remove="Image\company_cover.jpg" />
     <None Remove="Image\favourite_icon.png" />
     <None Remove="Image\logo.png" />
-    <None Remove="Image\logosac-01.png" />
     <None Remove="Image\user.png" />
   </ItemGroup>
 
