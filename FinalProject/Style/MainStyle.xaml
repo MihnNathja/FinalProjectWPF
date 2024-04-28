@@ -7,21 +7,14 @@
     <Style x:Key="page" TargetType="Border">
         <Setter Property="Background" Value="White"/>
         <Setter Property="CornerRadius" Value="10"/>
-        
+
     </Style>
-
     
-    
-    
-    
-       
-
     <Style TargetType="Button" BasedOn="{StaticResource MaterialDesignRaisedButton}">
         <Setter Property="ToolTip" Value="MaterialDesignRaisedButton with Round Corners"/>
-        <Setter Property="Height" Value="35"/>
+        <Setter Property="Height" Value="40"/>
 
     </Style>
-
 
     <Style x:Key="floatingTextbox" TargetType="TextBox" BasedOn="{StaticResource MaterialDesignFloatingHintTextBox}">
         <Setter Property="VerticalAlignment" Value="Center"/>

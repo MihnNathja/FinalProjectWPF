@@ -5,41 +5,32 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FinalProject"
         mc:Ignorable="d"
-        Title="WSignUp" Height="500" Width="800"
-        WindowStartupLocation="CenterScreen">
-    <Grid>
-        <Border CornerRadius="10 0 0 10">
-            <Border.Background>
-                <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
-                    <GradientStop Color="#3AA9AD" Offset="0"/>
-                    <GradientStop Color="#3AADA1" Offset="1"/>
-                </LinearGradientBrush>
-            </Border.Background>
+        Title="WSignUp" Height="600" Width="900"
+        WindowStartupLocation="CenterScreen" WindowStyle="None">
+    <Border>
+        <Grid>
+            <Image Stretch="UniformToFill" Opacity="0.7" Source="/Image/backgroundlogin.jpg"/>
+            <Border Visibility="Visible" Background="#99000000" Width="400" Height="400" CornerRadius="30">
+                <Grid >
+                    <StackPanel HorizontalAlignment="Center">
+                        <TextBlock Text="Đăng Ký" HorizontalAlignment="Center"
+                           Margin="20" FontWeight="Black" FontSize="40"
+                           Foreground="White"/>
 
-            <Grid >
-                <Canvas>
-                    <Polygon Points="0,20 230, 140 0, 270" Fill="#4EB1E6"/>
-                    <Polygon Points="100,400 200,370 180 , 470" Fill="#4EB1E6"/>
-                </Canvas>
+                        <TextBlock Text="Dành Cho Ứng Viên" HorizontalAlignment="Center"
+                           Margin="10" Foreground="White" FontWeight="Bold"/>
 
-                <StackPanel HorizontalAlignment="Center">
-                    <TextBlock Text="Đăng Ký" HorizontalAlignment="Center"
-                               Margin="20" FontWeight="Black" FontSize="40"
-                               Foreground="White"/>
+                        <Button Content="Đăng Ký Cho Ứng Viên" Width="250" Click="btnSignUpJobApplicant_Click"/>
 
-                    <TextBlock Text="Dành Cho Ứng Viên" HorizontalAlignment="Center"
-                               Margin="10" Foreground="White" FontWeight="Bold"/>
+                        <TextBlock Text="Dành Cho Doanh Nghiệp " HorizontalAlignment="Center"
+                Margin="0 40 0 10" Foreground="White" FontWeight="Bold"/>
 
-                    <Button Content="Đăng Ký Cho Ứng Viên" Width="250" Click="btnSignUpJobApplicant_Click"/>
+                        <Button Content="Đăng Ký Cho Doanh Nghiệp" Width="250" Click="btnSignUpCompany_Click"/>
+                    </StackPanel>
+                </Grid>
+            </Border>
 
-                    <TextBlock Text="Dành Cho Doanh Nghiệp " HorizontalAlignment="Center"
-                    Margin="0 40 0 10" Foreground="White" FontWeight="Bold"/>
 
-                    <Button Content="Đăng Ký Cho Doanh Nghiệp" Width="250" Click="btnSignUpCompany_Click"/>
-                </StackPanel>
-            </Grid>
-        </Border>
-        
-        
-    </Grid>
+        </Grid>
+    </Border>
 </Window>
