@@ -40,9 +40,6 @@
                                 Foreground="White"
                                 x:Name="btnDetail"
                                 Click="btnDetail_Click"/>
-
-
-
                     </StackPanel>
                     <Separator
     
@@ -55,8 +52,8 @@
 
 
                 </Grid>
-               
-                
+
+
                 <Grid Grid.Column="1">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="0.2*"/>
@@ -86,55 +83,35 @@
                             </Ellipse>
                         </Button>
                     </StackPanel>
-                   
-                        
-                        <StackPanel Margin="5 10 0 0" Grid.Row="1">
-                            <StackPanel Margin="0 10" Orientation="Horizontal" Grid.Row="3" TextElement.FontSize="15" >
-                                <materialDesign:PackIcon Kind="Domain" VerticalAlignment="Top"/>
-                                <TextBlock Text="Công ty: " VerticalAlignment="Top"/>
-                                <TextBlock x:Name="CompanyName" VerticalAlignment="Top" Text="" MaxWidth="320" TextWrapping="Wrap"/>
-                            </StackPanel>
-                            
-                            <StackPanel Margin="0 10" Orientation="Horizontal" Grid.Row="3" TextElement.FontSize="15" >
-                                <materialDesign:PackIcon Kind="CalendarMonth" />
-                                <TextBlock Text="Thời gian làm việc: " VerticalAlignment="Top"/>
-                                <TextBlock x:Name="WorkTime" VerticalAlignment="Top" Text="" MaxWidth="320" TextWrapping="Wrap"/>
-                            </StackPanel>
 
-                            <StackPanel Margin="0 10" Orientation="Horizontal" TextElement.FontSize="15" >
-                                <materialDesign:PackIcon Kind="CurrencyUsd" VerticalAlignment="Top" />
-                                <TextBlock Text="Mức lương: " VerticalAlignment="Top" />
-                                <TextBlock x:Name="Salary" VerticalAlignment="Top" Text="" MaxWidth="320" TextWrapping="Wrap"/>
-                            </StackPanel>
 
-                            <StackPanel Margin="0 10" Orientation="Horizontal" Grid.Row="4" TextElement.FontSize="15" >
-                                <materialDesign:PackIcon Kind="MapMarker" VerticalAlignment="Top" />
-                                <TextBlock Grid.Column="1" Text="Địa điểm: " VerticalAlignment="Top" />
-                                <TextBlock x:Name="JobLocation" VerticalAlignment="Top" Text="" MaxWidth="320" TextWrapping="Wrap"/>
-                            </StackPanel>
+                    <StackPanel Margin="5 10 0 0" Grid.Row="1">
+                        <StackPanel Margin="0 10" Orientation="Horizontal" Grid.Row="3" TextElement.FontSize="15" >
+                            <materialDesign:PackIcon Kind="Domain" VerticalAlignment="Top"/>
+                            <TextBlock Text="Công ty: " VerticalAlignment="Top"/>
+                            <TextBlock x:Name="CompanyName" VerticalAlignment="Top" Text="" MaxWidth="320" TextWrapping="Wrap"/>
                         </StackPanel>
-                        
-                   
+
+                        <StackPanel Margin="0 10" Orientation="Horizontal" Grid.Row="3" TextElement.FontSize="15" >
+                            <materialDesign:PackIcon Kind="CalendarMonth" />
+                            <TextBlock Text="Thời gian làm việc: " VerticalAlignment="Top"/>
+                            <TextBlock x:Name="WorkTime" VerticalAlignment="Top" Text="" MaxWidth="320" TextWrapping="Wrap"/>
+                        </StackPanel>
+
+                        <StackPanel Margin="0 10" Orientation="Horizontal" TextElement.FontSize="15" >
+                            <materialDesign:PackIcon Kind="CurrencyUsd" VerticalAlignment="Top" />
+                            <TextBlock Text="Mức lương: " VerticalAlignment="Top" />
+                            <TextBlock x:Name="Salary" VerticalAlignment="Top" Text="" MaxWidth="320" TextWrapping="Wrap"/>
+                        </StackPanel>
+
+                        <StackPanel Margin="0 10" Orientation="Horizontal" Grid.Row="4" TextElement.FontSize="15" >
+                            <materialDesign:PackIcon Kind="MapMarker" VerticalAlignment="Top" />
+                            <TextBlock Grid.Column="1" Text="Địa điểm: " VerticalAlignment="Top" />
+                            <TextBlock x:Name="JobLocation" VerticalAlignment="Top" Text="" MaxWidth="320" TextWrapping="Wrap"/>
+                        </StackPanel>
+                    </StackPanel>
                 </Grid>
-               
-
-
-
-               
-
-
-
-
-
-
-
-
             </Grid>
         </Border>
-        
     </materialDesign:Card>
-    
-        
-    
-
 </UserControl>

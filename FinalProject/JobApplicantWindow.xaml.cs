@@ -94,7 +94,7 @@ namespace FinalProject
         private void btnThongBao_MouseEnter(object sender, MouseEventArgs e)
         {
             popupControl.IsPopupOpen = true;
-            popupControl.PopupContent = "Hồ sơ và CV";
+            popupControl.PopupContent = "Thông Báo";
         }
 
         private void btnThongBao_MouseLeave(object sender, MouseEventArgs e)
@@ -103,7 +103,10 @@ namespace FinalProject
         }
         private void btnThongBao_Click(object sender, RoutedEventArgs e)
         {
+            WNotification wNotification = new WNotification(employee);
+            bool? result = wNotification.ShowDialog();
             
+
         }
 
         private void btnCongTy_Click(object sender, RoutedEventArgs e)

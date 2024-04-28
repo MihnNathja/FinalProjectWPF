@@ -21,10 +21,9 @@ namespace FinalProject
     /// <summary>
     /// Interaction logic for UCJobInfo.xaml
     /// </summary>
-    public partial class UCJobInfo : UserControl, INotifyPropertyChanged
+    public partial class UCJobInfo : UserControl
     {
         User user;
-        string url;
         string id;
         string type;
         public string ID { get => id; set => id = value; }
@@ -33,22 +32,6 @@ namespace FinalProject
 
         public event PropertyChangedEventHandler? PropertyChanged;
 
-        public string Url
-        {
-            get => url;
-            set
-            {
-                url = value;
-                OnPropertyChange(Url);
-            }
-        }
-        protected virtual void OnPropertyChange(string property)
-        {
-            if (PropertyChanged != null)
-            {
-                PropertyChanged(this, new PropertyChangedEventArgs(property));
-            }
-        }
 
         public UCJobInfo()
         {
@@ -72,12 +55,6 @@ namespace FinalProject
                 btnDeleteJob.IsEnabled = false;
             }
         }
-
-
-
-
-
-       
         private void btnDeleteJob_Click(object sender, RoutedEventArgs e)
         {
             JobDAO jobDAO = new JobDAO();

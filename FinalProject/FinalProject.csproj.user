@@ -41,6 +41,9 @@
     <Compile Update="SignUpCompany.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="UCNotification.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="User Control\UCCVEmployee.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -125,6 +128,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Theme\Theme.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UCNotification.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="User Control\UCCVEmployee.xaml">
