@@ -15,73 +15,78 @@
         mc:Ignorable="d"
         
         WindowStartupLocation="CenterScreen"
-        Title="SignUpCompany" Height="519" Width="800">
+        Title="SignUpCompany" Height="600" Width="900">
     <Border Background="#ffffff" CornerRadius="0 10 10 0">
-        <Grid>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="1*"/>
-                <RowDefinition Height="7*"/>
-                <RowDefinition />
-            </Grid.RowDefinitions>
-            <TextBlock Text="Đăng Ký" VerticalAlignment="Center" HorizontalAlignment="Center"
-               FontSize="30" FontWeight="Black"/>
-            <Grid Grid.Row="1">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition/>
-                    <ColumnDefinition/>
-                </Grid.ColumnDefinitions>
-                <StackPanel Margin="10">
-                    
-                    <TextBox x:Name="txtCompanyName" Margin="10 5"
-                             materialDesign:HintAssist.Hint="Tên công ty"/>
-                    
-                    
-                    <TextBox x:Name="txtMST" Margin="10 5" 
-                             materialDesign:HintAssist.Hint="Mã số thuế"/>
+        <Grid TextElement.Foreground="White">
+            <Image Stretch="UniformToFill" Opacity="0.7" Source="/Image/backgroundlogin.jpg"/>
+            <Border Visibility="Visible" Background="#99000000"  >
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="1*"/>
+                        <RowDefinition Height="7*"/>
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+                    <TextBlock Text="Đăng Ký" VerticalAlignment="Center" HorizontalAlignment="Center"
+FontSize="40" FontWeight="Black"/>
+                    <Grid Grid.Row="1">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <StackPanel Margin="10">
 
-                    <TextBox x:Name="txtLocationCompany" Margin="10 5" 
-                             materialDesign:HintAssist.Hint="Địa chỉ"/>
+                            <TextBox x:Name="txtCompanyName" Margin="10 5"
+              materialDesign:HintAssist.Hint="Tên công ty"/>
 
-                    
-                    <TextBox x:Name="txtboss" Margin="10 5" 
-                             materialDesign:HintAssist.Hint="Người đại diện"/>
 
-                    <TextBox x:Name="txtPhoneNumber" Margin="10 5" 
-                             materialDesign:HintAssist.Hint="Điện thoại"/>
+                            <TextBox x:Name="txtMST" Margin="10 5" 
+              materialDesign:HintAssist.Hint="Mã số thuế"/>
 
-                    
+                            <TextBox x:Name="txtLocationCompany" Margin="10 5" 
+              materialDesign:HintAssist.Hint="Địa chỉ"/>
 
-                    
 
-                </StackPanel>
+                            <TextBox x:Name="txtboss" Margin="10 5" 
+              materialDesign:HintAssist.Hint="Người đại diện"/>
 
-                <StackPanel Grid.Column="1" Margin="10">
-                    <TextBox x:Name="txtUserName"  Margin="10 5"
-                             materialDesign:HintAssist.Hint="Tên đăng nhập"/>
+                            <TextBox x:Name="txtPhoneNumber" Margin="10 5" 
+              materialDesign:HintAssist.Hint="Điện thoại"/>
 
-                    <PasswordBox x:Name="txtPassword" Margin="10 5" Height="52" 
-                                 TextBlock.FontSize="20"     
-                                materialDesign:HintAssist.Foreground="Green"
-                                materialDesign:HintAssist.Hint="Mật Khẩu"
-                                materialDesign:TextFieldAssist.UnderlineBrush="Green"/>
 
-                    <PasswordBox x:Name="txtConfirmPassword" Margin="10 5" Height="52" 
-                                  TextBlock.FontSize="20"     
-                                materialDesign:HintAssist.Foreground="Green"
-                                materialDesign:HintAssist.Hint="Nhập lại Mật Khẩu"
-                                materialDesign:TextFieldAssist.UnderlineBrush="Green"/>
 
-                    <TextBox x:Name="txtEmail" Margin="10 5"
-                             materialDesign:HintAssist.Hint="Email"/>
-                </StackPanel>
-            </Grid>
-            
-                <Button Content="Đăng Ký" Width="200" FontSize="25" Grid.Row="2"
-                        Margin="5" Click="btnSignUp_Click">
 
-                </Button>
 
-            
+                        </StackPanel>
+
+                        <StackPanel Grid.Column="1" Margin="10">
+                            <TextBox x:Name="txtUserName"  Margin="10 5"
+              materialDesign:HintAssist.Hint="Tên đăng nhập"/>
+
+                            <PasswordBox x:Name="txtPassword" Margin="10 5" Height="52" 
+                  TextBlock.FontSize="20"     
+                 materialDesign:HintAssist.Foreground="LightBlue"
+                 materialDesign:HintAssist.Hint="Mật Khẩu"
+                 materialDesign:TextFieldAssist.UnderlineBrush="LightBlue"/>
+
+                            <PasswordBox x:Name="txtConfirmPassword" Margin="10 5" Height="52" 
+                   TextBlock.FontSize="20"     
+                 materialDesign:HintAssist.Foreground="LightBlue"
+                 materialDesign:HintAssist.Hint="Nhập lại Mật Khẩu"
+                 materialDesign:TextFieldAssist.UnderlineBrush="LightBlue"/>
+
+                            <TextBox x:Name="txtEmail" Margin="10 5"
+              materialDesign:HintAssist.Hint="Email"/>
+                        </StackPanel>
+                    </Grid>
+
+                    <Button Content="Đăng Ký" Width="200" FontSize="25" Grid.Row="2"
+         Margin="5" Click="btnSignUp_Click">
+
+                    </Button>
+
+
+                </Grid>
+            </Border>
         </Grid>
     </Border>
       

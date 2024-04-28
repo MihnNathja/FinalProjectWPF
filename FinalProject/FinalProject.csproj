@@ -9,6 +9,7 @@
 
   <ItemGroup>
     <None Remove="Image\background.jpg" />
+    <None Remove="Image\backgroundlogin.jpg" />
     <None Remove="Image\btnDelete.png" />
     <None Remove="Image\company_cover.jpg" />
     <None Remove="Image\favourite_icon.png" />
@@ -26,11 +27,11 @@
 
   <ItemGroup>
     <Resource Include="Image\background.jpg" />
+    <Resource Include="Image\backgroundlogin.jpg" />
     <Resource Include="Image\btnDelete.png" />
     <Resource Include="Image\company_cover.jpg" />
     <Resource Include="Image\favourite_icon.png" />
     <Resource Include="Image\logo.png" />
-    <Resource Include="Image\logosac-01.png" />
     <Resource Include="Image\user.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
