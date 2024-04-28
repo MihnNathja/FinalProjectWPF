@@ -19,7 +19,7 @@
     <Border Background="#ffffff" CornerRadius="0 10 10 0">
         <Grid TextElement.Foreground="White">
             <Image Stretch="UniformToFill" Opacity="0.7" Source="/Image/backgroundlogin.jpg"/>
-            <Border Visibility="Visible" Background="#99000000"  CornerRadius="30">
+            <Border Visibility="Visible" Background="#99000000"  >
                 <Grid>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="1*"/>
