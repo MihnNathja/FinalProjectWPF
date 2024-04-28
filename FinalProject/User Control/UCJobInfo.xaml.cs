@@ -21,10 +21,9 @@ namespace FinalProject
     /// <summary>
     /// Interaction logic for UCJobInfo.xaml
     /// </summary>
-    public partial class UCJobInfo : UserControl, INotifyPropertyChanged
+    public partial class UCJobInfo : UserControl
     {
         User user;
-        string url;
         string id;
         string type;
         public string ID { get => id; set => id = value; }
@@ -33,22 +32,6 @@ namespace FinalProject
 
         public event PropertyChangedEventHandler? PropertyChanged;
 
-        public string Url
-        {
-            get => url;
-            set
-            {
-                url = value;
-                OnPropertyChange(Url);
-            }
-        }
-        protected virtual void OnPropertyChange(string property)
-        {
-            if (PropertyChanged != null)
-            {
-                PropertyChanged(this, new PropertyChangedEventArgs(property));
-            }
-        }
 
         public UCJobInfo()
         {
@@ -72,12 +55,6 @@ namespace FinalProject
                 btnDeleteJob.IsEnabled = false;
             }
         }
-
-
-
-
-
-       
         private void btnDeleteJob_Click(object sender, RoutedEventArgs e)
         {
             JobDAO jobDAO = new JobDAO();
@@ -99,9 +76,12 @@ namespace FinalProject
             }
         }
 
+        private void UserControl_Loaded(object sender, RoutedEventArgs e)
+        {
 
+        }
 
-        private void UCJobInfo_MouseDown(object sender, MouseButtonEventArgs e)
+        private void btnDetail_Click(object sender, RoutedEventArgs e)
         {
             JobDAO jobDAO = new JobDAO();
             Job job = jobDAO.GetObject(this.ID);
@@ -112,14 +92,9 @@ namespace FinalProject
             }
             else if (Type == "Employee")
             {
-                WJobInfoDetail wJobInfoDetail = new WJobInfoDetail(User,job);
+                WJobInfoDetail wJobInfoDetail = new WJobInfoDetail(User, job);
                 wJobInfoDetail.ShowDialog();
             }
-        }
-
-        private void UserControl_Loaded(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }
