@@ -67,7 +67,6 @@ namespace FinalProject
         {
             // Lấy ra cửa sổ chứa UserControl hiện tại
             Window window = Window.GetWindow(this);
-
             // Kiểm tra xem window có tồn tại và có phải là MainWindow không
             if (window != null && window is CompanyWindow)
             {

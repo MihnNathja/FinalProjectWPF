@@ -39,7 +39,8 @@ namespace FinalProject
         {
             CreateJob createJob = new CreateJob(Company);
             createJob.ShowDialog();
-            Page_Loaded(sender, e);
+            MessageBox.Show(Company.CompanyName);
+            ReloadPage(Company);
         }
 
         private void Page_Loaded(object sender, RoutedEventArgs e)
@@ -53,7 +54,16 @@ namespace FinalProject
                 jobList.Children.Add( job );
             }
         }
-
-        
+        private void ReloadPage(Company company)
+        {
+            jobList.Children.Clear();
+            JobDAO jobDAO = new JobDAO();
+            List<UCJobInfo> data = jobDAO.GetCompanyJobForLoad(company);
+            foreach (UCJobInfo job in data)
+            {
+                job.Type = Company.Type;
+                jobList.Children.Add(job);
+            }
+        }
     }
 }
