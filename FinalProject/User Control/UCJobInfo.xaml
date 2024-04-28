@@ -14,7 +14,7 @@
                 TextOptions.TextRenderingMode="Auto"
                 Background="{DynamicResource MaterialDesignPaper}"
                 FontFamily="{DynamicResource MaterialDesignFont}"
-             d:DesignHeight="300" d:DesignWidth="700"
+             d:DesignHeight="250" d:DesignWidth="700"
              Margin="10"
              HorizontalAlignment="Stretch"
             >
@@ -22,6 +22,12 @@
     <materialDesign:Card  UniformCornerRadius="20"
                           Width="650" Height="250">
         <Border Background="GhostWhite" BorderBrush="Silver" BorderThickness="1" CornerRadius="20">
+            <Border.Effect>
+                <DropShadowEffect Color="Black"
+                         ShadowDepth="0"
+                         BlurRadius="50"
+                         Opacity="0.5"/>
+            </Border.Effect>
             <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>

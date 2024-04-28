@@ -16,7 +16,7 @@
       mc:Ignorable="d" 
       d:DesignHeight="700" d:DesignWidth="800"
       Title="DocumentPage">
-    <Border Style="{StaticResource page}" >
+    <Border Style="{StaticResource page}" Background="White">
         <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition Height="1*"/>

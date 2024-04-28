@@ -154,6 +154,14 @@ namespace FinalProject
         {
             this.Close();
         }
+
+        public void Reload(Employee employee)
+        {
+            mainFarm.Content = null;
+            mainFarm.Content = new CVPage(employee);
+
+        }
+        
     }
 }
 

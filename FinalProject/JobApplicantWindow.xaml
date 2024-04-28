@@ -39,8 +39,12 @@
         </EventTrigger>
     </Window.Triggers>
     <Grid>
-        <Border CornerRadius="30" Background="{DynamicResource PrimaryBackgroundColor}" Opacity="0.5">
-        
+        <Border CornerRadius="30">
+            <Border.Background>
+                <ImageBrush ImageSource="/Image/backgroundlogin.jpg" Stretch="UniformToFill"
+                    Opacity="0.7"/>
+
+            </Border.Background>
         </Border>
         <Grid >
             <Grid.ColumnDefinitions>

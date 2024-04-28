@@ -57,6 +57,20 @@ namespace FinalProject
         {
             CVDAO cVDAO= new CVDAO();
             cVDAO.Xoa(CV);
+            
+            Reload();
+        }
+        private void Reload()
+        {
+            // Lấy ra cửa sổ chứa UserControl hiện tại
+            Window window = Window.GetWindow(this);
+
+            // Kiểm tra xem window có tồn tại và có phải là MainWindow không
+            if (window != null && window is JobApplicantWindow)
+            {
+                // Gọi phương thức tải lại trang trong MainWindow
+                (window as JobApplicantWindow).Reload(employee);
+            }
         }
     }
 }
