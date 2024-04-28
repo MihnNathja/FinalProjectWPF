@@ -34,31 +34,6 @@ namespace FinalProject
             WSignUp wSignUp = new WSignUp();
             wSignUp.ShowDialog();
         }
-
-        /*        private void btnLogin_Click(object sender, RoutedEventArgs e)
-                {
-                    UserDAO userDAO = new UserDAO();
-                    if(rdCompany.IsChecked == true)
-                    {
-                        Company company = new Company(txtUserName.Text, pbPassword.Password);
-                        if (userDAO.checkExist(company) == true)
-                        {
-                            company = userDAO.GetUser(company,company);
-                            CompanyWindow comp = new CompanyWindow(company);
-                            comp.ShowDialog();
-                        }
-                    }
-                    else if (rdJobApplicant.IsChecked == true)
-                    {
-                        Employee employee = new Employee(txtUserName.Text, pbPassword.Password);
-                        if (userDAO.checkExist(employee) == true)
-                        {
-                            employee = userDAO.GetUser(employee, employee);
-                            JobApplicantWindow jobApplicant = new JobApplicantWindow(employee);
-                            jobApplicant.ShowDialog();
-                        }
-                    }
-                }*/
         private void btnLogin_Click(object sender, RoutedEventArgs e)
         {
             /*Khởi tạo đối tượng User và DAO của nó*/

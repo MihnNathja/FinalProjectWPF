@@ -51,12 +51,12 @@ namespace FinalProject
             if(page == "PageJob")
             {
                 mainFarm.Content = null;
-                mainFarm.Content = new PageJob();
+                mainFarm.Content = new PageJob(company);
             }
             if(page == "CreatJobWindow")
             {
                 mainFarm.Content = null;
-                mainFarm.Content = new CreatJobWindow();
+                mainFarm.Content = new CreatJobWindow(company);
             }
         }
 
