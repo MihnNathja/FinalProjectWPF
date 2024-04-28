@@ -31,7 +31,7 @@ namespace FinalProject
 
         private void btnSee_Click(object sender, RoutedEventArgs e)
         {
-            this.Close();
+           
         }
     }
 }

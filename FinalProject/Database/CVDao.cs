@@ -95,20 +95,20 @@ namespace FinalProject.Database
             return -1;
         }
 
-        public List<UCNotification> LoadAcceptNotifi(Employee employee)
-        {
-            List<UCNotification> list = new List<UCNotification>();
-            string SQL = string.Format($"SELECT ACCEPT FROM ApplyCV WHERE IdEmployee = '{employee.ID}'");
-            DataTable data = db.Load(SQL);
-            foreach (DataRow row in data.Rows)
-            {
-                UCNotification notifi = new UCNotification();
-                notifi.ID = row["IdCV"].ToString();
+        //public List<UCNotification> LoadAcceptNotifi(Employee employee)
+        //{
+        //    List<UCNotification> list = new List<UCNotification>();
+        //    string SQL = string.Format($"SELECT ACCEPT FROM ApplyCV WHERE IdEmployee = '{employee.ID}'");
+        //    DataTable data = db.Load(SQL);
+        //    foreach (DataRow row in data.Rows)
+        //    {
+        //        UCNotification notifi = new UCNotification();
+        //        notifi.ID = row["IdCV"].ToString();
 
-                list.Add(cv);
-            }
-            return list;
-        }
+        //        list.Add(cv);
+        //    }
+        //    return list;
+        //}
 
         public List<UCCV> LoadPage()
         {

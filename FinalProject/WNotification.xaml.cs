@@ -38,14 +38,14 @@ namespace FinalProject
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            pnlNotifi.Children.Clear();
-            List<UCNotification> notifiList = ;
+            //pnlNotifi.Children.Clear();
+            //List<UCNotification> notifiList = ;
 
-            foreach (UCNotification notifi in notifiList)
-            {
+            //foreach (UCNotification notifi in notifiList)
+            //{
 
-                pnlNotifi.Children.Add(notifi);
-            }
+            //    pnlNotifi.Children.Add(notifi);
+            //}
         }
     }
    
