@@ -1,34 +1,3 @@
-<<<<<<< HEAD
-﻿C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs
-FC:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\App.xaml;;
-FC:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\CompanyWindow.xaml;;
-FC:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\CreateJob.xaml;;
-FC:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\CVWindow.xaml;;
-FC:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\JobApplicantWindow.xaml;;
-FC:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\LoginWindow.xaml;;
-FC:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\Pages\CreatJobWindow.xaml;;
-FC:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\Pages\CVPage.xaml;;
-FC:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\Pages\DocumentPage.xaml;;
-FC:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\Pages\PageJob.xaml;;
-FC:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\Pages\PCompany.xaml;;
-FC:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\Pages\PCompanyJobState.xaml;;
-FC:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\SignUpCompany.xaml;;
-FC:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\UCNotification.xaml;;
-FC:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\User Control\UCCompanyInfo.xaml;;
-FC:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\User Control\UCCompanyJob.xaml;;
-FC:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\User Control\UCCV.xaml;;
-FC:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\User Control\UCCVApply.xaml;;
-FC:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\User Control\UCCVEmployee.xaml;;
-FC:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\User Control\UCJobInfo.xaml;;
-FC:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\User Control\UCPopUp.xaml;;
-FC:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\WCompanyAcceptCV.xaml;;
-FC:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\WInterview.xaml;;
-FC:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\WJobInfoDetail.xaml;;
-FC:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\WNotification.xaml;;
-FC:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\WSelectCV.xaml;;
-FC:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\WSignUp.xaml;;
-FC:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\WSignUpJobApplicant.xaml;;
-=======
 ﻿
 FD:\UNIVERSITY\SOPHOMORE\TERM II\LẬP TRÌNH WINDOWS\FinalProjectWPF\FinalProject\App.xaml;;
 FD:\UNIVERSITY\SOPHOMORE\TERM II\LẬP TRÌNH WINDOWS\FinalProjectWPF\FinalProject\CompanyWindow.xaml;;
@@ -43,6 +12,7 @@ FD:\UNIVERSITY\SOPHOMORE\TERM II\LẬP TRÌNH WINDOWS\FinalProjectWPF\FinalProje
 FD:\UNIVERSITY\SOPHOMORE\TERM II\LẬP TRÌNH WINDOWS\FinalProjectWPF\FinalProject\Pages\PCompany.xaml;;
 FD:\UNIVERSITY\SOPHOMORE\TERM II\LẬP TRÌNH WINDOWS\FinalProjectWPF\FinalProject\Pages\PCompanyJobState.xaml;;
 FD:\UNIVERSITY\SOPHOMORE\TERM II\LẬP TRÌNH WINDOWS\FinalProjectWPF\FinalProject\SignUpCompany.xaml;;
+FD:\UNIVERSITY\SOPHOMORE\TERM II\LẬP TRÌNH WINDOWS\FinalProjectWPF\FinalProject\UCNotification.xaml;;
 FD:\UNIVERSITY\SOPHOMORE\TERM II\LẬP TRÌNH WINDOWS\FinalProjectWPF\FinalProject\User Control\UCCompanyInfo.xaml;;
 FD:\UNIVERSITY\SOPHOMORE\TERM II\LẬP TRÌNH WINDOWS\FinalProjectWPF\FinalProject\User Control\UCCompanyJob.xaml;;
 FD:\UNIVERSITY\SOPHOMORE\TERM II\LẬP TRÌNH WINDOWS\FinalProjectWPF\FinalProject\User Control\UCCV.xaml;;
@@ -57,5 +27,5 @@ FD:\UNIVERSITY\SOPHOMORE\TERM II\LẬP TRÌNH WINDOWS\FinalProjectWPF\FinalProje
 FD:\UNIVERSITY\SOPHOMORE\TERM II\LẬP TRÌNH WINDOWS\FinalProjectWPF\FinalProject\WSelectCV.xaml;;
 FD:\UNIVERSITY\SOPHOMORE\TERM II\LẬP TRÌNH WINDOWS\FinalProjectWPF\FinalProject\WSignUp.xaml;;
 FD:\UNIVERSITY\SOPHOMORE\TERM II\LẬP TRÌNH WINDOWS\FinalProjectWPF\FinalProject\WSignUpJobApplicant.xaml;;
->>>>>>> 2e7941a2b8ad6089dd480580c348b35724c2425e
+FD:\UNIVERSITY\SOPHOMORE\TERM II\LẬP TRÌNH WINDOWS\FinalProjectWPF\FinalProject\Pages\PNotification.xaml;;
 

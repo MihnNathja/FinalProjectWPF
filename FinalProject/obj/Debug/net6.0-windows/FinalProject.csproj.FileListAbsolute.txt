@@ -239,3 +239,7 @@ D:\UNIVERSITY\SOPHOMORE\TERM II\LẬP TRÌNH WINDOWS\FinalProjectWPF\FinalProjec
 D:\UNIVERSITY\SOPHOMORE\TERM II\LẬP TRÌNH WINDOWS\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\FinalProject.pdb
 D:\UNIVERSITY\SOPHOMORE\TERM II\LẬP TRÌNH WINDOWS\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\FinalProject.genruntimeconfig.cache
 D:\UNIVERSITY\SOPHOMORE\TERM II\LẬP TRÌNH WINDOWS\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\ref\FinalProject.dll
+D:\UNIVERSITY\SOPHOMORE\TERM II\LẬP TRÌNH WINDOWS\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\UCNotification.g.cs
+D:\UNIVERSITY\SOPHOMORE\TERM II\LẬP TRÌNH WINDOWS\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\UCNotification.baml
+D:\UNIVERSITY\SOPHOMORE\TERM II\LẬP TRÌNH WINDOWS\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\Pages\PNotification.g.cs
+D:\UNIVERSITY\SOPHOMORE\TERM II\LẬP TRÌNH WINDOWS\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\Pages\PNotification.baml

@@ -10,19 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 D:\UNIVERSITY\SOPHOMORE\TERM II\LẬP TRÌNH WINDOWS\FinalProjectWPF\FinalProject\App.xaml
-<<<<<<< HEAD
-29599901483
+301499665722
 
-471733072210
+48-991637784
 231-214902253
-CompanyWindow.xaml;CreateJob.xaml;CVWindow.xaml;JobApplicantWindow.xaml;LoginWindow.xaml;Pages\CreatJobWindow.xaml;Pages\CVPage.xaml;Pages\DocumentPage.xaml;Pages\PageJob.xaml;Pages\PCompany.xaml;Pages\PCompanyJobState.xaml;SignUpCompany.xaml;Style\MainStyle.xaml;Theme\Theme.xaml;UCNotification.xaml;User Control\UCCompanyInfo.xaml;User Control\UCCompanyJob.xaml;User Control\UCCV.xaml;User Control\UCCVApply.xaml;User Control\UCCVEmployee.xaml;User Control\UCJobInfo.xaml;User Control\UCPopUp.xaml;WCompanyAcceptCV.xaml;WInterview.xaml;WJobInfoDetail.xaml;WNotification.xaml;WSelectCV.xaml;WSignUp.xaml;WSignUpJobApplicant.xaml;
-=======
-28-802942436
+CompanyWindow.xaml;CreateJob.xaml;CVWindow.xaml;JobApplicantWindow.xaml;LoginWindow.xaml;Pages\CreatJobWindow.xaml;Pages\CVPage.xaml;Pages\DocumentPage.xaml;Pages\PageJob.xaml;Pages\PCompany.xaml;Pages\PCompanyJobState.xaml;Pages\PNotification.xaml;SignUpCompany.xaml;Style\MainStyle.xaml;Theme\Theme.xaml;UCNotification.xaml;User Control\UCCompanyInfo.xaml;User Control\UCCompanyJob.xaml;User Control\UCCV.xaml;User Control\UCCVApply.xaml;User Control\UCCVEmployee.xaml;User Control\UCJobInfo.xaml;User Control\UCPopUp.xaml;WCompanyAcceptCV.xaml;WInterview.xaml;WJobInfoDetail.xaml;WNotification.xaml;WSelectCV.xaml;WSignUp.xaml;WSignUpJobApplicant.xaml;
 
-46637671527
-231-214902253
-CompanyWindow.xaml;CreateJob.xaml;CVWindow.xaml;JobApplicantWindow.xaml;LoginWindow.xaml;Pages\CreatJobWindow.xaml;Pages\CVPage.xaml;Pages\DocumentPage.xaml;Pages\PageJob.xaml;Pages\PCompany.xaml;Pages\PCompanyJobState.xaml;SignUpCompany.xaml;Style\MainStyle.xaml;Theme\Theme.xaml;User Control\UCCompanyInfo.xaml;User Control\UCCompanyJob.xaml;User Control\UCCV.xaml;User Control\UCCVApply.xaml;User Control\UCCVEmployee.xaml;User Control\UCJobInfo.xaml;User Control\UCPopUp.xaml;WCompanyAcceptCV.xaml;WInterview.xaml;WJobInfoDetail.xaml;WNotification.xaml;WSelectCV.xaml;WSignUp.xaml;WSignUpJobApplicant.xaml;
->>>>>>> 2e7941a2b8ad6089dd480580c348b35724c2425e
-
-True
+False
 

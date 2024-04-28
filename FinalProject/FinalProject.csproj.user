@@ -38,6 +38,9 @@
     <Compile Update="Pages\PCompanyJobState.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Pages\PNotification.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="SignUpCompany.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -119,6 +122,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Pages\PCompanyJobState.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\PNotification.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="SignUpCompany.xaml">
