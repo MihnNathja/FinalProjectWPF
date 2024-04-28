@@ -85,20 +85,30 @@ namespace FinalProject.Database
             {
                 object acceptValue = data.Rows[0]["ACCEPT"];
 
-                // Check if the value is DBNull
+                
                 if (acceptValue != DBNull.Value)
                 {
                     bool accept = (bool)acceptValue;
                     return accept ? 1 : 0;
                 }
             }
-
             return -1;
-
-
-
         }
 
+        public List<UCNotification> LoadAcceptNotifi(Employee employee)
+        {
+            List<UCNotification> list = new List<UCNotification>();
+            string SQL = string.Format($"SELECT ACCEPT FROM ApplyCV WHERE IdEmployee = '{employee.ID}'");
+            DataTable data = db.Load(SQL);
+            foreach (DataRow row in data.Rows)
+            {
+                UCNotification notifi = new UCNotification();
+                notifi.ID = row["IdCV"].ToString();
+
+                list.Add(cv);
+            }
+            return list;
+        }
 
         public List<UCCV> LoadPage()
         {

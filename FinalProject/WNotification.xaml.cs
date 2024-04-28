@@ -1,4 +1,6 @@
-﻿using System;
+﻿using FinalProject.Database;
+using FinalProject.Objects;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,9 +21,33 @@ namespace FinalProject
     /// </summary>
     public partial class WNotification : Window
     {
+        Employee employee = new Employee();
+        Job job = new Job();
+        CVDAO cVDAO = new CVDAO();
         public WNotification()
         {
             InitializeComponent();
         }
+        public WNotification(Employee employee)
+        {
+            InitializeComponent();
+            Employee = employee;
+        }
+
+        public Employee Employee { get => employee; set => employee = value; }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            pnlNotifi.Children.Clear();
+            List<UCNotification> notifiList = ;
+
+            foreach (UCNotification notifi in notifiList)
+            {
+
+                pnlNotifi.Children.Add(notifi);
+            }
+        }
     }
+   
+    
 }

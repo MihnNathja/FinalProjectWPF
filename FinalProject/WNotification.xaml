@@ -10,9 +10,18 @@
         TextElement.FontSize="13"
         TextOptions.TextFormattingMode="Ideal"
         TextOptions.TextRenderingMode="Auto"
-        Background="{DynamicResource MaterialDesignPaper}"
+        
         FontFamily="{DynamicResource MaterialDesignFont}"
         mc:Ignorable="d"
-        Title="WNotification" Height="200" Width="500">
-    
+        Title="WNotification" Height="400" Width="500"
+        WindowStartupLocation="CenterScreen" Loaded="Window_Loaded">
+    <Grid>
+        <Border Style="{DynamicResource window}">
+            <ScrollViewer VerticalScrollBarVisibility="Auto">
+                <WrapPanel x:Name="pnlNotifi">
+
+                </WrapPanel>
+            </ScrollViewer>
+        </Border>
+    </Grid>
 </Window>
