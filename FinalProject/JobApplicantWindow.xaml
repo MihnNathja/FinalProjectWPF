@@ -261,9 +261,9 @@
                         </Button>
                     </StackPanel>
                 </Grid>
-                <Grid Grid.Row="1" Margin="0,0,0,10" >
+                <Grid Grid.Row="1" Margin="0,0,0,0" >
 
-                    <Frame Margin="20"
+                    <Frame Margin="0 20"
                         Name="mainFarm"
                         NavigationUIVisibility="Hidden" Navigated="mainFarm_Navigated"
                         >               
