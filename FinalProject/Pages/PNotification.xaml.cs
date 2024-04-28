@@ -12,23 +12,24 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace FinalProject
+namespace FinalProject.Pages
 {
     /// <summary>
-    /// Interaction logic for WNotification.xaml
+    /// Interaction logic for PNotification.xaml
     /// </summary>
-    public partial class WNotification : Window
+    public partial class PNotification : System.Windows.Controls.Page
     {
         Employee employee = new Employee();
         Job job = new Job();
         CVDAO cVDAO = new CVDAO();
-        public WNotification()
+        public PNotification()
         {
             InitializeComponent();
         }
-        public WNotification(Employee employee)
+        public PNotification(Employee employee)
         {
             InitializeComponent();
             Employee = employee;
@@ -36,18 +37,15 @@ namespace FinalProject
 
         public Employee Employee { get => employee; set => employee = value; }
 
-        private void Window_Loaded(object sender, RoutedEventArgs e)
+        private void Page_Loaded(object sender, RoutedEventArgs e)
         {
-            //pnlNotifi.Children.Clear();
-            //List<UCNotification> notifiList = ;
+            pnlNotifi.Children.Clear();
+            List<UCNotification> notifiList = cVDAO.LoadAcceptNotifi(Employee);
 
-            //foreach (UCNotification notifi in notifiList)
-            //{
-
-            //    pnlNotifi.Children.Add(notifi);
-            //}
+            foreach (UCNotification notifi in notifiList)
+            {
+                pnlNotifi.Children.Add(notifi);
+            }
         }
     }
-   
-    
 }

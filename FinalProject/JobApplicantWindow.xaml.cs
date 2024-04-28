@@ -103,10 +103,8 @@ namespace FinalProject
         }
         private void btnThongBao_Click(object sender, RoutedEventArgs e)
         {
-            WNotification wNotification = new WNotification(employee);
-            bool? result = wNotification.ShowDialog();
-            
-
+            PNotification pNotification = new PNotification(employee);
+            mainFarm.Navigate(pNotification);
         }
 
         private void btnCongTy_Click(object sender, RoutedEventArgs e)
