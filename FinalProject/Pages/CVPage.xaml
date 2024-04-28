@@ -16,7 +16,7 @@
             </Grid.RowDefinitions>
             <Grid HorizontalAlignment="Center"
           VerticalAlignment="Center">
-                <ScrollViewer>
+                <ScrollViewer VerticalScrollBarVisibility="Hidden">
                     <WrapPanel x:Name="CVList">
 
                     </WrapPanel>

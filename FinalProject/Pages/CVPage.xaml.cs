@@ -41,8 +41,9 @@ namespace FinalProject.Page
         {
             
             CVWindow cvWindow = new CVWindow(Employee);
-            cvWindow.Show();
+            cvWindow.ShowDialog();
             Page_Loaded(sender, e);
+
         }
 
         private void Page_Loaded(object sender, RoutedEventArgs e)
@@ -57,5 +58,7 @@ namespace FinalProject.Page
                 CVList.Children.Add(cv);
             }
         }
+
+
     }
 }

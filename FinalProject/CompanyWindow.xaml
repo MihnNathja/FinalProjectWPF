@@ -45,16 +45,12 @@
     <Grid>
         <Border CornerRadius="30">
             <Border.Background>
-                <ImageBrush ImageSource="/Image/background.jpg" Stretch="UniformToFill"
-                            Opacity="0.4"/>
+                <ImageBrush ImageSource="/Image/backgroundlogin.jpg" Stretch="UniformToFill"
+                            Opacity="0.7"/>
 
             </Border.Background>
         </Border>
-        <!--<Border>
-            <Border.Background>
-                <SolidColorBrush Color="White" Opacity="0"/>
-            </Border.Background>
-        </Border>-->
+        
         <Grid >
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="auto"/>
