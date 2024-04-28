@@ -10,52 +10,57 @@
         TextElement.FontSize="13"
         TextOptions.TextFormattingMode="Ideal"
         TextOptions.TextRenderingMode="Auto"
-        
+        Background="Transparent"
         FontFamily="{DynamicResource MaterialDesignFont}"
         mc:Ignorable="d"
-        Title="LoginWindow" Height="500" Width="800"
+        Title="LoginWindow" Height="600" Width="900"
         WindowStartupLocation="CenterScreen">
-    <Grid>
-
-
-
-
-
+    <Border Background="White">
         <Grid>
-            <Grid.Background>
-                <ImageBrush/>
-            </Grid.Background>
+            <Image Stretch="UniformToFill" Opacity="0.7" Source="/Image/backgroundlogin.jpg"/>
+            <Border Visibility="Visible" Background="#99000000" Width="400" Height="400" CornerRadius="30">
+                <Grid>
+                    
 
-            <StackPanel HorizontalAlignment="Center">
-                <TextBlock Text="Đăng Nhập" HorizontalAlignment="Center" Margin="20" FontWeight="Black" FontSize="40"/>
-
-
-                <TextBox x:Name="txtUserName" Width="350" Height="60"
-                         
-                         materialDesign:HintAssist.Hint="Tên đăng nhập"/>
+                    <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <TextBlock Text="Đăng Nhập" 
+                                   HorizontalAlignment="Center" Margin="20" 
+                                   FontWeight="Black" FontSize="40" Foreground="White"/>
 
 
-                <PasswordBox x:Name="pbPassword" Width="350" Height="60"
-                        TextBlock.FontSize="20"     
-                        materialDesign:HintAssist.Foreground="Green"
-                        materialDesign:HintAssist.Hint="Mật Khẩu"
-                        materialDesign:TextFieldAssist.UnderlineBrush="Green"/>
-                <StackPanel Orientation="Horizontal" Margin="10">
-                    <RadioButton x:Name="rdCompany" Content="Công ty" FontWeight="Bold"/>
-                    <RadioButton x:Name="rdJobApplicant" Content="Ứng Viên" Margin="20 0" FontWeight="Bold"/>
-                </StackPanel>
+                        <TextBox x:Name="txtUserName" Width="350" Height="60"
+             
+             materialDesign:HintAssist.Hint="Tên đăng nhập" Foreground="White"/>
 
-                <Button Content="Đăng ký" Margin="0 0 20 0" BorderThickness="0" FontWeight="Bold"
-                        Foreground="Green" Background="Transparent" FontSize="15" HorizontalAlignment="Right"
-                    Name="btnSignUp" Click="btnSignUp_Click"/>
 
-                <Button Content="Đăng Nhập"  FontSize="25" FontWeight="Bold"
-                    Margin="20" Click="btnLogin_Click">
+                        <PasswordBox x:Name="pbPassword" Width="350" Height="60"
+            TextBlock.FontSize="20"     
+            materialDesign:HintAssist.Foreground="LightBlue"
+            materialDesign:HintAssist.Hint="Mật Khẩu"
+            materialDesign:TextFieldAssist.UnderlineBrush="LightBlue"
+                                     Foreground="White"/>
+                        <StackPanel Orientation="Horizontal" Margin="10" >
+                            <RadioButton x:Name="rdCompany" Content="Công ty" Foreground="White" FontSize="15" FontWeight="Bold"/>
+                            <RadioButton x:Name="rdJobApplicant" Content="Ứng Viên" Margin="20 0" FontSize="15" Foreground="White" FontWeight="Bold"/>
+                        </StackPanel>
 
-                </Button>
+                        <Button Content="Đăng ký" Margin="0 0 20 0" BorderThickness="0" FontWeight="Bold"
+            Foreground="White" Background="Transparent" FontSize="25" HorizontalAlignment="Right"
+        Name="btnSignUp" Click="btnSignUp_Click"/>
 
-            </StackPanel>
+                        <Button Content="Đăng Nhập"  FontSize="25" FontWeight="Bold"
+        Margin="20" Click="btnLogin_Click">
+
+                        </Button>
+
+                    </StackPanel>
+                </Grid>
+            </Border>
+
+
+
+
+
         </Grid>
-
-    </Grid>
+    </Border>
 </Window>
