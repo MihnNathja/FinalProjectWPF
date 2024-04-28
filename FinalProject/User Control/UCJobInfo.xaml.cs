@@ -99,9 +99,12 @@ namespace FinalProject
             }
         }
 
+        private void UserControl_Loaded(object sender, RoutedEventArgs e)
+        {
 
+        }
 
-        private void UCJobInfo_MouseDown(object sender, MouseButtonEventArgs e)
+        private void btnDetail_Click(object sender, RoutedEventArgs e)
         {
             JobDAO jobDAO = new JobDAO();
             Job job = jobDAO.GetObject(this.ID);
@@ -112,14 +115,9 @@ namespace FinalProject
             }
             else if (Type == "Employee")
             {
-                WJobInfoDetail wJobInfoDetail = new WJobInfoDetail(User,job);
+                WJobInfoDetail wJobInfoDetail = new WJobInfoDetail(User, job);
                 wJobInfoDetail.ShowDialog();
             }
-        }
-
-        private void UserControl_Loaded(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }
