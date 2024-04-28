@@ -6,130 +6,140 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:FinalProject"
              mc:Ignorable="d" 
-             d:DesignHeight="155" d:DesignWidth="435"
-             MinHeight="155"
-             MinWidth="435"
-             MaxWidth="600"
+              xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+                TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+                TextElement.FontWeight="Regular"
+                TextElement.FontSize="13"
+                TextOptions.TextFormattingMode="Ideal"
+                TextOptions.TextRenderingMode="Auto"
+                Background="{DynamicResource MaterialDesignPaper}"
+                FontFamily="{DynamicResource MaterialDesignFont}"
+             d:DesignHeight="300" d:DesignWidth="700"
+             
              MouseDown="UCJobInfo_MouseDown"
             >
-    <Border  BorderBrush="Black" BorderThickness="0.8"
-            CornerRadius="5"
-            Margin="10"
-            >
-        <Border.Background>
-            <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
-                <GradientStop Offset="0.0" Color="#9CD1FA" />
-                <GradientStop Offset="1.0" Color="#5D8DFF" />
-            </LinearGradientBrush>
-        </Border.Background>
-        <Grid>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="3*"></ColumnDefinition>
-                <ColumnDefinition Width="7*"></ColumnDefinition>
-            </Grid.ColumnDefinitions>
-            <Border 
-                Background="White" 
-                CornerRadius="100"
-                VerticalAlignment="Center"
-                HorizontalAlignment="Center" 
-                 Height="125">
-                <!--Logo Job-->
-                <Ellipse x:Name="Logo" Width="120" Height="120" HorizontalAlignment="Center" VerticalAlignment="Center" IsEnabled="False">
-                    <Ellipse.Fill>
-                        <ImageBrush ImageSource="pack://application:,,,/FinalProject;component/Image/logo.png" Stretch="UniformToFill"/>
-                    </Ellipse.Fill>
-                </Ellipse>
 
-            </Border>
-
-            <!--Information of Job-->
-
-            <Grid Grid.Column="1">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="8*"></RowDefinition>
-                    <RowDefinition Height="8*"></RowDefinition>
-                    <RowDefinition Height="5*"></RowDefinition>
-                </Grid.RowDefinitions>
-                <!--Title-->
-                <Grid Grid.Row="0">
-                    <!--TITLE OF JOB-->
-                    <Label x:Name="JobName"
-                        HorizontalAlignment="Center" 
-                        VerticalAlignment="Center"
-                        FontSize="20"
-                        FontWeight="Bold"
-                    />
-
-                    <Button                                     
-                        x:Name="btnDeleteJob"               
-                        HorizontalAlignment="Right" 
-                        Height="25" 
-                        Width="25"
-                        Margin="0,10,10,0" 
-                        Padding="-10"
-                        VerticalAlignment="Top" 
-                        Click="btnDeleteJob_Click">
-                        <Ellipse 
-                            Height="25" 
-                            Width="25" IsEnabled="False">
+    <materialDesign:Card  Margin="8"  UniformCornerRadius="20"
+                        Width="650" Height="250">
+        <Border BorderBrush="Black" BorderThickness="1.5" CornerRadius="20">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.4*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid>
+                    <StackPanel>
+                        <Ellipse x:Name="Logo" Width="100" Height="100" HorizontalAlignment="Center" 
+                                 VerticalAlignment="Top" IsEnabled="False"
+                                 Margin="30">
                             <Ellipse.Fill>
-                                <ImageBrush ImageSource="pack://application:,,,/FinalProject;component/Image/btnDelete.png"/>
+                                <ImageBrush ImageSource="pack://application:,,,/FinalProject;component/Image/logo.png" Stretch="UniformToFill"/>
                             </Ellipse.Fill>
                         </Ellipse>
-                    </Button>
+                        <Button Width="150" Content="Chi tiết" FontWeight="Black"
+                                Foreground="White">
+                            
+                        </Button>
 
-                </Grid>
-                <!--Company-->
-                <Grid Grid.Row="1">
-                    <StackPanel Orientation="Horizontal" Margin="10 0">
-                        <!--CompanyName-->
-                        <Icon:PackIconMaterial Kind="Factory" VerticalAlignment="Top" Margin="0 2"/>
-                        <TextBlock x:Name="CompanyName"
-                            Margin="5 0"
-                            VerticalAlignment="Top"
-                            FontSize="18"
-                            FontWeight="Bold"/>
                     </StackPanel>
+                    <Separator
+    
+                        Margin="0"
+                        Width="1"
+                        Height="180"
+                        Background="Black"
+                        HorizontalAlignment="Right"
+                        Style="{StaticResource {x:Static ToolBar.SeparatorStyleKey}}" />
+
+
                 </Grid>
-                <Grid Grid.Row="2">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition ></ColumnDefinition>
-                        <ColumnDefinition ></ColumnDefinition>
+               
+                
+                <Grid Grid.Column="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="0.2*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="auto"/>
+                    </Grid.RowDefinitions>
+                    <StackPanel>
+                        <TextBlock
+                            Margin="5" x:Name="JobName"
+                            Style="{StaticResource MaterialDesignSubtitle1TextBlock}"
+                            Text="Job Name" FontSize="35"  HorizontalAlignment="Center"/>
+                                                    <Button                                     
+                               x:Name="btnDeleteJob"               
+                                HorizontalAlignment="Right" 
+                                Height="25" 
+                                Width="25"
+                                Margin="0,-45,10,0" 
+                                Padding="-10"
+                                VerticalAlignment="Top" 
+                                Click="btnDeleteJob_Click">
+                                                        <Ellipse 
+                                 Height="25" 
+                                  Width="25" IsEnabled="False">
+                                <Ellipse.Fill>
+                                    <ImageBrush ImageSource="pack://application:,,,/FinalProject;component/Image/btnDelete.png"/>
+                                </Ellipse.Fill>
+                            </Ellipse>
+                        </Button>
+                    </StackPanel>
+                   
+                        
+                        <StackPanel Margin="5 0" Grid.Row="1">
+                            <StackPanel Margin="0 10" Orientation="Horizontal" Grid.Row="3"
+                            TextElement.FontSize="15" >
+                            <materialDesign:PackIcon Kind="Domain" />
+                            <TextBlock Text="Công ty: " VerticalAlignment="Center"/>
+                                <TextBlock x:Name="CompanyName" VerticalAlignment="Center" 
+                    TextWrapping="Wrap"/>
+                            </StackPanel>
+                            <StackPanel Margin="0 10" Orientation="Horizontal" Grid.Row="3"
+                    TextElement.FontSize="15" >
+                            <materialDesign:PackIcon Kind="CalendarMonth" />
+                            <TextBlock Text="Thời gian làm việc: " VerticalAlignment="Center"/>
+                                <TextBlock x:Name="a" VerticalAlignment="Center" 
+                    TextWrapping="Wrap"/>
+                            </StackPanel>
 
-                    </Grid.ColumnDefinitions>
+                            <StackPanel Margin="0 10" Orientation="Horizontal" 
+    TextElement.FontSize="15" >
+                            <materialDesign:PackIcon Kind="CurrencyUsd" />
+                            <TextBlock Text="Mức lương: " VerticalAlignment="Center"/>
+                                <TextBlock x:Name="Salary" VerticalAlignment="Center" 
+        TextWrapping="Wrap"/>
+                            </StackPanel>
 
-                    <!-- Label Worse Code Below -->
-                    <Grid Grid.Column="0" HorizontalAlignment="Center">
-                        <StackPanel Orientation="Horizontal">
-                            <Icon:PackIconMaterial Kind="HandCoin" VerticalAlignment="Center"/>
-                            <!--Salary Range-->
-                            <TextBlock x:Name="Salary"
-                                HorizontalAlignment="Center" 
-                                FontStyle="Italic" 
-                                FontWeight="DemiBold"
-                                VerticalAlignment="Center"
-                                FontSize="15"
-                                Margin="5"
-                                >
-                            </TextBlock>
+                            <StackPanel Margin="0 10" Orientation="Horizontal" Grid.Row="4" 
+TextElement.FontSize="15" >
+                            <materialDesign:PackIcon Kind="MapMarker" />
+                            <TextBlock Grid.Column="1" Text="Địa điểm: " VerticalAlignment="Center" />
+                                <TextBlock x:Name="JobLocation" VerticalAlignment="Center" 
+Text="" TextWrapping="Wrap"/>
+                            </StackPanel>
                         </StackPanel>
-                    </Grid>
-                    <Grid Grid.Column="1">
-                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                            <Icon:PackIconMaterial Kind="GoogleMaps" VerticalAlignment="Center" />
-                            <!--Location-->
-                            <TextBlock x:Name="JobLocation"
-                                HorizontalAlignment="Center" 
-                                FontStyle="Italic" 
-                                VerticalAlignment="Center"
-                                FontSize="15"
-                                FontWeight="DemiBold"
-                                Margin="5"/>
-
-                        </StackPanel>
-                    </Grid>
+                        
+                   
                 </Grid>
+               
+
+
+
+               
+
+
+
+
+
+
+
+
             </Grid>
-        </Grid>
-    </Border>
+        </Border>
+        
+    </materialDesign:Card>
+    
+        
+    
+
 </UserControl>

@@ -64,7 +64,7 @@ namespace FinalProject
             InitializeComponent();
             ID = job.Id;
             CompanyName.Text = job.CompanyName;
-            JobName.Content = job.JobName;
+            JobName.Text = job.JobName;
             Salary.Text = job.Salary;
             JobLocation.Text = job.JobLocation;
             if (Type == "Employee")
