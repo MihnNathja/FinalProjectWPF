@@ -101,7 +101,7 @@ namespace FinalProject.Page {
         #line hidden
         
         
-        #line 92 "..\..\..\..\Pages\DocumentPage.xaml"
+        #line 91 "..\..\..\..\Pages\DocumentPage.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Button btnSave;
         
@@ -120,7 +120,7 @@ namespace FinalProject.Page {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/FinalProject;component/pages/documentpage.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/FinalProject;V1.0.0.0;component/pages/documentpage.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Pages\DocumentPage.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
@@ -162,7 +162,7 @@ namespace FinalProject.Page {
             case 8:
             this.btnSave = ((System.Windows.Controls.Button)(target));
             
-            #line 92 "..\..\..\..\Pages\DocumentPage.xaml"
+            #line 91 "..\..\..\..\Pages\DocumentPage.xaml"
             this.btnSave.Click += new System.Windows.RoutedEventHandler(this.btnSave_Click);
             
             #line default

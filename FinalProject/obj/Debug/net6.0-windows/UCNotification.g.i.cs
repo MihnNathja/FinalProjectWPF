@@ -85,7 +85,7 @@ namespace FinalProject {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/FinalProject;component/ucnotification.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/FinalProject;V1.0.0.0;component/ucnotification.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\UCNotification.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

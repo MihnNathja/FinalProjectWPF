@@ -61,7 +61,7 @@ namespace FinalProject {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/FinalProject;component/wcompanyacceptcv.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/FinalProject;V1.0.0.0;component/wcompanyacceptcv.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\WCompanyAcceptCV.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
