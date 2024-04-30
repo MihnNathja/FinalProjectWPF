@@ -5,123 +5,122 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:FinalProject"
-             d:DesignHeight="155" d:DesignWidth="435"
-             MinHeight="155"
-             MinWidth="435"
-             mc:Ignorable="d" MouseDown="UserControl_MouseDown" >
-    <Border  BorderBrush="Black" BorderThickness="0.8"
-            CornerRadius="5"
-            Margin="10"
+             mc:Ignorable="d" 
+              xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+                TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+                TextElement.FontWeight="Regular"
+                TextElement.FontSize="13"
+                TextOptions.TextFormattingMode="Ideal"
+                TextOptions.TextRenderingMode="Auto"
+                Background="{DynamicResource MaterialDesignPaper}"
+                FontFamily="{DynamicResource MaterialDesignFont}"
+             d:DesignHeight="250" d:DesignWidth="700"
+             Margin="10"
+             HorizontalAlignment="Stretch"
             >
-        <Border.Background>
-            <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
-                <GradientStop Offset="0.0" Color="#9CD1FA" />
-                <GradientStop Offset="1.0" Color="#5D8DFF" />
-            </LinearGradientBrush>
-        </Border.Background>
-        <Grid>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="3*"></ColumnDefinition>
-                <ColumnDefinition Width="7*"></ColumnDefinition>
-            </Grid.ColumnDefinitions>
-            <Border 
-                Background="White" 
-                CornerRadius="100"
-                VerticalAlignment="Center"
-                HorizontalAlignment="Center" 
-                 Height="125">
-                <!--Logo Job-->
-                <Ellipse x:Name="Logo" Width="120" Height="120" HorizontalAlignment="Center" VerticalAlignment="Center" IsEnabled="False">
-                    <Ellipse.Fill>
-                        <ImageBrush ImageSource="pack://application:,,,/FinalProject;component/Image/logo.png" Stretch="UniformToFill"/>
-                    </Ellipse.Fill>
-                </Ellipse>
 
-            </Border>
-
-            <!--Information of Job-->
-
-            <Grid Grid.Column="1">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="8*"></RowDefinition>
-                    <RowDefinition Height="8*"></RowDefinition>
-                    <RowDefinition Height="5*"></RowDefinition>
-                </Grid.RowDefinitions>
-                <!--Title-->
-                <Grid Grid.Row="0">
-                    <!--TITLE OF JOB-->
-                    <Label x:Name="JobName"
-                        HorizontalAlignment="Center" 
-                        VerticalAlignment="Center"
-                        FontSize="20"
-                        FontWeight="Bold"
-                    />
-                    <Label
-                        x:Name="NumberOfEmployee"   
-                        VerticalAlignment="Center"
+    <materialDesign:Card  UniformCornerRadius="20"
+                          Width="650" Height="250">
+        <Border Background="GhostWhite" BorderBrush="Silver" BorderThickness="1" CornerRadius="20">
+            <Border.Effect>
+                <DropShadowEffect Color="Black"
+                         ShadowDepth="0"
+                         BlurRadius="50"
+                         Opacity="0.5"/>
+            </Border.Effect>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="2*"/>
+                </Grid.ColumnDefinitions>
+                <Grid>
+                    <StackPanel>
+                        <Ellipse x:Name="Logo" Width="100" Height="100" HorizontalAlignment="Center" 
+                                 VerticalAlignment="Top" IsEnabled="False"
+                                 Margin="30">
+                            <Ellipse.Fill>
+                                <ImageBrush ImageSource="pack://application:,,,/FinalProject;component/Image/logo.png" Stretch="UniformToFill"/>
+                            </Ellipse.Fill>
+                        </Ellipse>
+                        <WrapPanel Margin="5 -15 0 0">
+                            <materialDesign:PackIcon Kind="Person" VerticalAlignment="Top"/>
+                            <TextBlock 
+                            Text="Người ứng tuyển:"
+                            Margin="0"
+                            TextElement.FontSize="15"
+                            VerticalAlignment="Center" 
+                            HorizontalAlignment="Left"
+                            />
+                        </WrapPanel>
+                        <TextBlock 
+                            x:Name="NumberOfEmployee" 
+                            Text="10" 
+                            Margin="0 0 0 5"
+                            FontSize="25"
+                            FontWeight="ExtraBold"
+                            VerticalAlignment="Center" 
+                            HorizontalAlignment="Center"/>
+                        <Button Width="150" Content="Chi tiết" FontWeight="Black"
+                                Foreground="White"
+                                x:Name="btnDetail"
+                                Click="btnDetail_Click"/>
+                    </StackPanel>
+                    <Separator
+    
+                        Margin="5 0"
+                        Width="1"
+                        Height="180"
+                        Background="Black"
                         HorizontalAlignment="Right"
-                        Margin="10 0"
-                        FontSize="20"
-                        FontWeight="Bold"
-                        Foreground="Red"
-                    />
+                        Style="{StaticResource {x:Static ToolBar.SeparatorStyleKey}}" />
+
 
                 </Grid>
-                <!--Company-->
-                <Grid Grid.Row="1">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="201*"/>
-                        <ColumnDefinition Width="89*"/>
-                    </Grid.ColumnDefinitions>
-                    <StackPanel Orientation="Horizontal" Margin="10,0,10,0" Grid.ColumnSpan="2">
-                        <!--CompanyName-->
-                        <Icon:PackIconMaterial Kind="Factory" VerticalAlignment="Top" Margin="0 2"/>
-                        <TextBlock x:Name="CompanyName"
-                            Margin="5 0"
-                            VerticalAlignment="Top"
-                            FontSize="18"
-                            FontWeight="Bold"/>
+
+
+                <Grid Grid.Column="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="0.2*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="auto"/>
+                    </Grid.RowDefinitions>
+                    <StackPanel Margin="0 5 0 -10">
+                        <TextBlock
+                            Margin="5" x:Name="JobName"
+                            Text="Tên Công việc"
+                            FontWeight="Bold"
+                            Style="{StaticResource MaterialDesignSubtitle1TextBlock}"
+                            FontSize="35"  HorizontalAlignment="Center" TextWrapping="Wrap"/>
+                    </StackPanel>
+
+
+                    <StackPanel Margin="5 10 0 0" Grid.Row="1">
+                        <StackPanel Margin="0 10" Orientation="Horizontal" Grid.Row="3" TextElement.FontSize="15" >
+                            <materialDesign:PackIcon Kind="Domain" VerticalAlignment="Top"/>
+                            <TextBlock Text="Công ty: " VerticalAlignment="Top"/>
+                            <TextBlock x:Name="CompanyName" VerticalAlignment="Top" Text="" MaxWidth="320" TextWrapping="Wrap"/>
+                        </StackPanel>
+
+                        <StackPanel Margin="0 10" Orientation="Horizontal" Grid.Row="3" TextElement.FontSize="15" >
+                            <materialDesign:PackIcon Kind="CalendarMonth" />
+                            <TextBlock Text="Thời gian làm việc: " VerticalAlignment="Top"/>
+                            <TextBlock x:Name="WorkTime" VerticalAlignment="Top" Text="" MaxWidth="320" TextWrapping="Wrap"/>
+                        </StackPanel>
+
+                        <StackPanel Margin="0 10" Orientation="Horizontal" TextElement.FontSize="15" >
+                            <materialDesign:PackIcon Kind="CurrencyUsd" VerticalAlignment="Top" />
+                            <TextBlock Text="Mức lương: " VerticalAlignment="Top" />
+                            <TextBlock x:Name="Salary" VerticalAlignment="Top" Text="" MaxWidth="320" TextWrapping="Wrap"/>
+                        </StackPanel>
+
+                        <StackPanel Margin="0 10" Orientation="Horizontal" Grid.Row="4" TextElement.FontSize="15" >
+                            <materialDesign:PackIcon Kind="MapMarker" VerticalAlignment="Top" />
+                            <TextBlock Grid.Column="1" Text="Địa điểm: " VerticalAlignment="Top" />
+                            <TextBlock x:Name="JobLocation" VerticalAlignment="Top" Text="" MaxWidth="320" TextWrapping="Wrap"/>
+                        </StackPanel>
                     </StackPanel>
                 </Grid>
-                <Grid Grid.Row="2">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition ></ColumnDefinition>
-                        <ColumnDefinition ></ColumnDefinition>
-
-                    </Grid.ColumnDefinitions>
-
-
-                    <Grid Grid.Column="0" HorizontalAlignment="Center">
-                        <StackPanel Orientation="Horizontal">
-                            <Icon:PackIconMaterial Kind="HandCoin" VerticalAlignment="Center"/>
-                            <!--Salary Range-->
-                            <TextBlock x:Name="Salary"
-                                HorizontalAlignment="Center" 
-                                FontStyle="Italic" 
-                                FontWeight="DemiBold"
-                                VerticalAlignment="Center"
-                                FontSize="15"
-                                Margin="5"
-                                >
-                            </TextBlock>
-                        </StackPanel>
-                    </Grid>
-                    <Grid Grid.Column="1">
-                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                            <Icon:PackIconMaterial Kind="GoogleMaps" VerticalAlignment="Center" />
-                            <!--Location-->
-                            <TextBlock x:Name="JobLocation"
-                                HorizontalAlignment="Center" 
-                                FontStyle="Italic" 
-                                VerticalAlignment="Center"
-                                FontSize="15"
-                                FontWeight="DemiBold"
-                                Margin="5"/>
-
-                        </StackPanel>
-                    </Grid>
-                </Grid>
             </Grid>
-        </Grid>
-    </Border>
+        </Border>
+    </materialDesign:Card>
 </UserControl>
