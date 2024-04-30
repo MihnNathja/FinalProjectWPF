@@ -12,9 +12,9 @@ TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\App.xaml
 291312022873
 
-47-1081852447
+461579970135
 231849205432
 CompanyWindow.xaml;CreateJob.xaml;CVWindow.xaml;JobApplicantWindow.xaml;LoginWindow.xaml;Pages\CreatJobWindow.xaml;Pages\CVPage.xaml;Pages\DocumentPage.xaml;Pages\PageJob.xaml;Pages\PCompany.xaml;Pages\PCompanyJobState.xaml;Pages\PNotification.xaml;SignUpCompany.xaml;Style\MainStyle.xaml;Theme\Theme.xaml;UCNotification.xaml;User Control\UCCompanyInfo.xaml;User Control\UCCompanyJob.xaml;User Control\UCCV.xaml;User Control\UCCVApply.xaml;User Control\UCCVEmployee.xaml;User Control\UCJobInfo.xaml;User Control\UCPopUp.xaml;WCompanyAcceptCV.xaml;WInterview.xaml;WJobInfoDetail.xaml;WSelectCV.xaml;WSignUp.xaml;WSignUpJobApplicant.xaml;
 
-False
+True
 

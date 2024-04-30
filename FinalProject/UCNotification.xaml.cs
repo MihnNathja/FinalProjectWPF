@@ -57,7 +57,7 @@ namespace FinalProject
             if (IsAccepted == true)
             {
                 txtbIsAccept.Text = "Đã được duyệt";
-                txtbIsAccept.Foreground = Brushes.Green;
+                txtbIsAccept.Foreground = Brushes.LightGreen;
                 txtbDateInterview.Text = DateInterview.ToString();
             }
             else if (IsAccepted == false)

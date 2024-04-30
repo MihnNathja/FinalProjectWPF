@@ -27,6 +27,10 @@ namespace FinalProject
             InitializeComponent();
         }
 
+        private void btnBack_click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
 
         private void btnSignUp_Click(object sender, RoutedEventArgs e)
         {
