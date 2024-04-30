@@ -16,10 +16,10 @@
         Title="LoginWindow" Height="600" Width="900"
         WindowStartupLocation="CenterScreen">
     <Border Background="White">
-        <Grid>
-            <Image Stretch="UniformToFill" Opacity="0.7" Source="/Image/backgroundlogin.jpg"/>
+        <Grid TextElement.Foreground="White" TextElement.FontWeight="Bold">
+            <Image Stretch="UniformToFill"  Source="/Image/backgroundlogin.jpg"/>
             <Border Visibility="Visible" Background="#99000000" Width="400" Height="400" CornerRadius="30">
-                <Grid>
+                <Grid >
                     
 
                     <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
@@ -30,11 +30,11 @@
 
                         <TextBox x:Name="txtUserName" Width="350" Height="60"
              
-             materialDesign:HintAssist.Hint="Tên đăng nhập" Foreground="White"/>
+             materialDesign:HintAssist.Hint="Tên đăng nhập" Foreground="White" FontSize="25"/>
 
 
-                        <PasswordBox x:Name="pbPassword" Width="350" Height="60"
-            TextBlock.FontSize="20"     
+                        <PasswordBox x:Name="pbPassword" Width="350" Height="62"
+            TextBlock.FontSize="25"     
             materialDesign:HintAssist.Foreground="LightBlue"
             materialDesign:HintAssist.Hint="Mật Khẩu"
             materialDesign:TextFieldAssist.UnderlineBrush="LightBlue"
@@ -47,6 +47,15 @@
                         <Button Content="Đăng ký" Margin="0 0 20 0" BorderThickness="0" FontWeight="Bold"
             Foreground="White" Background="Transparent" FontSize="25" HorizontalAlignment="Right"
         Name="btnSignUp" Click="btnSignUp_Click"/>
+                        <Popup x:Name="OptionsPopup" PlacementTarget="{Binding ElementName=btnSignUp}" Placement="Bottom" StaysOpen="False">
+                            <Border BorderThickness="1" BorderBrush="Gray" Background="White">
+                                <StackPanel>
+                                    <Button Content="Doanh nghiệp"  Click="btnCompany_Click"/>
+                                    <Button Content="Ứng viên"  Click="btnEmployee_Click"/>
+                                </StackPanel>
+                            </Border>
+                        </Popup>
+
 
                         <Button Content="Đăng Nhập"  FontSize="25" FontWeight="Bold"
         Margin="20" Click="btnLogin_Click">

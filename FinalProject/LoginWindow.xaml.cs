@@ -31,9 +31,22 @@ namespace FinalProject
 
         private void btnSignUp_Click(object sender, RoutedEventArgs e)
         {
-            WSignUp wSignUp = new WSignUp();
-            wSignUp.ShowDialog();
+            OptionsPopup.IsOpen = true;
         }
+        private void btnCompany_Click(object sender, RoutedEventArgs e)
+        {
+            SignUpCompany signUpCompany = new SignUpCompany();
+            signUpCompany.Show();
+            OptionsPopup.IsOpen= false;
+        }
+        private void btnEmployee_Click(object sender, RoutedEventArgs e)
+        {
+            WSignUpJobApplicant sign = new WSignUpJobApplicant();
+            sign.Show();
+            OptionsPopup.IsOpen = false;
+        }
+
+        
         private void btnLogin_Click(object sender, RoutedEventArgs e)
         {
             /*Khởi tạo đối tượng User và DAO của nó*/
