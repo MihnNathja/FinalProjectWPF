@@ -40,18 +40,17 @@ namespace FinalProject.User_Control
             InitializeComponent();
             Job = job;
             ID = Job.Id;
-            NumberOfEmployee.Content = cVDAO.GetNumberCVOfJob(ID);
+            NumberOfEmployee.Text = cVDAO.GetNumberCVOfJob(ID);
             CompanyName.Text = Job.CompanyName;
-            JobName.Content = Job.JobName;
+            JobName.Text = Job.JobName;
             Salary.Text = Job.Salary;
             JobLocation.Text = Job.JobLocation;
         }
 
-
-        private void UserControl_MouseDown(object sender, MouseButtonEventArgs e)
+        private void btnDetail_Click(object sender, RoutedEventArgs e)
         {
             // hiển thị ra danh sách các CV apply vào công việc này
-            if (NumberOfEmployee.Content != "0")
+            if (NumberOfEmployee.Text != "0")
             {
                 WCompanyAcceptCV wCompanyAcceptCV = new WCompanyAcceptCV(Company, Job);
                 wCompanyAcceptCV.ShowDialog();
@@ -60,7 +59,6 @@ namespace FinalProject.User_Control
             {
                 MessageBox.Show("Công việc này không có bất kỳ ứng viên nào cả!", "Thông báo");
             }
-
         }
     }
 }

@@ -37,15 +37,20 @@ FontSize="40" FontWeight="Black"/>
                         <StackPanel Margin="10">
 
                             <TextBox x:Name="txtFullName" Margin="10 5"
-                  materialDesign:HintAssist.Hint="Họ và tên"/>
+                                    materialDesign:HintAssist.Hint="Họ và tên"/>
 
-
-                            <ComboBox x:Name="cbbGender" Width="200" Margin="5 0" Style="{StaticResource MaterialDesignOutlinedComboBox}" 
-                               Height="50" materialDesign:TextFieldAssist.TextFieldCornerRadius="30"
-                               
-                               >
-                                <ComboBoxItem Content="Nam"/>
-                                <ComboBoxItem Content="Nữ" />
+                            <ComboBox
+                                x:Name="cbbGender"
+                                Width="400"
+                                Height="50"
+                                Margin="5 0"
+                                materialDesign:HintAssist.Hint="Giới tính"
+                                materialDesign:TextFieldAssist.TextFieldCornerRadius="30"
+                                Style="{StaticResource MaterialDesignOutlinedComboBox}">
+                                <ComboBoxItem
+                                Content="Nam" />
+                                <ComboBoxItem
+                                Content="Nữ" />
                             </ComboBox>
 
 

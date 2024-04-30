@@ -5,6 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FinalProject"
         mc:Ignorable="d"
+                xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+                TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+                TextElement.FontWeight="Regular"
+                TextElement.FontSize="13"
+                TextOptions.TextFormattingMode="Ideal"
+                TextOptions.TextRenderingMode="Auto"
+                Background="{DynamicResource MaterialDesignPaper}"
+                FontFamily="{DynamicResource MaterialDesignFont}"
         Title="WJobInfoDetail" Height="500" Width="800">
     <Grid>
         <Grid.RowDefinitions>
@@ -19,6 +27,7 @@
 
             <StackPanel Margin="5 10 10 10">
                 <TextBlock Text="Doanh Nghiệp" FontWeight="Bold"/>
+                <materialDesign:PackIcon Kind="Domain" VerticalAlignment="Top"/>
                 <TextBlock x:Name="txtbCompanyName" Margin="10 5"
                            Text="{Binding CompanyName}" TextWrapping="Wrap"
                            Style="{StaticResource MaterialDesignBody1TextBlock}"/>
@@ -33,11 +42,12 @@
                                Text="{Binding Experience}" TextWrapping="Wrap"
                                Style="{StaticResource MaterialDesignBody1TextBlock}"/>
 
+                <materialDesign:PackIcon Kind="MapMarker" VerticalAlignment="Top" />
                 <TextBlock Text="Địa điểm" FontWeight="Bold"/>
                 <TextBlock x:Name="txtbLocation" Margin="10 5" Text="{Binding JobLocation}" TextWrapping="Wrap"
                            Style="{StaticResource MaterialDesignBody1TextBlock}"/>
 
-
+                <materialDesign:PackIcon Kind="CurrencyUsd" VerticalAlignment="Top" />
                 <TextBlock Text="Mức Lương" FontWeight="Bold"/>
                 <TextBlock x:Name="txtbSalary" Margin="10 5" Text="{Binding Salary}" TextWrapping="Wrap"
                             Style="{StaticResource MaterialDesignBody1TextBlock}"/>
@@ -59,7 +69,8 @@
                 <TextBlock Text="Quyền lợi" FontWeight="Bold"/>
                 <TextBlock  Margin="10 5" Height="100" Text="{Binding Benefit}" TextWrapping="Wrap"
                             Style="{StaticResource MaterialDesignBody1TextBlock}"/>
-
+                
+                <materialDesign:PackIcon Kind="CalendarMonth" />
                 <TextBlock Text="Thời gian làm việc" FontWeight="Bold"/>
                 <TextBlock  Margin="10 5" Text="{Binding WorkTime}" TextWrapping="Wrap"
                             Style="{StaticResource MaterialDesignBody1TextBlock}"/>
