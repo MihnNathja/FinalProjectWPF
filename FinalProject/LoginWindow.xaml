@@ -44,9 +44,14 @@
                             <RadioButton x:Name="rdJobApplicant" Content="Ứng Viên" Margin="20 0" FontSize="15" Foreground="White" FontWeight="Bold"/>
                         </StackPanel>
 
-                        <Button Content="Đăng ký" Margin="0 0 20 0" BorderThickness="0" FontWeight="Bold"
-            Foreground="White" Background="Transparent" FontSize="25" HorizontalAlignment="Right"
-        Name="btnSignUp" Click="btnSignUp_Click"/>
+
+                        <Button Content="Đăng Nhập"  FontSize="25" FontWeight="Bold"
+                                Margin="20 10 20 0" Click="btnLogin_Click"/>
+
+
+                        <Button Content="Đăng ký" Margin="20 0" BorderThickness="0" FontWeight="Bold"
+                            Foreground="White" Background="Transparent" FontSize="15" HorizontalAlignment="Center"
+                            Name="btnSignUp" Click="btnSignUp_Click"/>
                         <Popup x:Name="OptionsPopup" PlacementTarget="{Binding ElementName=btnSignUp}" Placement="Bottom" StaysOpen="False">
                             <Border BorderThickness="1" BorderBrush="Gray" Background="White">
                                 <StackPanel>
@@ -55,12 +60,6 @@
                                 </StackPanel>
                             </Border>
                         </Popup>
-
-
-                        <Button Content="Đăng Nhập"  FontSize="25" FontWeight="Bold"
-        Margin="20" Click="btnLogin_Click">
-
-                        </Button>
 
                     </StackPanel>
                 </Grid>
