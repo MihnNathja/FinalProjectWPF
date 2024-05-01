@@ -47,8 +47,7 @@ FontSize="40" FontWeight="Black"/>
                         </Grid.ColumnDefinitions>
                         <StackPanel Margin="10">
 
-                            <TextBox x:Name="txtFullName" Margin="10 5"
-                                materialDesign:HintAssist.Hint="Họ và tên" FontSize="25"/>
+                            <TextBox x:Name="txtFullName" Margin="10 5" materialDesign:HintAssist.Hint="Họ và tên" FontSize="25"/>
 
 
                             <ComboBox
