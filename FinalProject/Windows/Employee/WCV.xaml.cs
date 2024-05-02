@@ -40,11 +40,8 @@ namespace FinalProject
             DataContext = cV;
             EmployeeDAO employeeDAO = new EmployeeDAO();
             Employee = employeeDAO.GetEmployee(cV.ID);
-            MessageBox.Show(Employee.DateOfBirth.ToString());
-            txtSDT.Text = Employee.Phone;
-            txtAddress.Text = Employee.EmployeeLocation;
-            txtCCCD.Text = Employee.Cccd;
-            cbbGender.Text = Employee.Gender;
+            this.IsEnabled = false;
+            btnSave.Visibility = Visibility.Collapsed;
         }
 
         public Employee Employee { get => employee; set => employee = value; }
@@ -71,11 +68,11 @@ namespace FinalProject
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-/*            dtpDateOfBirtday.SelectedDate = Employee.DateOfBirth;
+            dtpDateOfBirtday.Text = Employee.DateOfBirth.ToString();
             txtSDT.Text = Employee.Phone;
             txtAddress.Text = Employee.EmployeeLocation;
             txtCCCD.Text = Employee.Cccd;
-            cbbGender.SelectedItem = Employee.Gender;*/
+            cbbGender.SelectedItem = Employee.Gender;
         }
     }
 }

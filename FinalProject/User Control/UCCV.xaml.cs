@@ -60,8 +60,7 @@ namespace FinalProject
 
         private void btnCVDetail_Click(object sender, RoutedEventArgs e)
         {
-            WCV WCV = new WCV();
-            WCV.DataContext = CV;
+            WCV WCV = new WCV(CV);
             WCV.Show();
         }
 
