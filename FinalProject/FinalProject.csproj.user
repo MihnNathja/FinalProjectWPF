@@ -7,22 +7,22 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
-    <Compile Update="CompanyWindow.xaml.cs">
+    <Compile Update="Windows\Company\CompanyWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="CreateJob.xaml.cs">
+    <Compile Update="Windows\Company\CreateJob.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="JobApplicantWindow.xaml.cs">
+    <Compile Update="Windows\Employee\JobApplicantWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="LoginWindow.xaml.cs">
+    <Compile Update="Windows\LoginSignUp\LoginWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Pages\CreatJobWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="CVWindow.xaml.cs">
+    <Compile Update="Windows\Employee\CVWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Pages\CVPage.xaml.cs" />
@@ -41,10 +41,10 @@
     <Compile Update="Pages\PNotification.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="SignUpCompany.xaml.cs">
+    <Compile Update="Windows\SignUpCompany.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="UCNotification.xaml.cs">
+    <Compile Update="User Control\UCNotification.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="User Control\UCCVEmployee.xaml.cs">
@@ -68,42 +68,42 @@
     <Compile Update="User Control\UCJobInfo.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="WCompanyAcceptCV.xaml.cs">
+    <Compile Update="Windows\Company\WCompanyAcceptCV.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="WInterview.xaml.cs">
+    <Compile Update="Windows\Company\WInterview.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="WJobInfoDetail.xaml.cs">
+    <Compile Update="Windows\Employee\WJobInfoDetail.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="WSelectCV.xaml.cs">
+    <Compile Update="Windows\Employee\WSelectCV.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="WSignUp.xaml.cs">
+    <Compile Update="Windows\LoginSignUp\WSignUp.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="WSignUpJobApplicant.xaml.cs">
+    <Compile Update="Windows\WSignUpJobApplicant.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Page Update="CompanyWindow.xaml">
+    <Page Update="Windows\Company\CompanyWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="CreateJob.xaml">
+    <Page Update="Windows\Company\CreateJob.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="JobApplicantWindow.xaml">
+    <Page Update="Windows\Employee\JobApplicantWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="LoginWindow.xaml">
+    <Page Update="Windows\LoginSignUp\LoginWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Pages\CreatJobWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="CVWindow.xaml">
+    <Page Update="Windows\Employee\CVWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Pages\CVPage.xaml">
@@ -124,7 +124,7 @@
     <Page Update="Pages\PNotification.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="SignUpCompany.xaml">
+    <Page Update="Windows\SignUpCompany.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Style\MainStyle.xaml">
@@ -133,7 +133,7 @@
     <Page Update="Theme\Theme.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="UCNotification.xaml">
+    <Page Update="User Control\UCNotification.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="User Control\UCCVEmployee.xaml">
@@ -157,22 +157,22 @@
     <Page Update="User Control\UCJobInfo.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="WCompanyAcceptCV.xaml">
+    <Page Update="Windows\Company\WCompanyAcceptCV.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="WInterview.xaml">
+    <Page Update="Windows\Company\WInterview.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="WJobInfoDetail.xaml">
+    <Page Update="Windows\Employee\WJobInfoDetail.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="WSelectCV.xaml">
+    <Page Update="Windows\Employee\WSelectCV.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="WSignUp.xaml">
+    <Page Update="Windows\LoginSignUp\WSignUp.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="WSignUpJobApplicant.xaml">
+    <Page Update="Windows\WSignUpJobApplicant.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
