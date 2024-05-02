@@ -46,6 +46,19 @@ namespace FinalProject.User_Control
         private void btnSelect_Click(object sender, RoutedEventArgs e)
         {
             cVDAO.Apply(Job, cv, Employee);
+            Close_Page();
+        }
+        private void Close_Page()
+        {
+            // Lấy ra cửa sổ chứa UserControl hiện tại
+            Window window = Window.GetWindow(this);
+
+            // Kiểm tra xem window có tồn tại và có phải là MainWindow không
+            if (window != null && window is WSelectCV)
+            {
+                // Gọi phương thức tải lại trang trong MainWindow
+                (window as WSelectCV).Close_Page();
+            }
         }
     }
 }

@@ -15,43 +15,45 @@
     mc:Ignorable="d" 
     MinHeight="256" MinWidth="200"
     >
-    <materialDesign:Flipper
-    materialDesign:ElevationAssist.Elevation="Dp0">
-        <materialDesign:Flipper.FrontContent>
-            <Grid
-                Width="200"
-                Height="256">
-                <Grid.RowDefinitions>
-                    <RowDefinition
-                        Height="160" />
-                    <RowDefinition
-                        Height="*" />
-                </Grid.RowDefinitions>
-                <materialDesign:ColorZone
-                    VerticalAlignment="Stretch"
-                    Mode="PrimaryLight">
-                    <materialDesign:PackIcon
-                        Width="128"
-                        Height="128"
-                        HorizontalAlignment="Center"
-                        VerticalAlignment="Center"
-                        Kind="AccountCircle" />
-                </materialDesign:ColorZone>
-                <StackPanel
-                    Grid.Row="1"
+    <Border BorderThickness="1" BorderBrush="Black" Margin="5">
+        <materialDesign:Flipper
+materialDesign:ElevationAssist.Elevation="Dp0">
+            <materialDesign:Flipper.FrontContent>
+                <Grid
+            Width="200"
+            Height="256">
+                    <Grid.RowDefinitions>
+                        <RowDefinition
+                    Height="160" />
+                        <RowDefinition
+                    Height="*" />
+                    </Grid.RowDefinitions>
+                    <materialDesign:ColorZone
+                VerticalAlignment="Stretch"
+                Mode="PrimaryLight">
+                        <materialDesign:PackIcon
+                    Width="128"
+                    Height="128"
                     HorizontalAlignment="Center"
-                    VerticalAlignment="Center">
-                    <TextBlock
-                        Text="{Binding CVTitle}" HorizontalAlignment="Center"/>
-                    <Button
-                        x:Name="btnSelect"
-                        Click="btnSelect_Click"
-                        Margin="0,4,0,0"
-                        TextBlock.Foreground="Black"
-                        Content="Xác nhận"
-                        Style="{StaticResource MaterialDesignFlatButton}" />
-                </StackPanel>
-            </Grid>
-        </materialDesign:Flipper.FrontContent>
-    </materialDesign:Flipper>
+                    VerticalAlignment="Center"
+                    Kind="AccountCircle" />
+                    </materialDesign:ColorZone>
+                    <StackPanel
+                Grid.Row="1"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center">
+                        <TextBlock
+                    Text="{Binding CVTitle}" HorizontalAlignment="Center"/>
+                        <Button
+                    x:Name="btnSelect"
+                    Click="btnSelect_Click"
+                    Margin="0,4,0,0"
+                    TextBlock.Foreground="Black"
+                    Content="Xác nhận"
+                     />
+                    </StackPanel>
+                </Grid>
+            </materialDesign:Flipper.FrontContent>
+        </materialDesign:Flipper>
+    </Border>
 </UserControl>

@@ -28,15 +28,16 @@
                          FontSize="30" 
                          HorizontalAlignment="Center"
                          FontWeight="Bold" 
-                         Height="70" 
+                         Height="45" 
                          TextAlignment="Center"
                          Margin="10" 
                          Width="auto"
+                         materialDesign:HintAssist.IsFloating="False"
                        >
 
                 </TextBox>
-                <StackPanel Orientation="Horizontal">
-                    <Border Width="150" Height="150" Margin="50 10" Background="White" CornerRadius="100"
+                <StackPanel Orientation="Horizontal" Height="120">
+                    <Border Width="100" Height="100" Margin="50 10" Background="White" CornerRadius="100"
                         HorizontalAlignment="Center">
                         <Ellipse>
                             <Ellipse.Fill>
@@ -46,7 +47,7 @@
                     </Border>
 
                     <TextBlock x:Name="txtEmployeeName" Text="{Binding EmployeeName}" FontSize="40" HorizontalAlignment="Center"
-                        FontWeight="Bold" Margin="0 50">
+                        FontWeight="Bold" VerticalAlignment="Center">
                     </TextBlock>
                 </StackPanel>
 
@@ -68,9 +69,9 @@
                          Text="{Binding EmployeeLocation}"/>
             </StackPanel>
             <StackPanel >
-                <TextBox Name="txtCareerGoal" materialDesign:HintAssist.Hint="Mục tiêu nghề nghiệp" Height="80" Margin="5"
+                <TextBox Name="txtCareerGoal" materialDesign:HintAssist.Hint="Mục tiêu nghề nghiệp" Height="110" Margin="5 10"
                             Text="{Binding Careergoals}"
-                           TextBlock.FontSize="20"
+                           TextBlock.FontSize="15"
                            VerticalAlignment="Top"
 
                            AcceptsReturn="True"
@@ -78,9 +79,9 @@
                            TextWrapping="Wrap"
                            VerticalScrollBarVisibility="Auto"/>
             </StackPanel>
-            <TextBox Name="txtSkill" materialDesign:HintAssist.Hint="Kỹ năng" Height="60" Margin="5"
+            <TextBox Name="txtSkill" materialDesign:HintAssist.Hint="Kỹ năng" Height="90" Margin="5"
                         Text="{Binding Skill}"
-                       TextBlock.FontSize="20"
+                       TextBlock.FontSize="15"
                        VerticalAlignment="Top"
 
                        AcceptsReturn="True"
@@ -90,9 +91,9 @@
             
 
             <StackPanel>
-                <TextBox Name="txtPresent" materialDesign:HintAssist.Hint="Thông tin người giới thiệu(Nếu có)" Height="60" Margin="5"
+                <TextBox Name="txtPresent" materialDesign:HintAssist.Hint="Thông tin người giới thiệu(Nếu có)" Height="80" Margin="5 10"
                          Text="{Binding Presenter}"  
-                         TextBlock.FontSize="20"
+                         TextBlock.FontSize="15"
                            VerticalAlignment="Top"
 
                            AcceptsReturn="True"
@@ -107,10 +108,10 @@
         <StackPanel Grid.Column="1">
             <StackPanel >
                 <TextBlock  Text="KINH NGHIỆM" FontSize="20" FontWeight="Bold"/>
-                <TextBox Name="txtExperience" Text="{Binding Experience}" Height="110" Margin="5"
+                <TextBox Name="txtExperience" Text="{Binding Experience}" Height="130" Margin="5 10"
                    
                          materialDesign:HintAssist.Hint="Mô tả quá trình làm việc"
-                         TextBlock.FontSize="20"
+                         TextBlock.FontSize="15"
                        VerticalAlignment="Top"
 
                        AcceptsReturn="True"
@@ -120,9 +121,9 @@
             </StackPanel>
             <StackPanel >
                 <TextBlock  Text="HOẠT ĐỘNG" FontSize="20" FontWeight="Bold"/>
-                <TextBox Name="txtActivitie" Text="{Binding Activitie}" Height="85" Margin="5"
+                <TextBox Name="txtActivitie" Text="{Binding Activitie}" Height="100" Margin="5 10"
                    materialDesign:HintAssist.Hint="Mô tả quá trình hoạt động"
-                   TextBlock.FontSize="20"
+                   TextBlock.FontSize="15"
                    VerticalAlignment="Top"
 
                    AcceptsReturn="True"
@@ -132,9 +133,9 @@
             </StackPanel>
             <StackPanel >
                 <TextBlock  Text="CHỨNG CHỈ" FontSize="20" FontWeight="Bold"/>
-                <TextBox Name="txtCertificate" Text="{Binding Certificate}" Height="85" Margin="5"
+                <TextBox Name="txtCertificate" Text="{Binding Certificate}" Height="85" Margin="5 10"
                          materialDesign:HintAssist.Hint="Tên chứng chỉ"
-                       TextBlock.FontSize="20"
+                       TextBlock.FontSize="15"
                        VerticalAlignment="Top"
 
                        AcceptsReturn="True"
@@ -144,9 +145,9 @@
             </StackPanel>
             <StackPanel >
                 <TextBlock  Text="DANH HIỆU VÀ GIẢI THƯỞNG" FontSize="20" FontWeight="Bold"/>
-                <TextBox Name="txtAward" Text="{Binding Awards}" Height="85" Margin="5"
+                <TextBox Name="txtAward" Text="{Binding Awards}" Height="85" Margin="5 10"
                          materialDesign:HintAssist.Hint="Tên giải thưởng"
-                            TextBlock.FontSize="20"
+                            TextBlock.FontSize="15"
                             VerticalAlignment="Top"
 
                             AcceptsReturn="True"
@@ -157,7 +158,7 @@
             <StackPanel >
                 <TextBox Name="txtAddInformation" Text="{Binding AddInformation}" Height="110" Margin="5"
                          materialDesign:HintAssist.Hint="Thông tin thêm"
-                            TextBlock.FontSize="20"
+                            TextBlock.FontSize="15"
                             VerticalAlignment="Top"
 
                             AcceptsReturn="True"

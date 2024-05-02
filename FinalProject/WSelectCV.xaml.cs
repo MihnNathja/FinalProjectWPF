@@ -50,5 +50,9 @@ namespace FinalProject
                 pnlCV.Children.Add(cv);
             }
         }
+        public void Close_Page()
+        {
+            this.Close();
+        }
     }
 }
