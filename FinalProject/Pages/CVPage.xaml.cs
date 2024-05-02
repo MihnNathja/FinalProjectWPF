@@ -40,8 +40,8 @@ namespace FinalProject.Page
         private void btnCreateCV_Click(object sender, RoutedEventArgs e)
         {
             
-            CVWindow cvWindow = new CVWindow(Employee);
-            cvWindow.ShowDialog();
+            WCV WCV = new WCV(Employee);
+            WCV.ShowDialog();
             Page_Loaded(sender, e);
 
         }

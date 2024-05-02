@@ -49,8 +49,8 @@ namespace FinalProject
 
         private void btnCVDetail_Click(object sender, RoutedEventArgs e)
         {
-            CVWindow cVWindow = new CVWindow(CV);
-            cVWindow.Show();
+            WCV WCV = new WCV(CV);
+            WCV.Show();
         }
 
         private void btnDelete_Click(object sender, RoutedEventArgs e)

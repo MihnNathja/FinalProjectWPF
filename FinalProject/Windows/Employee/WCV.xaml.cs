@@ -17,24 +17,24 @@ using System.Windows.Shapes;
 namespace FinalProject
 {
     /// <summary>
-    /// Interaction logic for CVWindow.xaml
+    /// Interaction logic for WCV.xaml
     /// </summary>
-    public partial class CVWindow : Window
+    public partial class WCV : Window
     {
         Employee employee;
         CVDAO cVDAO = new CVDAO();
-        public CVWindow()
+        public WCV()
         {
             InitializeComponent();
         }
-        public CVWindow(Employee employee)
+        public WCV(Employee employee)
         {
             InitializeComponent();
             this.DataContext = employee;
             Employee = employee;
             
         }
-        public CVWindow(CV cV)
+        public WCV(CV cV)
         {
             InitializeComponent();
             DataContext = cV;

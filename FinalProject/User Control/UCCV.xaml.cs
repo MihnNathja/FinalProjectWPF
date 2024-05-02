@@ -60,9 +60,9 @@ namespace FinalProject
 
         private void btnCVDetail_Click(object sender, RoutedEventArgs e)
         {
-            CVWindow cVWindow = new CVWindow();
-            cVWindow.DataContext = CV;
-            cVWindow.Show();
+            WCV WCV = new WCV();
+            WCV.DataContext = CV;
+            WCV.Show();
         }
 
         private void btnAccept_Click(object sender, RoutedEventArgs e)

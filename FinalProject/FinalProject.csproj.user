@@ -22,7 +22,7 @@
     <Compile Update="Pages\CreatJobWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Windows\Employee\CVWindow.xaml.cs">
+    <Compile Update="Windows\Employee\WCV.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Pages\CVPage.xaml.cs" />
@@ -103,7 +103,7 @@
     <Page Update="Pages\CreatJobWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Windows\Employee\CVWindow.xaml">
+    <Page Update="Windows\Employee\WCV.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Pages\CVPage.xaml">
