@@ -19,16 +19,16 @@ using System.Windows.Shapes;
 namespace FinalProject
 {
     /// <summary>
-    /// Interaction logic for JobApplicantWindow.xaml
+    /// Interaction logic for WEmployee.xaml
     /// </summary>
-    public partial class JobApplicantWindow : Window
+    public partial class WEmployee : Window
     {
         Employee employee = new Employee();
-        public JobApplicantWindow()
+        public WEmployee()
         {
             InitializeComponent();
         }
-        public JobApplicantWindow(Employee employee)
+        public WEmployee(Employee employee)
         {
             InitializeComponent();
             this.employee = employee;

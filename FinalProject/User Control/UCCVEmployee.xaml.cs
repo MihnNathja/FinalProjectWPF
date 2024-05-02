@@ -66,10 +66,10 @@ namespace FinalProject
             Window window = Window.GetWindow(this);
 
             // Kiểm tra xem window có tồn tại và có phải là MainWindow không
-            if (window != null && window is JobApplicantWindow)
+            if (window != null && window is WEmployee)
             {
                 // Gọi phương thức tải lại trang trong MainWindow
-                (window as JobApplicantWindow).Reload(employee);
+                (window as WEmployee).Reload(employee);
             }
         }
     }

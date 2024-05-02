@@ -13,7 +13,7 @@
     <Compile Update="Windows\Company\CreateJob.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Windows\Employee\JobApplicantWindow.xaml.cs">
+    <Compile Update="Windows\Employee\WEmployee.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Windows\LoginSignUp\WLogin.xaml.cs">
@@ -94,7 +94,7 @@
     <Page Update="Windows\Company\CreateJob.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Windows\Employee\JobApplicantWindow.xaml">
+    <Page Update="Windows\Employee\WEmployee.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Windows\LoginSignUp\WLogin.xaml">

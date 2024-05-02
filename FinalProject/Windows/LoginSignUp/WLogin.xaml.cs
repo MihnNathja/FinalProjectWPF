@@ -80,7 +80,7 @@ namespace FinalProject
                 {
                     Employee employee = new Employee();
                     employee = userDAO.GetUser(employee, user);
-                    JobApplicantWindow jobApplicant = new JobApplicantWindow(employee);
+                    WEmployee jobApplicant = new WEmployee(employee);
                     jobApplicant.ShowDialog();
                 }
             }
