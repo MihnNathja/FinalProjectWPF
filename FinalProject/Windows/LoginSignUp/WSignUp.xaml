@@ -1,0 +1,36 @@
+﻿<Window x:Class="FinalProject.WSignUp"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FinalProject"
+        mc:Ignorable="d"
+        Title="WSignUp" Height="600" Width="900"
+        WindowStartupLocation="CenterScreen" WindowStyle="None">
+    <Border>
+        <Grid>
+            <Image Stretch="UniformToFill" Opacity="0.7" Source="/Image/backgroundlogin.jpg"/>
+            <Border Visibility="Visible" Background="#99000000" Width="400" Height="400" CornerRadius="30">
+                <Grid >
+                    <StackPanel HorizontalAlignment="Center">
+                        <TextBlock Text="Đăng Ký" HorizontalAlignment="Center"
+                           Margin="20" FontWeight="Black" FontSize="40"
+                           Foreground="White"/>
+
+                        <TextBlock Text="Dành Cho Ứng Viên" HorizontalAlignment="Center"
+                           Margin="10" Foreground="White" FontWeight="Bold"/>
+
+                        <Button Content="Đăng Ký Cho Ứng Viên" Width="250" Click="btnSignUpJobApplicant_Click"/>
+
+                        <TextBlock Text="Dành Cho Doanh Nghiệp " HorizontalAlignment="Center"
+                Margin="0 40 0 10" Foreground="White" FontWeight="Bold"/>
+
+                        <Button Content="Đăng Ký Cho Doanh Nghiệp" Width="250" Click="btnWSignUpCompany_Click"/>
+                    </StackPanel>
+                </Grid>
+            </Border>
+
+
+        </Grid>
+    </Border>
+</Window>

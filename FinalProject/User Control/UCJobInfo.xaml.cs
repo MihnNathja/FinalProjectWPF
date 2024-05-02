@@ -68,10 +68,10 @@ namespace FinalProject
             // Lấy ra cửa sổ chứa UserControl hiện tại
             Window window = Window.GetWindow(this);
             // Kiểm tra xem window có tồn tại và có phải là MainWindow không
-            if (window != null && window is CompanyWindow)
+            if (window != null && window is WCompany)
             {
                 // Gọi phương thức tải lại trang trong MainWindow
-                (window as CompanyWindow).Reload("CreatJobWindow");
+                (window as WCompany).Reload("PCreateJob");
             }
         }
 
@@ -86,8 +86,8 @@ namespace FinalProject
             Job job = jobDAO.GetObject(this.ID);
             if (Type == "Company")
             {
-                CreateJob createJob = new CreateJob(job);
-                createJob.ShowDialog();
+                WCreateJob WCreateJob = new WCreateJob(job);
+                WCreateJob.ShowDialog();
             }
             else if (Type == "Employee")
             {

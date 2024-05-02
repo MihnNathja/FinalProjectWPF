@@ -49,8 +49,8 @@ namespace FinalProject
 
         private void btnCVDetail_Click(object sender, RoutedEventArgs e)
         {
-            CVWindow cVWindow = new CVWindow(CV);
-            cVWindow.Show();
+            WCV WCV = new WCV(CV);
+            WCV.Show();
         }
 
         private void btnDelete_Click(object sender, RoutedEventArgs e)
@@ -66,10 +66,10 @@ namespace FinalProject
             Window window = Window.GetWindow(this);
 
             // Kiểm tra xem window có tồn tại và có phải là MainWindow không
-            if (window != null && window is JobApplicantWindow)
+            if (window != null && window is WEmployee)
             {
                 // Gọi phương thức tải lại trang trong MainWindow
-                (window as JobApplicantWindow).Reload(employee);
+                (window as WEmployee).Reload(employee);
             }
         }
     }
