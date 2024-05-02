@@ -10,7 +10,7 @@
     <Compile Update="Windows\Company\CompanyWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Windows\Company\CreateJob.xaml.cs">
+    <Compile Update="Windows\Company\WCreateJob.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Windows\Employee\WEmployee.xaml.cs">
@@ -91,7 +91,7 @@
     <Page Update="Windows\Company\CompanyWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Windows\Company\CreateJob.xaml">
+    <Page Update="Windows\Company\WCreateJob.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Windows\Employee\WEmployee.xaml">

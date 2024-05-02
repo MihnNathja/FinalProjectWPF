@@ -86,8 +86,8 @@ namespace FinalProject
             Job job = jobDAO.GetObject(this.ID);
             if (Type == "Company")
             {
-                CreateJob createJob = new CreateJob(job);
-                createJob.ShowDialog();
+                WCreateJob WCreateJob = new WCreateJob(job);
+                WCreateJob.ShowDialog();
             }
             else if (Type == "Employee")
             {

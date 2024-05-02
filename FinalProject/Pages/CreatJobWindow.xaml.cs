@@ -37,8 +37,8 @@ namespace FinalProject
 
         private void btnThemCongViec_Click(object sender, RoutedEventArgs e)
         {
-            CreateJob createJob = new CreateJob(Company);
-            createJob.ShowDialog();
+            WCreateJob WCreateJob = new WCreateJob(Company);
+            WCreateJob.ShowDialog();
             MessageBox.Show(Company.CompanyName);
             ReloadPage(Company);
         }

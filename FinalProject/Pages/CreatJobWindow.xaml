@@ -9,7 +9,7 @@
       d:DesignHeight="600" d:DesignWidth="800 "
       Title="CreatJobWindow" Loaded="Page_Loaded">
 
-    <Grid x:Name="CreateJobPage" Background="White">
+    <Grid x:Name="WCreateJobPage" Background="White">
         <Grid.RowDefinitions>
             <RowDefinition Height="auto"/>
             <RowDefinition Height="*"/>

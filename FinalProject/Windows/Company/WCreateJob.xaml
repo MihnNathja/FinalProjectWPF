@@ -1,4 +1,4 @@
-﻿<Window x:Class="FinalProject.CreateJob"
+﻿<Window x:Class="FinalProject.WCreateJob"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -13,7 +13,7 @@
         
         FontFamily="{DynamicResource MaterialDesignFont}"
         mc:Ignorable="d"
-        Title="CreateJob" Height="600" Width="700">
+        Title="WCreateJob" Height="600" Width="700">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition/>

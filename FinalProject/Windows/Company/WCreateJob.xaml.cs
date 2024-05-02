@@ -17,25 +17,25 @@ using System.Windows.Shapes;
 namespace FinalProject
 {
     /// <summary>
-    /// Interaction logic for CreateJob.xaml
+    /// Interaction logic for WCreateJob.xaml
     /// </summary>
-    public partial class CreateJob : Window
+    public partial class WCreateJob : Window
     {
         JobDAO jobDAO = new JobDAO();
         string idJob;
         public string IdJob { get => idJob; set => idJob = value; }
 
 
-        public CreateJob()
+        public WCreateJob()
         {
             InitializeComponent();
         }
-        public CreateJob(Company company)
+        public WCreateJob(Company company)
         {
             InitializeComponent();
             DataContext = company;
         }
-        public CreateJob(Job job)
+        public WCreateJob(Job job)
         {
             InitializeComponent();
             DataContext = job;
