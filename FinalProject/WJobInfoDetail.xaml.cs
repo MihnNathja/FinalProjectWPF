@@ -52,6 +52,7 @@ namespace FinalProject
             employee = userDAO.GetUser(employee, user);
             WSelectCV wSelectCV = new WSelectCV(employee,job);
             wSelectCV.ShowDialog();
+            this.Close();
         }
     }
 }
