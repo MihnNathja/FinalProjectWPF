@@ -40,18 +40,18 @@ namespace FinalProject
         }
         private void WCompany_Loaded(object sender, RoutedEventArgs e)
         {
-            PageJob pageJob = new PageJob(company);
+            PJob PJob = new PJob(company);
             
-            mainFarm.Navigate(pageJob);
+            mainFarm.Navigate(PJob);
         }
 
         public void Reload(string page)
         {
             
-            if(page == "PageJob")
+            if(page == "PJob")
             {
                 mainFarm.Content = null;
-                mainFarm.Content = new PageJob(company);
+                mainFarm.Content = new PJob(company);
             }
             if(page == "CreatJobWindow")
             {
@@ -137,17 +137,17 @@ namespace FinalProject
 
         private void btnViecLam_Click(object sender, RoutedEventArgs e)
         {
-            PageJob pageJob = new PageJob(company);
-            mainFarm.Navigate(pageJob);
+            PJob PJob = new PJob(company);
+            mainFarm.Navigate(PJob);
         }
 
         private void btnSearch_Click(object sender, RoutedEventArgs e)
         {
             
 
-            PageJob pageJob = new PageJob(company);
-            pageJob.search(cbbLocation.Text, cbbExperience.Text);
-            mainFarm.Navigate(pageJob);
+            PJob PJob = new PJob(company);
+            PJob.search(cbbLocation.Text, cbbExperience.Text);
+            mainFarm.Navigate(PJob);
         }
 
        

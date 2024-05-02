@@ -36,8 +36,8 @@ namespace FinalProject
         }
         private void WCompany_Loaded(object sender, RoutedEventArgs e)
         {
-            PageJob pageJob = new PageJob(employee);
-            mainFarm.Navigate(pageJob);
+            PJob PJob = new PJob(employee);
+            mainFarm.Navigate(PJob);
         }
         private void ButtonOpenMenu_Click(object sender, RoutedEventArgs e)
         {
@@ -120,15 +120,15 @@ namespace FinalProject
 
         private void btnViecLam_Click(object sender, RoutedEventArgs e)
         {
-            PageJob pageJob = new PageJob(employee);
-            mainFarm.Navigate(pageJob);
+            PJob PJob = new PJob(employee);
+            mainFarm.Navigate(PJob);
         }
 
         private void btnSearch_Click(object sender, RoutedEventArgs e)
         {
-            PageJob pageJob = new PageJob(employee);
-            pageJob.search(cbbLocation.Text, cbbExperience.Text);
-            mainFarm.Navigate(pageJob);
+            PJob PJob = new PJob(employee);
+            PJob.search(cbbLocation.Text, cbbExperience.Text);
+            mainFarm.Navigate(PJob);
         }
 
         private void mainFarm_Navigated(object sender, NavigationEventArgs e)
@@ -144,8 +144,8 @@ namespace FinalProject
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            PageJob pageJob = new PageJob(employee);
-            mainFarm.Navigate(pageJob);
+            PJob PJob = new PJob(employee);
+            mainFarm.Navigate(PJob);
         }
 
         private void btnLogout_Click(object sender, RoutedEventArgs e)

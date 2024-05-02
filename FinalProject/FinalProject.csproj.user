@@ -29,7 +29,7 @@
     <Compile Update="Pages\DocumentPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Pages\PageJob.xaml.cs">
+    <Compile Update="Pages\PJob.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Pages\PCompany.xaml.cs">
@@ -112,7 +112,7 @@
     <Page Update="Pages\DocumentPage.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Pages\PageJob.xaml">
+    <Page Update="Pages\PJob.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Pages\PCompany.xaml">

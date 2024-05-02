@@ -21,16 +21,16 @@ using System.Windows.Shapes;
 namespace FinalProject.Page
 {
     /// <summary>
-    /// Interaction logic for PageJob.xaml
+    /// Interaction logic for PJob.xaml
     /// </summary>
-    public partial class PageJob : System.Windows.Controls.Page
+    public partial class PJob : System.Windows.Controls.Page
     {
         
         JobDAO jobDAO = new JobDAO();
         User user;
         public User User { get => user; set => user = value; }
 
-        public PageJob()
+        public PJob()
         {
             InitializeComponent();
             
@@ -38,7 +38,7 @@ namespace FinalProject.Page
 
        
         
-        public PageJob(User user)
+        public PJob(User user)
         {
             User = user;
             InitializeComponent();
