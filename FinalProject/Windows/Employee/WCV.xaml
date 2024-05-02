@@ -57,7 +57,7 @@
             <StackPanel>
                 <TextBlock Text="THÔNG TIN CÁ NHÂN" FontSize="20" FontWeight="Bold"/>
                 <DatePicker Name="dtpDateOfBirtday" Text="Ngày sinh" FontSize="15" Margin="20 3"/>
-                <ComboBox x:Name="cbbGender" Width="200" Margin="5 0" Style="{DynamicResource theComboBox}" Height="50" SelectedIndex="0">
+                <ComboBox x:Name="cbbGender" Width="900" Margin="5 0" Style="{DynamicResource theComboBox}" Height="50" SelectedIndex="0">
                     <ComboBoxItem Content="Nam"/>
                     <ComboBoxItem Content="Nữ" />
                 </ComboBox>
@@ -70,7 +70,7 @@
             </StackPanel>
             <StackPanel >
                 <TextBox Name="txtCareerGoal" materialDesign:HintAssist.Hint="Mục tiêu nghề nghiệp" Height="110" Margin="5 10"
-                            Text="{Binding Careergoals}"
+                            Text="{Binding CareerGoals}"
                            TextBlock.FontSize="15"
                            VerticalAlignment="Top"
 
