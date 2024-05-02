@@ -49,6 +49,7 @@ namespace FinalProject
                 DateOnly date = DateOnly.FromDateTime(selectedDate.Value);
                 cVDAO.Write(Job, CV, Employee, date);
             }
+            this.Close();
         }
 
         private void btnDelete_Click(object sender, RoutedEventArgs e)

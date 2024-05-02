@@ -70,13 +70,25 @@ namespace FinalProject
             cVDAO.Accept(Job, CV, Employee, 1);
             WInterview wInterview = new WInterview(Job, CV, Employee);
             wInterview.Show();
-            
+            Close_Window();
         }
 
         private void btnReject_Click(object sender, RoutedEventArgs e)
         {
             cVDAO.Accept(Job, CV, Employee, 0);
-           
+            Close_Window() ;
+        }
+        private void Close_Window()
+        {
+            // Lấy ra cửa sổ chứa UserControl hiện tại
+            Window window = Window.GetWindow(this);
+
+            // Kiểm tra xem window có tồn tại và có phải là MainWindow không
+            if (window != null && window is WCompanyAcceptCV)
+            {
+                // Gọi phương thức tải lại trang trong MainWindow
+                (window as WCompanyAcceptCV).Close_Window();
+            }
         }
     }
 }

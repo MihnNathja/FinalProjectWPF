@@ -5,36 +5,44 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:FinalProject"
              mc:Ignorable="d" 
-             Background="White"
-             d:DesignHeight="200" d:DesignWidth="500" Loaded="UserControl_Loaded">
-    <Grid>
+             
+             d:DesignHeight="250" d:DesignWidth="500" Loaded="UserControl_Loaded">
+    <Border Height="200" BorderThickness="0.2" BorderBrush="Gray" 
+            Background="White" Margin="5" CornerRadius="20" Width="480">
+        <Grid >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                
+                <RowDefinition Height="auto"/>
+                
+            </Grid.RowDefinitions>
+            <StackPanel TextElement.FontSize="15" Margin="5">
 
-        <StackPanel TextElement.FontSize="15" Margin="5">
-            
-            <TextBlock x:Name="txtbCompanyName" HorizontalAlignment="Center" FontSize="20"
-                       Text="Company Name"/>
-            <TextBlock x:Name="txtbIsAccept" HorizontalAlignment="Center"
-                   FontWeight="Bold" Margin="5"
-                       FontSize="20" Foreground="LightGreen"
-                       Text="Đã được duyệt"/>
-            <TextBlock x:Name="txtbConfirmAnnoucement" Text="Bạn vui lòng xác nhận lịch phỏng vấn:" HorizontalAlignment="Center"/>
-            <TextBlock x:Name="txtbDateInterview" FontSize="20" HorizontalAlignment="Center"
-                   FontWeight="Bold" 
-                       Text="30/4/2024"/>
-            <TextBlock FontSize="15" HorizontalAlignment="Center"
-                   Text="Thời gian cụ thể sẽ được gửi qua mail" />
-        </StackPanel>
+                <TextBlock x:Name="txtbCompanyName" HorizontalAlignment="Center" FontSize="20"
+                    Text="Company Name"/>
+                <TextBlock x:Name="txtbIsAccept" HorizontalAlignment="Center"
+                FontWeight="Bold" Margin="5"
+                    FontSize="20" Foreground="LightGreen"
+                    Text="Đã được duyệt"/>
+                <TextBlock x:Name="txtbConfirmAnnoucement" Text="Bạn vui lòng xác nhận lịch phỏng vấn:" HorizontalAlignment="Center"/>
+                <TextBlock x:Name="txtbDateInterview" FontSize="20" HorizontalAlignment="Center"
+                FontWeight="Bold" 
+                    Text="30/4/2024"/>
+                <TextBlock FontSize="15" HorizontalAlignment="Center"
+                Text="Thời gian cụ thể sẽ được gửi qua mail" />
+            </StackPanel>
 
-        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" 
-                    VerticalAlignment="Bottom" >
-            <Button Content="Xem sau" Width="150" Margin="10" Height="40" 
-                    Foreground="White" FontSize="20"
-                    FontWeight="Bold" HorizontalContentAlignment="Center"
-                    VerticalContentAlignment="Center" Click="btnSee_Click"/>
-            <Button Content="Xác nhận" Width="150" Margin="10" Height="40" 
-                    Foreground="White" FontSize="20"
-                    FontWeight="Bold" HorizontalContentAlignment="Center"
-                    VerticalContentAlignment="Center" Click="btnAccept_Click"/>
-        </StackPanel>
-    </Grid>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" 
+                 VerticalAlignment="Center" Grid.Row="1">
+                <Button Content="Xem sau" Width="150" Margin="10" Height="40" 
+                 Foreground="White" FontSize="20"
+                 FontWeight="Bold" HorizontalContentAlignment="Center"
+                 VerticalContentAlignment="Center" Click="btnSee_Click"/>
+                <Button Content="Xác nhận" Width="150" Margin="10" Height="40" 
+                 Foreground="White" FontSize="20"
+                 FontWeight="Bold" HorizontalContentAlignment="Center"
+                 VerticalContentAlignment="Center" Click="btnAccept_Click"/>
+            </StackPanel>
+        </Grid>
+    </Border>
 </UserControl>
