@@ -18,11 +18,11 @@ using FinalProject.Pages;
 namespace FinalProject
 {
     /// <summary>
-    /// Interaction logic for LoginWindow.xaml
+    /// Interaction logic for WLogin.xaml
     /// </summary>
-    public partial class LoginWindow : Window
+    public partial class WLogin : Window
     {
-        public LoginWindow()
+        public WLogin()
         {
             InitializeComponent();
             
