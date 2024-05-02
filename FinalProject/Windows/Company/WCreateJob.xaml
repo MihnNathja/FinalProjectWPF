@@ -39,7 +39,8 @@
 
                 
                 <TextBox x:Name="txtbLocation" Margin="10 5" Text="{Binding JobLocation}"
-                         Height="50" materialDesign:HintAssist.Hint="Địa điểm"/>
+                          materialDesign:HintAssist.Hint="Địa điểm"
+                         TextWrapping="Wrap"/>
 
 
                 <TextBox x:Name="txtbSalary" Margin="10 5" Text="{Binding Salary}"
