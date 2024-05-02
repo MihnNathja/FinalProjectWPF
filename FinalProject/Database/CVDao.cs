@@ -105,8 +105,15 @@ namespace FinalProject.Database
                 UCNotification notifi = new UCNotification();
                 JobDAO jobDAO = new JobDAO();  
                 notifi.CompanyName = jobDAO.GetObject(row["ID"].ToString()).CompanyName;
-                notifi.IsAccepted = Convert.ToBoolean(row["ACCEPT"]);
-                notifi.DateInterview = Convert.ToDateTime(row["Interview"]);
+                if (row["ACCEPT"] is not DBNull )
+                {
+                    notifi.IsAccepted = row["ACCEPT"].ToString();
+                    notifi.DateInterview = Convert.ToDateTime(row["Interview"]);
+                } 
+                else
+                {
+                    notifi.IsAccepted = null;
+                }
                 list.Add(notifi);
             }
             return list;

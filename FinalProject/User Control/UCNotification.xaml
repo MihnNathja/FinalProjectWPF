@@ -20,9 +20,9 @@
             <TextBlock x:Name="txtbConfirmAnnoucement" Text="Bạn vui lòng xác nhận lịch phỏng vấn:" HorizontalAlignment="Center"/>
             <TextBlock x:Name="txtbDateInterview" FontSize="20" HorizontalAlignment="Center"
                    FontWeight="Bold" 
-                       Text="30/4/2024"/>
+                       Text=""/>
             <TextBlock FontSize="15" HorizontalAlignment="Center"
-                   Text="Thời gian cụ thể sẽ được gửi qua mail" />
+                   Text="" />
         </StackPanel>
 
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" 
