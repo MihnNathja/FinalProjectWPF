@@ -146,7 +146,7 @@ namespace FinalProject {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/FinalProject;component/windows/employee/wemployee.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/FinalProject;V1.0.0.0;component/windows/employee/wemployee.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\Windows\Employee\WEmployee.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
