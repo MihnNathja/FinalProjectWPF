@@ -17,11 +17,11 @@ using System.Windows.Shapes;
 namespace FinalProject
 {
     /// <summary>
-    /// Interaction logic for SignUpCompany.xaml
+    /// Interaction logic for WSignUpCompany.xaml
     /// </summary>
-    public partial class SignUpCompany : Window
+    public partial class WSignUpCompany : Window
     {
-        public SignUpCompany()
+        public WSignUpCompany()
         {
             InitializeComponent();
         }

@@ -18,11 +18,11 @@ using System.Windows.Shapes;
 namespace FinalProject
 {
     /// <summary>
-    /// Interaction logic for WSignUpJobApplicant.xaml
+    /// Interaction logic for WSignUpEmployee.xaml
     /// </summary>
-    public partial class WSignUpJobApplicant : Window
+    public partial class WSignUpEmployee : Window
     {
-        public WSignUpJobApplicant()
+        public WSignUpEmployee()
         {
             InitializeComponent();
         }

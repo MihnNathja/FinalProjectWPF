@@ -35,13 +35,13 @@ namespace FinalProject
         }
         private void btnCompany_Click(object sender, RoutedEventArgs e)
         {
-            SignUpCompany signUpCompany = new SignUpCompany();
-            signUpCompany.Show();
+            WSignUpCompany WSignUpCompany = new WSignUpCompany();
+            WSignUpCompany.Show();
             OptionsPopup.IsOpen= false;
         }
         private void btnEmployee_Click(object sender, RoutedEventArgs e)
         {
-            WSignUpJobApplicant sign = new WSignUpJobApplicant();
+            WSignUpEmployee sign = new WSignUpEmployee();
             sign.Show();
             OptionsPopup.IsOpen = false;
         }

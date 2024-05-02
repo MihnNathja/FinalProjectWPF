@@ -24,16 +24,16 @@ namespace FinalProject
             InitializeComponent();
         }
 
-        private void btnSignUpCompany_Click(object sender, RoutedEventArgs e)
+        private void btnWSignUpCompany_Click(object sender, RoutedEventArgs e)
         {
-            SignUpCompany signUpCompany = new SignUpCompany();
-            signUpCompany.Show();
+            WSignUpCompany WSignUpCompany = new WSignUpCompany();
+            WSignUpCompany.Show();
             this.Close();
         }
 
         private void btnSignUpJobApplicant_Click(object sender, RoutedEventArgs e)
         {
-            WSignUpJobApplicant sign=new WSignUpJobApplicant();
+            WSignUpEmployee sign=new WSignUpEmployee();
             sign.Show();
             this.Close();
         }

@@ -25,7 +25,7 @@
                         <TextBlock Text="Dành Cho Doanh Nghiệp " HorizontalAlignment="Center"
                 Margin="0 40 0 10" Foreground="White" FontWeight="Bold"/>
 
-                        <Button Content="Đăng Ký Cho Doanh Nghiệp" Width="250" Click="btnSignUpCompany_Click"/>
+                        <Button Content="Đăng Ký Cho Doanh Nghiệp" Width="250" Click="btnWSignUpCompany_Click"/>
                     </StackPanel>
                 </Grid>
             </Border>
