@@ -19,17 +19,17 @@ using System.Windows.Shapes;
 namespace FinalProject.Page
 {
     /// <summary>
-    /// Interaction logic for CVPage.xaml
+    /// Interaction logic for PCV.xaml
     /// </summary>
-    public partial class CVPage : System.Windows.Controls.Page
+    public partial class PCV : System.Windows.Controls.Page
     {
         Employee employee;
         public Employee Employee { get => employee; set => employee = value; }
-        public CVPage()
+        public PCV()
         {
             InitializeComponent();
         }
-        public CVPage(Employee employee)
+        public PCV(Employee employee)
         {
             InitializeComponent();
             

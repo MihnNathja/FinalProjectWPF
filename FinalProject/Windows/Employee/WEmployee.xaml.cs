@@ -138,8 +138,8 @@ namespace FinalProject
 
         private void btnHoSo_Click(object sender, RoutedEventArgs e)
         {
-            CVPage cVPage = new CVPage(employee);
-            mainFarm.Navigate(cVPage);
+            PCV PCV = new PCV(employee);
+            mainFarm.Navigate(PCV);
         }
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
@@ -156,7 +156,7 @@ namespace FinalProject
         public void Reload(Employee employee)
         {
             mainFarm.Content = null;
-            mainFarm.Content = new CVPage(employee);
+            mainFarm.Content = new PCV(employee);
 
         }
         
