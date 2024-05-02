@@ -22,13 +22,13 @@ namespace FinalProject
     public partial class UCNotification : UserControl
     {
         string companyName;
-        bool isAccepted;
+        string isAccepted;
         DateTime dateInterview;
         public UCNotification()
         {
             InitializeComponent();
         }
-        public UCNotification(string companyName, bool isAccepted, DateTime dateInterview)
+        public UCNotification(string companyName, string isAccepted, DateTime dateInterview)
         {
             InitializeComponent();
             CompanyName = companyName;
@@ -37,7 +37,7 @@ namespace FinalProject
         }
 
 
-        public bool IsAccepted { get => isAccepted; set => isAccepted = value; }
+        public string IsAccepted { get => isAccepted; set => isAccepted = value; }
         public DateTime DateInterview { get => dateInterview; set => dateInterview = value; }
         public string CompanyName { get => companyName; set => companyName = value; }
 
@@ -54,18 +54,24 @@ namespace FinalProject
         private void UserControl_Loaded(object sender, RoutedEventArgs e)
         {
             txtbCompanyName.Text = CompanyName;
-            if (IsAccepted == true)
+            if (IsAccepted == "True")
             {
                 txtbIsAccept.Text = "Đã được duyệt";
                 txtbIsAccept.Foreground = Brushes.LightGreen;
                 txtbDateInterview.Text = DateInterview.ToString();
             }
-            else if (IsAccepted == false)
+            else if (IsAccepted == "False")
             {
                 txtbIsAccept.Text = "Đã bị từ chối";
                 txtbIsAccept.Foreground = Brushes.Red;
                 txtbConfirmAnnoucement.Visibility = Visibility.Collapsed;
             }
+            else
+            {
+                txtbIsAccept.Text = "Hồ sơ chưa được duyệt";
+                txtbIsAccept.Foreground = Brushes.Gray;
+                txtbConfirmAnnoucement.Visibility = Visibility.Collapsed;
+            }    
         }
     }
 }

@@ -71,16 +71,7 @@ namespace FinalProject
             ButtonOpenMenu.Visibility = Visibility.Visible;
         }
 
-        private void btnViecLam_MouseEnter(object sender, MouseEventArgs e)
-        {
-            popupControl.IsPopupOpen = true;
-            popupControl.PopupContent = "Việc làm";
-        }
 
-        private void btnViecLam_MouseLeave(object sender, MouseEventArgs e)
-        {
-            popupControl.IsPopupOpen = false;
-        }
 
         private void btnHoSo_MouseEnter(object sender, MouseEventArgs e)
         {

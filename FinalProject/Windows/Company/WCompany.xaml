@@ -112,13 +112,12 @@
 
                         <StackPanel DockPanel.Dock="Top">
                             <Button Style="{StaticResource menuButton}"
-                           MouseEnter="btnViecLam_MouseEnter"
-                           MouseLeave="btnViecLam_MouseLeave"
-                           Click="btnViecLam_Click"
-                           >
+                           MouseEnter="btnCongty_MouseEnter"
+                           MouseLeave="btnCongTy_MouseLeave"
+                           Click="btnCongTy_Click">
                                 <StackPanel Orientation="Horizontal">
                                     <Icon:PackIconMaterial Kind="Home" Style="{StaticResource menuButtonIcon}"/>
-                                    <TextBlock Text="Việc làm"/>
+                                    <TextBlock Text="Công ty"/>
                                 </StackPanel>
                             </Button>
                             <Button Style="{StaticResource menuButton}"
@@ -128,15 +127,6 @@
                                 <StackPanel Orientation="Horizontal">
                                     <Icon:PackIconMaterial Kind="FileDocument" Style="{StaticResource menuButtonIcon}"/>
                                     <TextBlock Text="Hồ sơ Công ty"/>
-                                </StackPanel>
-                            </Button>
-                            <Button Style="{StaticResource menuButton}"
-                           MouseEnter="btnCongty_MouseEnter"
-                           MouseLeave="btnCongTy_MouseLeave"
-                           Click="btnCongTy_Click">
-                                <StackPanel Orientation="Horizontal">
-                                    <Icon:PackIconMaterial Kind="Factory" Style="{StaticResource menuButtonIcon}"/>
-                                    <TextBlock Text="Công ty"/>
                                 </StackPanel>
                             </Button>
                             <Button Style="{StaticResource menuButton}"
