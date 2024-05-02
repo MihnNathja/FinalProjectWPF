@@ -43,7 +43,6 @@ namespace FinalProject
         private void btnSet_Click(object sender, RoutedEventArgs e)
         {
             DateTime? selectedDate = calendar.SelectedDate;
-
             if (selectedDate.HasValue)
             {
                 DateOnly date = DateOnly.FromDateTime(selectedDate.Value);

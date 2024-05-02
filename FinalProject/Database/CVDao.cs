@@ -72,7 +72,9 @@ namespace FinalProject.Database
         }
         public void Write(Job job, CV cv, Employee employee, DateOnly date)
         {
-            string SQL = string.Format($"UPDATE ApplyCV SET Interview = {date} WHERE IdCV = {cv.IdCV} and ID = {job.Id} and IdEmployee = {employee.ID}");
+            MessageBox.Show(date.ToString());
+            string SQL = string.Format($"UPDATE ApplyCV SET Interview = '{date}' WHERE IdCV = {cv.IdCV} and ID = {job.Id} and IdEmployee = {employee.ID}");
+            MessageBox.Show(SQL);
             db.ThucThi(SQL);
         }
 
@@ -108,6 +110,7 @@ namespace FinalProject.Database
                 if (row["ACCEPT"] is not DBNull )
                 {
                     notifi.IsAccepted = row["ACCEPT"].ToString();
+
                     notifi.DateInterview = Convert.ToDateTime(row["Interview"]);
                 } 
                 else

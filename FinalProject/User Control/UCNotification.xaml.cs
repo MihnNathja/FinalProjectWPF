@@ -58,19 +58,19 @@ namespace FinalProject
             {
                 txtbIsAccept.Text = "Đã được duyệt";
                 txtbIsAccept.Foreground = Brushes.LightGreen;
-                txtbDateInterview.Text = DateInterview.ToString();
+                txtbDateInterview.Text = DateInterview.ToShortDateString();
+                txtbConfirmAnnoucement.Visibility = Visibility.Visible;
+                txtbAnnoucement.Visibility = Visibility.Visible;
             }
             else if (IsAccepted == "False")
             {
                 txtbIsAccept.Text = "Đã bị từ chối";
                 txtbIsAccept.Foreground = Brushes.Red;
-                txtbConfirmAnnoucement.Visibility = Visibility.Collapsed;
             }
             else
             {
                 txtbIsAccept.Text = "Hồ sơ chưa được duyệt";
                 txtbIsAccept.Foreground = Brushes.Gray;
-                txtbConfirmAnnoucement.Visibility = Visibility.Collapsed;
             }    
         }
     }

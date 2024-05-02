@@ -19,17 +19,17 @@
             <StackPanel TextElement.FontSize="15" Margin="5">
 
                 <TextBlock x:Name="txtbCompanyName" HorizontalAlignment="Center" FontSize="20"
-                    Text="Company Name"/>
+                    Text=""/>
                 <TextBlock x:Name="txtbIsAccept" HorizontalAlignment="Center"
                 FontWeight="Bold" Margin="5"
                     FontSize="20" Foreground="LightGreen"
-                    Text="Đã được duyệt"/>
-                <TextBlock x:Name="txtbConfirmAnnoucement" Text="Bạn vui lòng xác nhận lịch phỏng vấn:" HorizontalAlignment="Center"/>
+                    Text=""/>
+                <TextBlock x:Name="txtbConfirmAnnoucement" Text="Bạn vui lòng xác nhận lịch phỏng vấn:" HorizontalAlignment="Center" Visibility="Collapsed"/>
                 <TextBlock x:Name="txtbDateInterview" FontSize="20" HorizontalAlignment="Center"
                 FontWeight="Bold" 
-                    Text="30/4/2024"/>
-                <TextBlock FontSize="15" HorizontalAlignment="Center"
-                Text="Thời gian cụ thể sẽ được gửi qua mail" />
+                    Text=""/>
+                <TextBlock FontSize="15" HorizontalAlignment="Center" Name="txtbAnnoucement" Visibility="Hidden"
+                Text="Thông tin chi tiết sẽ được liên hệ qua mail" />
             </StackPanel>
 
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" 
