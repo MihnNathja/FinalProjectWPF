@@ -19,7 +19,7 @@
     <Compile Update="Windows\LoginSignUp\WLogin.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Pages\CreatJobWindow.xaml.cs">
+    <Compile Update="Pages\PCreateJob.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Windows\Employee\WCV.xaml.cs">
@@ -99,7 +99,7 @@
     <Page Update="Windows\LoginSignUp\WLogin.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Pages\CreatJobWindow.xaml">
+    <Page Update="Pages\PCreateJob.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Windows\Employee\WCV.xaml">

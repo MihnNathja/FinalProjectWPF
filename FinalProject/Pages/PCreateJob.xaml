@@ -4,10 +4,10 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:FinalProject"
-      xmlns:User_Control="clr-namespace:FinalProject.User_Control" x:Class="FinalProject.CreatJobWindow"
+      xmlns:User_Control="clr-namespace:FinalProject.User_Control" x:Class="FinalProject.PCreateJob"
       mc:Ignorable="d" 
       d:DesignHeight="600" d:DesignWidth="800 "
-      Title="CreatJobWindow" Loaded="Page_Loaded">
+      Title="PCreateJob" Loaded="Page_Loaded">
 
     <Grid x:Name="WCreateJobPage" Background="White">
         <Grid.RowDefinitions>

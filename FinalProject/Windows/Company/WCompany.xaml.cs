@@ -53,10 +53,10 @@ namespace FinalProject
                 mainFarm.Content = null;
                 mainFarm.Content = new PJob(company);
             }
-            if(page == "CreatJobWindow")
+            if(page == "PCreateJob")
             {
                 mainFarm.Content = null;
-                mainFarm.Content = new CreatJobWindow(company);
+                mainFarm.Content = new PCreateJob(company);
             }
         }
 
@@ -126,8 +126,8 @@ namespace FinalProject
 
         private void btnCongTy_Click(object sender, RoutedEventArgs e)
         {
-            CreatJobWindow creatJobWindow = new CreatJobWindow(company);
-            mainFarm.Navigate(creatJobWindow);
+            PCreateJob PCreateJob = new PCreateJob(company);
+            mainFarm.Navigate(PCreateJob);
         }
 
         private void popupControl_Loaded(object sender, RoutedEventArgs e)

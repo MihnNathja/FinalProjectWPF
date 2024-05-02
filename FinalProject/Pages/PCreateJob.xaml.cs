@@ -18,16 +18,16 @@ using System.Windows.Shapes;
 namespace FinalProject
 {
     /// <summary>
-    /// Interaction logic for CreatJobWindow.xaml
+    /// Interaction logic for PCreateJob.xaml
     /// </summary>
-    public partial class CreatJobWindow : System.Windows.Controls.Page
+    public partial class PCreateJob : System.Windows.Controls.Page
     {
         Company company;
-        public CreatJobWindow()
+        public PCreateJob()
         {
             InitializeComponent();
         }
-        public CreatJobWindow(Company company)
+        public PCreateJob(Company company)
         {
             InitializeComponent();
             Company = company;
