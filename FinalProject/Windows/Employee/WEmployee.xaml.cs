@@ -34,7 +34,7 @@ namespace FinalProject
             this.employee = employee;
             this.DataContext = employee;
         }
-        private void CompanyWindow_Loaded(object sender, RoutedEventArgs e)
+        private void WCompany_Loaded(object sender, RoutedEventArgs e)
         {
             PageJob pageJob = new PageJob(employee);
             mainFarm.Navigate(pageJob);

@@ -68,10 +68,10 @@ namespace FinalProject
             // Lấy ra cửa sổ chứa UserControl hiện tại
             Window window = Window.GetWindow(this);
             // Kiểm tra xem window có tồn tại và có phải là MainWindow không
-            if (window != null && window is CompanyWindow)
+            if (window != null && window is WCompany)
             {
                 // Gọi phương thức tải lại trang trong MainWindow
-                (window as CompanyWindow).Reload("CreatJobWindow");
+                (window as WCompany).Reload("CreatJobWindow");
             }
         }
 

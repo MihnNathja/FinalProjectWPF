@@ -73,7 +73,7 @@ namespace FinalProject
                 {
                     Company company = new Company();
                     company = userDAO.GetUser(company, user);
-                    CompanyWindow comp = new CompanyWindow(company);
+                    WCompany comp = new WCompany(company);
                     comp.ShowDialog();
                 }
                 else if (user.Type == "Employee")

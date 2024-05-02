@@ -21,24 +21,24 @@ using System.Windows.Shapes;
 namespace FinalProject
 {
     /// <summary>
-    /// Interaction logic for CompanyWindow.xaml
+    /// Interaction logic for WCompany.xaml
     /// </summary>
-    public partial class CompanyWindow : Window
+    public partial class WCompany : Window
     {
         
         // bên dưới sau này sẽ chuyển thành user, lớp cha của company và employee
         Company company = new Company();
-        public CompanyWindow()
+        public WCompany()
         {
             InitializeComponent();
         }
-        public CompanyWindow(Company company)
+        public WCompany(Company company)
         {
             InitializeComponent();
             this.company = company;
             this.DataContext = company;
         }
-        private void CompanyWindow_Loaded(object sender, RoutedEventArgs e)
+        private void WCompany_Loaded(object sender, RoutedEventArgs e)
         {
             PageJob pageJob = new PageJob(company);
             
