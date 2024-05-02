@@ -12,7 +12,8 @@
                 TextOptions.TextFormattingMode="Ideal"
                 TextOptions.TextRenderingMode="Auto"
                 FontFamily="{DynamicResource MaterialDesignFont}"
-               
+               WindowStyle="None"
+                WindowStartupLocation="CenterScreen"
         Title="WJobInfoDetail" Height="600" Width="900">
     <Grid>
         <Grid.RowDefinitions>
@@ -100,7 +101,10 @@
                 </Border>
 
 
-                <Button x:Name="btnApply" Content="Ứng Tuyển Ngay" Width="150"   Margin="0 50 0 0" Click="btnApply_Click"/>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Button Content="Xem tin khác" Width="150" Margin="20 50" Click="btnSee_Click"/>
+                    <Button x:Name="btnApply" Content="Ứng Tuyển Ngay" Width="150"   Margin="10" Click="btnApply_Click"/>
+                </StackPanel>
             </StackPanel>
 
         </Grid>

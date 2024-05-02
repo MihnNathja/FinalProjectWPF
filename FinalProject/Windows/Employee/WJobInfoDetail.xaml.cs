@@ -54,5 +54,10 @@ namespace FinalProject
             wSelectCV.ShowDialog();
             this.Close();
         }
+
+        private void btnSee_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
     }
 }
