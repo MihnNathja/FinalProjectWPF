@@ -49,20 +49,9 @@ C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\bin\Debug\net6.
 C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\FinalProject.csproj.AssemblyReference.cache
 C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\Style\MainStyle.baml
 C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\Theme\Theme.baml
-C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\CompanyWindow.g.cs
-C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\CreateJob.g.cs
-C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\CVWindow.g.cs
-C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\JobApplicantWindow.g.cs
-C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\LoginWindow.g.cs
-C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\Pages\CreatJobWindow.g.cs
-C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\Pages\CVPage.g.cs
-C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\Pages\DocumentPage.g.cs
-C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\Pages\PageJob.g.cs
 C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\Pages\PCompany.g.cs
 C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\Pages\PCompanyJobState.g.cs
 C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\Pages\PNotification.g.cs
-C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\SignUpCompany.g.cs
-C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\UCNotification.g.cs
 C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\User Control\UCCompanyInfo.g.cs
 C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\User Control\UCCompanyJob.g.cs
 C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\User Control\UCCV.g.cs
@@ -70,31 +59,14 @@ C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.
 C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\User Control\UCCVEmployee.g.cs
 C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\User Control\UCJobInfo.g.cs
 C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\User Control\UCPopUp.g.cs
-C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\WCompanyAcceptCV.g.cs
-C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\WInterview.g.cs
-C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\WJobInfoDetail.g.cs
-C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\WSelectCV.g.cs
-C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\WSignUp.g.cs
-C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\WSignUpJobApplicant.g.cs
 C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\App.g.cs
 C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs
 C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\FinalProject_MarkupCompile.cache
 C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\FinalProject_MarkupCompile.lref
 C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\App.baml
-C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\CompanyWindow.baml
-C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\CreateJob.baml
-C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\CVWindow.baml
-C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\JobApplicantWindow.baml
-C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\LoginWindow.baml
-C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\Pages\CreatJobWindow.baml
-C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\Pages\CVPage.baml
-C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\Pages\DocumentPage.baml
-C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\Pages\PageJob.baml
 C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\Pages\PCompany.baml
 C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\Pages\PCompanyJobState.baml
 C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\Pages\PNotification.baml
-C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\SignUpCompany.baml
-C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\UCNotification.baml
 C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\User Control\UCCompanyInfo.baml
 C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\User Control\UCCompanyJob.baml
 C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\User Control\UCCV.baml
@@ -102,12 +74,6 @@ C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.
 C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\User Control\UCCVEmployee.baml
 C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\User Control\UCJobInfo.baml
 C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\User Control\UCPopUp.baml
-C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\WCompanyAcceptCV.baml
-C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\WInterview.baml
-C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\WJobInfoDetail.baml
-C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\WSelectCV.baml
-C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\WSignUp.baml
-C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\WSignUpJobApplicant.baml
 C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\FinalProject.g.resources
 C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\FinalProject.GeneratedMSBuildEditorConfig.editorconfig
 C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\FinalProject.AssemblyInfoInputs.cache
@@ -241,3 +207,37 @@ D:\UNIVERSITY\SOPHOMORE\TERM II\LẬP TRÌNH WINDOWS\FinalProjectWPF\FinalProjec
 D:\UNIVERSITY\SOPHOMORE\TERM II\LẬP TRÌNH WINDOWS\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\Pages\PCV.baml
 D:\UNIVERSITY\SOPHOMORE\TERM II\LẬP TRÌNH WINDOWS\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\Pages\PCreateJob.g.cs
 D:\UNIVERSITY\SOPHOMORE\TERM II\LẬP TRÌNH WINDOWS\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\Pages\PCreateJob.baml
+C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\Pages\PCreateJob.g.cs
+C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\Pages\PCV.g.cs
+C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\Pages\PDocument.g.cs
+C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\Pages\PJob.g.cs
+C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\User Control\UCNotification.g.cs
+C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\Windows\Company\WCompany.g.cs
+C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\Windows\Company\WCompanyAcceptCV.g.cs
+C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\Windows\Company\WCreateJob.g.cs
+C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\Windows\Company\WInterview.g.cs
+C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\Windows\Employee\WCV.g.cs
+C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\Windows\Employee\WEmployee.g.cs
+C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\Windows\Employee\WJobInfoDetail.g.cs
+C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\Windows\Employee\WSelectCV.g.cs
+C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\Windows\LoginSignUp\WLogin.g.cs
+C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\Windows\LoginSignUp\WSignUp.g.cs
+C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\Windows\LoginSignUp\WSignUpCompany.g.cs
+C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\Windows\LoginSignUp\WSignUpEmployee.g.cs
+C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\Pages\PCreateJob.baml
+C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\Pages\PCV.baml
+C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\Pages\PDocument.baml
+C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\Pages\PJob.baml
+C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\User Control\UCNotification.baml
+C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\Windows\Company\WCompany.baml
+C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\Windows\Company\WCompanyAcceptCV.baml
+C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\Windows\Company\WCreateJob.baml
+C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\Windows\Company\WInterview.baml
+C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\Windows\Employee\WCV.baml
+C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\Windows\Employee\WEmployee.baml
+C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\Windows\Employee\WJobInfoDetail.baml
+C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\Windows\Employee\WSelectCV.baml
+C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\Windows\LoginSignUp\WLogin.baml
+C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\Windows\LoginSignUp\WSignUp.baml
+C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\Windows\LoginSignUp\WSignUpCompany.baml
+C:\VUONG_LAP_QUE\Nam 2\HK II\Window\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\Windows\LoginSignUp\WSignUpEmployee.baml
