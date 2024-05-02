@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 D:\UNIVERSITY\SOPHOMORE\TERM II\LẬP TRÌNH WINDOWS\FinalProjectWPF\FinalProject\App.xaml
-29-1501606992
+29-1354404753
 
-461236701971
+46-1057615294
 231-214902253
-Pages\CreatJobWindow.xaml;Pages\CVPage.xaml;Pages\DocumentPage.xaml;Pages\PCompany.xaml;Pages\PCompanyJobState.xaml;Pages\PJob.xaml;Pages\PNotification.xaml;Style\MainStyle.xaml;Theme\Theme.xaml;User Control\UCCompanyInfo.xaml;User Control\UCCompanyJob.xaml;User Control\UCCV.xaml;User Control\UCCVApply.xaml;User Control\UCCVEmployee.xaml;User Control\UCJobInfo.xaml;User Control\UCNotification.xaml;User Control\UCPopUp.xaml;Windows\Company\WCompany.xaml;Windows\Company\WCompanyAcceptCV.xaml;Windows\Company\WCreateJob.xaml;Windows\Company\WInterview.xaml;Windows\Employee\WCV.xaml;Windows\Employee\WEmployee.xaml;Windows\Employee\WJobInfoDetail.xaml;Windows\Employee\WSelectCV.xaml;Windows\LoginSignUp\WLogin.xaml;Windows\LoginSignUp\WSignUp.xaml;Windows\LoginSignUp\WSignUpCompany.xaml;Windows\LoginSignUp\WSignUpEmployee.xaml;
+Pages\CreatJobWindow.xaml;Pages\CVPage.xaml;Pages\PCompany.xaml;Pages\PCompanyJobState.xaml;Pages\PDocument.xaml;Pages\PJob.xaml;Pages\PNotification.xaml;Style\MainStyle.xaml;Theme\Theme.xaml;User Control\UCCompanyInfo.xaml;User Control\UCCompanyJob.xaml;User Control\UCCV.xaml;User Control\UCCVApply.xaml;User Control\UCCVEmployee.xaml;User Control\UCJobInfo.xaml;User Control\UCNotification.xaml;User Control\UCPopUp.xaml;Windows\Company\WCompany.xaml;Windows\Company\WCompanyAcceptCV.xaml;Windows\Company\WCreateJob.xaml;Windows\Company\WInterview.xaml;Windows\Employee\WCV.xaml;Windows\Employee\WEmployee.xaml;Windows\Employee\WJobInfoDetail.xaml;Windows\Employee\WSelectCV.xaml;Windows\LoginSignUp\WLogin.xaml;Windows\LoginSignUp\WSignUp.xaml;Windows\LoginSignUp\WSignUpCompany.xaml;Windows\LoginSignUp\WSignUpEmployee.xaml;
 
 False
 

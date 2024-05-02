@@ -19,16 +19,16 @@ using System.Windows.Shapes;
 namespace FinalProject.Page
 {
     /// <summary>
-    /// Interaction logic for DocumentPage.xaml
+    /// Interaction logic for PDocument.xaml
     /// </summary>
-    public partial class DocumentPage : System.Windows.Controls.Page
+    public partial class PDocument : System.Windows.Controls.Page
     {
         Company company;
-        public DocumentPage()
+        public PDocument()
         {
             InitializeComponent();
         }
-        public DocumentPage(Company company)
+        public PDocument(Company company)
         {
             InitializeComponent();
             Company = company;

@@ -154,8 +154,8 @@ namespace FinalProject
 
         private void btnHoSo_Click(object sender, RoutedEventArgs e)
         {
-            Page.DocumentPage documentPage = new Page.DocumentPage(company);
-            mainFarm.Navigate(documentPage);
+            Page.PDocument PDocument = new Page.PDocument(company);
+            mainFarm.Navigate(PDocument);
         }
 
 
