@@ -20,7 +20,7 @@ namespace FinalProject.Database
 
         public void Them(Employee employee)
         {
-            MessageBox.Show(employee.Phone);
+            
             string[] prop = { "ID","UserName","Password","Type" ,"EmployeeName", "Gender", "EmployeeLocation", "DateOfBirth", "Cccd", "Phone" };
             Them(employee, prop);
         }

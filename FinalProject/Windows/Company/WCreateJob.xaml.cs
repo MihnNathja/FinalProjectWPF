@@ -47,12 +47,14 @@ namespace FinalProject
         {
             Job job = new Job(jobDAO.GetNextID(),txtbJobName.Text,txtbCompanyName.Text,txtbSalary.Text,txtbExperience.Text,txtbLocation.Text,txtbDescription.Text,txtbRequire.Text, txtbBenefit.Text,txtbWorkTime.Text);
             jobDAO.Them(job);
+            this.Close();
         }
 
         private void btnSave_Click(object sender, RoutedEventArgs e)
         {
 /*            Job job = new Job(IdJob, txtbName.Text, txtbCompanyName.Text, cbbSalary.Text, txtbLocation.Text);
             jobDAO.Sua(job);*/
+            this.Close();
         }
     }
 }
