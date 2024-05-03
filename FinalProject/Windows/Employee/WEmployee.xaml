@@ -181,7 +181,7 @@
 
             </Grid>
 
-            <Grid Grid.Column="1" Margin="30 20 20 20 ">
+            <Grid Grid.Column="1" Margin="10 0">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="auto"/>
                     <RowDefinition Height="*"/>
@@ -189,72 +189,7 @@
 
                 </Grid.RowDefinitions>
                 <!--search textbox-->
-                <Grid Grid.Row="0" HorizontalAlignment="Center">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="1*"/>
-                        <ColumnDefinition Width="1.5*"/>
-                    </Grid.ColumnDefinitions>
-                    <Grid Width="500" HorizontalAlignment="Left">
-               
-                        <TextBox x:Name="txtSearch" 
-                                 Style="{StaticResource MaterialDesignOutlinedTextBox}" 
-                                 Height="50"
-                                 materialDesign:HintAssist.Hint="Search here ..."
-                                 materialDesign:TextFieldAssist.TextFieldCornerRadius="30"
-                                 Background="White"
-                                 materialDesign:HintAssist.IsFloating="False"
-                                 Width="400" HorizontalAlignment="Left"
-                                 />
-
-
-                    </Grid>
-                    <!--Data Region input-->
-                    <StackPanel Grid.Column="1" Orientation="Horizontal">
-                        <ComboBox x:Name="cbbLocation" Width="250" Margin="10 0" 
-                                   Height="50"  materialDesign:ComboBoxAssist.MaxLength="2"
-                                  materialDesign:HintAssist.Hint="Tất cả khu vực/tỉnh thành"
-                                  FontSize="15"
-                                  IsEditable="True"
-                                  Style="{StaticResource MaterialDesignOutlinedComboBox}" 
-                                  Background="White"
-                                    materialDesign:TextFieldAssist.TextFieldCornerRadius="10">
-                            
-                            
-                        </ComboBox>
-                        <ComboBox x:Name="cbbExperience"  Width="250" Height="50"
-                                  materialDesign:ComboBoxAssist.MaxLength="2"
-                                  materialDesign:HintAssist.Hint="Kinh nghiệm"
-                                  FontSize="15" Margin="10 0"
-                                  Style="{StaticResource MaterialDesignOutlinedComboBox}" 
-                                  Background="White"
-                                  materialDesign:TextFieldAssist.TextFieldCornerRadius="10"> 
-                            <ComboBoxItem Content="Tất cả kinh nghiệm"/>
-                            <ComboBoxItem Content="Dưới 1 năm" />
-                            <ComboBoxItem Content="1 năm" />
-                            <ComboBoxItem Content="2 năm" />
-                            <ComboBoxItem Content="3 năm" />
-                            <ComboBoxItem Content="4 năm" />
-                        </ComboBox>
-
-                        <Button 
-         x:Name="btnSearch"
-             Width="41" 
-             Height="41" 
-             Margin="20 0" 
- 
-             Click="btnSearch_Click"
- 
-             IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
-             Style="{StaticResource MaterialDesignFloatingActionMiniButton}"
-             ToolTip="MaterialDesignFloatingActionMiniButton">
-
-                            <materialDesign:PackIcon
-                 Width="20"
-                 Height="20"
-                 Kind="Magnify" />
-                        </Button>
-                    </StackPanel>
-                </Grid>
+                
                 <Grid Grid.Row="1" Margin="0,0,0,0" >
 
                     <Frame Margin="0 20"

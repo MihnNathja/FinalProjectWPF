@@ -27,14 +27,14 @@ namespace FinalProject
         public WEmployee()
         {
             InitializeComponent();
-            AddLocationToComboBox();
+           
         }
         public WEmployee(Employee employee)
         {
             InitializeComponent();
             this.employee = employee;
             this.DataContext = employee;
-            AddLocationToComboBox();
+            
         }
         private void WCompany_Loaded(object sender, RoutedEventArgs e)
         {
@@ -126,12 +126,7 @@ namespace FinalProject
             mainFarm.Navigate(PJob);
         }
 
-        private void btnSearch_Click(object sender, RoutedEventArgs e)
-        {
-            PJob PJob = new PJob(employee);
-            PJob.search(cbbLocation.Text, cbbExperience.Text);
-            mainFarm.Navigate(PJob);
-        }
+       
 
         private void mainFarm_Navigated(object sender, NavigationEventArgs e)
         {
@@ -162,28 +157,7 @@ namespace FinalProject
 
         }
 
-        private void AddLocationToComboBox()
-        {
-            List<string> location = new List<string>
-            {
-                "Hà Nội", "Hồ Chí Minh", "Hải Phòng", "Cần Thơ", "Đà Nẵng",
-                "Biên Hòa", "Nha Trang", "Buôn Ma Thuột", "Huế", "Long Xuyên",
-                "Thái Nguyên", "Vũng Tàu", "Thanh Hóa", "Quy Nhơn", "Đà Lạt",
-                "Nam Định", "Vinh", "Bắc Ninh", "Thái Bình", "Cà Mau",
-                "Hải Dương", "Uông Bí", "Bắc Giang", "Bến Tre", "Quảng Ninh",
-                "Trà Vinh", "Kiên Giang", "Vĩnh Long", "Ninh Bình", "Bình Phước",
-                "Hà Nam", "Phan Thiết", "Đồng Hới", "Sóc Trăng", "Kon Tum",
-                "Bạc Liêu", "Yên Bái", "Tuy Hòa", "Đồng Xoài", "Pleiku",
-                "Hà Tĩnh", "Tây Ninh", "Lạng Sơn", "Hòa Bình", "Bắc Kạn",
-                "Cao Bằng", "Sơn La", "Điện Biên", "Lai Châu", "Lào Cai",
-                "Hà Giang", "Bắc Cạn", "Nước ngoài"
-            };
-
-            foreach (string tinh in location)
-            {
-                cbbLocation.Items.Add(tinh);
-            }
-        }
+        
     }
 }
 
