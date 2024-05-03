@@ -27,20 +27,23 @@ namespace FinalProject.Page
     {
         
         JobDAO jobDAO = new JobDAO();
-        User user;
-        public User User { get => user; set => user = value; }
+        Employee employee;
+
+        
+        public Employee Employee { get => employee; set => employee = value; }
 
         public PJob()
         {
             InitializeComponent();
+           
             AddLocationToComboBox();
         }
 
        
         
-        public PJob(User user)
+        public PJob(Employee employee)
         {
-            User = user;
+            Employee = employee;
             InitializeComponent();
             AddLocationToComboBox();
         }
@@ -51,8 +54,8 @@ namespace FinalProject.Page
             
             foreach (UCJobInfo job in jobList)
             {
-                job.User = user;
-                job.Type = User.Type;
+                job.User = employee;
+                job.Type = Employee.Type;
                
                 job.btnDeleteJob.Visibility = Visibility.Hidden;
                 pnlJob.Children.Add(job);
@@ -61,9 +64,10 @@ namespace FinalProject.Page
 
         private void btnSearch_Click(object sender, RoutedEventArgs e)
         {
-            //PJob PJob = new PJob(employee);
-            //PJob.search(cbbLocation.Text, cbbExperience.Text);
-            //mainFarm.Navigate(PJob);
+            PJob PJob = new PJob(Employee);
+            search(cbbLocation.Text, cbbExperience.Text);
+
+
         }
 
         private void AddLocationToComboBox()
@@ -88,22 +92,39 @@ namespace FinalProject.Page
                 cbbLocation.Items.Add(tinh);
             }
         }
-
-
-
         public void search(string location, string experience)
         {
-            Filter filter = new Filter(location, experience);
-            jobDAO.DataJob = jobDAO.Search(filter);
             pnlJob.Children.Clear();
-            List<UCJobInfo> jobList = jobDAO.LoadPage();
-            foreach (UCJobInfo job in jobList)
+            location = cbbLocation.SelectedItem.ToString();
+            experience = cbbExperience.SelectedItem.ToString();
+
+
+            List<UCJobInfo> joblist = jobDAO.Search(location, experience);
+            foreach (UCJobInfo job in joblist)
             {
-                job.User = user;
-                job.Type = User.Type;
+                job.User = employee;
+                job.Type = Employee.Type;
+
+                job.btnDeleteJob.Visibility = Visibility.Hidden;
                 pnlJob.Children.Add(job);
             }
         }
+
+
+
+        //public void search(string location, string experience)
+        //{
+        //    filter filter = new filter(location, experience);
+        //    jobdao.datajob = jobdao.search(filter);
+        //    pnljob.children.clear();
+        //    list<ucjobinfo> joblist = jobdao.loadpage();
+        //    foreach (ucjobinfo job in joblist)
+        //    {
+        //        job.user = user;
+        //        job.type = user.type;
+        //        pnljob.children.add(job);
+        //    }
+        //}
     }
 }
 

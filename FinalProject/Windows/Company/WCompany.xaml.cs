@@ -47,11 +47,8 @@ namespace FinalProject
         public void Reload(string page)
         {
             
-            if(page == "PJob")
-            {
-                mainFarm.Content = null;
-                mainFarm.Content = new PJob(company);
-            }
+            
+            
             if(page == "PCreateJob")
             {
                 mainFarm.Content = null;
@@ -125,19 +122,15 @@ namespace FinalProject
 
         }
 
-        private void btnViecLam_Click(object sender, RoutedEventArgs e)
-        {
-            PJob PJob = new PJob(company);
-            mainFarm.Navigate(PJob);
-        }
+        
 
         private void btnSearch_Click(object sender, RoutedEventArgs e)
         {
             
 
-            PJob PJob = new PJob(company);
-            PJob.search(cbbLocation.Text, cbbExperience.Text);
-            mainFarm.Navigate(PJob);
+            //PJob PJob = new PJob(company);
+            //PJob.search(cbbLocation.Text, cbbExperience.Text);
+            //mainFarm.Navigate(PJob);
         }
 
        
