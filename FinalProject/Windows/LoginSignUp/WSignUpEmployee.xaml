@@ -69,7 +69,7 @@ FontSize="40" FontWeight="Black"/>
                             <TextBox x:Name="txtAddress" Margin="10 5" 
                   materialDesign:HintAssist.Hint="Địa chỉ" FontSize="25"/>
 
-                            <DatePicker x:Name="dtpDateOfBirth" Margin="10 5" Height="50" 
+                            <DatePicker x:Name="dtpDateOfBirth" Margin="10 5" Height="50" Foreground="Black"
                   />
 
                             <TextBox x:Name="txtPhone" Margin="10 5" 

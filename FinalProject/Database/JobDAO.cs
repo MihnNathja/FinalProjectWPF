@@ -103,11 +103,11 @@ namespace FinalProject.Database
             string SQL = string.Format("SELECT * FROM Jobs WHERE 1 = 1"); // Bắt đầu với điều kiện luôn đúng
             if (location != "Tất cả khu vực/tỉnh thành")
             {
-                SQL += $" AND JobLocation = N'{location}'";
+                SQL += $" AND JobLocation = N'%{location}%'";
             }
             if (experience != "Tất cả kinh nghiệm")
             {
-                SQL += $" AND Experience = N'{experience}'";
+                SQL += $" AND Experience = N'%{experience}%'";
             }
             DataTable dataSearch = db.Load(SQL);
             

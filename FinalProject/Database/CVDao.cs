@@ -72,9 +72,9 @@ namespace FinalProject.Database
         }
         public void Write(Job job, CV cv, Employee employee, DateOnly date)
         {
-            MessageBox.Show(date.ToString());
+            
             string SQL = string.Format($"UPDATE ApplyCV SET Interview = '{date}' WHERE IdCV = {cv.IdCV} and ID = {job.Id} and IdEmployee = {employee.ID}");
-            MessageBox.Show(SQL);
+            
             db.ThucThi(SQL);
         }
 
