@@ -50,6 +50,7 @@ namespace FinalProject
             JobName.Text = job.JobName;
             Salary.Text = job.Salary;
             JobLocation.Text = job.JobLocation;
+            WorkTime.Text = job.WorkTime;
             if (Type == "Employee")
             {
                 btnDeleteJob.IsEnabled = false;
