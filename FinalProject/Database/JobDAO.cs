@@ -96,7 +96,7 @@ namespace FinalProject.Database
         }
 
 
-        public DataTable Search(Filter filter)
+        public List<UCJobInfo> Search(string location, string experience)
         {
             // Phần bên dưới là duyệt từng property trong filter, sau này sẽ có thể sử dụng
             /*            string values = "";
@@ -105,8 +105,26 @@ namespace FinalProject.Database
                         {
                             values += "'" + property.GetValue(filter).ToString() + "'" + ",";
                         }*/
-            string SQL = string.Format("SELECT *FROM Jobs WHERE JobLocation = '{0}'", filter.Location);
-            return db.Load(SQL);
+            List<UCJobInfo> list = new List<UCJobInfo>();
+            string SQL = string.Format($"SELECT *FROM Jobs WHERE JobLocation = '{location}' and Experience = '{experience}'");
+            DataTable dataSearch = db.Load(SQL);
+
+            foreach (DataRow row in dataSearch.Rows)
+            {
+                Job job = new Job();
+                PropertyInfo[] properties = typeof(Job).GetProperties();
+                foreach (PropertyInfo property in properties)
+                {
+                    property.SetValue(job, row[property.Name].ToString(), null);
+                }
+                UCJobInfo jobInfo = new UCJobInfo(job);
+                //ImageBrush imageBrush = new ImageBrush();
+                //imageBrush.ImageSource = new BitmapImage(new Uri("pack://application:,,,/FinalProjectWPF;Image/logosac-01.png", UriKind.Absolute));
+                //jobInfo.Logo.Fill = imageBrush;
+                list.Add(jobInfo);
+            }
+            return list;
+
         }
         public List<UCCompanyJob> GetCompanyJob(Company company)
         {
