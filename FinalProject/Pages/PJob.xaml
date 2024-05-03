@@ -43,6 +43,7 @@
             <!--Data Region input-->
             <StackPanel Grid.Column="1" Orientation="Horizontal">
                 <ComboBox x:Name="cbbLocation" Width="250" Margin="5 0" 
+                          SelectedIndex="0"
                           Height="50"  materialDesign:ComboBoxAssist.MaxLength="2"
                          materialDesign:HintAssist.Hint="Tất cả khu vực/tỉnh thành"
                           materialDesign:HintAssist.IsFloating="False"
@@ -56,6 +57,7 @@
 
                 </ComboBox>
                 <ComboBox x:Name="cbbExperience"  Width="250" Height="50"
+                          SelectedIndex="0"
                          materialDesign:ComboBoxAssist.MaxLength="2"
                          materialDesign:HintAssist.Hint="Kinh nghiệm"
                           materialDesign:HintAssist.IsFloating="False"
