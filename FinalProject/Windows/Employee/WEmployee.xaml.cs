@@ -157,7 +157,16 @@ namespace FinalProject
 
         }
 
-        
+
+        private void btnLichHen_Click(object sender, RoutedEventArgs e)
+        {
+            PCalendar pCalendar = new PCalendar(employee);
+            mainFarm.Navigate(pCalendar);
+        }
+        private void btnSearch_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("search");
+        }
     }
 }
 

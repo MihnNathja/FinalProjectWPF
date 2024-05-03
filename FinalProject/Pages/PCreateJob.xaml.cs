@@ -39,7 +39,6 @@ namespace FinalProject
         {
             WCreateJob WCreateJob = new WCreateJob(Company);
             WCreateJob.ShowDialog();
-            MessageBox.Show(Company.CompanyName);
             ReloadPage(Company);
         }
 

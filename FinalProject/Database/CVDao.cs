@@ -105,8 +105,9 @@ namespace FinalProject.Database
             foreach (DataRow row in data.Rows)
             {
                 UCNotification notifi = new UCNotification();
-                JobDAO jobDAO = new JobDAO();  
-                notifi.CompanyName = jobDAO.GetObject(row["ID"].ToString()).CompanyName;
+                JobDAO jobDAO = new JobDAO();
+                CVDAO CVDAO = new CVDAO();
+                notifi.Job = jobDAO.GetObject(row["ID"].ToString());
                 if (row["ACCEPT"] is not DBNull )
                 {
                     notifi.IsAccepted = row["ACCEPT"].ToString();
@@ -208,6 +209,11 @@ namespace FinalProject.Database
         public void Accept(Job job, CV cv,Employee employee, int isAccepted)
         {
             string SQL = string.Format($"UPDATE ApplyCV SET ACCEPT = {isAccepted} WHERE ID = '{job.Id}' and IdCV = '{cv.IdCV}' and IdEmployee = '{employee.ID}'");
+            db.ThucThi(SQL);
+        }
+        public void Confirm(Job job, Employee employee, int isConfirm)
+        {
+            string SQL = string.Format($"UPDATE ApplyCV SET Confirm = {isConfirm} WHERE ID = '{job.Id}' and IdEmployee = '{employee.ID}'");
             db.ThucThi(SQL);
         }
         public string GetNumberCVOfJob(string id)
