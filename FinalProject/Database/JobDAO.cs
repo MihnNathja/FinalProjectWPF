@@ -98,13 +98,6 @@ namespace FinalProject.Database
 
         public DataTable Search(Filter filter)
         {
-            // Phần bên dưới là duyệt từng property trong filter, sau này sẽ có thể sử dụng
-            /*            string values = "";
-                        Type type = filter.GetType();
-                        foreach (PropertyInfo property in type.GetProperties())
-                        {
-                            values += "'" + property.GetValue(filter).ToString() + "'" + ",";
-                        }*/
             string SQL = string.Format("SELECT *FROM Jobs WHERE JobLocation = '{0}'", filter.Location);
             return db.Load(SQL);
         }

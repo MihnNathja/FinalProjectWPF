@@ -64,6 +64,8 @@ namespace FinalProject
                 txtbDateInterview.Text = DateInterview.ToShortDateString();
                 txtbConfirmAnnoucement.Visibility = Visibility.Visible;
                 txtbAnnoucement.Visibility = Visibility.Visible;
+                btnConfirm.Visibility = Visibility.Visible;
+                btnViewLater.Visibility = Visibility.Visible;
             }
             else if (IsAccepted == "False")
             {
