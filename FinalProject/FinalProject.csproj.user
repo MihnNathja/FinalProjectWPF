@@ -7,6 +7,9 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="Pages\PCalendar.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Windows\Company\WCompany.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -87,6 +90,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Page Update="Pages\PCalendar.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Windows\Company\WCompany.xaml">
       <SubType>Designer</SubType>
     </Page>

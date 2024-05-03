@@ -45,10 +45,9 @@ namespace FinalProject.Database
             {
                 UCCompanyInfo companyInfo = new UCCompanyInfo();
                 companyInfo.CompanyName.Text = row["CompanyName"].ToString();
-                /*companyInfo.Mst.Text = row["Mst"].ToString();*/
                 companyInfo.CompanyLocation.Text = row["CompanyLocation"].ToString();
-                /*companyInfo.Boss.Text = row["Boss"].ToString();*/
-                //companyInfo.PhoneNumber.Text = row["PhoneNumber"].ToString() ;
+                companyInfo.PhoneNumber.Text = row["PhoneNumber"].ToString() ;
+                companyInfo.CompanyDescription.Text = row["Description"].ToString() ;   
                 list.Add(companyInfo);
             }
             return list;

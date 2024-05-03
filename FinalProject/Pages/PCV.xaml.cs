@@ -50,8 +50,6 @@ namespace FinalProject.Page
         {
             CVList.Children.Clear();
             CVDAO cVDAO = new CVDAO();
-            // hàm này sẽ phải sửa lại sau khi Quế sửa xong cái UCCV, cái tải lên là CV của mỗi người
-            // nhưng giao diện hiện tại không đúng 
             List<UCCVEmployee> data = cVDAO.GetEmployeeCVToCreate(Employee);
             foreach (UCCVEmployee cv in data)
             {

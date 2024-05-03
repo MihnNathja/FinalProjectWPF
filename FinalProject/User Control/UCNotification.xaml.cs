@@ -1,4 +1,5 @@
-﻿using FinalProject.Objects;
+﻿using FinalProject.Database;
+using FinalProject.Objects;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,17 +22,17 @@ namespace FinalProject
     /// </summary>
     public partial class UCNotification : UserControl
     {
-        string companyName;
         string isAccepted;
         DateTime dateInterview;
+        Employee employee;
+        Job job;
         public UCNotification()
         {
             InitializeComponent();
         }
-        public UCNotification(string companyName, string isAccepted, DateTime dateInterview)
+        public UCNotification( string isAccepted, DateTime dateInterview)
         {
             InitializeComponent();
-            CompanyName = companyName;
             IsAccepted = isAccepted;
             DateInterview = dateInterview;
         }
@@ -39,11 +40,13 @@ namespace FinalProject
 
         public string IsAccepted { get => isAccepted; set => isAccepted = value; }
         public DateTime DateInterview { get => dateInterview; set => dateInterview = value; }
-        public string CompanyName { get => companyName; set => companyName = value; }
+        public Employee Employee { get => employee; set => employee = value; }
+        public Job Job { get => job; set => job = value; }
 
         private void btnAccept_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Accept nè");
+            CVDAO cVDAO = new CVDAO();
+            cVDAO.Confirm(Job, Employee, 1);
         }
 
         private void btnSee_Click(object sender, RoutedEventArgs e)
@@ -53,7 +56,7 @@ namespace FinalProject
 
         private void UserControl_Loaded(object sender, RoutedEventArgs e)
         {
-            txtbCompanyName.Text = CompanyName;
+            txtbCompanyName.Text = Job.CompanyName;
             if (IsAccepted == "True")
             {
                 txtbIsAccept.Text = "Đã được duyệt";
@@ -61,6 +64,8 @@ namespace FinalProject
                 txtbDateInterview.Text = DateInterview.ToShortDateString();
                 txtbConfirmAnnoucement.Visibility = Visibility.Visible;
                 txtbAnnoucement.Visibility = Visibility.Visible;
+                btnConfirm.Visibility = Visibility.Visible;
+                btnViewLater.Visibility = Visibility.Visible;
             }
             else if (IsAccepted == "False")
             {
@@ -73,5 +78,6 @@ namespace FinalProject
                 txtbIsAccept.Foreground = Brushes.Gray;
             }    
         }
+
     }
 }

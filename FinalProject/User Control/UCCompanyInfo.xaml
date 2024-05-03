@@ -13,13 +13,13 @@
             Background="{DynamicResource MaterialDesignPaper}"
             FontFamily="{DynamicResource MaterialDesignFont}"
              mc:Ignorable="d" 
-             MinWidth="200" MinHeight="400"
+             MinWidth="300" MinHeight="400"
              >
  
 
     <materialDesign:Card
         Margin="5"
-        Width="200">
+        Width="300">
         <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition
@@ -44,40 +44,51 @@
             <StackPanel
           Grid.Row="1"
           Margin="8,24,8,0">
-                <TextBlock x:Name="CompanyName"
-            FontWeight="Bold">
-          Company Name
-                </TextBlock>
-                <TextBlock x:Name="CompanyLocation"
-            VerticalAlignment="Center"
-            Text="Company info."
-            TextWrapping="Wrap" />
+                <WrapPanel>
+                    <materialDesign:PackIcon Kind="Company" />
+                    <TextBlock x:Name="CompanyName" FontWeight="Bold"/>
+                </WrapPanel>
+                
+
+                <TextBlock 
+                    Name="CompanyDescription"
+                    VerticalAlignment="Center"
+                    TextWrapping="Wrap"/>
+                <WrapPanel>
+                    <materialDesign:PackIcon Kind="Location" />
+                    <TextBlock x:Name="CompanyLocation"
+                    VerticalAlignment="Center"
+                    TextWrapping="Wrap" />
+                </WrapPanel>
+                    
+                <WrapPanel>
+                    <materialDesign:PackIcon Kind="Phone" />
+                    <TextBlock x:Name="PhoneNumber"
+                    VerticalAlignment="Center"
+                    TextWrapping="Wrap" />
+                </WrapPanel>
             </StackPanel>
             <StackPanel
-          Grid.Row="2"
-          Margin="8"
-          HorizontalAlignment="Right"
-          Orientation="Horizontal">
+              Grid.Row="2"
+              Margin="8"
+              HorizontalAlignment="Right"
+              Orientation="Horizontal">
                 <Button Content="Chi tiết" Margin="30 0">
-                    
                 </Button>
                 <Button
-            Width="30"
-            Padding="2,0,2,0"
-            materialDesign:RippleAssist.IsCentered="True"
-            Style="{StaticResource MaterialDesignToolButton}">
-                    <materialDesign:PackIcon
-              Kind="ShareVariant" />
+                    Width="30"
+                    Padding="2,0,2,0"
+                    materialDesign:RippleAssist.IsCentered="True"
+                    Style="{StaticResource MaterialDesignToolButton}">
+                    <materialDesign:PackIcon Kind="ShareVariant" />
                 </Button>
                 <Button
-            Width="30"
-            Padding="2,0,2,0"
-            materialDesign:RippleAssist.IsCentered="True"
-            Style="{StaticResource MaterialDesignToolButton}">
-                    <materialDesign:PackIcon
-              Kind="Heart" />
+                    Width="30"
+                    Padding="2,0,2,0"
+                    materialDesign:RippleAssist.IsCentered="True"
+                    Style="{StaticResource MaterialDesignToolButton}">
+                    <materialDesign:PackIcon Kind="Heart" />
                 </Button>
-            
             </StackPanel>
         </Grid>
     </materialDesign:Card>

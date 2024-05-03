@@ -51,6 +51,18 @@ namespace FinalProject.Database
             }
             return employee;
         }
+        public List<DateTime> GetAppointmentDate(Employee employee)
+        {
+            string SQL = string.Format($"SELECT Interview FROM ApplyCV WHERE IdEmployee = '{employee.ID}' and Confirm = '1'");
+            DataTable data = db.Load(SQL);
+            List<DateTime> list = new List<DateTime>();
+            foreach (DataRow row in data.Rows)
+            {
+                DateTime dateTime = Convert.ToDateTime(row["Interview"]);
+                list.Add(dateTime);
+            }
+            return list;
+        }
         public DataTable Load()
         {
             string SQL = string.Format("SELECT *FROM Employees");
