@@ -34,14 +34,18 @@
 
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" 
                  VerticalAlignment="Center" Grid.Row="1">
-                <Button Content="Xem sau" Width="150" Margin="10" Height="40" 
-                 Foreground="White" FontSize="20"
-                 FontWeight="Bold" HorizontalContentAlignment="Center"
-                 VerticalContentAlignment="Center" Click="btnSee_Click"/>
-                <Button Content="Xác nhận" Width="150" Margin="10" Height="40" 
-                 Foreground="White" FontSize="20"
-                 FontWeight="Bold" HorizontalContentAlignment="Center"
-                 VerticalContentAlignment="Center" Click="btnAccept_Click"/>
+                <Button 
+                    Name="btnViewLater" Visibility="Collapsed"
+                    Content="Xem sau" Width="150" Margin="10" Height="40" 
+                    Foreground="White" FontSize="20"
+                    FontWeight="Bold" HorizontalContentAlignment="Center"
+                    VerticalContentAlignment="Center" Click="btnSee_Click"/>
+                <Button 
+                    Name="btnConfirm" Visibility="Collapsed"
+                    Content="Xác nhận" Width="150" Margin="10" Height="40" 
+                    Foreground="White" FontSize="20"
+                    FontWeight="Bold" HorizontalContentAlignment="Center"
+                    VerticalContentAlignment="Center" Click="btnAccept_Click"/>
             </StackPanel>
         </Grid>
     </Border>

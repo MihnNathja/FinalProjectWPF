@@ -45,7 +45,11 @@ namespace FinalProject.Pages
             calendar.BlackoutDates.AddDatesInPast();
             foreach (var date in AppointmentDates)
             {
-                MessageBox.Show(date.ToShortDateString());
+                calendar.BlackoutDates.Add(new CalendarDateRange(date));
+                TextBlock dateTextBlock = new TextBlock();
+                dateTextBlock.Text = "Bạn có một cuộc hẹn phỏng vấn vào:" + date.ToShortDateString();
+                dateTextBlock.FontSize = 20;
+                pnlDate.Children.Add(dateTextBlock);
             }
         }
     }
