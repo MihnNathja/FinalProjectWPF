@@ -13,7 +13,7 @@
 )
 INSERT INTO Employees (ID, UserName, Password, Type, EmployeeName, Gender, EmployeeLocation, DateOfBirth, Phone, CCCD)
 VALUES
-('1', 'tech_emp', '123', 'Employee', 'John Walker', 'Male', 'Ho Chi Minh City, Vietnam', '1990-01-01', '8498765421', '123456789012345'),
+('1', '1', '1', 'Employee', 'John Walker', 'Male', 'Ho Chi Minh City, Vietnam', '1990-01-01', '8498765421', '123456789012345'),
 ('2', 'financial_inc_analyst1', '123', 'Employee', 'Jane Doe', 'Female', 'Ha Noi, Vietnam', '1985-07-15', '8424876542', '987654321098765'),
 ('3', 'global_ent_marketing1', '123', 'Employee', 'Michael Lee', 'Male', 'Da Nang, Vietnam', '1995-03-22', '4901234678', '543210987654321'),
 ('4', 'startup_dev1', '123', 'Employee', 'Alice Young', 'Female', 'Remote', '2000-11-10', '4937890134', '321098765432109'),
