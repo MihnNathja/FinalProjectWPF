@@ -113,37 +113,37 @@
 
                         <StackPanel DockPanel.Dock="Top">
                             <Button Style="{StaticResource menuButton}"
-                MouseEnter="btnViecLam_MouseEnter"
-                MouseLeave="btnViecLam_MouseLeave"
-                Click="btnViecLam_Click"
-                >
+                                MouseEnter="btnViecLam_MouseEnter"
+                                MouseLeave="btnViecLam_MouseLeave"
+                                Click="btnViecLam_Click"
+                                >
                                 <StackPanel Orientation="Horizontal">
                                     <Icon:PackIconMaterial Kind="Home" Style="{StaticResource menuButtonIcon}"/>
                                     <TextBlock Text="Việc làm"/>
                                 </StackPanel>
                             </Button>
                             <Button Style="{StaticResource menuButton}"
-                MouseEnter="btnHoSo_MouseEnter" 
-                MouseLeave="btnHoSo_MouseLeave" Click="btnHoSo_Click"
-                >
+                                MouseEnter="btnHoSo_MouseEnter" 
+                                MouseLeave="btnHoSo_MouseLeave" Click="btnHoSo_Click"
+                                >
                                 <StackPanel Orientation="Horizontal">
                                     <Icon:PackIconMaterial Kind="FileDocument" Style="{StaticResource menuButtonIcon}"/>
                                     <TextBlock Text="Hồ sơ và CV"/>
                                 </StackPanel>
                             </Button>
                             <Button Style="{StaticResource menuButton}"
-                MouseEnter="btnCongty_MouseEnter"
-                MouseLeave="btnCongTy_MouseLeave"
-                Click="btnCongTy_Click">
+                                MouseEnter="btnCongty_MouseEnter"
+                                MouseLeave="btnCongTy_MouseLeave"
+                                Click="btnCongTy_Click">
                                 <StackPanel Orientation="Horizontal">
                                     <Icon:PackIconMaterial Kind="Factory" Style="{StaticResource menuButtonIcon}"/>
                                     <TextBlock Text="Công ty"/>
                                 </StackPanel>
                             </Button>
                             <Button Style="{StaticResource menuButton}"
-                MouseEnter="btnQuanTam_MouseEnter"
-                MouseLeave="btnQuanTam_MouseLeave"
-                >
+                                MouseEnter="btnQuanTam_MouseEnter"
+                                MouseLeave="btnQuanTam_MouseLeave"
+                                >
                                 <StackPanel Orientation="Horizontal">
                                     <Icon:PackIconMaterial Kind="Heart" Style="{StaticResource menuButtonIcon}"/>
                                     <TextBlock Text="Việc làm quan tâm"/>
@@ -157,6 +157,13 @@
                                 <StackPanel Orientation="Horizontal">
                                     <materialDesign:PackIcon Kind="BellBadge" Width="50" Height="30" Margin="5 0 0 0"/>
                                     <TextBlock Text="Thông Báo"/>
+                                </StackPanel>
+                            </Button>
+                            <Button Style="{StaticResource menuButton}"
+                                    Click="btnLichHen_Click">
+                                <StackPanel Orientation="Horizontal">
+                                    <materialDesign:PackIcon Kind="CalendarCheck" Width="50" Height="30" Margin="5 0 0 0"/>
+                                    <TextBlock Text="Lịch hẹn"/>
                                 </StackPanel>
                             </Button>
 
@@ -212,12 +219,12 @@
                     <StackPanel Grid.Column="1" Orientation="Horizontal">
                         <ComboBox x:Name="cbbLocation" Width="250" Margin="10 0" 
                                    Height="50"  materialDesign:ComboBoxAssist.MaxLength="2"
-                                  materialDesign:HintAssist.Hint="Tất cả khu vực/tỉnh thành"
+                                  materialDesign:HintAssist.Hint="Khu vực/tỉnh thành"
                                   FontSize="15"
                                   IsEditable="True"
                                   Style="{StaticResource MaterialDesignOutlinedComboBox}" 
                                   Background="White"
-                                    materialDesign:TextFieldAssist.TextFieldCornerRadius="10">
+                                  materialDesign:TextFieldAssist.TextFieldCornerRadius="10">
                             
                             
                         </ComboBox>

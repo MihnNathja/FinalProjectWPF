@@ -49,7 +49,7 @@
                 <TextBlock Text="Mô tả công việc" FontWeight="Bold"/>
                 <TextBox  Margin="10 5" Height="320"
                           x:Name="txtbDescription"
-                          Text="{Binding Description}"
+                          Text=""
                             TextBlock.FontSize="15"
                             VerticalAlignment="Top"
                             materialDesign:HintAssist.Hint="Mô tả công việc"

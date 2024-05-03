@@ -166,6 +166,7 @@ namespace FinalProject
         {
             List<string> location = new List<string>
             {
+                "Tất cả khu vực/tỉnh thành",
                 "Hà Nội", "Hồ Chí Minh", "Hải Phòng", "Cần Thơ", "Đà Nẵng",
                 "Biên Hòa", "Nha Trang", "Buôn Ma Thuột", "Huế", "Long Xuyên",
                 "Thái Nguyên", "Vũng Tàu", "Thanh Hóa", "Quy Nhơn", "Đà Lạt",
@@ -176,13 +177,19 @@ namespace FinalProject
                 "Bạc Liêu", "Yên Bái", "Tuy Hòa", "Đồng Xoài", "Pleiku",
                 "Hà Tĩnh", "Tây Ninh", "Lạng Sơn", "Hòa Bình", "Bắc Kạn",
                 "Cao Bằng", "Sơn La", "Điện Biên", "Lai Châu", "Lào Cai",
-                "Hà Giang", "Bắc Cạn", "Nước ngoài"
+                "Hà Giang", "Bắc Cạn", "Nước ngoài", "Remote"
             };
 
             foreach (string tinh in location)
             {
                 cbbLocation.Items.Add(tinh);
             }
+        }
+
+        private void btnLichHen_Click(object sender, RoutedEventArgs e)
+        {
+            PCalendar pCalendar = new PCalendar(employee);
+            mainFarm.Navigate(pCalendar);
         }
     }
 }

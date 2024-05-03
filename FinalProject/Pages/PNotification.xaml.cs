@@ -23,7 +23,6 @@ namespace FinalProject.Pages
     public partial class PNotification : System.Windows.Controls.Page
     {
         Employee employee = new Employee();
-        Job job = new Job();
         CVDAO cVDAO = new CVDAO();
         public PNotification()
         {
@@ -44,6 +43,7 @@ namespace FinalProject.Pages
 
             foreach (UCNotification notifi in notifiList)
             {
+                notifi.Employee = employee;
                 pnlNotifi.Children.Add(notifi);
             }
         }

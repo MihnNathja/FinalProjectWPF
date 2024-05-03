@@ -39,6 +39,7 @@ namespace FinalProject
         {
             InitializeComponent();
             DataContext = job;
+            txtbDescription.Text = job.Description;
         }
 
 
