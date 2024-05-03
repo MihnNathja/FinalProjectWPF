@@ -40,9 +40,8 @@ namespace FinalProject
         }
         private void WCompany_Loaded(object sender, RoutedEventArgs e)
         {
-            PJob PJob = new PJob(company);
-            
-            mainFarm.Navigate(PJob);
+            PCreateJob PCreateJob = new PCreateJob(company);
+            mainFarm.Navigate(PCreateJob);
         }
 
         public void Reload(string page)

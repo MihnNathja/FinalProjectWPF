@@ -15,98 +15,7 @@
              mc:Ignorable="d" 
              MinWidth="200" MinHeight="400"
              >
-    <!--<Border  
-        CornerRadius="10"
-        Margin="5">
-        <Border.Background>
-            <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
-                <GradientStop Offset="0.0" Color="#CCFFAA " />
-                <GradientStop Offset="1.0" Color="#1E5B53" />
-            </LinearGradientBrush>
-        </Border.Background>
-        <Grid>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="3*"/>
-                <RowDefinition Height="5*"/>
-            </Grid.RowDefinitions>
-
-            --><!--Company Cover--><!--
-            <Grid Grid.Row="0">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="2*"/>
-                    <RowDefinition Height="1*"/>
-                </Grid.RowDefinitions>
-                <Grid Grid.Row="0">
-                    <Rectangle>
-                        <Rectangle.Fill>
-                            <ImageBrush 
-                                ImageSource="/Image/company_cover.jpg" 
-                                Stretch="Uniform"></ImageBrush>
-                        </Rectangle.Fill>
-                    </Rectangle>
-                </Grid>
-                <Grid Grid.Row="1">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="1*"/>
-                        <ColumnDefinition Width="4*"/>
-                    </Grid.ColumnDefinitions>
-                    <Rectangle Grid.Column="0"
-                        Margin="0 -20 0 0">
-                        <Rectangle.Fill>
-                            <ImageBrush ImageSource="/Image/logosac-01.png"></ImageBrush>
-                        </Rectangle.Fill>
-                    </Rectangle>
-                </Grid>
-
-            </Grid>
-
-            <Grid Grid.Row="1">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="2*"/>
-                    <RowDefinition Height="5*"/>
-                </Grid.RowDefinitions>
-
-                --><!--Title--><!--
-                <Grid Grid.Row="0" Grid.ColumnSpan="2" Margin="0,0,0,174" Grid.RowSpan="2">
-                    <TextBlock 
-                        x:Name="CompanyName"
-                        VerticalAlignment="Center"
-                        Margin="5 0 5 0"
-                        FontSize="25"
-                    ></TextBlock>
-                </Grid>
-
-                --><!--Detail--><!--
-
-                <Grid Grid.Row="1" Grid.ColumnSpan="2">
-                    <StackPanel>
-                        <TextBlock
-                            x:Name="Mst"
-                            Margin="10 5"
-                            FontSize="15"
-                            />
-                        <TextBlock 
-                        x:Name="CompanyLocation"
-                        Margin="10 5"
-                        FontSize="15"
-                        ></TextBlock>
-                        <TextBlock 
-                        x:Name="Boss"
-                        Margin="10 5"
-                        FontSize="15"
-                        ></TextBlock>
-                        <TextBlock 
-                        x:Name="PhoneNumber"
-                        Margin="10 5"
-                        FontSize="15"
-                        ></TextBlock>
-                    </StackPanel>
-                </Grid>
-            </Grid>
-        </Grid>
-
-
-    </Border>-->
+ 
 
     <materialDesign:Card
         Margin="5"
@@ -149,6 +58,9 @@
           Margin="8"
           HorizontalAlignment="Right"
           Orientation="Horizontal">
+                <Button Content="Chi tiết" Margin="30 0">
+                    
+                </Button>
                 <Button
             Width="30"
             Padding="2,0,2,0"
