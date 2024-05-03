@@ -17,3 +17,37 @@ Mật khẩu:
 a
 Email:
 a@gmail.com
+
+CV:
+Kỹ sư phần mềm
+Để có được vị trí kỹ sư phần mềm cấp cao và tận dụng kinh nghiệm của tôi để thiết kế, phát triển và triển khai các giải pháp phần mềm phức tạp.
+Ngôn ngữ lập trình (Java, Python, C++), Mẫu thiết kế phần mềm, Giải quyết vấn đề, Làm việc nhóm.
+John Walker
+Phát triển và duy trì các ứng dụng doanh nghiệp cho Tech Corp, sử dụng các phương pháp Agile.
+Được hướng dẫn cho các nhà phát triển cấp dưới tại chương trình đào tạo mã hóa.
+Cử nhân Khoa học về Khoa học Máy tính
+Chưa được trao giải thưởng nào, nhưng có động lực cao và ham học hỏi.
+Hào hứng đóng góp cho một môi trường đổi mới và phát triển nhanh.
+
+Job:
+Chuyên viên tài chính
+Tập đoàn tài chính
+Mức lương ưu đãi
+Hà Nội
+Ít nhất 3 năm kinh nghiệm trong lĩnh vực tài chính, quản lý đầu tư hoặc ngành liên quan
+Phân tích dữ liệu tài chính, thực hiện các phương pháp đánh giá đầu tư, tư vấn cho khách hàng về quản lý tài chính và đầu tư
+Kiến thức vững về các công cụ phân tích tài chính, kỹ năng giao tiếp tốt, khả năng làm việc độc lập và làm việc nhóm
+Mức lương hấp dẫn, bảo hiểm y tế và các chế độ phúc lợi khác, cơ hội thăng tiến trong công việc
+Toàn thời gian
+
+
+Công ty:
+TechGenius
+9876543210
+Hồ Chí Minh
+Ms. Linh
++84 912 345 678
+info@techgenius.com.vn
+Công nghệ thông tin, Phần mềm, IoT
+TechGenius là một công ty khởi nghiệp công nghệ hàng đầu chuyên cung cấp các giải pháp phần mềm và IoT tiên tiến.
+
