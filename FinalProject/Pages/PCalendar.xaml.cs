@@ -46,8 +46,6 @@ namespace FinalProject.Pages
             foreach (var date in AppointmentDates)
             {
                 MessageBox.Show(date.ToShortDateString());
-                calendar.SelectedDate = date;
-
             }
         }
     }
