@@ -3,7 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:Icon="http://metro.mahapps.com/winfx/xaml/iconpacks"
              xmlns:local="clr-namespace:FinalProject"
-             StartupUri="Windows\LoginSignUp\WLogin.xaml">
+             StartupUri="WCalendar.xaml">
+             
     <Application.Resources>
         
         <ResourceDictionary>
