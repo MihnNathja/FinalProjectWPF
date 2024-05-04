@@ -10,6 +10,12 @@
     <Compile Update="Pages\PCalendar.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="UCDay.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="WCalendar.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Windows\Company\WCompany.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -91,6 +97,12 @@
   </ItemGroup>
   <ItemGroup>
     <Page Update="Pages\PCalendar.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UCDay.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WCalendar.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Windows\Company\WCompany.xaml">
