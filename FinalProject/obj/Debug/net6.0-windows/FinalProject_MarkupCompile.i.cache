@@ -1,0 +1,20 @@
+﻿FinalProject
+1.0.0.0
+
+winexe
+C#
+.cs
+D:\UNIVERSITY\SOPHOMORE\TERM II\LẬP TRÌNH WINDOWS\FinalProjectWPF\FinalProject\obj\Debug\net6.0-windows\
+FinalProject
+none
+false
+TRACE;DEBUG;NET;NET6_0;NETCOREAPP
+D:\UNIVERSITY\SOPHOMORE\TERM II\LẬP TRÌNH WINDOWS\FinalProjectWPF\FinalProject\App.xaml
+32-431537339
+
+49-1359185856
+231-214902253
+Pages\PCalendar.xaml;Pages\PCompany.xaml;Pages\PCompanyJobState.xaml;Pages\PCreateJob.xaml;Pages\PCV.xaml;Pages\PDocument.xaml;Pages\PJob.xaml;Pages\PNotification.xaml;Style\MainStyle.xaml;Theme\Theme.xaml;UCDay.xaml;User Control\UCCompanyInfo.xaml;User Control\UCCompanyJob.xaml;User Control\UCCV.xaml;User Control\UCCVApply.xaml;User Control\UCCVEmployee.xaml;User Control\UCJobInfo.xaml;User Control\UCNotification.xaml;User Control\UCPopUp.xaml;WCalendar.xaml;Windows\Company\WCompany.xaml;Windows\Company\WCompanyAcceptCV.xaml;Windows\Company\WCreateJob.xaml;Windows\Company\WInterview.xaml;Windows\Employee\WCV.xaml;Windows\Employee\WEmployee.xaml;Windows\Employee\WJobInfoDetail.xaml;Windows\Employee\WSelectCV.xaml;Windows\LoginSignUp\WLogin.xaml;Windows\LoginSignUp\WSignUp.xaml;Windows\LoginSignUp\WSignUpCompany.xaml;Windows\LoginSignUp\WSignUpEmployee.xaml;
+
+True
+

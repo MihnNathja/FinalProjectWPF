@@ -16,33 +16,84 @@
         Title="WCalendar" Height="600" Width="800" Loaded="Page_Loaded">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="0.3*"/>
-            <RowDefinition Height="1*"/>
+            <RowDefinition Height="0.2*"/>
+            <RowDefinition Height="0.8*"/>
         </Grid.RowDefinitions>
-        <Border Background="Blue" VerticalAlignment="Top" Height="100">
+        <Border Background="{StaticResource ThirdBackgroundColor}" VerticalAlignment="Top" Height="116">
             <Grid VerticalAlignment="Center">
-                <TextBlock Text="Lịch hẹn" Foreground="White" FontSize="30" VerticalAlignment="Center" Margin="20"
-                           FontWeight="Bold" HorizontalAlignment="Left"/>
-
-                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0 0 120 30">
-                    <Button x:Name="btnLeft" Background="Transparent" Height="50" Width="70" BorderThickness="0"
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.75*"/>
+                    <ColumnDefinition Width="1.25*"/>
+                    <ColumnDefinition Width="1.75*"/>
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Column="0">
+                    <TextBlock Text="Lịch hẹn" Foreground="White" FontSize="30" VerticalAlignment="Center" Margin="20"
+                        FontWeight="Bold" HorizontalAlignment="Center"/>
+                </Grid>
+                <Grid Grid.Column="1">
+                    <Ellipse Margin="0,0,37,41" Height="155" Width ="155" VerticalAlignment="Bottom" HorizontalAlignment="Right">
+                        <Ellipse.Fill>
+                            <LinearGradientBrush>
+                                <GradientStop Color="#5271FF" Offset="0.25"/>
+                                <GradientStop Color="#38B6FF" Offset="0.5"/>
+                                <GradientStop Color="#ABF8FA" Offset="0.75"/>
+                            </LinearGradientBrush>
+                        </Ellipse.Fill>
+                    </Ellipse>
+                    <Ellipse Height="44" HorizontalAlignment="Left" Width="45" VerticalAlignment="Bottom" Margin="52,0,0,44" RenderTransformOrigin="0.5,0.5">
+                        <Ellipse.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform Angle="-90"/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Ellipse.RenderTransform>
+                        <Ellipse.Fill>
+                            <LinearGradientBrush>
+                                <GradientStop Color="#5271FF" Offset="0.25"/>
+                                <GradientStop Color="#38B6FF" Offset="0.5"/>
+                                <GradientStop Color="#ABF8FA" Offset="0.75"/>
+                            </LinearGradientBrush>
+                        </Ellipse.Fill>
+                    </Ellipse>
+                    <Ellipse Height="30" HorizontalAlignment="Right" Width="30" VerticalAlignment="Top" Margin="0,15,3,0" RenderTransformOrigin="0.5,0.5">
+                        <Ellipse.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform Angle="-90"/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Ellipse.RenderTransform>
+                        <Ellipse.Fill>
+                            <LinearGradientBrush>
+                                <GradientStop Color="#5271FF" Offset="0.25"/>
+                                <GradientStop Color="#38B6FF" Offset="0.5"/>
+                                <GradientStop Color="#ABF8FA" Offset="0.75"/>
+                            </LinearGradientBrush>
+                        </Ellipse.Fill>
+                    </Ellipse>
+                </Grid>
+                <Grid Grid.Column="2">
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0 0 0 30">
+                        <Button x:Name="btnLeft" Background="Transparent" Height="50" Width="70" BorderThickness="0"
                             Click="btnLeft_Click">
-                        <materialDesign:PackIcon Kind="MenuLeft" Width="50" Height="50"/>
-                    </Button>
-                    <TextBlock  Text="Tháng" Foreground="White" FontSize="25" VerticalAlignment="Center" 
-                         HorizontalAlignment="Right" Margin="0 0 5 0" 
-                         FontWeight="Bold"/>
-                    <TextBlock x:Name="month" Text="0" Foreground="White" FontSize="25" VerticalAlignment="Center" 
-                         HorizontalAlignment="Right" 
-                         FontWeight="Bold"/>
-                    <Button x:Name="btnRight" Background="Transparent" Height="50" Width="70" BorderThickness="0"
+                            <materialDesign:PackIcon Kind="MenuLeft" Width="50" Height="50"/>
+                        </Button>
+                        <TextBlock  Text="Tháng" Foreground="White" FontSize="25" VerticalAlignment="Center" 
+                            HorizontalAlignment="Right" Margin="0 0 5 0" 
+                            FontWeight="Bold"/>
+                        <TextBlock x:Name="month" Text="0" Foreground="White" FontSize="25" VerticalAlignment="Center" 
+                            HorizontalAlignment="Right" 
+                            FontWeight="Bold"/>
+                        <Button x:Name="btnRight" Background="Transparent" Height="50" Width="70" BorderThickness="0"
                             Click="btnRight_Click">
-                        <materialDesign:PackIcon Kind="MenuRight" Height="50" Width="50" Margin="-18 0 0 0"/>
-                    </Button>
-                </StackPanel>
-                
-                    
-               
+                            <materialDesign:PackIcon Kind="MenuRight" Height="50" Width="50" Margin="-18 0 0 0"/>
+                        </Button>
+                    </StackPanel>
+                </Grid>
+
             </Grid>
         </Border>
 
