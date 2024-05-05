@@ -88,7 +88,7 @@ namespace FinalProject {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/FinalProject;component/wcalendar.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/FinalProject;V1.0.0.0;component/wcalendar.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\WCalendar.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

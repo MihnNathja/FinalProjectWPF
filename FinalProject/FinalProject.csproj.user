@@ -10,7 +10,16 @@
     <Compile Update="Pages\PCalendar.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Pages\PNews.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\PPostNews.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="UCDay.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="User Control\UCNews.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="WCalendar.xaml.cs">
@@ -23,6 +32,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Windows\Employee\WEmployee.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Windows\Employee\WNews.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Windows\LoginSignUp\WLogin.xaml.cs">
@@ -99,7 +111,16 @@
     <Page Update="Pages\PCalendar.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Pages\PNews.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\PPostNews.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="UCDay.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="User Control\UCNews.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="WCalendar.xaml">
@@ -112,6 +133,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Windows\Employee\WEmployee.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Windows\Employee\WNews.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Windows\LoginSignUp\WLogin.xaml">

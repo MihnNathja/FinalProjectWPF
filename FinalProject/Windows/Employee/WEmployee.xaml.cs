@@ -83,6 +83,17 @@ namespace FinalProject
         {
             popupControl.IsPopupOpen = false;
         }
+
+        private void btnTin_MouseEnter(object sender, MouseEventArgs e)
+        {
+            popupControl.IsPopupOpen = true;
+            popupControl.PopupContent = "Tin tìm việc";
+        }
+
+        private void btnTin_MouseLeave(object sender, MouseEventArgs e)
+        {
+            popupControl.IsPopupOpen = false;
+        }
         private void btnQuanTam_MouseEnter(object sender, MouseEventArgs e)
         {
             popupControl.IsPopupOpen = true;
@@ -113,6 +124,11 @@ namespace FinalProject
         {
             PCompany pCompany = new PCompany();
             mainFarm.Navigate(pCompany);
+        }
+        private void btnTin_Click(object sender, RoutedEventArgs e)
+        {
+            PPostNews pPostNews = new PPostNews();
+            mainFarm.Navigate(pPostNews);
         }
 
         private void popupControl_Loaded(object sender, RoutedEventArgs e)
