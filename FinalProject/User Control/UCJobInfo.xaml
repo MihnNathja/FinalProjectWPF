@@ -16,7 +16,7 @@
                 FontFamily="{DynamicResource MaterialDesignFont}"
              d:DesignHeight="250" d:DesignWidth="700"
              Margin="10"
-             HorizontalAlignment="Stretch"
+             HorizontalAlignment="Stretch" Loaded="UserControl_Loaded"
             >
 
     <materialDesign:Card  UniformCornerRadius="20"
@@ -63,32 +63,45 @@
                 <Grid Grid.Column="1">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="0.2*"/>
-                        <RowDefinition Height="*"/>
-                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="0.8*"/>
                     </Grid.RowDefinitions>
-                    <StackPanel Margin="0 5 0 -10">
-                        <TextBlock
+                    <Grid Grid.Row="0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="0.8*"/>
+                            <ColumnDefinition Width="0.2*"/>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Grid.Column="0"
                             Margin="5" x:Name="JobName"
                             Style="{StaticResource MaterialDesignSubtitle1TextBlock}"
                             Text="Job Name" FontSize="35"  HorizontalAlignment="Center" TextWrapping="Wrap" />
-                        <Button                                     
-                               x:Name="btnDeleteJob"               
-                                HorizontalAlignment="Right" 
-                                Height="25" 
-                                Width="25"
-                                Margin="0,-45,10,0" 
-                                Padding="-10"
-                                VerticalAlignment="Top" 
-                                Click="btnDeleteJob_Click">
+                        <Button Grid.Column="1"                            
+                            x:Name="btnDeleteJob"               
+                            HorizontalAlignment="Center" 
+                            VerticalAlignment="Center"
+                            Height="25" 
+                            Width="25"
+                            Padding="-10"
+                            Click="btnDeleteJob_Click">
                             <Ellipse 
-                                 Height="25" 
-                                  Width="25" IsEnabled="False">
+                                Height="25" 
+                                Width="25">
                                 <Ellipse.Fill>
                                     <ImageBrush ImageSource="pack://application:,,,/FinalProject;component/Image/btnDelete.png"/>
                                 </Ellipse.Fill>
                             </Ellipse>
                         </Button>
-                    </StackPanel>
+                        <Button Grid.Column="1"
+                                x:Name="btnInterestJob"
+                                Click="btnInterestJob_Click"
+                                Width="30"
+                                materialDesign:RippleAssist.IsCentered="True"
+                                Style="{StaticResource MaterialDesignToolButton}">
+                                <materialDesign:PackIcon Kind="Heart" />
+                        </Button>
+                    </Grid>
+
+                    
+
 
 
                     <StackPanel Margin="5 10 0 0" Grid.Row="1">

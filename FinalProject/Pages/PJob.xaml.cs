@@ -35,12 +35,10 @@ namespace FinalProject.Page
         public PJob()
         {
             InitializeComponent();
-           
             AddLocationToComboBox();
         }
 
        
-        
         public PJob(Employee employee)
         {
             Employee = employee;
@@ -51,13 +49,11 @@ namespace FinalProject.Page
         {
             pnlJob.Children.Clear();
             List<UCJobInfo> jobList = jobDAO.LoadPage();
-            
             foreach (UCJobInfo job in jobList)
             {
-                job.User = employee;
+                job.User = Employee;
                 job.Type = Employee.Type;
-               
-                job.btnDeleteJob.Visibility = Visibility.Hidden;
+                job.Employee = Employee;
                 pnlJob.Children.Add(job);
             }
         }

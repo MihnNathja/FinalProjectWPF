@@ -34,7 +34,6 @@ namespace FinalProject
             InitializeComponent();
             this.employee = employee;
             this.DataContext = employee;
-            
         }
         private void WCompany_Loaded(object sender, RoutedEventArgs e)
         {
@@ -182,6 +181,12 @@ namespace FinalProject
         private void btnSearch_Click(object sender, RoutedEventArgs e)
         {
             MessageBox.Show("search");
+        }
+
+        private void btnQuanTam_Click(object sender, RoutedEventArgs e)
+        {
+            PEmployeeJobInterest pEmployeeJobInterest = new PEmployeeJobInterest(employee);
+            mainFarm.Navigate(pEmployeeJobInterest);
         }
     }
 }
