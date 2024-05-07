@@ -102,7 +102,7 @@
                         </Border>
                         <TextBlock 
         x:Name="txtbName"
-        Text="{Binding Name}"
+        Text="{Binding EmployeeName}"
         Foreground="White" FontSize="22"
         FontWeight="SemiBold" 
         DockPanel.Dock="Top" 
@@ -152,6 +152,7 @@
                             <Button Style="{StaticResource menuButton}"
                                 MouseEnter="btnQuanTam_MouseEnter"
                                 MouseLeave="btnQuanTam_MouseLeave"
+                                Click="btnQuanTam_Click"
                                 >
                                 <StackPanel Orientation="Horizontal">
                                     <Icon:PackIconMaterial Kind="Heart" Style="{StaticResource menuButtonIcon}"/>

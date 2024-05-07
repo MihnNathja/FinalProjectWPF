@@ -68,5 +68,37 @@ namespace FinalProject.Database
             string SQL = string.Format("SELECT *FROM Employees");
             return db.Load(SQL);
         }
+        public void ThemEmployeeInterestJob(string IdEmployee, string IdJob)
+        {
+            string SQL = string.Format($"INSERT INTO EmployeeInterestJobs (IdEmployee, IdJob) VALUES ('{IdEmployee}', '{IdJob}')");
+            db.ThucThi(SQL);
+        }
+        public void XoaEmployeeInterestJob(string IdEmployee, string IdJob)
+        {
+            string SQL = string.Format($"DELETE FROM EmployeeInterestJobs WHERE IdEmployee = '{IdEmployee}' and IdJob = '{IdJob}'");
+            db.ThucThi(SQL);
+        }
+        public bool checkExistEmployeeInterestJob(string IdEmployee, string IdJob)
+        {
+            string SQL = string.Format($"SELECT COUNT(*) FROM EmployeeInterestJobs WHERE IdEmployee = '{IdEmployee}' and IdJob = '{IdJob}'");
+            if (db.GetValue(SQL) != "0")
+            {
+                return true;
+            }
+            return false;
+        }
+        public List<UCJobInfo> GetEmployeeInterestJob(string IdEmployee)
+        {
+            List<UCJobInfo> list = new List<UCJobInfo>();
+            string SQL = string.Format($"SELECT * FROM EmployeeInterestJobs WHERE IdEmployee = '{IdEmployee}'");
+            DataTable data = db.Load(SQL);
+            foreach (DataRow row in data.Rows) 
+            {
+                JobDAO jobDAO = new JobDAO();
+                UCJobInfo info = new UCJobInfo(jobDAO.GetObject(row["IdJob"].ToString()));
+                list.Add(info);
+            }
+            return list;
+        }
     }
 }

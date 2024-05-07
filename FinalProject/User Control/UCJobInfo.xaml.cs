@@ -24,11 +24,14 @@ namespace FinalProject
     public partial class UCJobInfo : UserControl
     {
         User user;
+        Employee employee;
         string id;
         string type;
+
         public string ID { get => id; set => id = value; }
         public string Type { get => type; set => type = value; }
         public User User { get => user; set => user = value; }
+        public Employee Employee { get => employee; set => employee = value; }
 
         public event PropertyChangedEventHandler? PropertyChanged;
 
@@ -51,10 +54,7 @@ namespace FinalProject
             Salary.Text = job.Salary;
             JobLocation.Text = job.JobLocation;
             WorkTime.Text = job.WorkTime;
-            if (Type == "Employee")
-            {
-                btnDeleteJob.IsEnabled = false;
-            }
+
         }
         private void btnDeleteJob_Click(object sender, RoutedEventArgs e)
         {
@@ -77,8 +77,15 @@ namespace FinalProject
         }
 
         private void UserControl_Loaded(object sender, RoutedEventArgs e)
-        {
-
+        { 
+            if (Type == "Employee")
+            {
+                btnDeleteJob.Visibility = Visibility.Collapsed;
+            }
+            else if (Type == "Company")
+            {
+                btnInterestJob.Visibility = Visibility.Collapsed;
+            }
         }
 
         private void btnDetail_Click(object sender, RoutedEventArgs e)
@@ -94,6 +101,19 @@ namespace FinalProject
             {
                 WJobInfoDetail wJobInfoDetail = new WJobInfoDetail(User, job);
                 wJobInfoDetail.ShowDialog();
+            }
+        }
+
+        private void btnInterestJob_Click(object sender, RoutedEventArgs e)
+        {
+            EmployeeDAO employeeDAO = new EmployeeDAO();
+            if (employeeDAO.checkExistEmployeeInterestJob(employee.ID, ID))
+            {
+                employeeDAO.XoaEmployeeInterestJob(Employee.ID, ID);
+            }
+            else
+            {
+                employeeDAO.ThemEmployeeInterestJob(Employee.ID, ID);
             }
         }
     }
