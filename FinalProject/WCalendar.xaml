@@ -76,22 +76,33 @@
                     </Ellipse>
                 </Grid>
                 <Grid Grid.Column="2">
-                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0 0 0 30">
-                        <Button x:Name="btnLeft" Background="Transparent" Height="50" Width="70" BorderThickness="0"
+                    <StackPanel>
+                        <WrapPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                            <Button x:Name="btnLeft" Background="Transparent" Height="50" Width="70" BorderThickness="0"
                             Click="btnLeft_Click">
-                            <materialDesign:PackIcon Kind="MenuLeft" Width="50" Height="50"/>
-                        </Button>
-                        <TextBlock  Text="Tháng" Foreground="White" FontSize="25" VerticalAlignment="Center" 
-                            HorizontalAlignment="Right" Margin="0 0 5 0" 
+                                <materialDesign:PackIcon Kind="MenuLeft" Width="50" Height="50"/>
+                            </Button>
+                            <TextBlock  Text="Tháng" Foreground="White" FontSize="30" VerticalAlignment="Center" 
+                            HorizontalAlignment="Right" Margin="0 0 10 0" 
                             FontWeight="Bold"/>
-                        <TextBlock x:Name="month" Text="0" Foreground="White" FontSize="25" VerticalAlignment="Center" 
+                            <TextBlock x:Name="month" Text="5" Foreground="White" FontSize="30" VerticalAlignment="Center" 
                             HorizontalAlignment="Right" 
                             FontWeight="Bold"/>
-                        <Button x:Name="btnRight" Background="Transparent" Height="50" Width="70" BorderThickness="0"
+                            <Button x:Name="btnRight" Background="Transparent" Height="50" Width="70" BorderThickness="0"
                             Click="btnRight_Click">
-                            <materialDesign:PackIcon Kind="MenuRight" Height="50" Width="50" Margin="-18 0 0 0"/>
-                        </Button>
+                                <materialDesign:PackIcon Kind="MenuRight" Height="50" Width="50"/>
+                            </Button>
+                        </WrapPanel>
+                        <WrapPanel HorizontalAlignment="Center">
+                            <TextBlock  Text="Năm" Foreground="White" FontSize="25" VerticalAlignment="Center" 
+                            HorizontalAlignment="Right" Margin="0 0 5 0" 
+                            FontWeight="Bold"/>
+                            <TextBlock x:Name="year" Text="2024" Foreground="White" FontSize="25" VerticalAlignment="Center" 
+                            HorizontalAlignment="Right" 
+                            FontWeight="Bold"/>
+                        </WrapPanel>
                     </StackPanel>
+
                 </Grid>
 
             </Grid>
@@ -109,12 +120,9 @@
                 </WrapPanel>
 
                 <!-- Appointment details section -->
-                <StackPanel VerticalAlignment="Top" Orientation="Vertical" Margin="10" Grid.Column="1">
-                    <TextBlock Text="5/4/2024" FontSize="16"/>
-                    <TextBlock Text="Nền tảng 1" FontSize="14"/>
-                    <TextBlock Text="Nền tảng 2" FontSize="14"/>
-                    <TextBlock Text="Nền tảng 3" FontSize="14"/>
-                </StackPanel>
+                <Border BorderBrush="Black" Margin="5" Padding="10" BorderThickness="1" CornerRadius="30" Grid.Column="1">
+                    <StackPanel Name="stpnlInterview"></StackPanel>
+                </Border>
             </Grid>
         </StackPanel>
     </Grid>

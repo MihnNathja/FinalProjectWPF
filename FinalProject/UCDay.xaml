@@ -5,8 +5,8 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:FinalProject"
              mc:Ignorable="d" 
-             d:DesignHeight="80" d:DesignWidth="80">
-    <Button x:Name="btnDay" Height="70" Width="70" Content="1" FontSize="10"
+             d:DesignHeight="80" d:DesignWidth="80" Loaded="UserControl_Loaded">
+    <Button x:Name="btnDay" Height="70" Width="70" FontSize="10"
               Margin="5" Click="btnDay_Click" Background="White"
                 Foreground="Black" BorderThickness="0"/>
 

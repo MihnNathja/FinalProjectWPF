@@ -1,12 +1,16 @@
 ﻿using FinalProject.Objects;
+using FinalProject.Pages;
 using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Media;
 
 namespace FinalProject.Database
 {
@@ -51,6 +55,27 @@ namespace FinalProject.Database
                 list.Add(companyInfo);
             }
             return list;
+        }
+        public List<UCDay> GetInterviewDate(Company company, int day, int month, int year)
+        {
+            List<UCDay> calendar = new List<UCDay>();
+            for (int i = 1; i <= day; i++)
+            {
+                UCDay uCDay = new UCDay(i);
+                calendar.Add(uCDay);
+            }
+            DateTime startDate = new DateTime(year, month, 1);
+            DateTime endDate = new DateTime(year, month, day);
+            string SQL = string.Format($"SELECT * FROM ApplyCV WHERE ID = '{company.ID}' and  ACCEPT = 'True' and Interview BETWEEN '{startDate}' and '{endDate}' ORDER BY Interview ASC");
+            DataTable dataTable = db.Load(SQL);
+            foreach (DataRow row in dataTable.Rows)
+            {
+                calendar.ElementAt(Convert.ToDateTime(row["Interview"]).Day - 1).HasEvent = true;
+                TextBlock infoDate = new TextBlock();
+                infoDate.Text = "Bạn có một cuộc hẹn với CV số " + row["IdCV"];
+                calendar.ElementAt(Convert.ToDateTime(row["Interview"]).Day - 1).TxtbInterviewDates.Add(infoDate);
+            }
+            return calendar;
         }
     }
 }

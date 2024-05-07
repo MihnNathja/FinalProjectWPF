@@ -20,14 +20,41 @@ namespace FinalProject
     /// </summary>
     public partial class UCDay : UserControl
     {
+        StackPanel stackPanelInterview;
+        int day;
+        bool hasEvent;
+        List<TextBlock> txtbInterviewDates = new List<TextBlock>();
         public UCDay()
         {
             InitializeComponent();
         }
+        public UCDay(int day)
+        {
+            InitializeComponent();
+            Day = day;
+            btnDay.Content = Day.ToString();
+            HasEvent = false;
+        }
+
+        public StackPanel StackPanelInterview { get => stackPanelInterview; set => stackPanelInterview = value; }
+        public int Day { get => day; set => day = value; }
+        public bool HasEvent { get => hasEvent; set => hasEvent = value; }
+        public List<TextBlock> TxtbInterviewDates { get => txtbInterviewDates; set => txtbInterviewDates = value; }
 
         private void btnDay_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show(btnDay.Content.ToString());
+            foreach (TextBlock txt in txtbInterviewDates)
+            {
+                StackPanelInterview.Children.Add(txt);
+            }
+        }
+
+        private void UserControl_Loaded(object sender, RoutedEventArgs e)
+        {
+            if (HasEvent)
+            {
+                btnDay.Background = Brushes.LightCoral;
+            }
         }
     }
 }

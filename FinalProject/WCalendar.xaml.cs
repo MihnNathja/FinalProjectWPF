@@ -1,8 +1,11 @@
-﻿using System;
+﻿using FinalProject.Database;
+using FinalProject.Objects;
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -23,34 +26,45 @@ namespace FinalProject
     {
 
         int nowMonth;
+        int nowYear;
+        int[] daysInMonth = new int[12] { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
+        Company company;
+
+        public Company Company { get => company; set => company = value; }
+
         public WCalendar()
         {
             InitializeComponent();
             nowMonth = DateTime.Now.Month;
-         
+            nowYear = DateTime.Now.Year;
         }
-
+        public WCalendar(Company company)
+        {
+            InitializeComponent();
+            nowMonth = DateTime.Now.Month;
+            nowYear = DateTime.Now.Year;
+            Company = company;
+        }
         private void Page_Loaded(object sender, RoutedEventArgs e)
         {
             Load_Day();
-            
-           
+
         }
 
         private void btnLeft_Click(object sender, RoutedEventArgs e)
         {
             if (nowMonth == 1)
             {
-                btnLeft.IsEnabled = false;
+                nowMonth = 12;
+                nowYear--;
+                year.Text = nowYear.ToString();
             }
             else
             {
-                btnRight.IsEnabled = true;
-                
                 nowMonth = nowMonth - 1;
-                month.Text = nowMonth.ToString();
-                Load_Day();
             }
+            month.Text = nowMonth.ToString();
+            Load_Day();
         }
 
         private void btnRight_Click(object sender, RoutedEventArgs e)
@@ -58,48 +72,38 @@ namespace FinalProject
 
             if (nowMonth == 12)
             {
-                btnRight.IsEnabled = false;
+                nowMonth = 1;
+                nowYear++;
+                year.Text = nowYear.ToString();
             }
             else
             {
-                btnLeft.IsEnabled = true;
                 nowMonth = nowMonth + 1;
                 month.Text = nowMonth.ToString();
-                Load_Day();
             }
+            Load_Day();
 
         }
-        public void Create_Day(int index)
+        public void Create_Day(int day)
         {
             wplDay.Children.Clear();
             month.Text = nowMonth.ToString();
-            List<UCDay> calendar = new List<UCDay>();
-            for (int i = 1; i <= index; i++)
+            CompanyDAO companyDAO = new CompanyDAO();
+            List<UCDay> calendar = companyDAO.GetInterviewDate(Company, day, nowMonth, nowYear);
+            foreach (UCDay date in calendar)
             {
-                UCDay day = new UCDay();
-                day.btnDay.Content = i;
-                calendar.Add(day);
-            }
-            foreach (UCDay day in calendar)
-            {
-                wplDay.Children.Add(day);
+                date.StackPanelInterview = stpnlInterview;
+                wplDay.Children.Add(date);
             }
         }
         public void Load_Day()
         {
-            if(nowMonth == 2)
+            int day = daysInMonth[nowMonth - 1];
+            if (((nowYear % 4 == 0 && nowYear % 100 != 0) || (nowYear % 400 == 0)) && nowMonth == 2)
             {
-                Create_Day(28);
-
+                day++;
             }
-            else if(nowMonth == 4 || nowMonth == 6 || nowMonth == 9 || nowMonth == 11)
-            {
-                Create_Day(30);
-            }
-            else
-            {
-                Create_Day(31);
-            }
+            Create_Day(day);
         }
     }
 }

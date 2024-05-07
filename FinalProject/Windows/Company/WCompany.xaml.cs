@@ -152,6 +152,10 @@ namespace FinalProject
             PCompanyJobState pCompanyJobState = new PCompanyJobState(company);
             mainFarm.Navigate(pCompanyJobState);
         }
-
+        private void btnLichHen_Click(object sender, RoutedEventArgs e)
+        {
+            WCalendar wCalendar = new WCalendar(company);
+            wCalendar.ShowDialog();
+        }
     }
 }
