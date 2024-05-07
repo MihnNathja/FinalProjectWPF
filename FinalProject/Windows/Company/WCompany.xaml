@@ -139,18 +139,23 @@
                                 </StackPanel>
                             </Button>
                             <Button 
-                        x:Name="btnTrangThai"
-                       Click="btnTrangThai_Click"
-                       Style="{StaticResource menuButton}"
-                        MouseEnter="btnTrangthai_MouseEnter"
-                        MouseLeave="btnTrangthai_MouseLeave"
->
+                                x:Name="btnTrangThai"
+                                Click="btnTrangThai_Click"
+                                Style="{StaticResource menuButton}"
+                                MouseEnter="btnTrangthai_MouseEnter"
+                                MouseLeave="btnTrangthai_MouseLeave">
                                 <StackPanel Orientation="Horizontal">
                                     <Icon:PackIconMaterial Kind="Checkbook" Style="{StaticResource menuButtonIcon}"/>
                                     <TextBlock Text="Trạng Thái"/>
                                 </StackPanel>
                             </Button>
-
+                            <Button Style="{StaticResource menuButton}"
+                                    Click="btnLichHen_Click">
+                                <StackPanel Orientation="Horizontal">
+                                    <materialDesign:PackIcon Kind="CalendarCheck" Width="50" Height="30" Margin="5 0 0 0"/>
+                                    <TextBlock Text="Lịch hẹn"/>
+                                </StackPanel>
+                            </Button>
                         </StackPanel>
                         <Button x:Name="btnLogout"
                        Style="{StaticResource menuButton}" 

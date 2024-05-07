@@ -56,7 +56,7 @@ namespace FinalProject.Database
         public string GetNextID()
         {
             string SQL = string.Format("SELECT MAX(Id) FROM Jobs");
-            return (db.GetValue(SQL) + 1).ToString();
+            return (int.Parse(db.GetValue(SQL)) + 1).ToString();
         }
         public Job GetObject(string id)
         {
