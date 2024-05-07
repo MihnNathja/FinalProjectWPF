@@ -4,7 +4,7 @@
              xmlns:Icon="http://metro.mahapps.com/winfx/xaml/iconpacks"
              xmlns:local="clr-namespace:FinalProject"
              StartupUri="Windows\LoginSignUp\WLogin.xaml">
-             
+
     <Application.Resources>
         
         <ResourceDictionary>
