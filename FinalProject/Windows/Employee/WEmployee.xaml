@@ -111,7 +111,7 @@
 
                         <Separator Margin="25" DockPanel.Dock="Top" Height="1" Background="White"/>
 
-                        <StackPanel DockPanel.Dock="Top">
+                        <UniformGrid DockPanel.Dock="Top" Height="450" Columns="1" >
                             <Button Style="{StaticResource menuButton}"
                                 MouseEnter="btnViecLam_MouseEnter"
                                 MouseLeave="btnViecLam_MouseLeave"
@@ -181,7 +181,7 @@
 
 
 
-                        </StackPanel>
+                        </UniformGrid>
                         <Button x:Name="btnLogout"
                 Style="{StaticResource menuButton}" 
                 VerticalAlignment="Bottom" 

@@ -6,7 +6,9 @@
         xmlns:local="clr-namespace:FinalProject"
         mc:Ignorable="d"
         MinHeight="450" MinWidth="800" Loaded="Window_Loaded">
+    
     <Grid>
+        <Image Stretch="UniformToFill"  Source="/Image/background2.png"/>
         <Border Style="{DynamicResource window}">
             <ScrollViewer VerticalScrollBarVisibility="Auto">
                 <WrapPanel x:Name="pnlCV">

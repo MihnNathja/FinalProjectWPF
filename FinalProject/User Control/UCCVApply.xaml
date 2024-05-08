@@ -22,36 +22,37 @@ materialDesign:ElevationAssist.Elevation="Dp0">
                 <Grid
             Width="200"
             Height="256">
-                    <Grid.RowDefinitions>
-                        <RowDefinition
-                    Height="160" />
-                        <RowDefinition
-                    Height="*" />
-                    </Grid.RowDefinitions>
-                    <materialDesign:ColorZone
-                VerticalAlignment="Stretch"
-                Mode="PrimaryLight">
-                        <materialDesign:PackIcon
-                    Width="128"
-                    Height="128"
-                    HorizontalAlignment="Center"
-                    VerticalAlignment="Center"
-                    Kind="AccountCircle" />
-                    </materialDesign:ColorZone>
-                    <StackPanel
-                Grid.Row="1"
-                HorizontalAlignment="Center"
-                VerticalAlignment="Center">
-                        <TextBlock
-                    Text="{Binding CVTitle}" HorizontalAlignment="Center"/>
-                        <Button
-                    x:Name="btnSelect"
-                    Click="btnSelect_Click"
-                    Margin="0,4,0,0"
-                    TextBlock.Foreground="Black"
-                    Content="Xác nhận"
-                     />
-                    </StackPanel>
+                    <Image Stretch="UniformToFill" Height="200" Margin="0 -100 0 -10" Source="/Image/backgroundCV.jpg"/>
+                    <Ellipse  Width="100" Height="100" HorizontalAlignment="Center" 
+     VerticalAlignment="Top" IsEnabled="False"
+     Margin="3 50 0 0">
+                        <Ellipse.Fill>
+                            <ImageBrush ImageSource="pack://application:,,,/FinalProject;component/Image/user.png" Stretch="UniformToFill"/>
+                        </Ellipse.Fill>
+                    </Ellipse>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition
+                                Height="160" />
+                            <RowDefinition
+                                Height="*" />
+                        </Grid.RowDefinitions>
+
+                        <StackPanel
+                            Grid.Row="1"
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Center">
+                            <TextBlock
+                                Text="{Binding CVTitle}" HorizontalAlignment="Center"/>
+                                                        <Button
+                                x:Name="btnSelect"
+                                Click="btnSelect_Click"
+                                Margin="0,4,0,0"
+                                TextBlock.Foreground="Black"
+                                Content="Xác nhận"
+                                 />
+                        </StackPanel>
+                    </Grid>
                 </Grid>
             </materialDesign:Flipper.FrontContent>
         </materialDesign:Flipper>
