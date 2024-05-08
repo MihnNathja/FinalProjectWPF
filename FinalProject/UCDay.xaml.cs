@@ -43,6 +43,7 @@ namespace FinalProject
 
         private void btnDay_Click(object sender, RoutedEventArgs e)
         {
+            StackPanelInterview.Children.Clear();
             foreach (TextBlock txt in txtbInterviewDates)
             {
                 StackPanelInterview.Children.Add(txt);

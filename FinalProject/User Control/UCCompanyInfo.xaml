@@ -13,7 +13,7 @@
             Background="{DynamicResource MaterialDesignPaper}"
             FontFamily="{DynamicResource MaterialDesignFont}"
              mc:Ignorable="d" 
-             MinWidth="300" MinHeight="400"
+             MinWidth="300" MinHeight="400" Loaded="UserControl_Loaded"
              >
  
 
@@ -22,17 +22,14 @@
         Width="300">
         <Grid>
             <Grid.RowDefinitions>
-                <RowDefinition
-            Height="140" />
-                <RowDefinition
-            Height="*" />
-                <RowDefinition
-            Height="Auto" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="2*" />
+                <RowDefinition Height="Auto" />
             </Grid.RowDefinitions>
-            <Image
-          Height="140"
-          Source="/Image/company_cover.jpg"
-          Stretch="UniformToFill" />
+            <Image Grid.Row="0"
+                Height="140"
+                Source="/Image/company_cover.jpg"
+                Stretch="UniformToFill" />
             <Rectangle Grid.Row="0" Height="100" Width="100"
                       Margin="0,0,0,-30"
                       HorizontalAlignment="Right"
@@ -41,40 +38,51 @@
                     <ImageBrush ImageSource="/Image/logo.png"></ImageBrush>
                 </Rectangle.Fill>
             </Rectangle>
-            <StackPanel
-          Grid.Row="1"
-          Margin="8,24,8,0">
-                <WrapPanel>
+            <Grid Grid.Row="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="3*"/>
+                    <RowDefinition Height="1*"/>
+                </Grid.RowDefinitions>
+                <WrapPanel Grid.Row="0" Margin="5 5">
                     <materialDesign:PackIcon Kind="Company" />
-                    <TextBlock x:Name="CompanyName" FontWeight="Bold"/>
+                    <TextBlock x:Name="CompanyName" Text="{Binding CompanyName}" FontSize="20" FontWeight="Bold" VerticalAlignment="Center"/>
                 </WrapPanel>
-                
 
-                <TextBlock 
-                    Name="CompanyDescription"
+
+                <TextBlock Grid.Row="0"
+                    Name="Description"
+                    Text="{Binding Description}"  
+                    Margin="10 0"
                     VerticalAlignment="Center"
                     TextWrapping="Wrap"/>
-                <WrapPanel>
-                    <materialDesign:PackIcon Kind="Location" />
-                    <TextBlock x:Name="CompanyLocation"
-                    VerticalAlignment="Center"
-                    TextWrapping="Wrap" />
-                </WrapPanel>
-                    
-                <WrapPanel>
+                <StackPanel Grid.Row="1">
+                    <WrapPanel>
+                        <materialDesign:PackIcon Kind="Location" />
+                        <TextBlock 
+                            x:Name="CompanyLocation"
+                            Text="{Binding CompanyLocation}"
+                            VerticalAlignment="Center"
+                            TextWrapping="Wrap" />
+                    </WrapPanel>
+                    <WrapPanel >
                     <materialDesign:PackIcon Kind="Phone" />
                     <TextBlock x:Name="PhoneNumber"
-                    VerticalAlignment="Center"
-                    TextWrapping="Wrap" />
-                </WrapPanel>
-            </StackPanel>
-            <StackPanel
+                        Text="{Binding PhoneNumber}"
+                        VerticalAlignment="Center"
+                        TextWrapping="Wrap" />
+                    </WrapPanel>
+                </StackPanel>
+            </Grid>
+
+
+            <WrapPanel
               Grid.Row="2"
               Margin="8"
-              HorizontalAlignment="Right"
-              Orientation="Horizontal">
-                <Button Content="Chi tiết" Margin="30 0">
-                </Button>
+              HorizontalAlignment="Right">
+                <Button 
+                    Name="btnDetail" Click="btnDetail_Click"
+                    Content="Chi tiết" Margin="30 0"/>
+
                 <Button
                     Width="30"
                     Padding="2,0,2,0"
@@ -89,7 +97,7 @@
                     Style="{StaticResource MaterialDesignToolButton}">
                     <materialDesign:PackIcon Kind="Heart" />
                 </Button>
-            </StackPanel>
+            </WrapPanel>
         </Grid>
     </materialDesign:Card>
 </UserControl>
