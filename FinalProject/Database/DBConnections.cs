@@ -23,7 +23,7 @@ namespace FinalProject
                 cmd.Parameters.AddRange(parameters.ToArray());
                 if (cmd.ExecuteNonQuery() > 0)
                 {
-                    MessageBox.Show("Thuc thi thanh cong");
+                    
                 }
             }
             catch (Exception ex)
@@ -43,7 +43,7 @@ namespace FinalProject
                 SqlCommand cmd = new SqlCommand(SQL, conn);
                 if (cmd.ExecuteNonQuery() > 0)
                 {
-                    MessageBox.Show("Thuc thi thanh cong");
+                    
                 }
             }
             catch (Exception ex)
