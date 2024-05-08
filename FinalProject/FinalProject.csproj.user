@@ -19,6 +19,9 @@
     <Compile Update="Pages\PPostNews.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="PCompanyCalendar.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="UCDay.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -121,6 +124,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Pages\PPostNews.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="PCompanyCalendar.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="UCDay.xaml">

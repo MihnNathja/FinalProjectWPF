@@ -3,8 +3,80 @@
   "WorkspaceRootPath": "C:\\VUONG_LAP_QUE\\Nam 2\\HK II\\Window\\FinalProjectWPF\\FinalProject\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{BC4969F9-C76B-4990-B9C8-352C76BDAA80}|FinalProject.csproj|C:\\VUONG_LAP_QUE\\Nam 2\\HK II\\Window\\FinalProjectWPF\\FinalProject\\user control\\ucjobinfo.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{BC4969F9-C76B-4990-B9C8-352C76BDAA80}|FinalProject.csproj|solutionrelative:user control\\ucjobinfo.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC4969F9-C76B-4990-B9C8-352C76BDAA80}|FinalProject.csproj|c:\\vuong_lap_que\\nam 2\\hk ii\\window\\finalprojectwpf\\finalproject\\user control\\ucjobinfo.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "RelativeMoniker": "D:0:0:{BC4969F9-C76B-4990-B9C8-352C76BDAA80}|FinalProject.csproj|solutionrelative:user control\\ucjobinfo.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC4969F9-C76B-4990-B9C8-352C76BDAA80}|FinalProject.csproj|c:\\vuong_lap_que\\nam 2\\hk ii\\window\\finalprojectwpf\\finalproject\\database\\employeedao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC4969F9-C76B-4990-B9C8-352C76BDAA80}|FinalProject.csproj|solutionrelative:database\\employeedao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC4969F9-C76B-4990-B9C8-352C76BDAA80}|FinalProject.csproj|c:\\vuong_lap_que\\nam 2\\hk ii\\window\\finalprojectwpf\\finalproject\\user control\\uccv.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{BC4969F9-C76B-4990-B9C8-352C76BDAA80}|FinalProject.csproj|solutionrelative:user control\\uccv.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC4969F9-C76B-4990-B9C8-352C76BDAA80}|FinalProject.csproj|c:\\vuong_lap_que\\nam 2\\hk ii\\window\\finalprojectwpf\\finalproject\\user control\\uccv.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC4969F9-C76B-4990-B9C8-352C76BDAA80}|FinalProject.csproj|solutionrelative:user control\\uccv.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC4969F9-C76B-4990-B9C8-352C76BDAA80}|FinalProject.csproj|c:\\vuong_lap_que\\nam 2\\hk ii\\window\\finalprojectwpf\\finalproject\\windows\\employee\\wselectcv.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "RelativeMoniker": "D:0:0:{BC4969F9-C76B-4990-B9C8-352C76BDAA80}|FinalProject.csproj|solutionrelative:windows\\employee\\wselectcv.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC4969F9-C76B-4990-B9C8-352C76BDAA80}|FinalProject.csproj|c:\\vuong_lap_que\\nam 2\\hk ii\\window\\finalprojectwpf\\finalproject\\windows\\company\\wcompanyacceptcv.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "RelativeMoniker": "D:0:0:{BC4969F9-C76B-4990-B9C8-352C76BDAA80}|FinalProject.csproj|solutionrelative:windows\\company\\wcompanyacceptcv.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC4969F9-C76B-4990-B9C8-352C76BDAA80}|FinalProject.csproj|c:\\vuong_lap_que\\nam 2\\hk ii\\window\\finalprojectwpf\\finalproject\\windows\\employee\\wselectcv.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{BC4969F9-C76B-4990-B9C8-352C76BDAA80}|FinalProject.csproj|solutionrelative:windows\\employee\\wselectcv.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC4969F9-C76B-4990-B9C8-352C76BDAA80}|FinalProject.csproj|c:\\vuong_lap_que\\nam 2\\hk ii\\window\\finalprojectwpf\\finalproject\\windows\\company\\wcompany.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "RelativeMoniker": "D:0:0:{BC4969F9-C76B-4990-B9C8-352C76BDAA80}|FinalProject.csproj|solutionrelative:windows\\company\\wcompany.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC4969F9-C76B-4990-B9C8-352C76BDAA80}|FinalProject.csproj|c:\\vuong_lap_que\\nam 2\\hk ii\\window\\finalprojectwpf\\finalproject\\pcompanycalendar.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{BC4969F9-C76B-4990-B9C8-352C76BDAA80}|FinalProject.csproj|solutionrelative:pcompanycalendar.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC4969F9-C76B-4990-B9C8-352C76BDAA80}|FinalProject.csproj|c:\\vuong_lap_que\\nam 2\\hk ii\\window\\finalprojectwpf\\finalproject\\pcompanycalendar.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "RelativeMoniker": "D:0:0:{BC4969F9-C76B-4990-B9C8-352C76BDAA80}|FinalProject.csproj|solutionrelative:pcompanycalendar.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC4969F9-C76B-4990-B9C8-352C76BDAA80}|FinalProject.csproj|c:\\vuong_lap_que\\nam 2\\hk ii\\window\\finalprojectwpf\\finalproject\\pages\\pjob.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{BC4969F9-C76B-4990-B9C8-352C76BDAA80}|FinalProject.csproj|solutionrelative:pages\\pjob.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC4969F9-C76B-4990-B9C8-352C76BDAA80}|FinalProject.csproj|C:\\VUONG_LAP_QUE\\Nam 2\\HK II\\Window\\FinalProjectWPF\\FinalProject\\pages\\pcreatejob.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{BC4969F9-C76B-4990-B9C8-352C76BDAA80}|FinalProject.csproj|solutionrelative:pages\\pcreatejob.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC4969F9-C76B-4990-B9C8-352C76BDAA80}|FinalProject.csproj|c:\\vuong_lap_que\\nam 2\\hk ii\\window\\finalprojectwpf\\finalproject\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{BC4969F9-C76B-4990-B9C8-352C76BDAA80}|FinalProject.csproj|solutionrelative:app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC4969F9-C76B-4990-B9C8-352C76BDAA80}|FinalProject.csproj|c:\\vuong_lap_que\\nam 2\\hk ii\\window\\finalprojectwpf\\finalproject\\wcalendar.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "RelativeMoniker": "D:0:0:{BC4969F9-C76B-4990-B9C8-352C76BDAA80}|FinalProject.csproj|solutionrelative:wcalendar.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC4969F9-C76B-4990-B9C8-352C76BDAA80}|FinalProject.csproj|c:\\vuong_lap_que\\nam 2\\hk ii\\window\\finalprojectwpf\\finalproject\\windows\\company\\wcompany.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{BC4969F9-C76B-4990-B9C8-352C76BDAA80}|FinalProject.csproj|solutionrelative:windows\\company\\wcompany.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC4969F9-C76B-4990-B9C8-352C76BDAA80}|FinalProject.csproj|c:\\vuong_lap_que\\nam 2\\hk ii\\window\\finalprojectwpf\\finalproject\\wcalendar.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{BC4969F9-C76B-4990-B9C8-352C76BDAA80}|FinalProject.csproj|solutionrelative:wcalendar.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{BC4969F9-C76B-4990-B9C8-352C76BDAA80}|FinalProject.csproj|c:\\vuong_lap_que\\nam 2\\hk ii\\window\\finalprojectwpf\\finalproject\\pages\\ppostnews.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BC4969F9-C76B-4990-B9C8-352C76BDAA80}|FinalProject.csproj|solutionrelative:pages\\ppostnews.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC4969F9-C76B-4990-B9C8-352C76BDAA80}|FinalProject.csproj|c:\\vuong_lap_que\\nam 2\\hk ii\\window\\finalprojectwpf\\finalproject\\database\\dbo.users.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
+      "RelativeMoniker": "D:0:0:{BC4969F9-C76B-4990-B9C8-352C76BDAA80}|FinalProject.csproj|solutionrelative:database\\dbo.users.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BC4969F9-C76B-4990-B9C8-352C76BDAA80}|FinalProject.csproj|C:\\VUONG_LAP_QUE\\Nam 2\\HK II\\Window\\FinalProjectWPF\\FinalProject\\windows\\employee\\wemployee.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -19,16 +91,12 @@
       "RelativeMoniker": "D:0:0:{BC4969F9-C76B-4990-B9C8-352C76BDAA80}|FinalProject.csproj|solutionrelative:user control\\ucnews.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BC4969F9-C76B-4990-B9C8-352C76BDAA80}|FinalProject.csproj|C:\\VUONG_LAP_QUE\\Nam 2\\HK II\\Window\\FinalProjectWPF\\FinalProject\\pages\\pcreatejob.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{BC4969F9-C76B-4990-B9C8-352C76BDAA80}|FinalProject.csproj|solutionrelative:pages\\pcreatejob.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{BC4969F9-C76B-4990-B9C8-352C76BDAA80}|FinalProject.csproj|C:\\VUONG_LAP_QUE\\Nam 2\\HK II\\Window\\FinalProjectWPF\\FinalProject\\pages\\ppostnews.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{BC4969F9-C76B-4990-B9C8-352C76BDAA80}|FinalProject.csproj|solutionrelative:pages\\ppostnews.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BC4969F9-C76B-4990-B9C8-352C76BDAA80}|FinalProject.csproj|C:\\VUONG_LAP_QUE\\Nam 2\\HK II\\Window\\FinalProjectWPF\\FinalProject\\user control\\ucjobinfo.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{BC4969F9-C76B-4990-B9C8-352C76BDAA80}|FinalProject.csproj|solutionrelative:user control\\ucjobinfo.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{BC4969F9-C76B-4990-B9C8-352C76BDAA80}|FinalProject.csproj|c:\\vuong_lap_que\\nam 2\\hk ii\\window\\finalprojectwpf\\finalproject\\database\\dbo.users.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
+      "RelativeMoniker": "D:0:0:{BC4969F9-C76B-4990-B9C8-352C76BDAA80}|FinalProject.csproj|solutionrelative:database\\dbo.users.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,35 +106,186 @@
       "DocumentGroups": [
         {
           "DockedWidth": 440,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "WSelectCV.xaml.cs",
+              "DocumentMoniker": "C:\\VUONG_LAP_QUE\\Nam 2\\HK II\\Window\\FinalProjectWPF\\FinalProject\\Windows\\Employee\\WSelectCV.xaml.cs",
+              "RelativeDocumentMoniker": "Windows\\Employee\\WSelectCV.xaml.cs",
+              "ToolTip": "C:\\VUONG_LAP_QUE\\Nam 2\\HK II\\Window\\FinalProjectWPF\\FinalProject\\Windows\\Employee\\WSelectCV.xaml.cs",
+              "RelativeToolTip": "Windows\\Employee\\WSelectCV.xaml.cs",
+              "ViewState": "AQIAACIAAAAAAAAAAAAYwDcAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T02:21:01.186Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "WSelectCV.xaml",
+              "DocumentMoniker": "C:\\VUONG_LAP_QUE\\Nam 2\\HK II\\Window\\FinalProjectWPF\\FinalProject\\Windows\\Employee\\WSelectCV.xaml",
+              "RelativeDocumentMoniker": "Windows\\Employee\\WSelectCV.xaml",
+              "ToolTip": "C:\\VUONG_LAP_QUE\\Nam 2\\HK II\\Window\\FinalProjectWPF\\FinalProject\\Windows\\Employee\\WSelectCV.xaml",
+              "RelativeToolTip": "Windows\\Employee\\WSelectCV.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-08T02:20:58.59Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "PJob.xaml",
+              "DocumentMoniker": "C:\\VUONG_LAP_QUE\\Nam 2\\HK II\\Window\\FinalProjectWPF\\FinalProject\\Pages\\PJob.xaml",
+              "RelativeDocumentMoniker": "Pages\\PJob.xaml",
+              "ToolTip": "C:\\VUONG_LAP_QUE\\Nam 2\\HK II\\Window\\FinalProjectWPF\\FinalProject\\Pages\\PJob.xaml",
+              "RelativeToolTip": "Pages\\PJob.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-08T00:52:13.113Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "PCompanyCalendar.xaml.cs",
+              "DocumentMoniker": "C:\\VUONG_LAP_QUE\\Nam 2\\HK II\\Window\\FinalProjectWPF\\FinalProject\\PCompanyCalendar.xaml.cs",
+              "RelativeDocumentMoniker": "PCompanyCalendar.xaml.cs",
+              "ToolTip": "C:\\VUONG_LAP_QUE\\Nam 2\\HK II\\Window\\FinalProjectWPF\\FinalProject\\PCompanyCalendar.xaml.cs",
+              "RelativeToolTip": "PCompanyCalendar.xaml.cs",
+              "ViewState": "AQIAAEUAAAAAAAAAAAAIwEwAAABFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T00:15:34.176Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "PCompanyCalendar.xaml",
+              "DocumentMoniker": "C:\\VUONG_LAP_QUE\\Nam 2\\HK II\\Window\\FinalProjectWPF\\FinalProject\\PCompanyCalendar.xaml",
+              "RelativeDocumentMoniker": "PCompanyCalendar.xaml",
+              "ToolTip": "C:\\VUONG_LAP_QUE\\Nam 2\\HK II\\Window\\FinalProjectWPF\\FinalProject\\PCompanyCalendar.xaml",
+              "RelativeToolTip": "PCompanyCalendar.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-08T00:14:18.901Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "dbo.Users.sql ",
+              "DocumentMoniker": "C:\\VUONG_LAP_QUE\\Nam 2\\HK II\\Window\\FinalProjectWPF\\FinalProject\\Database\\dbo.Users.sql",
+              "RelativeDocumentMoniker": "Database\\dbo.Users.sql",
+              "ToolTip": "C:\\VUONG_LAP_QUE\\Nam 2\\HK II\\Window\\FinalProjectWPF\\FinalProject\\Database\\dbo.Users.sql",
+              "RelativeToolTip": "Database\\dbo.Users.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-05-08T00:01:23.198Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "UCJobInfo.xaml",
+              "DocumentMoniker": "C:\\VUONG_LAP_QUE\\Nam 2\\HK II\\Window\\FinalProjectWPF\\FinalProject\\User Control\\UCJobInfo.xaml",
+              "RelativeDocumentMoniker": "User Control\\UCJobInfo.xaml",
+              "ToolTip": "C:\\VUONG_LAP_QUE\\Nam 2\\HK II\\Window\\FinalProjectWPF\\FinalProject\\User Control\\UCJobInfo.xaml",
+              "RelativeToolTip": "User Control\\UCJobInfo.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-05T06:34:40.268Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UCJobInfo.xaml.cs",
+              "DocumentMoniker": "C:\\VUONG_LAP_QUE\\Nam 2\\HK II\\Window\\FinalProjectWPF\\FinalProject\\User Control\\UCJobInfo.xaml.cs",
+              "RelativeDocumentMoniker": "User Control\\UCJobInfo.xaml.cs",
+              "ToolTip": "C:\\VUONG_LAP_QUE\\Nam 2\\HK II\\Window\\FinalProjectWPF\\FinalProject\\User Control\\UCJobInfo.xaml.cs",
+              "RelativeToolTip": "User Control\\UCJobInfo.xaml.cs",
+              "ViewState": "AQIAAFoAAAAAAAAAAAAIwGIAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T02:53:06.543Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EmployeeDAO.cs",
+              "DocumentMoniker": "C:\\VUONG_LAP_QUE\\Nam 2\\HK II\\Window\\FinalProjectWPF\\FinalProject\\Database\\EmployeeDAO.cs",
+              "RelativeDocumentMoniker": "Database\\EmployeeDAO.cs",
+              "ToolTip": "C:\\VUONG_LAP_QUE\\Nam 2\\HK II\\Window\\FinalProjectWPF\\FinalProject\\Database\\EmployeeDAO.cs",
+              "RelativeToolTip": "Database\\EmployeeDAO.cs",
+              "ViewState": "AQIAACYAAAAAAAAAAAAtwEsAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T00:01:02.283Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UCCV.xaml.cs",
+              "DocumentMoniker": "C:\\VUONG_LAP_QUE\\Nam 2\\HK II\\Window\\FinalProjectWPF\\FinalProject\\User Control\\UCCV.xaml.cs",
+              "RelativeDocumentMoniker": "User Control\\UCCV.xaml.cs",
+              "ToolTip": "C:\\VUONG_LAP_QUE\\Nam 2\\HK II\\Window\\FinalProjectWPF\\FinalProject\\User Control\\UCCV.xaml.cs",
+              "RelativeToolTip": "User Control\\UCCV.xaml.cs",
+              "ViewState": "AQIAAEkAAAAAAAAAAAAWwF4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T02:45:18.728Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UCCV.xaml",
+              "DocumentMoniker": "C:\\VUONG_LAP_QUE\\Nam 2\\HK II\\Window\\FinalProjectWPF\\FinalProject\\User Control\\UCCV.xaml",
+              "RelativeDocumentMoniker": "User Control\\UCCV.xaml",
+              "ToolTip": "C:\\VUONG_LAP_QUE\\Nam 2\\HK II\\Window\\FinalProjectWPF\\FinalProject\\User Control\\UCCV.xaml",
+              "RelativeToolTip": "User Control\\UCCV.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-08T02:51:09.441Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "WCompanyAcceptCV.xaml.cs",
+              "DocumentMoniker": "C:\\VUONG_LAP_QUE\\Nam 2\\HK II\\Window\\FinalProjectWPF\\FinalProject\\Windows\\Company\\WCompanyAcceptCV.xaml.cs",
+              "RelativeDocumentMoniker": "Windows\\Company\\WCompanyAcceptCV.xaml.cs",
+              "ToolTip": "C:\\VUONG_LAP_QUE\\Nam 2\\HK II\\Window\\FinalProjectWPF\\FinalProject\\Windows\\Company\\WCompanyAcceptCV.xaml.cs",
+              "RelativeToolTip": "Windows\\Company\\WCompanyAcceptCV.xaml.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAA0wCoAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T02:43:13.147Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
               "Title": "PPostNews.xaml.cs",
               "DocumentMoniker": "C:\\VUONG_LAP_QUE\\Nam 2\\HK II\\Window\\FinalProjectWPF\\FinalProject\\Pages\\PPostNews.xaml.cs",
               "RelativeDocumentMoniker": "Pages\\PPostNews.xaml.cs",
               "ToolTip": "C:\\VUONG_LAP_QUE\\Nam 2\\HK II\\Window\\FinalProjectWPF\\FinalProject\\Pages\\PPostNews.xaml.cs",
               "RelativeToolTip": "Pages\\PPostNews.xaml.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAMwA8AAAAAAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAMwBUAAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-05T07:16:18.831Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 19,
               "Title": "WEmployee.xaml",
               "DocumentMoniker": "C:\\VUONG_LAP_QUE\\Nam 2\\HK II\\Window\\FinalProjectWPF\\FinalProject\\Windows\\Employee\\WEmployee.xaml",
               "RelativeDocumentMoniker": "Windows\\Employee\\WEmployee.xaml",
               "ToolTip": "C:\\VUONG_LAP_QUE\\Nam 2\\HK II\\Window\\FinalProjectWPF\\FinalProject\\Windows\\Employee\\WEmployee.xaml",
               "RelativeToolTip": "Windows\\Employee\\WEmployee.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-05-05T07:12:33.998Z"
+              "WhenOpened": "2024-05-05T07:12:33.998Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 20,
               "Title": "WNews.xaml",
               "DocumentMoniker": "C:\\VUONG_LAP_QUE\\Nam 2\\HK II\\Window\\FinalProjectWPF\\FinalProject\\Windows\\Employee\\WNews.xaml",
               "RelativeDocumentMoniker": "Windows\\Employee\\WNews.xaml",
@@ -77,18 +296,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "PCreateJob.xaml",
-              "DocumentMoniker": "C:\\VUONG_LAP_QUE\\Nam 2\\HK II\\Window\\FinalProjectWPF\\FinalProject\\Pages\\PCreateJob.xaml",
-              "RelativeDocumentMoniker": "Pages\\PCreateJob.xaml",
-              "ToolTip": "C:\\VUONG_LAP_QUE\\Nam 2\\HK II\\Window\\FinalProjectWPF\\FinalProject\\Pages\\PCreateJob.xaml",
-              "RelativeToolTip": "Pages\\PCreateJob.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-05-05T06:45:07.358Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 22,
               "Title": "PPostNews.xaml",
               "DocumentMoniker": "C:\\VUONG_LAP_QUE\\Nam 2\\HK II\\Window\\FinalProjectWPF\\FinalProject\\Pages\\PPostNews.xaml",
               "RelativeDocumentMoniker": "Pages\\PPostNews.xaml",
@@ -99,7 +307,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 21,
               "Title": "UCNews.xaml",
               "DocumentMoniker": "C:\\VUONG_LAP_QUE\\Nam 2\\HK II\\Window\\FinalProjectWPF\\FinalProject\\User Control\\UCNews.xaml",
               "RelativeDocumentMoniker": "User Control\\UCNews.xaml",
@@ -110,14 +318,77 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "UCJobInfo.xaml",
-              "DocumentMoniker": "C:\\VUONG_LAP_QUE\\Nam 2\\HK II\\Window\\FinalProjectWPF\\FinalProject\\User Control\\UCJobInfo.xaml",
-              "RelativeDocumentMoniker": "User Control\\UCJobInfo.xaml",
-              "ToolTip": "C:\\VUONG_LAP_QUE\\Nam 2\\HK II\\Window\\FinalProjectWPF\\FinalProject\\User Control\\UCJobInfo.xaml",
-              "RelativeToolTip": "User Control\\UCJobInfo.xaml",
+              "DocumentIndex": 12,
+              "Title": "PCreateJob.xaml",
+              "DocumentMoniker": "C:\\VUONG_LAP_QUE\\Nam 2\\HK II\\Window\\FinalProjectWPF\\FinalProject\\Pages\\PCreateJob.xaml",
+              "RelativeDocumentMoniker": "Pages\\PCreateJob.xaml",
+              "ToolTip": "C:\\VUONG_LAP_QUE\\Nam 2\\HK II\\Window\\FinalProjectWPF\\FinalProject\\Pages\\PCreateJob.xaml",
+              "RelativeToolTip": "Pages\\PCreateJob.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-05-05T06:34:40.268Z"
+              "WhenOpened": "2024-05-05T06:45:07.358Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "WCompany.xaml.cs",
+              "DocumentMoniker": "C:\\VUONG_LAP_QUE\\Nam 2\\HK II\\Window\\FinalProjectWPF\\FinalProject\\Windows\\Company\\WCompany.xaml.cs",
+              "RelativeDocumentMoniker": "Windows\\Company\\WCompany.xaml.cs",
+              "ToolTip": "C:\\VUONG_LAP_QUE\\Nam 2\\HK II\\Window\\FinalProjectWPF\\FinalProject\\Windows\\Company\\WCompany.xaml.cs",
+              "RelativeToolTip": "Windows\\Company\\WCompany.xaml.cs",
+              "ViewState": "AQIAACIAAAAAAAAAAAAQwC4AAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T00:09:16.564Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "WCompany.xaml",
+              "DocumentMoniker": "C:\\VUONG_LAP_QUE\\Nam 2\\HK II\\Window\\FinalProjectWPF\\FinalProject\\Windows\\Company\\WCompany.xaml",
+              "RelativeDocumentMoniker": "Windows\\Company\\WCompany.xaml",
+              "ToolTip": "C:\\VUONG_LAP_QUE\\Nam 2\\HK II\\Window\\FinalProjectWPF\\FinalProject\\Windows\\Company\\WCompany.xaml",
+              "RelativeToolTip": "Windows\\Company\\WCompany.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-08T00:09:07.289Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "WCalendar.xaml.cs",
+              "DocumentMoniker": "C:\\VUONG_LAP_QUE\\Nam 2\\HK II\\Window\\FinalProjectWPF\\FinalProject\\WCalendar.xaml.cs",
+              "RelativeDocumentMoniker": "WCalendar.xaml.cs",
+              "ToolTip": "C:\\VUONG_LAP_QUE\\Nam 2\\HK II\\Window\\FinalProjectWPF\\FinalProject\\WCalendar.xaml.cs",
+              "RelativeToolTip": "WCalendar.xaml.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAIwCYAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-07T23:54:38.437Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "WCalendar.xaml",
+              "DocumentMoniker": "C:\\VUONG_LAP_QUE\\Nam 2\\HK II\\Window\\FinalProjectWPF\\FinalProject\\WCalendar.xaml",
+              "RelativeDocumentMoniker": "WCalendar.xaml",
+              "ToolTip": "C:\\VUONG_LAP_QUE\\Nam 2\\HK II\\Window\\FinalProjectWPF\\FinalProject\\WCalendar.xaml",
+              "RelativeToolTip": "WCalendar.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-07T23:48:32.378Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\VUONG_LAP_QUE\\Nam 2\\HK II\\Window\\FinalProjectWPF\\FinalProject\\App.xaml",
+              "RelativeDocumentMoniker": "App.xaml",
+              "ToolTip": "C:\\VUONG_LAP_QUE\\Nam 2\\HK II\\Window\\FinalProjectWPF\\FinalProject\\App.xaml",
+              "RelativeToolTip": "App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-08T00:19:02.621Z",
+              "EditorCaption": ""
             }
           ]
         },

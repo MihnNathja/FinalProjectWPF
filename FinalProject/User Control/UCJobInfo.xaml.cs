@@ -110,10 +110,13 @@ namespace FinalProject
             if (employeeDAO.checkExistEmployeeInterestJob(employee.ID, ID))
             {
                 employeeDAO.XoaEmployeeInterestJob(Employee.ID, ID);
+                favorite.Foreground = Brushes.Gray;
             }
             else
             {
                 employeeDAO.ThemEmployeeInterestJob(Employee.ID, ID);
+                favorite.Foreground = Brushes.Red;
+
             }
         }
     }
