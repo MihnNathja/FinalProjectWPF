@@ -1,5 +1,4 @@
 ﻿using FinalProject.Objects;
-using FinalProject.Windows.Employee;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,40 +11,29 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace FinalProject
+namespace FinalProject.Windows.Employee
 {
     /// <summary>
-    /// Interaction logic for UCCompanyInfo.xaml
+    /// Interaction logic for WCompanyInfo.xaml
     /// </summary>
-    public partial class UCCompanyInfo : UserControl
+    public partial class WCompanyInfo : Window
     {
         Company company;
 
         public Company Company { get => company; set => company = value; }
 
-        public UCCompanyInfo(Company company)
+        public WCompanyInfo(Company company)
         {
             InitializeComponent();
             Company = company;
+            DataContext = Company;
         }
 
-        public UCCompanyInfo()
+        public WCompanyInfo()
         {
             InitializeComponent();
-        }
-
-        private void btnDetail_Click(object sender, RoutedEventArgs e)
-        {
-            WCompanyInfo companyInfo = new WCompanyInfo(Company);
-            companyInfo.ShowDialog();
-        }
-
-        private void UserControl_Loaded(object sender, RoutedEventArgs e)
-        {
-            DataContext = Company;
         }
     }
 }
