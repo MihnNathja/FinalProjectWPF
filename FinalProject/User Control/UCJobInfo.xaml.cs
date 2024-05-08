@@ -81,6 +81,15 @@ namespace FinalProject
             if (Type == "Employee")
             {
                 btnDeleteJob.Visibility = Visibility.Collapsed;
+                EmployeeDAO employeeDAO = new EmployeeDAO();
+                if (employeeDAO.checkExistEmployeeInterestJob(employee.ID, ID))
+                {
+                    favorite.Foreground = Brushes.Red;
+                }
+                else
+                {
+                    favorite.Foreground = Brushes.Gray;
+                }
             }
             else if (Type == "Company")
             {
@@ -110,14 +119,14 @@ namespace FinalProject
             if (employeeDAO.checkExistEmployeeInterestJob(employee.ID, ID))
             {
                 employeeDAO.XoaEmployeeInterestJob(Employee.ID, ID);
-                favorite.Foreground = Brushes.Gray;
+                //favorite.Foreground = Brushes.Gray;
             }
             else
             {
                 employeeDAO.ThemEmployeeInterestJob(Employee.ID, ID);
-                favorite.Foreground = Brushes.Red;
-
+                //favorite.Foreground = Brushes.Red;
             }
+            this.UserControl_Loaded(sender, e);
         }
     }
 }
