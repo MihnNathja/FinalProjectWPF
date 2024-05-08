@@ -8,7 +8,9 @@
         Title="WCompanyAcceptCV" Height="450" Width="800" Loaded="Window_Loaded">
     <Grid>
         <Grid>
-            <Border Style="{DynamicResource window}">
+            <Image Stretch="UniformToFill"  Source="/Image/background2.png"/>
+           
+                <Border Style="{DynamicResource window}">
                 <ScrollViewer VerticalScrollBarVisibility="Auto">
                     <WrapPanel x:Name="pnlCV">
 

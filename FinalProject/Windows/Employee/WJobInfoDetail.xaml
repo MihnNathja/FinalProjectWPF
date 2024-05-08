@@ -15,98 +15,108 @@
                WindowStyle="None"
                 WindowStartupLocation="CenterScreen"
         Title="WJobInfoDetail" Height="600" Width="900">
-    <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition/>
-            <RowDefinition Height="auto"/>
-        </Grid.RowDefinitions>
+    <Border>
         <Grid>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-            </Grid.ColumnDefinitions>
+            <Image Stretch="UniformToFill"  Source="/Image/background2.png"/>
+            <Border Visibility="Visible" Background="#99000000" CornerRadius="30">
+                <Grid TextElement.Foreground="White">
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition Height="auto"/>
+                        </Grid.RowDefinitions>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
 
-            <StackPanel Margin="5 10 10 10">
-                <StackPanel Orientation="Horizontal">
-                    <materialDesign:PackIcon Kind="Domain" VerticalAlignment="Center"/>
-                    <TextBlock Text="Doanh Nghiệp" FontWeight="Bold" Margin="5 0" VerticalAlignment="Center"/>
-                </StackPanel>
-                <Border BorderThickness="0.5" BorderBrush="Black" CornerRadius="10" Margin="5">
-                    <TextBlock x:Name="txtbCompanyName" Margin="10 5"
-                     Text="{Binding CompanyName}" TextWrapping="Wrap"
-                     Style="{StaticResource MaterialDesignBody1TextBlock}"
-                        />
-                </Border>
-      
+                            <StackPanel Margin="5 10 10 10">
+                                <StackPanel Orientation="Horizontal">
+                                    <materialDesign:PackIcon Kind="Domain" VerticalAlignment="Center"/>
+                                    <TextBlock Text="Doanh Nghiệp" FontWeight="Bold" Margin="5 0" VerticalAlignment="Center"/>
+                                </StackPanel>
+                                <Border BorderThickness="0.5" BorderBrush="White" CornerRadius="10" Margin="5">
+                                    <TextBlock x:Name="txtbCompanyName" Margin="10 5"
+                                             Text="{Binding CompanyName}" TextWrapping="Wrap"
+                                             Style="{StaticResource MaterialDesignBody1TextBlock}"
+                                              
+                                                />
+                                </Border>
 
-                <TextBlock Text="Tên công việc" FontWeight="Bold"/>
-                <Border BorderThickness="0.5" BorderBrush="Black" CornerRadius="10" Margin="5">
-                    <TextBlock x:Name="txtbName" Margin="10 5"
-                           Text="{Binding JobName}" TextWrapping="Wrap"
+
+                                <TextBlock Text="Tên công việc" FontWeight="Bold"/>
+                            <Border BorderThickness="0.5" BorderBrush="White" CornerRadius="10" Margin="5">
+                                    <TextBlock x:Name="txtbName" Margin="10 5"
+                       Text="{Binding JobName}" TextWrapping="Wrap"
+                       Style="{StaticResource MaterialDesignBody1TextBlock}"/>
+                                </Border>
+                                <TextBlock Text="Kinh nghiệm" FontWeight="Bold"/>
+                            <Border BorderThickness="0.5" BorderBrush="White" CornerRadius="10" Margin="5">
+                                    <TextBlock x:Name="txtbExperience" Margin="10 5"
+                           Text="{Binding Experience}" TextWrapping="Wrap"
                            Style="{StaticResource MaterialDesignBody1TextBlock}"/>
+                                </Border>
+                                <StackPanel Orientation="Horizontal">
+                                    <materialDesign:PackIcon Kind="MapMarker" VerticalAlignment="Top" />
+
+                                    <TextBlock Text="Địa điểm" FontWeight="Bold" VerticalAlignment="Center"/>
+                                </StackPanel>
+                            <Border BorderThickness="0.5" BorderBrush="White" CornerRadius="10" Margin="5">
+                                    <TextBlock x:Name="txtbLocation" Margin="10 5" Text="{Binding JobLocation}" TextWrapping="Wrap"
+                       Style="{StaticResource MaterialDesignBody1TextBlock}"/>
+                                </Border>
+                                <StackPanel Orientation="Horizontal">
+                                    <materialDesign:PackIcon Kind="CurrencyUsd" VerticalAlignment="Top" />
+                                    <TextBlock Text="Mức Lương" FontWeight="Bold" VerticalAlignment="Center"/>
+                                </StackPanel>
+                            <Border BorderThickness="0.5" BorderBrush="White" CornerRadius="10" Margin="5">
+                                    <TextBlock x:Name="txtbSalary" Margin="10 5" Text="{Binding Salary}" TextWrapping="Wrap"
+                        Style="{StaticResource MaterialDesignBody1TextBlock}"/>
+                                </Border>
+
+                                <TextBlock Text="Mô tả công việc" FontWeight="Bold"/>
+                            <Border BorderThickness="0.5" BorderBrush="White" CornerRadius="10" Margin="5">
+                                    <TextBlock  Margin="10 5" Height="100" Text="{Binding Description}" TextWrapping="Wrap"
+                        Style="{StaticResource MaterialDesignBody1TextBlock}"/>
+                                </Border>
+
+
+
+
+                            </StackPanel>
+                            <StackPanel Grid.Column="1" Margin="5 10 10 10">
+                                <TextBlock Text="Yêu cầu" FontWeight="Bold"/>
+                                <Border BorderThickness="0.5" BorderBrush="white" CornerRadius="10" Margin="5">
+                                    <TextBlock  Margin="10 5" Height="100" Text="{Binding Require}" TextWrapping="Wrap"
+                        Style="{StaticResource MaterialDesignBody1TextBlock}"
+                                                />
+                                </Border>
+
+                                <TextBlock Text="Quyền lợi" FontWeight="Bold"/>
+                            <Border BorderThickness="0.5" BorderBrush="White" CornerRadius="10" Margin="5">
+                                    <TextBlock  Margin="10 5" Height="100" Text="{Binding Benefit}" TextWrapping="Wrap"
+                        Style="{StaticResource MaterialDesignBody1TextBlock}"/>
+                                </Border>
+                                <StackPanel Orientation="Horizontal">
+                                    <materialDesign:PackIcon Kind="CalendarMonth" />
+                                    <TextBlock Text="Thời gian làm việc" FontWeight="Bold" VerticalAlignment="Center"/>
+                                </StackPanel>
+                            <Border BorderThickness="0.5" BorderBrush="White" CornerRadius="10" Margin="5">
+                                    <TextBlock  Margin="10 5" Text="{Binding WorkTime}" TextWrapping="Wrap"
+                        Style="{StaticResource MaterialDesignBody1TextBlock}"/>
+                                </Border>
+
+
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+                                    <Button Content="Xem tin khác" Width="150" Margin="20 50" Click="btnSee_Click"/>
+                                    <Button x:Name="btnApply" Content="Ứng Tuyển Ngay" Width="150"   Margin="10" Click="btnApply_Click"/>
+                                </StackPanel>
+                            </StackPanel>
+
+                        </Grid>
+                    </Grid>
                 </Border>
-                <TextBlock Text="Kinh nghiệm" FontWeight="Bold"/>
-                <Border BorderThickness="0.5" BorderBrush="Black" CornerRadius="10" Margin="5">
-                    <TextBlock x:Name="txtbExperience" Margin="10 5"
-                               Text="{Binding Experience}" TextWrapping="Wrap"
-                               Style="{StaticResource MaterialDesignBody1TextBlock}"/>
-                </Border>
-                <StackPanel Orientation="Horizontal">
-                    <materialDesign:PackIcon Kind="MapMarker" VerticalAlignment="Top" />
-                    
-                    <TextBlock Text="Địa điểm" FontWeight="Bold" VerticalAlignment="Center"/>
-                </StackPanel>
-                <Border BorderThickness="0.5" BorderBrush="Black" CornerRadius="10" Margin="5">
-                    <TextBlock x:Name="txtbLocation" Margin="10 5" Text="{Binding JobLocation}" TextWrapping="Wrap"
-                           Style="{StaticResource MaterialDesignBody1TextBlock}"/>
-                </Border>
-                <StackPanel Orientation="Horizontal">
-                    <materialDesign:PackIcon Kind="CurrencyUsd" VerticalAlignment="Top" />
-                    <TextBlock Text="Mức Lương" FontWeight="Bold" VerticalAlignment="Center"/>
-                </StackPanel>
-                <Border BorderThickness="0.5" BorderBrush="Black" CornerRadius="10" Margin="5">
-                    <TextBlock x:Name="txtbSalary" Margin="10 5" Text="{Binding Salary}" TextWrapping="Wrap"
-                            Style="{StaticResource MaterialDesignBody1TextBlock}"/>
-                </Border>
-
-                <TextBlock Text="Mô tả công việc" FontWeight="Bold"/>
-                <Border BorderThickness="0.5" BorderBrush="Black" CornerRadius="10" Margin="5">
-                    <TextBlock  Margin="10 5" Height="100" Text="{Binding Description}" TextWrapping="Wrap"
-                            Style="{StaticResource MaterialDesignBody1TextBlock}"/>
-                </Border>
-
-
-
-
-            </StackPanel>
-            <StackPanel Grid.Column="1" Margin="5 10 10 10">
-                <TextBlock Text="Yêu cầu" FontWeight="Bold"/>
-                <Border BorderThickness="0.5" BorderBrush="Black" CornerRadius="10" Margin="5">
-                    <TextBlock  Margin="10 5" Height="100" Text="{Binding Require}" TextWrapping="Wrap"
-                            Style="{StaticResource MaterialDesignBody1TextBlock}"/>
-                </Border>
-
-                <TextBlock Text="Quyền lợi" FontWeight="Bold"/>
-                <Border BorderThickness="0.5" BorderBrush="Black" CornerRadius="10" Margin="5">
-                    <TextBlock  Margin="10 5" Height="100" Text="{Binding Benefit}" TextWrapping="Wrap"
-                            Style="{StaticResource MaterialDesignBody1TextBlock}"/>
-                </Border>
-                <StackPanel Orientation="Horizontal">
-                    <materialDesign:PackIcon Kind="CalendarMonth" />
-                    <TextBlock Text="Thời gian làm việc" FontWeight="Bold" VerticalAlignment="Center"/>
-                </StackPanel>
-                <Border BorderThickness="0.5" BorderBrush="Black" CornerRadius="10" Margin="5">
-                    <TextBlock  Margin="10 5" Text="{Binding WorkTime}" TextWrapping="Wrap"
-                            Style="{StaticResource MaterialDesignBody1TextBlock}"/>
-                </Border>
-
-
-                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
-                    <Button Content="Xem tin khác" Width="150" Margin="20 50" Click="btnSee_Click"/>
-                    <Button x:Name="btnApply" Content="Ứng Tuyển Ngay" Width="150"   Margin="10" Click="btnApply_Click"/>
-                </StackPanel>
-            </StackPanel>
-
         </Grid>
-    </Grid>
+    </Border>
+    
 </Window>
