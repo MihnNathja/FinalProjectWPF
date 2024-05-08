@@ -37,6 +37,7 @@ namespace FinalProject
             InitializeComponent();
             nowMonth = DateTime.Now.Month;
             nowYear = DateTime.Now.Year;
+            Create_Year();
         }
         public WCalendar(Company company)
         {
@@ -44,6 +45,8 @@ namespace FinalProject
             nowMonth = DateTime.Now.Month;
             nowYear = DateTime.Now.Year;
             Company = company;
+            Create_Year();
+
         }
         private void Page_Loaded(object sender, RoutedEventArgs e)
         {
@@ -104,6 +107,13 @@ namespace FinalProject
                 day++;
             }
             Create_Day(day);
+        }
+        public void Create_Year()
+        {
+            for (int nowYear = 2024; nowYear <= 2030; nowYear++)
+            {
+                year.Items.Add(nowYear);
+            }
         }
     }
 }

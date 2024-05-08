@@ -57,7 +57,7 @@ namespace FinalProject.User_Control
             if (window != null && window is WSelectCV)
             {
                 // Gọi phương thức tải lại trang trong MainWindow
-                (window as WSelectCV).Close_Page();
+                (window as WSelectCV).Close_Window();
             }
         }
     }

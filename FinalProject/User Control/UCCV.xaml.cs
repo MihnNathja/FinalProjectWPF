@@ -87,7 +87,7 @@ namespace FinalProject
             if (window != null && window is WCompanyAcceptCV)
             {
                 // Gọi phương thức tải lại trang trong MainWindow
-                (window as WCompanyAcceptCV).Close_Window();
+                (window as WCompanyAcceptCV).Reload();
             }
         }
     }

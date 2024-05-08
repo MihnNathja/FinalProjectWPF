@@ -40,19 +40,19 @@ namespace FinalProject
         }
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
+            Reload();
+        }
+        public void Reload()
+        {
             pnlCV.Children.Clear();
             CVDAO cvDAO = new CVDAO();
             List<UCCV> cvList = cvDAO.GetEmployeeCV(Job);
-            
+
             foreach (UCCV cv in cvList)
             {
                 cv.Job = job;
                 pnlCV.Children.Add(cv);
             }
-        }
-        public void Close_Window()
-        {
-            this.Close();
         }
     }
 }

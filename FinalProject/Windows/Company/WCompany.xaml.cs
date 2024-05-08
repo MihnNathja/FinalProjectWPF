@@ -154,8 +154,9 @@ namespace FinalProject
         }
         private void btnLichHen_Click(object sender, RoutedEventArgs e)
         {
-            WCalendar wCalendar = new WCalendar(company);
-            wCalendar.ShowDialog();
+            PCompanyCalendar pCompanyCalendar = new PCompanyCalendar(company);
+            mainFarm.Navigate(pCompanyCalendar);
+
         }
     }
 }

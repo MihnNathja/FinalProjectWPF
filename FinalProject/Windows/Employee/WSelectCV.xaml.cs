@@ -14,6 +14,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using FinalProject.Database;
 using FinalProject.User_Control;
+using FinalProject.Pages;
 
 namespace FinalProject
 {
@@ -50,9 +51,12 @@ namespace FinalProject
                 pnlCV.Children.Add(cv);
             }
         }
-        public void Close_Page()
+        public void Close_Window()
         {
             this.Close();
+
+
         }
+
     }
 }
