@@ -2,7 +2,9 @@
 using FinalProject.Objects;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -28,81 +30,68 @@ namespace FinalProject
         Company company;
 
         public Company Company { get => company; set => company = value; }
+        public int NowMonth { get => nowMonth; set => nowMonth = value; }
+        public int NowYear { get => nowYear; set => nowYear = value; }
 
         public PCompanyCalendar()
         {
             InitializeComponent();
-            nowMonth = DateTime.Now.Month;
-            nowYear = DateTime.Now.Year;
-            year.Text = nowYear.ToString();
-            month.Text = nowMonth.ToString();
-            Create_Year();
-            Create_Month();
+            NowMonth = DateTime.Now.Month;
+            NowYear = DateTime.Now.Year;
         }
         public PCompanyCalendar(Company company)
         {
             InitializeComponent();
-            nowMonth = DateTime.Now.Month;
-            nowYear = DateTime.Now.Year;
-            year.Text = nowYear.ToString();
-            month.Text = nowMonth.ToString();
+            NowMonth = DateTime.Now.Month;
+            NowYear = DateTime.Now.Year;
             Company = company;
-            Create_Year();
-            Create_Month();
-
-
         }
         private void Page_Loaded(object sender, RoutedEventArgs e)
         {
+            year.Text = NowYear.ToString();
+            month.Text = NowMonth.ToString();
             Load_Day();
-
         }
 
         private void btnLeft_Click(object sender, RoutedEventArgs e)
         {
-            if (nowMonth == 1)
+            if (NowMonth == 1)
             {
-                nowMonth = 12;
-                nowYear--;
-                year.Text = nowYear.ToString();
+                NowMonth = 12;
+                NowYear--;
+                year.Text = NowYear.ToString();
             }
             else
             {
-                nowMonth = nowMonth - 1;
+                NowMonth = NowMonth - 1;
             }
-            month.Text = nowMonth.ToString();
+            month.Text = NowMonth.ToString();
             Load_Day();
         }
 
         private void btnRight_Click(object sender, RoutedEventArgs e)
         {
 
-            if (nowMonth == 12)
+            if (NowMonth == 12)
             {
-                nowMonth = 1;
-                nowYear++;
-                year.Text = nowYear.ToString();
+                NowMonth = 1;
+                NowYear++;
+                year.Text = NowYear.ToString();
             }
             else
             {
-                nowMonth = nowMonth + 1;
-                month.Text = nowMonth.ToString();
+                NowMonth = NowMonth + 1;
+                month.Text = NowMonth.ToString();
             }
             Load_Day();
 
-        }
-
-        private void month_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            wplDay.Children.Clear();
-            Load_Day();
         }
         public void Create_Day(int day)
         {
             wplDay.Children.Clear();
-            month.Text = nowMonth.ToString();
+            month.Text = NowMonth.ToString();
             CompanyDAO companyDAO = new CompanyDAO();
-            List<UCDay> calendar = companyDAO.GetInterviewDate(Company, day, nowMonth, nowYear);
+            List<UCDay> calendar = companyDAO.GetInterviewDate(Company, day, NowMonth, NowYear);
             foreach (UCDay date in calendar)
             {
                 date.StackPanelInterview = stpnlInterview;
@@ -111,26 +100,12 @@ namespace FinalProject
         }
         public void Load_Day()
         {
-            int day = daysInMonth[nowMonth - 1];
-            if (((nowYear % 4 == 0 && nowYear % 100 != 0) || (nowYear % 400 == 0)) && nowMonth == 2)
+            int day = daysInMonth[NowMonth - 1];
+            if (((NowYear % 4 == 0 && NowYear % 100 != 0) || (NowYear % 400 == 0)) && NowMonth == 2)
             {
                 day++;
             }
             Create_Day(day);
-        }
-        public void Create_Year()
-        {
-            for (int cbbYear = 2024; cbbYear <= 2030; cbbYear++)
-            {
-                year.Items.Add(cbbYear);
-            }
-        }
-        public void Create_Month()
-        {
-            for (int cbbMonth = 1; cbbMonth <= 12; cbbMonth++)
-            {
-                month.Items.Add(cbbMonth);
-            }
         }
     }
 }

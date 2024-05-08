@@ -184,7 +184,7 @@ namespace FinalProject {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/FinalProject;component/windows/employee/wcv.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/FinalProject;V1.0.0.0;component/windows/employee/wcv.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\Windows\Employee\WCV.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

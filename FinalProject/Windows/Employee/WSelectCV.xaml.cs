@@ -54,9 +54,6 @@ namespace FinalProject
         public void Close_Window()
         {
             this.Close();
-
-
         }
-
     }
 }

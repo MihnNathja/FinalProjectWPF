@@ -47,11 +47,18 @@ namespace FinalProject.Database
             DataTable companyTable = Load();
             foreach (DataRow row in companyTable.Rows)
             {
+                Company company = new Company();
+                
                 UCCompanyInfo companyInfo = new UCCompanyInfo();
-                companyInfo.CompanyName.Text = row["CompanyName"].ToString();
-                companyInfo.CompanyLocation.Text = row["CompanyLocation"].ToString();
-                companyInfo.PhoneNumber.Text = row["PhoneNumber"].ToString() ;
-                companyInfo.CompanyDescription.Text = row["Description"].ToString() ;   
+                company.CompanyName = row["CompanyName"].ToString();
+                company.Mst = row["Mst"].ToString();
+                company.CompanyLocation = row["CompanyLocation"].ToString();
+                company.Boss = row["Boss"].ToString();
+                company.PhoneNumber = row["PhoneNumber"].ToString();
+                company.Email = row["Email"].ToString();
+                company.Field = row["Field"].ToString();
+                company.Description = row["Description"].ToString();
+                companyInfo.Company = company;
                 list.Add(companyInfo);
             }
             return list;
