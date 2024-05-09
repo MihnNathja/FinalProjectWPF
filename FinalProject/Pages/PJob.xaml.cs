@@ -69,6 +69,7 @@ namespace FinalProject.Page
             {
                 job.User = employee;
                 job.Type = Employee.Type;
+                job.Employee = Employee;
                 job.btnDeleteJob.Visibility = Visibility.Collapsed;
                 pnlJob.Children.Add(job);
             }
