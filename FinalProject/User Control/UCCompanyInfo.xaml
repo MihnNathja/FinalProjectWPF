@@ -81,7 +81,8 @@
               HorizontalAlignment="Right">
                 <Button 
                     Name="btnDetail" Click="btnDetail_Click"
-                    Content="Chi tiết" Margin="30 0"/>
+                    Content="Chi tiết" Margin="30 0"
+                    Width="150"/>
 
                 <Button
                     Width="30"

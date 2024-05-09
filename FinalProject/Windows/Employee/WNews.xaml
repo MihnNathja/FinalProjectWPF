@@ -71,7 +71,7 @@
                             
                         </Grid>
                         <StackPanel Grid.Row="1">
-                            <Button Width="100" Content="Chọn CV"/>
+                            <Button Width="100" Content="Chọn CV" Click="btnSelectCV_Click"/>
                         </StackPanel>
                     </Grid>
                 </Border>

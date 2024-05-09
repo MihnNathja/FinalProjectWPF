@@ -1,4 +1,7 @@
-﻿using System;
+﻿using FinalProject.Database;
+using FinalProject.Objects;
+using FinalProject.Page;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,11 +22,14 @@ namespace FinalProject.Windows.Employee
     /// </summary>
     public partial class WNews : Window
     {
+        User user;
+        Job job;
         public WNews()
         {
             InitializeComponent();
         }
-
+        public Job Job { get => job; set => job = value; }
+        public User User { get => user; set => user = value; }
         private void btnPost_Click(object sender, RoutedEventArgs e)
         {
 
@@ -32,6 +38,16 @@ namespace FinalProject.Windows.Employee
         private void btnSave_Click(object sender, RoutedEventArgs e)
         {
 
+        }
+
+        private void btnSelectCV_Click(object sender, RoutedEventArgs e)
+        {
+            //UserDAO userDAO = new UserDAO();
+            //Employee employee = new Employee();
+            //employee = userDAO.GetUser(employee, user);
+            //WSelectCV wSelectCV = new WSelectCV(employee, job);
+            //wSelectCV.ShowDialog();
+            //this.Close();
         }
     }
 }

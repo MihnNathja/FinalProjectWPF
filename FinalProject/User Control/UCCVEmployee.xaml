@@ -35,20 +35,21 @@ materialDesign:ElevationAssist.Elevation="Dp0">
                             <RowDefinition
                                 Height="160" />
                             <RowDefinition
-                                Height="*" />
+                                Height="0.7*" />
                         </Grid.RowDefinitions>
 
                         <StackPanel
                           Grid.Row="1"
-                          HorizontalAlignment="Center"
-                          VerticalAlignment="Center">
-                                                    <TextBlock x:Name="EmployeeName"
+                          
+                            Margin="0 30 0 0">
+                            <TextBlock x:Name="EmployeeName"
                                      VerticalAlignment="Center"
                                      HorizontalAlignment="Center"
                                      FontSize="20"
-                                     Text="{Binding EmployeeName}" />
+                                     Text="{Binding EmployeeName}" 
+                                       Margin="0 0 0 0"/>
                             <Button
-                                Margin="0,4,0,0"
+                                Width="150"
                                 TextBlock.Foreground="Black"
                                 Command="{x:Static materialDesign:Flipper.FlipCommand}"
                                 Content="XEM"
@@ -88,11 +89,11 @@ materialDesign:ElevationAssist.Elevation="Dp0">
                         </StackPanel>
                     </materialDesign:ColorZone>
                     <Grid
-      Grid.Row="1"
-      Width="172"
-      Margin="0,6,0,0"
-      HorizontalAlignment="Center"
-      VerticalAlignment="Top">
+                          Grid.Row="1"
+                          Width="172"
+                          Margin="0,6,0,0"
+                          HorizontalAlignment="Center"
+                          VerticalAlignment="Top">
                         <Grid.RowDefinitions>
                             <RowDefinition />
                             <RowDefinition />
