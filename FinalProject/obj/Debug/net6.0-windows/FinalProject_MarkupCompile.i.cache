@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 D:\UNIVERSITY\SOPHOMORE\TERM II\LẬP TRÌNH WINDOWS\FinalProjectWPF\FinalProject\App.xaml
-41-1965668037
+421312242393
 
-60-2130813270
+61592594724
 231-214902253
-Pages\PCalendar.xaml;Pages\PCompany.xaml;Pages\PCompanyJobState.xaml;Pages\PCreateJob.xaml;Pages\PCV.xaml;Pages\PDocument.xaml;Pages\PEmployeeJobInterest.xaml;Pages\PJob.xaml;Pages\PNews.xaml;Pages\PNotification.xaml;Pages\PPostNews.xaml;PCompanyCalendar.xaml;Style\MainStyle.xaml;Theme\Theme.xaml;UCDay.xaml;User Control\UCCompanyInfo.xaml;User Control\UCCompanyJob.xaml;User Control\UCCV.xaml;User Control\UCCVApply.xaml;User Control\UCCVEmployee.xaml;User Control\UCJobInfo.xaml;User Control\UCNews.xaml;User Control\UCNotification.xaml;User Control\UCPopUp.xaml;WCalendar.xaml;Windows\Company\WCompany.xaml;Windows\Company\WCompanyAcceptCV.xaml;Windows\Company\WCreateJob.xaml;Windows\Company\WInterview.xaml;Windows\Company\WNewsDetail.xaml;Windows\Employee\WCompanyInfo.xaml;Windows\Employee\WCV.xaml;Windows\Employee\WEmployee.xaml;Windows\Employee\WJobInfoDetail.xaml;Windows\Employee\WNews.xaml;Windows\Employee\WSelectCV.xaml;Windows\Employee\WSelectCVNews.xaml;Windows\LoginSignUp\WLogin.xaml;Windows\LoginSignUp\WSignUp.xaml;Windows\LoginSignUp\WSignUpCompany.xaml;Windows\LoginSignUp\WSignUpEmployee.xaml;
+Pages\PCalendar.xaml;Pages\PCompany.xaml;Pages\PCompanyJobState.xaml;Pages\PCreateJob.xaml;Pages\PCV.xaml;Pages\PDocument.xaml;Pages\PEmployeeJobInterest.xaml;Pages\PJob.xaml;Pages\PNews.xaml;Pages\PNotification.xaml;Pages\PPostNews.xaml;PCompanyCalendar.xaml;Style\MainStyle.xaml;Theme\Theme.xaml;UCDay.xaml;User Control\UCCompanyInfo.xaml;User Control\UCCompanyJob.xaml;User Control\UCCV.xaml;User Control\UCCVApply.xaml;User Control\UCCVApplyNews.xaml;User Control\UCCVEmployee.xaml;User Control\UCJobInfo.xaml;User Control\UCNews.xaml;User Control\UCNotification.xaml;User Control\UCPopUp.xaml;WCalendar.xaml;Windows\Company\WCompany.xaml;Windows\Company\WCompanyAcceptCV.xaml;Windows\Company\WCreateJob.xaml;Windows\Company\WInterview.xaml;Windows\Company\WNewsDetail.xaml;Windows\Employee\WCompanyInfo.xaml;Windows\Employee\WCV.xaml;Windows\Employee\WEmployee.xaml;Windows\Employee\WJobInfoDetail.xaml;Windows\Employee\WNews.xaml;Windows\Employee\WSelectCV.xaml;Windows\Employee\WSelectCVNews.xaml;Windows\LoginSignUp\WLogin.xaml;Windows\LoginSignUp\WSignUp.xaml;Windows\LoginSignUp\WSignUpCompany.xaml;Windows\LoginSignUp\WSignUpEmployee.xaml;
 
 True
 

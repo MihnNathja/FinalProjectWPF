@@ -97,7 +97,7 @@ namespace FinalProject.Database
         }
 
 
-        public List<UCJobInfo> Search(string keyword, string location, string experience)
+        public List<UCJobInfo> Search(string keyword, string location, string experience, string salary, string time)
         {
             List<UCJobInfo> list = new List<UCJobInfo>();
             string SQL = string.Format("SELECT * FROM Jobs WHERE 1 = 1"); // Bắt đầu với điều kiện luôn đúng
@@ -112,6 +112,14 @@ namespace FinalProject.Database
             if (experience != "Tất cả kinh nghiệm")
             {
                 SQL += $" AND Experience LIKE N'%{experience}%'";
+            }
+            if (experience != "Tất cả mức lương")
+            {
+                SQL += $" AND Experience LIKE N'%{salary}%'";
+            }
+            if (experience != "Thời gian làm việc")
+            {
+                SQL += $" AND Experience LIKE N'%{time}%'";
             }
             DataTable dataSearch = db.Load(SQL);
             

@@ -25,6 +25,9 @@
     <Compile Update="UCDay.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="User Control\UCCVApplyNews.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="User Control\UCNews.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -139,6 +142,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="UCDay.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="User Control\UCCVApplyNews.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="User Control\UCNews.xaml">

@@ -49,11 +49,5 @@ namespace FinalProject.User_Control
         {
 
         }
-
-        private void btnDetail_Click(object sender, RoutedEventArgs e)
-        {
-            WNews wNews = new WNews();
-            wNews.ShowDialog();
-        }
     }
 }

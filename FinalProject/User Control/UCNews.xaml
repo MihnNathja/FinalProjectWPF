@@ -42,7 +42,7 @@ HorizontalAlignment="Stretch">
                         <Button Width="150" Content="Chi tiết" FontWeight="Black"
                             Foreground="White"
                             x:Name="btnDetail"
-                            Click="btnDetail_Click"/>
+                            />
                     </StackPanel>
                     <Separator
 
@@ -76,7 +76,7 @@ HorizontalAlignment="Stretch">
                             Margin="0,-45,10,0" 
                             Padding="-10"
                             VerticalAlignment="Top" 
-                            Click="btnDeleteJob_Click">
+                            >
                             <Ellipse 
                              Height="25" 
                               Width="25" IsEnabled="False">
