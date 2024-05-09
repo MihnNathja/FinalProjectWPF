@@ -21,7 +21,8 @@ namespace FinalProject.Windows.Employee
     public partial class WNews : Window
     {
         Objects.Employee employee;
-
+        User user;
+        Job job;
         public Objects.Employee Employee { get => employee; set => employee = value; }
 
         public WNews(Objects.Employee employee)
@@ -33,7 +34,8 @@ namespace FinalProject.Windows.Employee
         {
             InitializeComponent();
         }
-
+        public Job Job { get => job; set => job = value; }
+        public User User { get => user; set => user = value; }
         private void btnPost_Click(object sender, RoutedEventArgs e)
         {
 
@@ -46,7 +48,12 @@ namespace FinalProject.Windows.Employee
 
         private void btnSelectCV_Click(object sender, RoutedEventArgs e)
         {
-            
+            //UserDAO userDAO = new UserDAO();
+            //Employee employee = new Employee();
+            //employee = userDAO.GetUser(employee, user);
+            //WSelectCV wSelectCV = new WSelectCV(employee, job);
+            //wSelectCV.ShowDialog();
+            //this.Close();
         }
     }
 }

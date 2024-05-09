@@ -71,9 +71,8 @@
                             <Button Name="btnSelectCV" Click="btnSelectCV_Click" Width="100" Content="Chọn CV"/>
                         </StackPanel>
                         <Grid Grid.Column="0" Name="gridCV">
-                            
-                        </Grid>
 
+                        </Grid>
                     </Grid>
                 </Border>
 

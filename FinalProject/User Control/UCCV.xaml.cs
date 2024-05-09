@@ -27,11 +27,13 @@ namespace FinalProject
         CV cV;
         Job job;
         Employee employee;
+        Company company;
         string id;
         public string ID { get => id; set => id = value; }
         public CV CV { get => cV; set => cV = value; }
         public Job Job { get => job; set => job = value; }
         public Employee Employee { get => employee; set => employee = value; }
+        public Company Company { get => company; set => company = value; }
 
         public UCCV()
         {
