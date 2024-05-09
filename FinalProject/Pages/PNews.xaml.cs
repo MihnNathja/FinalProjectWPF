@@ -15,25 +15,26 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace FinalProject
+namespace FinalProject.Pages
 {
     /// <summary>
     /// Interaction logic for PNews.xaml
     /// </summary>
     public partial class PNews : System.Windows.Controls.Page
     {
-        
-        Employee employee;
+        Company company;
 
+        public Company Company { get => company; set => company = value; }
 
-        public Employee Employee { get => employee; set => employee = value; }
-        public PNews()
+        public PNews(Company company)
         {
             InitializeComponent();
+            Company = company;
+
         }
-        public PNews(Employee employee)
+
+        public PNews()
         {
-            Employee = employee;
             InitializeComponent();
         }
         private void btnSearch_Click(object sender, RoutedEventArgs e)

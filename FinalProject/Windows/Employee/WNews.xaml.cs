@@ -1,6 +1,5 @@
 ﻿using FinalProject.Database;
 using FinalProject.Objects;
-using FinalProject.Page;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,15 +14,22 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace FinalProject
+namespace FinalProject.Windows.Employee
 {
     /// <summary>
     /// Interaction logic for WNews.xaml
     /// </summary>
     public partial class WNews : Window
     {
-        Employee employee = new Employee();
-
+        Objects.Employee employee;
+        public Objects.Employee Employee { get => employee; set => employee = value; }
+        string IdCV;
+        NewsDAO newsDAO = new NewsDAO();
+        public WNews(Objects.Employee employee)
+        {
+            InitializeComponent();
+            Employee = employee;
+        }
         public WNews()
         {
             InitializeComponent();
@@ -32,18 +38,21 @@ namespace FinalProject
 
         private void btnPost_Click(object sender, RoutedEventArgs e)
         {
-
+            News news = new News(Employee.ID, IdCV, txtbJobName.Text, txtbExperience.Text, txtbLocation.Text, txtbSalary.Text, txtbDescription.Text, txtbBenefit.Text, txtbWorkTime.Text);
+            newsDAO.ThemNews(news);
         }
 
         private void btnSave_Click(object sender, RoutedEventArgs e)
         {
-
+            News news = new News(Employee.ID, IdCV, txtbJobName.Text, txtbExperience.Text, txtbLocation.Text, txtbSalary.Text, txtbDescription.Text, txtbBenefit.Text, txtbWorkTime.Text);
+            newsDAO.SuaNews(news);
         }
 
         private void btnSelectCV_Click(object sender, RoutedEventArgs e)
         {
-            
-            
+            // trả ra IdCV
+            string result = "";
+            IdCV = result;
         }
     }
 }

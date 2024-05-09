@@ -121,12 +121,21 @@
                                 </StackPanel>
                             </Button>
                             <Button Style="{StaticResource menuButton}"
-                           MouseEnter="btnHoSo_MouseEnter" 
-                           MouseLeave="btnHoSo_MouseLeave" Click="btnHoSo_Click"
-                           >
+                                MouseEnter="btnHoSo_MouseEnter" 
+                                MouseLeave="btnHoSo_MouseLeave" Click="btnHoSo_Click"
+                                >
                                 <StackPanel Orientation="Horizontal">
                                     <Icon:PackIconMaterial Kind="FileDocument" Style="{StaticResource menuButtonIcon}"/>
                                     <TextBlock Text="Hồ sơ Công ty"/>
+                                </StackPanel>
+                            </Button>
+                            <Button Style="{StaticResource menuButton}"
+                                MouseEnter="btnTin_MouseEnter"
+                                MouseLeave="btnTin_MouseLeave"
+                                Click="btnTin_Click">
+                                <StackPanel Orientation="Horizontal">
+                                    <Icon:PackIconMaterial Kind="Newspaper" Style="{StaticResource menuButtonIcon}"/>
+                                    <TextBlock Text="Tin tìm việc"/>
                                 </StackPanel>
                             </Button>
                             <Button Style="{StaticResource menuButton}"
