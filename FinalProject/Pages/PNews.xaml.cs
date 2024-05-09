@@ -1,5 +1,6 @@
 ﻿using FinalProject.Database;
 using FinalProject.Objects;
+using FinalProject.User_Control;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,6 +15,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using static MaterialDesignThemes.Wpf.Theme.ToolBar;
 
 namespace FinalProject.Pages
 {
@@ -25,12 +27,12 @@ namespace FinalProject.Pages
         Company company;
 
         public Company Company { get => company; set => company = value; }
+        NewsDAO NewsDAO;
 
         public PNews(Company company)
         {
             InitializeComponent();
             Company = company;
-
         }
 
         public PNews()
@@ -40,6 +42,17 @@ namespace FinalProject.Pages
         private void btnSearch_Click(object sender, RoutedEventArgs e)
         {
 
+        }
+
+        private void Page_Loaded(object sender, RoutedEventArgs e)
+        {
+            pnlNews.Children.Clear();
+            List<UCNews> listNews =  NewsDAO.GetNews();
+            foreach (UCNews item in listNews)
+            {
+                item.Company = Company;
+                pnlNews.Children.Add(item);
+            }
         }
     }
 }
