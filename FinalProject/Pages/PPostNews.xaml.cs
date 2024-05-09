@@ -39,8 +39,7 @@ namespace FinalProject.Pages
 
         private void btnThemTin_Click(object sender, RoutedEventArgs e)
         {
-            WNews wNews = new WNews(Employee);
-            wNews.Show();
+            
         }
     }
 }
