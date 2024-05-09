@@ -60,15 +60,16 @@ namespace FinalProject.Page
 
         private void btnSearch_Click(object sender, RoutedEventArgs e)
         {
-            
             pnlJob.Children.Clear();
+            string keyword = txtSearch.Text;
             string location = cbbLocation.Text;
             string experience = cbbExperience.Text;
-            List<UCJobInfo> joblist = jobDAO.Search(location, experience);
+            List<UCJobInfo> joblist = jobDAO.Search(keyword, location, experience);
             foreach (UCJobInfo job in joblist)
             {
                 job.User = employee;
                 job.Type = Employee.Type;
+                job.Employee = Employee;
                 job.btnDeleteJob.Visibility = Visibility.Collapsed;
                 pnlJob.Children.Add(job);
             }
@@ -97,22 +98,6 @@ namespace FinalProject.Page
                 cbbLocation.Items.Add(tinh);
             }
         }
-
-
-
-        //public void search(string location, string experience)
-        //{
-        //    filter filter = new filter(location, experience);
-        //    jobdao.datajob = jobdao.search(filter);
-        //    pnljob.children.clear();
-        //    list<ucjobinfo> joblist = jobdao.loadpage();
-        //    foreach (ucjobinfo job in joblist)
-        //    {
-        //        job.user = user;
-        //        job.type = user.type;
-        //        pnljob.children.add(job);
-        //    }
-        //}
     }
 }
 
