@@ -42,12 +42,12 @@ namespace FinalProject.Windows.Employee
 
         private void btnSelectCV_Click(object sender, RoutedEventArgs e)
         {
-            UserDAO userDAO = new UserDAO();
-            Employee employee = new Employee();
-            employee = userDAO.GetUser(employee, user);
-            WSelectCV wSelectCV = new WSelectCV(employee, job);
-            wSelectCV.ShowDialog();
-            this.Close();
+            //UserDAO userDAO = new UserDAO();
+            //Employee employee = new Employee();
+            //employee = userDAO.GetUser(employee, user);
+            //WSelectCV wSelectCV = new WSelectCV(employee, job);
+            //wSelectCV.ShowDialog();
+            //this.Close();
         }
     }
 }

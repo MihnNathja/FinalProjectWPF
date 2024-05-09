@@ -34,10 +34,7 @@ namespace FinalProject.User_Control
         {
             InitializeComponent();
         }
-        public UCNews(Job, User)
-        {
-            InitializeComponent();
-        }
+        
 
         private void btnDeleteJob_Click(object sender, RoutedEventArgs e)
         {
