@@ -170,6 +170,7 @@ namespace FinalProject.Database
                 {
                     property.SetValue(job, row[property.Name].ToString(), null);
                 }
+                MessageBox.Show(job.JobName);
                 UCJobInfo jobInfo = new UCJobInfo(job);
                 jobInfos.Add(jobInfo);
             }

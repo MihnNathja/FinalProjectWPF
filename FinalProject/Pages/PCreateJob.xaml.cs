@@ -1,5 +1,6 @@
 ﻿using FinalProject.Database;
 using FinalProject.Objects;
+using FinalProject.Page;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -44,6 +45,7 @@ namespace FinalProject
 
         private void Page_Loaded(object sender, RoutedEventArgs e)
         {
+            
             jobList.Children.Clear();
             JobDAO jobDAO = new JobDAO();
             List<UCJobInfo> data = jobDAO.GetCompanyJobForLoad(Company);
@@ -51,7 +53,9 @@ namespace FinalProject
             {
                 job.Type = Company.Type;
                 jobList.Children.Add( job );
+                
             }
+           
         }
         private void ReloadPage(Company company)
         {
