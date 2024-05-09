@@ -15,21 +15,21 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace FinalProject.Windows.Employee
+namespace FinalProject
 {
     /// <summary>
     /// Interaction logic for WNews.xaml
     /// </summary>
     public partial class WNews : Window
     {
-        User user;
-        Job job;
+        Employee employee = new Employee();
+
         public WNews()
         {
             InitializeComponent();
         }
-        public Job Job { get => job; set => job = value; }
-        public User User { get => user; set => user = value; }
+        
+
         private void btnPost_Click(object sender, RoutedEventArgs e)
         {
 
@@ -42,12 +42,8 @@ namespace FinalProject.Windows.Employee
 
         private void btnSelectCV_Click(object sender, RoutedEventArgs e)
         {
-            //UserDAO userDAO = new UserDAO();
-            //Employee employee = new Employee();
-            //employee = userDAO.GetUser(employee, user);
-            //WSelectCV wSelectCV = new WSelectCV(employee, job);
-            //wSelectCV.ShowDialog();
-            //this.Close();
+            
+            
         }
     }
 }

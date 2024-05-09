@@ -80,7 +80,7 @@
                     Height="41" 
                     Margin="10 0" 
  
-                    Click="btnSearch_Click"
+                    
  
                     IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
                     Style="{StaticResource MaterialDesignFloatingActionMiniButton}"
