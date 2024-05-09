@@ -20,11 +20,11 @@ namespace FinalProject.Windows.Employee
     /// </summary>
     public partial class WCompanyInfo : Window
     {
-        Company company;
+        Objects.Company company;
 
-        public Company Company { get => company; set => company = value; }
+        public Objects.Company Company { get => company; set => company = value; }
 
-        public WCompanyInfo(Company company)
+        public WCompanyInfo(Objects.Company company)
         {
             InitializeComponent();
             Company = company;

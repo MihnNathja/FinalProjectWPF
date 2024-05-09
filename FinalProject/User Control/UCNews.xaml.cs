@@ -23,15 +23,31 @@ namespace FinalProject.User_Control
     /// </summary>
     public partial class UCNews : UserControl
     {
-        
+        Company company;
+        Employee employee;
+        string id;
+        string type;
+        News news;
+        public string ID { get => id; set => id = value; }
+        public string Type { get => type; set => type = value; }
+        public Employee Employee { get => employee; set => employee = value; }
+        public News News { get => news; set => news = value; }
+        public Company Company { get => company; set => company = value; }
 
-       
         public UCNews()
         {
             InitializeComponent();
         }
-        
+        public UCNews(News news)
+        {
+            InitializeComponent();
+            News = news;
+        }
 
-        
+
+        private void btnDeleteJob_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

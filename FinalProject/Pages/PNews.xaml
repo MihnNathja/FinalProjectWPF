@@ -14,7 +14,7 @@
         Background="{DynamicResource MaterialDesignPaper}"
         FontFamily="{DynamicResource MaterialDesignFont}"
       d:DesignHeight="500" d:DesignWidth="1000"
-      Title="PNews">
+      Title="PNews" Loaded="Page_Loaded">
 
     <Grid>
         <Grid.RowDefinitions>
