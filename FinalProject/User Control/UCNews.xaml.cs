@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FinalProject.Objects;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,7 +21,20 @@ namespace FinalProject.User_Control
     /// </summary>
     public partial class UCNews : UserControl
     {
+        User user;
+        Employee employee;
+        string id;
+        string type;
+
+        public string ID { get => id; set => id = value; }
+        public string Type { get => type; set => type = value; }
+        public User User { get => user; set => user = value; }
+        public Employee Employee { get => employee; set => employee = value; }
         public UCNews()
+        {
+            InitializeComponent();
+        }
+        public UCNews(Job, User)
         {
             InitializeComponent();
         }
@@ -32,7 +46,7 @@ namespace FinalProject.User_Control
 
         private void btnDetail_Click(object sender, RoutedEventArgs e)
         {
-
+            
         }
     }
 }

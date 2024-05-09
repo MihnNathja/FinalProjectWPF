@@ -19,33 +19,34 @@
             <TextBlock Text="Chọn ngày phỏng vấn" FontSize="35" FontWeight="Bold" HorizontalAlignment="Center" Height="47" VerticalAlignment="Top"/>
             <Border Width="600" BorderBrush="Black" BorderThickness="1" Height="350">
                 <Calendar x:Name="calendar" Margin="0,0,0,-4" SelectionMode="SingleDate"
-                        materialDesign:CalendarAssist.Orientation="Horizontal" 
-                        
-                        materialDesign:CalendarAssist.SelectionColor="#002E5D" 
-                        materialDesign:CalendarAssist.SelectionForegroundColor="#002E5D" 
-                        materialDesign:CalendarAssist.HeaderBackground="#002E5D"
-                        materialDesign:CalendarAssist.HeaderForeground="White"
-                          >
+                    materialDesign:CalendarAssist.Orientation="Horizontal" 
+                    
+                    materialDesign:CalendarAssist.SelectionColor="#002E5D" 
+                    materialDesign:CalendarAssist.SelectionForegroundColor="#002E5D" 
+                    materialDesign:CalendarAssist.HeaderBackground="#002E5D"
+                    materialDesign:CalendarAssist.HeaderForeground="White"
+                      >
 
                 </Calendar>
             </Border>
             <Button x:Name="btnSet"  Background="#002E5D" Height="35" Width="170" 
-                    Click="btnSet_Click" Margin="170 90 "
-                    HorizontalAlignment="Left" VerticalAlignment="Bottom">
+                Click="btnSet_Click" Margin="170 90 "
+                HorizontalAlignment="Left" VerticalAlignment="Bottom">
                 <StackPanel Orientation="Horizontal">
                     <materialDesign:PackIcon Kind="CalendarPlus" Foreground="White"/>
                     <TextBlock Text="Hẹn lịch phỏng vấn" Width="150" Foreground="White"/>
                 </StackPanel>
             </Button>
             <Button x:Name="btnDelete" Background="#002E5D"  Width="170" Height="35"
-                    Click="btnDelete_Click" HorizontalAlignment="Right"
-                    VerticalAlignment="Bottom" Margin="50 90">
+                Click="btnDelete_Click" HorizontalAlignment="Right"
+                VerticalAlignment="Bottom" Margin="50 90">
                 <StackPanel Orientation="Horizontal">
                     <materialDesign:PackIcon Kind="CalendarRemove" Foreground="White"/>
                     <TextBlock Text="Xóa lịch phỏng vấn" Width="150" Foreground="White"/>
                 </StackPanel>
             </Button>
-            
+
         </Grid>
-     </Border> 
+    </Border>
+
 </Window>
