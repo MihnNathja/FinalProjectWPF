@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FinalProject.Objects;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,6 +21,17 @@ namespace FinalProject.Pages
     /// </summary>
     public partial class PNews : System.Windows.Controls.Page
     {
+        Company company;
+
+        public Company Company { get => company; set => company = value; }
+
+        public PNews(Company company)
+        {
+            InitializeComponent();
+            Company = company;
+
+        }
+
         public PNews()
         {
             InitializeComponent();

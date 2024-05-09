@@ -1,6 +1,4 @@
-﻿using FinalProject.Database;
-using FinalProject.Objects;
-using FinalProject.Page;
+﻿using FinalProject.Objects;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,8 +20,16 @@ namespace FinalProject.Windows.Employee
     /// </summary>
     public partial class WNews : Window
     {
+        Objects.Employee employee;
         User user;
         Job job;
+        public Objects.Employee Employee { get => employee; set => employee = value; }
+
+        public WNews(Objects.Employee employee)
+        {
+            InitializeComponent();
+            Employee = employee;
+        }
         public WNews()
         {
             InitializeComponent();

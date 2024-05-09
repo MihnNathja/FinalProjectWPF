@@ -79,6 +79,20 @@ namespace FinalProject
         {
             popupControl.IsPopupOpen = false;
         }
+        private void btnTin_Click(object sender, RoutedEventArgs e)
+        {
+            PNews pNews = new PNews(company);
+            mainFarm.Navigate(pNews);
+        }
+        private void btnTin_MouseEnter(object sender, MouseEventArgs e)
+        {
+            popupControl.IsPopupOpen = true;
+            popupControl.PopupContent = "Tin tìm việc";
+        }
+        private void btnTin_MouseLeave(object sender, MouseEventArgs e)
+        {
+            popupControl.IsPopupOpen = false;
+        }
         private void btnCongty_MouseEnter(object sender, MouseEventArgs e)
         {
             popupControl.IsPopupOpen = true;
