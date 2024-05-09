@@ -1,4 +1,5 @@
-﻿using FinalProject.Objects;
+﻿using FinalProject.Database;
+using FinalProject.Objects;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -36,7 +37,6 @@ namespace FinalProject.Pages
         {
             InitializeComponent();
         }
-
         private void btnSearch_Click(object sender, RoutedEventArgs e)
         {
 

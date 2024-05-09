@@ -1,4 +1,6 @@
 ﻿using FinalProject.Objects;
+using FinalProject.Windows.Employee;
+using MaterialDesignThemes.Wpf;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,7 +16,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace FinalProject.User_Control
+namespace FinalProject
 {
     /// <summary>
     /// Interaction logic for UCNews.xaml
@@ -43,7 +45,8 @@ namespace FinalProject.User_Control
 
         private void btnDetail_Click(object sender, RoutedEventArgs e)
         {
-            
+            WNews wNews = new WNews();
+            wNews.ShowDialog();
         }
     }
 }

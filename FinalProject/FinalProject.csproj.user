@@ -46,6 +46,9 @@
     <Compile Update="Windows\Employee\WNews.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Windows\Employee\WSelectCVNews.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Windows\LoginSignUp\WLogin.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -154,6 +157,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Windows\Employee\WNews.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Windows\Employee\WSelectCVNews.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Windows\LoginSignUp\WLogin.xaml">

@@ -1,4 +1,5 @@
-﻿using FinalProject.Objects;
+﻿using FinalProject.Database;
+using FinalProject.Objects;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,10 +22,9 @@ namespace FinalProject.Windows.Employee
     public partial class WNews : Window
     {
         Objects.Employee employee;
-        User user;
-        Job job;
         public Objects.Employee Employee { get => employee; set => employee = value; }
-
+        string IdCV;
+        NewsDAO newsDAO = new NewsDAO();
         public WNews(Objects.Employee employee)
         {
             InitializeComponent();
@@ -34,26 +34,25 @@ namespace FinalProject.Windows.Employee
         {
             InitializeComponent();
         }
-        public Job Job { get => job; set => job = value; }
-        public User User { get => user; set => user = value; }
+        
+
         private void btnPost_Click(object sender, RoutedEventArgs e)
         {
-
+            News news = new News(Employee.ID, IdCV, txtbJobName.Text, txtbExperience.Text, txtbLocation.Text, txtbSalary.Text, txtbDescription.Text, txtbBenefit.Text, txtbWorkTime.Text);
+            newsDAO.ThemNews(news);
         }
 
         private void btnSave_Click(object sender, RoutedEventArgs e)
         {
-
+            News news = new News(Employee.ID, IdCV, txtbJobName.Text, txtbExperience.Text, txtbLocation.Text, txtbSalary.Text, txtbDescription.Text, txtbBenefit.Text, txtbWorkTime.Text);
+            newsDAO.SuaNews(news);
         }
 
         private void btnSelectCV_Click(object sender, RoutedEventArgs e)
         {
-            //UserDAO userDAO = new UserDAO();
-            //Employee employee = new Employee();
-            //employee = userDAO.GetUser(employee, user);
-            //WSelectCV wSelectCV = new WSelectCV(employee, job);
-            //wSelectCV.ShowDialog();
-            //this.Close();
+            // trả ra IdCV
+            string result = "";
+            IdCV = result;
         }
     }
 }

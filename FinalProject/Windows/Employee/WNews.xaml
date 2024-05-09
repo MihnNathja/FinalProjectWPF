@@ -27,7 +27,7 @@
 
             <StackPanel Margin="5 10 10 10">
 
-                <TextBox x:Name="txtbCompanyName" Margin="10 5" Text=""
+                <TextBox x:Name="txtbJobName" Margin="10 5" Text=""
                      materialDesign:HintAssist.Hint="Tên công việc"/>
 
 
