@@ -24,7 +24,7 @@
                         <ColumnDefinition Width="*"/>
                         <ColumnDefinition Width="*"/>
                     </Grid.ColumnDefinitions>
-                    <StackPanel>
+                    <StackPanel Margin="20 0">
                         <StackPanel>
                             <TextBox x:Name="txtCVTitle" 
                              Text="{Binding CVTitle}"
@@ -62,7 +62,7 @@
                         <StackPanel>
                             <TextBlock Text="THÔNG TIN CÁ NHÂN" FontSize="20" FontWeight="Bold"/>
                             <DatePicker Name="dtpDateOfBirtday" Text="Ngày sinh" FontSize="15" Margin="20 3"  BorderBrush="White"/>
-                            <ComboBox x:Name="cbbGender" Width="900" Margin="5 0" Style="{DynamicResource theComboBox}" Height="50" SelectedIndex="0">
+                            <ComboBox x:Name="cbbGender" Width="650" Margin="5 0" Style="{DynamicResource theComboBox}" Height="50" SelectedIndex="0">
                                 <ComboBoxItem Content="Nam"/>
                                 <ComboBoxItem Content="Nữ" />
                             </ComboBox>
@@ -119,7 +119,7 @@
 
 
 
-                    <StackPanel Grid.Column="1">
+                    <StackPanel Grid.Column="1" Margin="20 0">
                         <StackPanel >
                             <TextBlock  Text="KINH NGHIỆM" FontSize="20" FontWeight="Bold"/>
                             <TextBox Name="txtExperience" Text="{Binding Experience}" Height="130" Margin="5 10"
