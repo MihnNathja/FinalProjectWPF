@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FinalProject.Objects;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,6 +20,15 @@ namespace FinalProject.Windows.Employee
     /// </summary>
     public partial class WNews : Window
     {
+        Objects.Employee employee;
+
+        public Objects.Employee Employee { get => employee; set => employee = value; }
+
+        public WNews(Objects.Employee employee)
+        {
+            InitializeComponent();
+            Employee = employee;
+        }
         public WNews()
         {
             InitializeComponent();
@@ -32,6 +42,11 @@ namespace FinalProject.Windows.Employee
         private void btnSave_Click(object sender, RoutedEventArgs e)
         {
 
+        }
+
+        private void btnSelectCV_Click(object sender, RoutedEventArgs e)
+        {
+            
         }
     }
 }

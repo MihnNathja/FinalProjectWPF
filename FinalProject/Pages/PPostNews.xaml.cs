@@ -1,4 +1,5 @@
-﻿using FinalProject.Windows.Employee;
+﻿using FinalProject.Objects;
+using FinalProject.Windows.Employee;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,6 +22,16 @@ namespace FinalProject.Pages
     /// </summary>
     public partial class PPostNews : System.Windows.Controls.Page
     {
+        Employee employee;
+
+        public Employee Employee { get => employee; set => employee = value; }
+
+        public PPostNews(Employee employee)
+        {
+            InitializeComponent();
+            Employee = employee;
+        }
+
         public PPostNews()
         {
             InitializeComponent();
@@ -28,7 +39,7 @@ namespace FinalProject.Pages
 
         private void btnThemTin_Click(object sender, RoutedEventArgs e)
         {
-            WNews wNews = new WNews();
+            WNews wNews = new WNews(Employee);
             wNews.Show();
         }
     }

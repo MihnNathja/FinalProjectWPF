@@ -126,7 +126,7 @@ namespace FinalProject
         }
         private void btnTin_Click(object sender, RoutedEventArgs e)
         {
-            PPostNews pPostNews = new PPostNews();
+            PPostNews pPostNews = new PPostNews(employee);
             mainFarm.Navigate(pPostNews);
         }
 

@@ -63,16 +63,17 @@
                 <Border BorderThickness="0.5" BorderBrush="Black" CornerRadius="10"
                         Margin="10 5" Height="250">
                     <Grid>
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="auto"/>
-                            <RowDefinition Height="70"/>
-                        </Grid.RowDefinitions>
-                        <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition Width="auto"/>
+                        </Grid.ColumnDefinitions>
+                        <StackPanel Grid.Column="1">
+                            <Button Name="btnSelectCV" Click="btnSelectCV_Click" Width="100" Content="Chọn CV"/>
+                        </StackPanel>
+                        <Grid Grid.Column="0" Name="gridCV">
                             
                         </Grid>
-                        <StackPanel Grid.Row="1">
-                            <Button Width="100" Content="Chọn CV"/>
-                        </StackPanel>
+
                     </Grid>
                 </Border>
 
