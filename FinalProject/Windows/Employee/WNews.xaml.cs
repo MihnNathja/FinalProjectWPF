@@ -1,5 +1,6 @@
 ﻿using FinalProject.Database;
 using FinalProject.Objects;
+using FinalProject.User_Control;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -24,6 +25,7 @@ namespace FinalProject.Windows.Employee
         Objects.Employee employee;
         public Objects.Employee Employee { get => employee; set => employee = value; }
         string IdCV;
+        CVDAO cVDAO = new CVDAO();
         NewsDAO newsDAO = new NewsDAO();
         public WNews(Objects.Employee employee)
         {
@@ -50,9 +52,13 @@ namespace FinalProject.Windows.Employee
 
         private void btnSelectCV_Click(object sender, RoutedEventArgs e)
         {
-            // trả ra IdCV
-            string result = "";
-            IdCV = result;
+            gridCV.Children.Clear();
+            WSelectCVNews wSelectCVNews = new WSelectCVNews(Employee);
+
+            wSelectCVNews.ShowDialog();
+            IdCV = cVDAO.GetIdUCNews();
+            UCCV uCCV = new UCCV(IdCV);
+            gridCV.Children.Add(uCCV);
         }
     }
 }
