@@ -64,7 +64,9 @@ namespace FinalProject.Page
             string keyword = txtSearch.Text;
             string location = cbbLocation.Text;
             string experience = cbbExperience.Text;
-            List<UCJobInfo> joblist = jobDAO.Search(keyword, location, experience);
+            string salary = cbbSalary.Text;
+            string time = cbbTime.Text;
+            List<UCJobInfo> joblist = jobDAO.Search(keyword, location, experience,salary, time);
             foreach (UCJobInfo job in joblist)
             {
                 job.User = employee;
