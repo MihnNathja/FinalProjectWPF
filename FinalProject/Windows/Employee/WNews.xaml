@@ -67,11 +67,11 @@
                             <ColumnDefinition Width="auto"/>
                             <ColumnDefinition Width="auto"/>
                         </Grid.ColumnDefinitions>
-                        <StackPanel Grid.Column="1">
+                        <StackPanel Grid.Column="0">
                             <Button Name="btnSelectCV" Click="btnSelectCV_Click" Width="100" Content="Chọn CV"/>
                         </StackPanel>
-                        <Grid Grid.Column="0" Name="gridCV">
-
+                        <Grid Grid.Column="1" Name="gridCV" Margin="30 0 0 0">
+                            
                         </Grid>
                     </Grid>
                 </Border>
