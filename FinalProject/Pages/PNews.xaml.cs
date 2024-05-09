@@ -22,7 +22,7 @@ namespace FinalProject
     /// </summary>
     public partial class PNews : System.Windows.Controls.Page
     {
-        J
+        
         Employee employee;
 
 
