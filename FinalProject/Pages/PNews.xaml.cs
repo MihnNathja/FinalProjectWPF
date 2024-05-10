@@ -27,7 +27,7 @@ namespace FinalProject.Pages
         Company company;
 
         public Company Company { get => company; set => company = value; }
-        NewsDAO NewsDAO;
+        NewsDAO NewsDAO = new NewsDAO();
 
         public PNews(Company company)
         {

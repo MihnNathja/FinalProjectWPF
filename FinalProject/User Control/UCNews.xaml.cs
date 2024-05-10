@@ -1,4 +1,5 @@
 ﻿using FinalProject.Objects;
+using FinalProject.Windows.Company;
 using FinalProject.Windows.Employee;
 using MaterialDesignThemes.Wpf;
 using System;
@@ -42,12 +43,23 @@ namespace FinalProject.User_Control
         {
             InitializeComponent();
             News = news;
+            JobName.Text = news.JobName;
+            WorkTime.Text = news.WorkTime;
+            Location.Text = news.Location;
+            Experience.Text = news.Experience;
+            Salary.Text = news.Salary;
         }
 
 
         private void btnDeleteJob_Click(object sender, RoutedEventArgs e)
         {
 
+        }
+
+        private void btnDetail_Click(object sender, RoutedEventArgs e)
+        {
+            WNewsDetail wNewsDetail = new WNewsDetail(News);
+            wNewsDetail.Show();
         }
     }
 }
