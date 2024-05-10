@@ -40,6 +40,19 @@ namespace FinalProject.Database
         {
             List<UCNews> listNews = new List<UCNews>();
             string SQL = string.Format("SELECT * FROM News");
+            listNews = GetNewsFromData(SQL);
+            return listNews;
+        }
+        public List<UCNews> GetNews(Employee employee)
+        {
+            List<UCNews> listNews = new List<UCNews>();
+            string SQL = string.Format($"SELECT * FROM News WHERE IdEmployee = '{employee.ID}'");
+            listNews = GetNewsFromData(SQL);
+            return listNews;
+        }
+        public List<UCNews> GetNewsFromData(string SQL)
+        {
+            List<UCNews> listNews = new List<UCNews>();
             DataTable data = db.Load(SQL);
             News news = new News();
             foreach (DataRow row in data.Rows)

@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:FinalProject.Pages"
       mc:Ignorable="d" 
       d:DesignHeight="600" d:DesignWidth="800"
-      Title="PPostNews">
+      Title="PPostNews" Loaded="Page_Loaded">
 
     <Grid x:Name="WCreateJobPage" Background="Transparent">
         <Grid.RowDefinitions>

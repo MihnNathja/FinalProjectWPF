@@ -1,4 +1,6 @@
-﻿using FinalProject.Objects;
+﻿using FinalProject.Database;
+using FinalProject.Objects;
+using FinalProject.User_Control;
 using FinalProject.Windows.Employee;
 using System;
 using System.Collections.Generic;
@@ -41,6 +43,20 @@ namespace FinalProject.Pages
         {
             WNews wNews = new WNews(Employee);
             wNews.Show();
+            Page_Loaded(sender, e);
+        }
+
+        private void Page_Loaded(object sender, RoutedEventArgs e)
+        {
+            newsList.Children.Clear();
+            NewsDAO newsDAO = new NewsDAO();
+            List<UCNews> list = newsDAO.GetNews(Employee);
+            foreach (UCNews item in list) 
+            {
+                item.Type = Employee.Type;
+                item.Employee = Employee;
+                newsList.Children.Add(item);
+            }
         }
     }
 }

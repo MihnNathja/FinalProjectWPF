@@ -1,4 +1,5 @@
-﻿using FinalProject.Objects;
+﻿using FinalProject.Database;
+using FinalProject.Objects;
 using FinalProject.Windows.Employee;
 using MaterialDesignThemes.Wpf;
 using System;
@@ -44,8 +45,23 @@ namespace FinalProject.User_Control
             News = news;
         }
 
-
+        private void UserControl_Loaded(object sender, RoutedEventArgs e)
+        {
+            DataContext = News;
+            if (Type == "Company")
+            {
+                btnDeleteJob.Visibility = Visibility.Collapsed;
+            }
+        }
         private void btnDeleteJob_Click(object sender, RoutedEventArgs e)
+        {
+            NewsDAO newsDAO = new NewsDAO();
+            newsDAO.XoaNews(News);
+        }
+
+
+
+        private void btnDetail_Click(object sender, RoutedEventArgs e)
         {
 
         }
