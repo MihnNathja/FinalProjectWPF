@@ -16,8 +16,7 @@
              
              d:DesignHeight="300" d:DesignWidth="250">
     <Border BorderBrush="Black" BorderThickness="0.5" Margin="2">
-        <materialDesign:Flipper
-materialDesign:ElevationAssist.Elevation="Dp0">
+        <materialDesign:Flipper materialDesign:ElevationAssist.Elevation="Dp0">
             <materialDesign:Flipper.FrontContent>
                 <Grid
                     Width="250"
@@ -61,32 +60,27 @@ materialDesign:ElevationAssist.Elevation="Dp0">
                 </Grid>
             </materialDesign:Flipper.FrontContent>
             <materialDesign:Flipper.BackContent>
-                <Grid
-    Width="250"
-    Height="300">
+                <Grid Width="250" Height="300">
                     <Grid.RowDefinitions>
-                        <RowDefinition
-        Height="Auto" />
-                        <RowDefinition
-        Height="*" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="*" />
                     </Grid.RowDefinitions>
                     <materialDesign:ColorZone
-      Padding="6"
-      Mode="SecondaryMid">
-                        <StackPanel
-        Orientation="Horizontal">
+                        Padding="6"
+                        Mode="SecondaryMid">
+                        <StackPanel Orientation="Horizontal">
                             <Button
-          HorizontalAlignment="Left"
-          Command="{x:Static materialDesign:Flipper.FlipCommand}"
-          Style="{StaticResource MaterialDesignToolForegroundButton}">
+                                HorizontalAlignment="Left"
+                                Command="{x:Static materialDesign:Flipper.FlipCommand}"
+                                Style="{StaticResource MaterialDesignToolForegroundButton}">
                                 <materialDesign:PackIcon
-            HorizontalAlignment="Right"
-            Kind="ArrowLeft" />
+                                HorizontalAlignment="Right"
+                                Kind="ArrowLeft" />
                             </Button>
                             <TextBlock
-          Margin="8,0,0,0"
-          VerticalAlignment="Center"
-          Text="CV" />
+                                Margin="8,0,0,0"
+                                VerticalAlignment="Center"
+                                Text="CV" />
                         </StackPanel>
                     </materialDesign:ColorZone>
                     <Grid

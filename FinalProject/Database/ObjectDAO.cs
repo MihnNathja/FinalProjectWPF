@@ -39,7 +39,6 @@ namespace FinalProject.Database
         {
             List<SqlParameter> parameters = Utility.GetParameters(obj, prop);
             string SQL = Utility.GenerateUpdateSql(tableName, parameters, condition);
-            MessageBox.Show(SQL);
             db.ThucThi(SQL, parameters);
         }
         public string GetID()

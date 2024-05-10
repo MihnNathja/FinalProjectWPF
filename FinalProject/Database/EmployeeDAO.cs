@@ -93,9 +93,9 @@ namespace FinalProject.Database
             List<UCJobInfo> list = new List<UCJobInfo>();
             string SQL = string.Format($"SELECT * FROM EmployeeInterestJobs WHERE IdEmployee = '{IdEmployee}'");
             DataTable data = db.Load(SQL);
+            JobDAO jobDAO = new JobDAO();
             foreach (DataRow row in data.Rows) 
             {
-                JobDAO jobDAO = new JobDAO();
                 UCJobInfo info = new UCJobInfo(jobDAO.GetObject(row["IdJob"].ToString()));
                 list.Add(info);
             }

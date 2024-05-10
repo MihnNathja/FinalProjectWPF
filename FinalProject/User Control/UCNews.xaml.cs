@@ -1,5 +1,10 @@
+
 ﻿using FinalProject.Objects;
 using FinalProject.Windows.Company;
+
+﻿using FinalProject.Database;
+
+
 using FinalProject.Windows.Employee;
 using MaterialDesignThemes.Wpf;
 using System;
@@ -50,16 +55,56 @@ namespace FinalProject.User_Control
             Salary.Text = news.Salary;
         }
 
-
+        private void UserControl_Loaded(object sender, RoutedEventArgs e)
+        {
+            DataContext = News;
+            if (Type == "Company")
+            {
+                btnDeleteJob.Visibility = Visibility.Collapsed;
+                NewsDAO newsDAO = new NewsDAO();
+                if (newsDAO.checkExistCompanyInterestEmployee(Company.ID, news.IdEmployee, news.IdCV))
+                {
+                    favorite.Foreground = Brushes.Red;
+                }
+                else
+                {
+                    favorite.Foreground = Brushes.Gray;
+                }
+            }
+            else if (Type == "Employee")
+            {
+                btnInterest.Visibility = Visibility.Collapsed;
+            }
+        }
         private void btnDeleteJob_Click(object sender, RoutedEventArgs e)
         {
-
+            NewsDAO newsDAO = new NewsDAO();
+            newsDAO.XoaNews(News);
         }
+
+
+
+
 
         private void btnDetail_Click(object sender, RoutedEventArgs e)
         {
             WNewsDetail wNewsDetail = new WNewsDetail(News);
             wNewsDetail.Show();
+        }
+        private void btnInterest_Click(object sender, RoutedEventArgs e)
+        {
+            NewsDAO newsDAO = new NewsDAO();
+            
+            if (newsDAO.checkExistCompanyInterestEmployee(Company.ID, news.IdEmployee, news.IdCV))
+            {
+                newsDAO.XoaCompanyInterestEmployee(Company.ID, news.IdEmployee, news.IdCV);
+            }
+            else
+            {
+                newsDAO.ThemCompanyInterestEmployee(Company.ID, news.IdEmployee, news.IdCV);
+            }
+            this.UserControl_Loaded(sender, e);
+
         }
     }
 }
