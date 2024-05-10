@@ -170,7 +170,7 @@ namespace FinalProject.Database
         public string GetIdUCNews()
         {
             string SQL = string.Format("SELECT IdCV FROM News");
-            return db.GetValue(SQL).ToString();
+            return db.Load(SQL).Rows[0]["IdCV"].ToString();
         }
         //public UCCV GetEmployeeUCApplyNews()
         //{
