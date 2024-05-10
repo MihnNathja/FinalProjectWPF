@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "C:\\VUONG_LAP_QUE\\Nam 2\\HK II\\Window\\FinalProjectWPF\\FinalProject\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{BC4969F9-C76B-4990-B9C8-352C76BDAA80}|FinalProject.csproj|c:\\vuong_lap_que\\nam 2\\hk ii\\window\\finalprojectwpf\\finalproject\\user control\\ucnotification.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{BC4969F9-C76B-4990-B9C8-352C76BDAA80}|FinalProject.csproj|solutionrelative:user control\\ucnotification.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC4969F9-C76B-4990-B9C8-352C76BDAA80}|FinalProject.csproj|c:\\vuong_lap_que\\nam 2\\hk ii\\window\\finalprojectwpf\\finalproject\\user control\\ucnotification.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC4969F9-C76B-4990-B9C8-352C76BDAA80}|FinalProject.csproj|solutionrelative:user control\\ucnotification.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC4969F9-C76B-4990-B9C8-352C76BDAA80}|FinalProject.csproj|c:\\vuong_lap_que\\nam 2\\hk ii\\window\\finalprojectwpf\\finalproject\\windows\\employee\\wcompanyinfo.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{BC4969F9-C76B-4990-B9C8-352C76BDAA80}|FinalProject.csproj|solutionrelative:windows\\employee\\wcompanyinfo.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{BC4969F9-C76B-4990-B9C8-352C76BDAA80}|FinalProject.csproj|c:\\vuong_lap_que\\nam 2\\hk ii\\window\\finalprojectwpf\\finalproject\\windows\\company\\wnewsdetail.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{BC4969F9-C76B-4990-B9C8-352C76BDAA80}|FinalProject.csproj|solutionrelative:windows\\company\\wnewsdetail.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
@@ -18,11 +30,48 @@
       "DocumentGroups": [
         {
           "DockedWidth": 440,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UCNotification.xaml",
+              "DocumentMoniker": "C:\\VUONG_LAP_QUE\\Nam 2\\HK II\\Window\\FinalProjectWPF\\FinalProject\\User Control\\UCNotification.xaml",
+              "RelativeDocumentMoniker": "User Control\\UCNotification.xaml",
+              "ToolTip": "C:\\VUONG_LAP_QUE\\Nam 2\\HK II\\Window\\FinalProjectWPF\\FinalProject\\User Control\\UCNotification.xaml",
+              "RelativeToolTip": "User Control\\UCNotification.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-10T06:35:52.781Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "UCNotification.xaml.cs",
+              "DocumentMoniker": "C:\\VUONG_LAP_QUE\\Nam 2\\HK II\\Window\\FinalProjectWPF\\FinalProject\\User Control\\UCNotification.xaml.cs",
+              "RelativeDocumentMoniker": "User Control\\UCNotification.xaml.cs",
+              "ToolTip": "C:\\VUONG_LAP_QUE\\Nam 2\\HK II\\Window\\FinalProjectWPF\\FinalProject\\User Control\\UCNotification.xaml.cs",
+              "RelativeToolTip": "User Control\\UCNotification.xaml.cs",
+              "ViewState": "AQIAADAAAAAAAAAAAAAwwEMAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-10T06:35:05.069Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "WCompanyInfo.xaml",
+              "DocumentMoniker": "C:\\VUONG_LAP_QUE\\Nam 2\\HK II\\Window\\FinalProjectWPF\\FinalProject\\Windows\\Employee\\WCompanyInfo.xaml",
+              "RelativeDocumentMoniker": "Windows\\Employee\\WCompanyInfo.xaml",
+              "ToolTip": "C:\\VUONG_LAP_QUE\\Nam 2\\HK II\\Window\\FinalProjectWPF\\FinalProject\\Windows\\Employee\\WCompanyInfo.xaml",
+              "RelativeToolTip": "Windows\\Employee\\WCompanyInfo.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-10T06:28:43.485Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "WCV.xaml",
               "DocumentMoniker": "C:\\VUONG_LAP_QUE\\Nam 2\\HK II\\Window\\FinalProjectWPF\\FinalProject\\Windows\\Employee\\WCV.xaml",
               "RelativeDocumentMoniker": "Windows\\Employee\\WCV.xaml",
@@ -33,7 +82,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "WNewsDetail.xaml",
               "DocumentMoniker": "C:\\VUONG_LAP_QUE\\Nam 2\\HK II\\Window\\FinalProjectWPF\\FinalProject\\Windows\\Company\\WNewsDetail.xaml",
               "RelativeDocumentMoniker": "Windows\\Company\\WNewsDetail.xaml",

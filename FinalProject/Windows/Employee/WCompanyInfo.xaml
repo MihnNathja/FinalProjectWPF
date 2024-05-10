@@ -35,9 +35,11 @@
                         </Grid.ColumnDefinitions>
                         <StackPanel>
 
+
                             <TextBox
                                   x:Name="txtMST" Margin="10 5"
                                   Text="{Binding Mst}"
+                                  IsReadOnly="True"
                                   materialDesign:HintAssist.Hint="Mã số thuế"
                                   Style="{StaticResource floatingTextbox}"
                                   BorderBrush="White"/>
@@ -45,6 +47,7 @@
 
                             <TextBox x:Name="txtDiaChi" Margin="10 5"
                                  Text="{Binding CompanyLocation}"
+                                 IsReadOnly="True"
                                  materialDesign:HintAssist.Hint="Địa Chỉ"
                                  Style="{StaticResource floatingTextbox}"
                                  BorderBrush="White"/>
@@ -52,6 +55,7 @@
 
                             <TextBox x:Name="txtNguoiDaiDien" Margin="10 5"
                                  Text="{Binding Boss}"
+                                 IsReadOnly="True"
                                  materialDesign:HintAssist.Hint="Người đại diện"
                                  Style="{StaticResource floatingTextbox}"
                                  BorderBrush="White"/>
@@ -59,6 +63,7 @@
 
                             <TextBox x:Name="txtSDT" Margin="10 5"
                                  Text="{Binding PhoneNumber}"
+                                 IsReadOnly="True"
                                  materialDesign:HintAssist.Hint="Số điện thoại"
                                  Style="{StaticResource floatingTextbox}"
                                  BorderBrush="White"/>
@@ -66,6 +71,7 @@
 
                             <TextBox x:Name="txtEmail" Margin="10 5" 
                                  Text="{Binding Email}"
+                                 IsReadOnly="True"
                                  materialDesign:HintAssist.Hint="Email"
                                  Style="{StaticResource floatingTextbox}"
                                  BorderBrush="White"/>
@@ -77,12 +83,15 @@
                                 TextBlock.FontSize="15"
                                 VerticalAlignment="Top"
                                 AcceptsReturn="True"
+                                IsReadOnly="True"
                                 Style="{StaticResource MaterialDesignOutlinedTextBox}"
                                 TextWrapping="Wrap"
                                 VerticalScrollBarVisibility="Auto"
                                 materialDesign:HintAssist.IsFloating="False"
                                 BorderBrush="White"/>
 
+                    
+                    
                         </StackPanel>
 
                         <StackPanel Grid.Column="1">
@@ -92,6 +101,7 @@
                                  TextBlock.FontSize="15"
                                  VerticalAlignment="Top"
                                  BorderBrush="White"
+                                 IsReadOnly="True"
                                  AcceptsReturn="True"
                                  Style="{StaticResource MaterialDesignOutlinedTextBox}"
                                  TextWrapping="Wrap"
@@ -100,6 +110,7 @@
                         </StackPanel>
                     </Grid>
 
+                    
                 </Grid>
             </Border>
         </Grid>

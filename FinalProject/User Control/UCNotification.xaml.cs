@@ -49,10 +49,7 @@ namespace FinalProject
             cVDAO.Confirm(Job, Employee, 1);
         }
 
-        private void btnSee_Click(object sender, RoutedEventArgs e)
-        {
-            MessageBox.Show("Coi sau nè");
-        }
+        
 
         private void UserControl_Loaded(object sender, RoutedEventArgs e)
         {
@@ -65,7 +62,7 @@ namespace FinalProject
                 txtbConfirmAnnoucement.Visibility = Visibility.Visible;
                 txtbAnnoucement.Visibility = Visibility.Visible;
                 btnConfirm.Visibility = Visibility.Visible;
-                btnViewLater.Visibility = Visibility.Visible;
+                
             }
             else if (IsAccepted == "False")
             {
