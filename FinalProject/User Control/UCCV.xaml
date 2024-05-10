@@ -16,8 +16,7 @@
              MinHeight="300" MinWidth="250" 
              >
     <Border BorderBrush="Black" BorderThickness="0.5" Margin="2">
-        <materialDesign:Flipper
-  materialDesign:ElevationAssist.Elevation="Dp0">
+        <materialDesign:Flipper materialDesign:ElevationAssist.Elevation="Dp0">
             <materialDesign:Flipper.FrontContent>
                 <Grid
                   Width="250"
@@ -32,68 +31,58 @@
                     </Ellipse>
                     <Grid>
                         <Grid.RowDefinitions>
-                            <RowDefinition
-                    Height="160" />
-                            <RowDefinition
-                    Height="*" />
+                            <RowDefinition Height="160" />
+                            <RowDefinition Height="*" />
                         </Grid.RowDefinitions>
 
 
                         <StackPanel
-                        Grid.Row="1"
-                        HorizontalAlignment="Center"
-                        VerticalAlignment="Center"
+                            Grid.Row="1"
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Bottom"
                             Margin="10">
                             <TextBlock x:Name="EmployeeName"
-                          
-                           HorizontalAlignment="Center"
-                           Margin="10"
-                           Text="{Binding EmployeeName}" />
+                                HorizontalAlignment="Center"
+                                Margin="10"
+                                Text="{Binding EmployeeName}" />
                             <Button
-              TextBlock.Foreground="Black"
-              Command="{x:Static materialDesign:Flipper.FlipCommand}"
-              Content="CHI TIẾT"
-              Style="{StaticResource MaterialDesignFlatButton}" />
+                            TextBlock.Foreground="Black"
+                            Command="{x:Static materialDesign:Flipper.FlipCommand}"
+                            Content="CHI TIẾT"
+                            Style="{StaticResource MaterialDesignFlatButton}" />
                         </StackPanel>
                     </Grid>
                     
                 </Grid>
             </materialDesign:Flipper.FrontContent>
             <materialDesign:Flipper.BackContent>
-                <Grid
-      Width="200"
-      Height="256">
+                <Grid Width="250" Height="300">
                     <Grid.RowDefinitions>
-                        <RowDefinition
-          Height="Auto" />
-                        <RowDefinition
-          Height="*" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="*" />
                     </Grid.RowDefinitions>
-                    <materialDesign:ColorZone
-        Padding="6"
-        Mode="SecondaryMid">
-                        <StackPanel
-          Orientation="Horizontal">
+                    <materialDesign:ColorZone Padding="6" Mode="SecondaryMid">
+                        <StackPanel Orientation="Horizontal">
                             <Button
-            HorizontalAlignment="Left"
-            Command="{x:Static materialDesign:Flipper.FlipCommand}"
-            Style="{StaticResource MaterialDesignToolForegroundButton}">
+                                HorizontalAlignment="Left"
+                                Command="{x:Static materialDesign:Flipper.FlipCommand}"
+                                Style="{StaticResource MaterialDesignToolForegroundButton}">
                                 <materialDesign:PackIcon
-              HorizontalAlignment="Right"
-              Kind="ArrowLeft" />
+                                    HorizontalAlignment="Right"
+                                    Kind="ArrowLeft" />
                             </Button>
                             <TextBlock
-            Margin="8,0,0,0"
-            VerticalAlignment="Center"
-            Text="CV" />
+                                Margin="8,0,0,0"
+                                VerticalAlignment="Center"
+                                Text="CV" />
                         </StackPanel>
                     </materialDesign:ColorZone>
                     <Grid
-        Grid.Row="1"
-        Width="172"
-        Margin="0,6,0,0"
-        HorizontalAlignment="Center"
-        VerticalAlignment="Top">
+                        Grid.Row="1"
+                        Width="172"
+                        Margin="0,6,0,0"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Top">
                         <Grid.RowDefinitions>
                             <RowDefinition />
                             <RowDefinition />
