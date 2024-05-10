@@ -104,7 +104,7 @@ namespace FinalProject {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/FinalProject;component/pcompanycalendar.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/FinalProject;V1.0.0.0;component/pcompanycalendar.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\PCompanyCalendar.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
