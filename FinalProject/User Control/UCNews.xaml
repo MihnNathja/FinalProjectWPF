@@ -64,31 +64,45 @@ HorizontalAlignment="Stretch" Loaded="UserControl_Loaded">
                         <RowDefinition Height="*"/>
                         <RowDefinition Height="auto"/>
                     </Grid.RowDefinitions>
-                    <StackPanel Margin="0 5 0 -10">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="0.8*"/>
+                            <ColumnDefinition Width="0.2*"/>
+                        </Grid.ColumnDefinitions>
                         <TextBlock
-                        Margin="5" x:Name="JobName"
-                        Style="{StaticResource MaterialDesignSubtitle1TextBlock}"
-                        Text="{Binding JobName}" FontSize="35"  HorizontalAlignment="Center" TextWrapping="Wrap" />
-                        <Button                                     
+                            Margin="5" x:Name="JobName"
+                            Style="{StaticResource MaterialDesignSubtitle1TextBlock}"
+                            Text="{Binding JobName}" FontSize="35"  HorizontalAlignment="Center" TextWrapping="Wrap" />
+                        <Button        
+                            Grid.Column="1"
                            x:Name="btnDeleteJob"               
-                            HorizontalAlignment="Right" 
+                            HorizontalAlignment="Center" 
                             Height="25" 
                             Width="25"
                             Background="Transparent"
                             BorderThickness="0"
-                            Margin="0,-45,10,0" 
                             Padding="-10"
                             VerticalAlignment="Top" 
                             >
                             <Ellipse 
-                             Height="25" 
-                              Width="25" IsEnabled="False">
+                                 Height="25" 
+                                 Width="25" IsEnabled="False">
                                 <Ellipse.Fill>
                                     <ImageBrush ImageSource="pack://application:,,,/FinalProject;component/Image/btnDelete.png"/>
                                 </Ellipse.Fill>
                             </Ellipse>
                         </Button>
-                    </StackPanel>
+                        <Button
+                            Name="btnInterest"
+                            Click="btnInterest_Click"
+                            Width="30" Grid.Column="1"
+                            materialDesign:RippleAssist.IsCentered="True"
+                            Style="{StaticResource MaterialDesignToolButton}">
+                            <materialDesign:PackIcon Kind="Heart" Name="favorite"
+                                 Width="35" Height="35" Margin="-10 -3 0 0"/>
+                        </Button>
+                    </Grid>
+
 
 
                     <StackPanel Margin="5 10 0 0" Grid.Row="1">

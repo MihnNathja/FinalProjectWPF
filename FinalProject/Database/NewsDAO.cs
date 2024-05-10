@@ -8,6 +8,7 @@ using System.Linq;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
+using FinalProject.Pages;
 
 namespace FinalProject.Database
 {
@@ -66,6 +67,25 @@ namespace FinalProject.Database
                 listNews.Add(uCNews);
             }
             return listNews;
+        }
+        public void ThemCompanyInterestEmployee(string IdCompany, string IdEmployee, string IdCV)
+        {
+            string SQL = string.Format($"INSERT INTO CompanyInterestEmployees (IdCompany, IdEmployee, IdJob) VALUES ('{IdCompany}', '{IdEmployee}' and IdCV = ' {IdCV}')");
+            db.ThucThi(SQL);
+        }
+        public void XoaCompanyInterestEmployee(string IdCompany, string IdEmployee, string IdCV)
+        {
+            string SQL = string.Format($"DELETE FROM CompanyInterestEmployees WHERE IdCompany = '{IdCompany}' and IdEmployee = '{IdEmployee}' and IdCV = '{IdCV}'");
+            db.ThucThi(SQL);
+        }
+        public bool checkExistCompanyInterestEmployee(string IdCompany, string IdEmployee, string IdCV)
+        {
+            string SQL = string.Format($"SELECT COUNT(*) FROM CompanyInterestEmployees WHERE IdCompany = '{IdCompany}' and IdEmployee = '{IdEmployee}' and IdCV = '{IdCV}'");
+            if (db.GetValue(SQL) != "0")
+            {
+                return true;
+            }
+            return false;
         }
     }
 }

@@ -51,6 +51,19 @@ namespace FinalProject.User_Control
             if (Type == "Company")
             {
                 btnDeleteJob.Visibility = Visibility.Collapsed;
+                NewsDAO newsDAO = new NewsDAO();
+                if (newsDAO.checkExistCompanyInterestEmployee(Company.ID, news.IdEmployee, news.IdCV))
+                {
+                    favorite.Foreground = Brushes.Red;
+                }
+                else
+                {
+                    favorite.Foreground = Brushes.Gray;
+                }
+            }
+            else if (Type == "Employee")
+            {
+                btnInterest.Visibility = Visibility.Collapsed;
             }
         }
         private void btnDeleteJob_Click(object sender, RoutedEventArgs e)
@@ -64,6 +77,20 @@ namespace FinalProject.User_Control
         private void btnDetail_Click(object sender, RoutedEventArgs e)
         {
 
+        }
+
+        private void btnInterest_Click(object sender, RoutedEventArgs e)
+        {
+            NewsDAO newsDAO = new NewsDAO();
+            if (newsDAO.checkExistCompanyInterestEmployee(Company.ID, news.IdEmployee, news.IdCV))
+            {
+                newsDAO.XoaCompanyInterestEmployee(Company.ID, news.IdEmployee, news.IdCV);
+            }
+            else
+            {
+                newsDAO.ThemCompanyInterestEmployee(Company.ID, news.IdEmployee, news.IdCV);
+            }
+            this.UserControl_Loaded(sender, e);
         }
     }
 }
