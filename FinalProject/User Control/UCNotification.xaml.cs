@@ -49,11 +49,7 @@ namespace FinalProject
             cVDAO.Confirm(Job, Employee, 1);
         }
 
-        private void btnReject_Click(object sender, RoutedEventArgs e)
-        {
-            CVDAO cVDAO = new CVDAO();
-            cVDAO.Confirm(Job, Employee, 0);
-        }
+        
 
         private void UserControl_Loaded(object sender, RoutedEventArgs e)
         {
@@ -66,7 +62,7 @@ namespace FinalProject
                 txtbConfirmAnnoucement.Visibility = Visibility.Visible;
                 txtbAnnoucement.Visibility = Visibility.Visible;
                 btnConfirm.Visibility = Visibility.Visible;
-                btnReject.Visibility = Visibility.Visible;
+                
             }
             else if (IsAccepted == "False")
             {

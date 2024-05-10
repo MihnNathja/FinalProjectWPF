@@ -15,19 +15,22 @@
         WindowStartupLocation="CenterScreen"
         FontFamily="{DynamicResource MaterialDesignFont}"
         Height="700" Width="900">
-    <Grid>
-        
-        <Grid.RowDefinitions>
-            <RowDefinition/>
-            <RowDefinition Height="auto"/>
-        </Grid.RowDefinitions>
+    <Border>
         <Grid>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-            </Grid.ColumnDefinitions>
+            <Image Stretch="UniformToFill"  Source="/Image/background2.png"/>
+            <Border Visibility="Visible" Background="#99000000" CornerRadius="30">
+                <Grid TextElement.Foreground="White">
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition Height="auto"/>
+                    </Grid.RowDefinitions>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
 
-            <StackPanel Margin="5 10 10 10">
+                        <StackPanel Margin="5 10 10 10">
 
                 <TextBox x:Name="txtbJobName" IsReadOnly="True" Margin="10 5" Text="{Binding JobName}"
                      materialDesign:HintAssist.Hint="Tên công việc"/>
@@ -68,8 +71,8 @@
                         Margin="10 5" Height="300">
                     <Grid Name="gridCV">
 
-                    </Grid>
-                </Border>
+                                </Grid>
+                            </Border>
 
                 <TextBlock Text="Quyền lợi mong muốn" FontWeight="Bold"/>
                 <TextBox  Margin="10 5" Height="180"
@@ -102,6 +105,9 @@
                         materialDesign:HintAssist.IsFloating="False"/>
             </StackPanel>
 
+                    </Grid>
+                </Grid>
+            </Border>
         </Grid>
-    </Grid>
+    </Border>
 </Window>

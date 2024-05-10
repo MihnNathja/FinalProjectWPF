@@ -9,7 +9,6 @@
 
   <ItemGroup>
     <None Remove="Image\background.jpg" />
-    <None Remove="Image\background1.jpg" />
     <None Remove="Image\background2.png" />
     <None Remove="Image\backgroundCV.jpg" />
     <None Remove="Image\backgroundlogin.jpg" />
@@ -29,7 +28,6 @@
 
   <ItemGroup>
     <Resource Include="Image\background.jpg" />
-    <Resource Include="Image\background1.jpg" />
     <Resource Include="Image\background2.png" />
     <Resource Include="Image\backgroundCV.jpg" />
     <Resource Include="Image\backgroundlogin.jpg" />
