@@ -8,6 +8,9 @@ using System.Linq;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
+using FinalProject.Pages;
+using System.Windows.Documents;
+using System.Windows;
 
 namespace FinalProject.Database
 {
@@ -36,10 +39,50 @@ namespace FinalProject.Database
             string condition = $"IdEmployee = '{news.IdEmployee}' and IdCV = '{news.IdCV}'";
             Sua(news, prop, condition);
         }
+        public News GetObject(string IdEmployee, string IdCV)
+        {
+            string SQL = string.Format($"SELECT * FROM News WHERE IdEmployee = '{IdEmployee}' and IdCV = '{IdCV}'");
+            DataTable data = db.Load(SQL);
+            News news= new News();
+            foreach (DataRow row in data.Rows)
+            {
+                PropertyInfo[] properties = typeof(News).GetProperties();
+                foreach (PropertyInfo property in properties)
+                {
+                    property.SetValue(news, row[property.Name].ToString(), null);
+                }
+            }
+            return news;
+
+        }
         public List<UCNews> GetNews()
         {
-            List<UCNews> listNews = new List<UCNews>();
             string SQL = string.Format("SELECT * FROM News");
+            List<UCNews> listNews = GetNewsFromData(SQL);
+            return listNews;
+        }
+        public List<UCNews> GetNews(Employee employee)
+        {
+            string SQL = string.Format($"SELECT * FROM News WHERE IdEmployee = '{employee.ID}'");
+            List<UCNews> listNews = GetNewsFromData(SQL);
+            return listNews;
+        }
+        public List<UCNews> GetCompanyInterestNews(Company company)
+        {
+            List<UCNews> listNews = new List<UCNews>();
+            string SQL = string.Format($"SELECT * FROM CompanyInterestEmployees WHERE IdCompany = '{company.ID}'");
+            DataTable data = db.Load(SQL);
+
+            foreach (DataRow row in data.Rows)
+            {
+                UCNews info = new UCNews(GetObject(row["IdEmployee"].ToString(), row["IdCV"].ToString()));
+                listNews.Add(info);
+            }
+            return listNews;
+        }
+        public List<UCNews> GetNewsFromData(string SQL)
+        {
+            List<UCNews> listNews = new List<UCNews>();
             DataTable data = db.Load(SQL);
             News news = new News();
             foreach (DataRow row in data.Rows)
@@ -53,6 +96,26 @@ namespace FinalProject.Database
                 listNews.Add(uCNews);
             }
             return listNews;
+        }
+
+        public void ThemCompanyInterestEmployee(string IdCompany, string IdEmployee, string IdCV)
+        {
+            string SQL = string.Format($"INSERT INTO CompanyInterestEmployees (IdCompany, IdEmployee, IdCV) VALUES ('{IdCompany}', '{IdEmployee}', '{IdCV}')");
+            db.ThucThi(SQL);
+        }
+        public void XoaCompanyInterestEmployee(string IdCompany, string IdEmployee, string IdCV)
+        {
+            string SQL = string.Format($"DELETE FROM CompanyInterestEmployees WHERE IdCompany = '{IdCompany}' and IdEmployee = '{IdEmployee}' and IdCV = '{IdCV}'");
+            db.ThucThi(SQL);
+        }
+        public bool checkExistCompanyInterestEmployee(string IdCompany, string IdEmployee, string IdCV)
+        {
+            string SQL = string.Format($"SELECT COUNT(*) FROM CompanyInterestEmployees WHERE IdCompany = '{IdCompany}' and IdEmployee = '{IdEmployee}' and IdCV = '{IdCV}'");
+            if (db.GetValue(SQL) != "0")
+            {
+                return true;
+            }
+            return false;
         }
     }
 }

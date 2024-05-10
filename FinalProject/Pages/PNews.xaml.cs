@@ -25,9 +25,8 @@ namespace FinalProject.Pages
     public partial class PNews : System.Windows.Controls.Page
     {
         Company company;
-
         public Company Company { get => company; set => company = value; }
-        NewsDAO NewsDAO;
+        NewsDAO newsDAO = new NewsDAO();
 
         public PNews(Company company)
         {
@@ -47,9 +46,10 @@ namespace FinalProject.Pages
         private void Page_Loaded(object sender, RoutedEventArgs e)
         {
             pnlNews.Children.Clear();
-            List<UCNews> listNews =  NewsDAO.GetNews();
+            List<UCNews> listNews =  newsDAO.GetNews();
             foreach (UCNews item in listNews)
             {
+                item.Type = Company.Type;
                 item.Company = Company;
                 pnlNews.Children.Add(item);
             }

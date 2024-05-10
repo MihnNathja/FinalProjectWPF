@@ -15,7 +15,7 @@
              FontFamily="{DynamicResource MaterialDesignFont}"
              d:DesignHeight="250" d:DesignWidth="700"
              Margin="10"
-HorizontalAlignment="Stretch">
+HorizontalAlignment="Stretch" Loaded="UserControl_Loaded">
     <materialDesign:Card  UniformCornerRadius="20"
                       Width="650" Height="250">
         <Border Background="GhostWhite" BorderBrush="Silver" BorderThickness="1" CornerRadius="20">
@@ -42,6 +42,7 @@ HorizontalAlignment="Stretch">
                         <Button Width="150" Content="Chi tiết" FontWeight="Black"
                             Foreground="White"
                             x:Name="btnDetail"
+                            Click="btnDetail_Click"
                             />
                     </StackPanel>
                     <Separator
@@ -63,54 +64,70 @@ HorizontalAlignment="Stretch">
                         <RowDefinition Height="*"/>
                         <RowDefinition Height="auto"/>
                     </Grid.RowDefinitions>
-                    <StackPanel Margin="0 5 0 -10">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="0.8*"/>
+                            <ColumnDefinition Width="0.2*"/>
+                        </Grid.ColumnDefinitions>
                         <TextBlock
-                        Margin="5" x:Name="JobName"
-                        Style="{StaticResource MaterialDesignSubtitle1TextBlock}"
-                        Text="Job Name" FontSize="35"  HorizontalAlignment="Center" TextWrapping="Wrap" />
-                        <Button                                     
+                            Margin="5" x:Name="JobName"
+                            Style="{StaticResource MaterialDesignSubtitle1TextBlock}"
+                            Text="{Binding JobName}" FontSize="35"  HorizontalAlignment="Center" TextWrapping="Wrap" />
+                        <Button        
+                            Grid.Column="1"
                            x:Name="btnDeleteJob"               
-                            HorizontalAlignment="Right" 
+                            HorizontalAlignment="Center" 
                             Height="25" 
                             Width="25"
-                            Margin="0,-45,10,0" 
+                            Background="Transparent"
+                            BorderThickness="0"
                             Padding="-10"
                             VerticalAlignment="Top" 
                             >
                             <Ellipse 
-                             Height="25" 
-                              Width="25" IsEnabled="False">
+                                 Height="25" 
+                                 Width="25" IsEnabled="False">
                                 <Ellipse.Fill>
                                     <ImageBrush ImageSource="pack://application:,,,/FinalProject;component/Image/btnDelete.png"/>
                                 </Ellipse.Fill>
                             </Ellipse>
                         </Button>
-                    </StackPanel>
+                        <Button
+                            Name="btnInterest"
+                            Click="btnInterest_Click"
+                            Width="30" Grid.Column="1"
+                            materialDesign:RippleAssist.IsCentered="True"
+                            Style="{StaticResource MaterialDesignToolButton}">
+                            <materialDesign:PackIcon Kind="Heart" Name="favorite"
+                                 Width="35" Height="35" Margin="-10 -3 0 0"/>
+                        </Button>
+                    </Grid>
+
 
 
                     <StackPanel Margin="5 10 0 0" Grid.Row="1">
                         <StackPanel Margin="0 10" Orientation="Horizontal" Grid.Row="3" TextElement.FontSize="15" >
                             <materialDesign:PackIcon Kind="Book" />
                             <TextBlock Text="Kinh nghiệm: " VerticalAlignment="Top"/>
-                            <TextBlock x:Name="CompanyName" VerticalAlignment="Top" Text="" MaxWidth="320" TextWrapping="Wrap"/>
+                            <TextBlock x:Name="Experience" VerticalAlignment="Top" Text="{Binding Experience}" MaxWidth="320" TextWrapping="Wrap"/>
                         </StackPanel>
 
                         <StackPanel Margin="0 10" Orientation="Horizontal" Grid.Row="3" TextElement.FontSize="15" >
                             <materialDesign:PackIcon Kind="CalendarMonth" />
                             <TextBlock Text="Thời gian làm việc: " VerticalAlignment="Top"/>
-                            <TextBlock x:Name="WorkTime" VerticalAlignment="Top" Text="" MaxWidth="320" TextWrapping="Wrap"/>
+                            <TextBlock x:Name="WorkTime" VerticalAlignment="Top" Text="{Binding WorkTime}" MaxWidth="320" TextWrapping="Wrap"/>
                         </StackPanel>
 
                         <StackPanel Margin="0 10" Orientation="Horizontal" TextElement.FontSize="15" >
                             <materialDesign:PackIcon Kind="CurrencyUsd" VerticalAlignment="Top" />
                             <TextBlock Text="Mức lương: " VerticalAlignment="Top" />
-                            <TextBlock x:Name="Salary" VerticalAlignment="Top" Text="" MaxWidth="320" TextWrapping="Wrap"/>
+                            <TextBlock x:Name="Salary" VerticalAlignment="Top" Text="{Binding Salary}" MaxWidth="320" TextWrapping="Wrap"/>
                         </StackPanel>
 
                         <StackPanel Margin="0 10" Orientation="Horizontal" Grid.Row="4" TextElement.FontSize="15" >
                             <materialDesign:PackIcon Kind="MapMarker" VerticalAlignment="Top" />
                             <TextBlock Grid.Column="1" Text="Địa điểm: " VerticalAlignment="Top" />
-                            <TextBlock x:Name="JobLocation" VerticalAlignment="Top" Text="" MaxWidth="320" TextWrapping="Wrap"/>
+                            <TextBlock x:Name="Location" VerticalAlignment="Top" Text="{Binding Location}" MaxWidth="320" TextWrapping="Wrap"/>
                         </StackPanel>
                     </StackPanel>
                 </Grid>

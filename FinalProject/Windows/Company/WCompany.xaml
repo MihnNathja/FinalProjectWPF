@@ -139,9 +139,11 @@
                                 </StackPanel>
                             </Button>
                             <Button Style="{StaticResource menuButton}"
-                           MouseEnter="btnQuanTam_MouseEnter"
-                           MouseLeave="btnQuanTam_MouseLeave"
-                           >
+                                Name="btnQuanTam"
+                                Click="btnQuanTam_Click"
+                                MouseEnter="btnQuanTam_MouseEnter"
+                                MouseLeave="btnQuanTam_MouseLeave"
+                                >
                                 <StackPanel Orientation="Horizontal">
                                     <Icon:PackIconMaterial Kind="Heart" Style="{StaticResource menuButtonIcon}"/>
                                     <TextBlock Text="Ứng viên tiềm năng"/>
