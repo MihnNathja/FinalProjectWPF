@@ -41,9 +41,7 @@ HorizontalAlignment="Stretch" Loaded="UserControl_Loaded">
                         </Ellipse>
                         <Button Width="150" Content="Chi tiết" FontWeight="Black"
                             Foreground="White"
-                            x:Name="btnDetail"
-                            Click="btnDetail_Click"
-                            />
+                            x:Name="btnDetail" Click="btnDetail_Click"/>
                     </StackPanel>
                     <Separator
 
@@ -109,7 +107,11 @@ HorizontalAlignment="Stretch" Loaded="UserControl_Loaded">
                         <StackPanel Margin="0 10" Orientation="Horizontal" Grid.Row="3" TextElement.FontSize="15" >
                             <materialDesign:PackIcon Kind="Book" />
                             <TextBlock Text="Kinh nghiệm: " VerticalAlignment="Top"/>
-                            <TextBlock x:Name="Experience" VerticalAlignment="Top" Text="{Binding Experience}" MaxWidth="320" TextWrapping="Wrap"/>
+
+                            <TextBlock x:Name="Experience" VerticalAlignment="Top" Text="" MaxWidth="320" TextWrapping="Wrap"/>
+
+                            
+
                         </StackPanel>
 
                         <StackPanel Margin="0 10" Orientation="Horizontal" Grid.Row="3" TextElement.FontSize="15" >
@@ -127,7 +129,11 @@ HorizontalAlignment="Stretch" Loaded="UserControl_Loaded">
                         <StackPanel Margin="0 10" Orientation="Horizontal" Grid.Row="4" TextElement.FontSize="15" >
                             <materialDesign:PackIcon Kind="MapMarker" VerticalAlignment="Top" />
                             <TextBlock Grid.Column="1" Text="Địa điểm: " VerticalAlignment="Top" />
-                            <TextBlock x:Name="Location" VerticalAlignment="Top" Text="{Binding Location}" MaxWidth="320" TextWrapping="Wrap"/>
+
+                            <TextBlock x:Name="Location" VerticalAlignment="Top" Text="" MaxWidth="320" TextWrapping="Wrap"/>
+
+                            
+
                         </StackPanel>
                     </StackPanel>
                 </Grid>

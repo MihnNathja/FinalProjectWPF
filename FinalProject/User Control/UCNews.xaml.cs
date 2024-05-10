@@ -1,5 +1,10 @@
+
+﻿using FinalProject.Objects;
+using FinalProject.Windows.Company;
+
 ﻿using FinalProject.Database;
-using FinalProject.Objects;
+
+
 using FinalProject.Windows.Employee;
 using MaterialDesignThemes.Wpf;
 using System;
@@ -43,6 +48,11 @@ namespace FinalProject.User_Control
         {
             InitializeComponent();
             News = news;
+            JobName.Text = news.JobName;
+            WorkTime.Text = news.WorkTime;
+            Location.Text = news.Location;
+            Experience.Text = news.Experience;
+            Salary.Text = news.Salary;
         }
 
         private void UserControl_Loaded(object sender, RoutedEventArgs e)
@@ -74,11 +84,13 @@ namespace FinalProject.User_Control
 
 
 
+
+
         private void btnDetail_Click(object sender, RoutedEventArgs e)
         {
-
+            WNewsDetail wNewsDetail = new WNewsDetail(News);
+            wNewsDetail.Show();
         }
-
         private void btnInterest_Click(object sender, RoutedEventArgs e)
         {
             NewsDAO newsDAO = new NewsDAO();
@@ -92,6 +104,7 @@ namespace FinalProject.User_Control
                 newsDAO.ThemCompanyInterestEmployee(Company.ID, news.IdEmployee, news.IdCV);
             }
             this.UserControl_Loaded(sender, e);
+
         }
     }
 }

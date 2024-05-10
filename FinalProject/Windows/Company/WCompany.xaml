@@ -110,7 +110,7 @@
 
                         <Separator Margin="25" DockPanel.Dock="Top" Height="1" Background="White"/>
 
-                        <UniformGrid DockPanel.Dock="Top" Height="450" Columns="1" Margin="0 -50 0 0">
+                        <UniformGrid DockPanel.Dock="Top" Height="450" Columns="1" >
                             <Button Style="{StaticResource menuButton}"
                            MouseEnter="btnCongty_MouseEnter"
                            MouseLeave="btnCongTy_MouseLeave"
