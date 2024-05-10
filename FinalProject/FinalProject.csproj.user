@@ -22,19 +22,16 @@
     <Compile Update="Pages\PPostNews.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="PCompanyCalendar.xaml.cs">
+    <Compile Update="Pages\PCompanyCalendar.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="UCDay.xaml.cs">
+    <Compile Update="User Control\UCDay.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="User Control\UCCVApplyNews.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="User Control\UCNews.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Update="WCalendar.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Windows\Company\WCompany.xaml.cs">
@@ -144,19 +141,16 @@
     <Page Update="Pages\PPostNews.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="PCompanyCalendar.xaml">
+    <Page Update="Pages\PCompanyCalendar.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="UCDay.xaml">
+    <Page Update="User Control\UCDay.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="User Control\UCCVApplyNews.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="User Control\UCNews.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="WCalendar.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Windows\Company\WCompany.xaml">
