@@ -40,24 +40,40 @@ namespace FinalProject.Windows.Employee
 
         private void btnPost_Click(object sender, RoutedEventArgs e)
         {
-            News news = new News(Employee.ID, IdCV, txtbJobName.Text, txtbExperience.Text, txtbLocation.Text, txtbSalary.Text, txtbDescription.Text, txtbBenefit.Text, txtbWorkTime.Text);
-            newsDAO.ThemNews(news);
+            if (IdCV != null)
+            {
+                News news = new News(Employee.ID, IdCV, txtbJobName.Text, txtbExperience.Text, txtbLocation.Text, txtbSalary.Text, txtbDescription.Text, txtbBenefit.Text, txtbWorkTime.Text);
+                newsDAO.ThemNews(news);
+            }
+            else
+            {
+                MessageBox.Show("Bạn chưa chọn CV!");
+            }    
+
         }
 
         private void btnSave_Click(object sender, RoutedEventArgs e)
         {
-            News news = new News(Employee.ID, IdCV, txtbJobName.Text, txtbExperience.Text, txtbLocation.Text, txtbSalary.Text, txtbDescription.Text, txtbBenefit.Text, txtbWorkTime.Text);
-            newsDAO.SuaNews(news);
+            if (IdCV != null)
+            {
+                News news = new News(Employee.ID, IdCV, txtbJobName.Text, txtbExperience.Text, txtbLocation.Text, txtbSalary.Text, txtbDescription.Text, txtbBenefit.Text, txtbWorkTime.Text);
+                newsDAO.SuaNews(news);
+            }
+            else
+            {
+                MessageBox.Show("Bạn chưa chọn CV!");
+            }
         }
 
         private void btnSelectCV_Click(object sender, RoutedEventArgs e)
         {
             gridCV.Children.Clear();
             WSelectCVNews wSelectCVNews = new WSelectCVNews(Employee);
-
             wSelectCVNews.ShowDialog();
             IdCV = cVDAO.GetIdUCNews();
             UCCV uCCV = new UCCV(IdCV);
+            uCCV.btnAccept.Visibility = Visibility.Collapsed;
+            uCCV.btnReject.Visibility = Visibility.Collapsed;
             gridCV.Children.Add(uCCV);
         }
     }

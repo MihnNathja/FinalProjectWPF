@@ -38,7 +38,6 @@ namespace FinalProject.Windows.Employee
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             pnlCV.Children.Clear();
-            
             List<UCCVApplyNews> data = cVDAO.GetEmployeeNewsCV(Employee);
             foreach (UCCVApplyNews cv in data)
             {

@@ -21,7 +21,7 @@ namespace FinalProject.Database
         }
         public void ThemNews(News news)
         {
-            string[] prop = { "IdEmployee", "JobName", "CompanyName", "Salary", "Experience", "JobLocation", "Description", "Require", "Benefit", "WorkTime" };
+            string[] prop = { "IdEmployee", "IdCV", "JobName", "Salary", "Experience", "Location", "Description", "Require", "Benefit", "WorkTime" };
             Them(news, prop);
         }
         public void XoaNews(News news)

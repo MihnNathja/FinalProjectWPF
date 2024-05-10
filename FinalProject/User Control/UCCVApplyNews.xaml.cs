@@ -26,8 +26,8 @@ namespace FinalProject.User_Control
         CV cV;
         Job job;
         Employee employee;
-        string id;
-        public string ID { get => id; set => id = value; }
+        string idCV;
+        public string IdCV { get => idCV; set => idCV = value; }
         public CV CV { get => cV; set => cV = value; }
         public Job Job { get => job; set => job = value; }
         public Employee Employee { get => employee; set => employee = value; }
@@ -35,12 +35,11 @@ namespace FinalProject.User_Control
         {
             InitializeComponent();
         }
-        public UCCVApplyNews(string id)
+        public UCCVApplyNews(string idCV)
         {
             InitializeComponent();
-            InitializeComponent();
-            ID = id;
-            CV = cVDAO.GetObject(ID);
+            IdCV = idCV;
+            CV = cVDAO.GetObject(IdCV);
             EmployeeDAO EmployeeDAO = new EmployeeDAO();
             Employee = EmployeeDAO.GetEmployee(CV.ID);
             DataContext = Employee;
