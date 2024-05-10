@@ -82,6 +82,7 @@ namespace FinalProject.User_Control
         private void btnInterest_Click(object sender, RoutedEventArgs e)
         {
             NewsDAO newsDAO = new NewsDAO();
+            
             if (newsDAO.checkExistCompanyInterestEmployee(Company.ID, news.IdEmployee, news.IdCV))
             {
                 newsDAO.XoaCompanyInterestEmployee(Company.ID, news.IdEmployee, news.IdCV);

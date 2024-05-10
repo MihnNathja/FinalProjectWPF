@@ -25,7 +25,6 @@ namespace FinalProject.Pages
     public partial class PNews : System.Windows.Controls.Page
     {
         Company company;
-
         public Company Company { get => company; set => company = value; }
         NewsDAO newsDAO = new NewsDAO();
 

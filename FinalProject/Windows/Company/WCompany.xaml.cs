@@ -172,5 +172,11 @@ namespace FinalProject
             mainFarm.Navigate(pCompanyCalendar);
 
         }
+
+        private void btnQuanTam_Click(object sender, RoutedEventArgs e)
+        {
+            PCompanyInterestEmployee pCompanyInterest = new PCompanyInterestEmployee(company);
+            mainFarm.Navigate(pCompanyInterest);
+        }
     }
 }
