@@ -38,9 +38,5 @@ namespace FinalProject.Windows.Company
 
         public News News { get => news; set => news = value; }
 
-        private void btnContact_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
     }
 }

@@ -32,38 +32,44 @@
                 <StackPanel>
 
                     <TextBox
-                   x:Name="txtMST" Margin="10 5"
-                    Text="{Binding Mst}"
-                  materialDesign:HintAssist.Hint="Mã số thuế"
-                  Style="{StaticResource floatingTextbox}"/>
+                        x:Name="txtMST" Margin="10 5"
+                        Text="{Binding Mst}"
+                        IsReadOnly="True"
+                        materialDesign:HintAssist.Hint="Mã số thuế"
+                        Style="{StaticResource floatingTextbox}"/>
 
 
                     <TextBox x:Name="txtDiaChi" Margin="10 5"
                          Text="{Binding CompanyLocation}"
+                         IsReadOnly="True"
                          materialDesign:HintAssist.Hint="Địa Chỉ"
                             Style="{StaticResource floatingTextbox}"/>
 
 
                     <TextBox x:Name="txtNguoiDaiDien" Margin="10 5"
                          Text="{Binding Boss}"
+                         IsReadOnly="True"
                          materialDesign:HintAssist.Hint="Người đại diện"
                             Style="{StaticResource floatingTextbox}"/>
 
 
                     <TextBox x:Name="txtSDT" Margin="10 5"
                          Text="{Binding PhoneNumber}"
+                         IsReadOnly="True"
                          materialDesign:HintAssist.Hint="Số điện thoại"
                            Style="{StaticResource floatingTextbox}"/>
 
 
                     <TextBox x:Name="txtEmail" Margin="10 5" 
                          Text="{Binding Email}"
+                         IsReadOnly="True"
                          materialDesign:HintAssist.Hint="Email"
                             Style="{StaticResource floatingTextbox}"/>
 
 
                     <TextBox x:Name="txtLinhVuc" Margin="10 5" Height="150"
                          Text="{Binding Field}"
+                         IsReadOnly="True"
                          materialDesign:HintAssist.Hint="Lĩnh vực hoạt động"
                          TextBlock.FontSize="15"
                          VerticalAlignment="Top"
@@ -77,6 +83,7 @@
                 <StackPanel Grid.Column="1">
                     <TextBox x:Name="txtMoTa" Margin="10 5" Height="450"
                          Text="{Binding Description}"
+                         IsReadOnly="True"
                          materialDesign:HintAssist.Hint="Mô tả công ty"
                             TextBlock.FontSize="15"
                             VerticalAlignment="Top"

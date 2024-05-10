@@ -16,6 +16,7 @@
         FontFamily="{DynamicResource MaterialDesignFont}"
         Height="700" Width="900">
     <Grid>
+        
         <Grid.RowDefinitions>
             <RowDefinition/>
             <RowDefinition Height="auto"/>
@@ -28,28 +29,30 @@
 
             <StackPanel Margin="5 10 10 10">
 
-                <TextBox x:Name="txtbJobName" Margin="10 5" Text="{Binding JobName}"
+                <TextBox x:Name="txtbJobName" IsReadOnly="True" Margin="10 5" Text="{Binding JobName}"
                      materialDesign:HintAssist.Hint="Tên công việc"/>
 
 
 
 
-                <TextBox x:Name="txtbExperience" Margin="10 5" Text="{Binding Experience}"
+                <TextBox x:Name="txtbExperience" IsReadOnly="True" Margin="10 5" Text="{Binding Experience}"
                      Height="50" materialDesign:HintAssist.Hint="Kinh nghiệm"/>
 
 
                 <TextBox x:Name="txtbLocation" Margin="10 5" Text="{Binding Location}"
-                      materialDesign:HintAssist.Hint="Địa điểm"
-                     TextWrapping="Wrap"/>
+                         IsReadOnly="True"
+                         materialDesign:HintAssist.Hint="Địa điểm"
+                         TextWrapping="Wrap"/>
 
 
-                <TextBox x:Name="txtbSalary" Margin="10 5" Text="{Binding Salary}"
+                <TextBox x:Name="txtbSalary" IsReadOnly="True" Margin="10 5" Text="{Binding Salary}"
                      Height="50" materialDesign:HintAssist.Hint="Mức lương"/>
 
                 <TextBlock Text="Bạn muốn tìm công việc như thế nào?" FontWeight="Bold"/>
                 <TextBox  Margin="10 5" Height="320"
-                      x:Name="txtbDescription"
-                      Text="{Binding Description}"
+                        x:Name="txtbDescription"
+                        IsReadOnly="True"
+                        Text="{Binding Description}"
                         TextBlock.FontSize="15"
                         VerticalAlignment="Top"
                         materialDesign:HintAssist.Hint="Mong muốn về công việc"
@@ -71,6 +74,7 @@
                 <TextBlock Text="Quyền lợi mong muốn" FontWeight="Bold"/>
                 <TextBox  Margin="10 5" Height="180"
                       x:Name="txtbBenefit"
+                      IsReadOnly="True"
                       Text="{Binding Benefit}"
                       TextBlock.FontSize="15"
                         VerticalAlignment="Top"
@@ -89,16 +93,13 @@
                       x:Name="txtbWorkTime"
                       Text="{Binding WorkTime}"
                         VerticalAlignment="Top"
-                      
+                        IsReadOnly="True"
                         materialDesign:HintAssist.Hint="Thời gian làm việc"
                         AcceptsReturn="True"
                         Style="{StaticResource MaterialDesignOutlinedTextBox}"
                         TextWrapping="Wrap"
                         VerticalScrollBarVisibility="Auto"
                         materialDesign:HintAssist.IsFloating="False"/>
-
-
-                <Button x:Name="btnContact" Content="Liên hệ" Width="100" Margin="10" Click="btnContact_Click"></Button>
             </StackPanel>
 
         </Grid>
