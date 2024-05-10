@@ -62,7 +62,7 @@
             <StackPanel Grid.Column="1" Margin="5 10 10 10">
                 <TextBlock Text="CV" FontWeight="Bold"/>
                 <Border BorderThickness="0.5" BorderBrush="Black" CornerRadius="10"
-                        Margin="10 5" Height="250">
+                        Margin="10 5" Height="300">
                     <Grid Name="gridCV">
 
                     </Grid>

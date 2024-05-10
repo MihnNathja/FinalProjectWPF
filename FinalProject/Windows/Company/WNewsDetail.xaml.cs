@@ -30,8 +30,10 @@ namespace FinalProject.Windows.Company
             InitializeComponent();
             News = news;
             DataContext = News;
-/*            UCCV uCCV = new UCCV(News.IdCV);
-            gridCV.Children.Add(uCCV);*/
+            UCCV uCCV = new UCCV(News.IdCV);
+            uCCV.btnAccept.Visibility = Visibility.Collapsed;
+            uCCV.btnReject.Visibility = Visibility.Collapsed;
+            gridCV.Children.Add(uCCV);
         }
 
         public News News { get => news; set => news = value; }
