@@ -15,92 +15,104 @@
         WindowStartupLocation="CenterScreen"
         FontFamily="{DynamicResource MaterialDesignFont}"
         Height="700" Width="900">
-    <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition/>
-            <RowDefinition Height="auto"/>
-        </Grid.RowDefinitions>
+    <Border>
         <Grid>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-            </Grid.ColumnDefinitions>
+            <Image Stretch="UniformToFill"  Source="/Image/background2.png"/>
+            <Border Visibility="Visible" Background="#99000000" CornerRadius="30">
+                <Grid TextElement.Foreground="White">
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition Height="auto"/>
+                    </Grid.RowDefinitions>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
 
-            <StackPanel Margin="5 10 10 10">
+                        <StackPanel Margin="5 10 10 10">
 
-                <TextBox x:Name="txtbJobName" Margin="10 5" Text="{Binding JobName}"
-                     materialDesign:HintAssist.Hint="Tên công việc"/>
-
-
-
-
-                <TextBox x:Name="txtbExperience" Margin="10 5" Text="{Binding Experience}"
-                     Height="50" materialDesign:HintAssist.Hint="Kinh nghiệm"/>
-
-
-                <TextBox x:Name="txtbLocation" Margin="10 5" Text="{Binding Location}"
-                      materialDesign:HintAssist.Hint="Địa điểm"
-                     TextWrapping="Wrap"/>
+                            <TextBox x:Name="txtbJobName" Margin="10 5" Text="{Binding JobName}"
+                                 materialDesign:HintAssist.Hint="Tên công việc"
+                                 BorderBrush="White"/>
 
 
-                <TextBox x:Name="txtbSalary" Margin="10 5" Text="{Binding Salary}"
-                     Height="50" materialDesign:HintAssist.Hint="Mức lương"/>
 
-                <TextBlock Text="Bạn muốn tìm công việc như thế nào?" FontWeight="Bold"/>
-                <TextBox  Margin="10 5" Height="320"
-                      x:Name="txtbDescription"
-                      Text="{Binding Description}"
-                        TextBlock.FontSize="15"
-                        VerticalAlignment="Top"
-                        materialDesign:HintAssist.Hint="Mong muốn về công việc"
-                        AcceptsReturn="True"
-                        Style="{StaticResource MaterialDesignOutlinedTextBox}"
-                        TextWrapping="Wrap"
-                        VerticalScrollBarVisibility="Auto"
-                        materialDesign:HintAssist.IsFloating="False"/>
-            </StackPanel>
-            <StackPanel Grid.Column="1" Margin="5 10 10 10">
-                <TextBlock Text="CV" FontWeight="Bold"/>
-                <Border BorderThickness="0.5" BorderBrush="Black" CornerRadius="10"
-                        Margin="10 5" Height="250">
-                    <Grid Name="gridCV">
+
+                            <TextBox x:Name="txtbExperience" Margin="10 5" Text="{Binding Experience}"
+                                 Height="50" materialDesign:HintAssist.Hint="Kinh nghiệm"
+                                 BorderBrush="White"/>
+
+
+                            <TextBox x:Name="txtbLocation" Margin="10 5" Text="{Binding Location}"
+                                  materialDesign:HintAssist.Hint="Địa điểm"
+                                  TextWrapping="Wrap"
+                                  BorderBrush="White"/>
+
+
+                            <TextBox x:Name="txtbSalary" Margin="10 5" Text="{Binding Salary}"
+                                  Height="50" materialDesign:HintAssist.Hint="Mức lương"
+                                  BorderBrush="White"/>
+
+                            <TextBlock Text="Bạn muốn tìm công việc như thế nào?" FontWeight="Bold"/>
+                            <TextBox  Margin="10 5" Height="295"
+                                  x:Name="txtbDescription"
+                                  Text="{Binding Description}"
+                                    TextBlock.FontSize="15"
+                                    VerticalAlignment="Top"
+                                    materialDesign:HintAssist.Hint="Mong muốn về công việc"
+                                    AcceptsReturn="True"
+                                    Style="{StaticResource MaterialDesignOutlinedTextBox}"
+                                    TextWrapping="Wrap"
+                                    VerticalScrollBarVisibility="Auto"
+                                    materialDesign:HintAssist.IsFloating="False"
+                                    BorderBrush="White"/>
+                        </StackPanel>
+                        <StackPanel Grid.Column="1" Margin="5 10 10 10">
+                            <TextBlock Text="CV" FontWeight="Bold"/>
+                            <Border BorderThickness="0.5" BorderBrush="White" CornerRadius="10"
+                    Margin="10 5" Height="250">
+                                <Grid Name="gridCV">
+
+                                </Grid>
+                            </Border>
+
+                            <TextBlock Text="Quyền lợi mong muốn" FontWeight="Bold"/>
+                            <TextBox  Margin="10 5" Height="180"
+                                  x:Name="txtbBenefit"
+                                  Text="{Binding Benefit}"
+                                  TextBlock.FontSize="15"
+                                    VerticalAlignment="Top"
+                                    materialDesign:HintAssist.Hint=""
+                                    BorderBrush="White"
+                                    AcceptsReturn="True"
+                                    Style="{StaticResource MaterialDesignOutlinedTextBox}"
+                                    TextWrapping="Wrap"
+                                    VerticalScrollBarVisibility="Auto"
+                                  materialDesign:HintAssist.IsFloating="False"/>
+
+                            <TextBlock Text="Thời gian làm việc" FontWeight="Bold"/>
+                            <TextBox  Margin="10 5" Height="55"
+                                  TextBlock.FontSize="15"
+                                  x:Name="txtbWorkTime"
+                                  Text="{Binding WorkTime}"
+                                    VerticalAlignment="Top"
+                  
+                                    materialDesign:HintAssist.Hint="Thời gian làm việc"
+                                    AcceptsReturn="True"
+                                    Style="{StaticResource MaterialDesignOutlinedTextBox}"
+                                    TextWrapping="Wrap"
+                                    VerticalScrollBarVisibility="Auto"
+                                    materialDesign:HintAssist.IsFloating="False"
+                                    BorderBrush="White"/>
+
+
+                            <Button x:Name="btnContact" Content="Liên hệ" Width="100" Margin="10" Click="btnContact_Click"></Button>
+                        </StackPanel>
 
                     </Grid>
-                </Border>
-
-                <TextBlock Text="Quyền lợi mong muốn" FontWeight="Bold"/>
-                <TextBox  Margin="10 5" Height="180"
-                      x:Name="txtbBenefit"
-                      Text="{Binding Benefit}"
-                      TextBlock.FontSize="15"
-                        VerticalAlignment="Top"
-                        materialDesign:HintAssist.Hint=""
-
-                        AcceptsReturn="True"
-                        Style="{StaticResource MaterialDesignOutlinedTextBox}"
-                        TextWrapping="Wrap"
-                        VerticalScrollBarVisibility="Auto"
-                      materialDesign:HintAssist.IsFloating="False"/>
-
-                <TextBlock Text="Thời gian làm việc" FontWeight="Bold"
-                       />
-                <TextBox  Margin="10 5" Height="55"
-                      TextBlock.FontSize="15"
-                      x:Name="txtbWorkTime"
-                      Text="{Binding WorkTime}"
-                        VerticalAlignment="Top"
-                      
-                        materialDesign:HintAssist.Hint="Thời gian làm việc"
-                        AcceptsReturn="True"
-                        Style="{StaticResource MaterialDesignOutlinedTextBox}"
-                        TextWrapping="Wrap"
-                        VerticalScrollBarVisibility="Auto"
-                        materialDesign:HintAssist.IsFloating="False"/>
-
-
-                <Button x:Name="btnContact" Content="Liên hệ" Width="100" Margin="10" Click="btnContact_Click"></Button>
-            </StackPanel>
-
+                </Grid>
+            </Border>
         </Grid>
-    </Grid>
+    </Border>
 </Window>

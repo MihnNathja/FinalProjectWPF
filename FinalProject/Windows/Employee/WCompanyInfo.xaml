@@ -13,81 +13,98 @@
         Background="{DynamicResource MaterialDesignPaper}"
         FontFamily="{DynamicResource MaterialDesignFont}"
         mc:Ignorable="d" 
-        d:DesignHeight="650" d:DesignWidth="800"
-        Title="WCompanyInfo">
+        d:DesignHeight="600" d:DesignWidth="800"
+        Title="WCompanyInfo" WindowStartupLocation="CenterScreen"
+        WindowState="Maximized">
     <Border Style="{StaticResource page}" Background="White">
-        <Grid>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="1*"/>
-                <RowDefinition Height="7*"/>
+        <Grid >
+            <Image Stretch="UniformToFill"  Source="/Image/background2.png"/>
+            <Border Visibility="Visible" Background="#99000000" CornerRadius="30">
+                <Grid Margin="10" TextElement.Foreground="White" >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="1*"/>
+                        <RowDefinition Height="7*"/>
 
-            </Grid.RowDefinitions>
-            <TextBlock Grid.Row="0" Text="{Binding CompanyName}" VerticalAlignment="Center" HorizontalAlignment="Center"
-                   FontSize="30" FontWeight="Black"/>
-            <Grid Grid.Row="1" Margin="20">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition/>
-                    <ColumnDefinition/>
-                </Grid.ColumnDefinitions>
-                <StackPanel>
+                    </Grid.RowDefinitions>
+                    <TextBlock Grid.Row="0" Text="{Binding CompanyName}" VerticalAlignment="Center" HorizontalAlignment="Center"
+                        FontSize="30" FontWeight="Black"/>
+                    <Grid Grid.Row="1" Margin="20">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <StackPanel>
 
-                    <TextBox
-                   x:Name="txtMST" Margin="10 5"
-                    Text="{Binding Mst}"
-                  materialDesign:HintAssist.Hint="Mã số thuế"
-                  Style="{StaticResource floatingTextbox}"/>
-
-
-                    <TextBox x:Name="txtDiaChi" Margin="10 5"
-                         Text="{Binding CompanyLocation}"
-                         materialDesign:HintAssist.Hint="Địa Chỉ"
-                            Style="{StaticResource floatingTextbox}"/>
+                            <TextBox
+                                  x:Name="txtMST" Margin="10 5"
+                                  Text="{Binding Mst}"
+                                  materialDesign:HintAssist.Hint="Mã số thuế"
+                                  Style="{StaticResource floatingTextbox}"
+                                  BorderBrush="White"/>
 
 
-                    <TextBox x:Name="txtNguoiDaiDien" Margin="10 5"
-                         Text="{Binding Boss}"
-                         materialDesign:HintAssist.Hint="Người đại diện"
-                            Style="{StaticResource floatingTextbox}"/>
+                            <TextBox x:Name="txtDiaChi" Margin="10 5"
+                                 Text="{Binding CompanyLocation}"
+                                 materialDesign:HintAssist.Hint="Địa Chỉ"
+                                 Style="{StaticResource floatingTextbox}"
+                                 BorderBrush="White"/>
 
 
-                    <TextBox x:Name="txtSDT" Margin="10 5"
-                         Text="{Binding PhoneNumber}"
-                         materialDesign:HintAssist.Hint="Số điện thoại"
-                           Style="{StaticResource floatingTextbox}"/>
+                            <TextBox x:Name="txtNguoiDaiDien" Margin="10 5"
+                                 Text="{Binding Boss}"
+                                 materialDesign:HintAssist.Hint="Người đại diện"
+                                 Style="{StaticResource floatingTextbox}"
+                                 BorderBrush="White"/>
 
 
-                    <TextBox x:Name="txtEmail" Margin="10 5" 
-                         Text="{Binding Email}"
-                         materialDesign:HintAssist.Hint="Email"
-                            Style="{StaticResource floatingTextbox}"/>
+                            <TextBox x:Name="txtSDT" Margin="10 5"
+                                 Text="{Binding PhoneNumber}"
+                                 materialDesign:HintAssist.Hint="Số điện thoại"
+                                 Style="{StaticResource floatingTextbox}"
+                                 BorderBrush="White"/>
 
 
-                    <TextBox x:Name="txtLinhVuc" Margin="10 5" Height="150"
-                         Text="{Binding Field}"
-                         materialDesign:HintAssist.Hint="Lĩnh vực hoạt động"
-                         TextBlock.FontSize="15"
-                         VerticalAlignment="Top"
-                         AcceptsReturn="True"
-                         Style="{StaticResource MaterialDesignOutlinedTextBox}"
-                         TextWrapping="Wrap"
-                         VerticalScrollBarVisibility="Auto"/>
+                            <TextBox x:Name="txtEmail" Margin="10 5" 
+                                 Text="{Binding Email}"
+                                 materialDesign:HintAssist.Hint="Email"
+                                 Style="{StaticResource floatingTextbox}"
+                                 BorderBrush="White"/>
 
-                </StackPanel>
 
-                <StackPanel Grid.Column="1">
-                    <TextBox x:Name="txtMoTa" Margin="10 5" Height="450"
-                         Text="{Binding Description}"
-                         materialDesign:HintAssist.Hint="Mô tả công ty"
-                            TextBlock.FontSize="15"
-                            VerticalAlignment="Top"
+                            <TextBox x:Name="txtLinhVuc" Margin="10 5" Height="150"
+                                Text="{Binding Field}"
+                                materialDesign:HintAssist.Hint="Lĩnh vực hoạt động"
+                                TextBlock.FontSize="15"
+                                VerticalAlignment="Top"
+                                AcceptsReturn="True"
+                                Style="{StaticResource MaterialDesignOutlinedTextBox}"
+                                TextWrapping="Wrap"
+                                VerticalScrollBarVisibility="Auto"
+                                materialDesign:HintAssist.IsFloating="False"
+                                BorderBrush="White"/>
 
-                            AcceptsReturn="True"
-                            Style="{StaticResource MaterialDesignOutlinedTextBox}"
-                            TextWrapping="Wrap"
-                            VerticalScrollBarVisibility="Auto"/>
-                </StackPanel>
-            </Grid>
-            
+                        </StackPanel>
+
+                        <StackPanel Grid.Column="1">
+                            <TextBox x:Name="txtMoTa" Margin="10 5" Height="450"
+                                 Text="{Binding Description}"
+                                 materialDesign:HintAssist.Hint="Mô tả công ty"
+                                 TextBlock.FontSize="15"
+                                 VerticalAlignment="Top"
+                                 BorderBrush="White"
+                                 AcceptsReturn="True"
+                                 Style="{StaticResource MaterialDesignOutlinedTextBox}"
+                                 TextWrapping="Wrap"
+                                 materialDesign:HintAssist.IsFloating="False"
+                                 VerticalScrollBarVisibility="Auto"/>
+                        </StackPanel>
+                    </Grid>
+
+                </Grid>
+            </Border>
         </Grid>
+            
+                
+           
     </Border>
 </Window>
