@@ -32,7 +32,7 @@ namespace FinalProject.Database
         }
         public void SuaNews(News news)
         {
-            string[] prop = { "" };
+            string[] prop = { "JobName", "Salary", "Experience", "Location", "Description", "Require", "Benefit", "WorkTime" };
             string condition = $"IdEmployee = '{news.IdEmployee}' and IdCV = '{news.IdCV}'";
             Sua(news, prop, condition);
         }

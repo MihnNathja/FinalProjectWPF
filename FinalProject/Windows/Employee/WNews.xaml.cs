@@ -43,26 +43,12 @@ namespace FinalProject.Windows.Employee
             if (IdCV != null)
             {
                 News news = new News(Employee.ID, IdCV, txtbJobName.Text, txtbExperience.Text, txtbLocation.Text, txtbSalary.Text, txtbDescription.Text, txtbBenefit.Text, txtbWorkTime.Text);
-                newsDAO.ThemNews(news);
-            }
-            else
-            {
-                MessageBox.Show("Bạn chưa chọn CV!");
-            }    
-
-        }
-
-        private void btnSave_Click(object sender, RoutedEventArgs e)
-        {
-            if (IdCV != null)
-            {
-                News news = new News(Employee.ID, IdCV, txtbJobName.Text, txtbExperience.Text, txtbLocation.Text, txtbSalary.Text, txtbDescription.Text, txtbBenefit.Text, txtbWorkTime.Text);
                 newsDAO.SuaNews(news);
             }
             else
             {
                 MessageBox.Show("Bạn chưa chọn CV!");
-            }
+            }    
         }
 
         private void btnSelectCV_Click(object sender, RoutedEventArgs e)
