@@ -49,6 +49,7 @@ namespace FinalProject.Pages
             List<UCNews> listNews =  newsDAO.GetNews();
             foreach (UCNews item in listNews)
             {
+                
                 item.Type = Company.Type;
                 item.Company = Company;
                 pnlNews.Children.Add(item);

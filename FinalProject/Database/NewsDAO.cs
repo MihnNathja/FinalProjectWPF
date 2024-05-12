@@ -11,6 +11,7 @@ using System.Threading.Tasks;
 using FinalProject.Pages;
 using System.Windows.Documents;
 using System.Windows;
+using static MaterialDesignThemes.Wpf.Theme.ToolBar;
 
 namespace FinalProject.Database
 {
@@ -95,9 +96,9 @@ namespace FinalProject.Database
         {
             List<UCNews> listNews = new List<UCNews>();
             DataTable data = db.Load(SQL);
-            News news = new News();
             foreach (DataRow row in data.Rows)
             {
+                News news = new News();
                 PropertyInfo[] properties = typeof(News).GetProperties();
                 foreach (PropertyInfo property in properties)
                 {
