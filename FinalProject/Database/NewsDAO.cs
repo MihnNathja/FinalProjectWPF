@@ -29,9 +29,8 @@ namespace FinalProject.Database
         }
         public void XoaNews(News news)
         {
-            string[] prop = { "IdEmployee", "IdCV" };
-
-            Xoa(news, prop);
+            string SQL = string.Format($"DELETE FROM News Where IdEmployee = '{news.IdEmployee}' and IdCV = '{news.IdCV}'");
+            db.ThucThi(SQL);
         }
         public void SuaNews(News news)
         {

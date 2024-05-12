@@ -53,7 +53,6 @@ namespace FinalProject
             {
                 job.Type = Company.Type;
                 jobList.Children.Add( job );
-                
             }
            
         }

@@ -51,13 +51,12 @@ FontSize="40" FontWeight="Black"/>
 
 
                             <ComboBox
-                                FontSize="25"
+                                FontSize="20"
                                 x:Name="cbbGender"
-                                Width="400"
+                                Width="350"
                                 Height="70"
                                 Margin="5 0"
                                 materialDesign:HintAssist.Hint="Giới tính"
-                                materialDesign:TextFieldAssist.TextFieldCornerRadius="30"
                                 Style="{StaticResource MaterialDesignOutlinedComboBox}">
                                 <ComboBoxItem
                                 Content="Nam" />
@@ -69,8 +68,8 @@ FontSize="40" FontWeight="Black"/>
                             <TextBox x:Name="txtAddress" Margin="10 5" 
                   materialDesign:HintAssist.Hint="Địa chỉ" FontSize="25"/>
 
-                            <DatePicker x:Name="dtpDateOfBirth" Margin="10 5" Height="50" 
-                                        Foreground="Black" />
+                            <DatePicker x:Name="dtpDateOfBirth" Margin="10 5" Height="50" FontSize="25" Foreground="Gray" materialDesign:HintAssist.Hint="Ngày sinh"/>
+                            
 
                             <TextBox x:Name="txtPhone" Margin="10 5" 
                   materialDesign:HintAssist.Hint="Số điện thoại" FontSize="25"/>

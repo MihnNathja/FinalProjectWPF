@@ -43,7 +43,7 @@ namespace FinalProject.Pages
         {
             WNews wNews = new WNews(Employee);
             wNews.Show();
-            Page_Loaded(sender, e);
+            ReloadPage();
         }
 
         private void Page_Loaded(object sender, RoutedEventArgs e)
@@ -52,6 +52,18 @@ namespace FinalProject.Pages
             NewsDAO newsDAO = new NewsDAO();
             List<UCNews> list = newsDAO.GetNews(Employee);
             foreach (UCNews item in list) 
+            {
+                item.Type = Employee.Type;
+                item.Employee = Employee;
+                newsList.Children.Add(item);
+            }
+        }
+        private void ReloadPage()
+        {
+            newsList.Children.Clear();
+            NewsDAO newsDAO = new NewsDAO();
+            List<UCNews> list = newsDAO.GetNews(Employee);
+            foreach (UCNews item in list)
             {
                 item.Type = Employee.Type;
                 item.Employee = Employee;

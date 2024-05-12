@@ -44,7 +44,10 @@ namespace FinalProject.Windows.Employee
                 pnlCV.Children.Add(cv);
             }
         }
-       
+       public void Close_Window()
+        {
+            this.Close();
+        }
         
     }
 }

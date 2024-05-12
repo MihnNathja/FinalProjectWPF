@@ -48,7 +48,8 @@ namespace FinalProject.Windows.Employee
             else
             {
                 MessageBox.Show("Bạn chưa chọn CV!");
-            }    
+            }
+            Reload_Page(employee);
         }
 
         private void btnSelectCV_Click(object sender, RoutedEventArgs e)
@@ -62,5 +63,18 @@ namespace FinalProject.Windows.Employee
             uCCV.btnReject.Visibility = Visibility.Collapsed;
             gridCV.Children.Add(uCCV);
         }
+        private void Reload_Page(Objects.Employee employee)
+        {
+            // Lấy ra cửa sổ chứa UserControl hiện tại
+            Window window = Window.GetWindow(this);
+
+            // Kiểm tra xem window có tồn tại và có phải là MainWindow không
+            if (window != null && window is WEmployee)
+            {
+                // Gọi phương thức tải lại trang trong MainWindow
+                (window as WEmployee).Reload_page(employee);
+            }
+        }
+
     }
 }

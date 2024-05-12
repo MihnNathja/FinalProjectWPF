@@ -141,7 +141,7 @@ namespace FinalProject.Database
         public List<UCCompanyJob> GetCompanyJob(Company company)
         {
             List<UCCompanyJob> uCCVs = new List<UCCompanyJob>();
-            string SQL = string.Format($"SELECT* FROM Jobs WHERE CompanyName = '{company.CompanyName}'");
+            string SQL = string.Format($"SELECT* FROM Jobs WHERE CompanyName = N'{company.CompanyName}'");
             DataTable companyJobTable = db.Load(SQL);
             foreach (DataRow row in companyJobTable.Rows)
             {
@@ -160,7 +160,7 @@ namespace FinalProject.Database
         public List<UCJobInfo> GetCompanyJobForLoad(Company company)
         {
             List<UCJobInfo> jobInfos = new List<UCJobInfo>();
-            string SQL = string.Format($"SELECT* FROM Jobs WHERE CompanyName = '{company.CompanyName}'");
+            string SQL = string.Format($"SELECT* FROM Jobs WHERE CompanyName = N'{company.CompanyName}'");
             DataTable companyJobTable = db.Load(SQL);
             foreach (DataRow row in companyJobTable.Rows)
             {

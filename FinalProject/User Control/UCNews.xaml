@@ -73,7 +73,8 @@ HorizontalAlignment="Stretch" Loaded="UserControl_Loaded">
                             Text="{Binding JobName}" FontSize="35"  HorizontalAlignment="Center" TextWrapping="Wrap" />
                         <Button        
                             Grid.Column="1"
-                           x:Name="btnDeleteJob"               
+                           x:Name="btnDeleteJob"         
+                            Click="btnDeleteJob_Click"
                             HorizontalAlignment="Center" 
                             Height="25" 
                             Width="25"
@@ -83,8 +84,8 @@ HorizontalAlignment="Stretch" Loaded="UserControl_Loaded">
                             VerticalAlignment="Top" 
                             >
                             <Ellipse 
-                                 Height="25" 
-                                 Width="25" IsEnabled="False">
+                                 Height="26" 
+                                 Width="24">
                                 <Ellipse.Fill>
                                     <ImageBrush ImageSource="pack://application:,,,/FinalProject;component/Image/btnDelete.png"/>
                                 </Ellipse.Fill>

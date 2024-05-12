@@ -1,5 +1,6 @@
 ﻿using FinalProject.Database;
 using FinalProject.Objects;
+using FinalProject.Windows.Employee;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -48,6 +49,19 @@ namespace FinalProject.User_Control
         private void btnSelect_Click(object sender, RoutedEventArgs e)
         {
             cVDAO.ApplyCV(CV, Employee);
+            Close_Page();
+        }
+        private void Close_Page()
+        {
+            // Lấy ra cửa sổ chứa UserControl hiện tại
+            Window window = Window.GetWindow(this);
+
+            // Kiểm tra xem window có tồn tại và có phải là MainWindow không
+            if (window != null && window is WSelectCVNews)
+            {
+                // Gọi phương thức tải lại trang trong MainWindow
+                (window as WSelectCVNews).Close_Window();
+            }
         }
     }
 }

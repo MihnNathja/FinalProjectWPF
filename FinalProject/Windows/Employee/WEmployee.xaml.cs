@@ -27,7 +27,7 @@ namespace FinalProject
         public WEmployee()
         {
             InitializeComponent();
-           
+
         }
         public WEmployee(Employee employee)
         {
@@ -141,7 +141,7 @@ namespace FinalProject
             mainFarm.Navigate(PJob);
         }
 
-       
+
 
         private void mainFarm_Navigated(object sender, NavigationEventArgs e)
         {
@@ -171,6 +171,12 @@ namespace FinalProject
             mainFarm.Content = new PCV(employee);
 
         }
+        public void Reload_page(Employee employee)
+        {
+            PPostNews pPostNews = new PPostNews(employee);
+            mainFarm.Navigate(pPostNews);
+
+        }
 
 
         private void btnLichHen_Click(object sender, RoutedEventArgs e)
@@ -188,6 +194,7 @@ namespace FinalProject
             PEmployeeJobInterest pEmployeeJobInterest = new PEmployeeJobInterest(employee);
             mainFarm.Navigate(pEmployeeJobInterest);
         }
+        
     }
 }
 
