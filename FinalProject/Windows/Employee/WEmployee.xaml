@@ -101,13 +101,13 @@
 
                         </Border>
                         <TextBlock 
-        x:Name="txtbName"
-        Text="{Binding EmployeeName}"
-        Foreground="White" FontSize="22"
-        FontWeight="SemiBold" 
-        DockPanel.Dock="Top" 
-        TextAlignment="Center" 
-        Margin="5 25 0 10"/>
+                            x:Name="txtbName"
+                            Text="{Binding EmployeeName}"
+                            Foreground="White" FontSize="22"
+                            FontWeight="SemiBold" 
+                            DockPanel.Dock="Top" 
+                            TextAlignment="Center" 
+                            Margin="5 25 0 10"/>
 
                         <Separator Margin="25" DockPanel.Dock="Top" Height="1" Background="White"/>
 
@@ -183,11 +183,11 @@
 
                         </UniformGrid>
                         <Button x:Name="btnLogout"
-                Style="{StaticResource menuButton}" 
-                VerticalAlignment="Bottom" 
-                DockPanel.Dock ="Bottom" 
-                Margin="15 0 15 20"
-                Click="btnLogout_Click">
+                            Style="{StaticResource menuButton}" 
+                            VerticalAlignment="Bottom" 
+                            DockPanel.Dock ="Bottom" 
+                            Margin="15 0 15 20"
+                            Click="btnLogout_Click">
                             <StackPanel Orientation="Horizontal">
                                 <Icon:PackIconMaterial Kind="Logout" Style="{StaticResource menuButtonIcon}"/>
                                 <TextBlock Text="Đăng xuất"/>

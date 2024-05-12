@@ -29,16 +29,14 @@
 
 
                         <TextBox x:Name="txtUserName" Width="350" Height="60"
-             
-             materialDesign:HintAssist.Hint="Tên đăng nhập" Foreground="White" FontSize="25"/>
-
+                             materialDesign:HintAssist.Hint="Tên đăng nhập" Foreground="White" FontSize="25"/>
 
                         <PasswordBox x:Name="pbPassword" Width="350" Height="62"
-            TextBlock.FontSize="25"     
-            materialDesign:HintAssist.Foreground="LightBlue"
-            materialDesign:HintAssist.Hint="Mật Khẩu"
-            materialDesign:TextFieldAssist.UnderlineBrush="LightBlue"
-                                     Foreground="White"/>
+                            TextBlock.FontSize="25"     
+                            materialDesign:HintAssist.Foreground="LightBlue"
+                            materialDesign:HintAssist.Hint="Mật Khẩu"
+                            materialDesign:TextFieldAssist.UnderlineBrush="LightBlue"
+                            Foreground="White"/>
                         <StackPanel Orientation="Horizontal" Margin="10" >
                             <RadioButton x:Name="rdCompany" Content="Công ty" Foreground="White" FontSize="15" FontWeight="Bold"/>
                             <RadioButton x:Name="rdJobApplicant" Content="Ứng Viên" Margin="20 0" FontSize="15" Foreground="White" FontWeight="Bold"/>

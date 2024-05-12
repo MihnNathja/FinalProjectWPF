@@ -15,9 +15,8 @@
              FontFamily="{DynamicResource MaterialDesignFont}"
              d:DesignHeight="250" d:DesignWidth="700"
              Margin="10"
-HorizontalAlignment="Stretch" Loaded="UserControl_Loaded">
-    <materialDesign:Card  UniformCornerRadius="20"
-                      Width="650" Height="250">
+             HorizontalAlignment="Stretch" Loaded="UserControl_Loaded">
+    <materialDesign:Card  UniformCornerRadius="20" Width="650" Height="250">
         <Border Background="GhostWhite" BorderBrush="Silver" BorderThickness="1" CornerRadius="20">
             <Border.Effect>
                 <DropShadowEffect Color="Black"

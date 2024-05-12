@@ -34,19 +34,12 @@
 
                 <TextBox x:Name="txtbJobName" IsReadOnly="True" Margin="10 5" Text="{Binding JobName}"
                      materialDesign:HintAssist.Hint="Tên công việc"/>
-
-
-
-
                 <TextBox x:Name="txtbExperience" IsReadOnly="True" Margin="10 5" Text="{Binding Experience}"
                      Height="50" materialDesign:HintAssist.Hint="Kinh nghiệm"/>
-
-
                 <TextBox x:Name="txtbLocation" Margin="10 5" Text="{Binding Location}"
                          IsReadOnly="True"
                          materialDesign:HintAssist.Hint="Địa điểm"
                          TextWrapping="Wrap"/>
-
 
                 <TextBox x:Name="txtbSalary" IsReadOnly="True" Margin="10 5" Text="{Binding Salary}"
                      Height="50" materialDesign:HintAssist.Hint="Mức lương"/>
