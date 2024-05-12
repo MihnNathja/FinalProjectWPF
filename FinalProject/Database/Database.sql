@@ -114,3 +114,10 @@ CREATE TABLE [dbo].[News] (
     [WorkTime]      NVARCHAR (MAX) NULL,
     PRIMARY KEY( IdEmployee, IdCV)
 );
+
+CREATE TABLE [dbo].[EmployeeInterestJobs]
+(
+	[IdEmployee]	NVARCHAR (100) NOT NULL,
+	[IdJob]			NVARCHAR (100) NOT NULL,
+	PRIMARY KEY(IdEmployee, IdJob)
+)
