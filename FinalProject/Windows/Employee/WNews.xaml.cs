@@ -24,13 +24,16 @@ namespace FinalProject.Windows.Employee
     {
         Objects.Employee employee;
         public Objects.Employee Employee { get => employee; set => employee = value; }
-        string IdCV;
+        public News News { get => news; set => news = value; }
+
         CVDAO cVDAO = new CVDAO();
         NewsDAO newsDAO = new NewsDAO();
+        News news = new News();
         public WNews(Objects.Employee employee)
         {
             InitializeComponent();
             Employee = employee;
+            News.IdEmployee = Employee.ID;
         }
         public WNews()
         {
@@ -40,10 +43,16 @@ namespace FinalProject.Windows.Employee
 
         private void btnPost_Click(object sender, RoutedEventArgs e)
         {
-            if (IdCV != null)
+            if (News.IdCV != null)
             {
-                News news = new News(Employee.ID, IdCV, txtbJobName.Text, txtbExperience.Text, txtbLocation.Text, txtbSalary.Text, txtbDescription.Text, txtbBenefit.Text, txtbWorkTime.Text);
-                newsDAO.SuaNews(news);
+                News.JobName = txtbJobName.Text;
+                News.Location = txtbLocation.Text;
+                News.Benefit = txtbBenefit.Text;
+                News.Salary = txtbSalary.Text;
+                News.Experience = txtbExperience.Text;
+                News.Description = txtbDescription.Text;
+                News.WorkTime = txtbWorkTime.Text;
+                newsDAO.ThemHoacChinhSua(News);
             }
             else
             {
@@ -55,13 +64,9 @@ namespace FinalProject.Windows.Employee
         private void btnSelectCV_Click(object sender, RoutedEventArgs e)
         {
             gridCV.Children.Clear();
-            WSelectCVNews wSelectCVNews = new WSelectCVNews(Employee);
+            WSelectCVNews wSelectCVNews = new WSelectCVNews(Employee, News, gridCV);
             wSelectCVNews.ShowDialog();
-            IdCV = cVDAO.GetIdUCNews();
-            UCCV uCCV = new UCCV(IdCV);
-            uCCV.btnAccept.Visibility = Visibility.Collapsed;
-            uCCV.btnReject.Visibility = Visibility.Collapsed;
-            gridCV.Children.Add(uCCV);
+
         }
         private void Reload_Page(Objects.Employee employee)
         {
