@@ -1,4 +1,5 @@
 ﻿using FinalProject.Database;
+using FinalProject.Objects;
 using FinalProject.User_Control;
 using System;
 using System.Collections;
@@ -24,15 +25,21 @@ namespace FinalProject.Windows.Employee
     {
         CVDAO cVDAO = new CVDAO();
         Objects.Employee employee;
+        News news;
+        Grid Grid {  get; set; }
         public Objects.Employee Employee { get => employee; set => employee = value; }
+        public News News { get => news; set => news = value; }
+
         public WSelectCVNews()
         {
             InitializeComponent();
         }
-        public WSelectCVNews(Objects.Employee employee)
+        public WSelectCVNews(Objects.Employee employee, News news, Grid gridCV)
         {
             InitializeComponent();
             Employee = employee;
+            News = news;
+            Grid = gridCV;
         }
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
@@ -41,6 +48,8 @@ namespace FinalProject.Windows.Employee
             List<UCCVApplyNews> data = cVDAO.GetEmployeeNewsCV(Employee);
             foreach (UCCVApplyNews cv in data)
             {
+                cv.Grid = Grid;
+                cv.News = News;
                 pnlCV.Children.Add(cv);
             }
         }

@@ -25,13 +25,16 @@ namespace FinalProject.User_Control
     {
         CVDAO cVDAO = new CVDAO();
         CV cV;
-        Job job;
         Employee employee;
+        News news;
         string idCV;
+        public Grid Grid {  get; set; }
         public string IdCV { get => idCV; set => idCV = value; }
         public CV CV { get => cV; set => cV = value; }
-        public Job Job { get => job; set => job = value; }
         public Employee Employee { get => employee; set => employee = value; }
+        public News News { get => news; set => news = value; }
+       
+
         public UCCVApplyNews()
         {
             InitializeComponent();
@@ -48,7 +51,11 @@ namespace FinalProject.User_Control
 
         private void btnSelect_Click(object sender, RoutedEventArgs e)
         {
-            cVDAO.ApplyCV(CV, Employee);
+            UCCV uCCV = new UCCV(IdCV);
+            uCCV.btnAccept.Visibility = Visibility.Collapsed;
+            uCCV.btnReject.Visibility = Visibility.Collapsed;
+            Grid.Children.Add(uCCV);
+            News.IdCV = IdCV;
             Close_Page();
         }
         private void Close_Page()

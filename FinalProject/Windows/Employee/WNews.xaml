@@ -74,8 +74,8 @@
                                     <RowDefinition Height="300"/>
                                     <RowDefinition Height="auto"/>
                                 </Grid.RowDefinitions>
-                                <Grid HorizontalAlignment="Center" Name="gridCV" Margin="30 0 0 0">
-
+                                <Grid HorizontalAlignment="Center" Name="gridCV" Margin="30 0 0 0" materialDesign:HintAssist.HelperText="Chọn CV bạn muốn thêm/sửa">
+                                    
                                 </Grid>
                                 <StackPanel Grid.Row="1" VerticalAlignment="Center">
                                     <Button Name="btnSelectCV" Click="btnSelectCV_Click" Width="150" Content="Chọn CV"/>
@@ -111,15 +111,12 @@
                     TextWrapping="Wrap"
                     VerticalScrollBarVisibility="Auto"
                     materialDesign:HintAssist.IsFloating="False"/>
-
-
-
                     </StackPanel>
 
 
                 </Grid>
                 <StackPanel  Margin="0 50" VerticalAlignment="Bottom" HorizontalAlignment="Center">
-                    <Button x:Name="btnPost" Content="Đăng tin" Width="150"  Margin="50 0" Click="btnPost_Click"></Button>
+                    <Button x:Name="btnPost" Content="Đăng tin/Chỉnh sửa" Width="150"  Margin="50 0" Click="btnPost_Click"></Button>
                 </StackPanel>
             </Grid>
         </Border>

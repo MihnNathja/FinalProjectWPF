@@ -38,6 +38,18 @@ namespace FinalProject.Database
             string condition = $"IdEmployee = '{news.IdEmployee}' and IdCV = '{news.IdCV}'";
             Sua(news, prop, condition);
         }
+        public void ThemHoacChinhSua(News news)
+        {
+            string SQL = string.Format($"SELECT Count(*) FROM News WHERE IdEmployee = {news.IdEmployee}");
+            if (int.Parse(db.GetValue(SQL)) > 0)
+            {
+                SuaNews(news);
+            }
+            else
+            {
+                ThemNews(news);
+            }
+        }
         public News GetObject(string IdEmployee, string IdCV)
         {
             string SQL = string.Format($"SELECT * FROM News WHERE IdEmployee = '{IdEmployee}' and IdCV = '{IdCV}'");

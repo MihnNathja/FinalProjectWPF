@@ -167,25 +167,6 @@ namespace FinalProject.Database
 
             return cvList;
         }
-        public string GetIdUCNews()
-        {
-            string SQL = string.Format("SELECT IdCV FROM News");
-            return db.Load(SQL).Rows[0]["IdCV"].ToString();
-        }
-        //public UCCV GetEmployeeUCApplyNews()
-        //{
-        //    string id = GetIdUCNews();
-        //    UCCV uCCV = new UCCV();
-        //    string SQL = string.Format("SELECT * FROM News WHERE IdCV = '{0}'", id);
-        //    DataTable data = db.Load(SQL);
-        //    DataRow row = data.Rows[0];
-        //    PropertyInfo[] properties = typeof(CV).GetProperties();
-        //    foreach (PropertyInfo property in properties)
-        //    {
-        //        property.SetValue(uCCV, row[property.Name].ToString(), null);
-        //    }
-        //    return uCCV;
-        //}
         public List<UCCVEmployee> GetEmployeeCVToCreate(Employee employee)
         {
             List<UCCVEmployee> cvList = new List<UCCVEmployee>();
@@ -237,20 +218,6 @@ namespace FinalProject.Database
             else
             {
                 SQL = string.Format($"INSERT INTO ApplyCV (ID, IdCV, IdEmployee) VALUES ('{job.Id}', '{cv.IdCV}', '{employee.ID}')");
-                db.ThucThi(SQL);
-            }
-        }
-        public void ApplyCV(CV cv, Employee employee)
-        {
-            string SQL = string.Format($"SELECT Count(*) FROM News WHERE IdEmployee = {employee.ID}");
-            if (int.Parse(db.GetValue(SQL)) > 0)
-            {
-                SQL = string.Format($"UPDATE News SET IdCV = {cv.IdCV} WHERE IdEmployee = {employee.ID}");
-                db.ThucThi(SQL);
-            }
-            else
-            {
-                SQL = string.Format($"INSERT INTO News (IdCV, IdEmployee) VALUES ('{cv.IdCV}', '{employee.ID}')");
                 db.ThucThi(SQL);
             }
         }
