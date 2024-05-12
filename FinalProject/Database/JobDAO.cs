@@ -113,11 +113,11 @@ namespace FinalProject.Database
             {
                 SQL += $" AND Experience LIKE N'%{experience}%'";
             }
-            if (experience != "Tất cả mức lương")
+            if (salary != "Tất cả mức lương")
             {
                 SQL += $" AND Experience LIKE N'%{salary}%'";
             }
-            if (experience != "Thời gian làm việc")
+            if (time != "Thời gian làm việc")
             {
                 SQL += $" AND Experience LIKE N'%{time}%'";
             }
