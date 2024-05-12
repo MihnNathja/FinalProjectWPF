@@ -35,7 +35,7 @@
                                            HorizontalAlignment="Center" Width="40"/>
                     </Button>
                     <TextBlock Text="Đăng Ký" VerticalAlignment="Center" HorizontalAlignment="Center"
-FontSize="40" FontWeight="Black"/>
+                            FontSize="40" FontWeight="Black"/>
                 </Grid>
 
                 <Border Visibility="Visible" Background="#99000000" 
@@ -66,51 +66,45 @@ FontSize="40" FontWeight="Black"/>
 
 
                             <TextBox x:Name="txtAddress" Margin="10 5" 
-                  materialDesign:HintAssist.Hint="Địa chỉ" FontSize="25"/>
+                                materialDesign:HintAssist.Hint="Địa chỉ" FontSize="25"/>
 
                             <DatePicker x:Name="dtpDateOfBirth" Margin="10 5" Height="50" FontSize="25" Foreground="Gray" materialDesign:HintAssist.Hint="Ngày sinh"/>
                             
 
                             <TextBox x:Name="txtPhone" Margin="10 5" 
-                  materialDesign:HintAssist.Hint="Số điện thoại" FontSize="25"/>
+                                materialDesign:HintAssist.Hint="Số điện thoại" FontSize="25"/>
 
                             <TextBox x:Name="txtCCCD" Margin="10 5"
-                  materialDesign:HintAssist.Hint="CCCD" FontSize="25"/>
-
-
-
-
+                                materialDesign:HintAssist.Hint="CCCD" FontSize="25"/>
 
                         </StackPanel>
 
                         <StackPanel Grid.Column="1" Margin="10">
                             <TextBox x:Name="txtUserName"  Margin="10 5"
-                  materialDesign:HintAssist.Hint="Tên đăng nhập" FontSize="25"/>
+                                materialDesign:HintAssist.Hint="Tên đăng nhập" FontSize="25"/>
 
                             <PasswordBox x:Name="pbPassword" Margin="10 5" Height="62"
-                       TextBlock.FontSize="25"     
-                         materialDesign:HintAssist.Foreground="LightBlue"
-                         materialDesign:HintAssist.Hint="Mật Khẩu"
-                         materialDesign:TextFieldAssist.UnderlineBrush="LightBlue"/>
+                                TextBlock.FontSize="25"     
+                                materialDesign:HintAssist.Foreground="LightBlue"
+                                materialDesign:HintAssist.Hint="Mật Khẩu"
+                                materialDesign:TextFieldAssist.UnderlineBrush="LightBlue"/>    
 
                             <PasswordBox x:Name="pbConfirmPassword" Margin="10 5"
-                       TextBlock.FontSize="25"     
-                         materialDesign:HintAssist.Foreground="LightBlue"
-                         materialDesign:HintAssist.Hint="Nhập lại Mật Khẩu"
-                         materialDesign:TextFieldAssist.UnderlineBrush="LightBlue"/>
+                               TextBlock.FontSize="25"     
+                                materialDesign:HintAssist.Foreground="LightBlue"
+                                materialDesign:HintAssist.Hint="Nhập lại Mật Khẩu"
+                                materialDesign:TextFieldAssist.UnderlineBrush="LightBlue"/>
 
                             <TextBox x:Name="txtEmail" Margin="10 5"
-                  materialDesign:HintAssist.Hint="Email" FontSize="25"/>
+                                materialDesign:HintAssist.Hint="Email" FontSize="25"/>
                         </StackPanel>
                     </Grid>
                 </Border>
                 <Button Content="Đăng Ký" Width="200" FontSize="25" Grid.Row="2"
-         Margin="5" Click="btnSignUp_Click">
+                                Margin="5" Click="btnSignUp_Click">
 
-                    </Button>
-
-
-                </Grid>
+                </Button>
+            </Grid>
             
         </Grid>
     </Border>

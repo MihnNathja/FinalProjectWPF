@@ -33,7 +33,7 @@
                                            HorizontalAlignment="Center" Width="40"/>
                     </Button>
                     <TextBlock Text="Đăng Ký" VerticalAlignment="Center" HorizontalAlignment="Center"
-FontSize="40" FontWeight="Black" Foreground="White"/>
+                            FontSize="40" FontWeight="Black" Foreground="White"/>
                 </Grid>
                 <Border Visibility="Visible" CornerRadius="30"  Background="#99000000" Grid.Row="1" Width="800" >
                     <Grid >
@@ -45,53 +45,47 @@ FontSize="40" FontWeight="Black" Foreground="White"/>
                         <StackPanel Margin="10" >
 
                             <TextBox x:Name="txtCompanyName" Margin="10 5"
-materialDesign:HintAssist.Hint="Tên công ty" FontSize="25"/>
+                                materialDesign:HintAssist.Hint="Tên công ty" FontSize="25"/>
 
 
                             <TextBox x:Name="txtMST" Margin="10 5" 
-materialDesign:HintAssist.Hint="Mã số thuế" FontSize="25"/>
+                                materialDesign:HintAssist.Hint="Mã số thuế" FontSize="25"/>
 
                             <TextBox x:Name="txtLocationCompany" Margin="10 5" 
-materialDesign:HintAssist.Hint="Địa chỉ" FontSize="25"/>
+                                materialDesign:HintAssist.Hint="Địa chỉ" FontSize="25"/>
 
 
                             <TextBox x:Name="txtboss" Margin="10 5" 
-materialDesign:HintAssist.Hint="Người đại diện" FontSize="25"/>
+                                materialDesign:HintAssist.Hint="Người đại diện" FontSize="25"/>
 
                             <TextBox x:Name="txtPhoneNumber" Margin="10 5" 
-materialDesign:HintAssist.Hint="Điện thoại" FontSize="25"/>
-
-
-
-
-
+                                materialDesign:HintAssist.Hint="Điện thoại" FontSize="25"/>
                         </StackPanel>
 
                         <StackPanel Grid.Column="1" Margin="10">
                             <TextBox x:Name="txtUserName"  Margin="10 5"
-materialDesign:HintAssist.Hint="Tên đăng nhập" FontSize="25"/>
-
+                                materialDesign:HintAssist.Hint="Tên đăng nhập" FontSize="25"/>
                             <PasswordBox x:Name="txtPassword" Margin="10 5" Height="62" 
-    TextBlock.FontSize="25"     
-   materialDesign:HintAssist.Foreground="LightBlue"
-   materialDesign:HintAssist.Hint="Mật Khẩu"
-   materialDesign:TextFieldAssist.UnderlineBrush="LightBlue"/>
+                                TextBlock.FontSize="25"     
+                                materialDesign:HintAssist.Foreground="LightBlue"
+                                materialDesign:HintAssist.Hint="Mật Khẩu"
+                                materialDesign:TextFieldAssist.UnderlineBrush="LightBlue"/>
 
                             <PasswordBox x:Name="txtConfirmPassword" Margin="10 5" Height="62" 
-     TextBlock.FontSize="25"     
-   materialDesign:HintAssist.Foreground="LightBlue"
-   materialDesign:HintAssist.Hint="Nhập lại Mật Khẩu"
-   materialDesign:TextFieldAssist.UnderlineBrush="LightBlue"/>
+                                TextBlock.FontSize="25"     
+                                materialDesign:HintAssist.Foreground="LightBlue"
+                                materialDesign:HintAssist.Hint="Nhập lại Mật Khẩu"
+                                materialDesign:TextFieldAssist.UnderlineBrush="LightBlue"/>
 
                             <TextBox x:Name="txtEmail" Margin="10 5"
-materialDesign:HintAssist.Hint="Email" FontSize="25" />
+                                materialDesign:HintAssist.Hint="Email" FontSize="25" />
                         </StackPanel>
                     </Grid>
                 </Border>
                
 
                 <Button Content="Đăng Ký" Width="200" FontSize="25" Grid.Row="2"
-         Margin="5" Click="btnSignUp_Click">
+                                Margin="5" Click="btnSignUp_Click">
 
                 </Button>
 
