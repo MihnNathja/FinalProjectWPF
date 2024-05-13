@@ -76,7 +76,8 @@
                                  Background="White"
                                    materialDesign:TextFieldAssist.TextFieldCornerRadius="10">
                         <ComboBoxItem Content="Tất cả mức lương"/>
-                        <ComboBoxItem Content="Thoả thuận"/>
+                        <ComboBoxItem Content="Thỏa thuận"/>
+                        <ComboBoxItem Content="Cạnh tranh"/>
                         <ComboBoxItem Content="Dưới 10tr" />
                         <ComboBoxItem Content="Trên 10tr" />
                     </ComboBox>
@@ -92,8 +93,8 @@
                                materialDesign:TextFieldAssist.TextFieldCornerRadius="10"
                       >
                         <ComboBoxItem Content="Thời gian làm việc"/>
-                        <ComboBoxItem Content="Partime" />
-                        <ComboBoxItem Content="Fulltime" />
+                        <ComboBoxItem Content="Toàn thời gian" />
+                        <ComboBoxItem Content="Bán thời gian" />
                     </ComboBox>
                     <Button 
                         x:Name="btnSearch"
