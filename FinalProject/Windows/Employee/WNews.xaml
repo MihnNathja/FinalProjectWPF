@@ -124,7 +124,7 @@
 
                 </Grid>
                 <StackPanel  Margin="0 50" VerticalAlignment="Bottom" HorizontalAlignment="Center">
-                    <Button x:Name="btnPost" Content="Đăng tin/Chỉnh sửa" Width="150"  Margin="50 0" Click="btnPost_Click"></Button>
+                    <Button x:Name="btnPost" Content="Đăng tin/Chỉnh sửa" Width="200"  Margin="50 0" Click="btnPost_Click"></Button>
                 </StackPanel>
             </Grid>
         </Border>
