@@ -115,11 +115,11 @@ namespace FinalProject.Database
             }
             if (salary != "Tất cả mức lương")
             {
-                SQL += $" AND Experience LIKE N'%{salary}%'";
+                SQL += $" AND Salary LIKE N'%{salary}%'";
             }
             if (time != "Thời gian làm việc")
             {
-                SQL += $" AND Experience LIKE N'%{time}%'";
+                SQL += $" AND WorkTime LIKE N'%{time}%'";
             }
             DataTable dataSearch = db.Load(SQL);
             
